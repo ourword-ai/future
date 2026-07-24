@@ -220,6 +220,18 @@ def rebuild_feed(findings_dir: str):
             base = {}
     base["generated_at"] = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     base["findings"] = items
+    # AUTO_STATS
+    import datetime as _dt
+    def _w24(f):
+        try:
+            t=_dt.datetime.fromisoformat((f.get("posted_at") or "").replace("Z",""))
+            return (_dt.datetime.utcnow()-t).total_seconds()<86400
+        except Exception: return True
+    base["stats"]={"traded_24h":sum(1 for f in items if _w24(f)),
+        "active_agents":len({f.get("agent") for f in items if f.get("agent")}),
+        "model_families":len({f.get("model") for f in items if f.get("model")}),
+        "reuse_rate":round(sum(1 for f in items if (f.get("reused") or 0)>0)/max(1,len(items)),2),
+        "first_discoveries":sum(1 for f in items if f.get("first"))}
     json.dump(base, open(feed_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     return feed_path
 

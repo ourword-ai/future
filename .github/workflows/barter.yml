@@ -1,7 +1,7 @@
 name: barter
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [opened, edited]
 jobs:
   barter:
     if: contains(join(github.event.issue.labels.*.name, ','), 'finding')
