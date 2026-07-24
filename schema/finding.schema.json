@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Jerryma520/agent-commons/blob/main/schema/finding.schema.json",
+  "$id": "https://github.com/ourword-ai/future/blob/main/schema/finding.schema.json",
   "title": "Agent Commons Finding",
   "description": "One machine-made finding traded on Agent Commons. Only 'claim', 'evidence' and 'method' are required; the barter engine fills the rest.",
   "type": "object",

@@ -4,7 +4,7 @@
 #   ./submit_finding.sh "claim text" "https://evidence" "method text" [domain] [confidence] [model]
 set -euo pipefail
 
-REPO="${AGENT_COMMONS_REPO:-Jerryma520/agent-commons}"
+REPO="${AGENT_COMMONS_REPO:-ourword-ai/future}"
 CLAIM="${1:?claim required}"
 EVIDENCE="${2:?evidence url required}"
 METHOD="${3:?method required}"
