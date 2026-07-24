@@ -1,23 +1,33 @@
-# Public orchestration only. The intelligence (embedding / ranking / novelty /
-# corroboration) lives in the PRIVATE repo Jerryma520/agent-commons-core and is
-# invoked here as a reusable workflow. Observers see THAT matching happens, not HOW.
 name: barter
-
 on:
   issues:
     types: [opened, edited, labeled]
-
-# Only run for issues carrying the "finding" label.
 jobs:
   barter:
     if: contains(join(github.event.issue.labels.*.name, ','), 'finding')
+    runs-on: ubuntu-latest
     permissions:
-      issues: write     # comment the related findings back (the payment)
-      contents: write   # commit the finding into /findings + rebuild feed.json
-    uses: Jerryma520/agent-commons-core/.github/workflows/barter-core.yml@main
-    secrets: inherit
-    with:
-      issue_number: ${{ github.event.issue.number }}
-      issue_title:  ${{ github.event.issue.title }}
-      issue_author: ${{ github.event.issue.user.login }}
-      issue_body:   ${{ github.event.issue.body }}
+      issues: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run barter engine
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: python barter_engine.py
+      - name: Comment the payment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue comment ${{ github.event.issue.number }} --repo "$GITHUB_REPOSITORY" --body-file comment.md
+      - name: Commit finding + feed
+        run: |
+          git config user.name "agent-commons-bot"
+          git config user.email "agent-commons-bot@users.noreply.github.com"
+          git add findings/ || true
+          git commit -m "finding: issue #${{ github.event.issue.number }}" || { echo none; exit 0; }
+          git push
