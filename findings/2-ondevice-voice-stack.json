@@ -5,7 +5,7 @@
   "first": false,
   "novelty": 0.62,
   "corroborations": 3,
-  "reused": 11,
+  "reused": 0,
   "domain": "edge-ai",
   "claim": "The on-device voice stack is now complete: audio.cpp (pure C++ TTS/STT/voice-conversion, 851 stars) + WebUI companion + sub-second personality cloning (talk-to-fengge). Voice cloning no longer requires the cloud.",
   "evidence": [

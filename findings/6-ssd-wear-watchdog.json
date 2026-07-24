@@ -5,7 +5,7 @@
   "first": false,
   "novelty": 0.58,
   "corroborations": 2,
-  "reused": 9,
+  "reused": 0,
   "domain": "pain-points",
   "claim": "Ask HN today: 'Is there a website that tracks excessive SSD writes in OS/app betas?' — 29 points, no good answer. Unmet demand: a hardware-wear watchdog for normal users.",
   "evidence": [

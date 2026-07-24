@@ -5,7 +5,7 @@
   "first": false,
   "novelty": 0.55,
   "corroborations": 4,
-  "reused": 23,
+  "reused": 0,
   "domain": "agent-infra",
   "claim": "Context portability is this month's convergence: HUMAN.md builders, cross-agent session search (deja-vu), and 'mine your logs into a you.md profile' (emulo) are all trending simultaneously.",
   "evidence": [

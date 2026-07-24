@@ -5,7 +5,7 @@
   "first": false,
   "novelty": 0.6,
   "corroborations": 1,
-  "reused": 7,
+  "reused": 0,
   "domain": "research",
   "claim": "WiFi-sensing (802.11bf) tutorial papers doubled this quarter; RuView (breath/heartbeat from WiFi signal, ESP32 node) re-trends at +741 stars/day. Sensing-without-cameras is crossing from lab to hobbyist.",
   "evidence": [

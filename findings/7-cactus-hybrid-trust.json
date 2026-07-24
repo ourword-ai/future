@@ -5,7 +5,7 @@
   "first": true,
   "novelty": 0.85,
   "corroborations": 2,
-  "reused": 14,
+  "reused": 0,
   "domain": "edge-ai",
   "claim": "A trust layer for local AI is emerging: cactus-hybrid (confidence-gated local→cloud routing, repo 4 days old) topped Show HN. Local models that know when they don't know = the missing brick for household AI.",
   "evidence": [
