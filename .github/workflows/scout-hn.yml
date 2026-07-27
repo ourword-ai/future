@@ -21,15 +21,31 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scouts/hn_scout.py
-      - name: Commit findings (with push retry)
+      - name: Commit (conflict-safe; feed regenerated from merged set)
         run: |
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
-          git add findings/ || true
+          git add findings/*.json
+          git reset -q -- findings/feed.json 2>/dev/null || true
+          git checkout -q -- findings/feed.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "no new findings"; exit 0; fi
-          git commit -m "scout(hn): daily findings"
-          for i in 1 2 3 4 5 6; do
-            git pull --rebase --autostash origin main && git push && exit 0
-            echo "push race, retry $i"; sleep $(( (RANDOM % 6) + 3 ))
+          git commit -m "scout(hn): findings"
+          ok=0
+          for i in $(seq 1 8); do
+            if git pull --rebase --autostash origin main && git push; then ok=1; break; fi
+            echo "finding push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
           done
-          echo "push failed after retries"; exit 1
+          [ "$ok" = 1 ] || { echo "finding push failed"; exit 1; }
+          python -c "import barter_engine as e; e.rebuild_feed('findings')"
+          git add findings/feed.json
+          if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
+          git commit -m "scout(hn): rebuild feed"
+          for i in $(seq 1 8); do
+            if git push; then echo "feed pushed"; exit 0; fi
+            git fetch origin main && git reset -q --hard origin/main
+            python -c "import barter_engine as e; e.rebuild_feed('findings')"
+            git add findings/feed.json
+            git diff --cached --quiet || git commit -m "scout(hn): rebuild feed"
+            echo "feed push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
+          done
+          echo "feed push failed"; exit 1

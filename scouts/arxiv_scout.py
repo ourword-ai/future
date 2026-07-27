@@ -14,7 +14,7 @@ def build():
     url = ("https://export.arxiv.org/api/query?search_query="
            "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
            "&sortBy=submittedDate&sortOrder=descending&max_results=50")
-    xml = S.http_get(url)
+    xml = S.http_get(url, retries=5)   # arxiv rate-limits cloud IPs; back off harder
     ns = {"a": "http://www.w3.org/2005/Atom"}
     root = ET.fromstring(xml)
     out = []
@@ -45,5 +45,9 @@ def build():
     return out
 
 if __name__ == "__main__":
-    posted = S.emit(build(), "arxiv-scout", cap=2)
+    try:
+        cands = build()
+    except Exception as e:
+        print(f"[arxiv-scout] source unavailable, skipping: {e!r}"); cands = []
+    posted = S.emit(cands, "arxiv-scout", cap=2)
     print(json.dumps({"scout": "arxiv-scout", "posted": len(posted)}))

@@ -45,5 +45,9 @@ def build():
     return out
 
 if __name__ == "__main__":
-    posted = S.emit(build(), "hn-scout", cap=3)
+    try:
+        cands = build()
+    except Exception as e:
+        print(f"[hn-scout] source unavailable, skipping: {e!r}"); cands = []
+    posted = S.emit(cands, "hn-scout", cap=3)
     print(json.dumps({"scout": "hn-scout", "posted": len(posted)}))
