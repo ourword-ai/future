@@ -19,7 +19,9 @@ BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "micros
                # funded companies — their repos are their product, not an opening for a new founder
                "vercel", "vercel-labs", "cloudflare", "supabase", "hashicorp", "netlify",
                "stripe", "shopify", "langchain-ai", "run-llama", "llama-index", "huggingface",
-               "replicate", "modal-labs", "langgenius", "elastic", "grafana"}
+               "replicate", "modal-labs", "langgenius", "elastic", "grafana",
+               "xiaomimimo", "xiaomi", "mistralai", "cohere", "cohereai", "databricks",
+               "mozilla", "huawei", "intel", "ibm", "salesforce", "snowflakedb"}
 TOOL_KW = ["cli", "sdk", "api", "framework", "library", "tool", "runtime", "engine", "mcp",
            "self-host", "self host", "open-source", "open source", "app", "editor"]
 HEAVY_KW = ["enterprise", "at scale", "kubernetes operator", "data center", "datacenter",
@@ -77,14 +79,15 @@ def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, d
         return None
     fork_ratio = forks / max(stars, 1)
     forks_used = forks >= 250 or (forks >= 60 and fork_ratio >= 0.10)
-    installed = bool(dl and dl[1] >= 1000)
-    maintained = contribs >= 8 or commits30 >= 20
+    installed = bool(dl and dl[1] >= 2000)
+    maintained = contribs >= 12 or commits30 >= 40
+    some_maint = contribs >= 4 or commits30 >= 10
     sc = {
-        "pull":    2 if (stars >= 2000 or forks_used or installed) else (1 if (stars >= 500 or forks >= 80) else 0),
+        "pull":    2 if (stars >= 4000 or installed or forks >= 500) else (1 if (stars >= 700 or forks_used or forks >= 80) else 0),
         "buyer":   2 if dom in ("agent-infra", "consumer-ai", "edge-ai", "pain-points") else 1,
         "wedge":   2 if any(k in text for k in TOOL_KW) else 1,
         "build":   0 if any(k in text for k in HEAVY_KW) else 2,
-        "durable": 2 if (vel >= 300 or maintained) else (1 if (vel >= 80 or contribs >= 3) else 0),
+        "durable": 2 if (vel >= 600 and maintained) else (1 if (vel >= 120 or some_maint) else 0),
     }
     total = sum(sc.values())
     r = []
@@ -106,9 +109,9 @@ def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, d
 
 def build():
     today = datetime.date.today()
-    since = (today - datetime.timedelta(days=45)).isoformat()
-    q = urllib.parse.quote(f"created:>{since} stars:>150")
-    url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=50"
+    since = (today - datetime.timedelta(days=90)).isoformat()
+    q = urllib.parse.quote(f"created:>{since} stars:>120")
+    url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=100"
     hdr = {"Accept": "application/vnd.github+json"}
     tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if tok:
@@ -134,7 +137,7 @@ def build():
     pre.sort(key=lambda x: x[0], reverse=True)
     # pass 2 — enrich only the top survivors, then judge
     out = []
-    for _, it in pre[:15]:
+    for _, it in pre[:30]:
         stars = it.get("stargazers_count", 0)
         topics = it.get("topics", []) or []
         dom = S.infer_domain(f"{it['full_name']} {(it.get('description') or '')} {' '.join(topics)}", "agent-infra")
@@ -173,5 +176,5 @@ if __name__ == "__main__":
         cands = build()
     except Exception as e:
         print(f"[gh-scout] source unavailable, skipping: {e!r}"); cands = []
-    posted = S.post_ideas(cands, "gh-scout", cap=6)
+    posted = S.post_ideas(cands, "gh-scout", cap=12)
     print(json.dumps({"scout": "gh-scout", "posted": len(posted)}))
