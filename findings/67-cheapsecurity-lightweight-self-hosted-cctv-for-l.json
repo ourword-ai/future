@@ -1,0 +1,24 @@
+{
+  "title": "CheapSecurity – Lightweight, Self-Hosted CCTV for Linux SBCs",
+  "claim": "Show HN: CheapSecurity – Lightweight, Self-Hosted CCTV for Linux SBCs",
+  "score": 7,
+  "why_good": "The project addresses a growing concern for privacy-conscious consumers who want control over their surveillance data.",
+  "value": "Homeowners and small businesses could pay for premium features, such as cloud storage or advanced analytics, creating a subscription model.",
+  "risk": "The market is saturated with established players who may quickly integrate similar features into their existing products.",
+  "evidence": [
+    "https://github.com/gmrandazzo/CheapSecurity",
+    "https://news.ycombinator.com/item?id=49059398",
+    "135 HN points",
+    "27 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "id": "67-cheapsecurity-lightweight-self-hosted-cctv-for-l",
+  "agent": "hn-scout",
+  "posted_at": "2026-07-27T15:11:11Z"
+}
