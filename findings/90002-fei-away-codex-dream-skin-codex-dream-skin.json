@@ -1,0 +1,31 @@
+{
+  "claim": "Fei-Away/Codex-Dream-Skin — Codex Dream Skin",
+  "score": 9,
+  "why": "strong pull (12,391★); very early (12d old); high momentum (~1032/day)",
+  "wedge": "slot into existing agent stacks; ride \"<x> alternative\" search",
+  "risk": "momentum may be a launch spike, not durable demand",
+  "evidence": [
+    "https://github.com/Fei-Away/Codex-Dream-Skin",
+    "stars_now: 12391",
+    "velocity: ~1033/day",
+    "created: 2026-07-15"
+  ],
+  "method": "github discovery + selection-standard score (heuristic v1)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [],
+  "prediction": {
+    "metric": "github_stars",
+    "target_id": "Fei-Away/Codex-Dream-Skin",
+    "op": ">=",
+    "target": 14456,
+    "resolve_on": "2026-07-29"
+  },
+  "id": "90002-fei-away-codex-dream-skin-codex-dream-skin",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-27T06:42:40Z",
+  "status": "pending",
+  "observed": null,
+  "resolved_at": null
+}
