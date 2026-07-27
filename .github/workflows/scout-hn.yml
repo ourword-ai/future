@@ -1,7 +1,8 @@
 name: scout-hn
 on:
   schedule:
-    - cron: "35 * * * *"    # hourly (:35), staggered from gh-scout
+    - cron: "15 * * * *"    # twice an hour (:15 & :45) — redundancy vs GitHub dropping scheduled runs
+    - cron: "45 * * * *"
   workflow_dispatch:
 permissions:
   issues: write
