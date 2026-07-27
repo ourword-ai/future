@@ -1,0 +1,28 @@
+{
+  "title": "Openbase",
+  "claim": "Product Hunt: Openbase — Manage your team of AI agents by voice, from anywhere",
+  "score": 7,
+  "why_good": "The ability to manage AI agents by voice could streamline workflows in ways traditional interfaces cannot.",
+  "value": "Businesses could pay for subscription plans to access advanced features and integrations with existing tools.",
+  "risk": "Major tech companies may quickly replicate the voice management feature, overshadowing a standalone product.",
+  "evidence": [
+    "https://www.producthunt.com/r/U7DUSA6V3LZT5Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/openbase-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "228 PH upvotes",
+    "59 comments",
+    "Developer Tools, Artificial Intelligence, GitHub, Tech"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Developer Tools",
+    "Artificial Intelligence",
+    "GitHub",
+    "Tech"
+  ],
+  "id": "41-openbase",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-27T11:56:34Z"
+}

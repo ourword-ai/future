@@ -1,0 +1,28 @@
+{
+  "title": "Heard",
+  "claim": "Product Hunt: Heard — Give Claude Code and Codex a voice",
+  "score": 9,
+  "why_good": "Heard taps into the growing demand for voice interfaces in coding, making programming more accessible and intuitive.",
+  "value": "Developers and companies could pay for premium features or integrations, creating a subscription model or one-time licensing fees.",
+  "risk": "Major tech companies could easily integrate similar voice capabilities into their existing products, overshadowing Heard's niche.",
+  "evidence": [
+    "https://www.producthunt.com/r/HOUL4RGO5V5BZ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/heard-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "347 PH upvotes",
+    "93 comments",
+    "Productivity, Developer Tools, Artificial Intelligence, GitHub"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Productivity",
+    "Developer Tools",
+    "Artificial Intelligence",
+    "GitHub"
+  ],
+  "id": "35-heard",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-27T11:56:08Z"
+}
