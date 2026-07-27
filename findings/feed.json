@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T06:54:41Z",
+  "generated_at": "2026-07-27T07:10:02Z",
   "board": {
     "ideas": 6,
     "domains": 2,
@@ -24,13 +24,14 @@
       "title": "JustVugg/colibri",
       "claim": "JustVugg/colibri — Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, imme",
       "score": 10,
-      "why_good": "already pulling real usage (19,749★ in 26d); strong momentum (~759★/day); small team could ship a real version",
+      "why_good": "real usage (19,755★ in 26d); 1,978 forks (10% of stars) — people building on it, not just starring; strong momentum (~759★/day); small team could ship a real version",
       "who_pays": "developers building agents / AI product teams",
       "wedge": "be the hosted / easy version; own \"<x> alternative\" search",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/JustVugg/colibri",
-        "19,749★",
+        "19,755★",
+        "1,978 forks",
         "~760★/day",
         "created 2026-07-01"
       ],
@@ -41,19 +42,20 @@
       "tags": [],
       "id": "90000-justvugg-colibri",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     },
     {
       "title": "langchain-ai/openwiki",
       "claim": "langchain-ai/openwiki — OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
       "score": 10,
-      "why_good": "already pulling real usage (13,323★ in 35d); strong momentum (~380★/day); small team could ship a real version",
+      "why_good": "real usage (13,327★ in 35d); 929 forks (6% of stars) — people building on it, not just starring; strong momentum (~380★/day); small team could ship a real version",
       "who_pays": "developers building agents / AI product teams",
       "wedge": "be the hosted / easy version; own \"<x> alternative\" search",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/langchain-ai/openwiki",
-        "13,323★",
+        "13,327★",
+        "929 forks",
         "~381★/day",
         "created 2026-06-22"
       ],
@@ -64,19 +66,20 @@
       "tags": [],
       "id": "90001-langchain-ai-openwiki",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     },
     {
       "title": "Fei-Away/Codex-Dream-Skin",
       "claim": "Fei-Away/Codex-Dream-Skin — Codex Dream Skin",
       "score": 9,
-      "why_good": "already pulling real usage (12,392★ in 12d); strong momentum (~1032★/day); small team could ship a real version",
+      "why_good": "real usage (12,397★ in 12d); 1,251 forks (10% of stars) — people building on it, not just starring; strong momentum (~1033★/day); small team could ship a real version",
       "who_pays": "developers building agents / AI product teams",
       "wedge": "be the hosted / easy version; own \"<x> alternative\" search",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/Fei-Away/Codex-Dream-Skin",
-        "12,392★",
+        "12,397★",
+        "1,251 forks",
         "~1033★/day",
         "created 2026-07-15"
       ],
@@ -87,19 +90,20 @@
       "tags": [],
       "id": "90002-fei-away-codex-dream-skin",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     },
     {
       "title": "unicity-aos/aos-ce",
       "claim": "unicity-aos/aos-ce — AOS Community Edition: the open agent operating system.",
       "score": 9,
-      "why_good": "already pulling real usage (7,423★ in 15d); strong momentum (~494★/day); small team could ship a real version",
+      "why_good": "real usage (7,429★ in 15d); strong momentum (~495★/day); small team could ship a real version",
       "who_pays": "developers building agents / AI product teams",
       "wedge": "be the hosted / easy version; own \"<x> alternative\" search",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/unicity-aos/aos-ce",
-        "7,423★",
+        "7,429★",
+        "12 forks",
         "~495★/day",
         "created 2026-07-12"
       ],
@@ -110,19 +114,20 @@
       "tags": [],
       "id": "90003-unicity-aos-aos-ce",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     },
     {
       "title": "Yu9191/wloc",
       "claim": "Yu9191/wloc — 修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
       "score": 9,
-      "why_good": "already pulling real usage (6,478★ in 33d); small team could ship a real version",
+      "why_good": "real usage (6,479★ in 33d); 1,290 forks (19% of stars) — people building on it, not just starring; small team could ship a real version",
       "who_pays": "developers building agents / AI product teams",
       "wedge": "be the hosted / easy version; own \"<x> alternative\" search",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/Yu9191/wloc",
-        "6,478★",
+        "6,479★",
+        "1,290 forks",
         "~196★/day",
         "created 2026-06-24"
       ],
@@ -133,20 +138,21 @@
       "tags": [],
       "id": "90004-yu9191-wloc",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     },
     {
       "title": "img2threejs/img2threejs",
       "claim": "img2threejs/img2threejs — Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token",
       "score": 9,
-      "why_good": "already pulling real usage (6,165★ in 12d); strong momentum (~513★/day); small team could ship a real version",
+      "why_good": "real usage (6,196★ in 12d); 477 forks (7% of stars) — people building on it, not just starring; strong momentum (~516★/day); small team could ship a real version",
       "who_pays": "prosumers & small teams who'd pay for the finished workflow",
       "wedge": "win one vertical the general tool ignores, with better UX",
       "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
       "evidence": [
         "https://github.com/img2threejs/img2threejs",
-        "6,165★",
-        "~514★/day",
+        "6,196★",
+        "477 forks",
+        "~516★/day",
         "created 2026-07-15"
       ],
       "method": "github discovery + startup-worthiness score (heuristic v1)",
@@ -162,7 +168,7 @@
       ],
       "id": "90005-img2threejs-img2threejs",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T06:54:41Z"
+      "posted_at": "2026-07-27T07:10:02Z"
     }
   ],
   "clusters": [],
