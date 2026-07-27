@@ -38,14 +38,14 @@ jobs:
           done
           [ "$ok" = 1 ] || { echo "finding push failed"; exit 1; }
           # 2) rebuild feed.json from the fully merged findings, push with reset+regen retry
-          python -c "import barter_engine as e; e.rebuild_feed('findings')"
+          python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
           git add findings/feed.json
           if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
           git commit -m "scout(github): rebuild feed"
           for i in $(seq 1 8); do
             if git push; then echo "feed pushed"; exit 0; fi
             git fetch origin main && git reset -q --hard origin/main
-            python -c "import barter_engine as e; e.rebuild_feed('findings')"
+            python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
             git add findings/feed.json
             git diff --cached --quiet || git commit -m "scout(github): rebuild feed"
             echo "feed push retry $i"; sleep $(( (RANDOM % 5) + 2 ))

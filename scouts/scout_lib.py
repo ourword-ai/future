@@ -110,6 +110,12 @@ def rebuild_clusters():
     feed["clusters"] = clusters
     json.dump(feed, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
+def refresh():
+    """Rebuild feed.json AND clusters — used by the workflow commit step so the
+    conflict-safe feed regeneration never drops the convergence view."""
+    engine.rebuild_feed("findings")
+    rebuild_clusters()
+
 def emit(candidates, scout, cap=3):
     """Dedup, open a real finding issue, let the engine pay + record it. Returns posted list."""
     corpus = engine.load_corpus("findings")
