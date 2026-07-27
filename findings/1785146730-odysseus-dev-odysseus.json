@@ -2,9 +2,9 @@
   "title": "odysseus-dev/odysseus",
   "claim": "odysseus-dev/odysseus — Self-hosted AI workspace. ",
   "score": 10,
-  "why_good": "real usage (62,174★ in 57d); 316 contributors, 296 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A self-hosted AI workspace with heavy real dev activity (316 contributors, ~300 commits/30d) — the own-your-data alternative to hosted AI suites.",
+  "value": "Self-hosted workspaces sell to privacy/compliance-bound teams as a paid enterprise tier + support (the GitLab / Rocket.Chat playbook).",
+  "risk": "62k★ but only ~110 forks is an odd ratio — verify the stars reflect real users; 'AI workspace' is also a crowded, fuzzy category.",
   "evidence": [
     "https://github.com/odysseus-dev/odysseus",
     "62,174★",
