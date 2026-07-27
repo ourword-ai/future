@@ -2,9 +2,9 @@
   "title": "Juggler – an open-source GUI coding agent, by the creator of JUCE",
   "claim": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
   "score": 10,
-  "why_good": "Launched on Show HN with real interest — 280 points / 119 comments. People turned up for it, which is rare.",
-  "value": "infra AI products need — usage-based API + hosted tier",
-  "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+  "why_good": "An open-source GUI coding agent from the creator of JUCE — rare founder credibility in a hot category. 280 pts.",
+  "value": "Coding agents monetize as seats/usage; a polished GUI from a trusted builder can carve a lane against CLI-first tools.",
+  "risk": "Extremely crowded (Cursor / Cline / Copilot / Codex); the frontier labs' own agents are the looming threat.",
   "evidence": [
     "https://github.com/juggler-ai/juggler",
     "https://news.ycombinator.com/item?id=48883305",
