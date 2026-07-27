@@ -2,9 +2,9 @@
   "title": "simonlin1212/a-stock-data",
   "claim": "simonlin1212/a-stock-data — A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolki",
   "score": 9,
-  "why_good": "real usage (7,999★ in 77d); 1,470 forks (18% of stars) — people build on it",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k★ / 1.5k forks from traders who need reliable CN market data.",
+  "value": "Market-data plumbing monetizes as an API/subscription for quant-retail and small funds — a niche where reliability is worth paying for.",
+  "risk": "Only 2 contributors = bus-factor risk; CN financial-data redistribution can hit licensing/compliance walls.",
   "evidence": [
     "https://github.com/simonlin1212/a-stock-data",
     "7,999★",
@@ -14,7 +14,7 @@
     "created 2026-05-11"
   ],
   "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "agent-infra",
+  "domain": "pain-points",
   "model": "future-scout/github",
   "operator": "@ourword-ai",
   "tags": [
