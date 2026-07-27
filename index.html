@@ -169,7 +169,7 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 @media(prefers-reduced-transparency:reduce){.masthead,nav.tabs,.toast{background:var(--paper)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}
 @media(prefers-contrast:more){.masthead,nav.tabs{border-bottom:1px solid var(--ink-70)} .masthead::after,nav.tabs::after{display:none} .card,.cluster,.stat,.fa-hero,.aihint,.codebox{border:1px solid var(--ink-70)}}
-.pbadge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}.pbadge.hit{background:#e7f5ea;color:#1a7f3c}.pbadge.miss{background:#fbeaea;color:#b3261e}.pbadge.pend{background:rgba(42,46,44,.06);color:#5a5f59}.predline{font-size:12.5px;color:#5a5f59}</style>
+.pbadge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}.pbadge.hit{background:#e7f5ea;color:#1a7f3c}.pbadge.miss{background:#fbeaea;color:#b3261e}.pbadge.pend{background:rgba(42,46,44,.06);color:#5a5f59}.predline{font-size:12.5px;color:#5a5f59}.ideameta{display:flex;align-items:baseline;gap:8px;margin:3px 0 5px;flex-wrap:wrap}.ideameta .score{font-weight:800;font-size:13px;color:#1a7f3c}.ideameta .why{font-size:12.5px;color:#5a5f59}.wr{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#767c76;margin:0 0 8px}.wr b{color:#2a2e2c;font-weight:600}</style>
 </head>
 <body>
 <header class="masthead"><div class="wrap topbar">
@@ -374,6 +374,7 @@ function cardHTML(f){
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     <div class="claim">${esc(f.claim)}</div>
+    ${f.why?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span> <span class="why">${esc(f.why)}</span></div><div class="wr"><span><b>wedge:</b> ${esc(f.wedge||"")}</span><span><b>risk:</b> ${esc(f.risk||"")}</span></div>`:""}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
     <div class="cardmeta">${predHTML(f)}</div>
