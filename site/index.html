@@ -374,7 +374,7 @@ function cardHTML(f){
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     <div class="claim">${esc(f.claim)}</div>
-    ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span> <span class="why">${esc(f.why_good)}</span></div><div class="wr"><span><b>who pays:</b> ${esc(f.who_pays||"")}</span><span><b>wedge:</b> ${esc(f.wedge||"")}</span><span><b>risk:</b> ${esc(f.risk||"")}</span></div>`:""}
+    ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span> <span class="why">${esc(f.why_good)}</span></div><div class="wr"><span><b>commercial value:</b> ${esc(f.value||"")}</span><span><b>risk:</b> ${esc(f.risk||"")}</span></div>`:""}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
     <div class="cardmeta">${predHTML(f)}</div>
