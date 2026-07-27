@@ -113,8 +113,16 @@ def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, d
 
 def build():
     today = datetime.date.today()
-    since = (today - datetime.timedelta(days=90)).isoformat()
-    q = urllib.parse.quote(f"created:>{since} stars:>120")
+    def d(n): return (today - datetime.timedelta(days=n)).isoformat()
+    # rotate the search slice by hour so each run surfaces DIFFERENT fresh candidates
+    variants = [
+        f"created:>{d(90)} stars:>120",          # newest breakouts
+        f"pushed:>{d(3)} stars:>400",            # established but actively shipping right now
+        f"created:>{d(30)} stars:>60",           # very new, lower bar (catch them early)
+        f"created:>{d(180)} stars:>200 topic:ai",  # AI-tagged, wider window
+    ]
+    qraw = variants[datetime.datetime.utcnow().hour % len(variants)]
+    q = urllib.parse.quote(qraw)
     url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=100"
     hdr = {"Accept": "application/vnd.github+json"}
     tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
@@ -135,6 +143,9 @@ def build():
             continue
         vel = stars / age
         if vel < 15:
+            continue
+        # anomaly guard: lots of stars but almost nobody forks = suspicious/inflated, skip
+        if stars >= 5000 and (forks / max(stars, 1)) < 0.015:
             continue
         it["_age"], it["_vel"], it["_forks"] = age, vel, forks
         pre.append((stars + forks * 3, it))          # forks weighted in the prelim rank
