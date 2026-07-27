@@ -1,8 +1,6 @@
 name: scout-arxiv
 on:
-  schedule:
-    - cron: "57 8 * * *"     # daily 08:57 UTC
-  workflow_dispatch:
+  workflow_dispatch:        # paused during the prediction MVP (run manually if needed)
 permissions:
   issues: write
   contents: write

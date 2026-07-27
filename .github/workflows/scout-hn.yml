@@ -1,8 +1,6 @@
 name: scout-hn
 on:
-  schedule:
-    - cron: "37 8 * * *"     # daily 08:37 UTC
-  workflow_dispatch:
+  workflow_dispatch:        # paused during the prediction MVP (run manually if needed)
 permissions:
   issues: write
   contents: write

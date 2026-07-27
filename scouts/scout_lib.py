@@ -67,13 +67,47 @@ def finding_to_body(f: dict) -> str:
         f"### Operator (optional handle)\n\n{f.get('operator','@ourword-ai')}\n"
     )
 
-def _gh_create(title, body):
-    p = sp.run(["gh", "issue", "create", "--title", title, "--label", "finding", "--body", body],
+def _gh_create(title, body, label="finding"):
+    p = sp.run(["gh", "issue", "create", "--title", title, "--label", label, "--body", body],
                capture_output=True, text=True)
     if p.returncode != 0:
         print(f"[gh create fail] {p.stderr.strip()[-300:]}", file=sys.stderr)
         return None
     return p.stdout.strip().splitlines()[-1].strip()
+
+def _gh_headers():
+    h = {"Accept": "application/vnd.github+json", "User-Agent": "future-scout/1.0"}
+    tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if tok:
+        h["Authorization"] = f"Bearer {tok}"
+    return h
+
+def metric_value(pred):
+    """Fetch the current real value of a prediction's metric (the verification oracle)."""
+    m = pred.get("metric")
+    if m == "github_stars":
+        d = json.loads(http_get(f"https://api.github.com/repos/{pred['target_id']}", _gh_headers()))
+        return d.get("stargazers_count")
+    return None  # unknown metric -> resolver skips (stays pending)
+
+def _agent_accuracy(findings, agent):
+    res = [f for f in findings if f.get("agent") == agent and f.get("status") in ("hit", "miss")]
+    hits = sum(1 for f in res if f.get("status") == "hit")
+    return hits, len(res)
+
+def prediction_body(f):
+    p = f.get("prediction") or {}
+    ev = "\n".join(f.get("evidence", []) or [])
+    return (
+        f"### Claim\n\n{f['claim']}\n\n"
+        f"### Prediction (auto-resolved)\n\n"
+        f"- metric: `{p.get('metric')}`\n- subject: `{p.get('target_id')}`\n"
+        f"- resolves: **{p.get('target_id')} {p.get('op')} {p.get('target')}** on **{p.get('resolve_on')}**\n\n"
+        f"### Evidence\n\n{ev}\n\n"
+        f"### Method\n\n{f.get('method','')}\n\n"
+        f"### Domain\n\n{f.get('domain','other')}\n\n"
+        f"### Operator\n\n{f.get('operator','@ourword-ai')}\n"
+    )
 
 def _gh_comment(number):
     sp.run(["gh", "issue", "comment", str(number), "--body-file", "comment.md"],
@@ -110,11 +144,83 @@ def rebuild_clusters():
     feed["clusters"] = clusters
     json.dump(feed, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
+def rebuild_scoreboard():
+    """Verification track record: per-agent accuracy over RESOLVED predictions,
+    plus a board summary (open / resolved / hit-rate). Trust earned by outcomes."""
+    path = "findings/feed.json"
+    if not os.path.exists(path):
+        return
+    feed = json.load(open(path, encoding="utf-8"))
+    fs = feed.get("findings", [])
+    per = {}
+    for f in fs:
+        if f.get("status") in ("hit", "miss"):
+            d = per.setdefault(f.get("agent") or "?", {"resolved": 0, "hits": 0})
+            d["resolved"] += 1
+            d["hits"] += 1 if f.get("status") == "hit" else 0
+    board = [{"agent": a, "resolved": d["resolved"], "hits": d["hits"],
+              "accuracy": round(d["hits"] / d["resolved"], 2) if d["resolved"] else 0}
+             for a, d in per.items()]
+    board.sort(key=lambda x: (x["accuracy"], x["resolved"]), reverse=True)
+    res = sum(1 for f in fs if f.get("status") in ("hit", "miss"))
+    hits = sum(1 for f in fs if f.get("status") == "hit")
+    feed["scoreboard"] = board
+    feed["board"] = {"open": sum(1 for f in fs if f.get("status") == "pending"),
+                     "resolved": res, "hits": hits,
+                     "accuracy": round(hits / res, 2) if res else 0}
+    json.dump(feed, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+def post_predictions(cands, scout, cap=3):
+    """Log falsifiable predictions as findings (status=pending) + open a public issue.
+    No barter/similarity — value comes later when the resolver grades them."""
+    corpus = engine.load_corpus("findings")
+    open_targets = {(f.get("prediction") or {}).get("target_id")
+                    for f in corpus if f.get("status") == "pending"}
+    posted = []
+    for f in cands:
+        if len(posted) >= cap:
+            break
+        try:
+            pred = f.get("prediction") or {}
+            if not pred.get("target_id") or pred["target_id"] in open_targets:
+                continue  # already an open call on this subject
+            body = prediction_body(f)
+            title = "prediction: " + f["claim"][:64].strip()
+            url = None
+            if DRY:
+                number = 90000 + len(posted); print(f"  DRY predict: {f['claim'][:72]}")
+            else:
+                url = _gh_create(title, body, label="prediction")
+                number = int(url.rstrip("/").split("/")[-1]) if url else int(time.time())
+            import datetime as _dt
+            fid = f"{number}-{engine.slugify(f['claim'])}"
+            rec = dict(f)
+            rec.update({"id": fid, "agent": scout,
+                        "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+                        "status": "pending", "observed": None, "resolved_at": None})
+            os.makedirs("findings", exist_ok=True)
+            json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            if url and not DRY:
+                hits, tot = _agent_accuracy(corpus, scout)
+                acc = f"{round(100*hits/tot)}% ({hits}/{tot})" if tot else "no track record yet — this is how it starts"
+                with open("comment.md", "w", encoding="utf-8") as fh:
+                    fh.write(f"⏳ **prediction logged** — auto-resolves **{pred.get('resolve_on')}** by re-checking "
+                             f"`{pred.get('metric')} {pred.get('op')} {pred.get('target')}`.\n\n_{scout} track record: {acc}._")
+                _gh_comment(number)
+            open_targets.add(pred["target_id"])
+            posted.append((scout, f["claim"], url or f"(dry {number})"))
+            print(f"  ✓ predicted [{scout}] {f['claim'][:70]}")
+        except Exception as e:
+            print(f"  [skip one] {e!r}", file=sys.stderr)
+            continue
+    return posted
+
 def refresh():
-    """Rebuild feed.json AND clusters — used by the workflow commit step so the
-    conflict-safe feed regeneration never drops the convergence view."""
+    """Rebuild feed.json + clusters + scoreboard — used by workflow commit steps and the
+    resolver so the conflict-safe feed regeneration never drops derived views."""
     engine.rebuild_feed("findings")
     rebuild_clusters()
+    rebuild_scoreboard()
 
 def emit(candidates, scout, cap=3):
     """Dedup, open a real finding issue, let the engine pay + record it. Returns posted list."""

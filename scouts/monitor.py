@@ -1,0 +1,92 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""monitor — daily heartbeat / health + DEMAND signal (automated monitoring).
+
+Two jobs:
+1. Health: flag a stalled pipeline (overdue-unresolved predictions, or a stale feed).
+2. Demand: measure whether ANYONE outside the project is using Future — the only
+   number that says the idea is useful. Counts predictions/issues from accounts that
+   are NOT first-party. Writes it into feed['health'] so you can read demand daily.
+"""
+import os, sys, json, glob, datetime, urllib.request
+
+FIRST_PARTY_AGENTS = {"gh-scout", "hn-scout", "arxiv-scout", "painpoint-radar"}
+FIRST_PARTY_LOGINS = {"ourword-ai", "github-actions[bot]", "future-scout-bot", "jerryma520"}
+REPO = os.environ.get("GITHUB_REPOSITORY", "ourword-ai/future")
+
+def external_issue_signal():
+    """Distinct GitHub issue authors who are NOT us = real outside participation."""
+    url = f"https://api.github.com/repos/{REPO}/issues?state=all&per_page=100"
+    hdr = {"User-Agent": "future-monitor", "Accept": "application/vnd.github+json"}
+    tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if tok:
+        hdr["Authorization"] = f"Bearer {tok}"
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=20) as r:
+            data = json.loads(r.read())
+    except Exception as e:
+        print(f"  (issue-author fetch failed, skipping demand-from-issues: {e!r})")
+        return None
+    authors = [i["user"]["login"] for i in data
+               if isinstance(i, dict) and "pull_request" not in i and i.get("user")]
+    ext = sorted({a for a in authors if a.lower() not in {x.lower() for x in FIRST_PARTY_LOGINS}})
+    return {"issue_authors_total": len(set(authors)),
+            "external_issue_authors": ext, "external_issues": len(ext)}
+
+def main():
+    today = datetime.date.today().isoformat()
+    now = datetime.datetime.utcnow()
+    fs = []
+    for p in glob.glob("findings/*.json"):
+        if os.path.basename(p) == "feed.json":
+            continue
+        try:
+            fs.append(json.load(open(p, encoding="utf-8")))
+        except Exception:
+            pass
+    open_n = sum(1 for f in fs if f.get("status") == "pending")
+    resolved_n = sum(1 for f in fs if f.get("status") in ("hit", "miss"))
+    overdue = [f for f in fs if f.get("status") == "pending"
+               and (f.get("prediction") or {}).get("resolve_on", "9999-99-99") <= today]
+    ext_finding_agents = sorted({f.get("agent") for f in fs
+                                 if f.get("agent") and f["agent"] not in FIRST_PARTY_AGENTS})
+    feed = json.load(open("findings/feed.json", encoding="utf-8")) if os.path.exists("findings/feed.json") else {}
+    age_h = None
+    try:
+        t = datetime.datetime.fromisoformat((feed.get("generated_at") or "").replace("Z", ""))
+        age_h = round((now - t).total_seconds() / 3600, 1)
+    except Exception:
+        pass
+
+    issue_sig = external_issue_signal()
+    ext_issue_authors = issue_sig["external_issue_authors"] if issue_sig else []
+    used_by_outsiders = bool(ext_finding_agents or ext_issue_authors)
+
+    problems = []
+    if overdue:
+        problems.append(f"{len(overdue)} prediction(s) past deadline but still unresolved — resolver may be failing")
+    if age_h is not None and age_h > 48:
+        problems.append(f"feed hasn't refreshed in {age_h}h — scouts may be failing")
+
+    health = {
+        "status": "ok" if not problems else "warn",
+        "checked_at": now.replace(microsecond=0).isoformat() + "Z",
+        "feed_age_hours": age_h, "open": open_n, "resolved": resolved_n,
+        "overdue_unresolved": len(overdue),
+        "demand": {
+            "used_by_outsiders": used_by_outsiders,
+            "external_finding_agents": ext_finding_agents,
+            "external_issue_authors": ext_issue_authors,
+            "external_issue_count": (issue_sig or {}).get("external_issues", 0),
+        },
+    }
+    feed["health"] = health
+    json.dump(feed, open("findings/feed.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(json.dumps(health, ensure_ascii=False))
+    print(f"  DEMAND: used_by_outsiders={used_by_outsiders} "
+          f"(external issue authors={len(ext_issue_authors)}, external agents={len(ext_finding_agents)})")
+    for msg in problems:
+        print(f"::warning::future pipeline — {msg}")
+
+if __name__ == "__main__":
+    main()
