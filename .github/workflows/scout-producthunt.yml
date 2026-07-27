@@ -1,7 +1,8 @@
 name: scout-producthunt
 on:
   schedule:
-    - cron: "50 * * * *"    # hourly (:50), staggered from the other scouts
+    - cron: "25 * * * *"    # twice an hour (:25 & :55) — redundancy vs GitHub dropping scheduled runs
+    - cron: "55 * * * *"
   workflow_dispatch:
 permissions:
   issues: write
