@@ -1,8 +1,7 @@
 name: scout-reddit
 on:
-  schedule:
-    - cron: "40 * * * *"    # hourly (:40), staggered from the other scouts
-  workflow_dispatch:
+  workflow_dispatch:        # DORMANT: Reddit now gates API access behind registration + explicit
+                            # approval (Responsible Builder Policy). Manual only until/if approved.
 permissions:
   issues: write
   contents: write
