@@ -10,7 +10,8 @@ import os, re, json, datetime, urllib.parse, urllib.request, urllib.error
 import scout_lib as S
 
 KILL_KW = ["linkedin", "instagram", "tiktok bot", "twitter bot", "auto-dm", "mass dm",
-           "follower bot", "engagement bot"]
+           "follower bot", "engagement bot",
+           "jailbreak", "torrent", "piracy", "warez", "nsfw", "crack ", "keygen"]  # junk / legal risk
 BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "microsoft", "meta",
                "facebook", "facebookresearch", "baidu", "xai-org", "alibaba", "alibaba-inc",
                "bytedance", "tencent", "nvidia", "apple", "amazon", "aws", "anthropics",
@@ -23,16 +24,12 @@ TOOL_KW = ["cli", "sdk", "api", "framework", "library", "tool", "runtime", "engi
            "self-host", "self host", "open-source", "open source", "app", "editor"]
 HEAVY_KW = ["enterprise", "at scale", "kubernetes operator", "data center", "datacenter",
             "gpu cluster", "foundation model training"]
-BUYER = {"agent-infra": "developers building agents / AI product teams",
-         "consumer-ai": "prosumers & small teams who'd pay for the finished workflow",
-         "edge-ai": "privacy-sensitive users & on-device / offline app builders",
-         "research": "engineers who need the method as a usable, supported tool",
-         "pain-points": "the people already hacking a manual workaround"}
-WEDGE = {"agent-infra": 'be the hosted / easy version; own "<x> alternative" search',
-         "consumer-ai": "win one vertical the general tool ignores, with better UX",
-         "edge-ai": "own the local / offline / privacy angle end-to-end",
-         "research": "wrap the research into a paid, reliable product",
-         "pain-points": "productize the workaround people already cobble together"}
+VALUE = {  # 商业价值 — the commercial angle
+    "agent-infra": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+    "consumer-ai": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
+    "edge-ai": "on-device kills cloud cost and unlocks privacy-regulated buyers who pay a premium",
+    "research": "first to productize the method captures the teams who can't reproduce it themselves",
+    "pain-points": "people already spend time/tools on this — a product turns that into subscription revenue"}
 
 def _get(url, hdr=None, timeout=15):
     req = urllib.request.Request(url, headers=hdr or {"User-Agent": "future-scout"})
@@ -104,8 +101,7 @@ def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, d
     elif sc["durable"] == 2:
         r.append(f"strong momentum (~{int(vel)}★/day)")
     why = "; ".join(r) or f"{stars:,}★, {forks:,} forks, ~{int(vel)}★/day"
-    return total, why, BUYER.get(dom, "a definable niche willing to pay"), \
-        WEDGE.get(dom, "own an underserved niche + comparison-page SEO"), \
+    return total, why, VALUE.get(dom, "a clear paid wedge if it owns one workflow end-to-end"), \
         "could be a feature, not a company — check the moat and whether the incumbent just absorbs it"
 
 def build():
@@ -150,7 +146,7 @@ def build():
                   it["_forks"], contribs, commits30, dl, dom)
         if not j:
             continue
-        total, why, who, wedge, risk = j
+        total, why, value, risk = j
         if total < 7:
             continue
         ev = [it["html_url"], f"{stars:,}★", f"{it['_forks']:,} forks"]
@@ -163,7 +159,7 @@ def build():
         ev.append(f"created {it['created_at'][:10]}")
         out.append({"_score": total, "title": it["full_name"],
                     "claim": f"{it['full_name']} — {(it.get('description') or '')[:120]}",
-                    "score": total, "why_good": why, "who_pays": who, "wedge": wedge, "risk": risk,
+                    "score": total, "why_good": why, "value": value, "risk": risk,
                     "evidence": ev, "method": "discovery + usage signals (forks/contributors/commits/downloads)",
                     "domain": dom, "model": "future-scout/github", "operator": "@ourword-ai",
                     "tags": (topics[:5] or [])})
