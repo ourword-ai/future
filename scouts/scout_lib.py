@@ -145,30 +145,71 @@ def rebuild_clusters():
     json.dump(feed, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 def rebuild_scoreboard():
-    """Verification track record: per-agent accuracy over RESOLVED predictions,
-    plus a board summary (open / resolved / hit-rate). Trust earned by outcomes."""
+    """Board summary for the Idea list: how many ideas, across how many domains &
+    sources, and the average startup-worthiness score."""
     path = "findings/feed.json"
     if not os.path.exists(path):
         return
     feed = json.load(open(path, encoding="utf-8"))
     fs = feed.get("findings", [])
-    per = {}
-    for f in fs:
-        if f.get("status") in ("hit", "miss"):
-            d = per.setdefault(f.get("agent") or "?", {"resolved": 0, "hits": 0})
-            d["resolved"] += 1
-            d["hits"] += 1 if f.get("status") == "hit" else 0
-    board = [{"agent": a, "resolved": d["resolved"], "hits": d["hits"],
-              "accuracy": round(d["hits"] / d["resolved"], 2) if d["resolved"] else 0}
-             for a, d in per.items()]
-    board.sort(key=lambda x: (x["accuracy"], x["resolved"]), reverse=True)
-    res = sum(1 for f in fs if f.get("status") in ("hit", "miss"))
-    hits = sum(1 for f in fs if f.get("status") == "hit")
-    feed["scoreboard"] = board
-    feed["board"] = {"open": sum(1 for f in fs if f.get("status") == "pending"),
-                     "resolved": res, "hits": hits,
-                     "accuracy": round(hits / res, 2) if res else 0}
+    from collections import Counter
+    per = Counter(f.get("agent") for f in fs if f.get("agent"))
+    scores = [f.get("score") for f in fs if isinstance(f.get("score"), (int, float))]
+    feed["scoreboard"] = [{"agent": a, "ideas": n} for a, n in per.most_common()]
+    feed["board"] = {"ideas": len(fs),
+                     "domains": len({f.get("domain") for f in fs if f.get("domain")}),
+                     "sources": len(per),
+                     "avg_score": round(sum(scores) / len(scores), 1) if scores else 0}
     json.dump(feed, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+def idea_body(f):
+    ev = "\n".join(f.get("evidence", []) or [])
+    return (f"### What\n\n{f['claim']}\n\n"
+            f"### Why it could be a startup\n\n{f.get('why_good','')}\n\n"
+            f"### Who'd pay\n\n{f.get('who_pays','')}\n\n"
+            f"### Wedge\n\n{f.get('wedge','')}\n\n"
+            f"### Risk\n\n{f.get('risk','')}\n\n"
+            f"### Startup-worthiness\n\n{f.get('score','')}/10\n\n"
+            f"### Evidence\n\n{ev}\n")
+
+def post_ideas(cands, scout, cap=6):
+    """Write vetted startup-worthy ideas to the board (no predictions). Dedup by repo."""
+    corpus = engine.load_corpus("findings")
+    have = {(f.get("title") or (f.get("evidence") or [""])[0]) for f in corpus}
+    posted = []
+    for f in cands:
+        if len(posted) >= cap:
+            break
+        try:
+            key = f.get("title") or (f.get("evidence") or [""])[0]
+            if key in have:
+                continue
+            body = idea_body(f)
+            title = "idea: " + (f.get("title") or f["claim"][:50])
+            url = None
+            if DRY:
+                number = 90000 + len(posted); print(f"  DRY idea: {f['claim'][:70]}")
+            else:
+                url = _gh_create(title, body, label="idea")
+                number = int(url.rstrip("/").split("/")[-1]) if url else int(time.time())
+            import datetime as _dt
+            fid = f"{number}-{engine.slugify(f.get('title') or f['claim'])}"
+            rec = dict(f)
+            rec.update({"id": fid, "agent": scout,
+                        "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
+            os.makedirs("findings", exist_ok=True)
+            json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            if url and not DRY:
+                with open("comment.md", "w", encoding="utf-8") as fh:
+                    fh.write(f"💡 added to the Idea board: **{f.get('title','')}** — {f.get('why_good','')[:160]}")
+                _gh_comment(number)
+            have.add(key)
+            posted.append((scout, f.get("title"), url or f"(dry {number})"))
+            print(f"  ✓ idea [{scout}] {f.get('title')}")
+        except Exception as e:
+            print(f"  [skip one] {e!r}", file=sys.stderr)
+            continue
+    return posted
 
 def post_predictions(cands, scout, cap=3):
     """Log falsifiable predictions as findings (status=pending) + open a public issue.
