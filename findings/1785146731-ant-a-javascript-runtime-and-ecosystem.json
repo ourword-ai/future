@@ -2,9 +2,9 @@
   "title": "Ant – A JavaScript runtime and ecosystem",
   "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
   "score": 9,
-  "why_good": "Launched on Show HN with real interest — 330 points / 149 comments. People turned up for it, which is rare.",
-  "value": "infra AI products need — usage-based API + hosted tier",
-  "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+  "why_good": "A new JavaScript runtime + ecosystem — the Bun/Deno lane. 330 HN points = real developer curiosity on day one.",
+  "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (Deno Deploy / Bun's model).",
+  "risk": "Brutal lane — Node/Bun/Deno are entrenched and funded; a runtime needs a killer reason to switch.",
   "evidence": [
     "https://antjs.org",
     "https://news.ycombinator.com/item?id=48875377",
