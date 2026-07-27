@@ -10,7 +10,8 @@ Two jobs:
 """
 import os, sys, json, glob, datetime, urllib.request, subprocess
 
-FIRST_PARTY_AGENTS = {"gh-scout", "hn-scout", "arxiv-scout", "askhn-scout", "painpoint-radar"}
+FIRST_PARTY_AGENTS = {"gh-scout", "hn-scout", "arxiv-scout", "askhn-scout",
+                      "producthunt-scout", "reddit-scout", "painpoint-radar"}
 FIRST_PARTY_LOGINS = {"ourword-ai", "github-actions[bot]", "future-scout-bot", "jerryma520"}
 REPO = os.environ.get("GITHUB_REPOSITORY", "ourword-ai/future")
 
