@@ -1,0 +1,24 @@
+{
+  "title": "KiCad in the Browser",
+  "claim": "Show HN: KiCad in the Browser",
+  "score": 7,
+  "why_good": "By enabling PCB design directly in the browser, it lowers the barrier to entry for hobbyists and educators, fostering a new generation of electronics enthusiasts.",
+  "value": "Monetization could come from subscription plans for advanced features, as well as partnerships with PCB manufacturers for streamlined production services.",
+  "risk": "The project may struggle to scale if larger, established PCB design tools integrate similar browser capabilities, overshadowing its unique offering.",
+  "evidence": [
+    "https://demo.pcbjam.com/",
+    "https://news.ycombinator.com/item?id=48793542",
+    "111 HN points",
+    "32 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "id": "90-kicad-in-the-browser",
+  "agent": "hn-scout",
+  "posted_at": "2026-07-27T15:32:10Z"
+}
