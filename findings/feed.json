@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T10:37:22Z",
+  "generated_at": "2026-07-27T10:50:55Z",
   "board": {
-    "ideas": 12,
+    "ideas": 24,
     "domains": 4,
     "sources": 2,
-    "avg_score": 9.3
+    "avg_score": 8.7
   },
   "agents": {
     "gh-scout": {
@@ -16,7 +16,7 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 7
+      "ideas": 19
     },
     {
       "agent": "hn-scout",
@@ -24,6 +24,347 @@
     }
   ],
   "findings": [
+    {
+      "title": "AlephAITech/WorkBuddyGuide",
+      "claim": "AlephAITech/WorkBuddyGuide — A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、M",
+      "score": 8,
+      "why_good": "This project addresses a specific gap in the market for practical, hands-on resources that help users implement WorkBuddy effectively in their workflows.",
+      "value": "Businesses looking to optimize their workflow processes could pay for premium guides, consulting services, or tailored training based on this open-source content.",
+      "risk": "The project may struggle to gain traction if larger companies develop proprietary solutions that overshadow its offerings.",
+      "evidence": [
+        "https://github.com/AlephAITech/WorkBuddyGuide",
+        "1,332★",
+        "192 forks",
+        "9 contributors",
+        "53 commits/30d",
+        "created 2026-07-10"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "codex",
+        "guide",
+        "llm",
+        "workbuddy"
+      ],
+      "id": "33-alephaitech-workbuddyguide",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:50Z"
+    },
+    {
+      "title": "MaximeRivest/riddle",
+      "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
+      "score": 8,
+      "why_good": "The project leverages the unique capabilities of the reMarkable tablet, creating a niche product that enhances the user experience through interactive writing.",
+      "value": "Consumers pay for premium features or subscriptions that unlock advanced AI capabilities, such as personalized responses or enhanced writing tools.",
+      "risk": "The project may struggle to scale if it remains a feature of a specific device, especially if larger companies decide to integrate similar functionalities.",
+      "evidence": [
+        "https://github.com/MaximeRivest/riddle",
+        "1,739★",
+        "160 forks",
+        "2 contributors",
+        "27 commits/30d",
+        "created 2026-07-05"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "appload",
+        "eink",
+        "quill",
+        "remagic-app",
+        "remarkable-customization"
+      ],
+      "id": "32-maximerivest-riddle",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:45Z"
+    },
+    {
+      "title": "HUANGCHIHHUNGLeo/claude-real-video",
+      "claim": "HUANGCHIHHUNGLeo/claude-real-video — Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file",
+      "score": 8,
+      "why_good": "This project addresses a growing need for AI to understand video content contextually, which is crucial for applications in education and content creation.",
+      "value": "Content creators and educators could subscribe to a service that enhances video engagement and comprehension, generating revenue through tiered access or API usage fees.",
+      "risk": "The technology could be easily replicated by larger companies with existing video platforms, leading to a lack of differentiation in a crowded market.",
+      "evidence": [
+        "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+        "1,867★",
+        "152 forks",
+        "6 contributors",
+        "71 commits/30d",
+        "created 2026-06-30"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "claude",
+        "claude-code",
+        "cli",
+        "ffmpeg",
+        "keyframe-extraction"
+      ],
+      "id": "31-huangchihhungleo-claude-real-video",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:41Z"
+    },
+    {
+      "title": "DavidHDev/canvas-ui",
+      "claim": "DavidHDev/canvas-ui — A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
+      "score": 8,
+      "why_good": "The library's focus on creative canvas components with WebGL effects can attract designers and developers looking for high-performance visual solutions.",
+      "value": "Companies in gaming, advertising, and web design could pay for premium features or support, generating revenue through subscriptions or licensing.",
+      "risk": "Established frameworks or libraries may integrate similar features, diminishing the unique value proposition of this project.",
+      "evidence": [
+        "https://github.com/DavidHDev/canvas-ui",
+        "2,201★",
+        "95 forks",
+        "11 contributors",
+        "92 commits/30d",
+        "created 2026-07-16"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "animation",
+        "canvas",
+        "component-library",
+        "components",
+        "creative-coding"
+      ],
+      "id": "30-davidhdev-canvas-ui",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:38Z"
+    },
+    {
+      "title": "Jia-Ethan/codex-keysmith",
+      "claim": "Jia-Ethan/codex-keysmith — Version-independent Codex instruction deployment with dry-run, backups, hook isolation, and recovery.",
+      "score": 8,
+      "why_good": "The project addresses a critical need for reliable deployment and management of AI models, reducing downtime and errors in production environments.",
+      "value": "Companies in the AI space could pay for premium features or support, creating a subscription model for ongoing updates and maintenance.",
+      "risk": "The technology could be easily replicated by larger players with existing deployment solutions, leading to potential market saturation.",
+      "evidence": [
+        "https://github.com/Jia-Ethan/codex-keysmith",
+        "1,837★",
+        "311 forks",
+        "1 contributors",
+        "53 commits/30d",
+        "created 2026-06-28"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "edge-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "cli",
+        "codex",
+        "codex-cli",
+        "configuration-management",
+        "developer-tools"
+      ],
+      "id": "29-jia-ethan-codex-keysmith",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:34Z"
+    },
+    {
+      "title": "nyblnet/bento",
+      "claim": "nyblnet/bento — Bento, the office suite that fits in a file",
+      "score": 8,
+      "why_good": "Bento's lightweight approach to office productivity tools could appeal to remote and hybrid teams seeking efficiency without the bloat of traditional suites.",
+      "value": "Businesses could pay for premium features or integrations, creating a subscription model for teams that want enhanced collaboration tools.",
+      "risk": "The project may struggle against established players like Microsoft and Google, who could easily replicate its features and leverage their existing user bases.",
+      "evidence": [
+        "https://github.com/nyblnet/bento",
+        "2,472★",
+        "152 forks",
+        "4 contributors",
+        "690 commits/30d",
+        "created 2026-07-17"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "mit-license",
+        "office",
+        "office-365",
+        "office-suite",
+        "office-tools"
+      ],
+      "id": "28-nyblnet-bento",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:30Z"
+    },
+    {
+      "title": "lopopolo/harness-engineering",
+      "claim": "lopopolo/harness-engineering — 🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
+      "score": 8,
+      "why_good": "Harness engineering is a niche field with growing demand for specialized knowledge and tools, which can lead to a dedicated user base.",
+      "value": "Companies in industries reliant on harness engineering could subscribe for premium access to curated content, tools, and expert consulting services.",
+      "risk": "The project may struggle to scale if it remains too focused on niche applications, making it vulnerable to larger players offering broader solutions.",
+      "evidence": [
+        "https://github.com/lopopolo/harness-engineering",
+        "2,371★",
+        "243 forks",
+        "1 contributors",
+        "2 commits/30d",
+        "created 2026-07-18"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "27-lopopolo-harness-engineering",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:26Z"
+    },
+    {
+      "title": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
+      "claim": "MIgHTy-alIeN/MEV-Arbitrage-Bot — An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+      "score": 8,
+      "why_good": "The bot leverages real-time market inefficiencies in decentralized finance, which can lead to significant profit margins.",
+      "value": "Users, such as crypto traders and institutional investors, would pay subscription fees or a percentage of profits generated by the bot's operations.",
+      "risk": "The project could fail if larger trading firms develop similar or superior technology, outcompeting smaller players.",
+      "evidence": [
+        "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
+        "1,522★",
+        "1,083 forks",
+        "1 contributors",
+        "22793 commits/30d",
+        "created 2026-07-17"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "ai",
+        "aitradingbot",
+        "bot",
+        "btc",
+        "claude"
+      ],
+      "id": "26-mighty-alien-mev-arbitrage-bot",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:22Z"
+    },
+    {
+      "title": "oso95/scroll-world",
+      "claim": "oso95/scroll-world — A skill that turn any brand into a scrollable 3D world",
+      "score": 8,
+      "why_good": "This project taps into the growing demand for immersive brand experiences, allowing companies to showcase their products in a novel way.",
+      "value": "Brands could pay for customizable 3D environments to enhance customer engagement and drive sales through interactive experiences.",
+      "risk": "The concept may struggle to gain traction if larger tech companies integrate similar features into their existing platforms.",
+      "evidence": [
+        "https://github.com/oso95/scroll-world",
+        "5,417★",
+        "625 forks",
+        "1 contributors",
+        "13 commits/30d",
+        "created 2026-07-06"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "25-oso95-scroll-world",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:17Z"
+    },
+    {
+      "title": "img2threejs/img2threejs",
+      "claim": "img2threejs/img2threejs — Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token",
+      "score": 8,
+      "why_good": "The ability to automatically convert 2D images into 3D models can significantly streamline workflows in industries like gaming and virtual reality.",
+      "value": "Game developers and animators could pay for a subscription service that offers high-quality, customizable 3D model generation from images.",
+      "risk": "The technology may be too niche, and larger companies could easily integrate similar features into their existing tools, limiting market potential.",
+      "evidence": [
+        "https://github.com/img2threejs/img2threejs",
+        "6,448★",
+        "492 forks",
+        "2 contributors",
+        "33 commits/30d",
+        "created 2026-07-15"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "3d",
+        "ai-agents",
+        "claude-code",
+        "computer-graphics",
+        "generative"
+      ],
+      "id": "24-img2threejs-img2threejs",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:13Z"
+    },
+    {
+      "title": "elder-plinius/T3MP3ST",
+      "claim": "elder-plinius/T3MP3ST — autonomous red teaming platform; multi-agent offensive-security meta-harness",
+      "score": 8,
+      "why_good": "This project addresses a growing need for automated security assessments in an increasingly complex threat landscape, making it attractive for organizations seeking to enhance their cybersecurity posture.",
+      "value": "Companies in regulated industries could pay for subscription access to the platform to conduct regular security assessments and compliance checks.",
+      "risk": "The project could fail if larger cybersecurity firms integrate similar capabilities into their existing solutions, overshadowing this offering.",
+      "evidence": [
+        "https://github.com/elder-plinius/T3MP3ST",
+        "5,243★",
+        "1,086 forks",
+        "27 contributors",
+        "156 commits/30d",
+        "created 2026-07-02"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "agents",
+        "ai",
+        "multi-agent",
+        "offensive-security",
+        "redteam"
+      ],
+      "id": "23-elder-plinius-t3mp3st",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:08Z"
+    },
+    {
+      "title": "Fei-Away/Codex-Dream-Skin",
+      "claim": "Fei-Away/Codex-Dream-Skin — Codex Dream Skin",
+      "score": 9,
+      "why_good": "The project leverages advanced AI to create customizable digital avatars, tapping into the growing demand for personalized virtual identities in gaming and social media.",
+      "value": "Monetization can come from licensing the technology to game developers and social platforms, as well as offering premium avatar customization features to users.",
+      "risk": "The market could be dominated by larger tech companies with established avatar systems, making it difficult for a smaller startup to gain traction.",
+      "evidence": [
+        "https://github.com/Fei-Away/Codex-Dream-Skin",
+        "12,419★",
+        "1,252 forks",
+        "17 contributors",
+        "85 commits/30d",
+        "created 2026-07-15"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "22-fei-away-codex-dream-skin",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-27T10:50:04Z"
+    },
     {
       "title": "Ant – A JavaScript runtime and ecosystem",
       "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
@@ -349,14 +690,14 @@
       "desc": "2 independent scouts both surfaced agent-infra signals this cycle.",
       "n": 2,
       "members": [
-        "1785146731-ant-a-javascript-runtime-and-ecosystem",
-        "1785146731-clawk-give-coding-agents-a-disposable-linux-vm-n",
-        "1785146731-juggler-an-open-source-gui-coding-agent-by-the-c",
-        "1785146730-odysseus-dev-odysseus",
-        "90000-justvugg-colibri",
-        "90001-lidge-jun-opencodex",
-        "90004-oomol-lab-open-connector",
-        "90005-synthetic-sciences-openscience"
+        "33-alephaitech-workbuddyguide",
+        "30-davidhdev-canvas-ui",
+        "27-lopopolo-harness-engineering",
+        "26-mighty-alien-mev-arbitrage-bot",
+        "25-oso95-scroll-world",
+        "23-elder-plinius-t3mp3st",
+        "22-fei-away-codex-dream-skin",
+        "1785146731-ant-a-javascript-runtime-and-ecosystem"
       ]
     },
     {
@@ -364,6 +705,10 @@
       "desc": "2 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 2,
       "members": [
+        "32-maximerivest-riddle",
+        "31-huangchihhungleo-claude-real-video",
+        "28-nyblnet-bento",
+        "24-img2threejs-img2threejs",
         "1785146731-palmier-pro-open-source-macos-video-editor-built",
         "1785146730-t8y2-dbx"
       ]
@@ -373,13 +718,14 @@
       "desc": "2 independent scouts both surfaced edge-ai signals this cycle.",
       "n": 2,
       "members": [
+        "29-jia-ethan-codex-keysmith",
         "1785146731-rowboat-open-source-local-first-alternative-to-c",
         "1785146730-antirez-ds4"
       ]
     }
   ],
   "stats": {
-    "traded_24h": 13,
+    "traded_24h": 24,
     "active_agents": 2,
     "model_families": 2,
     "reuse_rate": 0.0,
