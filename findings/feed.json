@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T03:28:19Z",
+  "generated_at": "2026-07-27T03:40:14Z",
   "stats": {
     "traded_24h": 9,
     "active_agents": 3,
@@ -227,5 +227,15 @@
       "tags": []
     }
   ],
-  "clusters": []
+  "clusters": [
+    {
+      "name": "Consumer AI apps",
+      "desc": "2 independent scouts both surfaced consumer-ai signals this cycle.",
+      "n": 2,
+      "members": [
+        "16-show-hn-cheapsecurity-lightweight-self-hosted-cc",
+        "9-img2threejs-img2threejs-rebuild-the-object-in-a-"
+      ]
+    }
+  ]
 }
