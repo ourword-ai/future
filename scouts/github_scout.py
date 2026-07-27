@@ -116,10 +116,18 @@ def build():
     def d(n): return (today - datetime.timedelta(days=n)).isoformat()
     # rotate the search slice by hour so each run surfaces DIFFERENT fresh candidates
     variants = [
-        f"created:>{d(90)} stars:>120",          # newest breakouts
-        f"pushed:>{d(3)} stars:>400",            # established but actively shipping right now
-        f"created:>{d(30)} stars:>60",           # very new, lower bar (catch them early)
-        f"created:>{d(180)} stars:>200 topic:ai",  # AI-tagged, wider window
+        f"created:>{d(90)} stars:>120",                      # newest breakouts
+        f"pushed:>{d(3)} stars:>400",                        # established but actively shipping right now
+        f"created:>{d(30)} stars:>60",                       # very new, lower bar (catch them early)
+        f"created:>{d(180)} stars:>200 topic:ai",            # AI-tagged, wider window
+        f"created:>{d(120)} stars:>150 language:rust",       # systems / infra breakouts
+        f"created:>{d(120)} stars:>150 language:go",         # backend / devtools breakouts
+        f"created:>{d(120)} stars:>150 language:typescript", # web / app breakouts
+        f"created:>{d(90)} stars:>100 topic:developer-tools",
+        f"created:>{d(120)} stars:>150 topic:cli",
+        f"created:>{d(180)} stars:>200 topic:database",
+        f"created:>{d(120)} stars:>150 topic:security",
+        f"created:>{d(90)} stars:>80 topic:self-hosted",
     ]
     qraw = variants[datetime.datetime.utcnow().hour % len(variants)]
     q = urllib.parse.quote(qraw)
