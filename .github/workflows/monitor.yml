@@ -1,11 +1,11 @@
 name: monitor
 on:
   schedule:
-    - cron: "0 10 * * *"     # daily 10:00 UTC — after the resolver
+    - cron: "20 */3 * * *"   # every 3 hours — catch a stall fast
   workflow_dispatch:
 permissions:
   contents: write
-  issues: read
+  issues: write
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
