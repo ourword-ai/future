@@ -174,6 +174,38 @@ def idea_body(f):
             f"### Startup-worthiness\n\n{f.get('score','')}/10\n\n"
             f"### Evidence\n\n{ev}\n")
 
+def llm_copy(f):
+    """Write sharp copy (why_good / value / risk) via GitHub Models — free in Actions when
+    the workflow has `models: read`. Returns None on any failure → caller keeps heuristic copy."""
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not tok:
+        return None
+    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
+    ev = ", ".join(f.get("evidence", []) or [])
+    prompt = (
+        "You curate a public board of GitHub projects that could become startups worth building. "
+        "For the project below, reply with ONLY a JSON object with three keys, each ONE tight, specific, non-hype sentence:\n"
+        "  why_good: the non-obvious reason this could be a real startup (not 'it has stars').\n"
+        "  value: the commercial angle — who pays and how it makes money.\n"
+        "  risk: the honest reason it might fail (often 'feature not a company' or an incumbent absorbs it).\n\n"
+        f"Project: {f.get('title','')} — {f.get('claim','')}\n"
+        f"Signals: {ev}\nDomain: {f.get('domain','')}\n\nJSON only.")
+    body = json.dumps({"model": model, "temperature": 0.4, "max_tokens": 320,
+                       "messages": [{"role": "user", "content": prompt}]}).encode()
+    try:
+        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
+                                     headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                                              "User-Agent": "future-scout"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            txt = json.loads(r.read())["choices"][0]["message"]["content"]
+        m = re.search(r"\{.*\}", txt, re.S)
+        obj = json.loads(m.group(0))
+        if all(k in obj and obj[k] for k in ("why_good", "value", "risk")):
+            return {k: str(obj[k]).strip()[:400] for k in ("why_good", "value", "risk")}
+    except Exception as e:
+        print(f"  [llm_copy fallback → heuristic: {e!r}]", file=sys.stderr)
+    return None
+
 def post_ideas(cands, scout, cap=6):
     """Write vetted startup-worthy ideas to the board (no predictions). Dedup by repo."""
     corpus = engine.load_corpus("findings")
@@ -199,6 +231,9 @@ def post_ideas(cands, scout, cap=6):
             rec = dict(f)
             rec.update({"id": fid, "agent": scout,
                         "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
+            c = llm_copy(rec)          # LLM-polish every new item; falls back to heuristic
+            if c:
+                rec.update(c)
             os.makedirs("findings", exist_ok=True)
             json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
             if url and not DRY:
