@@ -68,8 +68,11 @@ def finding_to_body(f: dict) -> str:
     )
 
 def _gh_create(title, body, label="finding"):
-    p = sp.run(["gh", "issue", "create", "--title", title, "--label", label, "--body", body],
-               capture_output=True, text=True)
+    try:
+        p = sp.run(["gh", "issue", "create", "--title", title, "--label", label, "--body", body],
+                   capture_output=True, text=True)
+    except FileNotFoundError:
+        return None                       # no gh CLI (e.g. backfill) — finding still gets written
     if p.returncode != 0:
         print(f"[gh create fail] {p.stderr.strip()[-300:]}", file=sys.stderr)
         return None
