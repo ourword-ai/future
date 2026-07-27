@@ -29,12 +29,14 @@ WEDGE = {"agent-infra": 'be the hosted / easy version; own "<x> alternative" sea
          "research": "wrap the research into a paid, reliable product",
          "pain-points": "productize the workaround people already cobble together"}
 
-def judge(name, desc, topics, stars, age, vel, dom):
+def judge(name, desc, topics, stars, age, vel, forks, dom):
     text = f"{name} {desc} {' '.join(topics)}".lower()
     if any(k in text for k in KILL_KW):
         return None
+    fork_ratio = forks / max(stars, 1)
+    real_use = forks >= 250 or (forks >= 60 and fork_ratio >= 0.10)   # forks = intent to build on it
     sc = {
-        "pull":    2 if stars >= 2000 else (1 if stars >= 500 else 0),      # real usage
+        "pull":    2 if (stars >= 2000 or real_use) else (1 if (stars >= 500 or forks >= 80) else 0),
         "buyer":   2 if dom in ("agent-infra", "consumer-ai", "edge-ai", "pain-points") else 1,
         "wedge":   2 if any(k in text for k in TOOL_KW) else 1,            # a small team can own an angle
         "build":   0 if any(k in text for k in HEAVY_KW) else 2,           # buildable by a small team
@@ -42,11 +44,12 @@ def judge(name, desc, topics, stars, age, vel, dom):
     }
     total = sum(sc.values())
     reasons = []
-    if sc["pull"] == 2: reasons.append(f"already pulling real usage ({stars:,}★ in {age}d)")
+    if sc["pull"] == 2: reasons.append(f"real usage ({stars:,}★ in {age}d)")
     elif sc["pull"] == 1: reasons.append(f"early traction ({stars:,}★)")
+    if real_use: reasons.append(f"{forks:,} forks ({int(fork_ratio*100)}% of stars) — people building on it, not just starring")
     if sc["durable"] == 2: reasons.append(f"strong momentum (~{int(vel)}★/day)")
     if sc["build"] == 2: reasons.append("small team could ship a real version")
-    why = "; ".join(reasons) or f"{stars:,}★, ~{int(vel)}★/day and rising"
+    why = "; ".join(reasons) or f"{stars:,}★, {forks:,} forks, ~{int(vel)}★/day and rising"
     return total, why, BUYER.get(dom, "a definable niche willing to pay"), \
         WEDGE.get(dom, "own an underserved niche + comparison-page SEO"), \
         "could be a feature, not a company — check the moat and whether the incumbent just absorbs it"
@@ -65,6 +68,7 @@ def build():
     for it in data.get("items", []):
         desc = (it.get("description") or "").strip()
         stars = it.get("stargazers_count", 0)
+        forks = it.get("forks_count", 0)
         if not desc:
             continue
         if it["full_name"].split("/")[0].lower() in BIG_VENDORS:
@@ -79,7 +83,7 @@ def build():
             continue
         topics = it.get("topics", []) or []
         dom = S.infer_domain(f"{it['full_name']} {desc} {' '.join(topics)}", "agent-infra")
-        j = judge(it["full_name"], desc, topics, stars, age, vel, dom)
+        j = judge(it["full_name"], desc, topics, stars, age, vel, forks, dom)
         if not j:
             continue
         total, why, who, wedge, risk = j
@@ -90,7 +94,7 @@ def build():
             "title": it["full_name"],
             "claim": f"{it['full_name']} — {desc[:120]}",
             "score": total, "why_good": why, "who_pays": who, "wedge": wedge, "risk": risk,
-            "evidence": [it["html_url"], f"{stars:,}★", f"~{int(round(vel))}★/day", f"created {it['created_at'][:10]}"],
+            "evidence": [it["html_url"], f"{stars:,}★", f"{forks:,} forks", f"~{int(round(vel))}★/day", f"created {it['created_at'][:10]}"],
             "method": "github discovery + startup-worthiness score (heuristic v1)",
             "domain": dom, "model": "future-scout/github", "operator": "@ourword-ai",
             "tags": (topics[:5] or []),
