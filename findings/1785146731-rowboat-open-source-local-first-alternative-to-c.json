@@ -2,9 +2,9 @@
   "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
   "claim": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
   "score": 9,
-  "why_good": "Launched on Show HN with real interest — 219 points / 99 comments. People turned up for it, which is rare.",
-  "value": "on-device kills cloud cost + unlocks privacy buyers",
-  "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+  "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 pts.",
+  "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the 'X alternative' wedge.",
+  "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to stay ahead of.",
   "evidence": [
     "https://github.com/rowboatlabs/rowboat",
     "https://news.ycombinator.com/item?id=48819808",
