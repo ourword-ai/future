@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """gh-scout — discovers repos and judges them as POSSIBLE STARTUPS.
-No star-count guessing. Surfaces only ideas that could plausibly become a startup
-worth doing (>=7/10, no kill-gate), each with clear copy: what it is, why it's good,
-who'd pay, the wedge, the risk. Heuristic copy is v1; the autopilot (an LLM) rewrites
-the copy to real quality."""
-import os, json, datetime, urllib.parse
+Two-pass: cheap prefilter (stars/forks/velocity, kill-gates, drop vendor-owned) →
+enrich the survivors with the signals that really say "people use & build on this"
+(fork ratio, contributors, recent commits, npm/pypi downloads) → keep only ideas that
+could plausibly become a startup worth doing, with clear copy. Every enrichment call is
+best-effort; a failure never breaks the run."""
+import os, re, json, datetime, urllib.parse, urllib.request, urllib.error
 import scout_lib as S
 
 KILL_KW = ["linkedin", "instagram", "tiktok bot", "twitter bot", "auto-dm", "mass dm",
-           "follower bot", "engagement bot"]                 # platform-parasite
+           "follower bot", "engagement bot"]
 BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "microsoft", "meta",
                "facebook", "facebookresearch", "baidu", "xai-org", "alibaba", "alibaba-inc",
                "bytedance", "tencent", "nvidia", "apple", "amazon", "aws", "anthropics",
-               "deepseek-ai", "moonshotai", "qwenlm", "x-ai"}   # vendor-owned = not a startup opening
-TOOL_KW = ["cli", "sdk", "api", "framework", "library", "tool", "runtime", "engine",
-           "mcp", "self-host", "self host", "open-source", "open source", "app", "editor"]
+               "deepseek-ai", "moonshotai", "qwenlm", "x-ai",
+               # funded companies — their repos are their product, not an opening for a new founder
+               "vercel", "vercel-labs", "cloudflare", "supabase", "hashicorp", "netlify",
+               "stripe", "shopify", "langchain-ai", "run-llama", "llama-index", "huggingface",
+               "replicate", "modal-labs", "langgenius", "elastic", "grafana"}
+TOOL_KW = ["cli", "sdk", "api", "framework", "library", "tool", "runtime", "engine", "mcp",
+           "self-host", "self host", "open-source", "open source", "app", "editor"]
 HEAVY_KW = ["enterprise", "at scale", "kubernetes operator", "data center", "datacenter",
             "gpu cluster", "foundation model training"]
 BUYER = {"agent-infra": "developers building agents / AI product teams",
@@ -29,27 +34,76 @@ WEDGE = {"agent-infra": 'be the hosted / easy version; own "<x> alternative" sea
          "research": "wrap the research into a paid, reliable product",
          "pain-points": "productize the workaround people already cobble together"}
 
-def judge(name, desc, topics, stars, age, vel, forks, dom):
+def _get(url, hdr=None, timeout=15):
+    req = urllib.request.Request(url, headers=hdr or {"User-Agent": "future-scout"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read(), dict(r.headers)
+
+def _count_via_link(url, hdr):
+    """Total items of a paginated endpoint via the Link rel=last page (per_page=1)."""
+    try:
+        u = url + ("&" if "?" in url else "?") + "per_page=1"
+        body, headers = _get(u, hdr)
+        link = headers.get("Link") or headers.get("link") or ""
+        m = re.search(r'[?&]page=(\d+)>;\s*rel="last"', link)
+        if m:
+            return int(m.group(1))
+        return len(json.loads(body))
+    except Exception:
+        return 0
+
+def enrich(full, hdr):
+    contribs = _count_via_link(f"https://api.github.com/repos/{full}/contributors?anon=true", hdr)
+    since = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    commits30 = _count_via_link(f"https://api.github.com/repos/{full}/commits?since={since}", hdr)
+    return contribs, commits30, _npm_downloads_verified(full)
+
+def _npm_downloads_verified(full):
+    """npm weekly downloads, but ONLY if the package's repository points back to THIS repo
+    (kills false name-collision matches like the generic 'eve' package)."""
+    name = full.split("/")[-1]
+    try:
+        meta, _ = _get(f"https://registry.npmjs.org/{urllib.parse.quote(name)}", timeout=8)
+        repo = json.loads(meta).get("repository") or {}
+        repourl = (repo.get("url") if isinstance(repo, dict) else str(repo)) or ""
+        if full.lower() not in repourl.lower():
+            return None                       # different package with the same name — ignore
+        b, _ = _get(f"https://api.npmjs.org/downloads/point/last-week/{name}", timeout=8)
+        n = json.loads(b).get("downloads")
+        return ("npm", n) if n else None
+    except Exception:
+        return None
+
+def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, dom):
     text = f"{name} {desc} {' '.join(topics)}".lower()
     if any(k in text for k in KILL_KW):
         return None
     fork_ratio = forks / max(stars, 1)
-    real_use = forks >= 250 or (forks >= 60 and fork_ratio >= 0.10)   # forks = intent to build on it
+    forks_used = forks >= 250 or (forks >= 60 and fork_ratio >= 0.10)
+    installed = bool(dl and dl[1] >= 1000)
+    maintained = contribs >= 8 or commits30 >= 20
     sc = {
-        "pull":    2 if (stars >= 2000 or real_use) else (1 if (stars >= 500 or forks >= 80) else 0),
+        "pull":    2 if (stars >= 2000 or forks_used or installed) else (1 if (stars >= 500 or forks >= 80) else 0),
         "buyer":   2 if dom in ("agent-infra", "consumer-ai", "edge-ai", "pain-points") else 1,
-        "wedge":   2 if any(k in text for k in TOOL_KW) else 1,            # a small team can own an angle
-        "build":   0 if any(k in text for k in HEAVY_KW) else 2,           # buildable by a small team
-        "durable": 2 if vel >= 300 else (1 if vel >= 80 else 0),           # momentum, not a one-day toy
+        "wedge":   2 if any(k in text for k in TOOL_KW) else 1,
+        "build":   0 if any(k in text for k in HEAVY_KW) else 2,
+        "durable": 2 if (vel >= 300 or maintained) else (1 if (vel >= 80 or contribs >= 3) else 0),
     }
     total = sum(sc.values())
-    reasons = []
-    if sc["pull"] == 2: reasons.append(f"real usage ({stars:,}★ in {age}d)")
-    elif sc["pull"] == 1: reasons.append(f"early traction ({stars:,}★)")
-    if real_use: reasons.append(f"{forks:,} forks ({int(fork_ratio*100)}% of stars) — people building on it, not just starring")
-    if sc["durable"] == 2: reasons.append(f"strong momentum (~{int(vel)}★/day)")
-    if sc["build"] == 2: reasons.append("small team could ship a real version")
-    why = "; ".join(reasons) or f"{stars:,}★, {forks:,} forks, ~{int(vel)}★/day and rising"
+    r = []
+    if dl and dl[1] >= 300:
+        r.append(f"{dl[1]:,}/wk downloads on {dl[0]} — really installed, not just starred")
+    if sc["pull"] == 2 and not installed:
+        r.append(f"real usage ({stars:,}★ in {age}d)")
+    elif sc["pull"] == 1:
+        r.append(f"early traction ({stars:,}★)")
+    if forks_used:
+        r.append(f"{forks:,} forks ({int(fork_ratio*100)}% of stars) — people build on it")
+    if maintained:
+        r.append(f"{contribs} contributors, {commits30} commits/30d — actively maintained")
+    elif sc["durable"] == 2:
+        r.append(f"strong momentum (~{int(vel)}★/day)")
+    why = "; ".join(r) or f"{stars:,}★, {forks:,} forks, ~{int(vel)}★/day"
     return total, why, BUYER.get(dom, "a definable niche willing to pay"), \
         WEDGE.get(dom, "own an underserved niche + comparison-page SEO"), \
         "could be a feature, not a company — check the moat and whether the incumbent just absorbs it"
@@ -64,41 +118,55 @@ def build():
     if tok:
         hdr["Authorization"] = f"Bearer {tok}"
     data = json.loads(S.http_get(url, hdr))
-    out = []
+    # pass 1 — cheap prefilter
+    pre = []
     for it in data.get("items", []):
         desc = (it.get("description") or "").strip()
         stars = it.get("stargazers_count", 0)
         forks = it.get("forks_count", 0)
-        if not desc:
+        if not desc or it["full_name"].split("/")[0].lower() in BIG_VENDORS:
             continue
-        if it["full_name"].split("/")[0].lower() in BIG_VENDORS:
-            continue                                    # vendor-owned = not a startup opening
         try:
-            created = datetime.date.fromisoformat(it["created_at"][:10])
-            age = max(1, (today - created).days)
+            age = max(1, (today - datetime.date.fromisoformat(it["created_at"][:10])).days)
         except Exception:
             continue
         vel = stars / age
         if vel < 15:
             continue
+        it["_age"], it["_vel"], it["_forks"] = age, vel, forks
+        pre.append((stars + forks * 3, it))          # forks weighted in the prelim rank
+    pre.sort(key=lambda x: x[0], reverse=True)
+    # pass 2 — enrich only the top survivors, then judge
+    out = []
+    for _, it in pre[:15]:
+        stars = it.get("stargazers_count", 0)
         topics = it.get("topics", []) or []
-        dom = S.infer_domain(f"{it['full_name']} {desc} {' '.join(topics)}", "agent-infra")
-        j = judge(it["full_name"], desc, topics, stars, age, vel, forks, dom)
+        dom = S.infer_domain(f"{it['full_name']} {(it.get('description') or '')} {' '.join(topics)}", "agent-infra")
+        try:
+            contribs, commits30, dl = enrich(it["full_name"], hdr)
+        except Exception:
+            contribs, commits30, dl = 0, 0, None
+        j = judge(it["full_name"], it.get("description") or "", topics, stars, it["_age"], it["_vel"],
+                  it["_forks"], contribs, commits30, dl, dom)
         if not j:
             continue
         total, why, who, wedge, risk = j
         if total < 7:
             continue
-        out.append({
-            "_score": total,
-            "title": it["full_name"],
-            "claim": f"{it['full_name']} — {desc[:120]}",
-            "score": total, "why_good": why, "who_pays": who, "wedge": wedge, "risk": risk,
-            "evidence": [it["html_url"], f"{stars:,}★", f"{forks:,} forks", f"~{int(round(vel))}★/day", f"created {it['created_at'][:10]}"],
-            "method": "github discovery + startup-worthiness score (heuristic v1)",
-            "domain": dom, "model": "future-scout/github", "operator": "@ourword-ai",
-            "tags": (topics[:5] or []),
-        })
+        ev = [it["html_url"], f"{stars:,}★", f"{it['_forks']:,} forks"]
+        if contribs:
+            ev.append(f"{contribs} contributors")
+        if commits30:
+            ev.append(f"{commits30} commits/30d")
+        if dl:
+            ev.append(f"{dl[1]:,}/wk on {dl[0]}")
+        ev.append(f"created {it['created_at'][:10]}")
+        out.append({"_score": total, "title": it["full_name"],
+                    "claim": f"{it['full_name']} — {(it.get('description') or '')[:120]}",
+                    "score": total, "why_good": why, "who_pays": who, "wedge": wedge, "risk": risk,
+                    "evidence": ev, "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+                    "domain": dom, "model": "future-scout/github", "operator": "@ourword-ai",
+                    "tags": (topics[:5] or [])})
     out.sort(key=lambda f: f["_score"], reverse=True)
     for f in out:
         f.pop("_score", None)
