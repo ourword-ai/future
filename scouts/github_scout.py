@@ -25,7 +25,12 @@ BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "micros
                "stripe", "shopify", "langchain-ai", "run-llama", "llama-index", "huggingface",
                "replicate", "modal-labs", "langgenius", "elastic", "grafana",
                "xiaomimimo", "xiaomi", "mistralai", "cohere", "cohereai", "databricks",
-               "mozilla", "huawei", "intel", "ibm", "salesforce", "snowflakedb"}
+               "mozilla", "huawei", "intel", "ibm", "salesforce", "snowflakedb",
+               # common org-name variants of big vendors that slip past an exact match
+               "tencentcloud", "epicgames", "epic-games", "bytedanceinc", "alibabacloud",
+               "awslabs", "aws-samples", "googleapis", "googlecloudplatform", "google-gemini",
+               "azure", "azure-samples", "microsoftgraph", "nvidia-ai", "huaweicloud",
+               "google-labs", "google-labs-code", "googlelabs", "meta-llama", "amazon-science"}
 TOOL_KW = ["cli", "sdk", "api", "framework", "library", "tool", "runtime", "engine", "mcp",
            "self-host", "self host", "open-source", "open source", "app", "editor"]
 HEAVY_KW = ["enterprise", "at scale", "kubernetes operator", "data center", "datacenter",
