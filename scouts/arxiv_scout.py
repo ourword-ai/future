@@ -1,47 +1,95 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""arxiv-scout — fresh, builder-relevant AI research (cs.AI/LG/CL, last submissions)."""
-import json
+"""arxiv-scout — very recent papers that could be PRODUCTIZED into a startup.
+
+A paper is not a company. So the bar here is deliberately hard: we keep a paper ONLY
+if (a) it ships released code (github / 'code available') — i.e. reproducible today,
+not a promise — and (b) it presents a concrete system/tool/benchmark, not pure theory.
+That combination is exactly what lets a small team turn a method into a product before
+the teams who can't reproduce it. Same idea model (what / why-good / value / risk)."""
+import re, datetime
 import xml.etree.ElementTree as ET
 import scout_lib as S
 
-SIGNAL = ["agent", "llm", "language model", "on-device", "on device", "edge", "inference",
-          "efficient", "retrieval", "rag", "multimodal", "reasoning", "code generation",
-          "fine-tun", "distill", "quantiz", "diffusion", "robot", "tool-use", "tool use",
-          "planning", "memory", "long-context", "long context"]
+ATOM = "{http://www.w3.org/2005/Atom}"
+CATS = ["cs.AI", "cs.CL", "cs.LG", "cs.CV", "cs.SE", "cs.HC"]
+APPLIED = ["system", "framework", "toolkit", "pipeline", "agent", "benchmark", "dataset",
+           "library", "engine", "we build", "we present", "we introduce", "end-to-end",
+           "real-time", "deploy", "production", "tool", "assistant"]
+THEORY_ONLY = ["we prove", "theorem", "lower bound", "upper bound", "regret bound",
+               "convergence rate", "pac-bayes", "generalization bound"]
+GH_RE = re.compile(r"https?://github\.com/[\w.\-]+/[\w.\-]+")
+CODE_KW = ["code is available", "code available", "we release", "we open-source",
+           "we open source", "open-sourced", "our code", "code and models",
+           "publicly available at", "code:", "project page"]
+
+def _txt(node):
+    return re.sub(r"\s+", " ", (node.text or "")).strip() if node is not None else ""
 
 def build():
-    url = ("https://export.arxiv.org/api/query?search_query="
-           "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
-           "&sortBy=submittedDate&sortOrder=descending&max_results=50")
-    xml = S.http_get(url, retries=5)   # arxiv rate-limits cloud IPs; back off harder
-    ns = {"a": "http://www.w3.org/2005/Atom"}
+    q = "+OR+".join(f"cat:{c}" for c in CATS)
+    url = (f"https://export.arxiv.org/api/query?search_query={q}"
+           "&sortBy=submittedDate&sortOrder=descending&max_results=120")
+    xml = S.http_get(url, {"Accept": "application/atom+xml"}, retries=5)  # arxiv rate-limits cloud IPs
     root = ET.fromstring(xml)
+    today = datetime.date.today()
     out = []
-    for e in root.findall("a:entry", ns):
-        title = " ".join((e.findtext("a:title", "", ns) or "").split())
-        summ = " ".join((e.findtext("a:summary", "", ns) or "").split())
-        link = (e.findtext("a:id", "", ns) or "").strip()
-        pub = (e.findtext("a:published", "", ns) or "")[:10]
-        cat_el = e.find("a:category", ns)
-        cat = cat_el.get("term") if cat_el is not None else "cs.AI"
-        blob = (title + " " + summ).lower()
-        if not title or not link:
+    for e in root.findall(f"{ATOM}entry"):
+        title = _txt(e.find(f"{ATOM}title"))
+        summ = _txt(e.find(f"{ATOM}summary"))
+        absurl = _txt(e.find(f"{ATOM}id"))
+        pub = _txt(e.find(f"{ATOM}published"))[:10]
+        if not title or not summ:
             continue
-        if not any(k in blob for k in SIGNAL):
-            continue  # keep only builder-relevant papers
-        # one-line "why": first sentence of abstract, trimmed
-        why = summ.split(". ")[0][:150]
+        blob = (title + " " + summ).lower()
+        gh = GH_RE.search(summ)
+        code_released = bool(gh) or any(k in blob for k in CODE_KW)
+        if not code_released:
+            continue                         # hard gate: no reproducible code -> not productizable yet
+        if not any(k in blob for k in APPLIED):
+            continue                         # must be a concrete system/tool, not pure method
+        if any(k in blob for k in THEORY_ONLY) and not gh:
+            continue                         # theory paper with only a hand-wave to code -> skip
+        try:
+            age = (today - datetime.date.fromisoformat(pub)).days
+        except Exception:
+            age = 999
+        if age > 30:
+            continue                         # keep the board fresh
+        dom = S.infer_domain(blob, "research")
+        sc = {
+            "code":     2,                                   # passed the gate
+            "applied":  2,
+            "recency":  2 if age <= 10 else (1 if age <= 30 else 0),
+            "concrete": 2 if gh else 1,                      # a real repo beats a vague "available soon"
+            "buyer":    2 if dom in ("agent-infra", "edge-ai", "consumer-ai") else 1,
+        }
+        score = sum(sc.values())
+        if score < 7:
+            continue
+        ev = [absurl]
+        if gh:
+            ev.append(gh.group(0))
+        ev += [f"submitted {pub}", "arXiv " + "/".join(CATS[:4])]
         out.append({
-            "claim": f"New arXiv ({cat}): {title[:130]}",
-            "evidence": [link, f"submitted: {pub}", f"category: {cat}"],
-            "method": "arxiv_api cat:cs.AI/LG/CL sortBy=submittedDate",
-            "domain": "research",
-            "confidence": 0.5,
-            "model": "future-scout/arxiv",
-            "operator": "@ourword-ai",
-            "tags": ["arxiv", cat, "why:" + why[:60]],
-        })
+            "_score": score, "_age": age,
+            "title": re.sub(r"\s*\(.*?\)\s*$", "", title)[:120],
+            "claim": f"Productizable research: {title[:150]}",
+            "score": score,
+            "why_good": ((f"Ships released code ({gh.group(0)}) — reproducible today, "
+                          "so a team can productize the method now instead of re-deriving it.")
+                         if gh else
+                         "Authors released code, so the method is reproducible today rather than a promise."),
+            "value": "first to productize the method captures the teams who can't reproduce it themselves.",
+            "risk": ("research-stage: no users yet, and the method may not survive contact with "
+                     "real-world data — or a well-funded incumbent ships it first."),
+            "evidence": ev,
+            "method": "arxiv recent (<=30d), gated on released code + concrete-system shape",
+            "domain": dom, "model": "future-scout/arxiv",
+            "operator": "@ourword-ai", "tags": ["arxiv", "research-to-product"]})
+    out.sort(key=lambda f: (f["_score"], -f["_age"]), reverse=True)
+    for f in out:
+        f.pop("_score", None); f.pop("_age", None)
     return out
 
 if __name__ == "__main__":
@@ -49,5 +97,5 @@ if __name__ == "__main__":
         cands = build()
     except Exception as e:
         print(f"[arxiv-scout] source unavailable, skipping: {e!r}"); cands = []
-    posted = S.emit(cands, "arxiv-scout", cap=2)
+    posted = S.post_ideas(cands, "arxiv-scout", cap=4)
     print(json.dumps({"scout": "arxiv-scout", "posted": len(posted)}))
