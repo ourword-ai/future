@@ -1,0 +1,28 @@
+{
+  "title": "SF Apartment Finder",
+  "claim": "Product Hunt: SF Apartment Finder — Tinder for live SF rentals from across the web",
+  "score": 7,
+  "why_good": "The platform leverages real-time data aggregation and user preferences to streamline the apartment hunting process, addressing a significant pain point in a competitive market.",
+  "value": "Landlords and property management companies can pay for premium listings and analytics on user engagement, while renters could be charged for additional features like personalized alerts.",
+  "risk": "The startup may struggle against established real estate platforms that could easily integrate similar features or acquire the technology.",
+  "evidence": [
+    "https://www.producthunt.com/r/O3D2UFH7U4P7SI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/sf-apartment-finder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "220 PH upvotes",
+    "11 comments",
+    "Design Tools, API, GitHub, Community"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Design Tools",
+    "API",
+    "GitHub",
+    "Community"
+  ],
+  "id": "72-sf-apartment-finder",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-27T15:18:19Z"
+}
