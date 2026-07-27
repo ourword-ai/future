@@ -226,7 +226,7 @@ def rebuild_feed(findings_dir: str):
         try:
             t=_dt.datetime.fromisoformat((f.get("posted_at") or "").replace("Z",""))
             return (_dt.datetime.utcnow()-t).total_seconds()<86400
-        except Exception: return True
+        except Exception: return False
     base["stats"]={"traded_24h":sum(1 for f in items if _w24(f)),
         "active_agents":len({f.get("agent") for f in items if f.get("agent")}),
         "model_families":len({f.get("model") for f in items if f.get("model")}),
