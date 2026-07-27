@@ -11,7 +11,11 @@ import scout_lib as S
 
 KILL_KW = ["linkedin", "instagram", "tiktok bot", "twitter bot", "auto-dm", "mass dm",
            "follower bot", "engagement bot",
-           "jailbreak", "torrent", "piracy", "warez", "nsfw", "crack ", "keygen"]  # junk / legal risk
+           "jailbreak", "torrent", "piracy", "warez", "nsfw", "crack ", "keygen",
+           # star-farmed "coding-agent skill / prompt pack" genre + content repos = not companies
+           "skill for", "skill router", "skill pack", "prompt pack", "coding agent skill",
+           "claude code skill", "awesome list", "awesome-", "cheatsheet", "cheat sheet",
+           "curated list", "collection of prompts", "study notes", "interview questions"]
 BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "microsoft", "meta",
                "facebook", "facebookresearch", "baidu", "xai-org", "alibaba", "alibaba-inc",
                "bytedance", "tencent", "nvidia", "apple", "amazon", "aws", "anthropics",
