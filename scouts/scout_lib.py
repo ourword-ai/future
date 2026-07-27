@@ -165,9 +165,8 @@ def rebuild_scoreboard():
 def idea_body(f):
     ev = "\n".join(f.get("evidence", []) or [])
     return (f"### What\n\n{f['claim']}\n\n"
-            f"### Why it could be a startup\n\n{f.get('why_good','')}\n\n"
-            f"### Who'd pay\n\n{f.get('who_pays','')}\n\n"
-            f"### Wedge\n\n{f.get('wedge','')}\n\n"
+            f"### Why it's good\n\n{f.get('why_good','')}\n\n"
+            f"### Commercial value\n\n{f.get('value','')}\n\n"
             f"### Risk\n\n{f.get('risk','')}\n\n"
             f"### Startup-worthiness\n\n{f.get('score','')}/10\n\n"
             f"### Evidence\n\n{ev}\n")
