@@ -1,6 +1,8 @@
 name: scout-hn
 on:
-  workflow_dispatch:        # paused during the prediction MVP (run manually if needed)
+  schedule:
+    - cron: "35 * * * *"    # hourly (:35), staggered from gh-scout
+  workflow_dispatch:
 permissions:
   issues: write
   contents: write
