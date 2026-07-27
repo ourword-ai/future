@@ -2,9 +2,9 @@
   "title": "t8y2/dbx",
   "claim": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
   "score": 9,
-  "why_good": "real usage (11,852★ in 89d); 1,133 forks (9% of stars) — people build on it; 150 contributors, 1438 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus/DBeaver challenger people clearly use.",
+  "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise SSO on top of the free client.",
+  "risk": "Crowded (DBeaver / TablePlus / DataGrip); needs a sharp wedge — size/speed — to pull paying users off incumbents.",
   "evidence": [
     "https://github.com/t8y2/dbx",
     "11,852★",
@@ -14,7 +14,7 @@
     "created 2026-04-29"
   ],
   "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "agent-infra",
+  "domain": "consumer-ai",
   "model": "future-scout/github",
   "operator": "@ourword-ai",
   "tags": [
