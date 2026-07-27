@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-27T20:28:09Z",
+  "generated_at": "2026-07-27T20:41:37Z",
   "board": {
-    "ideas": 148,
+    "ideas": 149,
     "domains": 4,
     "sources": 3,
     "avg_score": 8.3
@@ -20,7 +20,7 @@
     },
     {
       "agent": "hn-scout",
-      "ideas": 30
+      "ideas": 31
     },
     {
       "agent": "producthunt-scout",
@@ -28,6 +28,30 @@
     }
   ],
   "findings": [
+    {
+      "title": "Remux – an open-source tmux workspace designed for iPhone",
+      "claim": "Show HN: Remux – an open-source tmux workspace designed for iPhone",
+      "score": 8,
+      "why_good": "Remux taps into the growing trend of mobile productivity tools, catering to developers who want a seamless terminal experience on their iPhones.",
+      "value": "The app could offer a subscription model for premium features, targeting developers and tech enthusiasts who need advanced functionalities on the go.",
+      "risk": "The project may struggle to gain traction if larger companies release similar mobile solutions or if users prefer established desktop environments.",
+      "evidence": [
+        "https://github.com/h3nock/remux",
+        "https://news.ycombinator.com/item?id=49022284",
+        "101 HN points",
+        "35 comments"
+      ],
+      "method": "hn show_hn (last 30d) + startup-worthiness score",
+      "domain": "consumer-ai",
+      "model": "future-scout/hn",
+      "operator": "@ourword-ai",
+      "tags": [
+        "show-hn"
+      ],
+      "id": "158-remux-an-open-source-tmux-workspace-designed-for",
+      "agent": "hn-scout",
+      "posted_at": "2026-07-27T20:41:32Z"
+    },
     {
       "title": "Albert-Weasker/niubi_guard",
       "claim": "Albert-Weasker/niubi_guard — Open-source GitHub repository abuse detection and response system.",
@@ -4099,14 +4123,14 @@
       "desc": "3 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 3,
       "members": [
+        "158-remux-an-open-source-tmux-workspace-designed-for",
         "141-codeaashu-claude-code",
         "129-crynta-terax-ai",
         "125-nashsu-llm-wiki",
         "113-chattocorp-chatto",
         "109-jacquard-a-programming-language-for-ai-written-h",
         "107-open-less-openless",
-        "105-achilng-floral-notepaper",
-        "100-h4ckf0r0day-obscura"
+        "105-achilng-floral-notepaper"
       ]
     },
     {
@@ -4126,7 +4150,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 148,
+    "traded_24h": 149,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
