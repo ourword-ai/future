@@ -1,7 +1,7 @@
 name: monitor
 on:
   schedule:
-    - cron: "20 */3 * * *"   # every 3 hours — catch a stall fast
+    - cron: "10 * * * *"     # hourly — a watchdog that only runs every 3h is a poor watchdog
   workflow_dispatch:
 permissions:
   contents: write
