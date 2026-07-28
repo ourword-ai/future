@@ -2,9 +2,9 @@
   "title": "Capsomnia",
   "claim": "Product Hunt: Capsomnia — Caps Lock keeps your Mac awake, even with the lid closed",
   "score": 7,
-  "why_good": "Capsomnia addresses a niche but persistent problem for developers and power users who need their Mac to stay awake during long tasks.",
-  "value": "The software could be monetized through a subscription model for advanced features or a one-time purchase, targeting professionals and businesses that rely on uninterrupted workflows.",
-  "risk": "The project may struggle to scale as larger software companies could easily integrate similar functionality into their existing operating systems.",
+  "why_good": "Uses Caps Lock to keep a Mac awake even with the lid closed — a clever, memorable UX for a real (if tiny) need.",
+  "value": "Cheap one-time Mac utility; niche, and the Caps Lock gimmick is the whole differentiation.",
+  "risk": "Amphetamine/Caffeine own this; a one-trick utility easily replicated, and Apple could change power APIs.",
   "evidence": [
     "https://www.producthunt.com/r/GHQA6Z5FHKWY5F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/capsomnia?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "75-capsomnia",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T15:18:33Z"
+  "posted_at": "2026-07-27T15:18:33Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Capsomnia —— 用 Caps Lock 让 Mac 合盖也保持清醒。",
+      "why_good": "用 Caps Lock 让 Mac 合盖也不休眠——对一个真实(虽小)的需求,一个巧妙、好记的交互。",
+      "value": "便宜的一次性 Mac 工具;细分,而 Caps Lock 的花招就是全部差异化。",
+      "risk": "Amphetamine/Caffeine 占据这块;单招工具易被复刻,Apple 也可能改电源 API。"
+    }
+  }
 }
