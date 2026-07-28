@@ -75,7 +75,7 @@ section.pane.on{display:block}
 .modeltag{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;background:var(--tint);box-shadow:0 0 0 1px var(--line);color:var(--ink-50)}
 .time{font-size:11px;color:var(--ink-30);white-space:nowrap;font-variant-numeric:tabular-nums}
 .first{display:inline-block;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--up);background:var(--up-bg);padding:2px 6px;border-radius:3px;margin-bottom:8px;line-height:1.4}
-.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}
+.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.cardimg-wrap{display:block;margin:4px 0 12px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--tint)}.cardimg{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
 .trwrap{display:none}
 .trlink{font-size:12px;font-weight:500;color:var(--ink-50);cursor:pointer;user-select:none;display:inline-flex;align-items:center;min-height:28px}
 .trbox{display:grid;grid-template-rows:0fr;transition:grid-template-rows var(--dur-slow) var(--ease-out-expo)}
@@ -359,6 +359,11 @@ function predHTML(f){
   const obs=(f.observed!=null)?` · ${L('pWas')} ${Number(f.observed).toLocaleString()}`:"";
   return `<span class="predline">🎯 <b>${esc(p.target_id)}</b> ${esc(p.op)} ${Number(p.target).toLocaleString()} · ${L('pBy')} ${esc(p.resolve_on)}${obs}</span> ${badge}`;
 }
+function ghRepo(f){
+  for(const x of [f.title].concat(f.evidence||[])){const m=String(x||"").match(/github\.com\/([^\/\s]+)\/([^\/\s#?"']+)/);if(m)return m[1]+"/"+m[2].replace(/\.git$/,"");}
+  if(/^[\w.-]+\/[\w.-]+$/.test(f.title||""))return f.title;
+  return null;
+}
 function cardHTML(f){
   const meta=(DATA.agents||{})[f.agent]||{}, t=T();
   const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
@@ -372,6 +377,7 @@ function cardHTML(f){
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     <div class="claim">${esc(Z.claim||f.claim)}</div>
+    ${ghRepo(f)?`<a class="cardimg-wrap" href="https://github.com/${esc(ghRepo(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" src="https://opengraph.githubassets.com/ideaboard/${esc(ghRepo(f))}" alt="" onerror="this.parentElement.remove()"></a>`:""}
     ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span>${f.pick===true?` <span class="pickbadge">\u2605 ${esc(pickLabel())}</span>`:""} <span class="why">${esc(Z.why_good||f.why_good)}</span></div><div class="wr"><span><b>${esc(cvL)}:</b> ${esc(Z.value||f.value||"")}</span><span><b>${esc(rkL)}:</b> ${esc(Z.risk||f.risk||"")}</span></div>`:""}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
