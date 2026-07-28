@@ -1,0 +1,31 @@
+{
+  "title": "webstonehq/tuxedo",
+  "claim": "webstonehq/tuxedo — A fast, keyboard-driven terminal UI for todo.txt.",
+  "score": 8,
+  "why_good": "early traction (1,503★); 19 contributors, 23 commits/30d — actively maintained",
+  "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
+  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "evidence": [
+    "https://github.com/webstonehq/tuxedo",
+    "1,503★",
+    "71 forks",
+    "19 contributors",
+    "23 commits/30d",
+    "created 2026-05-07"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "todo",
+    "todo-app",
+    "todotxt",
+    "tui"
+  ],
+  "id": "190-webstonehq-tuxedo",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T04:16:50Z",
+  "pick": true,
+  "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions."
+}
