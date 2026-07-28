@@ -2198,9 +2198,9 @@
       "title": "tastyeffectco/sandboxd",
       "claim": "tastyeffectco/sandboxd — Open-source, self-hosted AI app builder — an agent builds real apps in isolated sandboxes on your own server, each live ",
       "score": 8,
-      "why_good": "The ability to build and test AI applications in isolated environments can significantly reduce deployment risks for enterprises.",
-      "value": "Businesses could pay for premium support, hosting options, and additional features, creating a subscription-based revenue model.",
-      "risk": "If larger cloud providers integrate similar functionalities, they could overshadow this solution, limiting its market viability.",
+      "why_good": "An open, self-hosted 'agent builds real apps in isolated sandboxes' platform — the safe execution layer that makes agent-built software actually runnable.",
+      "value": "Sell hosted sandboxes + a team tier to devs who want agent-built apps without wiring their own isolation/infra.",
+      "risk": "Vercel/Replit/E2B are racing on agent sandboxes; self-host appeals to some, but the hosted incumbents move fast.",
       "evidence": [
         "https://github.com/tastyeffectco/sandboxd",
         "866★",
@@ -2224,15 +2224,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:31Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product for enterprises to build and test AI applications securely, which can be monetized."
+      "pick_reason": "The project offers a clear product for enterprises to build and test AI applications securely, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "tastyeffectco/sandboxd —— 开源、可自托管的 AI 应用构建器:agent 在你自己机器的隔离沙箱里真正构建应用。",
+          "why_good": "一个开源、可自托管的 agent 在隔离沙箱里造真实应用 平台——让 agent 造的软件真能跑起来的安全执行层。",
+          "value": "给想要 agent 造 app、又不想自己搭隔离/基础设施的开发者卖托管沙箱 + 团队版。",
+          "risk": "Vercel/Replit/E2B 都在抢 agent 沙箱;自托管对部分人有吸引力,但托管巨头跑得快。"
+        }
+      }
     },
     {
       "title": "cosmtrek/mindwalk",
       "claim": "cosmtrek/mindwalk — A visualization tool that replays coding-agent sessions on a 3D map of your codebase.",
       "score": 8,
-      "why_good": "This tool addresses the complex problem of understanding large codebases by providing a visual representation that can enhance collaboration and onboarding.",
-      "value": "Software development teams and companies could pay for premium features or subscriptions that offer enhanced visualization, analytics, and integration with existing tools.",
-      "risk": "The project may struggle to gain traction if larger players in the developer tools space introduce similar features or if it fails to scale beyond a niche audience.",
+      "why_good": "Replays coding-agent sessions on a 3D map of your codebase — a genuinely novel way to see, review and debug what an agent actually did.",
+      "value": "Team tier for eng orgs that must review/audit agent work at scale; observability is a real budget as agents write more code.",
+      "risk": "'3D visualization' can be eye-candy; it must prove it beats plain diffs/logs for real review workflows.",
       "evidence": [
         "https://github.com/cosmtrek/mindwalk",
         "938★",
@@ -2250,15 +2258,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:26Z",
       "pick": true,
-      "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding."
+      "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding.",
+      "i18n": {
+        "zh": {
+          "claim": "cosmtrek/mindwalk —— 把编码 agent 的会话回放在你代码库的 3D 地图上的可视化工具。",
+          "why_good": "把编码 agent 的会话回放在代码库的 3D 地图上——一种真正新颖、看清并调试 agent 到底干了啥 的方式。",
+          "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
+          "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
+        }
+      }
     },
     {
       "title": "nethical6/conversation-steganography",
       "claim": "nethical6/conversation-steganography — Use LLMs to hide messages inside normal looking conversations",
       "score": 8,
-      "why_good": "This project addresses the growing need for secure communication methods in an era of increasing surveillance and data privacy concerns.",
-      "value": "Businesses and individuals seeking secure messaging solutions could pay for premium features, such as enhanced encryption and user analytics.",
-      "risk": "The technology may face competition from established secure messaging apps that could easily integrate similar features.",
+      "why_good": "Uses LLMs to hide secret messages inside normal-looking chat — clever research, but a steganography/evasion tool, not a product.",
+      "value": "No legitimate business; the use cases (covert channels) are mostly abuse or evasion.",
+      "risk": "Grey-area (evasion/covert comms); interesting tech, but not investable and easily misused.",
       "evidence": [
         "https://github.com/nethical6/conversation-steganography",
         "1,142★",
@@ -2279,15 +2295,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:22Z",
       "pick": true,
-      "pick_reason": "The project offers a unique product for secure communication that can be monetized."
+      "pick_reason": "The project offers a unique product for secure communication that can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "nethical6/conversation-steganography —— 用 LLM 把消息藏在看起来正常的对话里。",
+          "why_good": "用 LLM 把秘密消息藏进正常聊天——巧妙的研究,但它是隐写/规避工具,不是产品。",
+          "value": "没有正当生意;用途(隐蔽信道)多为滥用或规避。",
+          "risk": "灰色地带(规避/隐蔽通信);技术有意思,但不可投资且易被滥用。"
+        }
+      }
     },
     {
       "title": "YTwsy/OpenSurge-for-Mac",
       "claim": "YTwsy/OpenSurge-for-Mac — Surge-style whole-home gateway and control plane for macOS — mihomo TUN, dnsmasq-powered DHCP/DNS, per-device routing, a",
       "score": 8,
-      "why_good": "The project addresses a niche market of macOS users seeking advanced network management features typically found in enterprise solutions.",
-      "value": "Consumers and small businesses could pay for premium features or subscriptions, while potential partnerships with ISPs for bundled services could create additional revenue streams.",
-      "risk": "The project may struggle to scale as larger networking companies could easily integrate similar features into their existing products.",
+      "why_good": "A Surge-style whole-home network gateway + control plane for macOS (mihomo TUN, DHCP/DNS) — turns a Mac into a prosumer router/firewall.",
+      "value": "Prosumer one-time/pro license for power users and homelabbers, the way Surge itself monetizes.",
+      "risk": "Niche prosumer networking; Surge/Clash ecosystems exist, and this leans on grey-area proxy tooling.",
       "evidence": [
         "https://github.com/YTwsy/OpenSurge-for-Mac",
         "1,250★",
@@ -2311,15 +2335,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:18Z",
       "pick": true,
-      "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized."
+      "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "YTwsy/OpenSurge-for-Mac —— macOS 上 Surge 风格的全屋网关与控制面板:mihomo TUN、dnsmasq 驱动的 DHCP/DNS。",
+          "why_good": "给 macOS 的 Surge 风格全屋网络网关 + 控制面板——把 Mac 变成发烧友级路由/防火墙。",
+          "value": "给发烧友和 homelab 用户卖一次性/专业授权,像 Surge 那样变现。",
+          "risk": "发烧友网络细分;Surge/Clash 生态已在,而且它依赖灰色地带的代理工具。"
+        }
+      }
     },
     {
       "title": "Gitlawb/zero",
       "claim": "Gitlawb/zero — The coding agent that answers to you, your model, your machine, your rules.",
       "score": 8,
-      "why_good": "It leverages customizable AI agents that can adapt to specific coding environments, addressing unique developer needs.",
-      "value": "Companies could pay for premium support and customization services, as well as subscription fees for advanced features.",
-      "risk": "The technology could be rendered obsolete if larger platforms integrate similar capabilities into their existing tools.",
+      "why_good": "A 'your model, your machine, your rules' coding agent pitched on control/privacy — but the differentiation stays at the slogan level.",
+      "value": "No clear paid wedge yet; a 'sovereign coding agent' needs a concrete reason teams switch and pay.",
+      "risk": "Undifferentiated in a saturated coding-agent field; more manifesto than product so far.",
       "evidence": [
         "https://github.com/Gitlawb/zero",
         "1,178★",
@@ -2343,15 +2375,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:15Z",
       "pick": true,
-      "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers."
+      "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers.",
+      "i18n": {
+        "zh": {
+          "claim": "Gitlawb/zero —— 只听你的编码 agent:你的模型、你的机器、你的规则。",
+          "why_good": "一个主打控制/隐私的 你的模型、你的机器、你的规则 编码 agent——但差异化停在口号层面。",
+          "value": "还没有清晰的付费切口;主权编码 agent 需要一个团队愿意迁移并付费的具体理由。",
+          "risk": "在饱和的编码 agent 里没差异;目前更像宣言而非产品。"
+        }
+      }
     },
     {
       "title": "devenjarvis/lathe",
       "claim": "devenjarvis/lathe — Generate hands-on, multi-part technical tutorials on demand, with LLM skills tuned to make content approachable. Then yo",
       "score": 8,
-      "why_good": "The ability to create tailored, hands-on tutorials addresses a gap in personalized learning experiences, appealing to diverse skill levels.",
-      "value": "Businesses and educational institutions could pay for subscription access to generate custom tutorials for training and onboarding purposes.",
-      "risk": "The project may struggle to scale if larger educational platforms or content creation tools integrate similar capabilities.",
+      "why_good": "Generates hands-on, multi-part technical tutorials on demand — teaching-by-doing is where generic chat tools are weakest, a real content gap.",
+      "value": "Sell to devrel teams, courseware and platforms that need scalable, hands-on tutorials; subscription or per-course.",
+      "risk": "AI-generated tutorials risk quality/accuracy issues, and generic models + edu platforms can close the gap.",
       "evidence": [
         "https://github.com/devenjarvis/lathe",
         "1,599★",
@@ -2369,15 +2409,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:10Z",
       "pick": false,
-      "pick_reason": "The project is too vague and resembles a content generation tool without a clear monetizable product."
+      "pick_reason": "The project is too vague and resembles a content generation tool without a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "devenjarvis/lathe —— 按需生成动手式、多章节的技术教程,LLM 技能针对易懂性调优。",
+          "why_good": "按需生成动手式、多章节技术教程——边做边学正是通用聊天工具最弱的地方,一个真实的内容缺口。",
+          "value": "卖给 devrel 团队、课程平台等需要可规模化动手教程的人;订阅或按课程。",
+          "risk": "AI 生成教程有质量/准确性风险,而通用模型 + 教育平台能补上这个缺口。"
+        }
+      }
     },
     {
       "title": "Kianmhz/GooseRelayVPN",
       "claim": "Kianmhz/GooseRelayVPN — SOCKS5 VPN that tunnels raw TCP through Google Apps Script to a VPS exit server, with end-to-end AES-256-GCM and domain-",
       "score": 8,
-      "why_good": "The use of Google Apps Script for tunneling provides a unique way to bypass traditional VPN restrictions, making it appealing for users in restrictive environments.",
-      "value": "Businesses and individuals seeking secure, uncensored internet access would pay for subscription plans, especially in regions with heavy internet censorship.",
-      "risk": "The project may struggle to scale as a business if larger VPN providers integrate similar features or if Google restricts the use of their Apps Script for such purposes.",
+      "why_good": "A SOCKS5 tunnel routed through Google Apps Script — a clever censorship-circumvention hack, but it abuses Google's platform.",
+      "value": "No legitimate business; it depends on abusing a free Google service that will block it.",
+      "risk": "ToS-violating and fragile; Google will shut the vector, and it's a hack, not a company.",
       "evidence": [
         "https://github.com/Kianmhz/GooseRelayVPN",
         "1,416★",
@@ -2400,15 +2448,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:06Z",
       "pick": true,
-      "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments."
+      "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments.",
+      "i18n": {
+        "zh": {
+          "claim": "Kianmhz/GooseRelayVPN —— 通过 Google Apps Script 把原始 TCP 隧道到 VPS 出口的 SOCKS5 VPN,端到端 AES。",
+          "why_good": "一个借道 Google Apps Script 的 SOCKS5 隧道——巧妙的翻墙 hack,但它滥用了 Google 平台。",
+          "value": "没有正当生意;它依赖滥用一个会封杀它的免费 Google 服务。",
+          "risk": "违反 ToS 且脆弱;Google 会封掉这个通道,而且它是 hack 不是公司。"
+        }
+      }
     },
     {
       "title": "maaslalani/sheets",
       "claim": "maaslalani/sheets — Terminal based spreadsheet tool",
       "score": 8,
-      "why_good": "Terminal-based tools are gaining traction among developers who prefer lightweight, distraction-free environments for data manipulation.",
-      "value": "Businesses could pay for premium features or integrations, targeting data analysts and developers who need efficient data processing without a GUI.",
-      "risk": "The project may struggle to scale as a company if it cannot compete against established spreadsheet software with extensive ecosystems.",
+      "why_good": "A terminal-based spreadsheet from a respected TUI author — delightful for CLI-native users, but a small, single-purpose tool.",
+      "value": "Hard to charge for; a beloved free TUI, at most a pro/cloud-sync tier for terminal power-users.",
+      "risk": "Tiny niche, low willingness to pay; spreadsheets in the terminal stay a hobbyist pleasure, not a market.",
       "evidence": [
         "https://github.com/maaslalani/sheets",
         "2,289★",
@@ -2426,15 +2482,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:20:01Z",
       "pick": true,
-      "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases."
+      "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases.",
+      "i18n": {
+        "zh": {
+          "claim": "maaslalani/sheets —— 基于终端的电子表格工具。",
+          "why_good": "出自受尊敬的 TUI 作者的终端电子表格——CLI 原生用户会喜欢,但是个小、单一用途的工具。",
+          "value": "很难收费;一个受喜爱的免费 TUI,顶多给终端重度用户做专业/云同步档。",
+          "risk": "细分极小、付费意愿低;终端里的电子表格是发烧友的乐趣,不是市场。"
+        }
+      }
     },
     {
       "title": "chattocorp/chatto",
       "claim": "chattocorp/chatto — A fully-featured team and group chat application that you can easily selfhost.",
       "score": 8,
-      "why_good": "The self-hosting capability addresses growing privacy concerns among organizations, making it appealing for businesses wary of data breaches.",
-      "value": "Companies could pay for premium features, support, and hosting services, creating a subscription model for ongoing revenue.",
-      "risk": "The market is saturated with established players like Slack and Microsoft Teams, which could easily integrate similar features.",
+      "why_good": "A full-featured, easily self-hosted team chat — the open Slack/Mattermost lane for orgs that want to own their data.",
+      "value": "Hosting + enterprise (SSO, compliance, support) to privacy/sovereignty-minded teams, the Mattermost/Rocket.Chat playbook.",
+      "risk": "Slack/Teams own distribution and Mattermost/Rocket.Chat already occupy open self-host; hard to pull teams over.",
       "evidence": [
         "https://github.com/chattocorp/chatto",
         "2,362★",
@@ -2458,15 +2522,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:19:58Z",
       "pick": true,
-      "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services."
+      "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services.",
+      "i18n": {
+        "zh": {
+          "claim": "chattocorp/chatto —— 功能齐全、易自托管的团队与群组聊天应用。",
+          "why_good": "一个功能齐全、易自托管的团队聊天——面向想掌控自己数据的组织的开源 Slack/Mattermost 赛道。",
+          "value": "给注重隐私/数据主权的团队卖托管 + 企业版(SSO、合规、支持),Mattermost/Rocket.Chat 的打法。",
+          "risk": "Slack/Teams 掌握分发,Mattermost/Rocket.Chat 已占开源自托管;很难把团队撬过来。"
+        }
+      }
     },
     {
       "title": "kunchenguid/no-mistakes",
       "claim": "kunchenguid/no-mistakes — git push no-mistakes",
       "score": 8,
-      "why_good": "The project addresses a common pain point in development workflows by reducing errors during git operations, which can save time and resources for teams.",
-      "value": "Development teams and companies could pay for a premium version that integrates with existing CI/CD tools, offering analytics and error tracking.",
-      "risk": "If larger version control platforms implement similar features, this project may struggle to compete or differentiate itself.",
+      "why_good": "A tiny 'git push without mistakes' helper — a cute one-liner utility, not a product.",
+      "value": "No monetization; it's a convenience script.",
+      "risk": "Trivial scope, zero moat; a gist, not a company.",
       "evidence": [
         "https://github.com/kunchenguid/no-mistakes",
         "7,122★",
@@ -2484,7 +2556,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:19:49Z",
       "pick": true,
-      "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams."
+      "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams.",
+      "i18n": {
+        "zh": {
+          "claim": "kunchenguid/no-mistakes —— git push 不出错。",
+          "why_good": "一个很小的 push 不出错 小助手——可爱的单行工具,不是产品。",
+          "value": "没有变现;它是个便利脚本。",
+          "risk": "范围极小、零护城河;是个 gist,不是公司。"
+        }
+      }
     },
     {
       "title": "esengine/DeepSeek-Reasonix",
@@ -2554,9 +2634,9 @@
       "title": "nubjs/nub",
       "claim": "nubjs/nub — The fast all-in-one Node.js toolkit",
       "score": 8,
-      "why_good": "Nub provides a comprehensive toolkit that simplifies the development process for Node.js applications, appealing to both new and experienced developers.",
-      "value": "Companies can subscribe to premium features or support services, while also potentially monetizing through partnerships with educational platforms for training courses.",
-      "risk": "The project may struggle to gain traction if larger frameworks or toolkits integrate similar features, overshadowing nub's unique offerings.",
+      "why_good": "A fast all-in-one Node.js toolkit — bundles the fragmented JS tooling story, riding the Bun-style 'one tool' appeal.",
+      "value": "Runtimes/toolkits monetize indirectly (cloud/enterprise); the wedge is speed + a unified DX.",
+      "risk": "Bun already owns 'fast all-in-one JS'; a newcomer needs a dramatic edge to matter.",
       "evidence": [
         "https://github.com/nubjs/nub",
         "3,427★",
@@ -2580,15 +2660,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:28:01Z",
       "pick": true,
-      "pick_reason": "Nub offers a clear product that simplifies Node.js development, which can be monetized through subscriptions or licensing."
+      "pick_reason": "Nub offers a clear product that simplifies Node.js development, which can be monetized through subscriptions or licensing.",
+      "i18n": {
+        "zh": {
+          "claim": "nubjs/nub —— 快速的 Node.js 一体化工具包。",
+          "why_good": "一个快速的 Node.js 一体化工具包——收拢碎片化的 JS 工具链,吃 Bun 式 一个工具搞定 的吸引力。",
+          "value": "运行时/工具包靠间接变现(云/企业);切口是速度 + 统一的开发体验。",
+          "risk": "Bun 已占 快速一体化 JS;后来者需要压倒性优势才有意义。"
+        }
+      }
     },
     {
       "title": "Open-Less/openless",
       "claim": "Open-Less/openless — Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Win",
       "score": 8,
-      "why_good": "The ability to seamlessly integrate AI-polished text generation into any application could significantly enhance productivity for users across various industries.",
-      "value": "Businesses could pay for premium features or subscriptions that provide advanced customization, analytics, and integration with existing workflows.",
-      "risk": "The project may struggle to scale if larger companies develop similar features and integrate them into their existing products.",
+      "why_good": "Hold-to-talk voice input that drops AI-polished text at your cursor in any app — a slick, universal dictation UX people already pay Wispr Flow for.",
+      "value": "Prosumer subscription (like Wispr Flow / Superwhisper); open-source + local is the privacy wedge.",
+      "risk": "Wispr Flow, Superwhisper and OS-native dictation are here; needs quality + latency to win, and voice UIs are crowded.",
       "evidence": [
         "https://github.com/Open-Less/openless",
         "2,873★",
@@ -2612,15 +2700,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:56Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that enhances productivity through AI-polished text generation, which can be monetized."
+      "pick_reason": "The project offers a clear product that enhances productivity through AI-polished text generation, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "Open-Less/openless —— 按住键说话、松开,AI 润色后的文字出现在任意 app 的光标处。开源语音输入。",
+          "why_good": "按住说话、在任意 app 光标处落下 AI 润色文字——一个顺滑、通用的听写体验,人们已经在为 Wispr Flow 付费。",
+          "value": "专业订阅(像 Wispr Flow / Superwhisper);开源 + 本地是隐私切口。",
+          "risk": "Wispr Flow、Superwhisper 和系统原生听写都在;要靠质量 + 延迟取胜,语音 UI 很挤。"
+        }
+      }
     },
     {
       "title": "Achilng/floral-notepaper",
       "claim": "Achilng/floral-notepaper — 花笺，轻量优雅的跨平台桌面便签工具，支持 Markdown 编辑与预览",
       "score": 8,
-      "why_good": "The combination of lightweight design and Markdown support caters to a niche market of users who prefer minimalistic productivity tools.",
-      "value": "Freemium model targeting individual users and teams, with premium features for enhanced collaboration and cloud storage options.",
-      "risk": "The market is saturated with established note-taking apps, making user acquisition difficult against well-funded incumbents.",
+      "why_good": "An elegant, lightweight cross-platform sticky-notes app with Markdown — polished, but sticky notes is a crowded, low-margin category.",
+      "value": "Hard to charge; at most a pro/sync tier, competing with free OS notes and Notion.",
+      "risk": "Tiny scope, tons of free alternatives; a lovely utility, not a durable business.",
       "evidence": [
         "https://github.com/Achilng/floral-notepaper",
         "4,626★",
@@ -2644,15 +2740,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:48Z",
       "pick": true,
-      "pick_reason": "The project offers a unique product with a clear target market that can be monetized through subscriptions or one-time purchases."
+      "pick_reason": "The project offers a unique product with a clear target market that can be monetized through subscriptions or one-time purchases.",
+      "i18n": {
+        "zh": {
+          "claim": "Achilng/floral-notepaper —— 花笺,轻量优雅的跨平台桌面便签工具,支持 Markdown 编辑与预览。",
+          "why_good": "一个优雅、轻量、跨平台的 Markdown 便签 app——做得精致,但便签是个拥挤、低毛利的品类。",
+          "value": "很难收费;顶多做专业/同步档,和免费系统便签、Notion 竞争。",
+          "risk": "范围极小、免费替代一堆;是个可爱的工具,不是持久生意。"
+        }
+      }
     },
     {
       "title": "ultraworkers/claw-code-parity",
       "claim": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code rep",
       "score": 8,
-      "why_good": "This project addresses the growing demand for Rust-based solutions in environments where performance and safety are critical, making it appealing for companies transitioning from other languages.",
-      "value": "Companies looking to modernize their codebases in Rust could pay for consulting services or tools that facilitate this transition, generating revenue through subscriptions or project-based fees.",
-      "risk": "The project may struggle to scale as a business if it fails to differentiate itself from existing Rust migration tools or if larger firms decide to offer similar services for free.",
+      "why_good": "Parity/port work for the 'claw-code' art project — a work-in-progress sub-repo, not a standalone product.",
+      "value": "No business; it's engineering scaffolding for another (art) project.",
+      "risk": "Not a startup; a temporary port effort tied to a novelty repo.",
       "evidence": [
         "https://github.com/ultraworkers/claw-code-parity",
         "6,673★",
@@ -2669,7 +2773,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:44Z",
       "pick": false,
-      "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product."
+      "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "ultraworkers/claw-code-parity —— claw-code 的 Rust 移植对齐工作(临时)。",
+          "why_good": "给 claw-code 艺术项目做的移植/对齐工作——一个进行中的子仓库,不是独立产品。",
+          "value": "没有生意;它是另一个(艺术)项目的工程脚手架。",
+          "risk": "不是创业;是绑在一个新奇仓库上的临时移植工作。"
+        }
+      }
     },
     {
       "title": "withcoral/coral",
@@ -3570,9 +3682,9 @@
       "title": "Webhound",
       "claim": "Product Hunt: Webhound — A research engine for your agent",
       "score": 8,
-      "why_good": "Webhound addresses the growing need for specialized research tools tailored for AI agents, filling a niche that general search engines overlook.",
-      "value": "Businesses developing AI agents could pay for premium features or subscriptions to enhance their agents' research capabilities, creating a steady revenue stream.",
-      "risk": "The project may struggle to gain traction if larger tech companies decide to integrate similar functionalities into their existing platforms.",
+      "why_good": "A research engine built for agents to run deep, multi-step web research — real infra as agents increasingly need reliable research, not just search.",
+      "value": "Usage-based API to agent builders who need structured research/citations; per-query or seat pricing.",
+      "risk": "Perplexity, Exa and the labs' own research modes compete; needs better depth/reliability or price to win.",
       "evidence": [
         "https://www.producthunt.com/r/TSDAGJRI6E3MV7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/webhound?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3590,15 +3702,23 @@
       ],
       "id": "71-webhound",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:15Z"
+      "posted_at": "2026-07-27T15:18:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Webhound —— 给你的 agent 用的研究引擎。",
+          "why_good": "一个为 agent 打造、能做深度多步网页调研的研究引擎——随着 agent 越来越需要可靠调研,这是真实基础设施。",
+          "value": "给需要结构化调研/引用的 agent 开发者做按量 API:按查询或席位。",
+          "risk": "Perplexity、Exa 和各实验室自家的研究模式在竞争;要靠更深/更可靠或价格取胜。"
+        }
+      }
     },
     {
       "title": "Artifacts by Databox",
       "claim": "Product Hunt: Artifacts by Databox — Ask your AI Analyst and get back a ready-to-share report",
       "score": 8,
-      "why_good": "The integration of AI-driven reporting can streamline decision-making for businesses, reducing the time spent on data analysis.",
-      "value": "Businesses pay for subscription plans to access advanced analytics and reporting features, creating a recurring revenue model.",
-      "risk": "If larger analytics platforms integrate similar AI capabilities, they could overshadow this offering and limit its market share.",
+      "why_good": "Turns a question into a ready-to-share analytics report — real pain for ops/marketing teams drowning in dashboards.",
+      "value": "Databox already sells analytics; this is a feature/upsell within an established BI company, not a founder opening.",
+      "risk": "Backed by Databox and squarely in crowded BI (Tableau, Metabase, every AI-BI startup); not a green field.",
       "evidence": [
         "https://www.producthunt.com/r/OT2MF465VDKFTA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/databox?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3617,7 +3737,15 @@
       ],
       "id": "70-artifacts-by-databox",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:10Z"
+      "posted_at": "2026-07-27T15:18:10Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Artifacts by Databox —— 问你的 AI 分析师,拿回可直接分享的报告。",
+          "why_good": "把一个问题变成可直接分享的分析报告——对淹没在仪表盘里的运营/营销团队是真实痛点。",
+          "value": "Databox 已在卖分析;这是一家成熟 BI 公司里的功能/加售,不是创始人的口子。",
+          "risk": "背靠 Databox,且正处拥挤的 BI(Tableau、Metabase、各家 AI-BI);不是蓝海。"
+        }
+      }
     },
     {
       "title": "A zoomable timeline of 4M Wikipedia events",
@@ -3885,9 +4013,9 @@
       "title": "ReadKinetic – a free, local-first speed reader for your own books",
       "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
       "score": 8,
-      "why_good": "The local-first approach ensures user privacy and data ownership, appealing to a growing market concerned about data security.",
-      "value": "Subscription services could be offered for advanced features or integrations with e-book platforms, targeting avid readers and educational institutions.",
-      "risk": "Established reading apps or platforms may integrate similar features, overshadowing ReadKinetic's unique selling points.",
+      "why_good": "A free, local-first speed reader for your own books — a focused utility for a real habit (faster reading), privacy-friendly.",
+      "value": "Freemium: a paid sync/library/stats tier for avid readers; hard to charge much for reading UX alone.",
+      "risk": "Speed-reading is a small, skeptical niche; browser extensions and apps already do this free.",
       "evidence": [
         "https://www.readkinetic.com/app/",
         "https://news.ycombinator.com/item?id=49002344",
@@ -3903,15 +4031,23 @@
       ],
       "id": "49-readkinetic-a-free-local-first-speed-reader-for-",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:35Z"
+      "posted_at": "2026-07-27T12:03:35Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: ReadKinetic —— 免费、本地优先的、读你自己书的速读器。",
+          "why_good": "一个免费、本地优先、读你自己书的速读器——针对真实习惯(读更快)的聚焦小工具,且隐私友好。",
+          "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
+          "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
+        }
+      }
     },
     {
       "title": "YouTube Guitar Tab Parser",
       "claim": "Show HN: YouTube Guitar Tab Parser",
       "score": 8,
-      "why_good": "This project taps into the large and engaged community of musicians seeking easier ways to learn songs, which is often underserved by existing platforms.",
-      "value": "Music education platforms and guitar lesson services could pay for integration or licensing, while a subscription model could be established for premium features.",
-      "risk": "Established music education platforms or YouTube itself could easily replicate this functionality, limiting its growth potential.",
+      "why_good": "Extracts guitar tabs from YouTube videos — a specific, delightful pain-solver for a large hobbyist audience (guitarists).",
+      "value": "Freemium for musicians: paid accurate transcription, library, export; Ultimate Guitar shows people pay for tabs.",
+      "risk": "Copyright/licensing around music content is thorny, and accuracy of auto-tabbing is hard; niche willingness to pay.",
       "evidence": [
         "https://github.com/marcelpanse/youtube-guitar-tab-parser",
         "https://news.ycombinator.com/item?id=48898154",
@@ -3927,15 +4063,23 @@
       ],
       "id": "48-youtube-guitar-tab-parser",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:31Z"
+      "posted_at": "2026-07-27T12:03:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: YouTube 吉他谱解析器。",
+          "why_good": "从 YouTube 视频里提取吉他谱——给庞大的爱好者群体(吉他手)解决一个具体、讨喜的痛点。",
+          "value": "给音乐人做免费增值:付费的精准转谱、曲库、导出;Ultimate Guitar 证明有人为谱付费。",
+          "risk": "音乐内容的版权/授权很棘手,自动扒谱的准确度也难;付费意愿偏细分。"
+        }
+      }
     },
     {
       "title": "Claude-thermos keeps your Claude session warm for you",
       "claim": "Show HN: Claude-thermos keeps your Claude session warm for you",
       "score": 8,
-      "why_good": "Maintaining a warm session can significantly enhance user experience by reducing latency and improving workflow efficiency.",
-      "value": "Businesses could pay for premium features or subscription plans to ensure their AI interactions are seamless and uninterrupted.",
-      "risk": "The project may struggle to scale as larger AI platforms could easily incorporate similar session management features into their existing services.",
+      "why_good": "Keeps a Claude Code session 'warm' to cut cold-start latency — a real micro-annoyance for heavy agent users.",
+      "value": "Thin; a paid pro/team utility at best, or it stays a free convenience.",
+      "risk": "A tiny wrapper the vendors can obsolete by improving cold-starts; feature, not a company.",
       "evidence": [
         "https://github.com/izeigerman/claude-thermos",
         "https://news.ycombinator.com/item?id=49024882",
@@ -3951,15 +4095,23 @@
       ],
       "id": "47-claude-thermos-keeps-your-claude-session-warm-fo",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:27Z"
+      "posted_at": "2026-07-27T12:03:27Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Claude-thermos —— 帮你保持 Claude 会话温热。",
+          "why_good": "让 Claude Code 会话保持温热以减少冷启动延迟——对重度 agent 用户是真实的小烦恼。",
+          "value": "很薄;顶多做付费专业/团队小工具,否则就是免费便利。",
+          "risk": "一个厂商改进冷启动就能作废的薄封装;是功能不是公司。"
+        }
+      }
     },
     {
       "title": "Adrafinil – keep a lid-closed Mac awake only while agents work",
       "claim": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
       "score": 8,
-      "why_good": "This project addresses a common pain point for remote workers who need their laptops to stay awake during long tasks without unnecessary power consumption.",
-      "value": "Companies could pay for a subscription model to ensure their employees can optimize their devices for productivity, especially in remote work settings.",
-      "risk": "The feature could be easily replicated by existing operating systems or productivity tools, making it difficult to establish a sustainable business.",
+      "why_good": "Keeps a lid-closed Mac awake only while agents are actually working — a neat, specific fix for running agents overnight.",
+      "value": "A cheap paid Mac utility for people running long agent jobs; niche but clear.",
+      "risk": "Tiny utility (Amphetamine/Caffeine territory); easily cloned, and Apple could change power APIs.",
       "evidence": [
         "https://github.com/kageroumado/adrafinil",
         "https://news.ycombinator.com/item?id=48701512",
@@ -3975,15 +4127,23 @@
       ],
       "id": "46-adrafinil-keep-a-lid-closed-mac-awake-only-while",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:23Z"
+      "posted_at": "2026-07-27T12:03:23Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Adrafinil —— 仅在 agent 干活时,让合盖的 Mac 保持不休眠。",
+          "why_good": "仅在 agent 真正工作时让合盖的 Mac 不休眠——给跑通宵 agent 的人一个利落、具体的解法。",
+          "value": "给跑长 agent 任务的人卖个便宜的 Mac 小工具;细分但清晰。",
+          "risk": "极小工具(Amphetamine/Caffeine 的地盘);易被抄,Apple 也可能改电源 API。"
+        }
+      }
     },
     {
       "title": "Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
       "claim": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
       "score": 8,
-      "why_good": "Mindwalk addresses the complex challenge of visualizing codebase interactions, which can significantly enhance team collaboration and onboarding.",
-      "value": "Companies could pay for premium features or subscriptions to improve developer productivity and reduce onboarding time, leading to cost savings.",
-      "risk": "The technology could be seen as a niche tool that larger IDEs or code management platforms might easily integrate, overshadowing Mindwalk's standalone offering.",
+      "why_good": "Replays coding-agent sessions on a 3D map of your codebase — a genuinely novel way to see, review and debug what an agent actually did.",
+      "value": "Team tier for eng orgs that must review/audit agent work at scale; observability is a real budget as agents write more code.",
+      "risk": "'3D visualization' can be eye-candy; it must prove it beats plain diffs/logs for real review workflows.",
       "evidence": [
         "https://github.com/cosmtrek/mindwalk",
         "https://news.ycombinator.com/item?id=48878682",
@@ -3999,15 +4159,23 @@
       ],
       "id": "45-mindwalk-replay-coding-agent-sessions-on-a-3d-ma",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:19Z"
+      "posted_at": "2026-07-27T12:03:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Mindwalk —— 把编码 agent 的会话回放在代码库的 3D 地图上。",
+          "why_good": "把编码 agent 的会话回放在代码库的 3D 地图上——一种真正新颖、看清并调试 agent 到底干了啥 的方式。",
+          "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
+          "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
+        }
+      }
     },
     {
       "title": "Learn by rebuilding Redis, Git, a database from scratch",
       "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
       "score": 8,
-      "why_good": "Rebuilding foundational technologies like Redis and Git can attract developers seeking deeper understanding and practical skills, creating a niche educational market.",
-      "value": "Revenue can be generated through subscription fees for premium content, courses, or certifications targeted at developers and tech companies looking to upskill their teams.",
-      "risk": "The project may struggle to scale as a business if it fails to differentiate itself from existing educational platforms or if larger companies offer similar content for free.",
+      "why_good": "'Build your own Redis/Git/DB' hands-on learning — a proven, beloved format (CodeCrafters) that developers genuinely pay for.",
+      "value": "Subscription like CodeCrafters: guided rebuild challenges with tests; devs pay to level up on fundamentals.",
+      "risk": "CodeCrafters already owns this exact model; needs differentiated content or community to compete.",
       "evidence": [
         "https://shipthatcode.com",
         "https://news.ycombinator.com/item?id=48871973",
@@ -4023,15 +4191,23 @@
       ],
       "id": "44-learn-by-rebuilding-redis-git-a-database-from-sc",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:15Z"
+      "posted_at": "2026-07-27T12:03:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 通过从零重建 Redis、Git、数据库来学习。",
+          "why_good": "自己动手造 Redis/Git/数据库 的动手学习——一个已被验证、深受喜爱的形式(CodeCrafters),开发者真会付费。",
+          "value": "像 CodeCrafters 那样订阅:带测试的引导式重建挑战;开发者为夯实基础付费。",
+          "risk": "CodeCrafters 已占这个模式;要靠差异化内容或社区才能竞争。"
+        }
+      }
     },
     {
       "title": "Homegames. An open-source game platform I've been making for 8 years",
       "claim": "Show HN: Homegames. An open-source game platform I've been making for 8 years",
       "score": 8,
-      "why_good": "Homegames taps into the growing demand for customizable and community-driven gaming experiences, appealing to indie developers and gamers alike.",
-      "value": "Revenue could be generated through premium features, subscription models for enhanced tools, or partnerships with game developers and educational institutions.",
-      "risk": "The project may struggle to scale if larger gaming platforms integrate similar features or if it fails to build a sustainable user base.",
+      "why_good": "An 8-year labor-of-love open-source game platform (play together on any screen) — deep dedication, but long without a breakout.",
+      "value": "Games/platforms monetize via a hit or a marketplace; 8 years in with modest traction is a warning on the model.",
+      "risk": "Long runway without escape velocity; couch-multiplayer platforms are hard to monetize and hit-driven.",
       "evidence": [
         "https://homegames.io",
         "https://news.ycombinator.com/item?id=48798153",
@@ -4047,7 +4223,15 @@
       ],
       "id": "43-homegames-an-open-source-game-platform-i-ve-been",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:12Z"
+      "posted_at": "2026-07-27T12:03:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Homegames —— 我做了 8 年的开源游戏平台。",
+          "why_good": "一个做了 8 年的爱之作开源游戏平台(在任意屏幕上一起玩)——投入很深,但长期没有爆发。",
+          "value": "游戏/平台靠爆款或市场变现;做了 8 年仍牵引平平,是对这个模式的警示。",
+          "risk": "长跑却没到逃逸速度;客厅多人平台难变现且靠爆款驱动。"
+        }
+      }
     },
     {
       "title": "Getting GLM 5.2 running on my slow computer",
@@ -4113,9 +4297,9 @@
       "title": "OpenComputer",
       "claim": "Product Hunt: OpenComputer — The easiest way to deploy a managed agent.",
       "score": 8,
-      "why_good": "The project addresses a growing need for simplified deployment of managed agents in complex infrastructures, appealing to teams with limited DevOps resources.",
-      "value": "Businesses could pay for a subscription model based on the number of agents deployed, providing a steady revenue stream as they scale.",
-      "risk": "The market is competitive, and larger cloud service providers could easily integrate similar features into their existing platforms.",
+      "why_good": "'Easiest way to deploy a managed agent' — real pain as teams struggle to take agents from laptop to production.",
+      "value": "Usage-based managed-agent hosting (the Vercel-for-agents lane); teams pay to not run agent infra themselves.",
+      "risk": "Crowded managed-agent-hosting race (E2B, Modal, the labs); winning needs reliability + DX + price at scale.",
       "evidence": [
         "https://www.producthunt.com/r/3DPB3AQPXKIGFY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/opencomputer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4134,15 +4318,23 @@
       ],
       "id": "40-opencomputer",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:30Z"
+      "posted_at": "2026-07-27T11:56:30Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: OpenComputer —— 部署托管 agent 最简单的方式。",
+          "why_good": "部署托管 agent 最简单的方式——团队把 agent 从笔记本搬到生产时的真实痛点。",
+          "value": "按量的托管 agent 主机(agent 版 Vercel 赛道);团队为不用自己跑 agent 基础设施 付费。",
+          "risk": "托管 agent 主机很挤(E2B、Modal、各实验室);要赢得靠可靠性 + 体验 + 规模化价格。"
+        }
+      }
     },
     {
       "title": "Adomate",
       "claim": "Product Hunt: Adomate — Turn data into winning ads. At scale.",
       "score": 8,
-      "why_good": "Adomate leverages AI to automate ad creation, reducing the barrier for small businesses to compete with larger firms.",
-      "value": "Businesses pay for a subscription or per-ad fee to access the platform's AI-driven ad generation capabilities.",
-      "risk": "The market is saturated with ad tools, and larger incumbents could easily replicate its features or integrate them into existing platforms.",
+      "why_good": "Turns data into ad creative at scale — a big, budget-rich market (performance marketing) where AI creative has clear ROI.",
+      "value": "Subscription + usage to SMB/agency advertisers; ad spend is huge and teams pay for anything that lifts ROAS.",
+      "risk": "Crowded AI-ads space (AdCreative, Meta's own tools); creative quality + measurable lift are the bar to clear.",
       "evidence": [
         "https://www.producthunt.com/r/EPLPB5QB6JEVTX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/adomate?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4161,15 +4353,23 @@
       ],
       "id": "39-adomate",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:26Z"
+      "posted_at": "2026-07-27T11:56:26Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Adomate —— 把数据变成能赢的广告,规模化。",
+          "why_good": "把数据规模化变成广告创意——一个大、预算充足的市场(效果营销),AI 创意 ROI 清晰。",
+          "value": "向中小企业/代理商广告主收订阅 + 用量;广告预算巨大,凡是能提升 ROAS 的团队都愿付费。",
+          "risk": "AI 广告很挤(AdCreative、Meta 自家工具);创意质量 + 可衡量的提升是必须过的门槛。"
+        }
+      }
     },
     {
       "title": "Second Brain for Mac and Windows",
       "claim": "Product Hunt: Second Brain for Mac and Windows — Your AI memory, everywhere you work",
       "score": 8,
-      "why_good": "It addresses a common pain point of information overload by providing a centralized AI-driven memory solution for users across multiple platforms.",
-      "value": "Businesses could pay for premium features or subscriptions, while individual users might opt for a freemium model with in-app purchases.",
-      "risk": "Established productivity tools may integrate similar features, making it difficult for a new entrant to gain traction.",
+      "why_good": "A cross-platform 'AI memory' that follows you across apps — captures context so your assistant actually remembers, a real recall pain.",
+      "value": "Prosumer subscription for knowledge workers; the wedge is seamless capture + recall across everything you do.",
+      "risk": "Rewind/Limitless and the OS makers (Recall) are here; privacy concerns and platform-native memory are the threats.",
       "evidence": [
         "https://www.producthunt.com/r/6JNYYPRQZ2R2PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/second-brain-cloudflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4189,7 +4389,15 @@
       ],
       "id": "38-second-brain-for-mac-and-windows",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:21Z"
+      "posted_at": "2026-07-27T11:56:21Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Second Brain for Mac and Windows —— 你的 AI 记忆,随你工作到处都在。",
+          "why_good": "一个跨平台、跟着你在各 app 间走的 AI 记忆——捕捉上下文让助手真的记得住,真实的回忆痛点。",
+          "value": "向知识工作者收专业订阅;切口是在你做的一切之间无缝捕捉 + 回忆。",
+          "risk": "Rewind/Limitless 和操作系统厂商(Recall)都在;隐私担忧和平台原生记忆是威胁。"
+        }
+      }
     },
     {
       "title": "FluentDB",
