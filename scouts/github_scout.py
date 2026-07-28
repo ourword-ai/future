@@ -91,30 +91,37 @@ def judge(name, desc, topics, stars, age, vel, forks, contribs, commits30, dl, d
     installed = bool(dl and dl[1] >= 2000)
     maintained = contribs >= 12 or commits30 >= 40
     some_maint = contribs >= 4 or commits30 >= 10
+    early = age <= 21
+    huge = stars >= 25000                                    # already a crowded race / famous, not an opening
+    opening = (age <= 30 and vel >= 80 and stars < 15000)    # young, accelerating, still small = a real opening
     sc = {
-        "pull":    2 if (stars >= 4000 or installed or forks >= 500) else (1 if (stars >= 700 or forks_used or forks >= 80) else 0),
-        "buyer":   2 if dom in ("agent-infra", "consumer-ai", "edge-ai", "pain-points") else 1,
-        "wedge":   2 if any(k in text for k in TOOL_KW) else 1,
-        "build":   0 if any(k in text for k in HEAVY_KW) else 2,
-        "durable": 2 if (vel >= 600 and maintained) else (1 if (vel >= 120 or some_maint) else 0),
+        # lead, don't trail: reward the early+accelerating opening; a mega-repo earns little here
+        "opening":  2 if opening else (1 if (early or vel >= 150) else 0),
+        # real usage (installed / forks / maintained), but the already-huge crowded race is capped
+        "traction": 0 if huge else (2 if (installed or forks_used) else (1 if (vel >= 60 or forks >= 60 or maintained) else 0)),
+        "buyer":    2 if dom in ("agent-infra", "consumer-ai", "edge-ai", "pain-points") else 1,
+        "wedge":    2 if any(k in text for k in TOOL_KW) else 1,
+        "build":    0 if any(k in text for k in HEAVY_KW) else 2,
     }
     total = sum(sc.values())
     r = []
+    if opening:
+        r.append(f"early opening — ~{int(vel)}★/day, only {age}d old ({stars:,}★)")
+    elif huge:
+        r.append(f"already crowded ({stars:,}★) — real signal but late")
     if dl and dl[1] >= 300:
         r.append(f"{dl[1]:,}/wk downloads on {dl[0]} — really installed, not just starred")
-    if sc["pull"] == 2 and not installed:
-        r.append(f"real usage ({stars:,}★ in {age}d)")
-    elif sc["pull"] == 1:
-        r.append(f"early traction ({stars:,}★)")
     if forks_used:
         r.append(f"{forks:,} forks ({int(fork_ratio*100)}% of stars) — people build on it")
     if maintained:
         r.append(f"{contribs} contributors, {commits30} commits/30d — actively maintained")
-    elif sc["durable"] == 2:
+    elif not opening and vel >= 120:
         r.append(f"strong momentum (~{int(vel)}★/day)")
     why = "; ".join(r) or f"{stars:,}★, {forks:,} forks, ~{int(vel)}★/day"
-    return total, why, VALUE.get(dom, "a clear paid wedge if it owns one workflow end-to-end"), \
-        "could be a feature, not a company — check the moat and whether the incumbent just absorbs it"
+    risk = ("already a crowded race — the winners are largely set; a founder needs a sharper wedge"
+            if huge else
+            "could be a feature, not a company — check the moat and whether the incumbent just absorbs it")
+    return total, why, VALUE.get(dom, "a clear paid wedge if it owns one workflow end-to-end"), risk
 
 def build():
     today = datetime.date.today()
@@ -133,6 +140,12 @@ def build():
         f"created:>{d(180)} stars:>200 topic:database",
         f"created:>{d(120)} stars:>150 topic:security",
         f"created:>{d(90)} stars:>80 topic:self-hosted",
+        f"created:>{d(120)} stars:>120 topic:fintech",
+        f"created:>{d(120)} stars:>120 topic:devops",
+        f"created:>{d(180)} stars:>150 topic:data-visualization",
+        f"created:>{d(120)} stars:>100 topic:productivity",
+        f"created:>{d(120)} stars:>120 topic:healthcare",
+        f"created:>{d(90)} stars:>90 topic:no-code",
     ]
     qraw = variants[datetime.datetime.utcnow().hour % len(variants)]
     q = urllib.parse.quote(qraw)
@@ -195,6 +208,24 @@ def build():
                     "domain": dom, "model": "future-scout/github", "operator": "@ourword-ai",
                     "tags": (topics[:5] or [])})
     out.sort(key=lambda f: f["_score"], reverse=True)
+    # break the echo chamber: cap over-represented themes per run
+    THEME_KW = ["claude code", "claude-code", "codex", "coding agent", "mcp server", "rag",
+                "llm gateway", "proxy", "voice", "memory", "browser agent", "terminal"]
+    def _theme(t):
+        t = t.lower()
+        for k in THEME_KW:
+            if k in t:
+                return k
+        return None
+    capped, seen = [], {}
+    for f in out:
+        th = _theme(f.get("title", "") + " " + f.get("claim", ""))
+        if th:
+            seen[th] = seen.get(th, 0) + 1
+            if seen[th] > 2:          # at most 2 of the same theme per run
+                continue
+        capped.append(f)
+    out = capped
     for f in out:
         f.pop("_score", None)
     return out
