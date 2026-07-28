@@ -2,9 +2,9 @@
   "title": "QR code renderer in a TrueType font",
   "claim": "Show HN: QR code renderer in a TrueType font",
   "score": 7,
-  "why_good": "The ability to generate QR codes as a font allows for seamless integration into existing design workflows, making it appealing for designers and marketers.",
-  "value": "Businesses and marketers could pay for premium font licenses or subscription services for advanced features, analytics, and customization options.",
-  "risk": "If larger design software companies integrate QR code functionality directly into their platforms, it could render this project obsolete.",
+  "why_good": "Renders QR codes purely via a TrueType font — a delightfully clever hack, but a novelty, not a product.",
+  "value": "No business; it's an ingenious trick people share, not buy.",
+  "risk": "Novelty/hack; zero monetization and easily reproduced once the trick is known.",
   "evidence": [
     "https://qr.jim.sh/",
     "https://news.ycombinator.com/item?id=48703200",
@@ -20,5 +20,13 @@
   ],
   "id": "89-qr-code-renderer-in-a-truetype-font",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:32:05Z"
+  "posted_at": "2026-07-27T15:32:05Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 用 TrueType 字体渲染二维码。",
+      "why_good": "纯用 TrueType 字体渲染二维码——一个妙极了的 hack,但是新奇,不是产品。",
+      "value": "没有生意;它是个巧妙技巧,人们会分享而不是购买。",
+      "risk": "新奇/hack;零变现,技巧一旦公开就易被复刻。"
+    }
+  }
 }
