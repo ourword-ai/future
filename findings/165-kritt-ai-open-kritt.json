@@ -2,9 +2,9 @@
   "title": "Kritt-ai/open-kritt",
   "claim": "Kritt-ai/open-kritt — Orchestrate AI agents to find real vulnerabilities in code.",
   "score": 8,
-  "why_good": "Automating vulnerability detection with AI agents can significantly reduce the time and cost of security audits for companies.",
-  "value": "Businesses in need of security compliance will pay for subscriptions or per-scan fees to access the service.",
-  "risk": "If larger security firms integrate similar AI capabilities, they may overshadow this project, making it difficult to compete.",
+  "why_good": "Points multiple agents at code to find real vulnerabilities — AI-native AppSec is a large, high-budget market with clear ROI.",
+  "value": "Sell to security/eng teams as a scanner + triage service; per-repo/seat or usage, a budget line security orgs already have.",
+  "risk": "Crowded and trust-heavy (Snyk, Semgrep, GitHub); agent-found vulns need low false-positives and proof to be trusted.",
   "evidence": [
     "https://github.com/Kritt-ai/open-kritt",
     "432★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T22:13:11Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product for automating vulnerability detection, which companies would pay for."
+  "pick_reason": "The project offers a clear product for automating vulnerability detection, which companies would pay for.",
+  "i18n": {
+    "zh": {
+      "claim": "Kritt-ai/open-kritt —— 编排 AI agent 去代码里找真实漏洞。",
+      "why_good": "用多个 agent 扫代码找真实漏洞——AI 原生的应用安全是个大、高预算、ROI 清晰的市场。",
+      "value": "卖给安全/工程团队做扫描 + 分诊服务;按仓库/席位或按量,安全组织本就有这笔预算。",
+      "risk": "拥挤且重信任(Snyk、Semgrep、GitHub);agent 找到的漏洞要低误报 + 有证据才被信任。"
+    }
+  }
 }
