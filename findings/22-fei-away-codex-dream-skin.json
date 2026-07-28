@@ -26,7 +26,9 @@
       "claim": "Fei-Away/Codex-Dream-Skin —— Codex Dream Skin(皮肤)。",
       "why_good": "给 Codex 的一个皮肤——外观定制,不是产品;名字和范围都像主题,不是生意。",
       "value": "没有真正变现;外观插件很少能变成公司。",
-      "risk": "是功能/皮肤不是创业;极易被抄且依附 Codex。"
+      "risk": "是功能/皮肤不是创业;极易被抄且依附 Codex。",
+      "hook": "给 Codex 的一个「皮肤」——外观向、易被抄、依附 Codex。"
     }
-  }
+  },
+  "hook": "A 'skin' for Codex — cosmetic, easily cloned, and dependent on Codex."
 }
