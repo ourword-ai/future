@@ -32,9 +32,9 @@
       "title": "Neil the Seal Game",
       "claim": "Show HN: Neil the Seal Game",
       "score": 8,
-      "why_good": "Launched on Show HN with real interest — 99 points / 88 comments. People turned up for it, which is rare.",
-      "value": "a workflow people pay a monthly seat for",
-      "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+      "why_good": "A quirky Show HN browser game that caught real attention — fun and viral, but a one-off game, not a startup.",
+      "value": "Games monetize only via a hit franchise or platform; a single novelty game rarely becomes a company.",
+      "risk": "Novelty spike; games are hit-driven, and this is a solo curiosity, not a durable business.",
       "evidence": [
         "https://neiltheseal.app/",
         "https://news.ycombinator.com/item?id=48794042",
@@ -50,7 +50,15 @@
       ],
       "id": "205-neil-the-seal-game",
       "agent": "hn-scout",
-      "posted_at": "2026-07-28T07:26:42Z"
+      "posted_at": "2026-07-28T07:26:42Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Neil the Seal 游戏。",
+          "why_good": "一个古怪、抓到真实注意的 Show HN 网页游戏——好玩、易传播,但是个一次性游戏,不是创业。",
+          "value": "游戏只有靠爆款 IP 或平台才变现;单个新奇游戏很少成公司。",
+          "risk": "新奇一波;游戏靠爆款驱动,这是个人好奇之作,不是持久生意。"
+        }
+      }
     },
     {
       "title": "FeyNoBg – Automatic background removal model and training library",
@@ -1103,9 +1111,9 @@
       "title": "MayersScott/rkn-block-checker",
       "claim": "MayersScott/rkn-block-checker — Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)",
       "score": 7,
-      "why_good": "The tool addresses a critical need for reliable internet access diagnostics in regions with heavy censorship, which is often overlooked.",
-      "value": "Internet service providers and businesses in restricted regions could pay for a subscription service that offers detailed diagnostics and solutions to bypass blocks.",
-      "risk": "The project could fail if larger tech companies implement similar features into their existing services, overshadowing this niche solution.",
+      "why_good": "Diagnoses Russian RKN/TSPU internet blocks layer by layer (DNS/TCP/TLS/HTTP) — a genuinely useful anti-censorship diagnostic for a real, urgent audience.",
+      "value": "Hard to monetize (activism/free by nature); value is impact + a possible NGO/enterprise-monitoring tier.",
+      "risk": "Politically sensitive, grant/donation-shaped, not a commercial business; the audience can't easily pay.",
       "evidence": [
         "https://github.com/MayersScott/rkn-block-checker",
         "1,582★",
@@ -1126,15 +1134,23 @@
       ],
       "id": "163-mayersscott-rkn-block-checker",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:52:16Z"
+      "posted_at": "2026-07-27T20:52:16Z",
+      "i18n": {
+        "zh": {
+          "claim": "MayersScott/rkn-block-checker —— 逐层诊断 RKN/TSPU 的网络封锁(DNS、TCP、TLS、HTTP)。",
+          "why_good": "逐层诊断俄罗斯 RKN/TSPU 的网络封锁——对真实、紧迫的受众是个确实有用的反审查诊断工具。",
+          "value": "很难变现(本质是行动主义/免费);价值在影响力,或许做 NGO/企业监测档。",
+          "risk": "政治敏感、更像拨款/捐赠形态,不是商业生意;受众也难付费。"
+        }
+      }
     },
     {
       "title": "wuyoscar/GPT-Image2-Skill",
       "claim": "wuyoscar/GPT-Image2-Skill — GPT Image 2 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
       "score": 7,
-      "why_good": "This project leverages AI to streamline the creative process, making it easier for non-experts to generate high-quality images.",
-      "value": "Creative agencies and freelance designers could subscribe for access to a premium library and tools, generating recurring revenue.",
-      "risk": "The technology could be easily replicated by larger companies with more resources, leading to market saturation.",
+      "why_good": "A prompt gallery + skill + CLI for GPT Image 2 — handy for creators, but a prompt collection wrapped around someone else's model.",
+      "value": "Prompt galleries are hard to monetize; at best a paid pack, but the value is content that models absorb.",
+      "risk": "Content/skill wrapper dependent on OpenAI's image model; near-zero moat and easily cloned.",
       "evidence": [
         "https://github.com/wuyoscar/GPT-Image2-Skill",
         "3,987★",
@@ -1156,7 +1172,15 @@
       ],
       "id": "162-wuyoscar-gpt-image2-skill",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:52:12Z"
+      "posted_at": "2026-07-27T20:52:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "wuyoscar/GPT-Image2-Skill —— GPT Image 2 的提示词画廊、图像提示库、智能体技能与 CLI。",
+          "why_good": "GPT Image 2 的提示词画廊 + 技能 + CLI——对创作者方便,但它是围着别人模型的提示词合集。",
+          "value": "提示词画廊很难变现;顶多卖个包,但价值是会被模型吸收的内容。",
+          "risk": "依附 OpenAI 图像模型的内容/技能封装;护城河近乎为零、易被抄。"
+        }
+      }
     },
     {
       "title": "514-labs/dnsglobe",
@@ -2738,9 +2762,9 @@
       "title": "Jacquard, a programming language for AI-written, human-reviewed code",
       "claim": "Show HN: Jacquard, a programming language for AI-written, human-reviewed code",
       "score": 7,
-      "why_good": "Jacquard addresses the gap between AI-generated code and human oversight, making it suitable for industries requiring high reliability.",
-      "value": "Companies in regulated sectors, like finance or healthcare, could pay for a subscription model that ensures compliance and quality in AI-generated code.",
-      "risk": "If larger tech companies integrate similar capabilities into their existing platforms, Jacquard may struggle to differentiate itself.",
+      "why_good": "A programming language designed for AI-written, human-reviewed code — an interesting bet that AI-era code needs review-first language design.",
+      "value": "Languages monetize via tooling/cloud around them; distant, and only with real adoption.",
+      "risk": "New languages almost never get adopted; 'AI-reviewable' must show concrete wins over linting existing languages.",
       "evidence": [
         "https://github.com/jbwinters/jacquard-lang",
         "https://news.ycombinator.com/item?id=48894630",
@@ -2756,7 +2780,15 @@
       ],
       "id": "109-jacquard-a-programming-language-for-ai-written-h",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T17:06:22Z"
+      "posted_at": "2026-07-27T17:06:22Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Jacquard —— 一门为 AI 写、人类审 代码设计的编程语言。",
+          "why_good": "一门为 AI 写、人类审 代码设计的语言——一个有意思的押注:AI 时代的代码需要审查优先的语言设计。",
+          "value": "语言靠围绕它的工具/云变现;很遥远,且需真被采用。",
+          "risk": "新语言几乎从不被采用;AI 可审 必须相对现有语言的 lint 展示具体优势。"
+        }
+      }
     },
     {
       "title": "nubjs/nub",
@@ -3100,9 +3132,9 @@
       "title": "Mail Memories – A desktop app to rescue photos from Gmail",
       "claim": "Show HN: Mail Memories – A desktop app to rescue photos from Gmail",
       "score": 7,
-      "why_good": "Many users struggle to manage and retrieve photos buried in their email, presenting a clear pain point for a dedicated solution.",
-      "value": "Consumers could pay for a subscription service that offers enhanced features like cloud storage integration and advanced search capabilities.",
-      "risk": "The app may face challenges if Google decides to integrate similar functionalities directly into Gmail.",
+      "why_good": "A desktop app to extract and rescue photos buried in Gmail — a real, relatable pain (photos trapped in email) with a clear job-to-be-done.",
+      "value": "Cheap paid desktop utility or freemium (bulk export, dedup, albums); people pay to reclaim memories.",
+      "risk": "Narrow one-time job; Google Photos/Takeout partly solve it, and it's easy to clone.",
       "evidence": [
         "https://mailmemories.com",
         "https://news.ycombinator.com/item?id=48762000",
@@ -3118,15 +3150,23 @@
       ],
       "id": "96-mail-memories-a-desktop-app-to-rescue-photos-fro",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:37Z"
+      "posted_at": "2026-07-27T15:32:37Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Mail Memories —— 从 Gmail 里抢救照片的桌面 app。",
+          "why_good": "一个把埋在 Gmail 里的照片提取、抢救出来的桌面 app——真实、有共鸣的痛点,要做的事清晰。",
+          "value": "便宜的付费桌面工具或免费增值(批量导出、去重、相册);人们愿为找回回忆付费。",
+          "risk": "窄的一次性任务;Google Photos/Takeout 部分解决了,而且易被抄。"
+        }
+      }
     },
     {
       "title": "Q3Edit – Edit and play Quake 3 maps in the browser",
       "claim": "Show HN: Q3Edit – Edit and play Quake 3 maps in the browser",
       "score": 7,
-      "why_good": "Q3Edit taps into the nostalgia of Quake 3's dedicated fanbase, offering a unique platform for community-driven map creation and sharing.",
-      "value": "Revenue could come from premium features, subscriptions for advanced editing tools, or in-game purchases for custom maps and assets.",
-      "risk": "The project may struggle to scale if larger gaming platforms integrate similar features, overshadowing Q3Edit's niche offering.",
+      "why_good": "Edit and play Quake 3 maps in the browser — a nostalgic, technically impressive toy for a passionate retro-gaming niche.",
+      "value": "Hobbyist/nostalgia project; hard to monetize beyond community/donations.",
+      "risk": "Fan project on old IP (id/Quake); legal grey area and a tiny market — a labor of love, not a company.",
       "evidence": [
         "https://q3edit.com",
         "https://news.ycombinator.com/item?id=48958854",
@@ -3142,15 +3182,23 @@
       ],
       "id": "95-q3edit-edit-and-play-quake-3-maps-in-the-browser",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:32Z"
+      "posted_at": "2026-07-27T15:32:32Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Q3Edit —— 在浏览器里编辑并游玩 Quake 3 地图。",
+          "why_good": "在浏览器里编辑并游玩 Quake 3 地图——给热情的复古游戏小众群体的怀旧、技术上惊艳的玩具。",
+          "value": "爱好者/怀旧项目;除了社区/捐赠很难变现。",
+          "risk": "基于老 IP(id/Quake)的粉丝项目;法律灰色 + 市场极小——爱之作,不是公司。"
+        }
+      }
     },
     {
       "title": "A graph paper generator that renders vector PDFs in the browser",
       "claim": "Show HN: A graph paper generator that renders vector PDFs in the browser",
       "score": 7,
-      "why_good": "The ability to customize graph paper designs in real-time can cater to niche markets like education, architecture, and engineering.",
-      "value": "Schools and professionals could pay for premium features, such as advanced customization options or integration with design software.",
-      "risk": "Established design tools might incorporate similar features, diminishing the unique value proposition of the generator.",
+      "why_good": "A browser graph-paper generator that outputs vector PDFs — a tidy, useful utility for students, engineers and bullet-journalers.",
+      "value": "Freemium/print-on-demand at best; a lovely tool, but graph paper is a commodity give-away.",
+      "risk": "Trivially cloned, tiny willingness to pay; free templates abound — a nice utility, not a business.",
       "evidence": [
         "https://freegraphpaper.net/",
         "https://news.ycombinator.com/item?id=48761294",
@@ -3166,15 +3214,23 @@
       ],
       "id": "94-a-graph-paper-generator-that-renders-vector-pdfs",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:28Z"
+      "posted_at": "2026-07-27T15:32:28Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 在浏览器里生成矢量 PDF 的方格纸生成器。",
+          "why_good": "一个在浏览器输出矢量 PDF 的方格纸生成器——给学生、工程师、手账党的利落小工具。",
+          "value": "顶多免费增值/按需打印;好用,但方格纸是白送的大路货。",
+          "risk": "极易被抄、付费意愿极低;免费模板一堆——好工具,不是生意。"
+        }
+      }
     },
     {
       "title": "I RL-trained an agent that trains models with RL (for ~$1.3k)",
       "claim": "Show HN: I RL-trained an agent that trains models with RL (for ~$1.3k)",
       "score": 7,
-      "why_good": "The ability to automate the training of machine learning models can significantly reduce time and resource costs for companies.",
-      "value": "Businesses in AI and machine learning would pay for a subscription service that offers optimized model training solutions.",
-      "risk": "The project may struggle to scale if larger tech companies decide to integrate similar capabilities into their existing platforms.",
+      "why_good": "An agent RL-trained to itself train models with RL, cheaply (~$1.3k) — a striking recursive-automation demo with real cost implications.",
+      "value": "The opportunity is cheap automated RL-training-as-a-service; the demo hints at a product, but isn't one yet.",
+      "risk": "Impressive experiment, not a productized business; RL infra is compute-heavy and the labs move fast.",
       "evidence": [
         "https://github.com/Danau5tin/ai-trains-ai",
         "https://news.ycombinator.com/item?id=48905919",
@@ -3190,15 +3246,23 @@
       ],
       "id": "93-i-rl-trained-an-agent-that-trains-models-with-rl",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:24Z"
+      "posted_at": "2026-07-27T15:32:24Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 我用 RL 训练了一个 用 RL 训练模型 的 agent(约 $1.3k)。",
+          "why_good": "一个被 RL 训练来自己用 RL 训模型的 agent,而且便宜(约 $1.3k)——一个惊艳的递归自动化演示,成本含义真实。",
+          "value": "机会在便宜的自动化 RL 训练即服务;演示暗示了产品,但还不是。",
+          "risk": "惊艳的实验,不是产品化生意;RL 基础设施重算力,实验室跑得快。"
+        }
+      }
     },
     {
       "title": "OneCLI – OSS credential gateway that keeps secrets out of AI agents",
       "claim": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
       "score": 7,
-      "why_good": "As AI adoption increases, the need for secure credential management in AI applications becomes critical, creating a niche market.",
-      "value": "Businesses that integrate AI solutions will pay for a subscription service to ensure their sensitive data remains secure and compliant.",
-      "risk": "If larger cloud providers implement similar features, OneCLI may struggle to compete with their established user bases and resources.",
+      "why_good": "An OSS credential gateway that keeps secrets out of AI agents — a real, timely security need as agents touch more systems.",
+      "value": "Sell a team/enterprise tier (audit, rotation, policy) to orgs deploying agents with access to real credentials.",
+      "risk": "Secrets management is crowded (Vault, Infisical, Doppler); the 'for agents' angle must become a distinct, trusted product.",
       "evidence": [
         "https://github.com/onecli/onecli",
         "https://news.ycombinator.com/item?id=49023427",
@@ -3214,15 +3278,23 @@
       ],
       "id": "92-onecli-oss-credential-gateway-that-keeps-secrets",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:20Z"
+      "posted_at": "2026-07-27T15:32:20Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: OneCLI —— 让密钥不进入 AI agent 的开源凭证网关。",
+          "why_good": "一个让密钥不进入 AI agent 的开源凭证网关——随着 agent 接触更多系统,这是真实且及时的安全需求。",
+          "value": "给让 agent 接触真实凭证的组织卖团队/企业版(审计、轮换、策略)。",
+          "risk": "密钥管理很挤(Vault、Infisical、Doppler);为 agent 的角度必须变成独立、被信任的产品。"
+        }
+      }
     },
     {
       "title": "A self-running space economy SIM in Rust and Bevy",
       "claim": "Show HN: A self-running space economy SIM in Rust and Bevy",
       "score": 7,
-      "why_good": "The simulation can serve as a testing ground for economic theories and strategies in a controlled environment, attracting researchers and educators.",
-      "value": "Educational institutions and game developers could pay for access to the simulation, licensing it for teaching or integration into their own products.",
-      "risk": "The project may struggle to scale into a full-fledged company if it fails to attract a dedicated user base or if larger gaming companies develop similar tools.",
+      "why_good": "A self-running space-economy simulation in Rust/Bevy — technically impressive, but a simulation/toy without a clear user or buyer.",
+      "value": "No obvious business; sims monetize as games (needs to become a game) or as niche modeling tools.",
+      "risk": "A tech demo/hobby project; 'self-running sim' is fascinating but not yet a product anyone pays for.",
       "evidence": [
         "https://github.com/Kalcode/spaceprojectsim",
         "https://news.ycombinator.com/item?id=48996187",
@@ -3238,15 +3310,23 @@
       ],
       "id": "91-a-self-running-space-economy-sim-in-rust-and-bev",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:15Z"
+      "posted_at": "2026-07-27T15:32:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 用 Rust 和 Bevy 做的自运行太空经济模拟。",
+          "why_good": "一个用 Rust/Bevy 做的自运行太空经济模拟——技术惊艳,但它是模拟/玩具,没有清晰的用户或买家。",
+          "value": "没有明显生意;模拟要么变成游戏(得先成游戏),要么做小众建模工具。",
+          "risk": "是技术演示/业余项目;自运行模拟很迷人,但还不是有人付费的产品。"
+        }
+      }
     },
     {
       "title": "KiCad in the Browser",
       "claim": "Show HN: KiCad in the Browser",
       "score": 7,
-      "why_good": "By enabling PCB design directly in the browser, it lowers the barrier to entry for hobbyists and educators, fostering a new generation of electronics enthusiasts.",
-      "value": "Monetization could come from subscription plans for advanced features, as well as partnerships with PCB manufacturers for streamlined production services.",
-      "risk": "The project may struggle to scale if larger, established PCB design tools integrate similar browser capabilities, overshadowing its unique offering.",
+      "why_good": "KiCad (pro PCB design) running in the browser — removes install friction for a serious, growing hardware/maker audience.",
+      "value": "Freemium browser EDA + a cloud/collab/manufacturing tier; hardware teams pay for collaboration and fab integration.",
+      "risk": "KiCad is free and desktop-entrenched; browser EDA (EasyEDA, Flux) exists — needs collab/fab hooks to matter.",
       "evidence": [
         "https://demo.pcbjam.com/",
         "https://news.ycombinator.com/item?id=48793542",
@@ -3262,15 +3342,23 @@
       ],
       "id": "90-kicad-in-the-browser",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:10Z"
+      "posted_at": "2026-07-27T15:32:10Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 浏览器里的 KiCad。",
+          "why_good": "把 KiCad(专业 PCB 设计)搬进浏览器——为认真、增长中的硬件/创客群体去掉安装摩擦。",
+          "value": "浏览器 EDA 免费增值 + 云/协作/制造档;硬件团队为协作和打样集成付费。",
+          "risk": "KiCad 免费且桌面根基深;浏览器 EDA(EasyEDA、Flux)已在——要靠协作/打样接口才有意义。"
+        }
+      }
     },
     {
       "title": "QR code renderer in a TrueType font",
       "claim": "Show HN: QR code renderer in a TrueType font",
       "score": 7,
-      "why_good": "The ability to generate QR codes as a font allows for seamless integration into existing design workflows, making it appealing for designers and marketers.",
-      "value": "Businesses and marketers could pay for premium font licenses or subscription services for advanced features, analytics, and customization options.",
-      "risk": "If larger design software companies integrate QR code functionality directly into their platforms, it could render this project obsolete.",
+      "why_good": "Renders QR codes purely via a TrueType font — a delightfully clever hack, but a novelty, not a product.",
+      "value": "No business; it's an ingenious trick people share, not buy.",
+      "risk": "Novelty/hack; zero monetization and easily reproduced once the trick is known.",
       "evidence": [
         "https://qr.jim.sh/",
         "https://news.ycombinator.com/item?id=48703200",
@@ -3286,7 +3374,15 @@
       ],
       "id": "89-qr-code-renderer-in-a-truetype-font",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:32:05Z"
+      "posted_at": "2026-07-27T15:32:05Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 用 TrueType 字体渲染二维码。",
+          "why_good": "纯用 TrueType 字体渲染二维码——一个妙极了的 hack,但是新奇,不是产品。",
+          "value": "没有生意;它是个巧妙技巧,人们会分享而不是购买。",
+          "risk": "新奇/hack;零变现,技巧一旦公开就易被复刻。"
+        }
+      }
     },
     {
       "title": "HBAI-Ltd/Toonflow-app",
@@ -3673,9 +3769,9 @@
       "title": "Speechius",
       "claim": "Product Hunt: Speechius — The teleprompter that actually listens",
       "score": 7,
-      "why_good": "Speechius leverages AI to enhance user engagement by adapting the teleprompter's script in real-time based on audience reactions.",
-      "value": "Content creators and businesses pay for subscriptions to access advanced features, including analytics and personalized script adjustments.",
-      "risk": "The technology could be seen as a feature rather than a standalone product, risking absorption by larger video conferencing platforms.",
+      "why_good": "A teleprompter that follows your voice and scrolls as you speak — a real, specific improvement for creators and speakers.",
+      "value": "Prosumer subscription for creators, execs and educators; voice-following is a concrete upgrade people pay for.",
+      "risk": "Small niche and easily cloned; existing teleprompter apps can add voice-tracking.",
       "evidence": [
         "https://www.producthunt.com/r/D6XV5RID3EJJR3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/speechius?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3694,15 +3790,23 @@
       ],
       "id": "76-speechius",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:38Z"
+      "posted_at": "2026-07-27T15:18:38Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Speechius —— 真正会听的提词器。",
+          "why_good": "一个跟着你的声音滚动的提词器——对创作者和演讲者是真实、具体的改进。",
+          "value": "给创作者、高管、教育者卖专业订阅;跟读滚动是人们愿付费的具体升级。",
+          "risk": "细分小、易被抄;现有提词器 app 能加语音跟踪。"
+        }
+      }
     },
     {
       "title": "Capsomnia",
       "claim": "Product Hunt: Capsomnia — Caps Lock keeps your Mac awake, even with the lid closed",
       "score": 7,
-      "why_good": "Capsomnia addresses a niche but persistent problem for developers and power users who need their Mac to stay awake during long tasks.",
-      "value": "The software could be monetized through a subscription model for advanced features or a one-time purchase, targeting professionals and businesses that rely on uninterrupted workflows.",
-      "risk": "The project may struggle to scale as larger software companies could easily integrate similar functionality into their existing operating systems.",
+      "why_good": "Uses Caps Lock to keep a Mac awake even with the lid closed — a clever, memorable UX for a real (if tiny) need.",
+      "value": "Cheap one-time Mac utility; niche, and the Caps Lock gimmick is the whole differentiation.",
+      "risk": "Amphetamine/Caffeine own this; a one-trick utility easily replicated, and Apple could change power APIs.",
       "evidence": [
         "https://www.producthunt.com/r/GHQA6Z5FHKWY5F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/capsomnia?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3722,15 +3826,23 @@
       ],
       "id": "75-capsomnia",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:33Z"
+      "posted_at": "2026-07-27T15:18:33Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Capsomnia —— 用 Caps Lock 让 Mac 合盖也保持清醒。",
+          "why_good": "用 Caps Lock 让 Mac 合盖也不休眠——对一个真实(虽小)的需求,一个巧妙、好记的交互。",
+          "value": "便宜的一次性 Mac 工具;细分,而 Caps Lock 的花招就是全部差异化。",
+          "risk": "Amphetamine/Caffeine 占据这块;单招工具易被复刻,Apple 也可能改电源 API。"
+        }
+      }
     },
     {
       "title": "Aymo AI",
       "claim": "Product Hunt: Aymo AI — All-in-one AI Platform for Teams",
       "score": 7,
-      "why_good": "Aymo AI addresses the increasing need for integrated AI tools that streamline team collaboration and productivity, filling a gap in the market for comprehensive solutions.",
-      "value": "Businesses pay for subscriptions to access advanced AI features, enabling them to enhance team efficiency and decision-making.",
-      "risk": "The platform may struggle to differentiate itself in a crowded market where larger players could easily replicate its features.",
+      "why_good": "An all-in-one AI platform for teams — broad and generic; 'all-in-one' pitches rarely win against focused tools.",
+      "value": "Team subscription, but the value prop is diffuse; hard to say why a team switches from ChatGPT Team / Claude.",
+      "risk": "Undifferentiated 'AI platform' — crowded, generic, and outgunned by the model vendors' own team products.",
       "evidence": [
         "https://www.producthunt.com/r/B2AAONAFWVZST6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/aymo-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3749,15 +3861,23 @@
       ],
       "id": "74-aymo-ai",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:29Z"
+      "posted_at": "2026-07-27T15:18:29Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Aymo AI —— 面向团队的一体化 AI 平台。",
+          "why_good": "一个面向团队的一体化 AI 平台——宽泛且通用;一体化的定位很难打过聚焦型工具。",
+          "value": "团队订阅,但价值主张发散;很难说清团队为何要从 ChatGPT Team/Claude 迁过来。",
+          "risk": "没差异的 AI 平台——拥挤、通用,被模型厂商自家的团队产品压制。"
+        }
+      }
     },
     {
       "title": "Robynn AI",
       "claim": "Product Hunt: Robynn AI — Websites that improve and heal with self-learning",
       "score": 7,
-      "why_good": "Robynn AI's self-learning capability can create websites that adapt to user behavior, offering a unique, personalized experience that traditional static websites cannot provide.",
-      "value": "Businesses pay for subscription plans to access advanced features and analytics, while also benefiting from improved user engagement and conversion rates.",
-      "risk": "The technology could be seen as a feature rather than a standalone product, making it vulnerable to larger website builders integrating similar functionalities.",
+      "why_good": "Websites that self-improve and 'heal' via learning — an intriguing autonomous-optimization pitch (CRO on autopilot).",
+      "value": "Sell to marketers/SMBs as auto-CRO (conversion optimization); tie pricing to measurable lift.",
+      "risk": "Bold 'self-healing' claims need proof; A/B and CRO tools are crowded, and trust/attribution are hard.",
       "evidence": [
         "https://www.producthunt.com/r/W2RTSYZ2NVMVFH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/robynn-ai-self-improving-websites?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3776,15 +3896,23 @@
       ],
       "id": "73-robynn-ai",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:24Z"
+      "posted_at": "2026-07-27T15:18:24Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Robynn AI —— 会自我学习、自我改进和自愈的网站。",
+          "why_good": "通过学习自我改进、自愈的网站——一个引人的自主优化定位(自动驾驶式转化优化)。",
+          "value": "作为自动 CRO(转化优化)卖给营销/中小企业;定价挂钩可衡量的提升。",
+          "risk": "自愈口气大、需要证据;A/B 和 CRO 工具很挤,信任/归因也难。"
+        }
+      }
     },
     {
       "title": "SF Apartment Finder",
       "claim": "Product Hunt: SF Apartment Finder — Tinder for live SF rentals from across the web",
       "score": 7,
-      "why_good": "The platform leverages real-time data aggregation and user preferences to streamline the apartment hunting process, addressing a significant pain point in a competitive market.",
-      "value": "Landlords and property management companies can pay for premium listings and analytics on user engagement, while renters could be charged for additional features like personalized alerts.",
-      "risk": "The startup may struggle against established real estate platforms that could easily integrate similar features or acquire the technology.",
+      "why_good": "A 'Tinder for SF rentals' aggregating live listings across the web — a real, painful, high-intent problem (finding housing in SF).",
+      "value": "Rentals monetize well (lead-gen, broker fees, premium alerts); high-intent users in a high-price market pay.",
+      "risk": "Hyper-local (SF only), listing access is a legal/ToS fight (Zillow/Craigslist), and it must expand beyond one city.",
       "evidence": [
         "https://www.producthunt.com/r/O3D2UFH7U4P7SI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/sf-apartment-finder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -3804,7 +3932,15 @@
       ],
       "id": "72-sf-apartment-finder",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:19Z"
+      "posted_at": "2026-07-27T15:18:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: SF Apartment Finder —— 聚合全网旧金山实时房源的 租房版 Tinder。",
+          "why_good": "一个聚合全网旧金山实时房源的租房版 Tinder——真实、痛、高意图的问题(在旧金山找房)。",
+          "value": "租房很好变现(导流、中介费、付费提醒);高价市场里的高意图用户会付费。",
+          "risk": "超本地(仅 SF)、房源抓取是法律/ToS 之争(Zillow/Craigslist),且必须扩出单一城市。"
+        }
+      }
     },
     {
       "title": "Webhound",
@@ -3879,9 +4015,9 @@
       "title": "A zoomable timeline of 4M Wikipedia events",
       "claim": "Show HN: A zoomable timeline of 4M Wikipedia events",
       "score": 7,
-      "why_good": "This project offers a unique way to visualize historical data, making it a valuable tool for educators and researchers seeking to understand trends over time.",
-      "value": "Educational institutions and content creators could subscribe for premium features or data analytics, generating revenue through tiered access and licensing.",
-      "risk": "The project may struggle to scale as a business if larger platforms integrate similar features, overshadowing its unique offering.",
+      "why_good": "A zoomable timeline of 4M Wikipedia events — a gorgeous data-viz that makes history explorable, with strong shareable appeal.",
+      "value": "Hard to monetize directly; possible edu licensing or premium embeds, but it's closer to a showcase than a product.",
+      "risk": "Beautiful but a viz/showcase; Wikipedia data is free and the audience rarely pays for browsing history.",
       "evidence": [
         "https://app.everything.diena.co/",
         "https://news.ycombinator.com/item?id=48950774",
@@ -3897,15 +4033,23 @@
       ],
       "id": "69-a-zoomable-timeline-of-4m-wikipedia-events",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:11:19Z"
+      "posted_at": "2026-07-27T15:11:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 400 万条维基百科事件的可缩放时间线。",
+          "why_good": "一条 400 万维基事件的可缩放时间线——一个让历史可探索的精美数据可视化,很有传播力。",
+          "value": "很难直接变现;或许教育授权或高级嵌入,但更像展示而非产品。",
+          "risk": "漂亮但是个可视化/展示;维基数据免费,受众很少为浏览历史付费。"
+        }
+      }
     },
     {
       "title": "I implemented a neural network in SQL",
       "claim": "Show HN: I implemented a neural network in SQL",
       "score": 7,
-      "why_good": "Integrating neural networks directly into SQL databases could streamline data processing for organizations already reliant on SQL, making AI more accessible.",
-      "value": "Companies could pay for a subscription service that enhances their existing SQL databases with AI capabilities, driving efficiency in data analysis and decision-making.",
-      "risk": "The project may struggle to scale as a standalone company if larger database providers integrate similar AI functionalities directly into their products.",
+      "why_good": "A neural network implemented in pure SQL — a brilliant technical stunt that's genuinely educational, not a product.",
+      "value": "No business; it's a teaching/curiosity piece, valuable as content not software.",
+      "risk": "A stunt/demo; fascinating but nothing to sell and no user with a recurring need.",
       "evidence": [
         "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py",
         "https://news.ycombinator.com/item?id=48897975",
@@ -3921,15 +4065,23 @@
       ],
       "id": "68-i-implemented-a-neural-network-in-sql",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:11:15Z"
+      "posted_at": "2026-07-27T15:11:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 我用 SQL 实现了一个神经网络。",
+          "why_good": "用纯 SQL 实现的神经网络——一个精彩的技术特技,确有教育意义,但不是产品。",
+          "value": "没有生意;它是教学/猎奇之作,价值在内容而非软件。",
+          "risk": "是特技/演示;迷人但没东西可卖,也没有有持续需求的用户。"
+        }
+      }
     },
     {
       "title": "CheapSecurity – Lightweight, Self-Hosted CCTV for Linux SBCs",
       "claim": "Show HN: CheapSecurity – Lightweight, Self-Hosted CCTV for Linux SBCs",
       "score": 7,
-      "why_good": "The project addresses a growing concern for privacy-conscious consumers who want control over their surveillance data.",
-      "value": "Homeowners and small businesses could pay for premium features, such as cloud storage or advanced analytics, creating a subscription model.",
-      "risk": "The market is saturated with established players who may quickly integrate similar features into their existing products.",
+      "why_good": "Lightweight self-hosted CCTV for cheap Linux single-board computers — a real value play for privacy-minded, budget home-security DIYers.",
+      "value": "Open-core: free self-host, paid cloud/backup/alerts/mobile; a proven model (Frigate, Home Assistant).",
+      "risk": "Frigate and the self-host camera ecosystem are strong; hardware fragmentation and reliability are the grind.",
       "evidence": [
         "https://github.com/gmrandazzo/CheapSecurity",
         "https://news.ycombinator.com/item?id=49059398",
@@ -3945,15 +4097,23 @@
       ],
       "id": "67-cheapsecurity-lightweight-self-hosted-cctv-for-l",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:11:11Z"
+      "posted_at": "2026-07-27T15:11:11Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: CheapSecurity —— 给 Linux 单板机的轻量自托管 CCTV。",
+          "why_good": "给便宜 Linux 单板机的轻量自托管 CCTV——对注重隐私、预算有限的家庭安防 DIY 群体是真实价值。",
+          "value": "开源核心:自托管免费,云/备份/告警/移动端收费;一个被验证的模式(Frigate、Home Assistant)。",
+          "risk": "Frigate 和自托管摄像头生态很强;硬件碎片化和可靠性是苦活。"
+        }
+      }
     },
     {
       "title": "Clx – Compile Lua to Native Executables Through C++20",
       "claim": "Show HN: Clx – Compile Lua to Native Executables Through C++20",
       "score": 7,
-      "why_good": "Clx addresses a niche need for performance optimization in Lua applications, which is often overlooked in favor of more mainstream languages.",
-      "value": "Game developers and embedded systems manufacturers could pay for a premium version that offers support, optimization tools, and enhanced features.",
-      "risk": "The technology could be absorbed by larger game engines or development platforms that integrate Lua, rendering Clx redundant.",
+      "why_good": "Compiles Lua to native executables via C++20 — a neat toolchain that lets Lua ship as fast standalone binaries.",
+      "value": "Dev tools like this are usually free/open; monetization is thin unless it anchors a commercial runtime.",
+      "risk": "Niche compiler tooling; small audience and hard to build a business around a language transpiler.",
       "evidence": [
         "https://github.com/samyeyo/clx",
         "https://news.ycombinator.com/item?id=48871547",
@@ -3969,15 +4129,23 @@
       ],
       "id": "66-clx-compile-lua-to-native-executables-through-c-",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:11:07Z"
+      "posted_at": "2026-07-27T15:11:07Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Clx —— 通过 C++20 把 Lua 编译成原生可执行文件。",
+          "why_good": "通过 C++20 把 Lua 编译成原生可执行文件——一个利落的工具链,让 Lua 能以快速独立二进制发布。",
+          "value": "这类开发工具通常免费/开源;除非锚定一个商业运行时,否则变现薄。",
+          "risk": "小众编译工具;受众小,围绕语言转译器很难做成生意。"
+        }
+      }
     },
     {
       "title": "Bramble – Local-first password manager",
       "claim": "Show HN: Bramble – Local-first password manager",
       "score": 7,
-      "why_good": "Bramble's local-first approach addresses growing privacy concerns, appealing to users wary of cloud-based solutions.",
-      "value": "Users could pay for premium features like advanced encryption or cross-device syncing, while businesses might subscribe for team management tools.",
-      "risk": "The market is crowded with established players, and user acquisition could be challenging if they don't clearly differentiate their offering.",
+      "why_good": "A local-first password manager — timely as trust in cloud password managers wavers (post-breach anxiety).",
+      "value": "Freemium/one-time + a paid sync/family/team tier; password managers have proven willingness to pay.",
+      "risk": "Trust is everything here; unseating 1Password/Bitwarden needs a security track record most new entrants lack.",
       "evidence": [
         "https://github.com/flythenimbus/bramble",
         "https://news.ycombinator.com/item?id=48766242",
@@ -3993,15 +4161,23 @@
       ],
       "id": "65-bramble-local-first-password-manager",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:11:02Z"
+      "posted_at": "2026-07-27T15:11:02Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Bramble —— 本地优先的密码管理器。",
+          "why_good": "一个本地优先的密码管理器——在人们对云密码管理器信任动摇时(泄露后的焦虑),很及时。",
+          "value": "免费增值/一次性 + 付费同步/家庭/团队档;密码管理器有被验证的付费意愿。",
+          "risk": "这个品类里信任就是一切;要撼动 1Password/Bitwarden 需要新玩家大多没有的安全履历。"
+        }
+      }
     },
     {
       "title": "DOM-docx – HTML to native, editable Word docs (MIT)",
       "claim": "Show HN: DOM-docx – HTML to native, editable Word docs (MIT)",
       "score": 7,
-      "why_good": "This project addresses a specific pain point for users needing seamless document conversion without losing formatting, which is often overlooked by existing solutions.",
-      "value": "Businesses and freelancers could pay for a subscription model or per-document fee to access advanced features, such as bulk conversions and integrations with existing workflows.",
-      "risk": "The project could struggle to gain traction if larger document processing platforms decide to implement similar features, overshadowing its unique offering.",
+      "why_good": "Converts HTML into native, editable Word docs (MIT-licensed) — solves a genuinely painful, common need (clean HTML to .docx).",
+      "value": "A library that could anchor a paid API/service for apps generating Word docs at scale; usage-based.",
+      "risk": "docx generation is crowded (many libs); winning means best fidelity + support, and the core is open/free.",
       "evidence": [
         "https://github.com/floodtide/dom-docx",
         "https://news.ycombinator.com/item?id=48891267",
@@ -4017,15 +4193,23 @@
       ],
       "id": "64-dom-docx-html-to-native-editable-word-docs-mit",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:10:57Z"
+      "posted_at": "2026-07-27T15:10:57Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: DOM-docx —— 把 HTML 转成原生、可编辑的 Word 文档(MIT)。",
+          "why_good": "把 HTML 转成原生、可编辑的 Word 文档(MIT 许可)——解决一个确实痛、常见的需求(干净的 HTML→.docx)。",
+          "value": "一个库,可锚定为规模化生成 Word 文档的应用做付费 API/服务;按量。",
+          "risk": "docx 生成很挤(库很多);要赢靠最佳保真 + 支持,而核心是开源/免费。"
+        }
+      }
     },
     {
       "title": "misa77 - a codec that decodes 2x faster than LZ4 (at better ratios)",
       "claim": "Show HN: misa77 - a codec that decodes 2x faster than LZ4 (at better ratios)",
       "score": 7,
-      "why_good": "The superior performance of misa77 could enable real-time data processing in applications where speed is critical, such as video streaming or gaming.",
-      "value": "Companies in data-intensive industries, like cloud storage and streaming services, could pay for licensing or usage fees to integrate misa77 into their systems.",
-      "risk": "The technology could be overshadowed by larger players who have the resources to develop similar or better codecs quickly.",
+      "why_good": "A compression codec claiming 2x-faster-than-LZ4 decode at better ratios — if it holds up, a meaningful edge in a performance-critical primitive.",
+      "value": "Compression sells into databases, storage and CDNs where a real speed/ratio win is worth licensing/integration.",
+      "risk": "Bold benchmark claims need independent verification; LZ4/Zstd are entrenched and battle-tested.",
       "evidence": [
         "https://github.com/welcome-to-the-sunny-side/misa77",
         "https://news.ycombinator.com/item?id=48922838",
@@ -4041,15 +4225,23 @@
       ],
       "id": "63-misa77-a-codec-that-decodes-2x-faster-than-lz4-a",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:10:53Z"
+      "posted_at": "2026-07-27T15:10:53Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: misa77 —— 解压比 LZ4 快 2 倍(且压缩比更好)的编解码器。",
+          "why_good": "一个号称解压比 LZ4 快 2 倍、压缩比还更好的压缩编解码器——若成立,是在性能关键原语上的实质优势。",
+          "value": "压缩能卖进数据库、存储和 CDN,那里真实的速度/比率优势值得授权/集成。",
+          "risk": "大胆的跑分需独立验证;LZ4/Zstd 根基深、久经沙场。"
+        }
+      }
     },
     {
       "title": "Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
       "claim": "Show HN: Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
       "score": 7,
-      "why_good": "The ability to teach AI systems to recognize their own errors can lead to more reliable and trustworthy AI applications across various industries.",
-      "value": "Businesses could pay for a subscription service that enhances their AI tools with error recognition capabilities, improving performance and reducing costs associated with AI failures.",
-      "risk": "The technology could be seen as a feature rather than a standalone product, making it vulnerable to being integrated into existing AI platforms by larger companies.",
+      "why_good": "Teaches Gemma-4 to know when it's wrong (calibrated uncertainty) — tackles hallucination/confidence, one of the most valuable open problems.",
+      "value": "Calibration/uncertainty could sell as a safety layer to enterprises that need trustworthy model outputs; API or fine-tune.",
+      "risk": "Frontier labs are attacking calibration directly; a small team must show a durable, transferable method, not one model.",
       "evidence": [
         "https://github.com/cactus-compute/cactus-hybrid",
         "https://news.ycombinator.com/item?id=49010782",
@@ -4065,7 +4257,15 @@
       ],
       "id": "62-cactus-hybrid-we-taught-gemma-4-to-know-when-it-",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T15:10:49Z"
+      "posted_at": "2026-07-27T15:10:49Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Cactus Hybrid —— 我们教会 Gemma 4 知道自己什么时候错了。",
+          "why_good": "教 Gemma-4 知道自己何时出错(校准的不确定性)——攻的是幻觉/置信度,最有价值的开放问题之一。",
+          "value": "校准/不确定性可作为安全层卖给需要可信模型输出的企业;API 或微调。",
+          "risk": "前沿实验室在直接攻校准;小团队要证明一个持久、可迁移的方法,而非单个模型。"
+        }
+      }
     },
     {
       "title": "mattpocock/skills",
@@ -4397,9 +4597,9 @@
       "title": "Openbase",
       "claim": "Product Hunt: Openbase — Manage your team of AI agents by voice, from anywhere",
       "score": 7,
-      "why_good": "The ability to manage AI agents by voice could streamline workflows in ways traditional interfaces cannot.",
-      "value": "Businesses could pay for subscription plans to access advanced features and integrations with existing tools.",
-      "risk": "Major tech companies may quickly replicate the voice management feature, overshadowing a standalone product.",
+      "why_good": "Manage a team of AI agents by voice from anywhere — a novel mobile-first control layer as people run more background agents.",
+      "value": "Prosumer/team subscription for operators of many agents; the wedge is voice + remote control of agent fleets.",
+      "risk": "Early and broad; voice control of agents is unproven UX, and the agent platforms may add native remote control.",
       "evidence": [
         "https://www.producthunt.com/r/U7DUSA6V3LZT5Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/openbase-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4419,7 +4619,15 @@
       ],
       "id": "41-openbase",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:34Z"
+      "posted_at": "2026-07-27T11:56:34Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Openbase —— 随时随地用语音管理你的 AI agent 团队。",
+          "why_good": "随时随地用语音管理一队 AI agent——随着人们跑更多后台 agent,一个新颖的移动优先控制层。",
+          "value": "给管很多 agent 的操作者卖专业/团队订阅;切口是语音 + 远程控制 agent 舰队。",
+          "risk": "早期且宽泛;语音控 agent 的体验未验证,而 agent 平台可能加原生远程控制。"
+        }
+      }
     },
     {
       "title": "OpenComputer",
