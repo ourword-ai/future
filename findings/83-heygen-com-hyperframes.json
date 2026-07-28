@@ -2,9 +2,9 @@
   "title": "heygen-com/hyperframes",
   "claim": "heygen-com/hyperframes — Write HTML. Render video. Built for agents.",
   "score": 9,
-  "why_good": "It streamlines the process of creating video content for agents, addressing a niche need in the real estate and sales sectors.",
-  "value": "Real estate agencies and sales teams could subscribe for premium features or pay per video rendered, creating a recurring revenue model.",
-  "risk": "The technology could be easily replicated by larger video editing platforms or integrated into existing tools, limiting its market potential.",
+  "why_good": "Turn HTML into rendered video, built for agents — a clean primitive for programmatic video (ads, real-estate, personalized clips).",
+  "value": "Usage-based render API for agents/marketing teams generating video at scale; per-render or seat pricing.",
+  "risk": "Video render is compute-heavy and crowded (Remotion, HeyGen itself); needs a real cost/quality or distribution edge.",
   "evidence": [
     "https://github.com/heygen-com/hyperframes",
     "38,005★",
@@ -27,5 +27,13 @@
   ],
   "id": "83-heygen-com-hyperframes",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:22Z"
+  "posted_at": "2026-07-27T15:27:22Z",
+  "i18n": {
+    "zh": {
+      "claim": "heygen-com/hyperframes —— 写 HTML,渲染成视频,为 agent 而建。",
+      "why_good": "把 HTML 变成渲染视频,为 agent 而建——程序化视频(广告、房产、个性化短片)的一个干净原语。",
+      "value": "给规模化生成视频的 agent/营销团队做按量渲染 API:按次或按席位。",
+      "risk": "视频渲染重算力且拥挤(Remotion、HeyGen 本身);要有真正的成本/质量或分发优势。"
+    }
+  }
 }
