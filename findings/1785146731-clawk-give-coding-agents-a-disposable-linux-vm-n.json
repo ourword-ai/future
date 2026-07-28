@@ -2,9 +2,9 @@
   "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
   "claim": "Show HN: Clawk – Give coding agents a disposable Linux VM, not your laptop",
   "score": 8,
-  "why_good": "Gives coding agents a disposable Linux VM instead of your laptop — exactly the safety gap as agents run real commands. 226 pts / 159 comments: the pain resonates.",
-  "value": "Agent-sandboxing is prime paid infra: per-VM/usage billing + a managed control plane; every serious agent product needs it.",
-  "risk": "Cloud-sandbox providers (E2B, Modal, Daytona) are here and funded; differentiation + cost control are the fight.",
+  "why_good": "Gives coding agents a disposable Linux VM instead of your laptop — the safe-sandbox need every serious agent user hits.",
+  "value": "Usage-based ephemeral-VM service for agent devs/teams (the E2B lane); pay per VM-hour, enterprise isolation.",
+  "risk": "E2B, Modal, Daytona and the labs are racing on agent sandboxes; needs a speed, cost or DX edge to stand out.",
   "evidence": [
     "https://github.com/clawkwork/clawk",
     "https://news.ycombinator.com/item?id=48892859",
@@ -20,5 +20,13 @@
   ],
   "id": "1785146731-clawk-give-coding-agents-a-disposable-linux-vm-n",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T10:05:31Z"
+  "posted_at": "2026-07-27T10:05:31Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Clawk —— 给编码 agent 一台一次性 Linux VM,而不是你的笔记本。",
+      "why_good": "给编码 agent 一台一次性 Linux VM 而非你的笔记本——每个认真的 agent 用户都会撞上的安全沙箱需求。",
+      "value": "给 agent 开发者/团队做按量的临时 VM 服务(E2B 赛道):按 VM 小时计费、企业隔离。",
+      "risk": "E2B、Modal、Daytona 和各实验室都在抢 agent 沙箱;要靠速度、成本或体验优势才突出。"
+    }
+  }
 }
