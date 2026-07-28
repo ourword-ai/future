@@ -34,7 +34,9 @@
       "claim": "nexu-io/open-design —— 开源的「Claude Design」替代品,本地优先的桌面 app:让你的编码 agent 变成设计引擎。",
       "why_good": "把你现有的编码 agent 变成本地优先的设计工具——一个可信的 Figma /「Claude Design」开源替代,文件和 IP 都留在本机。",
       "value": "向「想要 agent 驱动设计、又不愿把文件上传云厂商」的设计-研发团队,卖托管/团队版和企业授权。",
-      "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。"
+      "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。",
+      "hook": "让你的编码 agent 变成本地版 Figma——一个把文件留在本机的开源「Claude Design」。"
     }
-  }
+  },
+  "hook": "Your coding agent becomes a local-first Figma — an open 'Claude Design' that keeps files on your machine."
 }
