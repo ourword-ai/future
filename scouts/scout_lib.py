@@ -206,6 +206,40 @@ def llm_copy(f):
         print(f"  [llm_copy fallback → heuristic: {e!r}]", file=sys.stderr)
     return None
 
+def editor_pick(f):
+    """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
+    founder could start NOW? Via GitHub Models (free in Actions w/ models:read). Returns
+    (True/False, reason) or (None, None) if the model is unavailable -> caller leaves it unset."""
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not tok:
+        return None, None
+    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
+    ev = ", ".join(f.get("evidence", []) or [])
+    prompt = (
+        "You are a hard-nosed startup scout. Decide if the project below is something a small "
+        "founder could realistically turn into a real, monetizable startup RIGHT NOW.\n"
+        "Answer FALSE if it is any of: a skills/prompt/awesome/content collection or list; a course, "
+        "book, or newsletter; a demo/toy/joke; an already-huge or famous project or a big company's "
+        "product (no opening left); or too vague to be a business.\n"
+        "Answer TRUE only if there is a clear product a team could build and charge money for.\n\n"
+        f"Project: {f.get('title','')} - {f.get('claim','')}\n"
+        f"Why: {f.get('why_good','')}\nSignals: {ev}\nDomain: {f.get('domain','')}\n\n"
+        "Reply with ONLY JSON: {\"pick\": true|false, \"reason\": \"one short sentence\"}")
+    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 120,
+                       "messages": [{"role": "user", "content": prompt}]}).encode()
+    try:
+        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
+              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                       "User-Agent": "future-scout"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            txt = json.loads(r.read())["choices"][0]["message"]["content"]
+        m = re.search(r"\{.*\}", txt, re.S)
+        obj = json.loads(m.group(0))
+        return bool(obj.get("pick")), str(obj.get("reason", ""))[:200]
+    except Exception as e:
+        print(f"  [editor_pick skip: {e!r}]", file=sys.stderr)
+        return None, None
+
 def post_ideas(cands, scout, cap=6):
     """Write vetted startup-worthy ideas to the board (no predictions). Dedup by repo."""
     corpus = engine.load_corpus("findings")
@@ -234,6 +268,12 @@ def post_ideas(cands, scout, cap=6):
             c = llm_copy(rec)          # LLM-polish every new item; falls back to heuristic
             if c:
                 rec.update(c)
+            if (rec.get("score") or 0) >= 8:
+                pk, why = editor_pick(rec)
+                if pk is not None:
+                    rec["pick"] = pk
+                    if why:
+                        rec["pick_reason"] = why
             os.makedirs("findings", exist_ok=True)
             json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
             if url and not DRY:
