@@ -26,7 +26,9 @@
       "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
       "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
       "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
-      "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。"
+      "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。",
+      "hook": "一个挑战 Node/Bun/Deno 的新 JS 运行时——上线首日 330 HN 分。"
     }
-  }
+  },
+  "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one."
 }
