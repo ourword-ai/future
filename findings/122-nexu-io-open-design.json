@@ -2,7 +2,7 @@
   "title": "nexu-io/open-design",
   "claim": "nexu-io/open-design — 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine:",
   "score": 10,
-  "why_good": "Turns your existing coding agent into a local-first design tool — a credible open alternative to Figma / 'Claude Design' that keeps files and IP on-device.",
+  "why_good": "An open-source alternative to Anthropic's Claude Design, built as a local-first desktop app: plug in your own coding-agent key — Claude Code, Codex, Cursor, Gemini and 20+ CLIs via BYOK — and that agent becomes the design engine. Describe what you want and it produces prototypes, landing pages, dashboards, slides, even images and video, exporting real HTML / PDF / PPTX / MP4 files right on your machine. Nothing is uploaded to a vendor cloud, so your source files and IP never leave your laptop — the one wedge a Figma-style SaaS can't easily copy.",
   "value": "Sell a hosted/team tier and enterprise licenses to design-dev teams who want agent-driven design without shipping their files to a cloud vendor.",
   "risk": "Figma and the model vendors can bolt on the same agent-design flow; 'local-first' alone won't hold unless the agent-to-design UX is clearly better.",
   "evidence": [
@@ -32,11 +32,11 @@
   "i18n": {
     "zh": {
       "claim": "nexu-io/open-design —— 开源的「Claude Design」替代品,本地优先的桌面 app:让你的编码 agent 变成设计引擎。",
-      "why_good": "把你现有的编码 agent 变成本地优先的设计工具——一个可信的 Figma /「Claude Design」开源替代,文件和 IP 都留在本机。",
+      "why_good": "一个开源版的「Claude Design」,做成本地优先的桌面 app:接入你自己的编码 agent 密钥——Claude Code、Codex、Cursor、Gemini 等 20+ CLI 都能 BYOK 接入——这个 agent 就成了设计引擎。一句话描述,它就在本机生成原型、落地页、仪表盘、幻灯片,甚至图片和视频,并导出真正的 HTML / PDF / PPTX / MP4 文件。全程不上厂商云,文件和 IP 始终留在本机——这正是 Figma 那类 SaaS 难以复制的护城河。",
       "value": "向「想要 agent 驱动设计、又不愿把文件上传云厂商」的设计-研发团队,卖托管/团队版和企业授权。",
       "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。",
-      "hook": "让你的编码 agent 变成本地版 Figma——一个把文件留在本机的开源「Claude Design」。"
+      "hook": "三个月冲到 8.2 万星:你的编码 agent,秒变本地版 Figma。"
     }
   },
-  "hook": "Your coding agent becomes a local-first Figma — an open 'Claude Design' that keeps files on your machine."
+  "hook": "82k stars in three months: your coding agent, reborn as a local-first Figma."
 }
