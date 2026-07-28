@@ -1,10 +1,10 @@
 {
   "title": "XBuilderLAB/cheat-on-content",
-  "claim": "XBuilderLAB/cheat-on-content — You're reading this. The skill predicted it. A workflow that turns every post into a calibrated experiment—score, blind-",
+  "claim": "Cheat on Content — a workflow that makes creators blind-predict each post's performance before publishing, then retro against actuals, building a personal ledger of what works.",
   "score": 8,
-  "why_good": "This project addresses the need for data-driven content optimization, which is often overlooked in favor of creativity.",
-  "value": "Content creators and marketers could subscribe to a premium version that offers advanced analytics and personalized recommendations, generating recurring revenue.",
-  "risk": "If larger marketing platforms integrate similar features, they could overshadow this tool, making it difficult to compete.",
+  "why_good": "Calibration loops are how forecasters and quants improve; nobody has productized them for content. 5.9k★ and 14 contributors say the pain (publish → guess → learn nothing) is widely felt.",
+  "value": "A creator-analytics SaaS: prediction journal plus platform-metrics ingestion plus per-account pattern reports — solo creators first, then agencies running many accounts.",
+  "risk": "The README's '0 to 1M followers in a month' claim is unverifiable marketing; as a prompt workflow it's clonable in a weekend, and platform-native analytics could absorb the idea.",
   "evidence": [
     "https://github.com/XBuilderLAB/cheat-on-content",
     "5,928★",
