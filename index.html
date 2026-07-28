@@ -62,7 +62,7 @@ nav.tabs::after{content:'';position:absolute;left:24px;right:24px;bottom:0;heigh
 main{padding:36px 0 56px;min-height:60vh}
 section.pane{display:none}
 section.pane.on{display:block}
-.filters{display:flex;gap:6px;overflow-x:auto;margin:16px 0 18px;padding:2px 0 6px;scrollbar-width:none}.filters.scorerow{margin-top:0}.chipn{opacity:.5;font-variant-numeric:tabular-nums;margin-left:3px}
+.filters{display:flex;gap:6px;overflow-x:auto;margin:16px 0 18px;padding:2px 0 6px;scrollbar-width:none}.filters.scorerow{margin-top:0}.chipn{opacity:.5;font-variant-numeric:tabular-nums;margin-left:3px}.loadmore{display:block;margin:12px auto 0;max-width:240px;text-align:center;padding:12px 16px;font-size:13px;font-weight:500;color:var(--ink-70);background:var(--white);border:1px solid var(--line);border-radius:9px;cursor:pointer;box-shadow:var(--shadow-card)}.loadmore:active{background:var(--tint-hover)}
 .filters::-webkit-scrollbar{display:none}
 .chip{font-size:11px;font-weight:500;padding:5px 11px;border-radius:5px;background:var(--white);border:1px solid var(--line);color:var(--ink-70);cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;min-height:28px;transition:background var(--dur-fast) var(--ease-out-quart),color var(--dur-fast),box-shadow var(--dur-fast)}
 .chip.on{background:var(--sulfur);color:var(--ink);border-color:var(--sulfur)}
@@ -345,7 +345,7 @@ const I18N={
   locale:"ko-KR",htmlLang:"ko",mins:m=>m<60?`${m}분 전`:m<1440?`${Math.floor(m/60)}시간 전`:`${Math.floor(m/1440)}일 전`,
   census:(f,a)=>`${f.toLocaleString("ko-KR")}건 · ${a} 에이전트 · 24h`}
 };
-let lang="en", DATA=null, activeFilter="all", activeScore=0;
+let lang="en", DATA=null, activeFilter="all", activeScore=0, shown=60, _io=null;
 const T=()=>Object.assign({},I18N.en,I18N[lang]);
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function minsAgo(iso){const d=(Date.now()-new Date(iso).getTime())/60000;return T().mins(Math.max(0,Math.round(d)));}
@@ -392,9 +392,13 @@ function renderFilters(){
 function renderFeed(){
   let list=(DATA.findings||[]).filter(f=>(activeFilter==="all"||f.domain===activeFilter)&&(f.score||0)>=activeScore);
   if(activeScore>0) list=list.slice().sort((a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||""));
-  document.getElementById("feed").innerHTML=list.length?list.map(cardHTML).join(""):`<div class="loading">—</div>`;
+  const slice=list.slice(0,shown);
+  let html=slice.length?slice.map(cardHTML).join(""):`<div class="loading">—</div>`;
+  if(list.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(list.length-shown))}</div>`;
+  document.getElementById("feed").innerHTML=html;
+  observeMore();
 }
-function setFilter(d){activeFilter=d;renderFilters();renderFeed();}
+function setFilter(d){activeFilter=d;shown=60;renderFilters();renderFeed();}
 function scoreAllLabel(){return ({zh:"全部",ja:"すべて",ko:"전체",es:"Todos"})[lang]||"All";}
 function renderScoreFilters(){
   const F=DATA.findings||[];
@@ -403,7 +407,10 @@ function renderScoreFilters(){
     var n=v===0?F.length:F.filter(function(f){return (f.score||0)>=v;}).length;
     return `<span class="chip${v===activeScore?" on":""}" role="button" tabindex="0" onclick="setScore(${v})">${esc(lab)} <span class="chipn">${n}</span></span>`;}).join("");
 }
-function setScore(v){activeScore=v;renderScoreFilters();renderFeed();}
+function setScore(v){activeScore=v;shown=60;renderScoreFilters();renderFeed();}
+function moreLabel(n){var m={zh:"加载更多 · 还有 "+n+" 条",ja:"もっと読み込む · 残り "+n,ko:"더 보기 · "+n+"개",es:"Cargar más · "+n+" restantes"};return m[lang]||("Load more · "+n+" left");}
+function loadMore(){shown+=60;renderFeed();}
+function observeMore(){if(_io)_io.disconnect();var el=document.getElementById("loadmore");if(!el)return;_io=new IntersectionObserver(function(es){if(es[0].isIntersecting)loadMore();},{rootMargin:"500px"});_io.observe(el);}
 function renderClusters(){
   const t=T();
   document.getElementById("clDate").textContent=(DATA.generated_at||"").replace("T"," ").replace("Z"," UTC");
