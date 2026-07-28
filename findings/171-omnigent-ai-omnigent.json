@@ -34,7 +34,9 @@
       "claim": "omnigent-ai/omnigent —— 开源 AI agent 框架 + 元 harness:编排 Claude Code、Codex、Cursor、Pi 和自定义 agent。",
       "why_good": "把多个编码 agent(Claude Code、Codex、Cursor)统一编排的元 harness——押注\"多 agent\"会成为常态。",
       "value": "可能成为团队为\"跑 agent 舰队\"付费的编排/控制平面——跨厂商的路由、护栏、可观测性。",
-      "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。"
+      "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。",
+      "hook": "一个元 harness,把 Claude Code、Codex、Cursor 统一编排。"
     }
-  }
+  },
+  "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together."
 }
