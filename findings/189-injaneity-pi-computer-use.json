@@ -1,10 +1,10 @@
 {
   "title": "injaneity/pi-computer-use",
-  "claim": "injaneity/pi-computer-use — Let Pi control your apps on MacOS & Windows",
+  "claim": "pi-computer-use — an extension that lets Pi agents operate real desktop apps on macOS/Windows/Linux: observe a window, find buttons and text, click, type, scroll, and wait for the UI to change.",
   "score": 8,
-  "why_good": "Gives the Pi agent computer-use control over desktop apps (1,618 stars, active) — the OS-automation layer agents need to actually do work.",
-  "value": "Usage/seat pricing for teams automating desktop workflows; the wedge is reliable cross-app control.",
-  "risk": "Anthropic/OpenAI computer-use and the OS makers are racing here; a third-party control layer fights giants.",
+  "why_good": "The long tail of work lives in apps with no API — legacy ERP, desktop-only vertical tools. Structured control (find controls, act, wait for change) is the sober, reliable version of computer use, and the README is unusually honest about when not to use it — a sign of engineering judgment.",
+  "value": "商业价值: desktop RPA rebuilt for agents — sell reliability for GUI-only back-office workflows, a lane where UiPath charges thousands per bot seat and agent-native tooling is still empty.",
+  "risk": "It's an extension for one niche agent (Pi), and OS vendors plus Anthropic/OpenAI ship first-party computer use; without cross-agent support it stays a plugin, not a product.",
   "evidence": [
     "https://github.com/injaneity/pi-computer-use",
     "1,618★",
