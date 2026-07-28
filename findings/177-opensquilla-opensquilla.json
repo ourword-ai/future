@@ -32,7 +32,9 @@
       "claim": "OpenSquilla —— 围绕 token 效率打造的开源微内核 AI agent(CLI、网页、聊天渠道):同样预算,每个 token 干更多有用的活。",
       "why_good": "token 花费才是 agent 用户真正的账单,而几乎所有框架都在拼功能而非省钱;这个还真有人维护——34 位贡献者。",
       "value": "托管版 + 企业支持:「砍掉你的 agent 推理账单」是买家早就懂的预算项,效率本身就是卖点。",
-      "risk": "模型价格持续下降会不断削弱\"省钱\"这个卖点,而模型厂商的一方 agent 运行时可能把独立玩家挤掉。"
+      "risk": "模型价格持续下降会不断削弱\"省钱\"这个卖点,而模型厂商的一方 agent 运行时可能把独立玩家挤掉。",
+      "hook": "一个拼你 token 账单、而非拼功能的 agent——同样预算,干更多有用的活。"
     }
-  }
+  },
+  "hook": "The agent that competes on your token bill, not features — same budget, more useful work."
 }
