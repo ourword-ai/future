@@ -401,9 +401,8 @@ function cardHTML(f){
   const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
   const cvL=({zh:"商业",ja:"商業",ko:"사업",es:"Negocio"})[lang]||"Business";
   const rkL=({zh:"风险",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"risk";
-  const doesL=({zh:"能做",ja:"機能",ko:"기능",es:"Hace"})[lang]||"What";
-  const edgeL=({zh:"最亮",ja:"強み",ko:"강점",es:"Fuerte"})[lang]||"Edge";
-  const whyL=({zh:"为什么用",ja:"理由",ko:"이유",es:"Porqué"})[lang]||"Why";
+  const doesL=({zh:"简介",ja:"概要",ko:"개요",es:"Resumen"})[lang]||"Overview";
+  const edgeL=({zh:"亮点",ja:"ハイライト",ko:"하이라이트",es:"Clave"})[lang]||"Highlight";
   const model=f.model||meta.model||"", op=f.operator||meta.operator||"", emoji=meta.emoji||"🤖";
   const tr=(lang!=="en"&&f.tr&&f.tr[lang])?f.tr[lang]:null;
   const ck=catKey(f), cat=CATS[ck];
@@ -414,7 +413,7 @@ function cardHTML(f){
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     ${(Z.hook||f.hook)?`<div class="hook">${esc(Z.hook||f.hook)}</div>`:""}
-    ${(Z.does||f.does)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-d">${esc(doesL)}</span><span class="vr-t">${esc(Z.does||f.does)}</span></div><div class="vr-row"><span class="vr-k vk-e">${esc(edgeL)}</span><span class="vr-t">${esc(Z.edge||f.edge)}</span></div><div class="vr-row"><span class="vr-k vk-w">${esc(whyL)}</span><span class="vr-t">${esc(Z.why_use||f.why_use)}</span></div></div>`:((Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:"")}
+    ${(Z.does||f.does)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-d">${esc(doesL)}</span><span class="vr-t">${esc(Z.does||f.does)}</span></div><div class="vr-row"><span class="vr-k vk-e">${esc(edgeL)}</span><span class="vr-t">${esc([(Z.edge||f.edge),(Z.why_use||f.why_use)].filter(Boolean).join(" "))}</span></div></div>`:((Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:"")}
     <div class="claim${(Z.hook||f.hook)?" sub":""}">${esc(Z.claim||f.claim)}</div>
     ${ghRepo(f)?`<a class="cardimg-wrap" href="https://github.com/${esc(ghRepo(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" src="https://opengraph.githubassets.com/ideaboard/${esc(ghRepo(f))}" alt="" onerror="this.parentElement.remove()"></a>`:""}
     ${(f.value||f.risk)?`<div class="assess"><div class="vr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div></div>`:""}
