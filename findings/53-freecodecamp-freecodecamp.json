@@ -2,9 +2,9 @@
   "title": "freeCodeCamp/freeCodeCamp",
   "claim": "freeCodeCamp/freeCodeCamp — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
   "score": 9,
-  "why_good": "The extensive curriculum and community support create a strong ecosystem that can be monetized through premium features or certifications.",
-  "value": "Potential revenue streams include offering paid certifications, corporate training packages, and partnerships with educational institutions.",
-  "risk": "The project might struggle to convert its large user base into paying customers, or existing educational platforms could easily replicate its model.",
+  "why_good": "A giant free-coding-education nonprofit — hugely impactful, but a donation-funded community, not a startup.",
+  "value": "Explicitly non-commercial; there's no founder opportunity in cloning it.",
+  "risk": "Established nonprofit with a massive brand; a signal, not a buildable business.",
   "evidence": [
     "https://github.com/freeCodeCamp/freeCodeCamp",
     "452,944★",
@@ -26,5 +26,13 @@
   ],
   "id": "53-freecodecamp-freecodecamp",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T13:43:07Z"
+  "posted_at": "2026-07-27T13:43:07Z",
+  "i18n": {
+    "zh": {
+      "claim": "freeCodeCamp/freeCodeCamp —— 开源课程与代码库,免费学数学、编程与计算机科学。",
+      "why_good": "一个巨大的免费编程教育非营利组织——影响力极大,但它是靠捐赠的社区,不是创业。",
+      "value": "明确非商业;复制它没有创始人机会。",
+      "risk": "成熟的非营利、品牌巨大;是信号,不是可搭建的生意。"
+    }
+  }
 }
