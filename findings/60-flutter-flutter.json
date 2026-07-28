@@ -2,9 +2,9 @@
   "title": "flutter/flutter",
   "claim": "flutter/flutter — Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
   "score": 9,
-  "why_good": "Flutter's cross-platform capabilities allow for rapid development, which can significantly reduce time-to-market for new applications.",
-  "value": "Companies pay for premium support, training, and custom development services to leverage Flutter for their app solutions.",
-  "risk": "The risk lies in established players like Google or Microsoft potentially integrating similar features into their existing ecosystems, overshadowing independent offerings.",
+  "why_good": "Google's cross-platform UI toolkit — a foundational framework, not an opening for a founder.",
+  "value": "No startup wedge; the money around Flutter is services/consulting, and Google owns the platform.",
+  "risk": "Owned by Google and already dominant; listed as an ecosystem signal, not a buildable opportunity.",
   "evidence": [
     "https://github.com/flutter/flutter",
     "177,951★",
@@ -26,5 +26,13 @@
   ],
   "id": "60-flutter-flutter",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T13:43:38Z"
+  "posted_at": "2026-07-27T13:43:38Z",
+  "i18n": {
+    "zh": {
+      "claim": "flutter/flutter —— 让你快速构建漂亮的跨端 app(移动及更多)。",
+      "why_good": "Google 的跨平台 UI 工具包——一个基础框架,不是创始人的口子。",
+      "value": "没有创业切口;Flutter 周边的钱是服务/咨询,而平台归 Google。",
+      "risk": "归 Google 且已主导;这里当生态信号列出,不是可搭建的机会。"
+    }
+  }
 }
