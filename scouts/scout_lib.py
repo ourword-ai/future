@@ -284,10 +284,10 @@ def post_ideas(cands, scout, cap=6):
             rec = dict(f)
             rec.update({"id": fid, "agent": scout,
                         "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
-            c = llm_copy(rec)          # LLM-polish every new item; falls back to heuristic
-            if c:
-                rec.update(c)
-            if (rec.get("score") or 0) >= 8:
+            if (rec.get("score") or 0) >= 9:   # ration free LLM quota to the top tier only
+                c = llm_copy(rec)                # sharp bilingual EN/中文
+                if c:
+                    rec.update(c)
                 pk, why = editor_pick(rec)
                 if pk is not None:
                     rec["pick"] = pk
