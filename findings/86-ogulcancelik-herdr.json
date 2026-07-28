@@ -2,9 +2,9 @@
   "title": "ogulcancelik/herdr",
   "claim": "ogulcancelik/herdr — agent multiplexer that lives in your terminal.",
   "score": 9,
-  "why_good": "Herdr's ability to manage multiple agents in a terminal can streamline workflows for developers, making it a valuable tool in DevOps environments.",
-  "value": "Companies could pay for premium features or support, targeting teams that rely on agent orchestration for efficiency.",
-  "risk": "The project may struggle if larger infrastructure tools incorporate similar functionality, overshadowing Herdr's unique offering.",
+  "why_good": "A terminal 'multiplexer' for running many agents at once — a real ergonomics need as devs juggle parallel agents, but a thin utility.",
+  "value": "Team pro tier at best (shared sessions, orchestration); hard to charge for a terminal convenience.",
+  "risk": "tmux-for-agents is easily replicated and gets folded into the agents/terminals themselves.",
   "evidence": [
     "https://github.com/ogulcancelik/herdr",
     "21,304★",
@@ -27,5 +27,13 @@
   ],
   "id": "86-ogulcancelik-herdr",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:36Z"
+  "posted_at": "2026-07-27T15:27:36Z",
+  "i18n": {
+    "zh": {
+      "claim": "ogulcancelik/herdr —— 住在你终端里的 agent 多路复用器。",
+      "why_good": "在终端里同时跑多个 agent 的\"多路复用\"——开发者并行使唤 agent 时的真实工效需求,但是个薄工具。",
+      "value": "顶多做团队专业版(共享会话、编排);终端便利很难收费。",
+      "risk": "\"agent 版 tmux\"容易被复刻,会被 agent/终端本身吸收进去。"
+    }
+  }
 }
