@@ -1,0 +1,29 @@
+{
+  "title": "kyegomez/OpenMythos",
+  "claim": "kyegomez/OpenMythos — A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research",
+  "score": 7,
+  "why_good": "3,300 forks (22% of stars) — people build on it; strong momentum (~146★/day)",
+  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "evidence": [
+    "https://github.com/kyegomez/OpenMythos",
+    "14,767★",
+    "3,300 forks",
+    "1 contributors",
+    "created 2026-04-18"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "ai",
+    "anthropic",
+    "attention",
+    "claude",
+    "claude-ai"
+  ],
+  "id": "257-kyegomez-openmythos",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T21:16:03Z"
+}
