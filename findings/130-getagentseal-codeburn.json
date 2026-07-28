@@ -2,9 +2,9 @@
   "title": "getagentseal/codeburn",
   "claim": "getagentseal/codeburn — Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claude Code, Cursor, Codex, Gemini ",
   "score": 9,
-  "why_good": "It addresses a growing need for transparency and cost management in AI development, which is often overlooked by developers focused on building.",
-  "value": "Companies using AI tools would pay for advanced analytics and reporting features to optimize their token usage and reduce costs.",
-  "risk": "The project could fail if larger companies integrate similar tracking features into their existing tools, making it redundant.",
+  "why_good": "Tracks AI-coding token spend across 31 agents locally — the cost side of the agent boom nobody instruments, and it's the number buyers actually watch.",
+  "value": "Sell a team dashboard + budgets/alerts to eng leaders who must cap and attribute agent spend across seats.",
+  "risk": "Each agent vendor can add native usage metering, and a free local tracker is easy to clone.",
   "evidence": [
     "https://github.com/getagentseal/codeburn",
     "8,964★",
@@ -29,5 +29,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:28:12Z",
   "pick": true,
-  "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product."
+  "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product.",
+  "i18n": {
+    "zh": {
+      "claim": "getagentseal/codeburn —— 免费本地工具,跨 31 种工具/agent(Claude Code、Cursor、Codex、Gemini)追踪 AI 编码的 token 用量与花费。",
+      "why_good": "在本地追踪 31 种 agent 的编码 token 花费——agent 热潮里没人做的成本侧,而这正是买家真正盯的数字。",
+      "value": "给工程负责人卖团队看板 + 预算/告警:跨席位设上限、把花费归因。",
+      "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。"
+    }
+  }
 }
