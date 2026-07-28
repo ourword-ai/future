@@ -2,9 +2,9 @@
   "title": "GaoSSR/best-claude-hud",
   "claim": "GaoSSR/best-claude-hud — Minimal Claude Code statusline HUD powered by Rust.",
   "score": 9,
-  "why_good": "The project addresses a niche need for efficient status monitoring in AI applications, which is often overlooked in broader developer tools.",
-  "value": "Companies developing AI products could pay for premium features or support, creating a subscription model for enhanced monitoring capabilities.",
-  "risk": "The project may struggle to differentiate itself if larger platforms integrate similar functionality into their existing tools.",
+  "why_good": "A tidy Rust statusline for Claude Code — pleasant, but a cosmetic dev-tool add-on, not a business.",
+  "value": "Effectively unmonetizable; a free open-source nicety that lives or dies with Claude Code's own UI.",
+  "risk": "Feature, not a company: Anthropic can ship a native statusline any day and this disappears.",
   "evidence": [
     "https://github.com/GaoSSR/best-claude-hud",
     "1,397★",
@@ -29,5 +29,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:21Z",
   "pick": true,
-  "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing."
+  "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing.",
+  "i18n": {
+    "zh": {
+      "claim": "GaoSSR/best-claude-hud —— 用 Rust 写的极简 Claude Code 状态栏 HUD。",
+      "why_good": "给 Claude Code 做的清爽 Rust 状态栏——好看,但是个装饰性的开发工具插件,不是生意。",
+      "value": "基本无法变现;它是个免费开源的小美化,随 Claude Code 自家 UI 生死。",
+      "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。"
+    }
+  }
 }
