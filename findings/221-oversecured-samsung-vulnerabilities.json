@@ -24,5 +24,13 @@
   ],
   "id": "221-oversecured-samsung-vulnerabilities",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T10:42:32Z"
+  "posted_at": "2026-07-28T10:42:32Z",
+  "i18n": {
+    "zh": {
+      "claim": "oversecured/Samsung_Vulnerabilities — 三星预装安卓应用中发现176个漏洞",
+      "why_good": "75个分支（占星标的24%） — 说明有人在基于此进行开发",
+      "value": "每个AI产品都需要的基础设施 — 以基于使用的API形式变现，并提供托管/管理服务",
+      "risk": "可能只是一个功能，而非独立公司 — 需要评估护城河以及现有企业是否会将其吸收"
+    }
+  }
 }

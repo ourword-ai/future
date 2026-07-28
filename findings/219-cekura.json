@@ -23,5 +23,13 @@
   ],
   "id": "219-cekura",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-28T10:16:34Z"
+  "posted_at": "2026-07-28T10:16:34Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Cekura — 语音助手的自我提升循环",
+      "why_good": "在Product Hunt上以0个赞和27条评论的成绩上线——第一天就吸引了真正的用户，这是大多数产品所无法实现的。",
+      "value": "基础设施AI产品所需——基于使用的API + 托管服务",
+      "risk": "Product Hunt的热度会消退——检查30天的留存率，以及这个功能是否会被更大工具吸收。"
+    }
+  }
 }

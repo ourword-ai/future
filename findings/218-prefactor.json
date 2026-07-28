@@ -23,5 +23,13 @@
   ],
   "id": "218-prefactor",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-28T10:16:33Z"
+  "posted_at": "2026-07-28T10:16:33Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Prefactor — 实时评估你的AI代理",
+      "why_good": "在Product Hunt上线时获得了0个赞和55条评论——第一天就吸引了真实的观众，这是大多数产品所无法实现的。",
+      "value": "基础设施AI产品所需——基于使用的API + 托管层",
+      "risk": "Product Hunt的热度会减退——检查30天的留存率，以及这个功能是否会被更大的工具所吸收。"
+    }
+  }
 }

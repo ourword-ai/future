@@ -23,5 +23,13 @@
   ],
   "id": "220-lottie-creator-2-0",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-28T10:16:35Z"
+  "posted_at": "2026-07-28T10:16:35Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Lottie Creator 2.0 — 为网页打造的 After Effects，基于 Lottie",
+      "why_good": "在 Product Hunt 上发布时获得了 0 个赞和 49 条评论 — 第一天就有真实的用户参与，这是大多数产品所无法实现的。",
+      "value": "一个用户愿意为之支付月费的工作流程",
+      "risk": "Product Hunt 的热度可能会消退 — 检查 30 天的留存率，以及这个功能是否会被更大工具所吸收。"
+    }
+  }
 }
