@@ -26,7 +26,9 @@
       "claim": "mattpocock/skills —— 给「真正工程师」的技能集,直接来自作者的 .agents 目录。",
       "why_good": "知名 TypeScript 教育者把自己的 agent「技能」目录开源——分发力强,但本质是一份精选文件集,不是产品。",
       "value": "很难直接变现;真正的生意是一个有质控、可维护的付费「技能注册表/市场」——而这个还不是。",
-      "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。"
+      "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。",
+      "hook": "知名 TS 教育者开源了自己的 agent「技能」目录——传播力大,但它是文件合集,不是公司。"
     }
-  }
+  },
+  "hook": "A star TS educator open-sourced his agent 'skills' folder — huge reach, but a file collection, not a company."
 }
