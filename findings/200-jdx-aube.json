@@ -1,10 +1,10 @@
 {
   "title": "jdx/aube",
-  "claim": "jdx/aube — A fast Node.js package manager",
+  "claim": "aube — a Rust Node.js package manager by the maintainer of mise: auto-installs when you run a script, reads existing pnpm/npm/yarn/bun lockfiles in place, and jails lifecycle scripts — the strictest security defaults of any Node PM.",
   "score": 7,
-  "why_good": "early traction (1,775★); 18 contributors, 157 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "The lifecycle-script jail lands exactly on the npm supply-chain-attack wave (postinstall malware), and zero-migration adoption — it drops into your existing lockfile — removes the switching cost that kills new package managers. jdx's mise following supplies distribution most new tools never get.",
+  "value": "商业价值: package managers don't monetize directly — the opening is the security posture: an org-level layer (script-jail policy, registry firewall, audit trail) sold to teams out of the Socket.dev / supply-chain budget.",
+  "risk": "pnpm, Bun and npm can copy auto-install and script sandboxing; sponsor-funded solo-maintainer economics (37signals, entire.io) sustain a tool, not a company — this may stay excellent OSS with no business attached.",
   "evidence": [
     "https://github.com/jdx/aube",
     "1,775★",
