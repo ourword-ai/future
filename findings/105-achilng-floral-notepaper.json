@@ -2,9 +2,9 @@
   "title": "Achilng/floral-notepaper",
   "claim": "Achilng/floral-notepaper — 花笺，轻量优雅的跨平台桌面便签工具，支持 Markdown 编辑与预览",
   "score": 8,
-  "why_good": "The combination of lightweight design and Markdown support caters to a niche market of users who prefer minimalistic productivity tools.",
-  "value": "Freemium model targeting individual users and teams, with premium features for enhanced collaboration and cloud storage options.",
-  "risk": "The market is saturated with established note-taking apps, making user acquisition difficult against well-funded incumbents.",
+  "why_good": "An elegant, lightweight cross-platform sticky-notes app with Markdown — polished, but sticky notes is a crowded, low-margin category.",
+  "value": "Hard to charge; at most a pro/sync tier, competing with free OS notes and Notion.",
+  "risk": "Tiny scope, tons of free alternatives; a lovely utility, not a durable business.",
   "evidence": [
     "https://github.com/Achilng/floral-notepaper",
     "4,626★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:48Z",
   "pick": true,
-  "pick_reason": "The project offers a unique product with a clear target market that can be monetized through subscriptions or one-time purchases."
+  "pick_reason": "The project offers a unique product with a clear target market that can be monetized through subscriptions or one-time purchases.",
+  "i18n": {
+    "zh": {
+      "claim": "Achilng/floral-notepaper —— 花笺,轻量优雅的跨平台桌面便签工具,支持 Markdown 编辑与预览。",
+      "why_good": "一个优雅、轻量、跨平台的 Markdown 便签 app——做得精致,但便签是个拥挤、低毛利的品类。",
+      "value": "很难收费;顶多做专业/同步档,和免费系统便签、Notion 竞争。",
+      "risk": "范围极小、免费替代一堆;是个可爱的工具,不是持久生意。"
+    }
+  }
 }
