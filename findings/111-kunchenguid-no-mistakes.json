@@ -2,9 +2,9 @@
   "title": "kunchenguid/no-mistakes",
   "claim": "kunchenguid/no-mistakes — git push no-mistakes",
   "score": 8,
-  "why_good": "The project addresses a common pain point in development workflows by reducing errors during git operations, which can save time and resources for teams.",
-  "value": "Development teams and companies could pay for a premium version that integrates with existing CI/CD tools, offering analytics and error tracking.",
-  "risk": "If larger version control platforms implement similar features, this project may struggle to compete or differentiate itself.",
+  "why_good": "A tiny 'git push without mistakes' helper — a cute one-liner utility, not a product.",
+  "value": "No monetization; it's a convenience script.",
+  "risk": "Trivial scope, zero moat; a gist, not a company.",
   "evidence": [
     "https://github.com/kunchenguid/no-mistakes",
     "7,122★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:19:49Z",
   "pick": true,
-  "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams."
+  "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams.",
+  "i18n": {
+    "zh": {
+      "claim": "kunchenguid/no-mistakes —— git push 不出错。",
+      "why_good": "一个很小的 push 不出错 小助手——可爱的单行工具,不是产品。",
+      "value": "没有变现;它是个便利脚本。",
+      "risk": "范围极小、零护城河;是个 gist,不是公司。"
+    }
+  }
 }
