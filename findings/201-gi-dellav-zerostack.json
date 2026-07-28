@@ -2,9 +2,9 @@
   "title": "gi-dellav/zerostack",
   "claim": "gi-dellav/zerostack — Lightweight coding agent written in Rust, optimized for memory footprint and performance",
   "score": 7,
-  "why_good": "early traction (1,528★); 27 contributors, 239 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A lightweight, memory-optimized Rust coding agent — appeals to devs on constrained machines, but another entrant in a crushed field.",
+  "value": "No clear paid wedge; 'lighter coding agent' rarely converts to revenue against free, funded incumbents.",
+  "risk": "Brutal coding-agent category (Claude Code/Cursor/Aider); 'lightweight' alone isn't a business.",
   "evidence": [
     "https://github.com/gi-dellav/zerostack",
     "1,528★",
@@ -26,5 +26,13 @@
   ],
   "id": "201-gi-dellav-zerostack",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:46:28Z"
+  "posted_at": "2026-07-28T04:46:28Z",
+  "i18n": {
+    "zh": {
+      "claim": "gi-dellav/zerostack —— 用 Rust 写的轻量编码 agent,针对内存占用和性能优化。",
+      "why_good": "一个轻量、内存优化的 Rust 编码 agent——对受限机器的开发者有吸引力,但它是被碾压赛道里的又一个入局者。",
+      "value": "没有清晰的付费切口;更轻的编码 agent 很难在免费、有融资的对手前变现。",
+      "risk": "残酷的编码 agent 品类(Claude Code/Cursor/Aider);光 轻量 不是生意。"
+    }
+  }
 }
