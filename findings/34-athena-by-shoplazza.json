@@ -2,9 +2,9 @@
   "title": "Athena by Shoplazza",
   "claim": "Product Hunt: Athena by Shoplazza — An orchestrator agent for your entire commerce stack",
   "score": 9,
-  "why_good": "Athena's ability to integrate and optimize multiple e-commerce tools could streamline operations for businesses, making it indispensable.",
-  "value": "E-commerce platforms and retailers would pay for subscription services or transaction fees based on sales volume facilitated through the orchestrator.",
-  "risk": "If larger e-commerce platforms decide to build similar orchestration features in-house, Athena could struggle to compete.",
+  "why_good": "An orchestrator agent that ties together a merchant's whole commerce stack — real pain for operators juggling many tools.",
+  "value": "Per-merchant subscription or GMV-based fee to e-commerce operators; the wedge is one control panel over fragmented tools.",
+  "risk": "Backed by Shoplazza (platform-tied); Shopify and the platforms can build native orchestration and lock it in.",
   "evidence": [
     "https://www.producthunt.com/r/BFVWD7733PP65I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/athena-by-shoplazza?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "34-athena-by-shoplazza",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:04Z"
+  "posted_at": "2026-07-27T11:56:04Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Athena by Shoplazza —— 编排你整个电商技术栈的 agent。",
+      "why_good": "一个把商家整个电商栈串起来的编排 agent——对同时用一堆工具的运营者是真实痛点。",
+      "value": "向电商运营按商家订阅或按 GMV 抽成;切口是一个控制台管碎片化工具。",
+      "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。"
+    }
+  }
 }
