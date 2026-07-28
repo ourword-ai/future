@@ -2,9 +2,9 @@
   "title": "esengine/DeepSeek-Reasonix",
   "claim": "esengine/DeepSeek-Reasonix — DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
   "score": 9,
-  "why_good": "Its focus on prefix-cache stability could lead to superior performance in coding assistance, making it a reliable tool for developers.",
-  "value": "Companies could pay for premium features or subscriptions that enhance productivity and integration with existing development environments.",
-  "risk": "The project may struggle to differentiate itself in a crowded market where larger companies could easily replicate its features.",
+  "why_good": "A DeepSeek-native terminal coding agent tuned around prefix-cache stability — a real efficiency angle for the cost-sensitive DeepSeek crowd.",
+  "value": "Managed/team tier for shops standardizing on DeepSeek; sell reliability, shared config and support.",
+  "risk": "A single-model wrapper in a crowded terminal-agent field; DeepSeek or a general agent can match the caching trick.",
   "evidence": [
     "https://github.com/esengine/DeepSeek-Reasonix",
     "27,896★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:19:45Z",
   "pick": true,
-  "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers."
+  "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers.",
+  "i18n": {
+    "zh": {
+      "claim": "esengine/DeepSeek-Reasonix —— DeepSeek 原生的终端编码 agent,围绕前缀缓存稳定性设计,可长驻运行。",
+      "why_good": "围绕前缀缓存稳定性调优的 DeepSeek 原生终端编码 agent——对成本敏感的 DeepSeek 群体是个真实效率卖点。",
+      "value": "给标准化用 DeepSeek 的团队做托管/团队版:卖可靠性、共享配置和支持。",
+      "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。"
+    }
+  }
 }
