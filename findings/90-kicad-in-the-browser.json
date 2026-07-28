@@ -2,9 +2,9 @@
   "title": "KiCad in the Browser",
   "claim": "Show HN: KiCad in the Browser",
   "score": 7,
-  "why_good": "By enabling PCB design directly in the browser, it lowers the barrier to entry for hobbyists and educators, fostering a new generation of electronics enthusiasts.",
-  "value": "Monetization could come from subscription plans for advanced features, as well as partnerships with PCB manufacturers for streamlined production services.",
-  "risk": "The project may struggle to scale if larger, established PCB design tools integrate similar browser capabilities, overshadowing its unique offering.",
+  "why_good": "KiCad (pro PCB design) running in the browser — removes install friction for a serious, growing hardware/maker audience.",
+  "value": "Freemium browser EDA + a cloud/collab/manufacturing tier; hardware teams pay for collaboration and fab integration.",
+  "risk": "KiCad is free and desktop-entrenched; browser EDA (EasyEDA, Flux) exists — needs collab/fab hooks to matter.",
   "evidence": [
     "https://demo.pcbjam.com/",
     "https://news.ycombinator.com/item?id=48793542",
@@ -20,5 +20,13 @@
   ],
   "id": "90-kicad-in-the-browser",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:32:10Z"
+  "posted_at": "2026-07-27T15:32:10Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 浏览器里的 KiCad。",
+      "why_good": "把 KiCad(专业 PCB 设计)搬进浏览器——为认真、增长中的硬件/创客群体去掉安装摩擦。",
+      "value": "浏览器 EDA 免费增值 + 云/协作/制造档;硬件团队为协作和打样集成付费。",
+      "risk": "KiCad 免费且桌面根基深;浏览器 EDA(EasyEDA、Flux)已在——要靠协作/打样接口才有意义。"
+    }
+  }
 }
