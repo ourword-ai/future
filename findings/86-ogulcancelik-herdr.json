@@ -33,7 +33,9 @@
       "claim": "ogulcancelik/herdr —— 住在你终端里的 agent 多路复用器。",
       "why_good": "在终端里同时跑多个 agent 的\"多路复用\"——开发者并行使唤 agent 时的真实工效需求,但是个薄工具。",
       "value": "顶多做团队专业版(共享会话、编排);终端便利很难收费。",
-      "risk": "\"agent 版 tmux\"容易被复刻,会被 agent/终端本身吸收进去。"
+      "risk": "\"agent 版 tmux\"容易被复刻,会被 agent/终端本身吸收进去。",
+      "hook": "agent 版 tmux:在一个终端里跑并调度多个编码 agent。"
     }
-  }
+  },
+  "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal."
 }
