@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T11:28:58Z",
+  "generated_at": "2026-07-28T11:34:20Z",
   "board": {
     "ideas": 175,
     "domains": 6,
@@ -31,11 +31,11 @@
     {
       "title": "debpalash/OmniVoice-Studio",
       "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-      "hook": "The open-source ElevenLabs — clone a voice, dub a video, make an audiobook, all locally with no per-character bill.",
-      "why_good": "It folds the whole voice-AI stack — cloning, TTS, dictation, video dubbing, audiobook export — into one local app, turning ElevenLabs' metered API into a private one-time install; ~9k stars in four months tracks the backlash against per-character pricing.",
-      "value": "Sell a supported desktop and team/self-host edition to podcasters, dubbing studios, publishers and agencies that cannot send client audio to a vendor cloud or stomach per-character fees at scale.",
-      "risk": "Voice cloning is a moving compliance target — consent, deepfakes — and ElevenLabs owns quality and distribution; staying ahead on local model quality is the whole game.",
-      "score": 9,
+      "hook": "Local voice AI just crossed the 'not obviously fake' line — the window to package it as an open ElevenLabs is open right now.",
+      "why_good": "Why now: in the last few months open local models crossed the quality bar — Chatterbox beat ElevenLabs in blind tests, and NeuTTS Air runs realistic cloning on a laptop or even a Raspberry Pi — so the moat is no longer the model, it's the app around it. Meanwhile 'expensive' appears ~170 times in ElevenLabs reviews and its API runs 10-14x pricier than Amazon Polly or Gemini Flash. OmniVoice is the packaging play: clone, TTS, dictation, dubbing and audiobook export in one local app.",
+      "value": "Buyer: dubbing studios, podcast and audiobook shops and agencies with steady volume who can't send client audio to a vendor cloud and get burned by per-character billing. Wedge: don't fight on model quality — win on workflow (batch dubbing, project files, one flat local install) and sell a supported team edition, the way Audacity-plus-a-business would look.",
+      "risk": "Who kills it: ElevenLabs open-sources a good local tier, or Descript/Adobe bundle good-enough voice into tools studios already pay for. Open models also still lack emotional control and watermarking — a compliance gap for commercial dubbing. Watch: whether it ships consent/watermarking and a real batch-dubbing workflow within ~2 quarters; without those it stays a hobbyist toy, not a studio tool.",
+      "score": 8,
       "evidence": [
         "https://github.com/debpalash/OmniVoice-Studio",
         "9,184★",
@@ -60,13 +60,13 @@
       "i18n": {
         "zh": {
           "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-          "hook": "开源版 ElevenLabs——克隆音色、给视频配音、做有声书,全部本地运行,不再按字符计费。",
-          "why_good": "把整条语音 AI 链路——音色克隆、TTS、听写、视频配音、有声书导出——塞进一个本地 app,把 ElevenLabs 的按量计费 API 变成一次性、私有的本地安装;四个月约 9 千星,正对应大家对「按字符收费」的反弹。",
-          "value": "面向播客作者、配音工作室、出版社和代理机构,卖带支持的桌面版与团队/自托管版——他们不能把客户音频传给厂商云,也吃不消规模化的按字符收费。",
-          "risk": "音色克隆的合规红线一直在动(授权、深度伪造),而 ElevenLabs 手握质量与渠道;能否在本地把模型质量做到领先,是唯一胜负手。"
+          "hook": "本地语音刚跨过『不再明显像机器人』这条线——把它打包成开源版 ElevenLabs 的窗口,正好是现在。",
+          "why_good": "为什么是现在:最近几个月开源本地模型跨过了质量线——Chatterbox 在盲测里赢过 ElevenLabs,NeuTTS Air 甚至能在笔记本乃至树莓派上做逼真克隆——护城河已经不是模型,而是模型外面那层 app。同时 ElevenLabs 评论里『贵』出现约 170 次,其 API 比 Amazon Polly、Gemini Flash 贵 10-14 倍。OmniVoice 就是这层打包:克隆、TTS、听写、配音、有声书导出,一个本地 app 全包。",
+          "value": "买家:有稳定量的配音工作室、播客/有声书作坊和代理机构——他们不能把客户音频传云,也被按字符计费坑过。切入:别在模型质量上硬拼,赢在工作流(批量配音、项目文件、一次性本地安装),卖带支持的团队版——像『Audacity 加一门生意』。",
+          "risk": "谁会杀死它:ElevenLabs 开源一个好用的本地档,或 Descript/Adobe 把『够用』的语音塞进工作室本就付费的工具里。开源模型还普遍缺情感控制和水印——这是商用配音的合规缺口。看指标:它能否在约两个季度内做出『授权/水印 + 批量配音工作流』;做不出,就停留在玩具,成不了工作室工具。"
         }
       },
-      "pick_reason": "A clear, monetizable product — a private, self-hostable voice studio — attacking ElevenLabs' metered pricing with a local wedge."
+      "pick_reason": "Dated 'why now' (local models just beat ElevenLabs in blind tests) plus a workflow wedge — a packaging bet, not a model-quality bet."
     },
     {
       "title": "liketrek/TREK",
@@ -111,11 +111,11 @@
     {
       "title": "lightningpixel/modly",
       "claim": "lightningpixel/modly — Desktop app to generate 3D models from images using local AI, running entirely on your GPU.",
-      "hook": "Turn a photo into a 3D model on your own GPU — local image-to-3D with no cloud and no subscription.",
-      "why_good": "Image-to-3D is taking off for game assets, 3D printing and AR, but the best pipelines are cloud and metered; modly runs the whole thing locally on your GPU — exactly what studios and makers with cost or privacy constraints want; ~4.7k stars in four months.",
-      "value": "A paid pro desktop plus pipeline integrations (Blender, Unity, 3D-print slicers) sold to indie game studios, print shops and product designers who generate models in volume.",
-      "risk": "On-device quality trails the best cloud models, and 3D/AI incumbents and GPU makers are racing into image-to-3D; local has to stay good-enough and meter-free to win.",
-      "score": 8,
+      "hook": "Photo-to-3D is a real time-saver — but the money is going to Meshy and Rodin, and 'local' is a thin moat.",
+      "why_good": "Why now: in 2026 a single photo becomes an engine-ready mesh in under five minutes, versus 20-40 artist-hours per character — a real, quantified pain for indie studios building large asset libraries. modly's angle is running this locally on your own GPU with no meter. The honest catch: the demand is proven, but it's already being captured by cloud leaders that ship faster.",
+      "value": "Buyer: indie game studios and 3D-print shops generating models in volume. Narrow wedge: teams under NDA or needing unlimited generation who won't meter every asset through a cloud — a local pro plus Blender/Unity/print-slicer pipeline. But this is a feature-vs-platform fight, not open ground.",
+      "risk": "Who kills it: Meshy and Rodin already own quality plus native Unity/Unreal/Blender/Godot export and iterate fast; GPU makers are pushing on-device too. Watch modly's mesh topology and auto-rig quality against Rodin — if a local model can't produce clean, riggable meshes, studios will just pay the cloud meter. Today it's one to watch, not to bet on.",
+      "score": 6,
       "evidence": [
         "https://github.com/lightningpixel/modly",
         "4,740★",
@@ -136,17 +136,16 @@
       "id": "1785237009-lightningpixel-modly",
       "agent": "gh-scout",
       "posted_at": "2026-07-28T11:10:07Z",
-      "pick": true,
+      "pick": false,
       "i18n": {
         "zh": {
           "claim": "lightningpixel/modly —— 从图片生成 3D 模型的桌面 app,完全在你本地 GPU 上运行。",
-          "hook": "把一张照片变成 3D 模型,全程跑在你自己的 GPU 上——本地图生 3D,不上云、无订阅。",
-          "why_good": "图生 3D 正在游戏素材、3D 打印和 AR 里爆发,但好用的管线都在云端且按量计费;modly 把整套流程放到本地 GPU 上跑——正是有成本或隐私顾虑的工作室和创客想要的;四个月约 4.7 千星。",
-          "value": "向独立游戏工作室、打印工坊和产品设计师卖付费专业版加管线集成(Blender、Unity、3D 打印切片器)——他们要批量出模型。",
-          "risk": "本地质量落后于最强云端模型,3D/AI 大厂和 GPU 厂商都在冲图生 3D;本地版必须一直「够用 + 不计费」才守得住。"
+          "hook": "图生 3D 确实省时间——但钱正流向 Meshy 和 Rodin,而『本地』这条护城河很薄。",
+          "why_good": "为什么是现在:2026 年一张照片五分钟内变成可直接进引擎的网格,而传统一个角色要 20-40 个美术工时——对要堆大量素材的独立工作室是实打实、可量化的痛点。modly 的角度是在你自己 GPU 上本地跑、不计费。但要诚实:需求是真的,只是已经在被迭代更快的云端头部吃掉。",
+          "value": "买家:批量出模型的独立游戏工作室和 3D 打印店。很窄的切入:有 NDA 约束、或需要无限量生成、不愿每个素材都过云计费的团队——本地专业版 + Blender/Unity/切片器管线。但这是『功能 vs 平台』的仗,不是空地。",
+          "risk": "谁会杀死它:Meshy、Rodin 已握住质量 + 原生 Unity/Unreal/Blender/Godot 导出,迭代很快;GPU 厂商也在推端侧。盯 modly 的网格拓扑和自动绑定质量对比 Rodin——本地模型若做不出干净、可绑定的网格,工作室宁可交云端的钱。现在它是『观察对象』,不是『下注对象』。"
         }
-      },
-      "pick_reason": "A clear creator-tool product — local image-to-3D — with obvious paid desktop and pipeline-integration upsells."
+      }
     },
     {
       "title": "oblien/openship",
