@@ -1,11 +1,11 @@
 {
   "title": "debpalash/OmniVoice-Studio",
   "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-  "hook": "The open-source ElevenLabs — clone a voice, dub a video, make an audiobook, all locally with no per-character bill.",
-  "why_good": "It folds the whole voice-AI stack — cloning, TTS, dictation, video dubbing, audiobook export — into one local app, turning ElevenLabs' metered API into a private one-time install; ~9k stars in four months tracks the backlash against per-character pricing.",
-  "value": "Sell a supported desktop and team/self-host edition to podcasters, dubbing studios, publishers and agencies that cannot send client audio to a vendor cloud or stomach per-character fees at scale.",
-  "risk": "Voice cloning is a moving compliance target — consent, deepfakes — and ElevenLabs owns quality and distribution; staying ahead on local model quality is the whole game.",
-  "score": 9,
+  "hook": "Local voice AI just crossed the 'not obviously fake' line — the window to package it as an open ElevenLabs is open right now.",
+  "why_good": "Why now: in the last few months open local models crossed the quality bar — Chatterbox beat ElevenLabs in blind tests, and NeuTTS Air runs realistic cloning on a laptop or even a Raspberry Pi — so the moat is no longer the model, it's the app around it. Meanwhile 'expensive' appears ~170 times in ElevenLabs reviews and its API runs 10-14x pricier than Amazon Polly or Gemini Flash. OmniVoice is the packaging play: clone, TTS, dictation, dubbing and audiobook export in one local app.",
+  "value": "Buyer: dubbing studios, podcast and audiobook shops and agencies with steady volume who can't send client audio to a vendor cloud and get burned by per-character billing. Wedge: don't fight on model quality — win on workflow (batch dubbing, project files, one flat local install) and sell a supported team edition, the way Audacity-plus-a-business would look.",
+  "risk": "Who kills it: ElevenLabs open-sources a good local tier, or Descript/Adobe bundle good-enough voice into tools studios already pay for. Open models also still lack emotional control and watermarking — a compliance gap for commercial dubbing. Watch: whether it ships consent/watermarking and a real batch-dubbing workflow within ~2 quarters; without those it stays a hobbyist toy, not a studio tool.",
+  "score": 8,
   "evidence": [
     "https://github.com/debpalash/OmniVoice-Studio",
     "9,184★",
@@ -30,11 +30,11 @@
   "i18n": {
     "zh": {
       "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-      "hook": "开源版 ElevenLabs——克隆音色、给视频配音、做有声书,全部本地运行,不再按字符计费。",
-      "why_good": "把整条语音 AI 链路——音色克隆、TTS、听写、视频配音、有声书导出——塞进一个本地 app,把 ElevenLabs 的按量计费 API 变成一次性、私有的本地安装;四个月约 9 千星,正对应大家对「按字符收费」的反弹。",
-      "value": "面向播客作者、配音工作室、出版社和代理机构,卖带支持的桌面版与团队/自托管版——他们不能把客户音频传给厂商云,也吃不消规模化的按字符收费。",
-      "risk": "音色克隆的合规红线一直在动(授权、深度伪造),而 ElevenLabs 手握质量与渠道;能否在本地把模型质量做到领先,是唯一胜负手。"
+      "hook": "本地语音刚跨过『不再明显像机器人』这条线——把它打包成开源版 ElevenLabs 的窗口,正好是现在。",
+      "why_good": "为什么是现在:最近几个月开源本地模型跨过了质量线——Chatterbox 在盲测里赢过 ElevenLabs,NeuTTS Air 甚至能在笔记本乃至树莓派上做逼真克隆——护城河已经不是模型,而是模型外面那层 app。同时 ElevenLabs 评论里『贵』出现约 170 次,其 API 比 Amazon Polly、Gemini Flash 贵 10-14 倍。OmniVoice 就是这层打包:克隆、TTS、听写、配音、有声书导出,一个本地 app 全包。",
+      "value": "买家:有稳定量的配音工作室、播客/有声书作坊和代理机构——他们不能把客户音频传云,也被按字符计费坑过。切入:别在模型质量上硬拼,赢在工作流(批量配音、项目文件、一次性本地安装),卖带支持的团队版——像『Audacity 加一门生意』。",
+      "risk": "谁会杀死它:ElevenLabs 开源一个好用的本地档,或 Descript/Adobe 把『够用』的语音塞进工作室本就付费的工具里。开源模型还普遍缺情感控制和水印——这是商用配音的合规缺口。看指标:它能否在约两个季度内做出『授权/水印 + 批量配音工作流』;做不出,就停留在玩具,成不了工作室工具。"
     }
   },
-  "pick_reason": "A clear, monetizable product — a private, self-hostable voice studio — attacking ElevenLabs' metered pricing with a local wedge."
+  "pick_reason": "Dated 'why now' (local models just beat ElevenLabs in blind tests) plus a workflow wedge — a packaging bet, not a model-quality bet."
 }
