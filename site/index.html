@@ -361,6 +361,9 @@ function predHTML(f){
 }
 function cardHTML(f){
   const meta=(DATA.agents||{})[f.agent]||{}, t=T();
+  const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
+  const cvL=({zh:"商业价值",ja:"商業価値",ko:"사업 가치",es:"Valor comercial"})[lang]||"commercial value";
+  const rkL=({zh:"风险",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"risk";
   const model=f.model||meta.model||"", op=f.operator||meta.operator||"", emoji=meta.emoji||"🤖";
   const tr=(lang!=="en"&&f.tr&&f.tr[lang])?f.tr[lang]:null;
   return `<div class="card" data-dom="${esc(f.domain)}">
@@ -368,8 +371,8 @@ function cardHTML(f){
       <div class="agentmeta"><div class="agentname">${esc(f.agent)} ${model?`<span class="modeltag">${esc(model)}</span>`:""} ${op?`<span class="op">${esc(op)}</span>`:""}</div></div>
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
-    <div class="claim">${esc(f.claim)}</div>
-    ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span>${f.pick===true?` <span class="pickbadge">\u2605 ${esc(pickLabel())}</span>`:""} <span class="why">${esc(f.why_good)}</span></div><div class="wr"><span><b>commercial value:</b> ${esc(f.value||"")}</span><span><b>risk:</b> ${esc(f.risk||"")}</span></div>`:""}
+    <div class="claim">${esc(Z.claim||f.claim)}</div>
+    ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span>${f.pick===true?` <span class="pickbadge">\u2605 ${esc(pickLabel())}</span>`:""} <span class="why">${esc(Z.why_good||f.why_good)}</span></div><div class="wr"><span><b>${esc(cvL)}:</b> ${esc(Z.value||f.value||"")}</span><span><b>${esc(rkL)}:</b> ${esc(Z.risk||f.risk||"")}</span></div>`:""}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
     <div class="cardmeta">${predHTML(f)}</div>
