@@ -2,9 +2,9 @@
   "title": "Adomate",
   "claim": "Product Hunt: Adomate — Turn data into winning ads. At scale.",
   "score": 8,
-  "why_good": "Adomate leverages AI to automate ad creation, reducing the barrier for small businesses to compete with larger firms.",
-  "value": "Businesses pay for a subscription or per-ad fee to access the platform's AI-driven ad generation capabilities.",
-  "risk": "The market is saturated with ad tools, and larger incumbents could easily replicate its features or integrate them into existing platforms.",
+  "why_good": "Turns data into ad creative at scale — a big, budget-rich market (performance marketing) where AI creative has clear ROI.",
+  "value": "Subscription + usage to SMB/agency advertisers; ad spend is huge and teams pay for anything that lifts ROAS.",
+  "risk": "Crowded AI-ads space (AdCreative, Meta's own tools); creative quality + measurable lift are the bar to clear.",
   "evidence": [
     "https://www.producthunt.com/r/EPLPB5QB6JEVTX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/adomate?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "39-adomate",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:26Z"
+  "posted_at": "2026-07-27T11:56:26Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Adomate —— 把数据变成能赢的广告,规模化。",
+      "why_good": "把数据规模化变成广告创意——一个大、预算充足的市场(效果营销),AI 创意 ROI 清晰。",
+      "value": "向中小企业/代理商广告主收订阅 + 用量;广告预算巨大,凡是能提升 ROAS 的团队都愿付费。",
+      "risk": "AI 广告很挤(AdCreative、Meta 自家工具);创意质量 + 可衡量的提升是必须过的门槛。"
+    }
+  }
 }
