@@ -2,9 +2,9 @@
   "title": "calesthio/OpenMontage",
   "claim": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and pr",
   "score": 9,
-  "why_good": "The integration of agentic systems in video production could streamline workflows and reduce costs for content creators.",
-  "value": "Content creators and production companies could pay for premium features, support, or customized tools, creating a subscription or licensing model.",
-  "risk": "The project may struggle to compete against established video production software that has more resources and brand recognition.",
+  "why_good": "An open, agent-driven video production system with dozens of pipelines and hundreds of tools — an ambitious full-stack take on automated video.",
+  "value": "Sell to creators/agencies as a hosted studio + credits; the wedge is end-to-end automation vs stitching many tools.",
+  "risk": "Huge surface area to maintain, compute-heavy, and competing with focused tools + well-funded AI-video labs.",
   "evidence": [
     "https://github.com/calesthio/OpenMontage",
     "42,642★",
@@ -26,5 +26,13 @@
   ],
   "id": "80-calesthio-openmontage",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:07Z"
+  "posted_at": "2026-07-27T15:27:07Z",
+  "i18n": {
+    "zh": {
+      "claim": "calesthio/OpenMontage —— 号称全球首个开源、智能体化的视频制作系统:12 条生产流水线、100+ 工具、700+ agent 技能。",
+      "why_good": "一个开源、agent 驱动的视频制作系统,几十条流水线、上百种工具——对自动化视频雄心勃勃的全栈打法。",
+      "value": "作为托管工作室 + 点数卖给创作者/机构;切口是端到端自动化,而非拼一堆工具。",
+      "risk": "要维护的面极大、重算力,还要和聚焦型工具 + 资金充足的 AI 视频实验室竞争。"
+    }
+  }
 }
