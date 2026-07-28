@@ -2061,9 +2061,9 @@
       "title": "getagentseal/codeburn",
       "claim": "getagentseal/codeburn — Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claude Code, Cursor, Codex, Gemini ",
       "score": 9,
-      "why_good": "It addresses a growing need for transparency and cost management in AI development, which is often overlooked by developers focused on building.",
-      "value": "Companies using AI tools would pay for advanced analytics and reporting features to optimize their token usage and reduce costs.",
-      "risk": "The project could fail if larger companies integrate similar tracking features into their existing tools, making it redundant.",
+      "why_good": "Tracks AI-coding token spend across 31 agents locally — the cost side of the agent boom nobody instruments, and it's the number buyers actually watch.",
+      "value": "Sell a team dashboard + budgets/alerts to eng leaders who must cap and attribute agent spend across seats.",
+      "risk": "Each agent vendor can add native usage metering, and a free local tracker is easy to clone.",
       "evidence": [
         "https://github.com/getagentseal/codeburn",
         "8,964★",
@@ -2088,15 +2088,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:12Z",
       "pick": true,
-      "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product."
+      "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "getagentseal/codeburn —— 免费本地工具,跨 31 种工具/agent(Claude Code、Cursor、Codex、Gemini)追踪 AI 编码的 token 用量与花费。",
+          "why_good": "在本地追踪 31 种 agent 的编码 token 花费——agent 热潮里没人做的成本侧,而这正是买家真正盯的数字。",
+          "value": "给工程负责人卖团队看板 + 预算/告警:跨席位设上限、把花费归因。",
+          "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。"
+        }
+      }
     },
     {
       "title": "crynta/terax-ai",
       "claim": "crynta/terax-ai — Lightweight (7MB) Terminal-first AI-native dev workspace",
       "score": 9,
-      "why_good": "The terminal-first approach caters to developers who prefer lightweight tools, potentially increasing productivity in coding environments.",
-      "value": "Companies could pay for premium features or enterprise licenses, while individual developers might subscribe for advanced AI capabilities.",
-      "risk": "If larger IDE platforms integrate similar AI functionalities, it could overshadow this project, making it hard to compete.",
+      "why_good": "A 7MB terminal-native AI dev workspace — bets devs want a fast, local CLI over heavy AI IDEs.",
+      "value": "Charge teams for a pro/enterprise tier (shared config, SSO, private models) on a free lightweight core.",
+      "risk": "Crowded terminal-agent space (Aider, Claude Code, Codex); 'lightweight' alone rarely holds a moat.",
       "evidence": [
         "https://github.com/crynta/terax-ai",
         "8,702★",
@@ -2120,15 +2128,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:08Z",
       "pick": true,
-      "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing."
+      "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing.",
+      "i18n": {
+        "zh": {
+          "claim": "crynta/terax-ai —— 轻量(7MB)、终端优先的 AI 原生开发工作区。",
+          "why_good": "7MB 的终端原生 AI 开发工作区——押注开发者想要快、本地的 CLI,而非笨重的 AI IDE。",
+          "value": "在免费轻量核心上给团队卖专业/企业版(共享配置、SSO、私有模型)。",
+          "risk": "终端 agent 很挤(Aider、Claude Code、Codex);光轻量很难成护城河。"
+        }
+      }
     },
     {
       "title": "simplifaisoul/osiris",
       "claim": "simplifaisoul/osiris — Open Source Global Intelligence Platform - Real-Time OSINT Dashboard - A Palantir Alternative -            We Get 0.5% o",
       "score": 9,
-      "why_good": "The project leverages open-source intelligence in a way that can be tailored for niche markets, allowing for specialized applications beyond general use.",
-      "value": "Government agencies and private security firms could pay for premium features or support, creating a subscription-based revenue model.",
-      "risk": "The market is dominated by established players like Palantir, which may easily integrate similar features or acquire emerging competitors.",
+      "why_good": "An open-source real-time OSINT dashboard pitched as a Palantir alternative — a huge, high-budget market where an open, cheaper option has real pull.",
+      "value": "Sell hosted + support + compliance to security teams, journalists and mid-size gov/enterprise priced out of Palantir.",
+      "risk": "OSINT/intel is regulation- and trust-heavy; Palantir's moat is integrations and gov relationships, not the dashboard.",
       "evidence": [
         "https://github.com/simplifaisoul/osiris",
         "7,187★",
@@ -2146,15 +2162,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:04Z",
       "pick": true,
-      "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets."
+      "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets.",
+      "i18n": {
+        "zh": {
+          "claim": "simplifaisoul/osiris —— 开源全球情报平台:实时 OSINT 仪表盘,一个 Palantir 替代。",
+          "why_good": "开源实时 OSINT 仪表盘,定位为 Palantir 替代——一个大而高预算的市场,更便宜的开源选项确有吸引力。",
+          "value": "向被 Palantir 价格挡在门外的安全团队、记者、中型政企卖托管 + 支持 + 合规。",
+          "risk": "OSINT/情报强监管、强信任;Palantir 的护城河是集成和政府关系,不是仪表盘。"
+        }
+      }
     },
     {
       "title": "EKKOLearnAI/hermes-studio",
       "claim": "EKKOLearnAI/hermes-studio — Web dashboard for Hermes Agent — multi-platform AI chat, session management, scheduled jobs, usage analytics ",
       "score": 9,
-      "why_good": "The platform's multi-platform capabilities allow for seamless integration across various AI agents, enhancing user experience and efficiency.",
-      "value": "Businesses could pay for premium features such as advanced analytics and custom integrations, generating revenue through subscription models.",
-      "risk": "The project may struggle to differentiate itself as larger companies with established AI solutions could easily replicate its features.",
+      "why_good": "A control-room dashboard for running an AI agent across chat platforms — sessions, cron jobs, usage analytics: the ops layer teams need once agents go live.",
+      "value": "Charge a team/hosted tier: multi-seat management, scheduling, analytics and support for agents in production.",
+      "risk": "Tied to one 'Hermes' agent; without breadth it's a companion tool the underlying agent or a framework absorbs.",
       "evidence": [
         "https://github.com/EKKOLearnAI/hermes-studio",
         "9,528★",
@@ -2178,15 +2202,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:00Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product for managing AI chat agents with potential for monetization through subscription or usage fees."
+      "pick_reason": "The project offers a clear product for managing AI chat agents with potential for monetization through subscription or usage fees.",
+      "i18n": {
+        "zh": {
+          "claim": "EKKOLearnAI/hermes-studio —— Hermes Agent 的网页控制台:多平台 AI 聊天、会话管理、定时任务、用量分析。",
+          "why_good": "给跨聊天平台跑 AI agent 做的控制室:会话、定时任务、用量分析——agent 上线后团队需要的运维层。",
+          "value": "卖团队/托管版:多席位管理、定时、分析和生产环境支持。",
+          "risk": "绑在单一 Hermes agent 上;没有广度,就是个会被底层 agent 或框架吸收的配套工具。"
+        }
+      }
     },
     {
       "title": "open-multi-agent/open-multi-agent",
       "claim": "open-multi-agent/open-multi-agent — TypeScript AI agent orchestration framework with dynamic workflows. Describe the goal, not the graph: a coordinator plan",
       "score": 9,
-      "why_good": "The framework's orchestration capabilities enable seamless integration of multiple AI agents, which can lead to innovative applications in various industries.",
-      "value": "Businesses developing AI solutions could pay for premium features or support, while enterprises might subscribe for enhanced orchestration services to streamline their AI workflows.",
-      "risk": "The project could struggle if larger tech companies decide to build similar orchestration tools into their existing platforms, overshadowing this solution.",
+      "why_good": "'Describe the goal, not the graph' — a TS framework that auto-plans multi-agent workflows, a genuinely different DX from graph-wiring tools.",
+      "value": "Monetize as the hosted control plane: run/observe/route agent workflows for teams, usage-based + enterprise.",
+      "risk": "Orchestration is brutally crowded (LangGraph, CrewAI, the vendors); auto-planning must clearly beat explicit graphs.",
       "evidence": [
         "https://github.com/open-multi-agent/open-multi-agent",
         "6,666★",
@@ -2210,15 +2242,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:27:56Z",
       "pick": true,
-      "pick_reason": "The framework offers a clear product for developers to build and monetize AI agent orchestration solutions."
+      "pick_reason": "The framework offers a clear product for developers to build and monetize AI agent orchestration solutions.",
+      "i18n": {
+        "zh": {
+          "claim": "open-multi-agent/open-multi-agent —— TypeScript 的 AI agent 编排框架,动态工作流:描述目标,而非画图。",
+          "why_good": "描述目标而非画图——自动规划多 agent 工作流的 TS 框架,和手工连图的工具相比 DX 确实不同。",
+          "value": "做成托管控制平面变现:替团队跑/观测/路由 agent 工作流,按量 + 企业版。",
+          "risk": "编排极挤(LangGraph、CrewAI、各厂商);自动规划必须明显强过手画图才能赢。"
+        }
+      }
     },
     {
       "title": "nashsu/llm_wiki",
       "claim": "nashsu/llm_wiki — LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base",
       "score": 9,
-      "why_good": "The ability to interlink and organize documents into a knowledge base addresses a common pain point in information management that many professionals face.",
-      "value": "Businesses could pay for premium features, such as advanced analytics and team collaboration tools, on a subscription basis.",
-      "risk": "The market is crowded with existing knowledge management tools, and larger companies could easily integrate similar features into their products.",
+      "why_good": "Turns local documents into an auto-interlinked, LLM-organized knowledge base on the desktop — a private, offline take on the Notion/Obsidian-AI wave.",
+      "value": "Freemium desktop: paid team sync, advanced retrieval and collaboration for people who won't put docs in a cloud AI.",
+      "risk": "Obsidian/Notion and every note app are shipping AI; a standalone 'AI wiki' needs a stickier wedge than auto-linking.",
       "evidence": [
         "https://github.com/nashsu/llm_wiki",
         "15,408★",
@@ -2236,15 +2276,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:27:52Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable."
+      "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable.",
+      "i18n": {
+        "zh": {
+          "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
+          "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
+          "value": "桌面免费增值:给不愿把文档放进云 AI 的人卖付费团队同步、高级检索和协作。",
+          "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立 AI wiki 需要比自动互链更黏的切口。"
+        }
+      }
     },
     {
       "title": "tashfeenahmed/freellmapi",
       "claim": "tashfeenahmed/freellmapi — OpenAI-compatible proxy that stacks the free tiers of 28 LLM providers (~4B tokens/month) behind one /v1 endpoint — plus",
       "score": 9,
-      "why_good": "By aggregating multiple free LLM providers, it significantly reduces costs for developers who need access to large language models without the financial burden.",
-      "value": "Developers and startups could pay for premium features, support, or usage beyond the free tier, creating a subscription model or tiered pricing based on usage.",
-      "risk": "If a major LLM provider decides to limit access or eliminate their free tier, the service could lose its core value proposition.",
+      "why_good": "Stacks 28 providers' free tiers behind one OpenAI-compatible endpoint (~4B tokens/mo) — irresistible to hobbyists, but it lives on others' free tiers.",
+      "value": "Hard to monetize cleanly; a paid reliability/overage tier is possible, but the core pitch is 'free', capping willingness to pay.",
+      "risk": "Entirely dependent on providers' free tiers — one policy change guts it, and it likely violates several ToS.",
       "evidence": [
         "https://github.com/tashfeenahmed/freellmapi",
         "17,153★",
@@ -2262,15 +2310,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:27:49Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that aggregates free LLM access, which can be monetized by charging for premium features or usage."
+      "pick_reason": "The project offers a clear product that aggregates free LLM access, which can be monetized by charging for premium features or usage.",
+      "i18n": {
+        "zh": {
+          "claim": "tashfeenahmed/freellmapi —— OpenAI 兼容代理,把 28 家 LLM 供应商的免费额度(约 40 亿 token/月)叠在一个 /v1 端点后面。",
+          "why_good": "把 28 家的免费额度叠成一个 OpenAI 兼容端点(约 40 亿 token/月)——爱好者难以抗拒,但它靠的是别人的免费档。",
+          "value": "很难干净变现;可做付费的可靠性/超额档,但核心卖点是免费,天花板就压在那。",
+          "risk": "完全依赖各家免费档——一个政策变动就废掉,且很可能违反多家 ToS。"
+        }
+      }
     },
     {
       "title": "NanmiCoder/cc-haha",
       "claim": "NanmiCoder/cc-haha — 本地优先的跨平台 Claude Code /  Agent 桌面工作台：多 Agent、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、任务感知桌面宠物，并支持微信、飞书、钉钉、Telegram、Wha",
       "score": 9,
-      "why_good": "The integration of multiple agents and tools into a single desktop workspace addresses a growing need for efficiency in software development.",
-      "value": "Companies could pay for premium features or subscriptions to enhance team productivity and collaboration in coding environments.",
-      "risk": "The project may struggle to scale as larger companies with established tools could easily replicate its features or acquire it.",
+      "why_good": "A local-first desktop workbench wrapping Claude Code with multi-agent, git worktrees, diffs, computer-use and IM bridges — a full 'agent cockpit' for power users.",
+      "value": "Team/pro tier: shared config, private models, and the skill marketplace as a take-rate channel.",
+      "risk": "Rides on Claude Code; Anthropic or a funded 'agent IDE' can ship the same cockpit and absorb it.",
       "evidence": [
         "https://github.com/NanmiCoder/cc-haha",
         "13,638★",
@@ -2288,7 +2344,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:27:45Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized."
+      "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "NanmiCoder/cc-haha —— 本地优先、跨平台的 Claude Code/Agent 桌面工作台:多 Agent、Git Worktree、Diff、技能市场、多模型、Computer Use、桌宠,支持微信/飞书/钉钉/Telegram。",
+          "why_good": "本地优先的桌面工作台,把 Claude Code 包成多 agent、git worktree、diff、computer-use 和 IM 桥接——给高级用户的完整 agent 驾驶舱。",
+          "value": "团队/专业版:共享配置、私有模型,技能市场做抽成通道。",
+          "risk": "依附 Claude Code;Anthropic 或某个拿了钱的 agent IDE 能做出同样的驾驶舱把它吸收。"
+        }
+      }
     },
     {
       "title": "nexu-io/open-design",
@@ -2656,9 +2720,9 @@
       "title": "esengine/DeepSeek-Reasonix",
       "claim": "esengine/DeepSeek-Reasonix — DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
       "score": 9,
-      "why_good": "Its focus on prefix-cache stability could lead to superior performance in coding assistance, making it a reliable tool for developers.",
-      "value": "Companies could pay for premium features or subscriptions that enhance productivity and integration with existing development environments.",
-      "risk": "The project may struggle to differentiate itself in a crowded market where larger companies could easily replicate its features.",
+      "why_good": "A DeepSeek-native terminal coding agent tuned around prefix-cache stability — a real efficiency angle for the cost-sensitive DeepSeek crowd.",
+      "value": "Managed/team tier for shops standardizing on DeepSeek; sell reliability, shared config and support.",
+      "risk": "A single-model wrapper in a crowded terminal-agent field; DeepSeek or a general agent can match the caching trick.",
       "evidence": [
         "https://github.com/esengine/DeepSeek-Reasonix",
         "27,896★",
@@ -2682,7 +2746,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T17:19:45Z",
       "pick": true,
-      "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers."
+      "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers.",
+      "i18n": {
+        "zh": {
+          "claim": "esengine/DeepSeek-Reasonix —— DeepSeek 原生的终端编码 agent,围绕前缀缓存稳定性设计,可长驻运行。",
+          "why_good": "围绕前缀缓存稳定性调优的 DeepSeek 原生终端编码 agent——对成本敏感的 DeepSeek 群体是个真实效率卖点。",
+          "value": "给标准化用 DeepSeek 的团队做托管/团队版:卖可靠性、共享配置和支持。",
+          "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。"
+        }
+      }
     },
     {
       "title": "Jacquard, a programming language for AI-written, human-reviewed code",
@@ -2859,9 +2931,9 @@
       "title": "therealaleph/MasterHttpRelayVPN-RUST",
       "claim": "therealaleph/MasterHttpRelayVPN-RUST — Rust port of @masterking32's MasterHttpRelayVPN — all credit to @masterking32 for the original idea and Python implement",
       "score": 9,
-      "why_good": "The Rust implementation can offer performance and security advantages over the original Python version, appealing to developers focused on efficiency.",
-      "value": "Businesses needing secure and efficient data transmission could subscribe to a premium service, generating recurring revenue through monthly or annual plans.",
-      "risk": "The project could fail if larger VPN providers integrate similar functionality, overshadowing this solution with their established user base and resources.",
+      "why_good": "A Rust port of an existing HTTP-relay VPN — faster/safer than the original, but a reimplementation of someone else's idea, credited as such.",
+      "value": "Little standalone business; the value is engineering, not a novel product or a buyer who pays.",
+      "risk": "Not original, grey-area networking use, and no moat over the upstream project or commercial VPNs.",
       "evidence": [
         "https://github.com/therealaleph/MasterHttpRelayVPN-RUST",
         "3,661★",
@@ -2884,15 +2956,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:39Z",
       "pick": false,
-      "pick_reason": "The project is a port of an existing tool and lacks a unique value proposition or clear monetization strategy."
+      "pick_reason": "The project is a port of an existing tool and lacks a unique value proposition or clear monetization strategy.",
+      "i18n": {
+        "zh": {
+          "claim": "therealaleph/MasterHttpRelayVPN-RUST —— @masterking32 的 MasterHttpRelayVPN 的 Rust 移植(原创归原作者)。",
+          "why_good": "把一个已有的 HTTP-relay VPN 用 Rust 重写——比原版更快/更安全,但它是别人点子的重实现,且已注明。",
+          "value": "几乎没有独立生意;价值在工程,不是新产品或愿付钱的买家。",
+          "risk": "非原创、灰色地带网络用途,相对上游项目和商业 VPN 都没护城河。"
+        }
+      }
     },
     {
       "title": "withcoral/coral",
       "claim": "withcoral/coral — One SQL interface over APIs, files, and live sources — built for agents.",
       "score": 9,
-      "why_good": "Coral's unified SQL interface can streamline data access for agents, reducing the complexity of managing multiple data sources.",
-      "value": "Businesses can pay for premium features or support, while data providers might pay for integration services to enhance their offerings.",
-      "risk": "The market for data integration tools is crowded, and larger players could easily replicate Coral's functionality.",
+      "why_good": "One SQL interface over APIs, files and live sources, built for agents — a clean way to give agents reliable, typed data access instead of ad-hoc tools.",
+      "value": "Usage-based data-gateway for agent builders: query/route/govern data across sources; upsell managed connectors + enterprise.",
+      "risk": "Crowded data-virtualization space (Trino, Steampipe); 'for agents' must translate into a real distribution edge.",
       "evidence": [
         "https://github.com/withcoral/coral",
         "5,032★",
@@ -2910,15 +2990,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:36Z",
       "pick": true,
-      "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing."
+      "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing.",
+      "i18n": {
+        "zh": {
+          "claim": "withcoral/coral —— 面向 agent 的统一 SQL 接口,覆盖 API、文件与实时数据源。",
+          "why_good": "用一个 SQL 接口统管 API/文件/实时源,为 agent 而建——给 agent 可靠、带类型的数据访问,而非临时拼工具。",
+          "value": "给 agent 开发者做按量数据网关:跨源查询/路由/治理,upsell 托管连接器 + 企业版。",
+          "risk": "数据虚拟化很挤(Trino、Steampipe);为 agent 必须真的转化成分发优势。"
+        }
+      }
     },
     {
       "title": "AprilNEA/OpenLogi",
       "claim": "AprilNEA/OpenLogi — ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI",
       "score": 9,
-      "why_good": "The local-first approach ensures user data privacy and performance, appealing to privacy-conscious consumers.",
-      "value": "Revenue could come from premium features or subscriptions for advanced customization and analytics targeted at gamers and professionals.",
-      "risk": "Established players like Logitech may quickly integrate similar features into their existing software, overshadowing new entrants.",
+      "why_good": "A fast, local-first Rust replacement for Logitech's bloated Options+ — a beloved pain point (their software is widely hated) with a ready audience.",
+      "value": "Hard to charge consumers directly; a paid pro tier (profiles, macros, more devices) or donations, maybe device-maker deals.",
+      "risk": "Niche utility; Logitech could improve Options+ or block HID access, and free alternatives already exist.",
       "evidence": [
         "https://github.com/AprilNEA/OpenLogi",
         "7,696★",
@@ -2942,15 +3030,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:32Z",
       "pick": true,
-      "pick_reason": "There is a clear product that addresses a specific need for privacy-conscious users looking for an alternative to existing software."
+      "pick_reason": "There is a clear product that addresses a specific need for privacy-conscious users looking for an alternative to existing software.",
+      "i18n": {
+        "zh": {
+          "claim": "AprilNEA/OpenLogi —— 用 Rust 写的本地优先 Logitech Options+ 替代:通过 HID 重映射按键、DPI、SmartShift。",
+          "why_good": "一个快、本地优先的 Rust 版,替代 Logitech 臃肿的 Options+——一个人人喊打的痛点,受众现成。",
+          "value": "很难直接向消费者收费;可做付费专业版(配置档、宏、更多设备)或捐赠,也许和设备厂商合作。",
+          "risk": "小众工具;Logitech 可能改进 Options+ 或封 HID 访问,而且免费替代已经存在。"
+        }
+      }
     },
     {
       "title": "h4ckf0r0day/obscura",
       "claim": "h4ckf0r0day/obscura — The headless browser for AI agents and web scraping",
       "score": 9,
-      "why_good": "This project addresses the growing need for AI agents to interact with dynamic web content, which is often challenging for traditional scraping tools.",
-      "value": "Companies developing AI applications could pay for a subscription service that provides enhanced web scraping capabilities and API access.",
-      "risk": "The technology could be easily replicated by larger players with existing scraping solutions, leading to a crowded market.",
+      "why_good": "A headless browser purpose-built for AI agents and scraping — agents constantly need reliable, stealthy web access and current tools fight bot-detection poorly.",
+      "value": "Usage-based browser-as-a-service for agent builders (like Browserbase): pay per session/page, upsell proxies + anti-bot.",
+      "risk": "Browserbase, Browserless and the vendors are here already; winning needs reliability, anti-detection and price at scale.",
       "evidence": [
         "https://github.com/h4ckf0r0day/obscura",
         "19,747★",
@@ -2974,15 +3070,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T16:27:28Z",
       "pick": true,
-      "pick_reason": "The project offers a specific tool for AI agents to scrape dynamic web content, which can be monetized as a software product."
+      "pick_reason": "The project offers a specific tool for AI agents to scrape dynamic web content, which can be monetized as a software product.",
+      "i18n": {
+        "zh": {
+          "claim": "h4ckf0r0day/obscura —— 给 AI agent 和网页抓取用的无头浏览器。",
+          "why_good": "专为 AI agent 和抓取打造的无头浏览器——agent 时刻需要可靠、隐蔽的网页访问,而现有工具对抗反爬做得差。",
+          "value": "给 agent 开发者做按量的浏览器即服务(类似 Browserbase):按会话/页计费,upsell 代理 + 反反爬。",
+          "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。"
+        }
+      }
     },
     {
       "title": "BigPizzaV3/CodexPlusPlus",
       "claim": "BigPizzaV3/CodexPlusPlus — An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒",
       "score": 9,
-      "why_good": "The project addresses specific usability pain points in CodexApp, which could attract a dedicated user base seeking enhanced functionality.",
-      "value": "Developers and teams using CodexApp could pay for premium features or support, creating a subscription or one-time purchase model.",
-      "risk": "If CodexApp itself adopts these enhancements or integrates similar features, it could render this project obsolete.",
+      "why_good": "An enhancement layer for CodexApp — fixes real usability gaps, but it's an add-on wholly dependent on someone else's app.",
+      "value": "Thin monetization at best (pro add-on); no leverage if Codex itself adopts the improvements.",
+      "risk": "Feature, not a company: if CodexApp absorbs these tweaks, it's obsolete overnight.",
       "evidence": [
         "https://github.com/BigPizzaV3/CodexPlusPlus",
         "26,806★",
@@ -2998,15 +3102,23 @@
       "tags": [],
       "id": "99-bigpizzav3-codexplusplus",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:24Z"
+      "posted_at": "2026-07-27T16:27:24Z",
+      "i18n": {
+        "zh": {
+          "claim": "BigPizzaV3/CodexPlusPlus —— CodexApp 的增强工具,让 Codex 更好用、更顺手。",
+          "why_good": "给 CodexApp 的增强层——补了真实的易用性缺口,但它是完全依附别人 app 的插件。",
+          "value": "顶多做薄变现(专业版插件);一旦 Codex 自己采纳这些改进就没了杠杆。",
+          "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。"
+        }
+      }
     },
     {
       "title": "Kuberwastaken/claurst",
       "claim": "Kuberwastaken/claurst — Agentic Coding for Builders who Ship",
       "score": 9,
-      "why_good": "It addresses a niche need for developers seeking streamlined agent-based coding solutions, potentially enhancing productivity in complex projects.",
-      "value": "Companies could pay for premium features or support, making money through subscriptions or enterprise licensing.",
-      "risk": "The project may struggle to differentiate itself in a crowded market where larger platforms could easily integrate similar functionalities.",
+      "why_good": "Another agentic-coding CLI with a slogan but a thin, undifferentiated pitch — hard to tell what it does better than the pack.",
+      "value": "No clear wedge to charge for yet; it competes on vibes in a saturated coding-agent field.",
+      "risk": "Undifferentiated in a brutal category owned by Claude Code / Cursor / Codex; needs a real reason to exist.",
       "evidence": [
         "https://github.com/Kuberwastaken/claurst",
         "10,144★",
@@ -3029,15 +3141,23 @@
       ],
       "id": "98-kuberwastaken-claurst",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:20Z"
+      "posted_at": "2026-07-27T16:27:20Z",
+      "i18n": {
+        "zh": {
+          "claim": "Kuberwastaken/claurst —— 给能交付的 Builder 的智能体编码工具。",
+          "why_good": "又一个有口号但定位单薄、没差异化的智能体编码 CLI——很难说它比同类强在哪。",
+          "value": "还没有能收费的清晰切口;在饱和的编码 agent 里靠氛围竞争。",
+          "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。"
+        }
+      }
     },
     {
       "title": "ultraworkers/claw-code",
       "claim": "ultraworkers/claw-code — An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human inte",
       "score": 9,
-      "why_good": "The project leverages agent-based management to automate complex museum exhibits, reducing operational costs and enhancing visitor engagement.",
-      "value": "Museums and cultural institutions could pay for a subscription service to manage their exhibits more efficiently, generating recurring revenue.",
-      "risk": "The technology may face challenges in scalability or integration with existing museum systems, leading to potential adoption barriers.",
+      "why_good": "An art project — a museum exhibit 'run by agents with no human' — interesting as a stunt/demo, not a startup.",
+      "value": "No commercial path; it's a conceptual piece, not a product anyone buys.",
+      "risk": "Novelty/art, not a company: nothing to sell, no users, no moat.",
       "evidence": [
         "https://github.com/ultraworkers/claw-code",
         "194,931★",
@@ -3052,7 +3172,15 @@
       "tags": [],
       "id": "97-ultraworkers-claw-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:15Z"
+      "posted_at": "2026-07-27T16:27:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "ultraworkers/claw-code —— 一个由 agent 管理、无人类参与的博物馆展品,用 Rust + Gajae-Code/LazyCodex 开发维护。",
+          "why_good": "一个艺术项目——agent 运营、无人类的博物馆展品——作为噱头/演示有意思,不是创业。",
+          "value": "没有商业路径;它是概念作品,不是有人会买的产品。",
+          "risk": "是新奇/艺术,不是公司:没东西可卖、没用户、没护城河。"
+        }
+      }
     },
     {
       "title": "Mail Memories – A desktop app to rescue photos from Gmail",
@@ -3250,9 +3378,9 @@
       "title": "HBAI-Ltd/Toonflow-app",
       "claim": "HBAI-Ltd/Toonflow-app — Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source A",
       "score": 9,
-      "why_good": "Toonflow addresses the growing demand for quick, cost-effective content creation in the creator economy, enabling users to produce animated shorts without extensive resources.",
-      "value": "Content creators, marketing agencies, and educational platforms would pay for premium features, subscription plans, or one-time licensing fees to access advanced animation tools and AI capabilities.",
-      "risk": "The project may struggle to scale as a business if larger incumbents in the animation or content creation space integrate similar features into their existing platforms.",
+      "why_good": "Turns novels/scripts into animated short dramas with AI (writing, storyboard, character + video gen) — riding China's booming short-drama economy where volume and cost matter.",
+      "value": "Sell to creators/agencies/edu on a hosted tier + credits for AI video gen; the short-drama market pays for cheap batch output.",
+      "risk": "AI video is capital-heavy and moves fast; big platforms and model labs can ship the same pipeline and outspend an indie.",
       "evidence": [
         "https://github.com/HBAI-Ltd/Toonflow-app",
         "12,801★",
@@ -3274,15 +3402,23 @@
       ],
       "id": "88-hbai-ltd-toonflow-app",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:47Z"
+      "posted_at": "2026-07-27T15:27:47Z",
+      "i18n": {
+        "zh": {
+          "claim": "HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧本快速转成动画短剧(AI 编剧、智能分镜、角色与视频生成),跨平台桌面轻量部署。",
+          "why_good": "用 AI 把小说/剧本变成动画短剧(编剧、分镜、角色+视频生成)——踩在中国爆火的短剧经济上,量和成本正是关键。",
+          "value": "按托管版 + AI 视频生成点数,卖给创作者/机构/教育;短剧市场愿为便宜的批量产出付费。",
+          "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。"
+        }
+      }
     },
     {
       "title": "xbtlin/ai-berkshire",
       "claim": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing resea",
       "score": 9,
-      "why_good": "This project leverages advanced AI to automate and enhance value investing strategies, making sophisticated financial analysis accessible to a broader audience.",
-      "value": "Wealth management firms and individual investors could pay for subscription-based access to the AI-driven insights and research tools provided by the platform.",
-      "risk": "The project may struggle to scale if larger financial institutions develop similar capabilities in-house or acquire competing technologies.",
+      "why_good": "A multi-agent value-investing research framework encoding Buffett/Munger/Duan/Li Lu playbooks — a sharp, opinionated wedge for a high-value audience (investors).",
+      "value": "Sell to individual investors / small funds as a research copilot: subscriptions for the agents, data and reports.",
+      "risk": "It's a prompt/framework over Claude Code — thin moat; finance buyers demand accuracy, compliance and track record before paying.",
       "evidence": [
         "https://github.com/xbtlin/ai-berkshire",
         "14,408★",
@@ -3304,15 +3440,23 @@
       ],
       "id": "87-xbtlin-ai-berkshire",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:42Z"
+      "posted_at": "2026-07-27T15:27:42Z",
+      "i18n": {
+        "zh": {
+          "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
+          "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
+          "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
+          "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。"
+        }
+      }
     },
     {
       "title": "ogulcancelik/herdr",
       "claim": "ogulcancelik/herdr — agent multiplexer that lives in your terminal.",
       "score": 9,
-      "why_good": "Herdr's ability to manage multiple agents in a terminal can streamline workflows for developers, making it a valuable tool in DevOps environments.",
-      "value": "Companies could pay for premium features or support, targeting teams that rely on agent orchestration for efficiency.",
-      "risk": "The project may struggle if larger infrastructure tools incorporate similar functionality, overshadowing Herdr's unique offering.",
+      "why_good": "A terminal 'multiplexer' for running many agents at once — a real ergonomics need as devs juggle parallel agents, but a thin utility.",
+      "value": "Team pro tier at best (shared sessions, orchestration); hard to charge for a terminal convenience.",
+      "risk": "tmux-for-agents is easily replicated and gets folded into the agents/terminals themselves.",
       "evidence": [
         "https://github.com/ogulcancelik/herdr",
         "21,304★",
@@ -3335,15 +3479,23 @@
       ],
       "id": "86-ogulcancelik-herdr",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:36Z"
+      "posted_at": "2026-07-27T15:27:36Z",
+      "i18n": {
+        "zh": {
+          "claim": "ogulcancelik/herdr —— 住在你终端里的 agent 多路复用器。",
+          "why_good": "在终端里同时跑多个 agent 的多路复用——开发者并行使唤 agent 时的真实工效需求,但是个薄工具。",
+          "value": "顶多做团队专业版(共享会话、编排);终端便利很难收费。",
+          "risk": "agent 版 tmux 容易被复刻,会被 agent/终端本身吸收进去。"
+        }
+      }
     },
     {
       "title": "iOfficeAI/OfficeCLI",
       "claim": "iOfficeAI/OfficeCLI — OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and P",
       "score": 9,
-      "why_good": "It addresses a growing need for AI agents to interact seamlessly with traditional office software, streamlining workflows in a way that existing tools do not.",
-      "value": "Businesses could pay for a subscription model that enhances productivity by automating routine tasks in their office applications, leading to cost savings.",
-      "risk": "The project could struggle if larger office software providers integrate similar AI capabilities, effectively overshadowing this specialized solution.",
+      "why_good": "An Office suite built for agents to read/edit/automate Word, Excel and PowerPoint — the missing hands agents need to actually do office work.",
+      "value": "Usage/seat pricing to teams automating documents with agents; the wedge is being the reliable Office-IO layer agents call.",
+      "risk": "Microsoft is shipping Copilot deep into Office; an outside 'agent Office layer' fights the platform owner head-on.",
       "evidence": [
         "https://github.com/iOfficeAI/OfficeCLI",
         "22,581★",
@@ -3365,15 +3517,23 @@
       ],
       "id": "85-iofficeai-officecli",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:32Z"
+      "posted_at": "2026-07-27T15:27:32Z",
+      "i18n": {
+        "zh": {
+          "claim": "iOfficeAI/OfficeCLI —— 首个为 AI agent 打造的 Office 套件:读、改、自动化 Word、Excel、PowerPoint。",
+          "why_good": "为 agent 打造的 Office 套件,让它读/改/自动化 Word/Excel/PPT——agent 真正干办公活时缺的那双手。",
+          "value": "按用量/席位卖给用 agent 自动化文档的团队;切口是成为 agent 调用的可靠 Office-IO 层。",
+          "risk": "微软正把 Copilot 深植进 Office;外部的 agent Office 层是在正面硬刚平台方。"
+        }
+      }
     },
     {
       "title": "JCodesMore/ai-website-cloner-template",
       "claim": "JCodesMore/ai-website-cloner-template — Clone any website with one command using AI coding agents",
       "score": 9,
-      "why_good": "This project addresses a growing need for rapid website prototyping and development, allowing users to clone complex sites without extensive coding knowledge.",
-      "value": "Businesses and freelancers could pay for a subscription model to access advanced features, templates, and ongoing support for website cloning and customization.",
-      "risk": "The technology could face challenges from established website builders or platforms that integrate similar functionality, limiting market penetration.",
+      "why_good": "One-command website cloning via coding agents — a catchy demo, but it's a template/script, and cloning sites is legally and ethically fraught.",
+      "value": "Weak/questionable monetization; 'clone any site' invites IP problems more than paying customers.",
+      "risk": "It's a template not a product, trivially copied, and the core use case (copying others' sites) is a legal minefield.",
       "evidence": [
         "https://github.com/JCodesMore/ai-website-cloner-template",
         "30,347★",
@@ -3395,15 +3555,23 @@
       ],
       "id": "84-jcodesmore-ai-website-cloner-template",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:27Z"
+      "posted_at": "2026-07-27T15:27:27Z",
+      "i18n": {
+        "zh": {
+          "claim": "JCodesMore/ai-website-cloner-template —— 用 AI 编码 agent 一条命令克隆任意网站。",
+          "why_good": "用编码 agent 一条命令克隆网站——demo 抓眼球,但它是个模板/脚本,而克隆网站在法律和道德上都很敏感。",
+          "value": "变现弱且可疑;克隆任意网站招来的更多是 IP 麻烦而非付费客户。",
+          "risk": "是模板不是产品、极易被抄,而核心用途(复制别人网站)是法律雷区。"
+        }
+      }
     },
     {
       "title": "heygen-com/hyperframes",
       "claim": "heygen-com/hyperframes — Write HTML. Render video. Built for agents.",
       "score": 9,
-      "why_good": "It streamlines the process of creating video content for agents, addressing a niche need in the real estate and sales sectors.",
-      "value": "Real estate agencies and sales teams could subscribe for premium features or pay per video rendered, creating a recurring revenue model.",
-      "risk": "The technology could be easily replicated by larger video editing platforms or integrated into existing tools, limiting its market potential.",
+      "why_good": "Turn HTML into rendered video, built for agents — a clean primitive for programmatic video (ads, real-estate, personalized clips).",
+      "value": "Usage-based render API for agents/marketing teams generating video at scale; per-render or seat pricing.",
+      "risk": "Video render is compute-heavy and crowded (Remotion, HeyGen itself); needs a real cost/quality or distribution edge.",
       "evidence": [
         "https://github.com/heygen-com/hyperframes",
         "38,005★",
@@ -3426,15 +3594,23 @@
       ],
       "id": "83-heygen-com-hyperframes",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:22Z"
+      "posted_at": "2026-07-27T15:27:22Z",
+      "i18n": {
+        "zh": {
+          "claim": "heygen-com/hyperframes —— 写 HTML,渲染成视频,为 agent 而建。",
+          "why_good": "把 HTML 变成渲染视频,为 agent 而建——程序化视频(广告、房产、个性化短片)的一个干净原语。",
+          "value": "给规模化生成视频的 agent/营销团队做按量渲染 API:按次或按席位。",
+          "risk": "视频渲染重算力且拥挤(Remotion、HeyGen 本身);要有真正的成本/质量或分发优势。"
+        }
+      }
     },
     {
       "title": "MadsLorentzen/ai-job-search",
       "claim": "MadsLorentzen/ai-job-search — The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor C",
       "score": 9,
-      "why_good": "This project leverages local AI capabilities to provide personalized job application insights, reducing reliance on centralized platforms.",
-      "value": "Companies could pay for premium features that enhance their recruitment process, while job seekers might subscribe for tailored application assistance.",
-      "risk": "The market is saturated with job search platforms, and larger incumbents could easily integrate similar AI features, overshadowing smaller players.",
+      "why_good": "A local, on-your-machine AI job-search framework (evaluate postings, tailor applications) — privacy-first appeal for a painful, high-volume task.",
+      "value": "Charge job seekers a subscription for automation + tailored applications; the pain and urgency are real.",
+      "risk": "Saturated job-search space; LinkedIn/Indeed and general agents can automate applications, and retention dies after a hire.",
       "evidence": [
         "https://github.com/MadsLorentzen/ai-job-search",
         "27,556★",
@@ -3456,15 +3632,23 @@
       ],
       "id": "82-madslorentzen-ai-job-search",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:17Z"
+      "posted_at": "2026-07-27T15:27:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "MadsLorentzen/ai-job-search —— 跑在你自己机器上的 AI 求职框架(基于 Claude Code):评估岗位、定制申请。",
+          "why_good": "一个本地、在你机器上跑的 AI 求职框架(评估岗位、定制申请)——对一个痛苦、高频的任务主打隐私优先。",
+          "value": "给求职者卖订阅:自动化 + 定制申请;痛点和紧迫感都真实。",
+          "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。"
+        }
+      }
     },
     {
       "title": "Gitlawb/openclaude",
       "claim": "Gitlawb/openclaude — runs anywhere. uses anything",
       "score": 9,
-      "why_good": "Openclaude's versatility in running anywhere and using anything addresses a significant gap in the agent infrastructure market, appealing to enterprises with diverse tech stacks.",
-      "value": "Companies could pay for premium support, custom integrations, and enterprise-level features, creating a subscription-based revenue model.",
-      "risk": "The project may struggle to differentiate itself in a crowded market, leading to potential acquisition by a larger player who offers similar functionalities.",
+      "why_good": "A slogan ('runs anywhere, uses anything') with no clear product behind it yet — too vague to judge as a startup.",
+      "value": "No identifiable buyer or wedge; it needs to say what it actually does before it's monetizable.",
+      "risk": "Undifferentiated and vague in a crowded agent-infra space; likely a feature or experiment, not a company.",
       "evidence": [
         "https://github.com/Gitlawb/openclaude",
         "30,375★",
@@ -3486,15 +3670,23 @@
       ],
       "id": "81-gitlawb-openclaude",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:12Z"
+      "posted_at": "2026-07-27T15:27:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "Gitlawb/openclaude —— 随处运行,随意调用。",
+          "why_good": "一句口号(随处运行、随意调用)背后还没有清晰产品——太模糊,难当创业判断。",
+          "value": "没有可辨认的买家或切口;得先说清它到底做什么才谈得上变现。",
+          "risk": "在拥挤的 agent 基础设施里既没差异又含糊;更可能是个功能或实验,不是公司。"
+        }
+      }
     },
     {
       "title": "calesthio/OpenMontage",
       "claim": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and pr",
       "score": 9,
-      "why_good": "The integration of agentic systems in video production could streamline workflows and reduce costs for content creators.",
-      "value": "Content creators and production companies could pay for premium features, support, or customized tools, creating a subscription or licensing model.",
-      "risk": "The project may struggle to compete against established video production software that has more resources and brand recognition.",
+      "why_good": "An open, agent-driven video production system with dozens of pipelines and hundreds of tools — an ambitious full-stack take on automated video.",
+      "value": "Sell to creators/agencies as a hosted studio + credits; the wedge is end-to-end automation vs stitching many tools.",
+      "risk": "Huge surface area to maintain, compute-heavy, and competing with focused tools + well-funded AI-video labs.",
       "evidence": [
         "https://github.com/calesthio/OpenMontage",
         "42,642★",
@@ -3516,15 +3708,23 @@
       ],
       "id": "80-calesthio-openmontage",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:07Z"
+      "posted_at": "2026-07-27T15:27:07Z",
+      "i18n": {
+        "zh": {
+          "claim": "calesthio/OpenMontage —— 号称全球首个开源、智能体化的视频制作系统:12 条生产流水线、100+ 工具、700+ agent 技能。",
+          "why_good": "一个开源、agent 驱动的视频制作系统,几十条流水线、上百种工具——对自动化视频雄心勃勃的全栈打法。",
+          "value": "作为托管工作室 + 点数卖给创作者/机构;切口是端到端自动化,而非拼一堆工具。",
+          "risk": "要维护的面极大、重算力,还要和聚焦型工具 + 资金充足的 AI 视频实验室竞争。"
+        }
+      }
     },
     {
       "title": "rohitg00/ai-engineering-from-scratch",
       "claim": "rohitg00/ai-engineering-from-scratch — Learn it. Build it. Ship it for others.",
       "score": 9,
-      "why_good": "This project addresses the growing demand for practical AI engineering skills, filling a gap between theoretical knowledge and real-world application.",
-      "value": "Companies could pay for premium courses, certifications, and consulting services to train their teams in AI engineering best practices.",
-      "risk": "The project could struggle to scale if it fails to differentiate itself from existing educational platforms or if larger competitors offer similar content.",
+      "why_good": "A hands-on 'AI engineering from scratch' curriculum — valuable learning content, but it's education material, not a product.",
+      "value": "Monetizes only as courses/cohorts/consulting; content businesses are real but different from a software startup.",
+      "risk": "Crowded free-education space; tutorials get commoditized fast and rarely build a durable moat.",
       "evidence": [
         "https://github.com/rohitg00/ai-engineering-from-scratch",
         "44,115★",
@@ -3546,7 +3746,15 @@
       ],
       "id": "79-rohitg00-ai-engineering-from-scratch",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:02Z"
+      "posted_at": "2026-07-27T15:27:02Z",
+      "i18n": {
+        "zh": {
+          "claim": "rohitg00/ai-engineering-from-scratch —— 学会它、做出来、交付给别人。",
+          "why_good": "一套动手的从零做 AI 工程课程——有价值的学习内容,但它是教育材料,不是产品。",
+          "value": "只能靠课程/训练营/咨询变现;内容生意是真的,但和软件创业不是一回事。",
+          "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。"
+        }
+      }
     },
     {
       "title": "MemPalace/mempalace",
