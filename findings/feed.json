@@ -638,15 +638,23 @@
       ],
       "id": "177-opensquilla-opensquilla",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:53Z"
+      "posted_at": "2026-07-28T00:07:53Z",
+      "i18n": {
+        "zh": {
+          "claim": "OpenSquilla —— 围绕 token 效率打造的开源微内核 AI agent(CLI、网页、聊天渠道):同样预算,每个 token 干更多有用的活。",
+          "why_good": "token 花费才是 agent 用户真正的账单,而几乎所有框架都在拼功能而非省钱;这个还真有人维护——34 位贡献者。",
+          "value": "托管版 + 企业支持:「砍掉你的 agent 推理账单」是买家早就懂的预算项,效率本身就是卖点。",
+          "risk": "模型价格持续下降会不断削弱\"省钱\"这个卖点,而模型厂商的一方 agent 运行时可能把独立玩家挤掉。"
+        }
+      }
     },
     {
       "title": "darrylmorley/whatcable",
       "claim": "darrylmorley/whatcable — macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
       "score": 9,
-      "why_good": "As USB-C becomes the universal standard, users face confusion about cable capabilities, creating a need for clarity.",
-      "value": "Consumers could pay for a premium version with advanced features, while manufacturers might pay for analytics on cable usage.",
-      "risk": "Apple or other hardware manufacturers could integrate similar functionality into their systems, diminishing the app's unique value.",
+      "why_good": "Solves the everyday USB-C guessing game — which cable does 100W? 40Gbps? — right in the menu bar; a real annoyance with a clear, narrow scope.",
+      "value": "A cheap paid Mac utility (one-time or small subscription) for pros with drawers of identical-looking cables; expand into a cable-identifier database.",
+      "risk": "Tiny scope and easily cloned; Apple could surface this natively and free alternatives can appear fast.",
       "evidence": [
         "https://github.com/darrylmorley/whatcable",
         "7,946★",
@@ -668,15 +676,23 @@
       ],
       "id": "176-darrylmorley-whatcable",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:50Z"
+      "posted_at": "2026-07-28T00:07:50Z",
+      "i18n": {
+        "zh": {
+          "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
+          "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
+          "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
+          "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。"
+        }
+      }
     },
     {
       "title": "open-gsd/gsd-core",
       "claim": "open-gsd/gsd-core — Git. Ship. Done - Core",
       "score": 9,
-      "why_good": "The project addresses a specific pain point in the developer workflow by streamlining Git operations, which can lead to significant time savings.",
-      "value": "Companies could pay for premium features or support services, especially in large teams where efficiency directly translates to cost savings.",
-      "risk": "The project may struggle to differentiate itself in a crowded market where established tools already offer similar functionalities.",
+      "why_good": "An opinionated 'git → ship' workflow wrapper — but 'Core' with a vague pitch means the actual wedge isn't clear yet.",
+      "value": "Only monetizable if it becomes a team CI/release layer people standardize on; as a solo git helper it's hard to charge for.",
+      "risk": "Crowded with git-workflow tools; no obvious moat or buyer yet, and the value prop is still fuzzy.",
       "evidence": [
         "https://github.com/open-gsd/gsd-core",
         "7,289★",
@@ -699,15 +715,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:47Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing."
+      "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing.",
+      "i18n": {
+        "zh": {
+          "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
+          "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
+          "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
+          "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。"
+        }
+      }
     },
     {
       "title": "StarTrail-org/PixelRAG",
       "claim": "StarTrail-org/PixelRAG — The end of web parsing. The beginning of scalable pixel-native search. link: https://pixelrag.ai/",
       "score": 9,
-      "why_good": "The project addresses a fundamental limitation in current web parsing technologies by introducing a pixel-native approach, potentially revolutionizing how data is extracted and utilized.",
-      "value": "Businesses in sectors like e-commerce and digital marketing could pay for advanced search capabilities that enhance user experience and improve conversion rates.",
-      "risk": "The technology could face challenges in gaining traction if larger companies integrate similar features into their existing platforms, overshadowing the startup.",
+      "why_good": "Skips fragile HTML parsing by doing retrieval directly over rendered pixels — if accurate, it dodges the endless breakage of web scrapers.",
+      "value": "Sell as an API to teams building agents/search that need reliable web extraction without maintaining parsers; usage-based pricing.",
+      "risk": "The bold 'end of web parsing' claim needs proof; pixel/vision retrieval is compute-heavy and the big labs chase the same thing.",
       "evidence": [
         "https://github.com/StarTrail-org/PixelRAG",
         "7,362★",
@@ -731,15 +755,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:44Z",
       "pick": false,
-      "pick_reason": "The project is too vague and lacks a clear monetizable product."
+      "pick_reason": "The project is too vague and lacks a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "StarTrail-org/PixelRAG —— 网页解析的终结,像素原生搜索的开始。链接:pixelrag.ai",
+          "why_good": "跳过脆弱的 HTML 解析,直接在渲染后的像素上做检索——若准确,就绕开了网页爬虫无止境的崩坏。",
+          "value": "作为 API 卖给\"要可靠网页抽取、又不想维护解析器\"的 agent/搜索团队;按量计费。",
+          "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。"
+        }
+      }
     },
     {
       "title": "Yu9191/wloc",
       "claim": "Yu9191/wloc — 修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
       "score": 9,
-      "why_good": "The project addresses a growing need for privacy and control over location data, appealing to users concerned about surveillance.",
-      "value": "Users could pay for a premium subscription to access advanced features, while businesses could license the technology for enhanced privacy tools.",
-      "risk": "The project may struggle to scale if larger tech companies integrate similar features into their existing products.",
+      "why_good": "A clever hack to override Apple's Wi-Fi-based location — niche power-user appeal, but it's a proxy script, not a product, and skirts platform rules.",
+      "value": "Hard to monetize legitimately; the audience is small and privacy-hobbyist, and app stores/Apple would resist a paid version.",
+      "risk": "Grey-area location spoofing, fragile against Apple changes, and no real business — a utility script, not a company.",
       "evidence": [
         "https://github.com/Yu9191/wloc",
         "6,530★",
@@ -756,15 +788,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:38Z",
       "pick": false,
-      "pick_reason": "The project is a modification tool for existing apps and lacks a clear monetizable product."
+      "pick_reason": "The project is a modification tool for existing apps and lacks a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "Yu9191/wloc —— 修改 Apple 网络定位(gs-loc)返回坐标;支持 Surge / Quantumult X / Loon / Stash,快捷指令一键设置/恢复。",
+          "why_good": "一个覆盖 Apple 基于 Wi-Fi 定位的巧妙 hack——小众极客有点意思,但它是代理脚本不是产品,还擦平台规则的边。",
+          "value": "很难正当变现;受众小、偏隐私爱好者,应用商店/Apple 也会抵制付费版。",
+          "risk": "灰色地带(伪造平台定位),对 Apple 变更很脆弱,没有真正生意——是工具脚本,不是公司。"
+        }
+      }
     },
     {
       "title": "omnigent-ai/omnigent",
       "claim": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom a",
       "score": 9,
-      "why_good": "Omnigent's framework allows seamless integration of multiple AI models, addressing the growing need for interoperability in AI applications.",
-      "value": "Companies developing AI solutions can pay for premium support and advanced features, creating a subscription-based revenue model.",
-      "risk": "The project may struggle to differentiate itself if larger tech companies develop similar orchestration tools or acquire existing solutions.",
+      "why_good": "A meta-harness that orchestrates multiple coding agents (Claude Code, Codex, Cursor) under one framework — betting 'many agents' becomes the norm.",
+      "value": "Could become the orchestration/control plane teams pay for to run agent fleets — routing, guardrails, observability across vendors.",
+      "risk": "Extremely crowded orchestration space; the agent vendors + LangGraph are converging on the same layer and squeeze 'meta' tools.",
       "evidence": [
         "https://github.com/omnigent-ai/omnigent",
         "7,815★",
@@ -788,15 +828,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:35Z",
       "pick": true,
-      "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services."
+      "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services.",
+      "i18n": {
+        "zh": {
+          "claim": "omnigent-ai/omnigent —— 开源 AI agent 框架 + 元 harness:编排 Claude Code、Codex、Cursor、Pi 和自定义 agent。",
+          "why_good": "把多个编码 agent(Claude Code、Codex、Cursor)统一编排的元 harness——押注\"多 agent\"会成为常态。",
+          "value": "可能成为团队为\"跑 agent 舰队\"付费的编排/控制平面——跨厂商的路由、护栏、可观测性。",
+          "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。"
+        }
+      }
     },
     {
       "title": "cobusgreyling/loop-engineering",
       "claim": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orch",
       "score": 9,
-      "why_good": "The project addresses a growing need for efficient AI integration in software development, streamlining the loop engineering process.",
-      "value": "Software development firms and enterprises could pay for premium features or support, generating revenue through subscriptions or licensing.",
-      "risk": "The market could be dominated by larger companies offering similar AI tools, making it difficult for this project to gain traction.",
+      "why_good": "Codifies 'loop engineering' patterns for coding agents into starters + CLI — useful know-how, but it reads as a pattern library, not a product.",
+      "value": "Monetizes at best as training/consulting or a paid template pack; hard to build a durable company on shared patterns.",
+      "risk": "Patterns are easily copied and get folded into the agent tools themselves; closer to content than a defensible product.",
       "evidence": [
         "https://github.com/cobusgreyling/loop-engineering",
         "9,490★",
@@ -820,7 +868,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:32Z",
       "pick": true,
-      "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized."
+      "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "cobusgreyling/loop-engineering —— 给 AI 编码 agent 做\"循环工程\"的实用范式、脚手架与 CLI 工具。",
+          "why_good": "把编码 agent 的\"循环工程\"范式沉淀成脚手架 + CLI——know-how 有用,但更像范式库不是产品。",
+          "value": "顶多靠培训/咨询或付费模板包变现;靠共享范式很难做成有壁垒的公司。",
+          "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。"
+        }
+      }
     },
     {
       "title": "DietrichGebert/ponytail",
@@ -1426,9 +1482,9 @@
       "title": "GaoSSR/best-claude-hud",
       "claim": "GaoSSR/best-claude-hud — Minimal Claude Code statusline HUD powered by Rust.",
       "score": 9,
-      "why_good": "The project addresses a niche need for efficient status monitoring in AI applications, which is often overlooked in broader developer tools.",
-      "value": "Companies developing AI products could pay for premium features or support, creating a subscription model for enhanced monitoring capabilities.",
-      "risk": "The project may struggle to differentiate itself if larger platforms integrate similar functionality into their existing tools.",
+      "why_good": "A tidy Rust statusline for Claude Code — pleasant, but a cosmetic dev-tool add-on, not a business.",
+      "value": "Effectively unmonetizable; a free open-source nicety that lives or dies with Claude Code's own UI.",
+      "risk": "Feature, not a company: Anthropic can ship a native statusline any day and this disappears.",
       "evidence": [
         "https://github.com/GaoSSR/best-claude-hud",
         "1,397★",
@@ -1453,15 +1509,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T20:27:21Z",
       "pick": true,
-      "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing."
+      "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing.",
+      "i18n": {
+        "zh": {
+          "claim": "GaoSSR/best-claude-hud —— 用 Rust 写的极简 Claude Code 状态栏 HUD。",
+          "why_good": "给 Claude Code 做的清爽 Rust 状态栏——好看,但是个装饰性的开发工具插件,不是生意。",
+          "value": "基本无法变现;它是个免费开源的小美化,随 Claude Code 自家 UI 生死。",
+          "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。"
+        }
+      }
     },
     {
       "title": "crafter-station/petdex",
       "claim": "crafter-station/petdex — The public gallery of animated pet for Codex, Claude Code, OpenCode y Gemini CLI",
       "score": 9,
-      "why_good": "The project taps into the growing trend of personalized digital avatars, which can enhance user engagement in various applications.",
-      "value": "Developers and companies can pay for premium animated pets to integrate into their platforms, creating a subscription or one-time purchase model.",
-      "risk": "The concept may struggle to scale if larger platforms decide to implement similar features in-house, overshadowing this project.",
+      "why_good": "A cute gallery of animated desktop pets for coding-agent terminals — fun and shareable, but pure novelty.",
+      "value": "No real revenue path beyond maybe cosmetic packs; a delightful side-project, not a company.",
+      "risk": "Novelty with no moat or retention; the joke fades and platforms can add their own.",
       "evidence": [
         "https://github.com/crafter-station/petdex",
         "3,607★",
@@ -1486,15 +1550,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T20:27:17Z",
       "pick": false,
-      "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy."
+      "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy.",
+      "i18n": {
+        "zh": {
+          "claim": "crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI 的动画宠物公共画廊。",
+          "why_good": "给编码 agent 终端的一堆可爱动画桌宠——好玩、易传播,但纯属新奇。",
+          "value": "除了也许卖点装饰包,没有真正的收入路径;是个讨喜的业余项目,不是公司。",
+          "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。"
+        }
+      }
     },
     {
       "title": "KnockOutEZ/wigolo",
       "claim": "KnockOutEZ/wigolo — The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0",
       "score": 9,
-      "why_good": "Wigolo's local-first approach allows users to maintain privacy and control over their data, which is increasingly valued in a data-sensitive world.",
-      "value": "Businesses and developers could pay for premium features, support, or enterprise licenses, monetizing the tool's capabilities for enhanced productivity.",
-      "risk": "The project may struggle to scale as a standalone company if larger incumbents integrate similar functionalities into their existing platforms.",
+      "why_good": "Gives coding agents local-first web search/fetch/crawl over MCP with zero keys or cloud — kills a real cost + privacy pain for agent users.",
+      "value": "Freemium: free local core, paid team/enterprise tier for shared crawls, rate limits and hosted convenience.",
+      "risk": "MCP + the agent vendors may bundle web access natively, and a local crawler's coverage is hard to keep ahead of hosted search.",
       "evidence": [
         "https://github.com/KnockOutEZ/wigolo",
         "3,721★",
@@ -1519,7 +1591,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T20:27:13Z",
       "pick": false,
-      "pick_reason": "The project is too vague and lacks a clear monetizable product."
+      "pick_reason": "The project is too vague and lacks a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "KnockOutEZ/wigolo —— 给 AI 编码 agent 的网页入口:通过 MCP 做本地优先的搜索/抓取/爬取/调研。无需 API key、无需云、$0。",
+          "why_good": "让编码 agent 通过 MCP 做零 key、零云的本地优先网页搜索/抓取/爬取——干掉了 agent 用户真实的成本 + 隐私痛点。",
+          "value": "免费增值:本地核心免费,团队/企业版收费(共享爬取、限流、托管省心)。",
+          "risk": "MCP + agent 厂商可能原生内置网页访问,而\"本地爬虫\"的覆盖很难持续领先托管搜索。"
+        }
+      }
     },
     {
       "title": "Open-Legal-Products/mike",
@@ -1835,9 +1915,9 @@
       "title": "0xGF/boneyard",
       "claim": "0xGF/boneyard — Auto generated skeleton loading framework",
       "score": 9,
-      "why_good": "The framework addresses a common pain point in development by automating the generation of skeleton loaders, which can significantly speed up UI development.",
-      "value": "Companies can pay for premium features, support, or integrations, while also potentially benefiting from a subscription model for ongoing updates and enhancements.",
-      "risk": "The market is saturated with UI frameworks, and larger incumbents could easily integrate similar features into their existing products.",
+      "why_good": "Auto-generates skeleton loaders from your UI — a genuine time-saver, but a narrow front-end utility.",
+      "value": "Hard to charge for directly; value is as a dev-tool/plugin, maybe a paid pro tier inside a bigger UI toolkit.",
+      "risk": "Component libraries and frameworks add skeletons natively; small scope with easy substitutes.",
       "evidence": [
         "https://github.com/0xGF/boneyard",
         "6,704★",
@@ -1855,15 +1935,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:59:37Z",
       "pick": true,
-      "pick_reason": "The project offers a specific product that automates a common development task, making it viable for monetization."
+      "pick_reason": "The project offers a specific product that automates a common development task, making it viable for monetization.",
+      "i18n": {
+        "zh": {
+          "claim": "0xGF/boneyard —— 自动生成骨架屏(skeleton loading)框架。",
+          "why_good": "从你的 UI 自动生成骨架屏——确实省时,但是个窄的前端小工具。",
+          "value": "很难直接收费;价值在于做开发工具/插件,或塞进更大 UI 套件里的付费专业版。",
+          "risk": "组件库和框架都在原生加骨架屏;范围小、替代品好找。"
+        }
+      }
     },
     {
       "title": "CoreBunch/Instatic",
       "claim": "CoreBunch/Instatic — The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pag",
       "score": 9,
-      "why_good": "It addresses the growing demand for self-hosted solutions that prioritize user privacy and control over data.",
-      "value": "Freemium model for advanced features, targeting developers and businesses willing to pay for enhanced customization and support.",
-      "risk": "The market may favor established players with more robust ecosystems, limiting adoption despite the open-source appeal.",
+      "why_good": "An agent-driven, self-hosted visual CMS that outputs clean static sites — a credible open take on Webflow/Framer for the self-host + AI crowd.",
+      "value": "Hosted tier + templates + agency licenses for people who want Webflow-style building without lock-in or per-seat SaaS fees.",
+      "risk": "Webflow/Framer are deeply entrenched with huge ecosystems; 'agentic + self-hosted' must be dramatically easier to pull switchers.",
       "evidence": [
         "https://github.com/CoreBunch/Instatic",
         "6,156★",
@@ -1887,15 +1975,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:23Z",
       "pick": true,
-      "pick_reason": "It offers a clear product that can be monetized through hosting services or premium features."
+      "pick_reason": "It offers a clear product that can be monetized through hosting services or premium features.",
+      "i18n": {
+        "zh": {
+          "claim": "CoreBunch/Instatic —— Webflow / Framer / WordPress 的开源替代:agent 驱动、自托管的可视化 CMS,输出干净的静态页。",
+          "why_good": "agent 驱动、自托管、输出干净静态站的可视化 CMS——面向\"自托管 + AI\"人群,一个可信的 Webflow/Framer 开源替代。",
+          "value": "托管版 + 模板 + 代理商授权,卖给\"想要 Webflow 式搭建、又不愿被锁定或按席位付费\"的人。",
+          "risk": "Webflow/Framer 根基深、生态大;\"agent + 自托管\"必须明显更省事才能撬走用户。"
+        }
+      }
     },
     {
       "title": "OpenCoworkAI/open-codesign",
       "claim": "OpenCoworkAI/open-codesign — Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / ",
       "score": 9,
-      "why_good": "The project addresses a growing need for accessible AI design tools that can streamline the prototyping process for non-technical users.",
-      "value": "Businesses could pay for premium features or integrations, while educational institutions might subscribe for classroom use.",
-      "risk": "Established design platforms could easily integrate similar features, overshadowing the project's unique offerings.",
+      "why_good": "Turns your Claude Code/Codex key into a prompt-to-prototype/slides design tool — an open 'Claude Design' for non-designers, BYO-model.",
+      "value": "Team/hosted tier + edu licenses for PMs and founders who want fast agent-made prototypes without a designer or a new subscription.",
+      "risk": "Same lane as several 'open Claude Design' clones and the model vendors' own design surfaces; needs a sharper wedge.",
       "evidence": [
         "https://github.com/OpenCoworkAI/open-codesign",
         "7,529★",
@@ -1918,15 +2014,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:19Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that simplifies AI design for non-technical users, which can be monetized."
+      "pick_reason": "The project offers a clear product that simplifies AI design for non-technical users, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "OpenCoworkAI/open-codesign —— 开源的「Claude Design」替代:一键导入 Claude Code/Codex 的 API key,提示词 → 原型/幻灯片。",
+          "why_good": "把你的 Claude Code/Codex key 变成\"提示词→原型/幻灯片\"的设计工具——面向非设计师的开源「Claude Design」,自带模型。",
+          "value": "团队/托管版 + 教育授权,卖给\"想要 agent 快速出原型、又不想请设计师或再开订阅\"的 PM 和创始人。",
+          "risk": "和好几个「开源 Claude Design」克隆以及模型厂商自家设计入口同赛道;需要更锋利的切口。"
+        }
+      }
     },
     {
       "title": "chauncygu/collection-claude-code-source-code",
       "claim": "chauncygu/collection-claude-code-source-code — 🔥 A collection of the Claude Code open source",
       "score": 9,
-      "why_good": "This project leverages open-source AI models, which can attract a community of developers and researchers looking for customizable solutions.",
-      "value": "Companies could pay for premium support, consulting services, or access to enhanced features built on top of the open-source code.",
-      "risk": "The project may struggle to monetize effectively if larger AI firms integrate similar capabilities into their existing platforms.",
+      "why_good": "A curated collection of Claude Code-related open source — handy as a reading list, but a link/repo collection, not a product.",
+      "value": "No direct monetization; awesome-list-style collections don't retain users or convert to revenue.",
+      "risk": "Pure content aggregation: zero moat, no product, competing with every other 'awesome-claude' list.",
       "evidence": [
         "https://github.com/chauncygu/collection-claude-code-source-code",
         "2,771★",
@@ -1943,7 +2047,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:28:16Z",
       "pick": false,
-      "pick_reason": "The project is a collection of open-source code, which does not present a clear monetizable product."
+      "pick_reason": "The project is a collection of open-source code, which does not present a clear monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "chauncygu/collection-claude-code-source-code —— 一份 Claude Code 相关开源项目的合集。",
+          "why_good": "一份精选的 Claude Code 相关开源合集——当阅读清单挺方便,但它是链接/仓库合集,不是产品。",
+          "value": "没有直接变现;awesome-list 式的合集留不住用户、也不转化成收入。",
+          "risk": "纯内容聚合:零护城河、无产品,还和其它所有\"awesome-claude\"清单竞争。"
+        }
+      }
     },
     {
       "title": "getagentseal/codeburn",
