@@ -2,9 +2,9 @@
   "title": "StarTrail-org/PixelRAG",
   "claim": "StarTrail-org/PixelRAG — The end of web parsing. The beginning of scalable pixel-native search. link: https://pixelrag.ai/",
   "score": 9,
-  "why_good": "The project addresses a fundamental limitation in current web parsing technologies by introducing a pixel-native approach, potentially revolutionizing how data is extracted and utilized.",
-  "value": "Businesses in sectors like e-commerce and digital marketing could pay for advanced search capabilities that enhance user experience and improve conversion rates.",
-  "risk": "The technology could face challenges in gaining traction if larger companies integrate similar features into their existing platforms, overshadowing the startup.",
+  "why_good": "Skips fragile HTML parsing by doing retrieval directly over rendered pixels — if accurate, it dodges the endless breakage of web scrapers.",
+  "value": "Sell as an API to teams building agents/search that need reliable web extraction without maintaining parsers; usage-based pricing.",
+  "risk": "The bold 'end of web parsing' claim needs proof; pixel/vision retrieval is compute-heavy and the big labs chase the same thing.",
   "evidence": [
     "https://github.com/StarTrail-org/PixelRAG",
     "7,362★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T00:07:44Z",
   "pick": false,
-  "pick_reason": "The project is too vague and lacks a clear monetizable product."
+  "pick_reason": "The project is too vague and lacks a clear monetizable product.",
+  "i18n": {
+    "zh": {
+      "claim": "StarTrail-org/PixelRAG —— 网页解析的终结,像素原生搜索的开始。链接:pixelrag.ai",
+      "why_good": "跳过脆弱的 HTML 解析,直接在渲染后的像素上做检索——若准确,就绕开了网页爬虫无止境的崩坏。",
+      "value": "作为 API 卖给\"要可靠网页抽取、又不想维护解析器\"的 agent/搜索团队;按量计费。",
+      "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。"
+    }
+  }
 }
