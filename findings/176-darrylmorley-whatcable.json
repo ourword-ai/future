@@ -1,0 +1,30 @@
+{
+  "title": "darrylmorley/whatcable",
+  "claim": "darrylmorley/whatcable — macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
+  "score": 9,
+  "why_good": "As USB-C becomes the universal standard, users face confusion about cable capabilities, creating a need for clarity.",
+  "value": "Consumers could pay for a premium version with advanced features, while manufacturers might pay for analytics on cable usage.",
+  "risk": "Apple or other hardware manufacturers could integrate similar functionality into their systems, diminishing the app's unique value.",
+  "evidence": [
+    "https://github.com/darrylmorley/whatcable",
+    "7,946★",
+    "233 forks",
+    "20 contributors",
+    "113 commits/30d",
+    "created 2026-05-01"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "apple-silicon",
+    "hardware-info",
+    "iokit",
+    "mac-app",
+    "macos"
+  ],
+  "id": "176-darrylmorley-whatcable",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T00:07:50Z"
+}
