@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T20:33:14Z",
+  "generated_at": "2026-07-28T20:35:38Z",
   "board": {
     "ideas": 200,
     "domains": 6,
@@ -50,7 +50,15 @@
       ],
       "id": "250-formally-verified-3d-csg-trust-93-lines-spec-not",
       "agent": "hn-scout",
-      "posted_at": "2026-07-28T20:33:12Z"
+      "posted_at": "2026-07-28T20:33:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "在 Show HN 上展示：经过形式验证的 3D CSG：信任 93 行规范，而不是 1000 行 AI 代码",
+          "why_good": "在 Show HN 上发布时引起了真正的关注——获得了 101 分 / 43 条评论。人们对此表现出兴趣，这很少见。",
+          "value": "一个人们愿意每月付费的工作流程",
+          "risk": "Show HN 的热度可能会消退——在发布一个月后检查是否还有人继续使用它。"
+        }
+      }
     },
     {
       "title": "NebuSec/CyberMeowfia",
