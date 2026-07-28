@@ -32,7 +32,9 @@
       "claim": "MemPalace/mempalace —— 跑分最好的开源 AI 记忆系统,而且免费。",
       "why_good": "定位为 agent 的跑分最好开源记忆层——记忆是每个 agent 产品都会撞上、且尚未解决的真实需求。",
       "value": "给不想自建的 agent 开发者卖托管记忆 API + 企业版(留存、多租户)。",
-      "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。"
+      "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。",
+      "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
     }
-  }
+  },
+  "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real."
 }
