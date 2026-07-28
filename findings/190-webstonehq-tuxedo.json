@@ -2,9 +2,9 @@
   "title": "webstonehq/tuxedo",
   "claim": "webstonehq/tuxedo — A fast, keyboard-driven terminal UI for todo.txt.",
   "score": 8,
-  "why_good": "early traction (1,503★); 19 contributors, 23 commits/30d — actively maintained",
-  "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A fast, keyboard-driven terminal UI for todo.txt (1,503 stars) — beloved by CLI power-users who live in the terminal.",
+  "value": "Hard to charge for a todo TUI; at best a pro tier (sync, mobile), or it stays a loved free tool.",
+  "risk": "todo.txt tooling is a tiny, free-by-culture niche; low willingness to pay and easy to clone.",
   "evidence": [
     "https://github.com/webstonehq/tuxedo",
     "1,503★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T04:16:50Z",
   "pick": true,
-  "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions."
+  "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions.",
+  "i18n": {
+    "zh": {
+      "claim": "webstonehq/tuxedo —— 一个快速、键盘驱动的 todo.txt 终端 UI。",
+      "why_good": "一个快、键盘驱动的 todo.txt 终端 UI(1503★)——终端重度用户很爱。",
+      "value": "todo TUI 很难收费;顶多做专业版(同步、移动端),否则就是个受喜爱的免费工具。",
+      "risk": "todo.txt 工具是个小、文化上就免费的细分;付费意愿低且易被抄。"
+    }
+  }
 }
