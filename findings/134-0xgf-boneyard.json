@@ -28,7 +28,9 @@
       "claim": "0xGF/boneyard —— 自动生成骨架屏(skeleton loading)框架。",
       "why_good": "从你的 UI 自动生成骨架屏——确实省时,但是个窄的前端小工具。",
       "value": "很难直接收费;价值在于做开发工具/插件,或塞进更大 UI 套件里的付费专业版。",
-      "risk": "组件库和框架都在原生加骨架屏;范围小、替代品好找。"
+      "risk": "组件库和框架都在原生加骨架屏;范围小、替代品好找。",
+      "hook": "从你的 UI 自动生成骨架屏——确实省时,虽然范围窄。"
     }
-  }
+  },
+  "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one."
 }
