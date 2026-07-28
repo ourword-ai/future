@@ -2,9 +2,9 @@
   "title": "Forgeon",
   "claim": "Product Hunt: Forgeon — Create, publish, and experience interactive stories",
   "score": 7,
-  "why_good": "Interactive storytelling is gaining traction as a medium for education and entertainment, appealing to both creators and consumers.",
-  "value": "Content creators and educators could pay for premium features or subscriptions to enhance their storytelling capabilities and reach larger audiences.",
-  "risk": "The platform may struggle to differentiate itself if larger companies with established user bases decide to integrate similar interactive storytelling features.",
+  "why_good": "A platform to create, publish and play AI interactive stories — rides the interactive-fiction + AI wave with a creator-economy angle.",
+  "value": "Creator platform: subscriptions + a marketplace/rev-share on published stories; AI lowers the authoring bar.",
+  "risk": "Interactive fiction is a passionate but small market; AI Dungeon and character apps already compete for it.",
   "evidence": [
     "https://www.producthunt.com/r/AFVYUCU2FMSEPA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/forgeon-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "182-forgeon",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-28T00:13:39Z"
+  "posted_at": "2026-07-28T00:13:39Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Forgeon —— 创作、发布、体验互动故事。",
+      "why_good": "一个创作、发布、玩 AI 互动故事的平台——踩在互动小说 + AI 浪潮上,带创作者经济角度。",
+      "value": "创作者平台:订阅 + 已发布故事的市场/分成;AI 降低创作门槛。",
+      "risk": "互动小说是个热情但小的市场;AI Dungeon 和角色 app 已在争夺。"
+    }
+  }
 }
