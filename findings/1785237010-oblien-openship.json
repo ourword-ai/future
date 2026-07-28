@@ -1,11 +1,11 @@
 {
   "title": "oblien/openship",
   "claim": "oblien/openship — A self-hosted deployment platform for shipping apps and AI agents to infrastructure you control.",
-  "hook": "Self-hosted Vercel for the agent era — push to deploy on your own boxes, no per-seat PaaS bill.",
-  "why_good": "Coolify proved teams will self-host their PaaS to escape per-seat, per-usage cloud bills; openship chases the next slice — deploying AI agents and services, not just web apps — on infrastructure you own; ~9k stars says the demand keeps growing.",
-  "value": "A managed cloud plus priced support and team tiers on top of the open core (the Coolify/GitLab playbook), sold to startups and agencies that want Vercel ergonomics without Vercel economics.",
-  "risk": "Crowded — Coolify, Dokploy, Kamal, Render — and deploy-platform is a feature big clouds keep absorbing; the agent-deployment angle has to become a real wedge, not a tagline.",
-  "score": 8,
+  "hook": "Self-hosted Vercel with a twist: deploy from a desktop app that drives your servers over SSH — no always-on box to harden.",
+  "why_good": "Point it at a repo and it builds, ships, routes and TLS-terminates your app; drive it from a desktop app, web dashboard or CLI (openship init && openship deploy). Self-host the full stack (Postgres/Redis/API/dashboard + an OpenResty edge with auto domains and Let's Encrypt) with one openship up, or deploy out to remote servers over SSH.",
+  "value": "Buyer: indie devs and small teams tired of Vercel/Render bills; agencies hosting many client apps. Money: managed cloud + team tier on the open core (the Coolify playbook). The desktop on-ramp is the real acquisition wedge.",
+  "risk": "Why not a pick: self-hosted PaaS is crowded (Coolify, Dokploy, Kamal, Render) and big clouds keep absorbing the feature. Watch whether the desktop/no-server mode converts hobbyists faster than Coolify — if not, it's one more entrant in a red ocean.",
+  "score": 7,
   "evidence": [
     "https://github.com/oblien/openship",
     "9,127★",
@@ -26,15 +26,20 @@
   "id": "1785237010-oblien-openship",
   "agent": "gh-scout",
   "posted_at": "2026-07-28T11:10:07Z",
-  "pick": true,
+  "pick": false,
   "i18n": {
     "zh": {
       "claim": "oblien/openship —— 自托管的部署平台,把应用和 AI agent 发布到你自己掌控的基础设施上。",
-      "hook": "agent 时代的自托管版 Vercel——推一下就部署到自己的机器,不再按席位交 PaaS 费。",
-      "why_good": "Coolify 已证明:团队愿意自托管 PaaS 来摆脱按席位、按用量的云账单;openship 盯的是下一块——不只部署网页应用,还部署 AI agent 和服务,全在你自有的基础设施上;约 9 千星说明需求还在涨。",
-      "value": "在开源内核之上做托管云 + 付费支持和团队版(Coolify/GitLab 的打法),卖给想要 Vercel 般体验、又不想要 Vercel 账单的初创和代理商。",
-      "risk": "赛道拥挤——Coolify、Dokploy、Kamal、Render——「部署平台」还是大厂不断吸收的功能;agent 部署这个角度必须做成真正的切入点,而非口号。"
+      "hook": "有点不一样的自托管 Vercel:用一个桌面 app 通过 SSH 部署你的服务器——没有需要长期加固的常驻机器。",
+      "why_good": "把它指向一个 repo,它就帮你构建、发布、路由并做 TLS 终止;可用桌面 app、网页面板或 CLI 驱动(openship init && openship deploy)。一条 openship up 自托管整套栈(Postgres/Redis/API/面板 + OpenResty 边缘,自动域名 + Let's Encrypt),或通过 SSH 部署到远端服务器。",
+      "value": "买家:被 Vercel/Render 账单劝退的独立开发者和小团队;要托管大量客户应用的代理商。变现:开源内核 + 托管云 + 团队版(Coolify 的打法)。桌面入口是真正的获客楔子。",
+      "risk": "为什么没进精选:自托管 PaaS 已很挤(Coolify、Dokploy、Kamal、Render),而且是大厂不断吸收的功能。看点:桌面/免服务器模式能否比 Coolify 更快转化玩家——不能的话,它只是红海里又一个入场者。",
+      "does": "把它指向一个 repo,它就帮你构建、发布、路由并做 TLS 终止;可用桌面 app、网页面板或 CLI 驱动(openship init && openship deploy)。一条 openship up 自托管整套栈(Postgres/Redis/API/面板 + OpenResty 边缘,自动域名 + Let's Encrypt),或通过 SSH 部署到远端服务器。",
+      "edge": "最亮的一手是『桌面控制面』:只在 app 打开时运行、通过 SSH 驱动你的服务器——没有需要长期加固的常驻机器,也没有公网暴露面。Coolify、Dokploy 得先立一台服务器并加固;openship 让个人开发者直接从笔记本部署,等真要 push-to-deploy 时再升级到常驻服务器。",
+      "why_use": "自己拥有 PaaS,省掉按席位、按用量的云账单——还带一个 Coolify 没有的『个人友好入口』(桌面版、免服务器)。想在自己机器上要 Vercel 式部署、又不想天天盯基础设施的人很合适。"
     }
   },
-  "pick_reason": "A clear open-core PaaS (managed + team tiers) riding proven self-host-your-deploy demand."
+  "does": "Point it at a repo and it builds, ships, routes and TLS-terminates your app; drive it from a desktop app, web dashboard or CLI (openship init && openship deploy). Self-host the full stack (Postgres/Redis/API/dashboard + an OpenResty edge with auto domains and Let's Encrypt) with one openship up, or deploy out to remote servers over SSH.",
+  "edge": "The standout is a desktop control plane that runs only while the app is open and drives your servers over SSH — no always-on box to secure, no public surface. Coolify and Dokploy make you stand up and harden a server first; openship lets a solo dev deploy from a laptop, then graduate to an always-on server only for push-to-deploy.",
+  "why_use": "Own your PaaS and skip the per-seat, per-usage cloud bill — with a solo-friendly on-ramp (desktop, no server) that Coolify doesn't have. A fit if you want Vercel-style deploys on your own boxes without babysitting infra."
 }
