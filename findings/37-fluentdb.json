@@ -2,9 +2,9 @@
   "title": "FluentDB",
   "claim": "Product Hunt: FluentDB — The AI database client for Mac",
   "score": 8,
-  "why_good": "FluentDB addresses the growing need for user-friendly database management tools that leverage AI to simplify complex queries.",
-  "value": "Businesses pay for subscription plans that offer advanced features, integrations, and support for their database needs.",
-  "risk": "The market is saturated with established database management solutions that could easily integrate similar AI features.",
+  "why_good": "An AI-native database client for Mac — query and explore DBs in natural language, a real productivity win for devs and analysts.",
+  "value": "Prosumer/team subscription like TablePlus + AI; devs already pay for good DB clients.",
+  "risk": "TablePlus, DataGrip and every DB tool are adding AI; the AI layer must be clearly better to justify switching.",
   "evidence": [
     "https://www.producthunt.com/r/XDHRXK2IKT3XVD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/fluentdb-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "37-fluentdb",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:17Z"
+  "posted_at": "2026-07-27T11:56:17Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: FluentDB —— Mac 上的 AI 数据库客户端。",
+      "why_good": "一个 AI 原生的 Mac 数据库客户端——用自然语言查询和探索数据库,对开发者和分析师是真实的效率提升。",
+      "value": "像 TablePlus + AI 那样收专业/团队订阅;开发者本就为好用的 DB 客户端付费。",
+      "risk": "TablePlus、DataGrip 和每个 DB 工具都在加 AI;AI 层要明显更好才值得迁移。"
+    }
+  }
 }
