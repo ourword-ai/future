@@ -2,9 +2,9 @@
   "title": "jdx/aube",
   "claim": "aube — a Rust Node.js package manager by the maintainer of mise: auto-installs when you run a script, reads existing pnpm/npm/yarn/bun lockfiles in place, and jails lifecycle scripts — the strictest security defaults of any Node PM.",
   "score": 7,
-  "why_good": "The lifecycle-script jail lands exactly on the npm supply-chain-attack wave (postinstall malware), and zero-migration adoption — it drops into your existing lockfile — removes the switching cost that kills new package managers. jdx's mise following supplies distribution most new tools never get.",
-  "value": "商业价值: package managers don't monetize directly — the opening is the security posture: an org-level layer (script-jail policy, registry firewall, audit trail) sold to teams out of the Socket.dev / supply-chain budget.",
-  "risk": "pnpm, Bun and npm can copy auto-install and script sandboxing; sponsor-funded solo-maintainer economics (37signals, entire.io) sustain a tool, not a company — this may stay excellent OSS with no business attached.",
+  "why_good": "A Rust Node.js package manager from mise's maintainer — auto-installs on run, with strong pedigree in the dev-tools space.",
+  "value": "Package managers monetize indirectly (enterprise, registry, support); the wedge is speed + zero-config DX.",
+  "risk": "npm/pnpm/Bun own this; even great tooling struggles to become a business without a registry/cloud play.",
   "evidence": [
     "https://github.com/jdx/aube",
     "1,775★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "200-jdx-aube",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:46:27Z"
+  "posted_at": "2026-07-28T04:46:27Z",
+  "i18n": {
+    "zh": {
+      "claim": "aube —— mise 维护者写的 Rust Node.js 包管理器:运行脚本时自动安装,读取扩展配置。",
+      "why_good": "来自 mise 维护者的 Rust Node.js 包管理器——运行即自动安装,在开发工具圈有很强血统。",
+      "value": "包管理器靠间接变现(企业、注册表、支持);切口是速度 + 零配置体验。",
+      "risk": "npm/pnpm/Bun 占据这块;再好的工具没有注册表/云打法也难成生意。"
+    }
+  }
 }
