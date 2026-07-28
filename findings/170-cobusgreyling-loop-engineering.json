@@ -2,9 +2,9 @@
   "title": "cobusgreyling/loop-engineering",
   "claim": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orch",
   "score": 9,
-  "why_good": "The project addresses a growing need for efficient AI integration in software development, streamlining the loop engineering process.",
-  "value": "Software development firms and enterprises could pay for premium features or support, generating revenue through subscriptions or licensing.",
-  "risk": "The market could be dominated by larger companies offering similar AI tools, making it difficult for this project to gain traction.",
+  "why_good": "Codifies 'loop engineering' patterns for coding agents into starters + CLI — useful know-how, but it reads as a pattern library, not a product.",
+  "value": "Monetizes at best as training/consulting or a paid template pack; hard to build a durable company on shared patterns.",
+  "risk": "Patterns are easily copied and get folded into the agent tools themselves; closer to content than a defensible product.",
   "evidence": [
     "https://github.com/cobusgreyling/loop-engineering",
     "9,490★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T00:07:32Z",
   "pick": true,
-  "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized."
+  "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "cobusgreyling/loop-engineering —— 给 AI 编码 agent 做\"循环工程\"的实用范式、脚手架与 CLI 工具。",
+      "why_good": "把编码 agent 的\"循环工程\"范式沉淀成脚手架 + CLI——know-how 有用,但更像范式库不是产品。",
+      "value": "顶多靠培训/咨询或付费模板包变现;靠共享范式很难做成有壁垒的公司。",
+      "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。"
+    }
+  }
 }
