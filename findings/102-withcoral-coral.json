@@ -28,7 +28,9 @@
       "claim": "withcoral/coral —— 面向 agent 的统一 SQL 接口,覆盖 API、文件与实时数据源。",
       "why_good": "用一个 SQL 接口统管 API/文件/实时源,为 agent 而建——给 agent 可靠、带类型的数据访问,而非临时拼工具。",
       "value": "给 agent 开发者做按量数据网关:跨源查询/路由/治理,upsell 托管连接器 + 企业版。",
-      "risk": "数据虚拟化很挤(Trino、Steampipe);\"为 agent\"必须真的转化成分发优势。"
+      "risk": "数据虚拟化很挤(Trino、Steampipe);\"为 agent\"必须真的转化成分发优势。",
+      "hook": "用一个 SQL 接口统管 API、文件与实时源——为 agent 打造的可靠数据访问。"
     }
-  }
+  },
+  "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents."
 }
