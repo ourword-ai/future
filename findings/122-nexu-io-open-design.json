@@ -2,9 +2,9 @@
   "title": "nexu-io/open-design",
   "claim": "nexu-io/open-design — 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine:",
   "score": 10,
-  "why_good": "The project leverages local-first technology, which can enhance user privacy and performance compared to cloud-based solutions.",
-  "value": "Design agencies and freelance designers could pay for premium features or support, creating a subscription model or one-time licensing fees.",
-  "risk": "The design software market is highly competitive, and established players may easily integrate similar capabilities, overshadowing this project.",
+  "why_good": "Turns your existing coding agent into a local-first design tool — a credible open alternative to Figma / 'Claude Design' that keeps files and IP on-device.",
+  "value": "Sell a hosted/team tier and enterprise licenses to design-dev teams who want agent-driven design without shipping their files to a cloud vendor.",
+  "risk": "Figma and the model vendors can bolt on the same agent-design flow; 'local-first' alone won't hold unless the agent-to-design UX is clearly better.",
   "evidence": [
     "https://github.com/nexu-io/open-design",
     "81,924★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:27:41Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized."
+  "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "nexu-io/open-design —— 开源的「Claude Design」替代品,本地优先的桌面 app:让你的编码 agent 变成设计引擎。",
+      "why_good": "把你现有的编码 agent 变成本地优先的设计工具——一个可信的 Figma /「Claude Design」开源替代,文件和 IP 都留在本机。",
+      "value": "向「想要 agent 驱动设计、又不愿把文件上传云厂商」的设计-研发团队,卖托管/团队版和企业授权。",
+      "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。"
+    }
+  }
 }
