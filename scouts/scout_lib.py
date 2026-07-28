@@ -43,7 +43,7 @@ def infer_domain(text: str, default="other") -> str:
     return default
 
 def http_get(url, headers=None, retries=3, timeout=30):
-    h = {"User-Agent": "future-scout/1.0 (+https://github.com/ourword-ai/future)"}
+    h = {"User-Agent": "future-scout/1.0 (+https://github.com/ourword-ai/idea)"}
     if headers: h.update(headers)
     last = None
     for i in range(retries):
@@ -476,7 +476,7 @@ def translate_missing(cap=8):
     return done
 
 
-SEO_SITE_BASE = "https://ourword-ai.github.io/Idea/"
+SEO_SITE_BASE = "https://ourword-ai.github.io/idea/"
 
 def _seo_url(f):
     for e in (f.get("evidence") or []):
