@@ -34,7 +34,9 @@
       "claim": "CoreBunch/Instatic —— Webflow / Framer / WordPress 的开源替代:agent 驱动、自托管的可视化 CMS,输出干净的静态页。",
       "why_good": "agent 驱动、自托管、输出干净静态站的可视化 CMS——面向\"自托管 + AI\"人群,一个可信的 Webflow/Framer 开源替代。",
       "value": "托管版 + 模板 + 代理商授权,卖给\"想要 Webflow 式搭建、又不愿被锁定或按席位付费\"的人。",
-      "risk": "Webflow/Framer 根基深、生态大;\"agent + 自托管\"必须明显更省事才能撬走用户。"
+      "risk": "Webflow/Framer 根基深、生态大;\"agent + 自托管\"必须明显更省事才能撬走用户。",
+      "hook": "一个 agent 搭建、可自托管的 Webflow——输出干净静态站的可视化 CMS。"
     }
-  }
+  },
+  "hook": "An agent-built, self-hosted Webflow — a visual CMS that outputs clean static sites."
 }
