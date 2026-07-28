@@ -2,9 +2,9 @@
   "title": "I RL-trained an agent that trains models with RL (for ~$1.3k)",
   "claim": "Show HN: I RL-trained an agent that trains models with RL (for ~$1.3k)",
   "score": 7,
-  "why_good": "The ability to automate the training of machine learning models can significantly reduce time and resource costs for companies.",
-  "value": "Businesses in AI and machine learning would pay for a subscription service that offers optimized model training solutions.",
-  "risk": "The project may struggle to scale if larger tech companies decide to integrate similar capabilities into their existing platforms.",
+  "why_good": "An agent RL-trained to itself train models with RL, cheaply (~$1.3k) — a striking recursive-automation demo with real cost implications.",
+  "value": "The opportunity is cheap automated RL-training-as-a-service; the demo hints at a product, but isn't one yet.",
+  "risk": "Impressive experiment, not a productized business; RL infra is compute-heavy and the labs move fast.",
   "evidence": [
     "https://github.com/Danau5tin/ai-trains-ai",
     "https://news.ycombinator.com/item?id=48905919",
@@ -20,5 +20,13 @@
   ],
   "id": "93-i-rl-trained-an-agent-that-trains-models-with-rl",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:32:24Z"
+  "posted_at": "2026-07-27T15:32:24Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 我用 RL 训练了一个 用 RL 训练模型 的 agent(约 $1.3k)。",
+      "why_good": "一个被 RL 训练来自己用 RL 训模型的 agent,而且便宜(约 $1.3k)——一个惊艳的递归自动化演示,成本含义真实。",
+      "value": "机会在便宜的自动化 RL 训练即服务;演示暗示了产品,但还不是。",
+      "risk": "惊艳的实验,不是产品化生意;RL 基础设施重算力,实验室跑得快。"
+    }
+  }
 }
