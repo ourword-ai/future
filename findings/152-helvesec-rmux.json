@@ -2,9 +2,9 @@
   "title": "Helvesec/rmux",
   "claim": "Helvesec/rmux — Universal Rust multiplexer with a typed SDK — drive any CLI or TUI app from code. Native on Linux, macOS, and Windows.",
   "score": 8,
-  "why_good": "The ability to drive any CLI or TUI app programmatically opens up opportunities for automation and integration in diverse environments.",
-  "value": "Companies in DevOps and system administration could pay for premium features or support, generating revenue through subscriptions or licensing.",
-  "risk": "The project could struggle to gain traction if larger incumbents integrate similar functionality into their existing tools.",
+  "why_good": "A Rust multiplexer with a typed SDK to drive any CLI/TUI programmatically — the automation primitive agents need to control terminal apps.",
+  "value": "Sell to agent/automation builders as the reliable terminal-control layer; usage + enterprise support.",
+  "risk": "Low-level infra with a narrow (if real) audience; agents/frameworks may bundle terminal control natively.",
   "evidence": [
     "https://github.com/Helvesec/rmux",
     "2,500★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:37Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product for automation and integration that can be monetized through a subscription or licensing model."
+  "pick_reason": "The project offers a clear product for automation and integration that can be monetized through a subscription or licensing model.",
+  "i18n": {
+    "zh": {
+      "claim": "Helvesec/rmux —— 带类型化 SDK 的通用 Rust 多路复用器:用代码驱动任意 CLI/TUI 应用(Linux/macOS/Windows 原生)。",
+      "why_good": "一个带类型化 SDK 的 Rust 多路复用器,能用代码程序化驱动任意 CLI/TUI——agent 控制终端应用需要的自动化原语。",
+      "value": "卖给 agent/自动化开发者做可靠的终端控制层:按量 + 企业支持。",
+      "risk": "底层基础设施,受众窄(但真实);agent/框架可能原生内置终端控制。"
+    }
+  }
 }
