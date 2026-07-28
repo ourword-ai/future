@@ -2,9 +2,9 @@
   "title": "HBAI-Ltd/Toonflow-app",
   "claim": "HBAI-Ltd/Toonflow-app — Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source A",
   "score": 9,
-  "why_good": "Toonflow addresses the growing demand for quick, cost-effective content creation in the creator economy, enabling users to produce animated shorts without extensive resources.",
-  "value": "Content creators, marketing agencies, and educational platforms would pay for premium features, subscription plans, or one-time licensing fees to access advanced animation tools and AI capabilities.",
-  "risk": "The project may struggle to scale as a business if larger incumbents in the animation or content creation space integrate similar features into their existing platforms.",
+  "why_good": "Turns novels/scripts into animated short dramas with AI (writing, storyboard, character + video gen) — riding China's booming short-drama economy where volume and cost matter.",
+  "value": "Sell to creators/agencies/edu on a hosted tier + credits for AI video gen; the short-drama market pays for cheap batch output.",
+  "risk": "AI video is capital-heavy and moves fast; big platforms and model labs can ship the same pipeline and outspend an indie.",
   "evidence": [
     "https://github.com/HBAI-Ltd/Toonflow-app",
     "12,801★",
@@ -26,5 +26,13 @@
   ],
   "id": "88-hbai-ltd-toonflow-app",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:47Z"
+  "posted_at": "2026-07-27T15:27:47Z",
+  "i18n": {
+    "zh": {
+      "claim": "HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧本快速转成动画短剧(AI 编剧、智能分镜、角色与视频生成),跨平台桌面轻量部署。",
+      "why_good": "用 AI 把小说/剧本变成动画短剧(编剧、分镜、角色+视频生成)——踩在中国爆火的短剧经济上,量和成本正是关键。",
+      "value": "按托管版 + AI 视频生成点数,卖给创作者/机构/教育;短剧市场愿为便宜的批量产出付费。",
+      "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。"
+    }
+  }
 }
