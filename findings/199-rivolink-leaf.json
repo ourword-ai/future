@@ -2,9 +2,9 @@
   "title": "RivoLink/leaf",
   "claim": "RivoLink/leaf — Terminal Markdown previewer — GUI-like experience.",
   "score": 7,
-  "why_good": "early traction (1,758★); 13 contributors, 43 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A terminal Markdown previewer with a GUI-like feel — pleasant for CLI users, but a small single-purpose utility.",
+  "value": "Hard to charge for; a free TUI at best with a niche pro tier.",
+  "risk": "Tiny niche, glow/mdcat exist; a nice tool, not a company.",
   "evidence": [
     "https://github.com/RivoLink/leaf",
     "1,758★",
@@ -26,5 +26,13 @@
   ],
   "id": "199-rivolink-leaf",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:17:12Z"
+  "posted_at": "2026-07-28T04:17:12Z",
+  "i18n": {
+    "zh": {
+      "claim": "RivoLink/leaf —— 终端 Markdown 预览器,GUI 般的体验。",
+      "why_good": "一个 GUI 般体验的终端 Markdown 预览器——CLI 用户喜欢,但是个小、单一用途的工具。",
+      "value": "很难收费;顶多免费 TUI 加个小众专业档。",
+      "risk": "细分极小,glow/mdcat 已在;是个好工具,不是公司。"
+    }
+  }
 }
