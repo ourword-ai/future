@@ -35,7 +35,9 @@
       "claim": "getagentseal/codeburn —— 免费本地工具,跨 31 种工具/agent(Claude Code、Cursor、Codex、Gemini)追踪 AI 编码的 token 用量与花费。",
       "why_good": "在本地追踪 31 种 agent 的编码 token 花费——agent 热潮里没人做的成本侧,而这正是买家真正盯的数字。",
       "value": "给工程负责人卖团队看板 + 预算/告警:跨席位设上限、把花费归因。",
-      "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。"
+      "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。",
+      "hook": "看清你的 AI 编码到底花了多少——本地统计 31 种 agent 的 token 花费。"
     }
-  }
+  },
+  "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally."
 }
