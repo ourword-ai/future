@@ -2,9 +2,9 @@
   "title": "NanmiCoder/cc-haha",
   "claim": "NanmiCoder/cc-haha — 本地优先的跨平台 Claude Code /  Agent 桌面工作台：多 Agent、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、任务感知桌面宠物，并支持微信、飞书、钉钉、Telegram、Wha",
   "score": 9,
-  "why_good": "The integration of multiple agents and tools into a single desktop workspace addresses a growing need for efficiency in software development.",
-  "value": "Companies could pay for premium features or subscriptions to enhance team productivity and collaboration in coding environments.",
-  "risk": "The project may struggle to scale as larger companies with established tools could easily replicate its features or acquire it.",
+  "why_good": "A local-first desktop workbench wrapping Claude Code with multi-agent, git worktrees, diffs, computer-use and IM bridges — a full 'agent cockpit' for power users.",
+  "value": "Team/pro tier: shared config, private models, and the skill marketplace as a take-rate channel.",
+  "risk": "Rides on Claude Code; Anthropic or a funded 'agent IDE' can ship the same cockpit and absorb it.",
   "evidence": [
     "https://github.com/NanmiCoder/cc-haha",
     "13,638★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:27:45Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized."
+  "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "NanmiCoder/cc-haha —— 本地优先、跨平台的 Claude Code/Agent 桌面工作台:多 Agent、Git Worktree、Diff、技能市场、多模型、Computer Use、桌宠,支持微信/飞书/钉钉/Telegram。",
+      "why_good": "本地优先的桌面工作台,把 Claude Code 包成多 agent、git worktree、diff、computer-use 和 IM 桥接——给高级用户的完整\"agent 驾驶舱\"。",
+      "value": "团队/专业版:共享配置、私有模型,技能市场做抽成通道。",
+      "risk": "依附 Claude Code;Anthropic 或某个拿了钱的\"agent IDE\"能做出同样的驾驶舱把它吸收。"
+    }
+  }
 }
