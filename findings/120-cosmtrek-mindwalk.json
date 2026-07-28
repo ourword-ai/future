@@ -2,9 +2,9 @@
   "title": "cosmtrek/mindwalk",
   "claim": "cosmtrek/mindwalk — A visualization tool that replays coding-agent sessions on a 3D map of your codebase.",
   "score": 8,
-  "why_good": "This tool addresses the complex problem of understanding large codebases by providing a visual representation that can enhance collaboration and onboarding.",
-  "value": "Software development teams and companies could pay for premium features or subscriptions that offer enhanced visualization, analytics, and integration with existing tools.",
-  "risk": "The project may struggle to gain traction if larger players in the developer tools space introduce similar features or if it fails to scale beyond a niche audience.",
+  "why_good": "Replays coding-agent sessions on a 3D map of your codebase — a genuinely novel way to see, review and debug what an agent actually did.",
+  "value": "Team tier for eng orgs that must review/audit agent work at scale; observability is a real budget as agents write more code.",
+  "risk": "'3D visualization' can be eye-candy; it must prove it beats plain diffs/logs for real review workflows.",
   "evidence": [
     "https://github.com/cosmtrek/mindwalk",
     "938★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:26Z",
   "pick": true,
-  "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding."
+  "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding.",
+  "i18n": {
+    "zh": {
+      "claim": "cosmtrek/mindwalk —— 把编码 agent 的会话回放在你代码库的 3D 地图上的可视化工具。",
+      "why_good": "把编码 agent 的会话回放在代码库的 3D 地图上——一种真正新颖、看清并调试 agent 到底干了啥 的方式。",
+      "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
+      "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
+    }
+  }
 }
