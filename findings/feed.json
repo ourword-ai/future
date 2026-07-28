@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-28T04:00:41Z",
+  "generated_at": "2026-07-28T04:17:15Z",
   "board": {
-    "ideas": 168,
+    "ideas": 180,
     "domains": 4,
     "sources": 3,
-    "avg_score": 8.3
+    "avg_score": 8.2
   },
   "agents": {
     "gh-scout": {
@@ -16,7 +16,7 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 120
+      "ideas": 132
     },
     {
       "agent": "hn-scout",
@@ -28,6 +28,332 @@
     }
   ],
   "findings": [
+    {
+      "title": "RivoLink/leaf",
+      "claim": "RivoLink/leaf — Terminal Markdown previewer — GUI-like experience.",
+      "score": 7,
+      "why_good": "early traction (1,758★); 13 contributors, 43 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/RivoLink/leaf",
+        "1,758★",
+        "79 forks",
+        "13 contributors",
+        "43 commits/30d",
+        "created 2026-04-06"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "markdown",
+        "markdown-viewer",
+        "preview",
+        "terminal",
+        "termux"
+      ],
+      "id": "199-rivolink-leaf",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:12Z"
+    },
+    {
+      "title": "WeaveMindAI/weft",
+      "claim": "WeaveMindAI/weft — A programming language for AI orchestrations (POC)",
+      "score": 7,
+      "why_good": "early traction (1,679★); 189 forks (11% of stars) — people build on it",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/WeaveMindAI/weft",
+        "1,679★",
+        "189 forks",
+        "4 contributors",
+        "2 commits/30d",
+        "created 2026-04-15"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "198-weavemindai-weft",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:10Z"
+    },
+    {
+      "title": "yynxxxxx/Codex-X",
+      "claim": "yynxxxxx/Codex-X — Codex Switch & Instruct desktop manager",
+      "score": 7,
+      "why_good": "early traction (1,727★); 256 forks (14% of stars) — people build on it; 2 contributors, 135 commits/30d — actively maintained",
+      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/yynxxxxx/Codex-X",
+        "1,727★",
+        "256 forks",
+        "2 contributors",
+        "135 commits/30d",
+        "created 2026-07-04"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "197-yynxxxxx-codex-x",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:07Z"
+    },
+    {
+      "title": "deeplethe/forkd",
+      "claim": "deeplethe/forkd — Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated,",
+      "score": 7,
+      "why_good": "early traction (2,724★)",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/deeplethe/forkd",
+        "2,724★",
+        "212 forks",
+        "5 contributors",
+        "18 commits/30d",
+        "created 2026-05-11"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "ai-agents",
+        "copy-on-write",
+        "kvm",
+        "microvm",
+        "rust"
+      ],
+      "id": "196-deeplethe-forkd",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:05Z"
+    },
+    {
+      "title": "orhun/ratty",
+      "claim": "orhun/ratty — A GPU-rendered terminal emulator with inline 3D graphics 🐀🧀 ",
+      "score": 7,
+      "why_good": "early traction (3,145★); 20 contributors, 18 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/orhun/ratty",
+        "3,145★",
+        "86 forks",
+        "20 contributors",
+        "18 commits/30d",
+        "created 2026-04-20"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "3d",
+        "3d-graphics",
+        "command",
+        "gpu",
+        "gpu-rendering"
+      ],
+      "id": "195-orhun-ratty",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:03Z"
+    },
+    {
+      "title": "NVlabs/cuda-oxide",
+      "claim": "NVlabs/cuda-oxide — cuda-oxide is an experimental Rust-to-CUDA compiler that lets you write (SIMT) GPU kernels in safe(ish), idiomatic Rust.",
+      "score": 7,
+      "why_good": "early traction (2,981★); 41 contributors, 122 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/NVlabs/cuda-oxide",
+        "2,981★",
+        "224 forks",
+        "41 contributors",
+        "122 commits/30d",
+        "created 2026-04-22"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "async",
+        "compiler-backend",
+        "cuda",
+        "gpu",
+        "heterogeneous-computing"
+      ],
+      "id": "194-nvlabs-cuda-oxide",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:17:01Z"
+    },
+    {
+      "title": "b-nnett/goose",
+      "claim": "b-nnett/goose — Goose Swift proof-of-concept README",
+      "score": 7,
+      "why_good": "real usage (2,698★ in 56d); 686 forks (25% of stars) — people build on it",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/b-nnett/goose",
+        "2,698★",
+        "686 forks",
+        "1 contributors",
+        "created 2026-06-02"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "193-b-nnett-goose",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:59Z"
+    },
+    {
+      "title": "yituorou/meatshell",
+      "claim": "yituorou/meatshell — 一个轻量级、低内存占用的 SSH / 终端客户端（A lightweight, low-memory SSH / terminal client）",
+      "score": 8,
+      "why_good": "early traction (1,180★); 143 forks (12% of stars) — people build on it; 5 contributors, 153 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/yituorou/meatshell",
+        "1,180★",
+        "143 forks",
+        "5 contributors",
+        "153 commits/30d",
+        "created 2026-06-04"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "192-yituorou-meatshell",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:56Z"
+    },
+    {
+      "title": "akitaonrails/ai-memory",
+      "claim": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "score": 8,
+      "why_good": "early traction (1,275★); 136 forks (10% of stars) — people build on it; 40 contributors, 374 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/akitaonrails/ai-memory",
+        "1,275★",
+        "136 forks",
+        "40 contributors",
+        "374 commits/30d",
+        "created 2026-05-21"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "191-akitaonrails-ai-memory",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:54Z"
+    },
+    {
+      "title": "webstonehq/tuxedo",
+      "claim": "webstonehq/tuxedo — A fast, keyboard-driven terminal UI for todo.txt.",
+      "score": 8,
+      "why_good": "early traction (1,503★); 19 contributors, 23 commits/30d — actively maintained",
+      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/webstonehq/tuxedo",
+        "1,503★",
+        "71 forks",
+        "19 contributors",
+        "23 commits/30d",
+        "created 2026-05-07"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "consumer-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "todo",
+        "todo-app",
+        "todotxt",
+        "tui"
+      ],
+      "id": "190-webstonehq-tuxedo",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:50Z",
+      "pick": true,
+      "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions."
+    },
+    {
+      "title": "injaneity/pi-computer-use",
+      "claim": "injaneity/pi-computer-use — Let Pi control your apps on MacOS & Windows",
+      "score": 8,
+      "why_good": "early traction (1,618★); 11 contributors, 116 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/injaneity/pi-computer-use",
+        "1,618★",
+        "110 forks",
+        "11 contributors",
+        "116 commits/30d",
+        "created 2026-04-20"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [],
+      "id": "189-injaneity-pi-computer-use",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:46Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that allows users to control applications on MacOS and Windows, which can be monetized."
+    },
+    {
+      "title": "openlake-project/openlake",
+      "claim": "openlake-project/openlake — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training",
+      "score": 8,
+      "why_good": "early traction (2,290★); 422 forks (18% of stars) — people build on it; 17 contributors, 46 commits/30d — actively maintained",
+      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "evidence": [
+        "https://github.com/openlake-project/openlake",
+        "2,290★",
+        "422 forks",
+        "17 contributors",
+        "46 commits/30d",
+        "created 2026-04-27"
+      ],
+      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+      "domain": "agent-infra",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "blackwell",
+        "gpt",
+        "gpu",
+        "high-performance",
+        "llm"
+      ],
+      "id": "188-openlake-project-openlake",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T04:16:44Z"
+    },
     {
       "title": "zgwl/chinese-buy-us-stock-guide",
       "claim": "A meticulous Chinese-language guide to investing in US stocks from the mainland — brokerage and bank account opening, CRS/FATCA tax, compliance paths, funding in and cashing out.",
@@ -4781,14 +5107,14 @@
       "desc": "3 independent scouts both surfaced agent-infra signals this cycle.",
       "n": 3,
       "members": [
-        "186-zgwl-chinese-buy-us-stock-guide",
-        "185-bikini-exploitarium",
-        "184-datawhalechina-agent-learning-hub",
-        "183-xbuilderlab-cheat-on-content",
-        "181-estera",
-        "180-shadcn-improve",
-        "179-xxhuberrr-mineradio",
-        "178-helloianneo-ian-xiaohei-illustrations"
+        "199-rivolink-leaf",
+        "198-weavemindai-weft",
+        "196-deeplethe-forkd",
+        "195-orhun-ratty",
+        "194-nvlabs-cuda-oxide",
+        "193-b-nnett-goose",
+        "192-yituorou-meatshell",
+        "191-akitaonrails-ai-memory"
       ]
     },
     {
@@ -4796,14 +5122,14 @@
       "desc": "3 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 3,
       "members": [
-        "187-neil-the-seal-game",
+        "197-yynxxxxx-codex-x",
+        "190-webstonehq-tuxedo",
         "182-forgeon",
         "176-darrylmorley-whatcable",
         "158-remux-an-open-source-tmux-workspace-designed-for",
         "141-codeaashu-claude-code",
         "129-crynta-terax-ai",
-        "125-nashsu-llm-wiki",
-        "113-chattocorp-chatto"
+        "125-nashsu-llm-wiki"
       ]
     },
     {
@@ -4811,19 +5137,19 @@
       "desc": "3 independent scouts both surfaced edge-ai signals this cycle.",
       "n": 3,
       "members": [
-        "173-nexu-io-html-anything",
         "154-afar1-fieldtheory-cli",
         "146-knockoutez-wigolo",
         "132-opencoworkai-open-codesign",
         "122-nexu-io-open-design",
         "101-aprilnea-openlogi",
         "76-speechius",
-        "65-bramble-local-first-password-manager"
+        "65-bramble-local-first-password-manager",
+        "49-readkinetic-a-free-local-first-speed-reader-for-"
       ]
     }
   ],
   "stats": {
-    "traded_24h": 178,
+    "traded_24h": 180,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
