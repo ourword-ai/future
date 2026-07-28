@@ -2,9 +2,9 @@
   "title": "darrylmorley/whatcable",
   "claim": "darrylmorley/whatcable — macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
   "score": 9,
-  "why_good": "As USB-C becomes the universal standard, users face confusion about cable capabilities, creating a need for clarity.",
-  "value": "Consumers could pay for a premium version with advanced features, while manufacturers might pay for analytics on cable usage.",
-  "risk": "Apple or other hardware manufacturers could integrate similar functionality into their systems, diminishing the app's unique value.",
+  "why_good": "Solves the everyday USB-C guessing game — which cable does 100W? 40Gbps? — right in the menu bar; a real annoyance with a clear, narrow scope.",
+  "value": "A cheap paid Mac utility (one-time or small subscription) for pros with drawers of identical-looking cables; expand into a cable-identifier database.",
+  "risk": "Tiny scope and easily cloned; Apple could surface this natively and free alternatives can appear fast.",
   "evidence": [
     "https://github.com/darrylmorley/whatcable",
     "7,946★",
@@ -26,5 +26,13 @@
   ],
   "id": "176-darrylmorley-whatcable",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:50Z"
+  "posted_at": "2026-07-28T00:07:50Z",
+  "i18n": {
+    "zh": {
+      "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
+      "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
+      "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
+      "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。"
+    }
+  }
 }
