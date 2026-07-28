@@ -26,7 +26,9 @@
       "claim": "BigPizzaV3/CodexPlusPlus —— CodexApp 的增强工具,让 Codex 更好用、更顺手。",
       "why_good": "给 CodexApp 的增强层——补了真实的易用性缺口,但它是完全依附别人 app 的插件。",
       "value": "顶多做薄变现(专业版插件);一旦 Codex 自己采纳这些改进就没了杠杆。",
-      "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。"
+      "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。",
+      "hook": "让 CodexApp 更好用——方便,但是个 Codex 一夜就能吸收的插件。"
     }
-  }
+  },
+  "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight."
 }
