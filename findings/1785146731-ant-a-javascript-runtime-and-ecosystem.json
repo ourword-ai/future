@@ -3,7 +3,7 @@
   "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
   "score": 9,
   "why_good": "A new JavaScript runtime + ecosystem — the Bun/Deno lane. 330 HN points = real developer curiosity on day one.",
-  "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (Deno Deploy / Bun's model).",
+  "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (the Deno playbook).",
   "risk": "Brutal lane — Node/Bun/Deno are entrenched and funded; a runtime needs a killer reason to switch.",
   "evidence": [
     "https://antjs.org",
@@ -20,5 +20,13 @@
   ],
   "id": "1785146731-ant-a-javascript-runtime-and-ecosystem",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T10:05:31Z"
+  "posted_at": "2026-07-27T10:05:31Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
+      "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
+      "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
+      "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。"
+    }
+  }
 }
