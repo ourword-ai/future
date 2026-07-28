@@ -2,9 +2,9 @@
   "title": "BigPizzaV3/CodexPlusPlus",
   "claim": "BigPizzaV3/CodexPlusPlus — An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒",
   "score": 9,
-  "why_good": "The project addresses specific usability pain points in CodexApp, which could attract a dedicated user base seeking enhanced functionality.",
-  "value": "Developers and teams using CodexApp could pay for premium features or support, creating a subscription or one-time purchase model.",
-  "risk": "If CodexApp itself adopts these enhancements or integrates similar features, it could render this project obsolete.",
+  "why_good": "An enhancement layer for CodexApp — fixes real usability gaps, but it's an add-on wholly dependent on someone else's app.",
+  "value": "Thin monetization at best (pro add-on); no leverage if Codex itself adopts the improvements.",
+  "risk": "Feature, not a company: if CodexApp absorbs these tweaks, it's obsolete overnight.",
   "evidence": [
     "https://github.com/BigPizzaV3/CodexPlusPlus",
     "26,806★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "99-bigpizzav3-codexplusplus",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:24Z"
+  "posted_at": "2026-07-27T16:27:24Z",
+  "i18n": {
+    "zh": {
+      "claim": "BigPizzaV3/CodexPlusPlus —— CodexApp 的增强工具,让 Codex 更好用、更顺手。",
+      "why_good": "给 CodexApp 的增强层——补了真实的易用性缺口,但它是完全依附别人 app 的插件。",
+      "value": "顶多做薄变现(专业版插件);一旦 Codex 自己采纳这些改进就没了杠杆。",
+      "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。"
+    }
+  }
 }
