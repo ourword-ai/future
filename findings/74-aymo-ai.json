@@ -2,9 +2,9 @@
   "title": "Aymo AI",
   "claim": "Product Hunt: Aymo AI — All-in-one AI Platform for Teams",
   "score": 7,
-  "why_good": "Aymo AI addresses the increasing need for integrated AI tools that streamline team collaboration and productivity, filling a gap in the market for comprehensive solutions.",
-  "value": "Businesses pay for subscriptions to access advanced AI features, enabling them to enhance team efficiency and decision-making.",
-  "risk": "The platform may struggle to differentiate itself in a crowded market where larger players could easily replicate its features.",
+  "why_good": "An all-in-one AI platform for teams — broad and generic; 'all-in-one' pitches rarely win against focused tools.",
+  "value": "Team subscription, but the value prop is diffuse; hard to say why a team switches from ChatGPT Team / Claude.",
+  "risk": "Undifferentiated 'AI platform' — crowded, generic, and outgunned by the model vendors' own team products.",
   "evidence": [
     "https://www.producthunt.com/r/B2AAONAFWVZST6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/aymo-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "74-aymo-ai",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T15:18:29Z"
+  "posted_at": "2026-07-27T15:18:29Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Aymo AI —— 面向团队的一体化 AI 平台。",
+      "why_good": "一个面向团队的一体化 AI 平台——宽泛且通用;一体化的定位很难打过聚焦型工具。",
+      "value": "团队订阅,但价值主张发散;很难说清团队为何要从 ChatGPT Team/Claude 迁过来。",
+      "risk": "没差异的 AI 平台——拥挤、通用,被模型厂商自家的团队产品压制。"
+    }
+  }
 }
