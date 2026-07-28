@@ -34,7 +34,9 @@
       "claim": "h4ckf0r0day/obscura —— 给 AI agent 和网页抓取用的无头浏览器。",
       "why_good": "专为 AI agent 和抓取打造的无头浏览器——agent 时刻需要可靠、隐蔽的网页访问,而现有工具对抗反爬做得差。",
       "value": "给 agent 开发者做按量的浏览器即服务(类似 Browserbase):按会话/页计费,upsell 代理 + 反反爬。",
-      "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。"
+      "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。",
+      "hook": "一个为 AI agent 打造的无头浏览器——可靠、隐蔽、能扛住反爬的网页访问。"
     }
-  }
+  },
+  "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection."
 }
