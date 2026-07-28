@@ -2,9 +2,9 @@
   "title": "santifer/career-ops",
   "claim": "santifer/career-ops — Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor",
   "score": 9,
-  "why_good": "The structured scoring system can provide a unique and objective way for job seekers to assess opportunities beyond traditional metrics.",
-  "value": "Companies could pay for premium access to tailored job listings and analytics to improve their hiring processes and candidate matching.",
-  "risk": "The project may struggle to scale if larger job platforms integrate similar features, overshadowing its unique offering.",
+  "why_good": "Turns job hunting into a structured A–F rubric score per listing — more rigorous than keyword matching, for a painful high-volume task.",
+  "value": "Subscription for job seekers (auto-scan + score + tailored apply); the urgency and pain are real.",
+  "risk": "Same saturated space as every AI job tool; LinkedIn/Indeed can add scoring, and retention ends at the hire.",
   "evidence": [
     "https://github.com/santifer/career-ops",
     "61,813★",
@@ -26,5 +26,13 @@
   ],
   "id": "77-santifer-career-ops",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:26:53Z"
+  "posted_at": "2026-07-27T15:26:53Z",
+  "i18n": {
+    "zh": {
+      "claim": "santifer/career-ops —— 开源 AI 求职:扫招聘网站,用结构化 A–F 评分体系把岗位打成 1.0–5.0 分。",
+      "why_good": "把找工作变成对每个岗位的结构化 A–F 打分——比关键词匹配更严谨,面向一个痛苦、高频的任务。",
+      "value": "给求职者卖订阅(自动扫+打分+定制投递);紧迫感和痛点都真实。",
+      "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。"
+    }
+  }
 }
