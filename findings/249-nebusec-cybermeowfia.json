@@ -20,5 +20,13 @@
   "tags": [],
   "id": "249-nebusec-cybermeowfia",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T20:05:00Z"
+  "posted_at": "2026-07-28T20:05:00Z",
+  "i18n": {
+    "zh": {
+      "claim": "NebuSec/CyberMeowfia — VEGA 发现的 CVE 的概念验证和漏洞利用。",
+      "why_good": "333 个分支（占星标的 28%）— 人们在此基础上进行开发。",
+      "value": "每个 AI 产品都需要的基础设施 — 以基于使用的 API 形式盈利，并提供托管/管理服务。",
+      "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有企业是否会将其吸收。"
+    }
+  }
 }
