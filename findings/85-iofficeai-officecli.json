@@ -32,7 +32,9 @@
       "claim": "iOfficeAI/OfficeCLI —— 首个为 AI agent 打造的 Office 套件:读、改、自动化 Word、Excel、PowerPoint。",
       "why_good": "为 agent 打造的 Office 套件,让它读/改/自动化 Word/Excel/PPT——agent 真正干办公活时缺的那双手。",
       "value": "按用量/席位卖给用 agent 自动化文档的团队;切口是成为 agent 调用的可靠 Office-IO 层。",
-      "risk": "微软正把 Copilot 深植进 Office;外部的\"agent Office 层\"是在正面硬刚平台方。"
+      "risk": "微软正把 Copilot 深植进 Office;外部的\"agent Office 层\"是在正面硬刚平台方。",
+      "hook": "给 AI agent 一双操作 Office 的手——读、改、自动化 Word、Excel、PPT。"
     }
-  }
+  },
+  "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint."
 }
