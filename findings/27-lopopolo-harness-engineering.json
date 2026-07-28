@@ -2,9 +2,9 @@
   "title": "lopopolo/harness-engineering",
   "claim": "lopopolo/harness-engineering — 🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
   "score": 8,
-  "why_good": "Harness engineering is a niche field with growing demand for specialized knowledge and tools, which can lead to a dedicated user base.",
-  "value": "Companies in industries reliant on harness engineering could subscribe for premium access to curated content, tools, and expert consulting services.",
-  "risk": "The project may struggle to scale if it remains too focused on niche applications, making it vulnerable to larger players offering broader solutions.",
+  "why_good": "One engineer's anthology + field guide + agent-context bundle for 'harness engineering' — useful reference, but a personal knowledge bundle, not a product.",
+  "value": "No real monetization; it's curated know-how, at best training/consulting.",
+  "risk": "Content/personal bundle, not a company; the patterns get absorbed by the agent tools.",
   "evidence": [
     "https://github.com/lopopolo/harness-engineering",
     "2,371★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "27-lopopolo-harness-engineering",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:26Z"
+  "posted_at": "2026-07-27T10:50:26Z",
+  "i18n": {
+    "zh": {
+      "claim": "lopopolo/harness-engineering —— Ryan Lopopolo 的选集、实战指南与 agent 上下文包。",
+      "why_good": "某工程师关于 harness engineering 的选集 + 指南 + agent 上下文包——有用的参考,但是个人知识包,不是产品。",
+      "value": "没有真正变现;它是精选 know-how,顶多做培训/咨询。",
+      "risk": "是内容/个人包不是公司;范式会被 agent 工具吸收。"
+    }
+  }
 }
