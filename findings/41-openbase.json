@@ -2,9 +2,9 @@
   "title": "Openbase",
   "claim": "Product Hunt: Openbase — Manage your team of AI agents by voice, from anywhere",
   "score": 7,
-  "why_good": "The ability to manage AI agents by voice could streamline workflows in ways traditional interfaces cannot.",
-  "value": "Businesses could pay for subscription plans to access advanced features and integrations with existing tools.",
-  "risk": "Major tech companies may quickly replicate the voice management feature, overshadowing a standalone product.",
+  "why_good": "Manage a team of AI agents by voice from anywhere — a novel mobile-first control layer as people run more background agents.",
+  "value": "Prosumer/team subscription for operators of many agents; the wedge is voice + remote control of agent fleets.",
+  "risk": "Early and broad; voice control of agents is unproven UX, and the agent platforms may add native remote control.",
   "evidence": [
     "https://www.producthunt.com/r/U7DUSA6V3LZT5Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/openbase-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "41-openbase",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:34Z"
+  "posted_at": "2026-07-27T11:56:34Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Openbase —— 随时随地用语音管理你的 AI agent 团队。",
+      "why_good": "随时随地用语音管理一队 AI agent——随着人们跑更多后台 agent,一个新颖的移动优先控制层。",
+      "value": "给管很多 agent 的操作者卖专业/团队订阅;切口是语音 + 远程控制 agent 舰队。",
+      "risk": "早期且宽泛;语音控 agent 的体验未验证,而 agent 平台可能加原生远程控制。"
+    }
+  }
 }
