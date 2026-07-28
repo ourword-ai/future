@@ -2,9 +2,9 @@
   "title": "oso95/scroll-world",
   "claim": "oso95/scroll-world — A skill that turn any brand into a scrollable 3D world",
   "score": 8,
-  "why_good": "This project taps into the growing demand for immersive brand experiences, allowing companies to showcase their products in a novel way.",
-  "value": "Brands could pay for customizable 3D environments to enhance customer engagement and drive sales through interactive experiences.",
-  "risk": "The concept may struggle to gain traction if larger tech companies integrate similar features into their existing platforms.",
+  "why_good": "A skill that turns any brand into a scrollable 3D world — eye-catching for marketing, but a single skill/effect, not a platform.",
+  "value": "Could sell as a service to agencies/brands wanting 3D landing experiences; project-based, not recurring.",
+  "risk": "A skill/effect, easily cloned; 3D brand sites are a boutique niche, not a scalable product.",
   "evidence": [
     "https://github.com/oso95/scroll-world",
     "5,417★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "25-oso95-scroll-world",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:17Z"
+  "posted_at": "2026-07-27T10:50:17Z",
+  "i18n": {
+    "zh": {
+      "claim": "oso95/scroll-world —— 一个把任意品牌变成可滚动 3D 世界的技能。",
+      "why_good": "一个把品牌变成可滚动 3D 世界的技能——营销上抓眼球,但它是单个技能/效果,不是平台。",
+      "value": "可作为服务卖给想要 3D 落地体验的代理商/品牌;项目制,非经常性收入。",
+      "risk": "是技能/效果、易被抄;3D 品牌站是精品细分,不是可规模化产品。"
+    }
+  }
 }
