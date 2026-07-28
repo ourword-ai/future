@@ -34,7 +34,9 @@
       "claim": "StarTrail-org/PixelRAG —— 网页解析的终结,像素原生搜索的开始。链接:pixelrag.ai",
       "why_good": "跳过脆弱的 HTML 解析,直接在渲染后的像素上做检索——若准确,就绕开了网页爬虫无止境的崩坏。",
       "value": "作为 API 卖给\"要可靠网页抽取、又不想维护解析器\"的 agent/搜索团队;按量计费。",
-      "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。"
+      "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。",
+      "hook": "用检索渲染后的像素取代脆弱的 HTML 爬取——如果准确度站得住的话。"
     }
-  }
+  },
+  "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up."
 }
