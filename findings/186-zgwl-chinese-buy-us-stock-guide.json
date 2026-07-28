@@ -2,9 +2,9 @@
   "title": "zgwl/chinese-buy-us-stock-guide",
   "claim": "A meticulous Chinese-language guide to investing in US stocks from the mainland — brokerage and bank account opening, CRS/FATCA tax, compliance paths, funding in and cashing out.",
   "score": 7,
-  "why_good": "6.2k★ in two months for a pure docs repo is a raw demand signal: mainland investors want US exposure and face a maze of rules that no product walks them through end to end.",
-  "value": "Not the repo but the service it implies: brokerage account-opening affiliates (real bounties per funded account), ITIN and tax-filing assistance, and a paid policy-change alert subscription — the free guide is the distribution.",
-  "risk": "Sits on a regulatory fault line — Chinese capital controls and cross-border brokerage rules can shift overnight; it's one author's side project (1 commit/30d), and content alone is not a company.",
+  "why_good": "A meticulous Chinese-language guide to buying US stocks from the mainland — genuinely useful, but documentation, not a product.",
+  "value": "Content monetizes via courses/affiliate (brokerage referrals) at best; not a software business.",
+  "risk": "A guide, not a company; brokerages and finfluencers own the audience and the referral economics.",
   "evidence": [
     "https://github.com/zgwl/chinese-buy-us-stock-guide",
     "6,183★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "186-zgwl-chinese-buy-us-stock-guide",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T01:00:26Z"
+  "posted_at": "2026-07-28T01:00:26Z",
+  "i18n": {
+    "zh": {
+      "claim": "一份面向大陆投资者、细致的美股投资中文指南(开户、券商、银行等)。",
+      "why_good": "一份细致的大陆买美股中文指南——确实有用,但它是文档,不是产品。",
+      "value": "内容顶多靠课程/联盟(券商返佣)变现;不是软件生意。",
+      "risk": "是指南不是公司;券商和财经博主掌握受众和返佣经济。"
+    }
+  }
 }
