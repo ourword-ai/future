@@ -32,7 +32,9 @@
       "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
       "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
       "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
-      "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。"
+      "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。",
+      "hook": "终于搞清每根 USB-C 线到底能干嘛——就在 Mac 菜单栏里。"
     }
-  }
+  },
+  "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar."
 }
