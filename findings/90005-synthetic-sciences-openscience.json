@@ -26,5 +26,13 @@
   ],
   "id": "90005-synthetic-sciences-openscience",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T07:22:17Z"
+  "posted_at": "2026-07-27T07:22:17Z",
+  "i18n": {
+    "zh": {
+      "claim": "synthetic-sciences/openscience —— 面向科研的开源 AI 工作台。",
+      "why_good": "为真实科研工作流打造的开源 AI 工作台——AI-for-science 是个大而未被满足、高价值的垂直,通用聊天工具在这里很不合适。",
+      "value": "卖给实验室 / 生物科技 / 研发部门:席位 + 算力 + 经过验证的流水线;科研预算大,且某个工作流一旦落地就很黏。",
+      "risk": "「工作台」太宽泛——它需要一个杀手级、经过验证的工作流才能立住;学术星标 ≠ 付费意愿;部分与 Benchling 这类现有玩家重叠。"
+    }
+  }
 }
