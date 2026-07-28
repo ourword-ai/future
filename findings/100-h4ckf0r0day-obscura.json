@@ -2,9 +2,9 @@
   "title": "h4ckf0r0day/obscura",
   "claim": "h4ckf0r0day/obscura — The headless browser for AI agents and web scraping",
   "score": 9,
-  "why_good": "This project addresses the growing need for AI agents to interact with dynamic web content, which is often challenging for traditional scraping tools.",
-  "value": "Companies developing AI applications could pay for a subscription service that provides enhanced web scraping capabilities and API access.",
-  "risk": "The technology could be easily replicated by larger players with existing scraping solutions, leading to a crowded market.",
+  "why_good": "A headless browser purpose-built for AI agents and scraping — agents constantly need reliable, stealthy web access and current tools fight bot-detection poorly.",
+  "value": "Usage-based browser-as-a-service for agent builders (like Browserbase): pay per session/page, upsell proxies + anti-bot.",
+  "risk": "Browserbase, Browserless and the vendors are here already; winning needs reliability, anti-detection and price at scale.",
   "evidence": [
     "https://github.com/h4ckf0r0day/obscura",
     "19,747★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:28Z",
   "pick": true,
-  "pick_reason": "The project offers a specific tool for AI agents to scrape dynamic web content, which can be monetized as a software product."
+  "pick_reason": "The project offers a specific tool for AI agents to scrape dynamic web content, which can be monetized as a software product.",
+  "i18n": {
+    "zh": {
+      "claim": "h4ckf0r0day/obscura —— 给 AI agent 和网页抓取用的无头浏览器。",
+      "why_good": "专为 AI agent 和抓取打造的无头浏览器——agent 时刻需要可靠、隐蔽的网页访问,而现有工具对抗反爬做得差。",
+      "value": "给 agent 开发者做按量的浏览器即服务(类似 Browserbase):按会话/页计费,upsell 代理 + 反反爬。",
+      "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。"
+    }
+  }
 }
