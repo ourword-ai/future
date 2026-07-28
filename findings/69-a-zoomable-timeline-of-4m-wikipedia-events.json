@@ -2,9 +2,9 @@
   "title": "A zoomable timeline of 4M Wikipedia events",
   "claim": "Show HN: A zoomable timeline of 4M Wikipedia events",
   "score": 7,
-  "why_good": "This project offers a unique way to visualize historical data, making it a valuable tool for educators and researchers seeking to understand trends over time.",
-  "value": "Educational institutions and content creators could subscribe for premium features or data analytics, generating revenue through tiered access and licensing.",
-  "risk": "The project may struggle to scale as a business if larger platforms integrate similar features, overshadowing its unique offering.",
+  "why_good": "A zoomable timeline of 4M Wikipedia events — a gorgeous data-viz that makes history explorable, with strong shareable appeal.",
+  "value": "Hard to monetize directly; possible edu licensing or premium embeds, but it's closer to a showcase than a product.",
+  "risk": "Beautiful but a viz/showcase; Wikipedia data is free and the audience rarely pays for browsing history.",
   "evidence": [
     "https://app.everything.diena.co/",
     "https://news.ycombinator.com/item?id=48950774",
@@ -20,5 +20,13 @@
   ],
   "id": "69-a-zoomable-timeline-of-4m-wikipedia-events",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:11:19Z"
+  "posted_at": "2026-07-27T15:11:19Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 400 万条维基百科事件的可缩放时间线。",
+      "why_good": "一条 400 万维基事件的可缩放时间线——一个让历史可探索的精美数据可视化,很有传播力。",
+      "value": "很难直接变现;或许教育授权或高级嵌入,但更像展示而非产品。",
+      "risk": "漂亮但是个可视化/展示;维基数据免费,受众很少为浏览历史付费。"
+    }
+  }
 }
