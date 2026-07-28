@@ -2,9 +2,9 @@
   "title": "TouchGrass",
   "claim": "Product Hunt: TouchGrass — Context-aware break reminders without invasive permissions",
   "score": 8,
-  "why_good": "TouchGrass addresses a growing concern for mental health and productivity by promoting regular breaks, which is increasingly recognized as essential in remote work environments.",
-  "value": "Companies could pay for premium features to integrate TouchGrass into their employee wellness programs, enhancing productivity and reducing burnout costs.",
-  "risk": "The market for break reminder tools is crowded, and larger companies could easily integrate similar features into existing productivity software.",
+  "why_good": "Context-aware break reminders that don't demand invasive permissions — a privacy-respecting take on a genuine wellbeing pain.",
+  "value": "Consumer subscription is a hard sell for a reminder app; better as a cheap one-time purchase or a B2B wellbeing perk.",
+  "risk": "Wellbeing/break apps are a graveyard of low retention; OS-level Screen Time and free tools compete.",
   "evidence": [
     "https://www.producthunt.com/r/OFM4DSHZYBEP2A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/touchgrass-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "36-touchgrass",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:12Z"
+  "posted_at": "2026-07-27T11:56:12Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: TouchGrass —— 不索取侵入式权限的情境化休息提醒。",
+      "why_good": "不要侵入式权限的情境化休息提醒——对真实的健康痛点,一个尊重隐私的做法。",
+      "value": "提醒类 app 的消费订阅很难卖;更适合便宜的一次性或做 B2B 健康福利。",
+      "risk": "健康/休息类 app 是留存的坟场;系统级屏幕时间和免费工具在竞争。"
+    }
+  }
 }
