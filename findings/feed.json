@@ -86,7 +86,13 @@
       ],
       "id": "212-0xwilliamortiz-openclaude-improved",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T08:02:50Z"
+      "posted_at": "2026-07-28T08:02:50Z",
+      "hook": "Out of nowhere: ~288 stars a day at just 2 days old — a 'runs-anywhere' agent worth watching.",
+      "i18n": {
+        "zh": {
+          "hook": "凭空冒头:上线才两天、日增约 288 星的「随处运行」agent,值得盯一眼。"
+        }
+      }
     },
     {
       "title": "edaywalid/undo",
@@ -311,9 +317,11 @@
           "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
           "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
           "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
-          "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。"
+          "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。",
+          "hook": "一个让自主编码「自证其功」的 agent IDE——本地优先、零信任。"
         }
-      }
+      },
+      "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust."
     },
     {
       "title": "Neil the Seal Game",
@@ -1038,9 +1046,11 @@
           "claim": "OpenSquilla —— 围绕 token 效率打造的开源微内核 AI agent(CLI、网页、聊天渠道):同样预算,每个 token 干更多有用的活。",
           "why_good": "token 花费才是 agent 用户真正的账单,而几乎所有框架都在拼功能而非省钱;这个还真有人维护——34 位贡献者。",
           "value": "托管版 + 企业支持:「砍掉你的 agent 推理账单」是买家早就懂的预算项,效率本身就是卖点。",
-          "risk": "模型价格持续下降会不断削弱\"省钱\"这个卖点,而模型厂商的一方 agent 运行时可能把独立玩家挤掉。"
+          "risk": "模型价格持续下降会不断削弱\"省钱\"这个卖点,而模型厂商的一方 agent 运行时可能把独立玩家挤掉。",
+          "hook": "一个拼你 token 账单、而非拼功能的 agent——同样预算,干更多有用的活。"
         }
-      }
+      },
+      "hook": "The agent that competes on your token bill, not features — same budget, more useful work."
     },
     {
       "title": "darrylmorley/whatcable",
@@ -1076,9 +1086,11 @@
           "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
           "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
           "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
-          "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。"
+          "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。",
+          "hook": "终于搞清每根 USB-C 线到底能干嘛——就在 Mac 菜单栏里。"
         }
-      }
+      },
+      "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar."
     },
     {
       "title": "open-gsd/gsd-core",
@@ -1115,9 +1127,11 @@
           "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
           "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
           "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
-          "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。"
+          "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。",
+          "hook": "一个「git → 发布 → 搞定」的流程封装——有潜力,但真正的切口还模糊。"
         }
-      }
+      },
+      "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy."
     },
     {
       "title": "StarTrail-org/PixelRAG",
@@ -1155,9 +1169,11 @@
           "claim": "StarTrail-org/PixelRAG —— 网页解析的终结,像素原生搜索的开始。链接:pixelrag.ai",
           "why_good": "跳过脆弱的 HTML 解析,直接在渲染后的像素上做检索——若准确,就绕开了网页爬虫无止境的崩坏。",
           "value": "作为 API 卖给\"要可靠网页抽取、又不想维护解析器\"的 agent/搜索团队;按量计费。",
-          "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。"
+          "risk": "\"网页解析终结\"口气很大,需要证据;像素/视觉检索很吃算力,大模型厂商也在追同一件事。",
+          "hook": "用检索渲染后的像素取代脆弱的 HTML 爬取——如果准确度站得住的话。"
         }
-      }
+      },
+      "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up."
     },
     {
       "title": "omnigent-ai/omnigent",
@@ -1195,9 +1211,11 @@
           "claim": "omnigent-ai/omnigent —— 开源 AI agent 框架 + 元 harness:编排 Claude Code、Codex、Cursor、Pi 和自定义 agent。",
           "why_good": "把多个编码 agent(Claude Code、Codex、Cursor)统一编排的元 harness——押注\"多 agent\"会成为常态。",
           "value": "可能成为团队为\"跑 agent 舰队\"付费的编排/控制平面——跨厂商的路由、护栏、可观测性。",
-          "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。"
+          "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。",
+          "hook": "一个元 harness,把 Claude Code、Codex、Cursor 统一编排。"
         }
-      }
+      },
+      "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together."
     },
     {
       "title": "cobusgreyling/loop-engineering",
@@ -1235,9 +1253,11 @@
           "claim": "cobusgreyling/loop-engineering —— 给 AI 编码 agent 做\"循环工程\"的实用范式、脚手架与 CLI 工具。",
           "why_good": "把编码 agent 的\"循环工程\"范式沉淀成脚手架 + CLI——know-how 有用,但更像范式库不是产品。",
           "value": "顶多靠培训/咨询或付费模板包变现;靠共享范式很难做成有壁垒的公司。",
-          "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。"
+          "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。",
+          "hook": "把编码 agent 的「循环工程」沉淀成脚手架 + CLI——know-how 锋利,但做产品偏薄。"
         }
-      }
+      },
+      "hook": "Codifies 'loop engineering' for coding agents into starters + CLI — sharp know-how, thin as a product."
     },
     {
       "title": "DietrichGebert/ponytail",
@@ -1275,9 +1295,11 @@
           "claim": "Ponytail —— 一层让编码 agent 极简的提示/技能:只写能跑的最少代码(把 YAGNI 做成一行安装,支持 20+ 种 agent)。",
           "why_good": "正面打编码 agent 最大的痛点——过度设计的垃圾代码;而且势头是真的:六周约 9 万星、62 位贡献者、有 npm 包,Claude Code / Cursor / Codex 通吃。",
           "value": "切口是 agent 行为治理:团队为「在每个 agent 席位上统一强制极简与代码规范」付费(组织级配置、策略包、审计)。",
-          "risk": "它是提示词不是软件,护城河近乎为零;任何 agent 厂商加个「简洁模式」开关就能覆盖,技能包的病毒式增长退得和涨得一样快。"
+          "risk": "它是提示词不是软件,护城河近乎为零;任何 agent 厂商加个「简洁模式」开关就能覆盖,技能包的病毒式增长退得和涨得一样快。",
+          "hook": "让你的 AI 别再写屎山代码——六周 9 万星,说明人人都想要。"
         }
-      }
+      },
+      "hook": "Stops your AI from writing bloated code — and 90k stars in six weeks says everyone wanted it."
     },
     {
       "title": "tianchong-zerotemp/dianxing",
@@ -1980,9 +2002,11 @@
           "claim": "GaoSSR/best-claude-hud —— 用 Rust 写的极简 Claude Code 状态栏 HUD。",
           "why_good": "给 Claude Code 做的清爽 Rust 状态栏——好看,但是个装饰性的开发工具插件,不是生意。",
           "value": "基本无法变现;它是个免费开源的小美化,随 Claude Code 自家 UI 生死。",
-          "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。"
+          "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。",
+          "hook": "给 Claude Code 的漂亮 Rust 状态栏——好看,但 Anthropic 随时能自己出。"
         }
-      }
+      },
+      "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day."
     },
     {
       "title": "crafter-station/petdex",
@@ -2021,9 +2045,11 @@
           "claim": "crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI 的动画宠物公共画廊。",
           "why_good": "给编码 agent 终端的一堆可爱动画桌宠——好玩、易传播,但纯属新奇。",
           "value": "除了也许卖点装饰包,没有真正的收入路径;是个讨喜的业余项目,不是公司。",
-          "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。"
+          "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。",
+          "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。"
         }
-      }
+      },
+      "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat."
     },
     {
       "title": "KnockOutEZ/wigolo",
@@ -2062,9 +2088,11 @@
           "claim": "KnockOutEZ/wigolo —— 给 AI 编码 agent 的网页入口:通过 MCP 做本地优先的搜索/抓取/爬取/调研。无需 API key、无需云、$0。",
           "why_good": "让编码 agent 通过 MCP 做零 key、零云的本地优先网页搜索/抓取/爬取——干掉了 agent 用户真实的成本 + 隐私痛点。",
           "value": "免费增值:本地核心免费,团队/企业版收费(共享爬取、限流、托管省心)。",
-          "risk": "MCP + agent 厂商可能原生内置网页访问,而\"本地爬虫\"的覆盖很难持续领先托管搜索。"
+          "risk": "MCP + agent 厂商可能原生内置网页访问,而\"本地爬虫\"的覆盖很难持续领先托管搜索。",
+          "hook": "给编码 agent 的本地优先网页搜索与爬取——无 key、无云、$0。"
         }
-      }
+      },
+      "hook": "Local-first web search and crawl for coding agents — no keys, no cloud, $0."
     },
     {
       "title": "Open-Legal-Products/mike",
@@ -2247,9 +2275,11 @@
           "claim": "0xGF/boneyard —— 自动生成骨架屏(skeleton loading)框架。",
           "why_good": "从你的 UI 自动生成骨架屏——确实省时,但是个窄的前端小工具。",
           "value": "很难直接收费;价值在于做开发工具/插件,或塞进更大 UI 套件里的付费专业版。",
-          "risk": "组件库和框架都在原生加骨架屏;范围小、替代品好找。"
+          "risk": "组件库和框架都在原生加骨架屏;范围小、替代品好找。",
+          "hook": "从你的 UI 自动生成骨架屏——确实省时,虽然范围窄。"
         }
-      }
+      },
+      "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one."
     },
     {
       "title": "CoreBunch/Instatic",
@@ -2287,9 +2317,11 @@
           "claim": "CoreBunch/Instatic —— Webflow / Framer / WordPress 的开源替代:agent 驱动、自托管的可视化 CMS,输出干净的静态页。",
           "why_good": "agent 驱动、自托管、输出干净静态站的可视化 CMS——面向\"自托管 + AI\"人群,一个可信的 Webflow/Framer 开源替代。",
           "value": "托管版 + 模板 + 代理商授权,卖给\"想要 Webflow 式搭建、又不愿被锁定或按席位付费\"的人。",
-          "risk": "Webflow/Framer 根基深、生态大;\"agent + 自托管\"必须明显更省事才能撬走用户。"
+          "risk": "Webflow/Framer 根基深、生态大;\"agent + 自托管\"必须明显更省事才能撬走用户。",
+          "hook": "一个 agent 搭建、可自托管的 Webflow——输出干净静态站的可视化 CMS。"
         }
-      }
+      },
+      "hook": "An agent-built, self-hosted Webflow — a visual CMS that outputs clean static sites."
     },
     {
       "title": "OpenCoworkAI/open-codesign",
@@ -2326,9 +2358,11 @@
           "claim": "OpenCoworkAI/open-codesign —— 开源的「Claude Design」替代:一键导入 Claude Code/Codex 的 API key,提示词 → 原型/幻灯片。",
           "why_good": "把你的 Claude Code/Codex key 变成\"提示词→原型/幻灯片\"的设计工具——面向非设计师的开源「Claude Design」,自带模型。",
           "value": "团队/托管版 + 教育授权,卖给\"想要 agent 快速出原型、又不想请设计师或再开订阅\"的 PM 和创始人。",
-          "risk": "和好几个「开源 Claude Design」克隆以及模型厂商自家设计入口同赛道;需要更锋利的切口。"
+          "risk": "和好几个「开源 Claude Design」克隆以及模型厂商自家设计入口同赛道;需要更锋利的切口。",
+          "hook": "自带 Codex/Claude key,把提示词变成原型和幻灯片。"
         }
-      }
+      },
+      "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides."
     },
     {
       "title": "getagentseal/codeburn",
@@ -2367,9 +2401,11 @@
           "claim": "getagentseal/codeburn —— 免费本地工具,跨 31 种工具/agent(Claude Code、Cursor、Codex、Gemini)追踪 AI 编码的 token 用量与花费。",
           "why_good": "在本地追踪 31 种 agent 的编码 token 花费——agent 热潮里没人做的成本侧,而这正是买家真正盯的数字。",
           "value": "给工程负责人卖团队看板 + 预算/告警:跨席位设上限、把花费归因。",
-          "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。"
+          "risk": "每个 agent 厂商都能加原生用量计量,免费本地追踪器也容易被抄。",
+          "hook": "看清你的 AI 编码到底花了多少——本地统计 31 种 agent 的 token 花费。"
         }
-      }
+      },
+      "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally."
     },
     {
       "title": "crynta/terax-ai",
@@ -2407,9 +2443,11 @@
           "claim": "crynta/terax-ai —— 轻量(7MB)、终端优先的 AI 原生开发工作区。",
           "why_good": "7MB 的终端原生 AI 开发工作区——押注开发者想要快、本地的 CLI,而非笨重的 AI IDE。",
           "value": "在免费轻量核心上给团队卖专业/企业版(共享配置、SSO、私有模型)。",
-          "risk": "终端 agent 很挤(Aider、Claude Code、Codex);光\"轻量\"很难成护城河。"
+          "risk": "终端 agent 很挤(Aider、Claude Code、Codex);光\"轻量\"很难成护城河。",
+          "hook": "一个 7MB 的终端 AI 工作区,给想要快、本地、不想要笨重 IDE 的开发者。"
         }
-      }
+      },
+      "hook": "A 7MB terminal AI workspace for devs who want fast and local, not a heavy IDE."
     },
     {
       "title": "simplifaisoul/osiris",
@@ -2441,9 +2479,11 @@
           "claim": "simplifaisoul/osiris —— 开源全球情报平台:实时 OSINT 仪表盘,一个 Palantir 替代。",
           "why_good": "开源实时 OSINT 仪表盘,定位为 Palantir 替代——一个大而高预算的市场,更便宜的开源选项确有吸引力。",
           "value": "向被 Palantir 价格挡在门外的安全团队、记者、中型政企卖托管 + 支持 + 合规。",
-          "risk": "OSINT/情报强监管、强信任;Palantir 的护城河是集成和政府关系,不是仪表盘。"
+          "risk": "OSINT/情报强监管、强信任;Palantir 的护城河是集成和政府关系,不是仪表盘。",
+          "hook": "一个开源 Palantir 替代——给买不起正品的团队的实时 OSINT。"
         }
-      }
+      },
+      "hook": "An open-source Palantir alternative — real-time OSINT for teams priced out of the real thing."
     },
     {
       "title": "EKKOLearnAI/hermes-studio",
@@ -2481,9 +2521,11 @@
           "claim": "EKKOLearnAI/hermes-studio —— Hermes Agent 的网页控制台:多平台 AI 聊天、会话管理、定时任务、用量分析。",
           "why_good": "给\"跨聊天平台跑 AI agent\"做的控制室:会话、定时任务、用量分析——agent 上线后团队需要的运维层。",
           "value": "卖团队/托管版:多席位管理、定时、分析和生产环境支持。",
-          "risk": "绑在单一 Hermes agent 上;没有广度,就是个会被底层 agent 或框架吸收的配套工具。"
+          "risk": "绑在单一 Hermes agent 上;没有广度,就是个会被底层 agent 或框架吸收的配套工具。",
+          "hook": "跨聊天平台跑 AI agent 的控制室——会话、定时任务、用量分析。"
         }
-      }
+      },
+      "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics."
     },
     {
       "title": "open-multi-agent/open-multi-agent",
@@ -2521,9 +2563,11 @@
           "claim": "open-multi-agent/open-multi-agent —— TypeScript 的 AI agent 编排框架,动态工作流:描述目标,而非画图。",
           "why_good": "\"描述目标,而非画图\"——自动规划多 agent 工作流的 TS 框架,和手工连图的工具相比 DX 确实不同。",
           "value": "做成托管控制平面变现:替团队跑/观测/路由 agent 工作流,按量 + 企业版。",
-          "risk": "编排极挤(LangGraph、CrewAI、各厂商);自动规划必须明显强过手画图才能赢。"
+          "risk": "编排极挤(LangGraph、CrewAI、各厂商);自动规划必须明显强过手画图才能赢。",
+          "hook": "描述目标,而非画图——一个自动规划多 agent 工作流的 TS 框架。"
         }
-      }
+      },
+      "hook": "Describe the goal, not the graph — a TS framework that auto-plans multi-agent workflows."
     },
     {
       "title": "nashsu/llm_wiki",
@@ -2555,9 +2599,11 @@
           "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
           "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
           "value": "桌面免费增值:给\"不愿把文档放进云 AI\"的人卖付费团队同步、高级检索和协作。",
-          "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。"
+          "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。",
+          "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
         }
-      }
+      },
+      "hook": "Turns your document pile into an auto-linked knowledge base — private and offline."
     },
     {
       "title": "NanmiCoder/cc-haha",
@@ -2589,9 +2635,11 @@
           "claim": "NanmiCoder/cc-haha —— 本地优先、跨平台的 Claude Code/Agent 桌面工作台:多 Agent、Git Worktree、Diff、技能市场、多模型、Computer Use、桌宠,支持微信/飞书/钉钉/Telegram。",
           "why_good": "本地优先的桌面工作台,把 Claude Code 包成多 agent、git worktree、diff、computer-use 和 IM 桥接——给高级用户的完整\"agent 驾驶舱\"。",
           "value": "团队/专业版:共享配置、私有模型,技能市场做抽成通道。",
-          "risk": "依附 Claude Code;Anthropic 或某个拿了钱的\"agent IDE\"能做出同样的驾驶舱把它吸收。"
+          "risk": "依附 Claude Code;Anthropic 或某个拿了钱的\"agent IDE\"能做出同样的驾驶舱把它吸收。",
+          "hook": "给 Claude Code 的完整「agent 驾驶舱」——多 agent、worktree、computer-use、IM 桥接。"
         }
-      }
+      },
+      "hook": "A full 'agent cockpit' for Claude Code — multi-agent, worktrees, computer-use, IM bridges."
     },
     {
       "title": "nexu-io/open-design",
@@ -2629,9 +2677,11 @@
           "claim": "nexu-io/open-design —— 开源的「Claude Design」替代品,本地优先的桌面 app:让你的编码 agent 变成设计引擎。",
           "why_good": "把你现有的编码 agent 变成本地优先的设计工具——一个可信的 Figma /「Claude Design」开源替代,文件和 IP 都留在本机。",
           "value": "向「想要 agent 驱动设计、又不愿把文件上传云厂商」的设计-研发团队,卖托管/团队版和企业授权。",
-          "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。"
+          "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。",
+          "hook": "让你的编码 agent 变成本地版 Figma——一个把文件留在本机的开源「Claude Design」。"
         }
-      }
+      },
+      "hook": "Your coding agent becomes a local-first Figma — an open 'Claude Design' that keeps files on your machine."
     },
     {
       "title": "tastyeffectco/sandboxd",
@@ -3041,9 +3091,11 @@
           "claim": "esengine/DeepSeek-Reasonix —— DeepSeek 原生的终端编码 agent,围绕前缀缓存稳定性设计,可长驻运行。",
           "why_good": "围绕前缀缓存稳定性调优的 DeepSeek 原生终端编码 agent——对成本敏感的 DeepSeek 群体是个真实效率卖点。",
           "value": "给标准化用 DeepSeek 的团队做托管/团队版:卖可靠性、共享配置和支持。",
-          "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。"
+          "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。",
+          "hook": "一个 DeepSeek 原生、针对前缀缓存稳定性调优的终端编码器——可以长驻。"
         }
-      }
+      },
+      "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running."
     },
     {
       "title": "Jacquard, a programming language for AI-written, human-reviewed code",
@@ -3260,9 +3312,11 @@
           "claim": "withcoral/coral —— 面向 agent 的统一 SQL 接口,覆盖 API、文件与实时数据源。",
           "why_good": "用一个 SQL 接口统管 API/文件/实时源,为 agent 而建——给 agent 可靠、带类型的数据访问,而非临时拼工具。",
           "value": "给 agent 开发者做按量数据网关:跨源查询/路由/治理,upsell 托管连接器 + 企业版。",
-          "risk": "数据虚拟化很挤(Trino、Steampipe);\"为 agent\"必须真的转化成分发优势。"
+          "risk": "数据虚拟化很挤(Trino、Steampipe);\"为 agent\"必须真的转化成分发优势。",
+          "hook": "用一个 SQL 接口统管 API、文件与实时源——为 agent 打造的可靠数据访问。"
         }
-      }
+      },
+      "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents."
     },
     {
       "title": "AprilNEA/OpenLogi",
@@ -3300,9 +3354,11 @@
           "claim": "AprilNEA/OpenLogi —— 用 Rust 写的本地优先 Logitech Options+ 替代:通过 HID 重映射按键、DPI、SmartShift。",
           "why_good": "一个快、本地优先的 Rust 版,替代 Logitech 臃肿的 Options+——一个人人喊打的痛点,受众现成。",
           "value": "很难直接向消费者收费;可做付费专业版(配置档、宏、更多设备)或捐赠,也许和设备厂商合作。",
-          "risk": "小众工具;Logitech 可能改进 Options+ 或封 HID 访问,而且免费替代已经存在。"
+          "risk": "小众工具;Logitech 可能改进 Options+ 或封 HID 访问,而且免费替代已经存在。",
+          "hook": "一个快、本地的 Rust 版,替代人人嫌弃的 Logitech Options+——重映射按键、DPI、SmartShift。"
         }
-      }
+      },
+      "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift."
     },
     {
       "title": "h4ckf0r0day/obscura",
@@ -3340,9 +3396,11 @@
           "claim": "h4ckf0r0day/obscura —— 给 AI agent 和网页抓取用的无头浏览器。",
           "why_good": "专为 AI agent 和抓取打造的无头浏览器——agent 时刻需要可靠、隐蔽的网页访问,而现有工具对抗反爬做得差。",
           "value": "给 agent 开发者做按量的浏览器即服务(类似 Browserbase):按会话/页计费,upsell 代理 + 反反爬。",
-          "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。"
+          "risk": "Browserbase、Browserless 和各厂商已经在场;要赢得靠可靠性、反检测和规模化价格。",
+          "hook": "一个为 AI agent 打造的无头浏览器——可靠、隐蔽、能扛住反爬的网页访问。"
         }
-      }
+      },
+      "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection."
     },
     {
       "title": "BigPizzaV3/CodexPlusPlus",
@@ -3372,9 +3430,11 @@
           "claim": "BigPizzaV3/CodexPlusPlus —— CodexApp 的增强工具,让 Codex 更好用、更顺手。",
           "why_good": "给 CodexApp 的增强层——补了真实的易用性缺口,但它是完全依附别人 app 的插件。",
           "value": "顶多做薄变现(专业版插件);一旦 Codex 自己采纳这些改进就没了杠杆。",
-          "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。"
+          "risk": "是功能不是公司:CodexApp 把这些改动吸收进去,它一夜过时。",
+          "hook": "让 CodexApp 更好用——方便,但是个 Codex 一夜就能吸收的插件。"
         }
-      }
+      },
+      "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight."
     },
     {
       "title": "Kuberwastaken/claurst",
@@ -3411,9 +3471,11 @@
           "claim": "Kuberwastaken/claurst —— 给\"能交付的 Builder\"的智能体编码工具。",
           "why_good": "又一个有口号但定位单薄、没差异化的智能体编码 CLI——很难说它比同类强在哪。",
           "value": "还没有能收费的清晰切口;在饱和的编码 agent 里靠氛围竞争。",
-          "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。"
+          "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。",
+          "hook": "又一个「给 Builder 的智能体编码」CLI——口号响,但很难说差在哪。"
         }
-      }
+      },
+      "hook": "Another 'agentic coding for builders' CLI — big slogan, hard to say what's different."
     },
     {
       "title": "Mail Memories – A desktop app to rescue photos from Gmail",
@@ -3705,9 +3767,11 @@
           "claim": "HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧本快速转成动画短剧(AI 编剧、智能分镜、角色与视频生成),跨平台桌面轻量部署。",
           "why_good": "用 AI 把小说/剧本变成动画短剧(编剧、分镜、角色+视频生成)——踩在中国爆火的短剧经济上,量和成本正是关键。",
           "value": "按托管版 + AI 视频生成点数,卖给创作者/机构/教育;短剧市场愿为便宜的批量产出付费。",
-          "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。"
+          "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。",
+          "hook": "用 AI 把小说或剧本变成动画短剧——踩在中国短剧的风口上。"
         }
-      }
+      },
+      "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom."
     },
     {
       "title": "xbtlin/ai-berkshire",
@@ -3743,9 +3807,11 @@
           "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
           "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
           "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
-          "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。"
+          "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。",
+          "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
         }
-      }
+      },
+      "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents."
     },
     {
       "title": "ogulcancelik/herdr",
@@ -3782,9 +3848,11 @@
           "claim": "ogulcancelik/herdr —— 住在你终端里的 agent 多路复用器。",
           "why_good": "在终端里同时跑多个 agent 的\"多路复用\"——开发者并行使唤 agent 时的真实工效需求,但是个薄工具。",
           "value": "顶多做团队专业版(共享会话、编排);终端便利很难收费。",
-          "risk": "\"agent 版 tmux\"容易被复刻,会被 agent/终端本身吸收进去。"
+          "risk": "\"agent 版 tmux\"容易被复刻,会被 agent/终端本身吸收进去。",
+          "hook": "agent 版 tmux:在一个终端里跑并调度多个编码 agent。"
         }
-      }
+      },
+      "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal."
     },
     {
       "title": "iOfficeAI/OfficeCLI",
@@ -3820,9 +3888,11 @@
           "claim": "iOfficeAI/OfficeCLI —— 首个为 AI agent 打造的 Office 套件:读、改、自动化 Word、Excel、PowerPoint。",
           "why_good": "为 agent 打造的 Office 套件,让它读/改/自动化 Word/Excel/PPT——agent 真正干办公活时缺的那双手。",
           "value": "按用量/席位卖给用 agent 自动化文档的团队;切口是成为 agent 调用的可靠 Office-IO 层。",
-          "risk": "微软正把 Copilot 深植进 Office;外部的\"agent Office 层\"是在正面硬刚平台方。"
+          "risk": "微软正把 Copilot 深植进 Office;外部的\"agent Office 层\"是在正面硬刚平台方。",
+          "hook": "给 AI agent 一双操作 Office 的手——读、改、自动化 Word、Excel、PPT。"
         }
-      }
+      },
+      "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint."
     },
     {
       "title": "MadsLorentzen/ai-job-search",
@@ -3858,9 +3928,11 @@
           "claim": "MadsLorentzen/ai-job-search —— 跑在你自己机器上的 AI 求职框架(基于 Claude Code):评估岗位、定制申请。",
           "why_good": "一个本地、在你机器上跑的 AI 求职框架(评估岗位、定制申请)——对一个痛苦、高频的任务主打隐私优先。",
           "value": "给求职者卖订阅:自动化 + 定制申请;痛点和紧迫感都真实。",
-          "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。"
+          "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。",
+          "hook": "一个跑在你自己机器上的 AI 求职——评估岗位、为每份申请定制。"
         }
-      }
+      },
+      "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application."
     },
     {
       "title": "Gitlawb/openclaude",
@@ -3896,9 +3968,11 @@
           "claim": "Gitlawb/openclaude —— 随处运行,随意调用。",
           "why_good": "一句口号(\"随处运行、随意调用\")背后还没有清晰产品——太模糊,难当创业判断。",
           "value": "没有可辨认的买家或切口;得先说清它到底做什么才谈得上变现。",
-          "risk": "在拥挤的 agent 基础设施里既没差异又含糊;更可能是个功能或实验,不是公司。"
+          "risk": "在拥挤的 agent 基础设施里既没差异又含糊;更可能是个功能或实验,不是公司。",
+          "hook": "「随处运行、随意调用」——口号很大,产品还没跟上。"
         }
-      }
+      },
+      "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it."
     },
     {
       "title": "calesthio/OpenMontage",
@@ -3934,9 +4008,11 @@
           "claim": "calesthio/OpenMontage —— 号称全球首个开源、智能体化的视频制作系统:12 条生产流水线、100+ 工具、700+ agent 技能。",
           "why_good": "一个开源、agent 驱动的视频制作系统,几十条流水线、上百种工具——对自动化视频雄心勃勃的全栈打法。",
           "value": "作为托管工作室 + 点数卖给创作者/机构;切口是端到端自动化,而非拼一堆工具。",
-          "risk": "要维护的面极大、重算力,还要和聚焦型工具 + 资金充足的 AI 视频实验室竞争。"
+          "risk": "要维护的面极大、重算力,还要和聚焦型工具 + 资金充足的 AI 视频实验室竞争。",
+          "hook": "一个一体化、agent 驱动的视频工作室——12 条流水线、100+ 工具,野心极大。"
         }
-      }
+      },
+      "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious."
     },
     {
       "title": "rohitg00/ai-engineering-from-scratch",
@@ -3972,9 +4048,11 @@
           "claim": "rohitg00/ai-engineering-from-scratch —— 学会它、做出来、交付给别人。",
           "why_good": "一套动手的\"从零做 AI 工程\"课程——有价值的学习内容,但它是教育材料,不是产品。",
           "value": "只能靠课程/训练营/咨询变现;内容生意是真的,但和软件创业不是一回事。",
-          "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。"
+          "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。",
+          "hook": "在动手里学 AI 工程——动手课程,不是产品。"
         }
-      }
+      },
+      "hook": "Learn AI engineering by building it — a hands-on curriculum, not a product."
     },
     {
       "title": "MemPalace/mempalace",
@@ -4010,9 +4088,11 @@
           "claim": "MemPalace/mempalace —— 跑分最好的开源 AI 记忆系统,而且免费。",
           "why_good": "定位为 agent 的跑分最好开源记忆层——记忆是每个 agent 产品都会撞上、且尚未解决的真实需求。",
           "value": "给不想自建的 agent 开发者卖托管记忆 API + 企业版(留存、多租户)。",
-          "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。"
+          "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。",
+          "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
         }
-      }
+      },
+      "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real."
     },
     {
       "title": "santifer/career-ops",
@@ -4048,9 +4128,11 @@
           "claim": "santifer/career-ops —— 开源 AI 求职:扫招聘网站,用结构化 A–F 评分体系把岗位打成 1.0–5.0 分。",
           "why_good": "把找工作变成对每个岗位的结构化 A–F 打分——比关键词匹配更严谨,面向一个痛苦、高频的任务。",
           "value": "给求职者卖订阅(自动扫+打分+定制投递);紧迫感和痛点都真实。",
-          "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。"
+          "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。",
+          "hook": "用 A–F 评分体系给每个岗位打分——一个严谨的 AI 求职,而非关键词匹配。"
         }
-      }
+      },
+      "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching."
     },
     {
       "title": "Speechius",
@@ -4582,9 +4664,11 @@
           "claim": "mattpocock/skills —— 给「真正工程师」的技能集,直接来自作者的 .agents 目录。",
           "why_good": "知名 TypeScript 教育者把自己的 agent「技能」目录开源——分发力强,但本质是一份精选文件集,不是产品。",
           "value": "很难直接变现;真正的生意是一个有质控、可维护的付费「技能注册表/市场」——而这个还不是。",
-          "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。"
+          "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。",
+          "hook": "知名 TS 教育者开源了自己的 agent「技能」目录——传播力大,但它是文件合集,不是公司。"
         }
-      }
+      },
+      "hook": "A star TS educator open-sourced his agent 'skills' folder — huge reach, but a file collection, not a company."
     },
     {
       "title": "affaan-m/ECC",
@@ -4620,9 +4704,11 @@
           "claim": "affaan-m/ECC —— agent harness 的性能优化系统:技能、直觉、记忆、安全、research-first 开发。",
           "why_good": "一套个人的「agent harness」,打包了技能/记忆/安全范式——作为参考有用,但更像某个开发者的个人配置,不是产品。",
           "value": "只有当它变成团队愿意统一采用的、有主见的托管 agent 运行时,才算生意;现在只是个配置仓库。",
-          "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。"
+          "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。",
+          "hook": "某开发者把整套 agent harness(技能/记忆/安全)开源——参考价值高,但还不是产品。"
         }
-      }
+      },
+      "hook": "One dev's entire agent 'harness' — skills, memory, security — in a repo; great reference, not yet a product."
     },
     {
       "title": "ReadKinetic – a free, local-first speed reader for your own books",
@@ -4876,9 +4962,11 @@
           "claim": "Show HN: 在我的慢电脑上把 GLM 5.2 跑起来。",
           "why_good": "一篇把 GLM-5.2 塞进慢机器的 Show HN 记录——很好地证明弱硬件跑大模型有共鸣,但它是帖子不是产品。",
           "value": "机会在把这件事变成一键的工具;帖子本身不是生意。",
-          "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。"
+          "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。",
+          "hook": "把 GLM-5.2 塞进慢电脑——证明「弱硬件跑大模型」很有共鸣。"
         }
-      }
+      },
+      "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates."
     },
     {
       "title": "Openbase",
@@ -5124,9 +5212,11 @@
           "claim": "Product Hunt: Heard —— 给 Claude Code 和 Codex 加上语音。",
           "why_good": "给 Claude Code/Codex 加语音输入输出——若延迟和准确度过关,免手写代码是个真实且黏的工作流。",
           "value": "给想用语音写代码的开发者卖专业订阅;向团队和无障碍场景 upsell。",
-          "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。"
+          "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。",
+          "hook": "给 Claude Code 和 Codex 一副嗓子——若延迟过关,就能免手写代码。"
         }
-      }
+      },
+      "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds."
     },
     {
       "title": "Athena by Shoplazza",
@@ -5159,9 +5249,11 @@
           "claim": "Product Hunt: Athena by Shoplazza —— 编排你整个电商技术栈的 agent。",
           "why_good": "一个把商家整个电商栈串起来的编排 agent——对同时用一堆工具的运营者是真实痛点。",
           "value": "向电商运营按商家订阅或按 GMV 抽成;切口是一个控制台管碎片化工具。",
-          "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。"
+          "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。",
+          "hook": "一个编排 agent,统管商家的整个电商技术栈。"
         }
-      }
+      },
+      "hook": "One orchestrator agent to run a merchant's entire commerce stack."
     },
     {
       "title": "AlephAITech/WorkBuddyGuide",
@@ -5520,9 +5612,11 @@
           "claim": "Fei-Away/Codex-Dream-Skin —— Codex Dream Skin(皮肤)。",
           "why_good": "给 Codex 的一个皮肤——外观定制,不是产品;名字和范围都像主题,不是生意。",
           "value": "没有真正变现;外观插件很少能变成公司。",
-          "risk": "是功能/皮肤不是创业;极易被抄且依附 Codex。"
+          "risk": "是功能/皮肤不是创业;极易被抄且依附 Codex。",
+          "hook": "给 Codex 的一个「皮肤」——外观向、易被抄、依附 Codex。"
         }
-      }
+      },
+      "hook": "A 'skin' for Codex — cosmetic, easily cloned, and dependent on Codex."
     },
     {
       "title": "Ant – A JavaScript runtime and ecosystem",
@@ -5552,9 +5646,11 @@
           "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
           "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
           "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
-          "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。"
+          "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。",
+          "hook": "一个挑战 Node/Bun/Deno 的新 JS 运行时——上线首日 330 HN 分。"
         }
-      }
+      },
+      "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one."
     },
     {
       "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
@@ -5616,9 +5712,11 @@
           "claim": "Show HN: Juggler —— 开源的图形界面(GUI)编码 agent,作者是 JUCE 的创造者。",
           "why_good": "来自 JUCE 作者的开源 GUI 编码 agent——在热门赛道里罕见的创始人信誉。280 分。",
           "value": "编码 agent 按席位/用量收费;一个受信任的老手做的精致 GUI,能在以 CLI 为主的工具中切出一条路。",
-          "risk": "极度拥挤(Cursor / Cline / Copilot / Codex);前沿实验室自家的 agent 才是真正的威胁。"
+          "risk": "极度拥挤(Cursor / Cline / Copilot / Codex);前沿实验室自家的 agent 才是真正的威胁。",
+          "hook": "JUCE 的作者做了个开源 GUI 编码 agent——在拥挤赛道里罕见的创始人信誉。"
         }
-      }
+      },
+      "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race."
     },
     {
       "title": "Palmier Pro – Open-source macOS video editor built for AI",
@@ -5680,9 +5778,11 @@
           "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
           "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
           "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
-          "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。"
+          "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。",
+          "hook": "一个本地优先、开源的 Claude Desktop——在大家对云降温时,数据归你。"
         }
-      }
+      },
+      "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud."
     },
     {
       "title": "antirez/ds4",
@@ -5712,9 +5812,11 @@
           "claim": "antirez/ds4 —— DeepSeek 4 Flash 与 PRO 的本地推理引擎,支持 Metal、CUDA、ROCm。",
           "why_good": "出自 antirez(Redis 作者):一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。血统 + 19k★。",
           "value": "本地推理运行时是私有、自有硬件 AI 的收费闸口——靠支持/专业版变现。",
-          "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。"
+          "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。",
+          "hook": "出自 Redis 作者:一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。"
         }
-      }
+      },
+      "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm."
     },
     {
       "title": "simonlin1212/a-stock-data",
@@ -5750,9 +5852,11 @@
           "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
           "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
           "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
-          "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。"
+          "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。",
+          "hook": "一个 A 股全栈数据工具包——行情、资金流、公告、舆情,还带备用源。"
         }
-      }
+      },
+      "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks."
     },
     {
       "title": "t8y2/dbx",
@@ -5788,9 +5892,11 @@
           "claim": "t8y2/dbx —— 20MB 轻量跨平台数据库客户端,支持 70+ 种数据库(MySQL、PostgreSQL、SQLite、Redis、MongoDB…)。",
           "why_good": "一个 20MB、支持 70+ 数据库的跨平台客户端,极活跃(150 贡献者、1438 提交/30天)——精简版 TablePlus。",
           "value": "数据库客户端靠付费专业/团队版变现(TablePlus、DBeaver 都这么做):同步、协作、企业版。",
-          "risk": "很挤(DBeaver/TablePlus/DataGrip);要靠体积/速度的锋利切口把付费用户从现有产品撬走。"
+          "risk": "很挤(DBeaver/TablePlus/DataGrip);要靠体积/速度的锋利切口把付费用户从现有产品撬走。",
+          "hook": "一个 20MB、支持 70+ 数据库的客户端——精简版 TablePlus,月提交 1400+。"
         }
-      }
+      },
+      "hook": "A 20MB client for 70+ databases — a lean TablePlus shipping 1,400+ commits a month."
     },
     {
       "title": "JustVugg/colibri",
@@ -5820,9 +5926,11 @@
           "claim": "JustVugg/colibri —— 在 25GB 内存的消费级机器上跑 GLM-5.2(744B MoE):纯 C、零依赖、专家权重从磁盘流式加载。",
           "why_good": "把 744B 参数 MoE 模型的专家从磁盘流式加载,在 25GB 内存的笔记本上跑前沿级 AI(纯 C、零依赖);若质量/延迟撑得住,就干掉了最大障碍——显存和云成本。",
           "value": "本地推理运行时是「在自己硬件上跑前沿 AI」的收费闸口——靠托管/专业版、本地部署的企业授权变现。",
-          "risk": "磁盘流式可能对真实负载太慢;llama.cpp / ollama 能照抄这个技巧并把它吸收掉。"
+          "risk": "磁盘流式可能对真实负载太慢;llama.cpp / ollama 能照抄这个技巧并把它吸收掉。",
+          "hook": "靠从磁盘流式加载专家,在 25GB 笔记本上跑 744B 模型——纯 C、零依赖。"
         }
-      }
+      },
+      "hook": "Runs a 744B model on a 25GB laptop by streaming experts from disk — pure C, zero deps."
     },
     {
       "title": "lidge-jun/opencodex",
@@ -5858,9 +5966,11 @@
           "claim": "lidge-jun/opencodex —— OpenAI Codex 与 Claude Code 的通用供应商代理:用任意 LLM(Claude、Gemini、Grok、DeepSeek、Ollama…)驱动 Codex。",
           "why_good": "一个把 OpenAI Codex / Claude Code 指向任意模型(Gemini、Grok、DeepSeek、本地 Ollama)的通用代理——把最好的编码-agent 体验与单一厂商的模型解耦。",
           "value": "卡在每个编码-agent 席位与模型之间:成为团队的模型路由网关——路由、花费管控、可观测性、自带模型(BYO)。",
-          "risk": "厂商可能锁定自家客户端来封杀代理;薄代理容易被商品化,除非它握住路由 + 可观测性这一层。"
+          "risk": "厂商可能锁定自家客户端来封杀代理;薄代理容易被商品化,除非它握住路由 + 可观测性这一层。",
+          "hook": "把 OpenAI Codex 或 Claude Code 指向任意模型——Gemini、Grok、DeepSeek、本地 Ollama。"
         }
-      }
+      },
+      "hook": "Point OpenAI Codex or Claude Code at ANY model — Gemini, Grok, DeepSeek, or local Ollama."
     },
     {
       "title": "oomol-lab/open-connector",
@@ -5896,9 +6006,11 @@
           "claim": "oomol-lab/open-connector —— 开源鉴权网关,通过 SDK / CLI / MCP / HTTP / OpenAPI 把 1000+ 家 SaaS 接入 AI agent。",
           "why_good": "把 1000+ 家 SaaS 通过 SDK/CLI/MCP/HTTP/OpenAPI 接给 agent 的开源鉴权+集成网关——每个 agent 产品原本都要重造的脏活累活。",
           "value": "集成与鉴权网关很能变现(参考 Merge.dev、Nango):按量 + 托管连接器 + 企业 SSO——而 agent 让这一层更值钱。",
-          "risk": "很挤(Nango、Composio、Merge),而且 MCP 标准本身可能吸收它;要赢得靠广度、可靠性与企业信任。"
+          "risk": "很挤(Nango、Composio、Merge),而且 MCP 标准本身可能吸收它;要赢得靠广度、可靠性与企业信任。",
+          "hook": "每个 agent 都要重造的脏活:一个把 1000+ SaaS 接给 agent 的网关。"
         }
-      }
+      },
+      "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents."
     },
     {
       "title": "synthetic-sciences/openscience",
@@ -5934,9 +6046,11 @@
           "claim": "synthetic-sciences/openscience —— 面向科研的开源 AI 工作台。",
           "why_good": "为真实科研工作流打造的开源 AI 工作台——AI-for-science 是个大而未被满足、高价值的垂直,通用聊天工具在这里很不合适。",
           "value": "卖给实验室 / 生物科技 / 研发部门:席位 + 算力 + 经过验证的流水线;科研预算大,且某个工作流一旦落地就很黏。",
-          "risk": "「工作台」太宽泛——它需要一个杀手级、经过验证的工作流才能立住;学术星标 ≠ 付费意愿;部分与 Benchling 这类现有玩家重叠。"
+          "risk": "「工作台」太宽泛——它需要一个杀手级、经过验证的工作流才能立住;学术星标 ≠ 付费意愿;部分与 Benchling 这类现有玩家重叠。",
+          "hook": "一个面向真实科研的开源 AI 工作台——通用聊天工具很不合适的大而未被满足的垂直。"
         }
-      }
+      },
+      "hook": "An open AI workbench built for real science — a big, underserved vertical where chat tools fit poorly."
     }
   ],
   "clusters": [
