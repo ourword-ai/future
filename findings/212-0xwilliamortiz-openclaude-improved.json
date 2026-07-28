@@ -26,5 +26,11 @@
   ],
   "id": "212-0xwilliamortiz-openclaude-improved",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T08:02:50Z"
+  "posted_at": "2026-07-28T08:02:50Z",
+  "hook": "Out of nowhere: ~288 stars a day at just 2 days old — a 'runs-anywhere' agent worth watching.",
+  "i18n": {
+    "zh": {
+      "hook": "凭空冒头:上线才两天、日增约 288 星的「随处运行」agent,值得盯一眼。"
+    }
+  }
 }
