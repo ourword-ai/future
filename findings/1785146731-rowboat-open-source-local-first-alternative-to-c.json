@@ -2,9 +2,9 @@
   "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
   "claim": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
   "score": 9,
-  "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 pts.",
-  "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the 'X alternative' wedge.",
-  "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to stay ahead of.",
+  "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 points.",
+  "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the open community.",
+  "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to nail.",
   "evidence": [
     "https://github.com/rowboatlabs/rowboat",
     "https://news.ycombinator.com/item?id=48819808",
@@ -20,5 +20,13 @@
   ],
   "id": "1785146731-rowboat-open-source-local-first-alternative-to-c",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T10:05:31Z"
+  "posted_at": "2026-07-27T10:05:31Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
+      "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
+      "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
+      "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。"
+    }
+  }
 }
