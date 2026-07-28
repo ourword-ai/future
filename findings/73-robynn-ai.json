@@ -2,9 +2,9 @@
   "title": "Robynn AI",
   "claim": "Product Hunt: Robynn AI — Websites that improve and heal with self-learning",
   "score": 7,
-  "why_good": "Robynn AI's self-learning capability can create websites that adapt to user behavior, offering a unique, personalized experience that traditional static websites cannot provide.",
-  "value": "Businesses pay for subscription plans to access advanced features and analytics, while also benefiting from improved user engagement and conversion rates.",
-  "risk": "The technology could be seen as a feature rather than a standalone product, making it vulnerable to larger website builders integrating similar functionalities.",
+  "why_good": "Websites that self-improve and 'heal' via learning — an intriguing autonomous-optimization pitch (CRO on autopilot).",
+  "value": "Sell to marketers/SMBs as auto-CRO (conversion optimization); tie pricing to measurable lift.",
+  "risk": "Bold 'self-healing' claims need proof; A/B and CRO tools are crowded, and trust/attribution are hard.",
   "evidence": [
     "https://www.producthunt.com/r/W2RTSYZ2NVMVFH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/robynn-ai-self-improving-websites?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "73-robynn-ai",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T15:18:24Z"
+  "posted_at": "2026-07-27T15:18:24Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Robynn AI —— 会自我学习、自我改进和自愈的网站。",
+      "why_good": "通过学习自我改进、自愈的网站——一个引人的自主优化定位(自动驾驶式转化优化)。",
+      "value": "作为自动 CRO(转化优化)卖给营销/中小企业;定价挂钩可衡量的提升。",
+      "risk": "自愈口气大、需要证据;A/B 和 CRO 工具很挤,信任/归因也难。"
+    }
+  }
 }
