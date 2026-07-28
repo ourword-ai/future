@@ -2,9 +2,9 @@
   "title": "simplifaisoul/osiris",
   "claim": "simplifaisoul/osiris — Open Source Global Intelligence Platform - Real-Time OSINT Dashboard - A Palantir Alternative -            We Get 0.5% o",
   "score": 9,
-  "why_good": "The project leverages open-source intelligence in a way that can be tailored for niche markets, allowing for specialized applications beyond general use.",
-  "value": "Government agencies and private security firms could pay for premium features or support, creating a subscription-based revenue model.",
-  "risk": "The market is dominated by established players like Palantir, which may easily integrate similar features or acquire emerging competitors.",
+  "why_good": "An open-source real-time OSINT dashboard pitched as a Palantir alternative — a huge, high-budget market where an open, cheaper option has real pull.",
+  "value": "Sell hosted + support + compliance to security teams, journalists and mid-size gov/enterprise priced out of Palantir.",
+  "risk": "OSINT/intel is regulation- and trust-heavy; Palantir's moat is integrations and gov relationships, not the dashboard.",
   "evidence": [
     "https://github.com/simplifaisoul/osiris",
     "7,187★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:28:04Z",
   "pick": true,
-  "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets."
+  "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets.",
+  "i18n": {
+    "zh": {
+      "claim": "simplifaisoul/osiris —— 开源全球情报平台:实时 OSINT 仪表盘,一个 Palantir 替代。",
+      "why_good": "开源实时 OSINT 仪表盘,定位为 Palantir 替代——一个大而高预算的市场,更便宜的开源选项确有吸引力。",
+      "value": "向被 Palantir 价格挡在门外的安全团队、记者、中型政企卖托管 + 支持 + 合规。",
+      "risk": "OSINT/情报强监管、强信任;Palantir 的护城河是集成和政府关系,不是仪表盘。"
+    }
+  }
 }
