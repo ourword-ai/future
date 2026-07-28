@@ -34,7 +34,9 @@
       "claim": "EKKOLearnAI/hermes-studio —— Hermes Agent 的网页控制台:多平台 AI 聊天、会话管理、定时任务、用量分析。",
       "why_good": "给\"跨聊天平台跑 AI agent\"做的控制室:会话、定时任务、用量分析——agent 上线后团队需要的运维层。",
       "value": "卖团队/托管版:多席位管理、定时、分析和生产环境支持。",
-      "risk": "绑在单一 Hermes agent 上;没有广度,就是个会被底层 agent 或框架吸收的配套工具。"
+      "risk": "绑在单一 Hermes agent 上;没有广度,就是个会被底层 agent 或框架吸收的配套工具。",
+      "hook": "跨聊天平台跑 AI agent 的控制室——会话、定时任务、用量分析。"
     }
-  }
+  },
+  "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics."
 }
