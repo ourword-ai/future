@@ -2,9 +2,9 @@
   "title": "atomicstrata/llm-wiki-compiler",
   "claim": "atomicstrata/llm-wiki-compiler — The knowledge compiler. Raw sources in, interlinked wiki out. Inspired by Karpathy's LLM Wiki pattern.",
   "score": 8,
-  "why_good": "The project addresses a growing need for structured knowledge management in organizations, enabling efficient information retrieval and collaboration.",
-  "value": "Businesses and educational institutions could pay for subscription-based access or licensing, monetizing the tool through enterprise deployments and custom integrations.",
-  "risk": "The project may struggle to differentiate itself in a crowded market where larger companies could easily integrate similar features into their existing products.",
+  "why_good": "Compiles raw sources into an interlinked wiki (Karpathy's 'LLM wiki' pattern) — turns doc piles into navigable knowledge automatically.",
+  "value": "Charge teams for hosted compilation + private knowledge bases; the wedge is quality of auto-structuring at scale.",
+  "risk": "Same crowded AI-knowledge-base lane as other LLM-wiki tools; auto-linking alone isn't a durable moat.",
   "evidence": [
     "https://github.com/atomicstrata/llm-wiki-compiler",
     "1,839★",
@@ -29,5 +29,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:48Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product for structured knowledge management that organizations can implement and pay for."
+  "pick_reason": "The project offers a clear product for structured knowledge management that organizations can implement and pay for.",
+  "i18n": {
+    "zh": {
+      "claim": "atomicstrata/llm-wiki-compiler —— 知识编译器:原始素材进,互链 wiki 出。灵感来自 Karpathy 的 LLM Wiki。",
+      "why_good": "把原始素材编译成互链 wiki(Karpathy 的 LLM wiki 范式)——自动把文档堆变成可导航的知识。",
+      "value": "向团队卖托管编译 + 私有知识库;切口是规模化自动结构化的质量。",
+      "risk": "和其它 LLM-wiki 工具同一条拥挤赛道;光自动互链不是持久护城河。"
+    }
+  }
 }
