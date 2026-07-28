@@ -2,9 +2,9 @@
   "title": "I implemented a neural network in SQL",
   "claim": "Show HN: I implemented a neural network in SQL",
   "score": 7,
-  "why_good": "Integrating neural networks directly into SQL databases could streamline data processing for organizations already reliant on SQL, making AI more accessible.",
-  "value": "Companies could pay for a subscription service that enhances their existing SQL databases with AI capabilities, driving efficiency in data analysis and decision-making.",
-  "risk": "The project may struggle to scale as a standalone company if larger database providers integrate similar AI functionalities directly into their products.",
+  "why_good": "A neural network implemented in pure SQL — a brilliant technical stunt that's genuinely educational, not a product.",
+  "value": "No business; it's a teaching/curiosity piece, valuable as content not software.",
+  "risk": "A stunt/demo; fascinating but nothing to sell and no user with a recurring need.",
   "evidence": [
     "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py",
     "https://news.ycombinator.com/item?id=48897975",
@@ -20,5 +20,13 @@
   ],
   "id": "68-i-implemented-a-neural-network-in-sql",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:11:15Z"
+  "posted_at": "2026-07-27T15:11:15Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 我用 SQL 实现了一个神经网络。",
+      "why_good": "用纯 SQL 实现的神经网络——一个精彩的技术特技,确有教育意义,但不是产品。",
+      "value": "没有生意;它是教学/猎奇之作,价值在内容而非软件。",
+      "risk": "是特技/演示;迷人但没东西可卖,也没有有持续需求的用户。"
+    }
+  }
 }
