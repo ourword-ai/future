@@ -33,7 +33,9 @@
       "claim": "OpenCoworkAI/open-codesign —— 开源的「Claude Design」替代:一键导入 Claude Code/Codex 的 API key,提示词 → 原型/幻灯片。",
       "why_good": "把你的 Claude Code/Codex key 变成\"提示词→原型/幻灯片\"的设计工具——面向非设计师的开源「Claude Design」,自带模型。",
       "value": "团队/托管版 + 教育授权,卖给\"想要 agent 快速出原型、又不想请设计师或再开订阅\"的 PM 和创始人。",
-      "risk": "和好几个「开源 Claude Design」克隆以及模型厂商自家设计入口同赛道;需要更锋利的切口。"
+      "risk": "和好几个「开源 Claude Design」克隆以及模型厂商自家设计入口同赛道;需要更锋利的切口。",
+      "hook": "自带 Codex/Claude key,把提示词变成原型和幻灯片。"
     }
-  }
+  },
+  "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides."
 }
