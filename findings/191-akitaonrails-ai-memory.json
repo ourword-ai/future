@@ -1,10 +1,10 @@
 {
   "title": "akitaonrails/ai-memory",
-  "claim": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+  "claim": "ai-memory — long-term memory for coding agents that survives vendor switches: quit Claude Code mid-task, open Codex in the same directory, and the architecture, failed approaches and open questions carry over. Rust, MIT.",
   "score": 8,
-  "why_good": "Long-term memory + cross-vendor handoff for coding-agent CLIs (1,275 stars, 40 contributors) — switch between Claude Code/Codex without losing context, a real friction.",
-  "value": "Sell a hosted memory service + team sync to shops that use multiple agents and want portable context.",
-  "risk": "Memory is being pulled into the agents natively, and 'handoff' only matters while multiple agents coexist.",
+  "why_good": "Everyone builds memory inside one agent; this makes memory a neutral layer between vendors — exactly what devs juggling Claude Code + Codex need. And it's real engineering, not a prompt pack: 40 contributors, 374 commits/30d, packaged for Linux/macOS/WSL2, from a well-known developer educator (Fabio Akita).",
+  "value": "商业价值: the vendor-neutral memory store is a natural per-seat team product — shared project memory, sync, retention policy — sold from the same budget as the agent seats it protects.",
+  "risk": "Anthropic and OpenAI are shipping first-party memory; a cross-vendor layer only matters while multi-agent workflows stay the norm. If one agent wins, its native memory absorbs this.",
   "evidence": [
     "https://github.com/akitaonrails/ai-memory",
     "1,275★",
