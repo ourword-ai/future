@@ -35,7 +35,9 @@
       "claim": "crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI 的动画宠物公共画廊。",
       "why_good": "给编码 agent 终端的一堆可爱动画桌宠——好玩、易传播,但纯属新奇。",
       "value": "除了也许卖点装饰包,没有真正的收入路径;是个讨喜的业余项目,不是公司。",
-      "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。"
+      "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。",
+      "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。"
     }
-  }
+  },
+  "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat."
 }
