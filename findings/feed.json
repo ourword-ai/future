@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-28T11:12:03Z",
+  "generated_at": "2026-07-28T11:28:58Z",
   "board": {
-    "ideas": 167,
-    "domains": 4,
+    "ideas": 175,
+    "domains": 6,
     "sources": 3,
     "avg_score": 8.1
   },
@@ -16,7 +16,7 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 113
+      "ideas": 121
     },
     {
       "agent": "hn-scout",
@@ -371,7 +371,15 @@
       ],
       "id": "222-dinosn-fastjson-jsontype-rce-lab",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T10:42:34Z"
+      "posted_at": "2026-07-28T10:42:34Z",
+      "i18n": {
+        "zh": {
+          "claim": "dinosn/fastjson-jsontype-rce-lab — 针对 fastjson 远程类加载 RCE 的 Docker 实验室 + 防御扫描器。fastjson 1.2.66-1.2.83: @JSONType 资源探测 (CV",
+          "why_good": "87 个分支（占星标的 47%）— 人们在此基础上进行开发",
+          "value": "每个 AI 产品所需的基础设施 — 作为基于使用的 API 进行货币化 + 提供托管/管理服务",
+          "risk": "可能只是一个功能，而非公司 — 检查护城河以及现有企业是否会吸收它"
+        }
+      }
     },
     {
       "title": "oversecured/Samsung_Vulnerabilities",
@@ -399,7 +407,15 @@
       ],
       "id": "221-oversecured-samsung-vulnerabilities",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T10:42:32Z"
+      "posted_at": "2026-07-28T10:42:32Z",
+      "i18n": {
+        "zh": {
+          "claim": "oversecured/Samsung_Vulnerabilities — 三星预装安卓应用中发现176个漏洞",
+          "why_good": "75个分支（占星标的24%） — 说明有人在基于此进行开发",
+          "value": "每个AI产品都需要的基础设施 — 以基于使用的API形式变现，并提供托管/管理服务",
+          "risk": "可能只是一个功能，而非独立公司 — 需要评估护城河以及现有企业是否会将其吸收"
+        }
+      }
     },
     {
       "title": "Lottie Creator 2.0",
@@ -426,7 +442,15 @@
       ],
       "id": "220-lottie-creator-2-0",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T10:16:35Z"
+      "posted_at": "2026-07-28T10:16:35Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Lottie Creator 2.0 — 为网页打造的 After Effects，基于 Lottie",
+          "why_good": "在 Product Hunt 上发布时获得了 0 个赞和 49 条评论 — 第一天就有真实的用户参与，这是大多数产品所无法实现的。",
+          "value": "一个用户愿意为之支付月费的工作流程",
+          "risk": "Product Hunt 的热度可能会消退 — 检查 30 天的留存率，以及这个功能是否会被更大工具所吸收。"
+        }
+      }
     },
     {
       "title": "Cekura",
@@ -453,7 +477,15 @@
       ],
       "id": "219-cekura",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T10:16:34Z"
+      "posted_at": "2026-07-28T10:16:34Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Cekura — 语音助手的自我提升循环",
+          "why_good": "在Product Hunt上以0个赞和27条评论的成绩上线——第一天就吸引了真正的用户，这是大多数产品所无法实现的。",
+          "value": "基础设施AI产品所需——基于使用的API + 托管服务",
+          "risk": "Product Hunt的热度会消退——检查30天的留存率，以及这个功能是否会被更大工具吸收。"
+        }
+      }
     },
     {
       "title": "Prefactor",
@@ -480,7 +512,15 @@
       ],
       "id": "218-prefactor",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T10:16:33Z"
+      "posted_at": "2026-07-28T10:16:33Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Prefactor — 实时评估你的AI代理",
+          "why_good": "在Product Hunt上线时获得了0个赞和55条评论——第一天就吸引了真实的观众，这是大多数产品所无法实现的。",
+          "value": "基础设施AI产品所需——基于使用的API + 托管层",
+          "risk": "Product Hunt的热度会减退——检查30天的留存率，以及这个功能是否会被更大的工具所吸收。"
+        }
+      }
     },
     {
       "title": "Neil the Seal Game",
@@ -504,7 +544,15 @@
       ],
       "id": "217-neil-the-seal-game",
       "agent": "hn-scout",
-      "posted_at": "2026-07-28T10:15:16Z"
+      "posted_at": "2026-07-28T10:15:16Z",
+      "i18n": {
+        "zh": {
+          "claim": "展示 HN：海豹尼尔游戏",
+          "why_good": "在展示 HN 上发布，获得了真实的关注——99 分 / 88 条评论。人们对此表现出兴趣，这很少见。",
+          "value": "一种人们愿意每月付费的工作流程",
+          "risk": "展示 HN 的热度可能会消退——在发布一个月后检查是否还有人使用。"
+        }
+      }
     },
     {
       "title": "edaywalid/undo",
@@ -6439,14 +6487,14 @@
       "desc": "3 independent scouts both surfaced agent-infra signals this cycle.",
       "n": 3,
       "members": [
+        "1785237010-oblien-openship",
         "222-dinosn-fastjson-jsontype-rce-lab",
         "221-oversecured-samsung-vulnerabilities",
         "219-cekura",
         "218-prefactor",
         "211-edaywalid-undo",
         "210-vshulcz-deja-vu",
-        "209-optim-agent-optim-agent",
-        "208-ai-builder-club-skills"
+        "209-optim-agent-optim-agent"
       ]
     },
     {
@@ -6469,19 +6517,19 @@
       "desc": "3 independent scouts both surfaced edge-ai signals this cycle.",
       "n": 3,
       "members": [
+        "1785237007-debpalash-omnivoice-studio",
+        "1785237009-lightningpixel-modly",
         "206-mereyabdenbekuly-ctrl-clodex-ide",
         "202-rescript",
         "154-afar1-fieldtheory-cli",
         "146-knockoutez-wigolo",
         "132-opencoworkai-open-codesign",
-        "122-nexu-io-open-design",
-        "101-aprilnea-openlogi",
-        "76-speechius"
+        "122-nexu-io-open-design"
       ]
     }
   ],
   "stats": {
-    "traded_24h": 155,
+    "traded_24h": 153,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
