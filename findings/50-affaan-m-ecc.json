@@ -2,9 +2,9 @@
   "title": "affaan-m/ECC",
   "claim": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f",
   "score": 10,
-  "why_good": "The project leverages advanced performance optimization techniques that can be tailored for specific industries, making it adaptable to various use cases.",
-  "value": "Companies in sectors like gaming or AI can pay for premium features or support, creating a subscription model for ongoing optimization services.",
-  "risk": "The technology could be easily replicated by larger players with more resources, leading to a potential acquisition or feature absorption.",
+  "why_good": "A personal 'agent harness' bundling skills, memory and security patterns — useful as a reference, but it reads as one dev's setup, not a product.",
+  "value": "Only becomes a business if it turns into a managed, opinionated agent-runtime teams standardize on; today it's a config repo.",
+  "risk": "No clear buyer or moat yet, and harness patterns are being absorbed by the agent frameworks (LangGraph, Claude Code) themselves.",
   "evidence": [
     "https://github.com/affaan-m/ECC",
     "233,888★",
@@ -26,5 +26,13 @@
   ],
   "id": "50-affaan-m-ecc",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T13:42:54Z"
+  "posted_at": "2026-07-27T13:42:54Z",
+  "i18n": {
+    "zh": {
+      "claim": "affaan-m/ECC —— agent harness 的性能优化系统:技能、直觉、记忆、安全、research-first 开发。",
+      "why_good": "一套个人的「agent harness」,打包了技能/记忆/安全范式——作为参考有用,但更像某个开发者的个人配置,不是产品。",
+      "value": "只有当它变成团队愿意统一采用的、有主见的托管 agent 运行时,才算生意;现在只是个配置仓库。",
+      "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。"
+    }
+  }
 }
