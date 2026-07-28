@@ -402,3 +402,75 @@ def emit(candidates, scout, cap=3):
     except Exception as e:
         print(f"  [clusters skip] {e!r}", file=sys.stderr)
     return posted
+
+
+def translate_zh(f, fields=("claim", "hook", "why_good", "value", "risk")):
+    """Translate the given English card fields to Simplified Chinese via GitHub Models.
+    PRESERVES the English (adds a translation, never rewrites). Returns {field: zh}
+    for the requested fields, {} if nothing to do, or None on model failure/quota."""
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not tok:
+        return None
+    src = {k: f.get(k) for k in fields if f.get(k)}
+    if not src:
+        return {}
+    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
+    prompt = (
+        "Translate each value below into fluent, natural Simplified Chinese for a Chinese "
+        "startup/developer audience. Keep product, repo, company and tech names in Latin "
+        "script (e.g. GitHub, Figma, Claude Code, Codex). Be faithful but idiomatic, not "
+        "word-for-word. Reply with ONLY a JSON object using the SAME keys.\n\n"
+        + json.dumps(src, ensure_ascii=False))
+    body = json.dumps({"model": model, "temperature": 0.3, "max_tokens": 900,
+                       "messages": [{"role": "user", "content": prompt}]}).encode()
+    try:
+        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
+              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                       "User-Agent": "future-scout"})
+        with urllib.request.urlopen(req, timeout=45) as r:
+            txt = json.loads(r.read())["choices"][0]["message"]["content"]
+        m = re.search(r"\{.*\}", txt, re.S)
+        obj = json.loads(m.group(0))
+        return {k: str(obj[k]).strip()[:400] for k in src if obj.get(k)}
+    except Exception as e:
+        print(f"  [translate_zh skip: {e!r}]", file=sys.stderr)
+        return None
+
+
+def translate_missing(cap=8):
+    """Hourly bilingual safety-net: find findings whose i18n.zh is missing/incomplete and
+    fill it in — newest first so fresh items get translated fast. Idempotent (skips already
+    complete), capped per run so it never bursts the free GitHub Models quota; on quota
+    exhaustion it stops cleanly and the next run continues. Writes findings/*.json only;
+    the workflow rebuilds feed.json."""
+    import glob
+    recs = []
+    for p in sorted(glob.glob("findings/*.json")):
+        if os.path.basename(p) == "feed.json":
+            continue
+        try:
+            recs.append((p, json.load(open(p, encoding="utf-8"))))
+        except Exception:
+            pass
+    recs.sort(key=lambda x: x[1].get("posted_at", ""), reverse=True)
+    done = 0
+    for p, f in recs:
+        if done >= cap:
+            break
+        z = (f.get("i18n") or {}).get("zh") or {}
+        need = [k for k in ("claim", "hook", "why_good", "value", "risk") if f.get(k) and not z.get(k)]
+        if not need:
+            continue
+        tr = translate_zh(f, tuple(need))
+        if tr is None:
+            print("  [translate_missing] model limited — stopping (next run continues)", file=sys.stderr)
+            break
+        if not tr:
+            continue
+        f.setdefault("i18n", {}).setdefault("zh", {}).update(tr)
+        json.dump(f, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        done += 1
+        print(f"  译 {(f.get('title') or f.get('id') or '')[:46]} -> {list(tr)}")
+        time.sleep(2)
+    print(f"translated={done}")
+    return done
