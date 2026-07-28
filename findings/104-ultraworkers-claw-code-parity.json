@@ -2,9 +2,9 @@
   "title": "ultraworkers/claw-code-parity",
   "claim": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code rep",
   "score": 8,
-  "why_good": "This project addresses the growing demand for Rust-based solutions in environments where performance and safety are critical, making it appealing for companies transitioning from other languages.",
-  "value": "Companies looking to modernize their codebases in Rust could pay for consulting services or tools that facilitate this transition, generating revenue through subscriptions or project-based fees.",
-  "risk": "The project may struggle to scale as a business if it fails to differentiate itself from existing Rust migration tools or if larger firms decide to offer similar services for free.",
+  "why_good": "Parity/port work for the 'claw-code' art project — a work-in-progress sub-repo, not a standalone product.",
+  "value": "No business; it's engineering scaffolding for another (art) project.",
+  "risk": "Not a startup; a temporary port effort tied to a novelty repo.",
   "evidence": [
     "https://github.com/ultraworkers/claw-code-parity",
     "6,673★",
@@ -21,5 +21,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:44Z",
   "pick": false,
-  "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product."
+  "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product.",
+  "i18n": {
+    "zh": {
+      "claim": "ultraworkers/claw-code-parity —— claw-code 的 Rust 移植对齐工作(临时)。",
+      "why_good": "给 claw-code 艺术项目做的移植/对齐工作——一个进行中的子仓库,不是独立产品。",
+      "value": "没有生意;它是另一个(艺术)项目的工程脚手架。",
+      "risk": "不是创业;是绑在一个新奇仓库上的临时移植工作。"
+    }
+  }
 }
