@@ -30,7 +30,9 @@
       "claim": "Product Hunt: Heard —— 给 Claude Code 和 Codex 加上语音。",
       "why_good": "给 Claude Code/Codex 加语音输入输出——若延迟和准确度过关,免手写代码是个真实且黏的工作流。",
       "value": "给想用语音写代码的开发者卖专业订阅;向团队和无障碍场景 upsell。",
-      "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。"
+      "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。",
+      "hook": "给 Claude Code 和 Codex 一副嗓子——若延迟过关,就能免手写代码。"
     }
-  }
+  },
+  "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds."
 }
