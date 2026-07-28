@@ -2,9 +2,9 @@
   "title": "Heard",
   "claim": "Product Hunt: Heard — Give Claude Code and Codex a voice",
   "score": 9,
-  "why_good": "Heard taps into the growing demand for voice interfaces in coding, making programming more accessible and intuitive.",
-  "value": "Developers and companies could pay for premium features or integrations, creating a subscription model or one-time licensing fees.",
-  "risk": "Major tech companies could easily integrate similar voice capabilities into their existing products, overshadowing Heard's niche.",
+  "why_good": "Adds voice I/O to Claude Code and Codex — hands-free coding is a real, sticky workflow if latency and accuracy hold.",
+  "value": "Prosumer subscription for devs who want to code by voice; upsell teams and accessibility use-cases.",
+  "risk": "The agent vendors can add native voice any release; a thin voice wrapper needs speed + UX to survive.",
   "evidence": [
     "https://www.producthunt.com/r/HOUL4RGO5V5BZ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/heard-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "35-heard",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:08Z"
+  "posted_at": "2026-07-27T11:56:08Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Heard —— 给 Claude Code 和 Codex 加上语音。",
+      "why_good": "给 Claude Code/Codex 加语音输入输出——若延迟和准确度过关,免手写代码是个真实且黏的工作流。",
+      "value": "给想用语音写代码的开发者卖专业订阅;向团队和无障碍场景 upsell。",
+      "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。"
+    }
+  }
 }
