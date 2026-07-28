@@ -33,7 +33,9 @@
       "claim": "Kuberwastaken/claurst —— 给\"能交付的 Builder\"的智能体编码工具。",
       "why_good": "又一个有口号但定位单薄、没差异化的智能体编码 CLI——很难说它比同类强在哪。",
       "value": "还没有能收费的清晰切口;在饱和的编码 agent 里靠氛围竞争。",
-      "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。"
+      "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。",
+      "hook": "又一个「给 Builder 的智能体编码」CLI——口号响,但很难说差在哪。"
     }
-  }
+  },
+  "hook": "Another 'agentic coding for builders' CLI — big slogan, hard to say what's different."
 }
