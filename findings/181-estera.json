@@ -2,9 +2,9 @@
   "title": "Estera",
   "claim": "Estera — an AI receptionist that answers a business's phone calls and WhatsApp 24/7 (Product Hunt launch, 129 upvotes).",
   "score": 7,
-  "why_good": "Missed calls are directly lost revenue for clinics, salons and contractors, and WhatsApp-first coverage targets the markets US-centric AI-phone startups neglect.",
-  "value": "Per-line SaaS with obvious ROI math — one saved booking pays the month; land via WhatsApp Business in LatAm/EU/SEA, then expand into scheduling and CRM.",
-  "risk": "The AI-receptionist field is already crowded with funded lookalikes, differentiation is thin, and telephony incumbents (Twilio, RingCentral) or Meta can bundle the same thing.",
+  "why_good": "An AI receptionist that answers a business's phone and WhatsApp 24/7 — a clear ROI for SMBs losing calls after hours.",
+  "value": "Per-seat/per-minute SaaS to SMBs (clinics, salons, trades); missed calls = lost revenue, so they pay readily.",
+  "risk": "Crowded AI-voice-receptionist space; reliability, latency and local-language handling decide the winners.",
   "evidence": [
     "https://www.producthunt.com/r/GSPE3HHD2AHU47?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/estera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "181-estera",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-28T00:13:35Z"
+  "posted_at": "2026-07-28T00:13:35Z",
+  "i18n": {
+    "zh": {
+      "claim": "Estera —— 一个 7×24 接听企业电话和 WhatsApp 的 AI 前台(Product Hunt,129 分)。",
+      "why_good": "一个 7×24 接听企业电话和 WhatsApp 的 AI 前台——对 下班后漏接电话 的中小企业 ROI 清晰。",
+      "value": "按席位/分钟向中小企业(诊所、美容院、装修)收费;漏接=丢收入,他们愿意付。",
+      "risk": "AI 语音前台很挤;可靠性、延迟和本地语言处理决定输赢。"
+    }
+  }
 }
