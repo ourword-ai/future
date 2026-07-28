@@ -2,9 +2,9 @@
   "title": "AlephAITech/WorkBuddyGuide",
   "claim": "AlephAITech/WorkBuddyGuide — A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、M",
   "score": 8,
-  "why_good": "This project addresses a specific gap in the market for practical, hands-on resources that help users implement WorkBuddy effectively in their workflows.",
-  "value": "Businesses looking to optimize their workflow processes could pay for premium guides, consulting services, or tailored training based on this open-source content.",
-  "risk": "The project may struggle to gain traction if larger companies develop proprietary solutions that overshadow its offerings.",
+  "why_good": "A practical open-source guide to a tool called WorkBuddy — useful documentation, but a guide, not a product.",
+  "value": "No direct monetization; guides don't retain users or convert to revenue on their own.",
+  "risk": "Content/guide, not a company; zero moat and dependent on the tool it documents.",
   "evidence": [
     "https://github.com/AlephAITech/WorkBuddyGuide",
     "1,332★",
@@ -25,5 +25,13 @@
   ],
   "id": "33-alephaitech-workbuddyguide",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:50Z"
+  "posted_at": "2026-07-27T10:50:50Z",
+  "i18n": {
+    "zh": {
+      "claim": "AlephAITech/WorkBuddyGuide —— 一份掌握 WorkBuddy 的实战开源指南。",
+      "why_good": "一份关于 WorkBuddy 的实战开源指南——有用的文档,但它是指南,不是产品。",
+      "value": "没有直接变现;指南自身留不住用户、也不转化收入。",
+      "risk": "是内容/指南不是公司;零护城河,且依附它所记录的工具。"
+    }
+  }
 }
