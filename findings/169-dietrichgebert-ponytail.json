@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T00:07:29Z",
   "pick": false,
-  "pick_reason": "The project is too vague and resembles a concept rather than a clear, monetizable product."
+  "pick_reason": "The project is too vague and resembles a concept rather than a clear, monetizable product.",
+  "i18n": {
+    "zh": {
+      "claim": "Ponytail —— 一层让编码 agent 极简的提示/技能:只写能跑的最少代码(把 YAGNI 做成一行安装,支持 20+ 种 agent)。",
+      "why_good": "正面打编码 agent 最大的痛点——过度设计的垃圾代码;而且势头是真的:六周约 9 万星、62 位贡献者、有 npm 包,Claude Code / Cursor / Codex 通吃。",
+      "value": "切口是 agent 行为治理:团队为「在每个 agent 席位上统一强制极简与代码规范」付费(组织级配置、策略包、审计)。",
+      "risk": "它是提示词不是软件,护城河近乎为零;任何 agent 厂商加个「简洁模式」开关就能覆盖,技能包的病毒式增长退得和涨得一样快。"
+    }
+  }
 }
