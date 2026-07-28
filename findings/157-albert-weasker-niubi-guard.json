@@ -2,9 +2,9 @@
   "title": "Albert-Weasker/niubi_guard",
   "claim": "Albert-Weasker/niubi_guard — Open-source GitHub repository abuse detection and response system.",
   "score": 8,
-  "why_good": "As open-source projects face increasing scrutiny, a dedicated abuse detection system could fill a critical gap in compliance and security.",
-  "value": "Companies could pay for premium features or support plans to ensure their repositories are secure and compliant with regulations.",
-  "risk": "The market for security tools is crowded, and larger companies may integrate similar features into their existing platforms.",
+  "why_good": "Detects and responds to GitHub repo abuse (star-farming, spam) — a real, growing problem as fake-star repos flood GitHub.",
+  "value": "Sell to GitHub orgs, investors and registries who need to trust repo signals; API + reports.",
+  "risk": "Narrow; GitHub itself polices abuse, and 'detection' is an arms race with limited direct buyers.",
   "evidence": [
     "https://github.com/Albert-Weasker/niubi_guard",
     "1,307★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:57Z",
   "pick": false,
-  "pick_reason": "The project is an open-source tool that lacks a clear monetizable product or service."
+  "pick_reason": "The project is an open-source tool that lacks a clear monetizable product or service.",
+  "i18n": {
+    "zh": {
+      "claim": "Albert-Weasker/niubi_guard —— 开源的 GitHub 仓库滥用检测与响应系统。",
+      "why_good": "检测并响应 GitHub 仓库滥用(刷星、垃圾)——随着刷星仓库泛滥,这是个真实且在扩大的问题。",
+      "value": "卖给需要信任仓库信号的 GitHub 组织、投资人和注册表:API + 报告。",
+      "risk": "较窄;GitHub 自己也在治理滥用,而检测是场军备竞赛,直接买家有限。"
+    }
+  }
 }
