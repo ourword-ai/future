@@ -26,7 +26,9 @@
       "claim": "Show HN: 在我的慢电脑上把 GLM 5.2 跑起来。",
       "why_good": "一篇把 GLM-5.2 塞进慢机器的 Show HN 记录——很好地证明弱硬件跑大模型有共鸣,但它是帖子不是产品。",
       "value": "机会在把这件事变成一键的工具;帖子本身不是生意。",
-      "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。"
+      "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。",
+      "hook": "把 GLM-5.2 塞进慢电脑——证明「弱硬件跑大模型」很有共鸣。"
     }
-  }
+  },
+  "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates."
 }
