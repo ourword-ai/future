@@ -1,0 +1,30 @@
+{
+  "title": "Significant-Gravitas/AutoGPT",
+  "claim": "Significant-Gravitas/AutoGPT — AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so tha",
+  "score": 7,
+  "why_good": "already crowded (185,740★) — real signal but late; 46,069 forks (24% of stars) — people build on it; 834 contributors, 103 commits/30d — actively maintained",
+  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+  "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+  "evidence": [
+    "https://github.com/Significant-Gravitas/AutoGPT",
+    "185,740★",
+    "46,069 forks",
+    "834 contributors",
+    "103 commits/30d",
+    "created 2023-03-16"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "artificial-intelligence",
+    "autonomous-agents"
+  ],
+  "id": "236-significant-gravitas-autogpt",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T19:44:05Z"
+}

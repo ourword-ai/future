@@ -1,0 +1,24 @@
+{
+  "title": "anomalyco/opencode",
+  "claim": "anomalyco/opencode — The open source coding agent.",
+  "score": 7,
+  "why_good": "already crowded (190,526★) — real signal but late; 24,211 forks (12% of stars) — people build on it; 983 contributors, 668 commits/30d — actively maintained",
+  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+  "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+  "evidence": [
+    "https://github.com/anomalyco/opencode",
+    "190,526★",
+    "24,211 forks",
+    "983 contributors",
+    "668 commits/30d",
+    "created 2025-04-30"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [],
+  "id": "237-anomalyco-opencode",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T19:44:07Z"
+}
