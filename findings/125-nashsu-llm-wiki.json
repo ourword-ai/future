@@ -28,7 +28,9 @@
       "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
       "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
       "value": "桌面免费增值:给\"不愿把文档放进云 AI\"的人卖付费团队同步、高级检索和协作。",
-      "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。"
+      "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。",
+      "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
     }
-  }
+  },
+  "hook": "Turns your document pile into an auto-linked knowledge base — private and offline."
 }
