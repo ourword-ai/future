@@ -26,7 +26,9 @@
       "claim": "Show HN: Juggler —— 开源的图形界面(GUI)编码 agent,作者是 JUCE 的创造者。",
       "why_good": "来自 JUCE 作者的开源 GUI 编码 agent——在热门赛道里罕见的创始人信誉。280 分。",
       "value": "编码 agent 按席位/用量收费;一个受信任的老手做的精致 GUI,能在以 CLI 为主的工具中切出一条路。",
-      "risk": "极度拥挤(Cursor / Cline / Copilot / Codex);前沿实验室自家的 agent 才是真正的威胁。"
+      "risk": "极度拥挤(Cursor / Cline / Copilot / Codex);前沿实验室自家的 agent 才是真正的威胁。",
+      "hook": "JUCE 的作者做了个开源 GUI 编码 agent——在拥挤赛道里罕见的创始人信誉。"
     }
-  }
+  },
+  "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race."
 }
