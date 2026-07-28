@@ -88,9 +88,9 @@
       "title": "Rescript",
       "claim": "Product Hunt: Rescript — A free, open source, Descript alternative. Runs in-browser.",
       "score": 7,
-      "why_good": "Launched on Product Hunt with 132 upvotes and 25 comments — a real audience showed up on day one, which most products never get.",
-      "value": "on-device kills cloud cost + unlocks privacy buyers",
-      "risk": "Product Hunt spikes fade — check 30-day retention and whether it's a feature a bigger tool just absorbs.",
+      "why_good": "A free, in-browser open-source Descript alternative — edit audio/video by editing text, a proven-loved workflow now open and free.",
+      "value": "Freemium: free in-browser editing, paid exports/collab/cloud; Descript proves people pay for text-based editing.",
+      "risk": "Descript is well-funded and polished; browser performance + transcription quality are the bar, and it's crowded.",
       "evidence": [
         "https://www.producthunt.com/r/CUKYCRD6ZIYKTQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/rescript-edit-videos-like-you-edit-text?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -110,15 +110,23 @@
       ],
       "id": "202-rescript",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T04:48:51Z"
+      "posted_at": "2026-07-28T04:48:51Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Rescript —— 免费开源的 Descript 替代,浏览器内运行。",
+          "why_good": "一个免费、浏览器内的开源 Descript 替代——像编辑文字一样编辑音视频,一个被验证深受喜爱的工作流,现在开源免费。",
+          "value": "免费增值:浏览器编辑免费,导出/协作/云收费;Descript 证明有人为 文字式编辑 付费。",
+          "risk": "Descript 有钱且精致;浏览器性能 + 转写质量是门槛,而且赛道拥挤。"
+        }
+      }
     },
     {
       "title": "gi-dellav/zerostack",
       "claim": "gi-dellav/zerostack — Lightweight coding agent written in Rust, optimized for memory footprint and performance",
       "score": 7,
-      "why_good": "early traction (1,528★); 27 contributors, 239 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A lightweight, memory-optimized Rust coding agent — appeals to devs on constrained machines, but another entrant in a crushed field.",
+      "value": "No clear paid wedge; 'lighter coding agent' rarely converts to revenue against free, funded incumbents.",
+      "risk": "Brutal coding-agent category (Claude Code/Cursor/Aider); 'lightweight' alone isn't a business.",
       "evidence": [
         "https://github.com/gi-dellav/zerostack",
         "1,528★",
@@ -140,15 +148,23 @@
       ],
       "id": "201-gi-dellav-zerostack",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:46:28Z"
+      "posted_at": "2026-07-28T04:46:28Z",
+      "i18n": {
+        "zh": {
+          "claim": "gi-dellav/zerostack —— 用 Rust 写的轻量编码 agent,针对内存占用和性能优化。",
+          "why_good": "一个轻量、内存优化的 Rust 编码 agent——对受限机器的开发者有吸引力,但它是被碾压赛道里的又一个入局者。",
+          "value": "没有清晰的付费切口;更轻的编码 agent 很难在免费、有融资的对手前变现。",
+          "risk": "残酷的编码 agent 品类(Claude Code/Cursor/Aider);光 轻量 不是生意。"
+        }
+      }
     },
     {
       "title": "jdx/aube",
       "claim": "aube — a Rust Node.js package manager by the maintainer of mise: auto-installs when you run a script, reads existing pnpm/npm/yarn/bun lockfiles in place, and jails lifecycle scripts — the strictest security defaults of any Node PM.",
       "score": 7,
-      "why_good": "The lifecycle-script jail lands exactly on the npm supply-chain-attack wave (postinstall malware), and zero-migration adoption — it drops into your existing lockfile — removes the switching cost that kills new package managers. jdx's mise following supplies distribution most new tools never get.",
-      "value": "商业价值: package managers don't monetize directly — the opening is the security posture: an org-level layer (script-jail policy, registry firewall, audit trail) sold to teams out of the Socket.dev / supply-chain budget.",
-      "risk": "pnpm, Bun and npm can copy auto-install and script sandboxing; sponsor-funded solo-maintainer economics (37signals, entire.io) sustain a tool, not a company — this may stay excellent OSS with no business attached.",
+      "why_good": "A Rust Node.js package manager from mise's maintainer — auto-installs on run, with strong pedigree in the dev-tools space.",
+      "value": "Package managers monetize indirectly (enterprise, registry, support); the wedge is speed + zero-config DX.",
+      "risk": "npm/pnpm/Bun own this; even great tooling struggles to become a business without a registry/cloud play.",
       "evidence": [
         "https://github.com/jdx/aube",
         "1,775★",
@@ -164,15 +180,23 @@
       "tags": [],
       "id": "200-jdx-aube",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:46:27Z"
+      "posted_at": "2026-07-28T04:46:27Z",
+      "i18n": {
+        "zh": {
+          "claim": "aube —— mise 维护者写的 Rust Node.js 包管理器:运行脚本时自动安装,读取扩展配置。",
+          "why_good": "来自 mise 维护者的 Rust Node.js 包管理器——运行即自动安装,在开发工具圈有很强血统。",
+          "value": "包管理器靠间接变现(企业、注册表、支持);切口是速度 + 零配置体验。",
+          "risk": "npm/pnpm/Bun 占据这块;再好的工具没有注册表/云打法也难成生意。"
+        }
+      }
     },
     {
       "title": "RivoLink/leaf",
       "claim": "RivoLink/leaf — Terminal Markdown previewer — GUI-like experience.",
       "score": 7,
-      "why_good": "early traction (1,758★); 13 contributors, 43 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A terminal Markdown previewer with a GUI-like feel — pleasant for CLI users, but a small single-purpose utility.",
+      "value": "Hard to charge for; a free TUI at best with a niche pro tier.",
+      "risk": "Tiny niche, glow/mdcat exist; a nice tool, not a company.",
       "evidence": [
         "https://github.com/RivoLink/leaf",
         "1,758★",
@@ -194,15 +218,23 @@
       ],
       "id": "199-rivolink-leaf",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:17:12Z"
+      "posted_at": "2026-07-28T04:17:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "RivoLink/leaf —— 终端 Markdown 预览器,GUI 般的体验。",
+          "why_good": "一个 GUI 般体验的终端 Markdown 预览器——CLI 用户喜欢,但是个小、单一用途的工具。",
+          "value": "很难收费;顶多免费 TUI 加个小众专业档。",
+          "risk": "细分极小,glow/mdcat 已在;是个好工具,不是公司。"
+        }
+      }
     },
     {
       "title": "WeaveMindAI/weft",
       "claim": "WeaveMindAI/weft — A programming language for AI orchestrations (POC)",
       "score": 7,
-      "why_good": "early traction (1,679★); 189 forks (11% of stars) — people build on it",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A programming language for AI orchestration (still a POC) — an ambitious bet that agent workflows need their own language.",
+      "value": "Languages monetize via a cloud/runtime around them; far off, and only if it gets real adoption.",
+      "risk": "POC stage; new languages almost never achieve adoption, and orchestration is crowded with libraries, not languages.",
       "evidence": [
         "https://github.com/WeaveMindAI/weft",
         "1,679★",
@@ -218,15 +250,23 @@
       "tags": [],
       "id": "198-weavemindai-weft",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:17:10Z"
+      "posted_at": "2026-07-28T04:17:10Z",
+      "i18n": {
+        "zh": {
+          "claim": "WeaveMindAI/weft —— 面向 AI 编排的编程语言(POC)。",
+          "why_good": "一门面向 AI 编排的编程语言(还是 POC)——一个雄心押注:agent 工作流需要自己的语言。",
+          "value": "语言靠围绕它的云/运行时变现;很遥远,且只有真获得采用才行。",
+          "risk": "POC 阶段;新语言几乎从不成功,而编排是 库 而非 语言 在竞争。"
+        }
+      }
     },
     {
       "title": "yynxxxxx/Codex-X",
       "claim": "yynxxxxx/Codex-X — Codex Switch & Instruct desktop manager",
       "score": 7,
-      "why_good": "early traction (1,727★); 256 forks (14% of stars) — people build on it; 2 contributors, 135 commits/30d — actively maintained",
-      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A desktop manager to switch and instruct Codex — a companion utility fully dependent on OpenAI's Codex.",
+      "value": "Thin; a pro tier at best, with no leverage if Codex adds native config/switching.",
+      "risk": "Feature, not a company; tied to one vendor and easily obsoleted.",
       "evidence": [
         "https://github.com/yynxxxxx/Codex-X",
         "1,727★",
@@ -242,15 +282,23 @@
       "tags": [],
       "id": "197-yynxxxxx-codex-x",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:17:07Z"
+      "posted_at": "2026-07-28T04:17:07Z",
+      "i18n": {
+        "zh": {
+          "claim": "yynxxxxx/Codex-X —— Codex 切换与指令的桌面管理器。",
+          "why_good": "一个切换和指挥 Codex 的桌面管理器——完全依附 OpenAI Codex 的配套工具。",
+          "value": "很薄;顶多做专业档,Codex 加原生配置/切换就没了杠杆。",
+          "risk": "是功能不是公司;绑单一厂商、易被作废。"
+        }
+      }
     },
     {
       "title": "deeplethe/forkd",
       "claim": "forkd — fork() for AI-agent microVMs: keep one warm KVM parent, then spawn 100 copy-on-write children in ~100ms or branch a live VM in ~56ms. Rust, Apache-2.0, Python SDK, portable snapshot hub.",
       "score": 7,
-      "why_good": "Agent workloads are turning into tree search — try N approaches in parallel, keep the winner — and that needs isolation at fork() speed, which containers and cold-boot VMs don't give. The CoW snapshot model plus a 'forkd pull' snapshot hub echoes how Docker Hub anchored Docker.",
-      "value": "商业价值: usage-priced sandbox infra for agent platforms (per-fork / per-VM-hour) plus a hosted snapshot registry — the same budget teams already pay E2B and Modal for agent sandboxes.",
-      "risk": "Firecracker snapshot-restore is well-trodden ground E2B/Modal/Daytona could replicate quickly, and KVM-only means no native Mac/Windows story. 5 contributors and 18 commits/30d suggest momentum is already cooling.",
+      "why_good": "fork() for agent microVMs — one warm KVM parent spawns 100 copy-on-write children in ~100ms, killing agent cold-starts at scale.",
+      "value": "Infra sold to agent platforms/clouds that run many parallel sandboxes; usage + enterprise, a real perf primitive.",
+      "risk": "Deep infra with a narrow expert buyer; competes with Firecracker/E2B internals and needs serious reliability proof.",
       "evidence": [
         "https://github.com/deeplethe/forkd",
         "2,724★",
@@ -272,15 +320,23 @@
       ],
       "id": "196-deeplethe-forkd",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:17:05Z"
+      "posted_at": "2026-07-28T04:17:05Z",
+      "i18n": {
+        "zh": {
+          "claim": "forkd —— 给 AI-agent microVM 的 fork():保留一个热 KVM 父机,~100ms 内派生 100 个写时复制子机。",
+          "why_good": "给 agent microVM 的 fork()——一个热 KVM 父机 ~100ms 派生 100 个写时复制子机,规模化地干掉 agent 冷启动。",
+          "value": "卖给跑大量并行沙箱的 agent 平台/云:按量 + 企业版,一个真实的性能原语。",
+          "risk": "深度基础设施、专家买家窄;要和 Firecracker/E2B 的内部机制竞争,需要扎实的可靠性证明。"
+        }
+      }
     },
     {
       "title": "orhun/ratty",
       "claim": "orhun/ratty — A GPU-rendered terminal emulator with inline 3D graphics 🐀🧀 ",
       "score": 7,
-      "why_good": "early traction (3,145★); 20 contributors, 18 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A GPU-rendered terminal with inline 3D graphics from a prolific Rust-TUI author — pushes what a terminal can display.",
+      "value": "Terminals monetize poorly (free by culture); at best a pro tier, or it's a beloved OSS showcase.",
+      "risk": "Terminal emulators are a free, crowded space (Ghostty, WezTerm); inline 3D is cool but niche.",
       "evidence": [
         "https://github.com/orhun/ratty",
         "3,145★",
@@ -302,7 +358,15 @@
       ],
       "id": "195-orhun-ratty",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:17:03Z"
+      "posted_at": "2026-07-28T04:17:03Z",
+      "i18n": {
+        "zh": {
+          "claim": "orhun/ratty —— GPU 渲染、支持内联 3D 图形的终端模拟器。",
+          "why_good": "来自高产 Rust-TUI 作者的 GPU 渲染终端,支持内联 3D 图形——拓展了终端能显示的边界。",
+          "value": "终端很难变现(文化上免费);顶多做专业档,否则是个受喜爱的开源展示。",
+          "risk": "终端模拟器是免费、拥挤的空间(Ghostty、WezTerm);内联 3D 很酷但小众。"
+        }
+      }
     },
     {
       "title": "yituorou/meatshell",
@@ -483,9 +547,9 @@
       "title": "zgwl/chinese-buy-us-stock-guide",
       "claim": "A meticulous Chinese-language guide to investing in US stocks from the mainland — brokerage and bank account opening, CRS/FATCA tax, compliance paths, funding in and cashing out.",
       "score": 7,
-      "why_good": "6.2k★ in two months for a pure docs repo is a raw demand signal: mainland investors want US exposure and face a maze of rules that no product walks them through end to end.",
-      "value": "Not the repo but the service it implies: brokerage account-opening affiliates (real bounties per funded account), ITIN and tax-filing assistance, and a paid policy-change alert subscription — the free guide is the distribution.",
-      "risk": "Sits on a regulatory fault line — Chinese capital controls and cross-border brokerage rules can shift overnight; it's one author's side project (1 commit/30d), and content alone is not a company.",
+      "why_good": "A meticulous Chinese-language guide to buying US stocks from the mainland — genuinely useful, but documentation, not a product.",
+      "value": "Content monetizes via courses/affiliate (brokerage referrals) at best; not a software business.",
+      "risk": "A guide, not a company; brokerages and finfluencers own the audience and the referral economics.",
       "evidence": [
         "https://github.com/zgwl/chinese-buy-us-stock-guide",
         "6,183★",
@@ -501,7 +565,15 @@
       "tags": [],
       "id": "186-zgwl-chinese-buy-us-stock-guide",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T01:00:26Z"
+      "posted_at": "2026-07-28T01:00:26Z",
+      "i18n": {
+        "zh": {
+          "claim": "一份面向大陆投资者、细致的美股投资中文指南(开户、券商、银行等)。",
+          "why_good": "一份细致的大陆买美股中文指南——确实有用,但它是文档,不是产品。",
+          "value": "内容顶多靠课程/联盟(券商返佣)变现;不是软件生意。",
+          "risk": "是指南不是公司;券商和财经博主掌握受众和返佣经济。"
+        }
+      }
     },
     {
       "title": "XBuilderLAB/cheat-on-content",
@@ -539,9 +611,9 @@
       "title": "Forgeon",
       "claim": "Product Hunt: Forgeon — Create, publish, and experience interactive stories",
       "score": 7,
-      "why_good": "Interactive storytelling is gaining traction as a medium for education and entertainment, appealing to both creators and consumers.",
-      "value": "Content creators and educators could pay for premium features or subscriptions to enhance their storytelling capabilities and reach larger audiences.",
-      "risk": "The platform may struggle to differentiate itself if larger companies with established user bases decide to integrate similar interactive storytelling features.",
+      "why_good": "A platform to create, publish and play AI interactive stories — rides the interactive-fiction + AI wave with a creator-economy angle.",
+      "value": "Creator platform: subscriptions + a marketplace/rev-share on published stories; AI lowers the authoring bar.",
+      "risk": "Interactive fiction is a passionate but small market; AI Dungeon and character apps already compete for it.",
       "evidence": [
         "https://www.producthunt.com/r/AFVYUCU2FMSEPA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/forgeon-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -561,15 +633,23 @@
       ],
       "id": "182-forgeon",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T00:13:39Z"
+      "posted_at": "2026-07-28T00:13:39Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Forgeon —— 创作、发布、体验互动故事。",
+          "why_good": "一个创作、发布、玩 AI 互动故事的平台——踩在互动小说 + AI 浪潮上,带创作者经济角度。",
+          "value": "创作者平台:订阅 + 已发布故事的市场/分成;AI 降低创作门槛。",
+          "risk": "互动小说是个热情但小的市场;AI Dungeon 和角色 app 已在争夺。"
+        }
+      }
     },
     {
       "title": "Estera",
       "claim": "Estera — an AI receptionist that answers a business's phone calls and WhatsApp 24/7 (Product Hunt launch, 129 upvotes).",
       "score": 7,
-      "why_good": "Missed calls are directly lost revenue for clinics, salons and contractors, and WhatsApp-first coverage targets the markets US-centric AI-phone startups neglect.",
-      "value": "Per-line SaaS with obvious ROI math — one saved booking pays the month; land via WhatsApp Business in LatAm/EU/SEA, then expand into scheduling and CRM.",
-      "risk": "The AI-receptionist field is already crowded with funded lookalikes, differentiation is thin, and telephony incumbents (Twilio, RingCentral) or Meta can bundle the same thing.",
+      "why_good": "An AI receptionist that answers a business's phone and WhatsApp 24/7 — a clear ROI for SMBs losing calls after hours.",
+      "value": "Per-seat/per-minute SaaS to SMBs (clinics, salons, trades); missed calls = lost revenue, so they pay readily.",
+      "risk": "Crowded AI-voice-receptionist space; reliability, latency and local-language handling decide the winners.",
       "evidence": [
         "https://www.producthunt.com/r/GSPE3HHD2AHU47?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/estera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -588,7 +668,15 @@
       ],
       "id": "181-estera",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-28T00:13:35Z"
+      "posted_at": "2026-07-28T00:13:35Z",
+      "i18n": {
+        "zh": {
+          "claim": "Estera —— 一个 7×24 接听企业电话和 WhatsApp 的 AI 前台(Product Hunt,129 分)。",
+          "why_good": "一个 7×24 接听企业电话和 WhatsApp 的 AI 前台——对 下班后漏接电话 的中小企业 ROI 清晰。",
+          "value": "按席位/分钟向中小企业(诊所、美容院、装修)收费;漏接=丢收入,他们愿意付。",
+          "risk": "AI 语音前台很挤;可靠性、延迟和本地语言处理决定输赢。"
+        }
+      }
     },
     {
       "title": "shadcn/improve",
@@ -900,9 +988,9 @@
       "title": "tianchong-zerotemp/dianxing",
       "claim": "tianchong-zerotemp/dianxing — DianXing - AI-Driven End-to-End Code Security Auditing",
       "score": 7,
-      "why_good": "The project addresses a critical and growing need for automated security audits in software development, which is often overlooked until it's too late.",
-      "value": "Companies developing software will pay for subscription-based access to the auditing tool, especially in regulated industries where compliance is mandatory.",
-      "risk": "The market is crowded with established security firms that could easily integrate similar features into their existing products.",
+      "why_good": "AI-driven end-to-end code security auditing — AppSec is a large, high-budget market where agentic auditing has clear value.",
+      "value": "Sell scanning + triage to security/eng teams; per-repo/seat, a budget line security orgs already fund.",
+      "risk": "Trust-heavy and crowded (Snyk, Semgrep); false positives and proof gate adoption.",
       "evidence": [
         "https://github.com/tianchong-zerotemp/dianxing",
         "876★",
@@ -923,7 +1011,15 @@
       ],
       "id": "167-tianchong-zerotemp-dianxing",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T22:13:19Z"
+      "posted_at": "2026-07-27T22:13:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "tianchong-zerotemp/dianxing —— 点星:AI 驱动的端到端代码安全审计。",
+          "why_good": "AI 驱动的端到端代码安全审计——应用安全是个大、高预算的市场,agent 式审计价值清晰。",
+          "value": "向安全/工程团队卖扫描 + 分诊;按仓库/席位,安全组织本就有这笔预算。",
+          "risk": "重信任且拥挤(Snyk、Semgrep);误报和证据是采用门槛。"
+        }
+      }
     },
     {
       "title": "Kritt-ai/open-kritt",
@@ -969,9 +1065,9 @@
       "title": "2aronS/Duel-Agents",
       "claim": "2aronS/Duel-Agents — CLI, SDK, and IDE plugins for Duel Agents",
       "score": 7,
-      "why_good": "The project addresses a niche need for developers looking to implement duel agents in their applications, which is underexplored in the current market.",
-      "value": "Companies developing AI applications could pay for premium features, support, and integration services, creating a subscription or licensing model.",
-      "risk": "The technology could be absorbed by larger AI platforms that offer similar functionalities, rendering it obsolete.",
+      "why_good": "Tooling (CLI/SDK/IDE) to run 'dueling' agents that check each other — an interesting reliability pattern (adversarial agents catch mistakes).",
+      "value": "Sell to teams wanting higher agent reliability; the wedge is verification via adversarial agents, as a paid layer.",
+      "risk": "Niche pattern; the agent frameworks can add self-critique natively, and 'two agents' doubles cost.",
       "evidence": [
         "https://github.com/2aronS/Duel-Agents",
         "910★",
@@ -993,7 +1089,15 @@
       ],
       "id": "164-2arons-duel-agents",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:52:20Z"
+      "posted_at": "2026-07-27T20:52:20Z",
+      "i18n": {
+        "zh": {
+          "claim": "2aronS/Duel-Agents —— Duel Agents 的 CLI、SDK 与 IDE 插件。",
+          "why_good": "运行 对决 式互相检查 agent 的工具(CLI/SDK/IDE)——一个有意思的可靠性范式(对抗式 agent 抓错)。",
+          "value": "卖给想要更高 agent 可靠性的团队;切口是 对抗式 agent 验证,作为付费层。",
+          "risk": "小众范式;agent 框架能原生加自我批评,而 两个 agent 翻倍成本。"
+        }
+      }
     },
     {
       "title": "MayersScott/rkn-block-checker",
@@ -4427,9 +4531,9 @@
       "title": "FluentDB",
       "claim": "Product Hunt: FluentDB — The AI database client for Mac",
       "score": 8,
-      "why_good": "FluentDB addresses the growing need for user-friendly database management tools that leverage AI to simplify complex queries.",
-      "value": "Businesses pay for subscription plans that offer advanced features, integrations, and support for their database needs.",
-      "risk": "The market is saturated with established database management solutions that could easily integrate similar AI features.",
+      "why_good": "An AI-native database client for Mac — query and explore DBs in natural language, a real productivity win for devs and analysts.",
+      "value": "Prosumer/team subscription like TablePlus + AI; devs already pay for good DB clients.",
+      "risk": "TablePlus, DataGrip and every DB tool are adding AI; the AI layer must be clearly better to justify switching.",
       "evidence": [
         "https://www.producthunt.com/r/XDHRXK2IKT3XVD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/fluentdb-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4448,15 +4552,23 @@
       ],
       "id": "37-fluentdb",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:17Z"
+      "posted_at": "2026-07-27T11:56:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: FluentDB —— Mac 上的 AI 数据库客户端。",
+          "why_good": "一个 AI 原生的 Mac 数据库客户端——用自然语言查询和探索数据库,对开发者和分析师是真实的效率提升。",
+          "value": "像 TablePlus + AI 那样收专业/团队订阅;开发者本就为好用的 DB 客户端付费。",
+          "risk": "TablePlus、DataGrip 和每个 DB 工具都在加 AI;AI 层要明显更好才值得迁移。"
+        }
+      }
     },
     {
       "title": "TouchGrass",
       "claim": "Product Hunt: TouchGrass — Context-aware break reminders without invasive permissions",
       "score": 8,
-      "why_good": "TouchGrass addresses a growing concern for mental health and productivity by promoting regular breaks, which is increasingly recognized as essential in remote work environments.",
-      "value": "Companies could pay for premium features to integrate TouchGrass into their employee wellness programs, enhancing productivity and reducing burnout costs.",
-      "risk": "The market for break reminder tools is crowded, and larger companies could easily integrate similar features into existing productivity software.",
+      "why_good": "Context-aware break reminders that don't demand invasive permissions — a privacy-respecting take on a genuine wellbeing pain.",
+      "value": "Consumer subscription is a hard sell for a reminder app; better as a cheap one-time purchase or a B2B wellbeing perk.",
+      "risk": "Wellbeing/break apps are a graveyard of low retention; OS-level Screen Time and free tools compete.",
       "evidence": [
         "https://www.producthunt.com/r/OFM4DSHZYBEP2A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/touchgrass-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4475,7 +4587,15 @@
       ],
       "id": "36-touchgrass",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:12Z"
+      "posted_at": "2026-07-27T11:56:12Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: TouchGrass —— 不索取侵入式权限的情境化休息提醒。",
+          "why_good": "不要侵入式权限的情境化休息提醒——对真实的健康痛点,一个尊重隐私的做法。",
+          "value": "提醒类 app 的消费订阅很难卖;更适合便宜的一次性或做 B2B 健康福利。",
+          "risk": "健康/休息类 app 是留存的坟场;系统级屏幕时间和免费工具在竞争。"
+        }
+      }
     },
     {
       "title": "Heard",
@@ -4552,9 +4672,9 @@
       "title": "AlephAITech/WorkBuddyGuide",
       "claim": "AlephAITech/WorkBuddyGuide — A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、M",
       "score": 8,
-      "why_good": "This project addresses a specific gap in the market for practical, hands-on resources that help users implement WorkBuddy effectively in their workflows.",
-      "value": "Businesses looking to optimize their workflow processes could pay for premium guides, consulting services, or tailored training based on this open-source content.",
-      "risk": "The project may struggle to gain traction if larger companies develop proprietary solutions that overshadow its offerings.",
+      "why_good": "A practical open-source guide to a tool called WorkBuddy — useful documentation, but a guide, not a product.",
+      "value": "No direct monetization; guides don't retain users or convert to revenue on their own.",
+      "risk": "Content/guide, not a company; zero moat and dependent on the tool it documents.",
       "evidence": [
         "https://github.com/AlephAITech/WorkBuddyGuide",
         "1,332★",
@@ -4575,15 +4695,23 @@
       ],
       "id": "33-alephaitech-workbuddyguide",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:50Z"
+      "posted_at": "2026-07-27T10:50:50Z",
+      "i18n": {
+        "zh": {
+          "claim": "AlephAITech/WorkBuddyGuide —— 一份掌握 WorkBuddy 的实战开源指南。",
+          "why_good": "一份关于 WorkBuddy 的实战开源指南——有用的文档,但它是指南,不是产品。",
+          "value": "没有直接变现;指南自身留不住用户、也不转化收入。",
+          "risk": "是内容/指南不是公司;零护城河,且依附它所记录的工具。"
+        }
+      }
     },
     {
       "title": "MaximeRivest/riddle",
       "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
       "score": 8,
-      "why_good": "The project leverages the unique capabilities of the reMarkable tablet, creating a niche product that enhances the user experience through interactive writing.",
-      "value": "Consumers pay for premium features or subscriptions that unlock advanced AI capabilities, such as personalized responses or enhanced writing tools.",
-      "risk": "The project may struggle to scale if it remains a feature of a specific device, especially if larger companies decide to integrate similar functionalities.",
+      "why_good": "Turns the reMarkable e-ink tablet into a 'magic diary' that writes back — a delightful, novel AI-on-paper interaction.",
+      "value": "Niche prosumer add-on for reMarkable owners; hard to charge much, but a charming wedge into AI-augmented paper.",
+      "risk": "Tiny hardware niche (reMarkable), dependent on their platform; a whimsical demo more than a scalable business.",
       "evidence": [
         "https://github.com/MaximeRivest/riddle",
         "1,739★",
@@ -4605,15 +4733,23 @@
       ],
       "id": "32-maximerivest-riddle",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:45Z"
+      "posted_at": "2026-07-27T10:50:45Z",
+      "i18n": {
+        "zh": {
+          "claim": "MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。",
+          "why_good": "把 reMarkable 墨水屏变成会回话的 魔法日记——一个讨喜、新颖的 AI 在纸上 交互。",
+          "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
+          "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。"
+        }
+      }
     },
     {
       "title": "HUANGCHIHHUNGLeo/claude-real-video",
       "claim": "HUANGCHIHHUNGLeo/claude-real-video — Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file",
       "score": 8,
-      "why_good": "This project addresses a growing need for AI to understand video content contextually, which is crucial for applications in education and content creation.",
-      "value": "Content creators and educators could subscribe to a service that enhances video engagement and comprehension, generating revenue through tiered access or API usage fees.",
-      "risk": "The technology could be easily replicated by larger companies with existing video platforms, leading to a lack of differentiation in a crowded market.",
+      "why_good": "Lets any LLM actually 'watch' video — scene-aware, deduplicated frames — solving the real cost/quality problem of feeding video to models.",
+      "value": "Usage-based API/SDK for anyone building video-understanding into agents/apps; per-minute processing.",
+      "risk": "The multimodal labs (Gemini, GPT) natively ingest video and improve fast; a preprocessing layer must stay cheaper/better.",
       "evidence": [
         "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
         "1,867★",
@@ -4635,15 +4771,23 @@
       ],
       "id": "31-huangchihhungleo-claude-real-video",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:41Z"
+      "posted_at": "2026-07-27T10:50:41Z",
+      "i18n": {
+        "zh": {
+          "claim": "HUANGCHIHHUNGLeo/claude-real-video —— 让 Claude(或任意 LLM)真正 看 视频:场景感知、去重。",
+          "why_good": "让任意 LLM 真正 看 视频——场景感知、去重帧——解决 把视频喂给模型 的真实成本/质量问题。",
+          "value": "给要把视频理解做进 agent/app 的人做按量 API/SDK:按分钟处理。",
+          "risk": "多模态实验室(Gemini、GPT)原生吃视频且进步快;预处理层必须持续更便宜/更好。"
+        }
+      }
     },
     {
       "title": "DavidHDev/canvas-ui",
       "claim": "DavidHDev/canvas-ui — A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
       "score": 8,
-      "why_good": "The library's focus on creative canvas components with WebGL effects can attract designers and developers looking for high-performance visual solutions.",
-      "value": "Companies in gaming, advertising, and web design could pay for premium features or support, generating revenue through subscriptions or licensing.",
-      "risk": "Established frameworks or libraries may integrate similar features, diminishing the unique value proposition of this project.",
+      "why_good": "A library of creative canvas/WebGL UI components (real HTML with GPU effects) — fills the gap between plain UI kits and custom shader work.",
+      "value": "Open-core: free components + a paid pro pack/templates, the shadcn / Tailwind-UI monetization path.",
+      "risk": "Component libraries are hard to monetize (mostly free), and flashy effects are a narrow use case.",
       "evidence": [
         "https://github.com/DavidHDev/canvas-ui",
         "2,201★",
@@ -4665,15 +4809,23 @@
       ],
       "id": "30-davidhdev-canvas-ui",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:38Z"
+      "posted_at": "2026-07-27T10:50:38Z",
+      "i18n": {
+        "zh": {
+          "claim": "DavidHDev/canvas-ui —— 创意 canvas 组件库:真实 HTML 叠加 WebGL 效果。",
+          "why_good": "一个创意 canvas/WebGL UI 组件库(真实 HTML + GPU 效果)——填补 朴素 UI 套件 与 自写 shader 之间的空档。",
+          "value": "开源核心:免费组件 + 付费专业包/模板,shadcn/Tailwind-UI 的变现路径。",
+          "risk": "组件库很难变现(多为免费),而炫酷效果是个窄用例。"
+        }
+      }
     },
     {
       "title": "Jia-Ethan/codex-keysmith",
       "claim": "Jia-Ethan/codex-keysmith — Version-independent Codex instruction deployment with dry-run, backups, hook isolation, and recovery.",
       "score": 8,
-      "why_good": "The project addresses a critical need for reliable deployment and management of AI models, reducing downtime and errors in production environments.",
-      "value": "Companies in the AI space could pay for premium features or support, creating a subscription model for ongoing updates and maintenance.",
-      "risk": "The technology could be easily replicated by larger players with existing deployment solutions, leading to potential market saturation.",
+      "why_good": "Manages and safely deploys Codex instructions/config across versions (dry-run, backups, hook isolation) — real ops hygiene for teams standardizing agents.",
+      "value": "Team tier for orgs managing agent config at scale; sell safety + reproducibility of agent setups.",
+      "risk": "Config-management for one vendor's agent; thin, and Codex could bake in versioned config natively.",
       "evidence": [
         "https://github.com/Jia-Ethan/codex-keysmith",
         "1,837★",
@@ -4695,15 +4847,23 @@
       ],
       "id": "29-jia-ethan-codex-keysmith",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:34Z"
+      "posted_at": "2026-07-27T10:50:34Z",
+      "i18n": {
+        "zh": {
+          "claim": "Jia-Ethan/codex-keysmith —— 版本无关的 Codex 指令部署:dry-run、备份、hook 隔离。",
+          "why_good": "跨版本地管理并安全部署 Codex 指令/配置(dry-run、备份、hook 隔离)——给标准化 agent 的团队做的运维卫生。",
+          "value": "给规模化管理 agent 配置的组织做团队版:卖 agent 配置的安全 + 可复现。",
+          "risk": "单一厂商 agent 的配置管理;偏薄,而 Codex 可能原生内置版本化配置。"
+        }
+      }
     },
     {
       "title": "nyblnet/bento",
       "claim": "nyblnet/bento — Bento, the office suite that fits in a file",
       "score": 8,
-      "why_good": "Bento's lightweight approach to office productivity tools could appeal to remote and hybrid teams seeking efficiency without the bloat of traditional suites.",
-      "value": "Businesses could pay for premium features or integrations, creating a subscription model for teams that want enhanced collaboration tools.",
-      "risk": "The project may struggle against established players like Microsoft and Google, who could easily replicate its features and leverage their existing user bases.",
+      "why_good": "A whole office suite (view/edit/data/collab) packed into a single HTML file — a radically portable, no-install take on documents.",
+      "value": "Freemium: free single-file suite, paid collaboration/hosting/enterprise; portability is a genuine wedge vs cloud suites.",
+      "risk": "Google/Microsoft own docs; 'in one file' is neat but must win real workflows, not just novelty.",
       "evidence": [
         "https://github.com/nyblnet/bento",
         "2,472★",
@@ -4725,15 +4885,23 @@
       ],
       "id": "28-nyblnet-bento",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:30Z"
+      "posted_at": "2026-07-27T10:50:30Z",
+      "i18n": {
+        "zh": {
+          "claim": "nyblnet/bento —— 装进一个文件里的办公套件。",
+          "why_good": "把整套办公套件(查看/编辑/数据/协作)塞进一个 HTML 文件——一种极致可移植、免安装的文档做法。",
+          "value": "免费增值:单文件套件免费,协作/托管/企业收费;可移植性相对云套件是真实切口。",
+          "risk": "Google/微软掌控文档;装进一个文件 很妙,但要赢真实工作流,不能只靠新奇。"
+        }
+      }
     },
     {
       "title": "lopopolo/harness-engineering",
       "claim": "lopopolo/harness-engineering — 🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
       "score": 8,
-      "why_good": "Harness engineering is a niche field with growing demand for specialized knowledge and tools, which can lead to a dedicated user base.",
-      "value": "Companies in industries reliant on harness engineering could subscribe for premium access to curated content, tools, and expert consulting services.",
-      "risk": "The project may struggle to scale if it remains too focused on niche applications, making it vulnerable to larger players offering broader solutions.",
+      "why_good": "One engineer's anthology + field guide + agent-context bundle for 'harness engineering' — useful reference, but a personal knowledge bundle, not a product.",
+      "value": "No real monetization; it's curated know-how, at best training/consulting.",
+      "risk": "Content/personal bundle, not a company; the patterns get absorbed by the agent tools.",
       "evidence": [
         "https://github.com/lopopolo/harness-engineering",
         "2,371★",
@@ -4749,15 +4917,23 @@
       "tags": [],
       "id": "27-lopopolo-harness-engineering",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:26Z"
+      "posted_at": "2026-07-27T10:50:26Z",
+      "i18n": {
+        "zh": {
+          "claim": "lopopolo/harness-engineering —— Ryan Lopopolo 的选集、实战指南与 agent 上下文包。",
+          "why_good": "某工程师关于 harness engineering 的选集 + 指南 + agent 上下文包——有用的参考,但是个人知识包,不是产品。",
+          "value": "没有真正变现;它是精选 know-how,顶多做培训/咨询。",
+          "risk": "是内容/个人包不是公司;范式会被 agent 工具吸收。"
+        }
+      }
     },
     {
       "title": "oso95/scroll-world",
       "claim": "oso95/scroll-world — A skill that turn any brand into a scrollable 3D world",
       "score": 8,
-      "why_good": "This project taps into the growing demand for immersive brand experiences, allowing companies to showcase their products in a novel way.",
-      "value": "Brands could pay for customizable 3D environments to enhance customer engagement and drive sales through interactive experiences.",
-      "risk": "The concept may struggle to gain traction if larger tech companies integrate similar features into their existing platforms.",
+      "why_good": "A skill that turns any brand into a scrollable 3D world — eye-catching for marketing, but a single skill/effect, not a platform.",
+      "value": "Could sell as a service to agencies/brands wanting 3D landing experiences; project-based, not recurring.",
+      "risk": "A skill/effect, easily cloned; 3D brand sites are a boutique niche, not a scalable product.",
       "evidence": [
         "https://github.com/oso95/scroll-world",
         "5,417★",
@@ -4773,15 +4949,23 @@
       "tags": [],
       "id": "25-oso95-scroll-world",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:17Z"
+      "posted_at": "2026-07-27T10:50:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "oso95/scroll-world —— 一个把任意品牌变成可滚动 3D 世界的技能。",
+          "why_good": "一个把品牌变成可滚动 3D 世界的技能——营销上抓眼球,但它是单个技能/效果,不是平台。",
+          "value": "可作为服务卖给想要 3D 落地体验的代理商/品牌;项目制,非经常性收入。",
+          "risk": "是技能/效果、易被抄;3D 品牌站是精品细分,不是可规模化产品。"
+        }
+      }
     },
     {
       "title": "img2threejs/img2threejs",
       "claim": "img2threejs/img2threejs — Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token",
       "score": 8,
-      "why_good": "The ability to automatically convert 2D images into 3D models can significantly streamline workflows in industries like gaming and virtual reality.",
-      "value": "Game developers and animators could pay for a subscription service that offers high-quality, customizable 3D model generation from images.",
-      "risk": "The technology may be too niche, and larger companies could easily integrate similar features into their existing tools, limiting market potential.",
+      "why_good": "Rebuilds a reference image's object as clean, procedural Three.js code — bridges 2D references to editable 3D, a real gap for web/3D devs.",
+      "value": "Usage API for design/3D tools and agencies turning images into editable scenes; per-generation pricing.",
+      "risk": "Image-to-3D is a hot, hard research area; quality/consistency must beat the fast-moving 3D-gen models.",
       "evidence": [
         "https://github.com/img2threejs/img2threejs",
         "6,448★",
@@ -4803,7 +4987,15 @@
       ],
       "id": "24-img2threejs-img2threejs",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:13Z"
+      "posted_at": "2026-07-27T10:50:13Z",
+      "i18n": {
+        "zh": {
+          "claim": "img2threejs/img2threejs —— 把参考图里的物体重建为纯代码、程序化、带质量门的 Three.js。",
+          "why_good": "把参考图的物体重建成干净的程序化 Three.js 代码——把 2D 参考桥接到可编辑 3D,对 web/3D 开发者是真实缺口。",
+          "value": "给 把图变成可编辑场景 的设计/3D 工具和代理商做按量 API:按生成计费。",
+          "risk": "图生 3D 是热门且难的研究区;质量/一致性要胜过快速迭代的 3D 生成模型。"
+        }
+      }
     },
     {
       "title": "Fei-Away/Codex-Dream-Skin",
@@ -4873,9 +5065,9 @@
       "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
       "claim": "Show HN: Clawk – Give coding agents a disposable Linux VM, not your laptop",
       "score": 8,
-      "why_good": "Gives coding agents a disposable Linux VM instead of your laptop — exactly the safety gap as agents run real commands. 226 pts / 159 comments: the pain resonates.",
-      "value": "Agent-sandboxing is prime paid infra: per-VM/usage billing + a managed control plane; every serious agent product needs it.",
-      "risk": "Cloud-sandbox providers (E2B, Modal, Daytona) are here and funded; differentiation + cost control are the fight.",
+      "why_good": "Gives coding agents a disposable Linux VM instead of your laptop — the safe-sandbox need every serious agent user hits.",
+      "value": "Usage-based ephemeral-VM service for agent devs/teams (the E2B lane); pay per VM-hour, enterprise isolation.",
+      "risk": "E2B, Modal, Daytona and the labs are racing on agent sandboxes; needs a speed, cost or DX edge to stand out.",
       "evidence": [
         "https://github.com/clawkwork/clawk",
         "https://news.ycombinator.com/item?id=48892859",
@@ -4891,7 +5083,15 @@
       ],
       "id": "1785146731-clawk-give-coding-agents-a-disposable-linux-vm-n",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T10:05:31Z"
+      "posted_at": "2026-07-27T10:05:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Clawk —— 给编码 agent 一台一次性 Linux VM,而不是你的笔记本。",
+          "why_good": "给编码 agent 一台一次性 Linux VM 而非你的笔记本——每个认真的 agent 用户都会撞上的安全沙箱需求。",
+          "value": "给 agent 开发者/团队做按量的临时 VM 服务(E2B 赛道):按 VM 小时计费、企业隔离。",
+          "risk": "E2B、Modal、Daytona 和各实验室都在抢 agent 沙箱;要靠速度、成本或体验优势才突出。"
+        }
+      }
     },
     {
       "title": "Juggler – an open-source GUI coding agent, by the creator of JUCE",
@@ -4929,9 +5129,9 @@
       "title": "Palmier Pro – Open-source macOS video editor built for AI",
       "claim": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
       "score": 8,
-      "why_good": "An open-source macOS video editor built AI-first — timely as AI editing explodes. 190 pts.",
-      "value": "Prosumer video tools convert to subscription fast (CapCut / Descript); 'AI-native + Mac' is a sellable wedge.",
-      "risk": "Video editing is capital-heavy to polish and Descript/CapCut/Adobe are entrenched; open-source monetization is the harder path.",
+      "why_good": "An open-source macOS video editor built for AI-driven editing — rides the demand for faster, agent-assisted video production.",
+      "value": "Freemium desktop + a pro/cloud-render tier for creators; video tools have proven willingness to pay.",
+      "risk": "CapCut/Descript/Premiere with AI are entrenched; an open editor must nail the AI-editing UX to matter.",
       "evidence": [
         "https://github.com/palmier-io/palmier-pro",
         "https://news.ycombinator.com/item?id=49022911",
@@ -4947,7 +5147,15 @@
       ],
       "id": "1785146731-palmier-pro-open-source-macos-video-editor-built",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T10:05:31Z"
+      "posted_at": "2026-07-27T10:05:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Palmier Pro —— 为 AI 打造的开源 macOS 视频编辑器。",
+          "why_good": "一个为 AI 驱动剪辑打造的开源 macOS 视频编辑器——踩在 更快、agent 辅助的视频制作 需求上。",
+          "value": "桌面免费增值 + 给创作者的专业/云渲染档;视频工具有被验证的付费意愿。",
+          "risk": "带 AI 的 CapCut/Descript/Premiere 根基深;开源编辑器要把 AI 剪辑体验做到位才有意义。"
+        }
+      }
     },
     {
       "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
