@@ -2,9 +2,9 @@
   "title": "Getting GLM 5.2 running on my slow computer",
   "claim": "Show HN: Getting GLM 5.2 running on my slow computer",
   "score": 9,
-  "why_good": "The project addresses a common pain point for users with limited computing resources, making advanced AI accessible to a broader audience.",
-  "value": "Subscription fees from users who need cloud-based processing power or premium features for running complex models on low-end devices.",
-  "risk": "The technology could be easily replicated by larger companies with more resources, leading to potential market saturation.",
+  "why_good": "A Show HN write-up on squeezing GLM-5.2 onto a slow machine — great signal that 'run big models on weak hardware' resonates, but it's a post, not a product.",
+  "value": "The opportunity is the tooling that makes this one-click; the post itself isn't a business.",
+  "risk": "A demonstration/blog, not a company; the real value goes to whoever productizes the technique (see colibri/ds4).",
   "evidence": [
     "https://github.com/JustVugg/colibri",
     "https://news.ycombinator.com/item?id=48842459",
@@ -20,5 +20,13 @@
   ],
   "id": "42-getting-glm-5-2-running-on-my-slow-computer",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T12:03:07Z"
+  "posted_at": "2026-07-27T12:03:07Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: 在我的慢电脑上把 GLM 5.2 跑起来。",
+      "why_good": "一篇把 GLM-5.2 塞进慢机器的 Show HN 记录——很好地证明弱硬件跑大模型有共鸣,但它是帖子不是产品。",
+      "value": "机会在把这件事变成一键的工具;帖子本身不是生意。",
+      "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。"
+    }
+  }
 }
