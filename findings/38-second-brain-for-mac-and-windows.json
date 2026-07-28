@@ -2,9 +2,9 @@
   "title": "Second Brain for Mac and Windows",
   "claim": "Product Hunt: Second Brain for Mac and Windows — Your AI memory, everywhere you work",
   "score": 8,
-  "why_good": "It addresses a common pain point of information overload by providing a centralized AI-driven memory solution for users across multiple platforms.",
-  "value": "Businesses could pay for premium features or subscriptions, while individual users might opt for a freemium model with in-app purchases.",
-  "risk": "Established productivity tools may integrate similar features, making it difficult for a new entrant to gain traction.",
+  "why_good": "A cross-platform 'AI memory' that follows you across apps — captures context so your assistant actually remembers, a real recall pain.",
+  "value": "Prosumer subscription for knowledge workers; the wedge is seamless capture + recall across everything you do.",
+  "risk": "Rewind/Limitless and the OS makers (Recall) are here; privacy concerns and platform-native memory are the threats.",
   "evidence": [
     "https://www.producthunt.com/r/6JNYYPRQZ2R2PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/second-brain-cloudflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "38-second-brain-for-mac-and-windows",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T11:56:21Z"
+  "posted_at": "2026-07-27T11:56:21Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Second Brain for Mac and Windows —— 你的 AI 记忆,随你工作到处都在。",
+      "why_good": "一个跨平台、跟着你在各 app 间走的 AI 记忆——捕捉上下文让助手真的记得住,真实的回忆痛点。",
+      "value": "向知识工作者收专业订阅;切口是在你做的一切之间无缝捕捉 + 回忆。",
+      "risk": "Rewind/Limitless 和操作系统厂商(Recall)都在;隐私担忧和平台原生记忆是威胁。"
+    }
+  }
 }
