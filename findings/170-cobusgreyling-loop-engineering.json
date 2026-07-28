@@ -34,7 +34,9 @@
       "claim": "cobusgreyling/loop-engineering —— 给 AI 编码 agent 做\"循环工程\"的实用范式、脚手架与 CLI 工具。",
       "why_good": "把编码 agent 的\"循环工程\"范式沉淀成脚手架 + CLI——know-how 有用,但更像范式库不是产品。",
       "value": "顶多靠培训/咨询或付费模板包变现;靠共享范式很难做成有壁垒的公司。",
-      "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。"
+      "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。",
+      "hook": "把编码 agent 的「循环工程」沉淀成脚手架 + CLI——know-how 锋利,但做产品偏薄。"
     }
-  }
+  },
+  "hook": "Codifies 'loop engineering' for coding agents into starters + CLI — sharp know-how, thin as a product."
 }
