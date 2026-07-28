@@ -29,7 +29,9 @@
       "claim": "Product Hunt: Athena by Shoplazza —— 编排你整个电商技术栈的 agent。",
       "why_good": "一个把商家整个电商栈串起来的编排 agent——对同时用一堆工具的运营者是真实痛点。",
       "value": "向电商运营按商家订阅或按 GMV 抽成;切口是一个控制台管碎片化工具。",
-      "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。"
+      "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。",
+      "hook": "一个编排 agent,统管商家的整个电商技术栈。"
     }
-  }
+  },
+  "hook": "One orchestrator agent to run a merchant's entire commerce stack."
 }
