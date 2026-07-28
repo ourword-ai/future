@@ -2,9 +2,9 @@
   "title": "Kuberwastaken/claurst",
   "claim": "Kuberwastaken/claurst — Agentic Coding for Builders who Ship",
   "score": 9,
-  "why_good": "It addresses a niche need for developers seeking streamlined agent-based coding solutions, potentially enhancing productivity in complex projects.",
-  "value": "Companies could pay for premium features or support, making money through subscriptions or enterprise licensing.",
-  "risk": "The project may struggle to differentiate itself in a crowded market where larger platforms could easily integrate similar functionalities.",
+  "why_good": "Another agentic-coding CLI with a slogan but a thin, undifferentiated pitch — hard to tell what it does better than the pack.",
+  "value": "No clear wedge to charge for yet; it competes on vibes in a saturated coding-agent field.",
+  "risk": "Undifferentiated in a brutal category owned by Claude Code / Cursor / Codex; needs a real reason to exist.",
   "evidence": [
     "https://github.com/Kuberwastaken/claurst",
     "10,144★",
@@ -27,5 +27,13 @@
   ],
   "id": "98-kuberwastaken-claurst",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:20Z"
+  "posted_at": "2026-07-27T16:27:20Z",
+  "i18n": {
+    "zh": {
+      "claim": "Kuberwastaken/claurst —— 给\"能交付的 Builder\"的智能体编码工具。",
+      "why_good": "又一个有口号但定位单薄、没差异化的智能体编码 CLI——很难说它比同类强在哪。",
+      "value": "还没有能收费的清晰切口;在饱和的编码 agent 里靠氛围竞争。",
+      "risk": "在 Claude Code/Cursor/Codex 主宰的残酷品类里没差异化;需要一个真正存在的理由。"
+    }
+  }
 }
