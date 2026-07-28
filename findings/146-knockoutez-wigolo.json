@@ -2,9 +2,9 @@
   "title": "KnockOutEZ/wigolo",
   "claim": "KnockOutEZ/wigolo — The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0",
   "score": 9,
-  "why_good": "Wigolo's local-first approach allows users to maintain privacy and control over their data, which is increasingly valued in a data-sensitive world.",
-  "value": "Businesses and developers could pay for premium features, support, or enterprise licenses, monetizing the tool's capabilities for enhanced productivity.",
-  "risk": "The project may struggle to scale as a standalone company if larger incumbents integrate similar functionalities into their existing platforms.",
+  "why_good": "Gives coding agents local-first web search/fetch/crawl over MCP with zero keys or cloud — kills a real cost + privacy pain for agent users.",
+  "value": "Freemium: free local core, paid team/enterprise tier for shared crawls, rate limits and hosted convenience.",
+  "risk": "MCP + the agent vendors may bundle web access natively, and a local crawler's coverage is hard to keep ahead of hosted search.",
   "evidence": [
     "https://github.com/KnockOutEZ/wigolo",
     "3,721★",
@@ -29,5 +29,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:13Z",
   "pick": false,
-  "pick_reason": "The project is too vague and lacks a clear monetizable product."
+  "pick_reason": "The project is too vague and lacks a clear monetizable product.",
+  "i18n": {
+    "zh": {
+      "claim": "KnockOutEZ/wigolo —— 给 AI 编码 agent 的网页入口:通过 MCP 做本地优先的搜索/抓取/爬取/调研。无需 API key、无需云、$0。",
+      "why_good": "让编码 agent 通过 MCP 做零 key、零云的本地优先网页搜索/抓取/爬取——干掉了 agent 用户真实的成本 + 隐私痛点。",
+      "value": "免费增值:本地核心免费,团队/企业版收费(共享爬取、限流、托管省心)。",
+      "risk": "MCP + agent 厂商可能原生内置网页访问,而\"本地爬虫\"的覆盖很难持续领先托管搜索。"
+    }
+  }
 }
