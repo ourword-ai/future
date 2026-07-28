@@ -33,7 +33,9 @@
       "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
       "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
       "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
-      "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。"
+      "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。",
+      "hook": "一个「git → 发布 → 搞定」的流程封装——有潜力,但真正的切口还模糊。"
     }
-  }
+  },
+  "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy."
 }
