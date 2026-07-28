@@ -2,9 +2,9 @@
   "title": "therealaleph/MasterHttpRelayVPN-RUST",
   "claim": "therealaleph/MasterHttpRelayVPN-RUST — Rust port of @masterking32's MasterHttpRelayVPN — all credit to @masterking32 for the original idea and Python implement",
   "score": 9,
-  "why_good": "The Rust implementation can offer performance and security advantages over the original Python version, appealing to developers focused on efficiency.",
-  "value": "Businesses needing secure and efficient data transmission could subscribe to a premium service, generating recurring revenue through monthly or annual plans.",
-  "risk": "The project could fail if larger VPN providers integrate similar functionality, overshadowing this solution with their established user base and resources.",
+  "why_good": "A Rust port of an existing HTTP-relay VPN — faster/safer than the original, but a reimplementation of someone else's idea, credited as such.",
+  "value": "Little standalone business; the value is engineering, not a novel product or a buyer who pays.",
+  "risk": "Not original, grey-area networking use, and no moat over the upstream project or commercial VPNs.",
   "evidence": [
     "https://github.com/therealaleph/MasterHttpRelayVPN-RUST",
     "3,661★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:39Z",
   "pick": false,
-  "pick_reason": "The project is a port of an existing tool and lacks a unique value proposition or clear monetization strategy."
+  "pick_reason": "The project is a port of an existing tool and lacks a unique value proposition or clear monetization strategy.",
+  "i18n": {
+    "zh": {
+      "claim": "therealaleph/MasterHttpRelayVPN-RUST —— @masterking32 的 MasterHttpRelayVPN 的 Rust 移植(原创归原作者)。",
+      "why_good": "把一个已有的 HTTP-relay VPN 用 Rust 重写——比原版更快/更安全,但它是别人点子的重实现,且已注明。",
+      "value": "几乎没有独立生意;价值在工程,不是新产品或愿付钱的买家。",
+      "risk": "非原创、灰色地带网络用途,相对上游项目和商业 VPN 都没护城河。"
+    }
+  }
 }
