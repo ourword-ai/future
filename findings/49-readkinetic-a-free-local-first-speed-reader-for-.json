@@ -2,9 +2,9 @@
   "title": "ReadKinetic – a free, local-first speed reader for your own books",
   "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
   "score": 8,
-  "why_good": "The local-first approach ensures user privacy and data ownership, appealing to a growing market concerned about data security.",
-  "value": "Subscription services could be offered for advanced features or integrations with e-book platforms, targeting avid readers and educational institutions.",
-  "risk": "Established reading apps or platforms may integrate similar features, overshadowing ReadKinetic's unique selling points.",
+  "why_good": "A free, local-first speed reader for your own books — a focused utility for a real habit (faster reading), privacy-friendly.",
+  "value": "Freemium: a paid sync/library/stats tier for avid readers; hard to charge much for reading UX alone.",
+  "risk": "Speed-reading is a small, skeptical niche; browser extensions and apps already do this free.",
   "evidence": [
     "https://www.readkinetic.com/app/",
     "https://news.ycombinator.com/item?id=49002344",
@@ -20,5 +20,13 @@
   ],
   "id": "49-readkinetic-a-free-local-first-speed-reader-for-",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T12:03:35Z"
+  "posted_at": "2026-07-27T12:03:35Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: ReadKinetic —— 免费、本地优先的、读你自己书的速读器。",
+      "why_good": "一个免费、本地优先、读你自己书的速读器——针对真实习惯(读更快)的聚焦小工具,且隐私友好。",
+      "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
+      "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
+    }
+  }
 }
