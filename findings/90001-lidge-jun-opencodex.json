@@ -26,5 +26,13 @@
   ],
   "id": "90001-lidge-jun-opencodex",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T07:22:17Z"
+  "posted_at": "2026-07-27T07:22:17Z",
+  "i18n": {
+    "zh": {
+      "claim": "lidge-jun/opencodex —— OpenAI Codex 与 Claude Code 的通用供应商代理:用任意 LLM(Claude、Gemini、Grok、DeepSeek、Ollama…)驱动 Codex。",
+      "why_good": "一个把 OpenAI Codex / Claude Code 指向任意模型(Gemini、Grok、DeepSeek、本地 Ollama)的通用代理——把最好的编码-agent 体验与单一厂商的模型解耦。",
+      "value": "卡在每个编码-agent 席位与模型之间:成为团队的模型路由网关——路由、花费管控、可观测性、自带模型(BYO)。",
+      "risk": "厂商可能锁定自家客户端来封杀代理;薄代理容易被商品化,除非它握住路由 + 可观测性这一层。"
+    }
+  }
 }
