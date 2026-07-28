@@ -1,5 +1,7 @@
 name: backfill-enrich
 on:
+  schedule:
+    - cron: "0 8 * * *"   # daily — continue enrich within the day's free model quota
   workflow_dispatch:
 permissions:
   contents: write
