@@ -25,5 +25,7 @@
   ],
   "id": "115-kianmhz-gooserelayvpn",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:06Z"
+  "posted_at": "2026-07-27T17:20:06Z",
+  "pick": true,
+  "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments."
 }

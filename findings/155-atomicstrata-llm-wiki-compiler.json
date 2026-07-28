@@ -27,5 +27,7 @@
   ],
   "id": "155-atomicstrata-llm-wiki-compiler",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:48Z"
+  "posted_at": "2026-07-27T20:27:48Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for structured knowledge management that organizations can implement and pay for."
 }

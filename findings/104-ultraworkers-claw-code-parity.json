@@ -19,5 +19,7 @@
   "tags": [],
   "id": "104-ultraworkers-claw-code-parity",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:44Z"
+  "posted_at": "2026-07-27T16:27:44Z",
+  "pick": false,
+  "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product."
 }

@@ -20,5 +20,7 @@
   "tags": [],
   "id": "125-nashsu-llm-wiki",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:27:52Z"
+  "posted_at": "2026-07-27T18:27:52Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable."
 }

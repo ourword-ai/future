@@ -26,5 +26,7 @@
   ],
   "id": "110-esengine-deepseek-reasonix",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:19:45Z"
+  "posted_at": "2026-07-27T17:19:45Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers."
 }

@@ -27,5 +27,7 @@
   ],
   "id": "148-gaossr-best-claude-hud",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:21Z"
+  "posted_at": "2026-07-27T20:27:21Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing."
 }

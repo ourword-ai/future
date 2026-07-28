@@ -26,5 +26,7 @@
   ],
   "id": "156-tddworks-baguette",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:53Z"
+  "posted_at": "2026-07-27T20:27:53Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific tool for mobile developers that can be monetized through subscriptions or licenses."
 }

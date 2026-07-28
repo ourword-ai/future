@@ -19,5 +19,7 @@
   "tags": [],
   "id": "142-ponponon-claude-code-src",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:12Z"
+  "posted_at": "2026-07-27T19:00:12Z",
+  "pick": false,
+  "pick_reason": "The project is too vague and lacks a clear, monetizable product."
 }

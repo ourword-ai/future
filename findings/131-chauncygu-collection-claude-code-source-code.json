@@ -19,5 +19,7 @@
   "tags": [],
   "id": "131-chauncygu-collection-claude-code-source-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:16Z"
+  "posted_at": "2026-07-27T18:28:16Z",
+  "pick": false,
+  "pick_reason": "The project is a collection of open-source code, which does not present a clear monetizable product."
 }

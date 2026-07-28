@@ -25,5 +25,7 @@
   ],
   "id": "132-opencoworkai-open-codesign",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:19Z"
+  "posted_at": "2026-07-27T18:28:19Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that simplifies AI design for non-technical users, which can be monetized."
 }

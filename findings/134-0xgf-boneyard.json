@@ -20,5 +20,7 @@
   "tags": [],
   "id": "134-0xgf-boneyard",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:59:37Z"
+  "posted_at": "2026-07-27T18:59:37Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific product that automates a common development task, making it viable for monetization."
 }

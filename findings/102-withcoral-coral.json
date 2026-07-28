@@ -20,5 +20,7 @@
   "tags": [],
   "id": "102-withcoral-coral",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:36Z"
+  "posted_at": "2026-07-27T16:27:36Z",
+  "pick": true,
+  "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing."
 }

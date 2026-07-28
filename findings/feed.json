@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T03:31:20Z",
+  "generated_at": "2026-07-28T04:00:41Z",
   "board": {
     "ideas": 178,
     "domains": 4,
@@ -366,7 +366,9 @@
       ],
       "id": "175-open-gsd-gsd-core",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:47Z"
+      "posted_at": "2026-07-28T00:07:47Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing."
     },
     {
       "title": "StarTrail-org/PixelRAG",
@@ -396,7 +398,9 @@
       ],
       "id": "174-startrail-org-pixelrag",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:44Z"
+      "posted_at": "2026-07-28T00:07:44Z",
+      "pick": false,
+      "pick_reason": "The project is too vague and lacks a clear monetizable product."
     },
     {
       "title": "nexu-io/html-anything",
@@ -426,7 +430,9 @@
       ],
       "id": "173-nexu-io-html-anything",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:41Z"
+      "posted_at": "2026-07-28T00:07:41Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that automates HTML generation, making it a viable tool for non-technical users."
     },
     {
       "title": "Yu9191/wloc",
@@ -449,7 +455,9 @@
       "tags": [],
       "id": "172-yu9191-wloc",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:38Z"
+      "posted_at": "2026-07-28T00:07:38Z",
+      "pick": false,
+      "pick_reason": "The project is a modification tool for existing apps and lacks a clear monetizable product."
     },
     {
       "title": "omnigent-ai/omnigent",
@@ -479,7 +487,9 @@
       ],
       "id": "171-omnigent-ai-omnigent",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:35Z"
+      "posted_at": "2026-07-28T00:07:35Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services."
     },
     {
       "title": "cobusgreyling/loop-engineering",
@@ -509,7 +519,9 @@
       ],
       "id": "170-cobusgreyling-loop-engineering",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:32Z"
+      "posted_at": "2026-07-28T00:07:32Z",
+      "pick": true,
+      "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized."
     },
     {
       "title": "DietrichGebert/ponytail",
@@ -539,7 +551,9 @@
       ],
       "id": "169-dietrichgebert-ponytail",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:29Z"
+      "posted_at": "2026-07-28T00:07:29Z",
+      "pick": false,
+      "pick_reason": "The project is too vague and resembles a concept rather than a clear, monetizable product."
     },
     {
       "title": "oversecured/Samsung_Vulnerabilities",
@@ -626,7 +640,9 @@
       ],
       "id": "166-dinosn-fastjson-jsontype-rce-lab",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T22:13:15Z"
+      "posted_at": "2026-07-27T22:13:15Z",
+      "pick": true,
+      "pick_reason": "The project provides a specific security solution that can be monetized by offering a defensive scanner for companies using fastjson."
     },
     {
       "title": "Kritt-ai/open-kritt",
@@ -656,7 +672,9 @@
       ],
       "id": "165-kritt-ai-open-kritt",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T22:13:11Z"
+      "posted_at": "2026-07-27T22:13:11Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for automating vulnerability detection, which companies would pay for."
     },
     {
       "title": "2aronS/Duel-Agents",
@@ -775,7 +793,9 @@
       ],
       "id": "161-514-labs-dnsglobe",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:52:07Z"
+      "posted_at": "2026-07-27T20:52:07Z",
+      "pick": true,
+      "pick_reason": "The tool provides a specific solution for DNS monitoring that can be monetized through subscriptions or usage fees."
     },
     {
       "title": "yb2460/harness-anything",
@@ -805,7 +825,9 @@
       ],
       "id": "160-yb2460-harness-anything",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:52:02Z"
+      "posted_at": "2026-07-27T20:52:02Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product concept for a unified AI tool management interface that can be monetized."
     },
     {
       "title": "tigicion/dao-code",
@@ -836,7 +858,9 @@
       ],
       "id": "159-tigicion-dao-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:51:58Z"
+      "posted_at": "2026-07-27T20:51:58Z",
+      "pick": false,
+      "pick_reason": "The project is open-source and lacks a clear monetizable product."
     },
     {
       "title": "Remux – an open-source tmux workspace designed for iPhone",
@@ -860,7 +884,9 @@
       ],
       "id": "158-remux-an-open-source-tmux-workspace-designed-for",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T20:41:32Z"
+      "posted_at": "2026-07-27T20:41:32Z",
+      "pick": false,
+      "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy."
     },
     {
       "title": "Albert-Weasker/niubi_guard",
@@ -889,7 +915,9 @@
       ],
       "id": "157-albert-weasker-niubi-guard",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:57Z"
+      "posted_at": "2026-07-27T20:27:57Z",
+      "pick": false,
+      "pick_reason": "The project is an open-source tool that lacks a clear monetizable product or service."
     },
     {
       "title": "tddworks/baguette",
@@ -919,7 +947,9 @@
       ],
       "id": "156-tddworks-baguette",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:53Z"
+      "posted_at": "2026-07-27T20:27:53Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific tool for mobile developers that can be monetized through subscriptions or licenses."
     },
     {
       "title": "atomicstrata/llm-wiki-compiler",
@@ -950,7 +980,9 @@
       ],
       "id": "155-atomicstrata-llm-wiki-compiler",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:48Z"
+      "posted_at": "2026-07-27T20:27:48Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for structured knowledge management that organizations can implement and pay for."
     },
     {
       "title": "afar1/fieldtheory-cli",
@@ -979,7 +1011,9 @@
       ],
       "id": "154-afar1-fieldtheory-cli",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:45Z"
+      "posted_at": "2026-07-27T20:27:45Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for efficient bookmark management and workflow automation that can be monetized."
     },
     {
       "title": "AaronL725/grok-register",
@@ -1009,7 +1043,9 @@
       ],
       "id": "153-aaronl725-grok-register",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:41Z"
+      "posted_at": "2026-07-27T20:27:41Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for businesses needing bulk account management, which can be monetized."
     },
     {
       "title": "Helvesec/rmux",
@@ -1039,7 +1075,9 @@
       ],
       "id": "152-helvesec-rmux",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:37Z"
+      "posted_at": "2026-07-27T20:27:37Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for automation and integration that can be monetized through a subscription or licensing model."
     },
     {
       "title": "TestSprite/testsprite-cli",
@@ -1069,7 +1107,9 @@
       ],
       "id": "151-testsprite-testsprite-cli",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:33Z"
+      "posted_at": "2026-07-27T20:27:33Z",
+      "pick": true,
+      "pick_reason": "Automated testing tools are in demand, and a CLI product can be monetized through subscriptions or licenses."
     },
     {
       "title": "code-yeongyu/lazycodex",
@@ -1099,7 +1139,9 @@
       ],
       "id": "150-code-yeongyu-lazycodex",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:29Z"
+      "posted_at": "2026-07-27T20:27:29Z",
+      "pick": true,
+      "pick_reason": "It offers a specific solution to a common problem in software development that can be monetized."
     },
     {
       "title": "ifixai-ai/iFixAi",
@@ -1129,7 +1171,9 @@
       ],
       "id": "149-ifixai-ai-ifixai",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:25Z"
+      "posted_at": "2026-07-27T20:27:25Z",
+      "pick": true,
+      "pick_reason": "The project addresses a growing need for independent auditing of AI agents, which can be developed into a monetizable service."
     },
     {
       "title": "GaoSSR/best-claude-hud",
@@ -1160,7 +1204,9 @@
       ],
       "id": "148-gaossr-best-claude-hud",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:21Z"
+      "posted_at": "2026-07-27T20:27:21Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific tool for AI developers that can be monetized through subscriptions or licensing."
     },
     {
       "title": "crafter-station/petdex",
@@ -1191,7 +1237,9 @@
       ],
       "id": "147-crafter-station-petdex",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:17Z"
+      "posted_at": "2026-07-27T20:27:17Z",
+      "pick": false,
+      "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy."
     },
     {
       "title": "KnockOutEZ/wigolo",
@@ -1222,7 +1270,9 @@
       ],
       "id": "146-knockoutez-wigolo",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T20:27:13Z"
+      "posted_at": "2026-07-27T20:27:13Z",
+      "pick": false,
+      "pick_reason": "The project is too vague and lacks a clear monetizable product."
     },
     {
       "title": "Open-Legal-Products/mike",
@@ -1249,7 +1299,9 @@
       ],
       "id": "145-open-legal-products-mike",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:25Z"
+      "posted_at": "2026-07-27T19:00:25Z",
+      "pick": true,
+      "pick_reason": "The platform provides a clear product that can be monetized by offering affordable legal resources for small businesses."
     },
     {
       "title": "teamchong/pxpipe",
@@ -1273,7 +1325,9 @@
       "tags": [],
       "id": "144-teamchong-pxpipe",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:21Z"
+      "posted_at": "2026-07-27T19:00:21Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear solution to reduce costs in AI applications, which can be monetized by targeting developers looking to optimize their token usage."
     },
     {
       "title": "tanbiralam/claude-code",
@@ -1299,7 +1353,9 @@
       ],
       "id": "143-tanbiralam-claude-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:17Z"
+      "posted_at": "2026-07-27T19:00:17Z",
+      "pick": true,
+      "pick_reason": "The tool offers a clear product that enhances coding efficiency and can be monetized through subscriptions or licensing."
     },
     {
       "title": "ponponon/claude_code_src",
@@ -1322,7 +1378,9 @@
       "tags": [],
       "id": "142-ponponon-claude-code-src",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:12Z"
+      "posted_at": "2026-07-27T19:00:12Z",
+      "pick": false,
+      "pick_reason": "The project is too vague and lacks a clear, monetizable product."
     },
     {
       "title": "codeaashu/claude-code",
@@ -1351,7 +1409,9 @@
       ],
       "id": "141-codeaashu-claude-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:08Z"
+      "posted_at": "2026-07-27T19:00:08Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that provides AI-driven coding assistance, which can be monetized through subscriptions or licensing."
     },
     {
       "title": "emdash-cms/emdash",
@@ -1381,7 +1441,9 @@
       ],
       "id": "140-emdash-cms-emdash",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:04Z"
+      "posted_at": "2026-07-27T19:00:04Z",
+      "pick": true,
+      "pick_reason": "EmDash offers a clear product that can be monetized by targeting developers looking for modern CMS solutions."
     },
     {
       "title": "freecodexyz/free-code",
@@ -1404,7 +1466,9 @@
       "tags": [],
       "id": "139-freecodexyz-free-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T19:00:00Z"
+      "posted_at": "2026-07-27T19:00:00Z",
+      "pick": false,
+      "pick_reason": "The project is a stripped-down version of an existing AI coding assistant, lacking a unique monetizable product."
     },
     {
       "title": "fathah/hermes-desktop",
@@ -1434,7 +1498,9 @@
       ],
       "id": "138-fathah-hermes-desktop",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:59:55Z"
+      "posted_at": "2026-07-27T18:59:55Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that simplifies complex systems for non-technical users, which can be monetized."
     },
     {
       "title": "yasasbanukaofficial/claude-code",
@@ -1462,7 +1528,9 @@
       ],
       "id": "137-yasasbanukaofficial-claude-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:59:50Z"
+      "posted_at": "2026-07-27T18:59:50Z",
+      "pick": true,
+      "pick_reason": "The project offers a customizable AI agent framework that developers can use to create specific applications, providing a clear product for monetization."
     },
     {
       "title": "garrytan/gbrain",
@@ -1486,7 +1554,9 @@
       "tags": [],
       "id": "136-garrytan-gbrain",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:59:46Z"
+      "posted_at": "2026-07-27T18:59:46Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for automating workflows using AI agents, which businesses can monetize."
     },
     {
       "title": "claude-code-best/claude-code",
@@ -1510,7 +1580,9 @@
       "tags": [],
       "id": "135-claude-code-best-claude-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:59:42Z"
+      "posted_at": "2026-07-27T18:59:42Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for secure and reliable code execution that can be monetized in enterprise settings."
     },
     {
       "title": "0xGF/boneyard",
@@ -1534,7 +1606,9 @@
       "tags": [],
       "id": "134-0xgf-boneyard",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:59:37Z"
+      "posted_at": "2026-07-27T18:59:37Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific product that automates a common development task, making it viable for monetization."
     },
     {
       "title": "CoreBunch/Instatic",
@@ -1564,7 +1638,9 @@
       ],
       "id": "133-corebunch-instatic",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:23Z"
+      "posted_at": "2026-07-27T18:28:23Z",
+      "pick": true,
+      "pick_reason": "It offers a clear product that can be monetized through hosting services or premium features."
     },
     {
       "title": "OpenCoworkAI/open-codesign",
@@ -1593,7 +1669,9 @@
       ],
       "id": "132-opencoworkai-open-codesign",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:19Z"
+      "posted_at": "2026-07-27T18:28:19Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that simplifies AI design for non-technical users, which can be monetized."
     },
     {
       "title": "chauncygu/collection-claude-code-source-code",
@@ -1616,7 +1694,9 @@
       "tags": [],
       "id": "131-chauncygu-collection-claude-code-source-code",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:16Z"
+      "posted_at": "2026-07-27T18:28:16Z",
+      "pick": false,
+      "pick_reason": "The project is a collection of open-source code, which does not present a clear monetizable product."
     },
     {
       "title": "getagentseal/codeburn",
@@ -1647,7 +1727,9 @@
       ],
       "id": "130-getagentseal-codeburn",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:12Z"
+      "posted_at": "2026-07-27T18:28:12Z",
+      "pick": true,
+      "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product."
     },
     {
       "title": "crynta/terax-ai",
@@ -1677,7 +1759,9 @@
       ],
       "id": "129-crynta-terax-ai",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:08Z"
+      "posted_at": "2026-07-27T18:28:08Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing."
     },
     {
       "title": "simplifaisoul/osiris",
@@ -1701,7 +1785,9 @@
       "tags": [],
       "id": "128-simplifaisoul-osiris",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:04Z"
+      "posted_at": "2026-07-27T18:28:04Z",
+      "pick": true,
+      "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets."
     },
     {
       "title": "EKKOLearnAI/hermes-studio",
@@ -1731,7 +1817,9 @@
       ],
       "id": "127-ekkolearnai-hermes-studio",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:28:00Z"
+      "posted_at": "2026-07-27T18:28:00Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for managing AI chat agents with potential for monetization through subscription or usage fees."
     },
     {
       "title": "open-multi-agent/open-multi-agent",
@@ -1761,7 +1849,9 @@
       ],
       "id": "126-open-multi-agent-open-multi-agent",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:27:56Z"
+      "posted_at": "2026-07-27T18:27:56Z",
+      "pick": true,
+      "pick_reason": "The framework offers a clear product for developers to build and monetize AI agent orchestration solutions."
     },
     {
       "title": "nashsu/llm_wiki",
@@ -1785,7 +1875,9 @@
       "tags": [],
       "id": "125-nashsu-llm-wiki",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:27:52Z"
+      "posted_at": "2026-07-27T18:27:52Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable."
     },
     {
       "title": "tashfeenahmed/freellmapi",
@@ -1809,7 +1901,9 @@
       "tags": [],
       "id": "124-tashfeenahmed-freellmapi",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:27:49Z"
+      "posted_at": "2026-07-27T18:27:49Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that aggregates free LLM access, which can be monetized by charging for premium features or usage."
     },
     {
       "title": "NanmiCoder/cc-haha",
@@ -1833,7 +1927,9 @@
       "tags": [],
       "id": "123-nanmicoder-cc-haha",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:27:45Z"
+      "posted_at": "2026-07-27T18:27:45Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized."
     },
     {
       "title": "nexu-io/open-design",
@@ -1863,7 +1959,9 @@
       ],
       "id": "122-nexu-io-open-design",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T18:27:41Z"
+      "posted_at": "2026-07-27T18:27:41Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized."
     },
     {
       "title": "tastyeffectco/sandboxd",
@@ -1893,7 +1991,9 @@
       ],
       "id": "121-tastyeffectco-sandboxd",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:31Z"
+      "posted_at": "2026-07-27T17:20:31Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product for enterprises to build and test AI applications securely, which can be monetized."
     },
     {
       "title": "cosmtrek/mindwalk",
@@ -1917,7 +2017,9 @@
       "tags": [],
       "id": "120-cosmtrek-mindwalk",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:26Z"
+      "posted_at": "2026-07-27T17:20:26Z",
+      "pick": true,
+      "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding."
     },
     {
       "title": "nethical6/conversation-steganography",
@@ -1944,7 +2046,9 @@
       ],
       "id": "119-nethical6-conversation-steganography",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:22Z"
+      "posted_at": "2026-07-27T17:20:22Z",
+      "pick": true,
+      "pick_reason": "The project offers a unique product for secure communication that can be monetized."
     },
     {
       "title": "YTwsy/OpenSurge-for-Mac",
@@ -1974,7 +2078,9 @@
       ],
       "id": "118-ytwsy-opensurge-for-mac",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:18Z"
+      "posted_at": "2026-07-27T17:20:18Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized."
     },
     {
       "title": "Gitlawb/zero",
@@ -2004,7 +2110,9 @@
       ],
       "id": "117-gitlawb-zero",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:15Z"
+      "posted_at": "2026-07-27T17:20:15Z",
+      "pick": true,
+      "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers."
     },
     {
       "title": "devenjarvis/lathe",
@@ -2028,7 +2136,9 @@
       "tags": [],
       "id": "116-devenjarvis-lathe",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:10Z"
+      "posted_at": "2026-07-27T17:20:10Z",
+      "pick": false,
+      "pick_reason": "The project is too vague and resembles a content generation tool without a clear monetizable product."
     },
     {
       "title": "Kianmhz/GooseRelayVPN",
@@ -2057,7 +2167,9 @@
       ],
       "id": "115-kianmhz-gooserelayvpn",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:06Z"
+      "posted_at": "2026-07-27T17:20:06Z",
+      "pick": true,
+      "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments."
     },
     {
       "title": "maaslalani/sheets",
@@ -2081,7 +2193,9 @@
       "tags": [],
       "id": "114-maaslalani-sheets",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:20:01Z"
+      "posted_at": "2026-07-27T17:20:01Z",
+      "pick": true,
+      "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases."
     },
     {
       "title": "chattocorp/chatto",
@@ -2111,7 +2225,9 @@
       ],
       "id": "113-chattocorp-chatto",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:19:58Z"
+      "posted_at": "2026-07-27T17:19:58Z",
+      "pick": true,
+      "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services."
     },
     {
       "title": "perplexityai/bumblebee",
@@ -2139,7 +2255,9 @@
       ],
       "id": "112-perplexityai-bumblebee",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:19:53Z"
+      "posted_at": "2026-07-27T17:19:53Z",
+      "pick": true,
+      "pick_reason": "The tool provides a specific solution for security and compliance in software development, which can be monetized."
     },
     {
       "title": "kunchenguid/no-mistakes",
@@ -2163,7 +2281,9 @@
       "tags": [],
       "id": "111-kunchenguid-no-mistakes",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:19:49Z"
+      "posted_at": "2026-07-27T17:19:49Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams."
     },
     {
       "title": "esengine/DeepSeek-Reasonix",
@@ -2193,7 +2313,9 @@
       ],
       "id": "110-esengine-deepseek-reasonix",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T17:19:45Z"
+      "posted_at": "2026-07-27T17:19:45Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific AI coding tool that can be monetized through subscriptions or licenses for developers."
     },
     {
       "title": "Jacquard, a programming language for AI-written, human-reviewed code",
@@ -2247,7 +2369,9 @@
       ],
       "id": "108-nubjs-nub",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:28:01Z"
+      "posted_at": "2026-07-27T16:28:01Z",
+      "pick": true,
+      "pick_reason": "Nub offers a clear product that simplifies Node.js development, which can be monetized through subscriptions or licensing."
     },
     {
       "title": "Open-Less/openless",
@@ -2277,7 +2401,9 @@
       ],
       "id": "107-open-less-openless",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:56Z"
+      "posted_at": "2026-07-27T16:27:56Z",
+      "pick": true,
+      "pick_reason": "The project offers a clear product that enhances productivity through AI-polished text generation, which can be monetized."
     },
     {
       "title": "tokio-rs/topcoat",
@@ -2301,7 +2427,9 @@
       "tags": [],
       "id": "106-tokio-rs-topcoat",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:52Z"
+      "posted_at": "2026-07-27T16:27:52Z",
+      "pick": false,
+      "pick_reason": "It is a framework for building web apps, which is too vague and competitive for a small founder to monetize effectively."
     },
     {
       "title": "Achilng/floral-notepaper",
@@ -2331,7 +2459,9 @@
       ],
       "id": "105-achilng-floral-notepaper",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:48Z"
+      "posted_at": "2026-07-27T16:27:48Z",
+      "pick": true,
+      "pick_reason": "The project offers a unique product with a clear target market that can be monetized through subscriptions or one-time purchases."
     },
     {
       "title": "ultraworkers/claw-code-parity",
@@ -2354,7 +2484,9 @@
       "tags": [],
       "id": "104-ultraworkers-claw-code-parity",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:44Z"
+      "posted_at": "2026-07-27T16:27:44Z",
+      "pick": false,
+      "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product."
     },
     {
       "title": "therealaleph/MasterHttpRelayVPN-RUST",
@@ -2383,7 +2515,9 @@
       ],
       "id": "103-therealaleph-masterhttprelayvpn-rust",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:39Z"
+      "posted_at": "2026-07-27T16:27:39Z",
+      "pick": false,
+      "pick_reason": "The project is a port of an existing tool and lacks a unique value proposition or clear monetization strategy."
     },
     {
       "title": "withcoral/coral",
@@ -2407,7 +2541,9 @@
       "tags": [],
       "id": "102-withcoral-coral",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:36Z"
+      "posted_at": "2026-07-27T16:27:36Z",
+      "pick": true,
+      "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing."
     },
     {
       "title": "AprilNEA/OpenLogi",
@@ -2437,7 +2573,9 @@
       ],
       "id": "101-aprilnea-openlogi",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:32Z"
+      "posted_at": "2026-07-27T16:27:32Z",
+      "pick": true,
+      "pick_reason": "There is a clear product that addresses a specific need for privacy-conscious users looking for an alternative to existing software."
     },
     {
       "title": "h4ckf0r0day/obscura",
@@ -2467,7 +2605,9 @@
       ],
       "id": "100-h4ckf0r0day-obscura",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:28Z"
+      "posted_at": "2026-07-27T16:27:28Z",
+      "pick": true,
+      "pick_reason": "The project offers a specific tool for AI agents to scrape dynamic web content, which can be monetized as a software product."
     },
     {
       "title": "BigPizzaV3/CodexPlusPlus",

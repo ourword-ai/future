@@ -26,5 +26,7 @@
   ],
   "id": "140-emdash-cms-emdash",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:04Z"
+  "posted_at": "2026-07-27T19:00:04Z",
+  "pick": true,
+  "pick_reason": "EmDash offers a clear product that can be monetized by targeting developers looking for modern CMS solutions."
 }

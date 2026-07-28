@@ -20,5 +20,7 @@
   "tags": [],
   "id": "120-cosmtrek-mindwalk",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:26Z"
+  "posted_at": "2026-07-27T17:20:26Z",
+  "pick": true,
+  "pick_reason": "The project offers a unique visualization tool that can be monetized by targeting developers and teams needing better codebase understanding."
 }

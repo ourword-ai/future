@@ -26,5 +26,7 @@
   ],
   "id": "151-testsprite-testsprite-cli",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:33Z"
+  "posted_at": "2026-07-27T20:27:33Z",
+  "pick": true,
+  "pick_reason": "Automated testing tools are in demand, and a CLI product can be monetized through subscriptions or licenses."
 }

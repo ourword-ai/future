@@ -22,5 +22,7 @@
   ],
   "id": "143-tanbiralam-claude-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:17Z"
+  "posted_at": "2026-07-27T19:00:17Z",
+  "pick": true,
+  "pick_reason": "The tool offers a clear product that enhances coding efficiency and can be monetized through subscriptions or licensing."
 }

@@ -20,5 +20,7 @@
   "tags": [],
   "id": "116-devenjarvis-lathe",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:10Z"
+  "posted_at": "2026-07-27T17:20:10Z",
+  "pick": false,
+  "pick_reason": "The project is too vague and resembles a content generation tool without a clear monetizable product."
 }

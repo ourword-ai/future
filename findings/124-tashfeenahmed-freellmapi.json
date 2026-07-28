@@ -20,5 +20,7 @@
   "tags": [],
   "id": "124-tashfeenahmed-freellmapi",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:27:49Z"
+  "posted_at": "2026-07-27T18:27:49Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that aggregates free LLM access, which can be monetized by charging for premium features or usage."
 }

@@ -26,5 +26,7 @@
   ],
   "id": "171-omnigent-ai-omnigent",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:35Z"
+  "posted_at": "2026-07-28T00:07:35Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services."
 }

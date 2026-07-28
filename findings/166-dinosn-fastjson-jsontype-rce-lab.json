@@ -26,5 +26,7 @@
   ],
   "id": "166-dinosn-fastjson-jsontype-rce-lab",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T22:13:15Z"
+  "posted_at": "2026-07-27T22:13:15Z",
+  "pick": true,
+  "pick_reason": "The project provides a specific security solution that can be monetized by offering a defensive scanner for companies using fastjson."
 }

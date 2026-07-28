@@ -26,5 +26,7 @@
   ],
   "id": "101-aprilnea-openlogi",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:32Z"
+  "posted_at": "2026-07-27T16:27:32Z",
+  "pick": true,
+  "pick_reason": "There is a clear product that addresses a specific need for privacy-conscious users looking for an alternative to existing software."
 }

@@ -26,5 +26,7 @@
   ],
   "id": "117-gitlawb-zero",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:15Z"
+  "posted_at": "2026-07-27T17:20:15Z",
+  "pick": true,
+  "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers."
 }

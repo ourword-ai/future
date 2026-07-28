@@ -26,5 +26,7 @@
   ],
   "id": "118-ytwsy-opensurge-for-mac",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:18Z"
+  "posted_at": "2026-07-27T17:20:18Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized."
 }

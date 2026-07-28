@@ -20,5 +20,7 @@
   "tags": [],
   "id": "128-simplifaisoul-osiris",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:04Z"
+  "posted_at": "2026-07-27T18:28:04Z",
+  "pick": true,
+  "pick_reason": "The project offers a specialized OSINT dashboard that can be monetized for niche markets."
 }

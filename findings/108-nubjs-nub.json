@@ -26,5 +26,7 @@
   ],
   "id": "108-nubjs-nub",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:28:01Z"
+  "posted_at": "2026-07-27T16:28:01Z",
+  "pick": true,
+  "pick_reason": "Nub offers a clear product that simplifies Node.js development, which can be monetized through subscriptions or licensing."
 }

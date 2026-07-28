@@ -26,5 +26,7 @@
   ],
   "id": "129-crynta-terax-ai",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:08Z"
+  "posted_at": "2026-07-27T18:28:08Z",
+  "pick": true,
+  "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing."
 }

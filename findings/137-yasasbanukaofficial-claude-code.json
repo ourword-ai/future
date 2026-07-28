@@ -24,5 +24,7 @@
   ],
   "id": "137-yasasbanukaofficial-claude-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:59:50Z"
+  "posted_at": "2026-07-27T18:59:50Z",
+  "pick": true,
+  "pick_reason": "The project offers a customizable AI agent framework that developers can use to create specific applications, providing a clear product for monetization."
 }

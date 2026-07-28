@@ -26,5 +26,7 @@
   ],
   "id": "126-open-multi-agent-open-multi-agent",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:27:56Z"
+  "posted_at": "2026-07-27T18:27:56Z",
+  "pick": true,
+  "pick_reason": "The framework offers a clear product for developers to build and monetize AI agent orchestration solutions."
 }

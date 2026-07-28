@@ -27,5 +27,7 @@
   ],
   "id": "146-knockoutez-wigolo",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:13Z"
+  "posted_at": "2026-07-27T20:27:13Z",
+  "pick": false,
+  "pick_reason": "The project is too vague and lacks a clear monetizable product."
 }

@@ -26,5 +26,7 @@
   ],
   "id": "161-514-labs-dnsglobe",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:52:07Z"
+  "posted_at": "2026-07-27T20:52:07Z",
+  "pick": true,
+  "pick_reason": "The tool provides a specific solution for DNS monitoring that can be monetized through subscriptions or usage fees."
 }

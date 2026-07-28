@@ -20,5 +20,7 @@
   "tags": [],
   "id": "106-tokio-rs-topcoat",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T16:27:52Z"
+  "posted_at": "2026-07-27T16:27:52Z",
+  "pick": false,
+  "pick_reason": "It is a framework for building web apps, which is too vague and competitive for a small founder to monetize effectively."
 }

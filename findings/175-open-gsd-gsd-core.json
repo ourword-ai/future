@@ -25,5 +25,7 @@
   ],
   "id": "175-open-gsd-gsd-core",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:47Z"
+  "posted_at": "2026-07-28T00:07:47Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing."
 }

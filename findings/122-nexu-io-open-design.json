@@ -26,5 +26,7 @@
   ],
   "id": "122-nexu-io-open-design",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:27:41Z"
+  "posted_at": "2026-07-27T18:27:41Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized."
 }

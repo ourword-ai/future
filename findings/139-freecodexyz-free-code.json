@@ -19,5 +19,7 @@
   "tags": [],
   "id": "139-freecodexyz-free-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:00Z"
+  "posted_at": "2026-07-27T19:00:00Z",
+  "pick": false,
+  "pick_reason": "The project is a stripped-down version of an existing AI coding assistant, lacking a unique monetizable product."
 }

@@ -20,5 +20,7 @@
   "tags": [],
   "id": "114-maaslalani-sheets",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:01Z"
+  "posted_at": "2026-07-27T17:20:01Z",
+  "pick": true,
+  "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases."
 }

@@ -26,5 +26,7 @@
   ],
   "id": "127-ekkolearnai-hermes-studio",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:00Z"
+  "posted_at": "2026-07-27T18:28:00Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for managing AI chat agents with potential for monetization through subscription or usage fees."
 }

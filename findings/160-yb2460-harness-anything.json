@@ -26,5 +26,7 @@
   ],
   "id": "160-yb2460-harness-anything",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:52:02Z"
+  "posted_at": "2026-07-27T20:52:02Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product concept for a unified AI tool management interface that can be monetized."
 }

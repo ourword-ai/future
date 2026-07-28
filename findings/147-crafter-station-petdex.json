@@ -27,5 +27,7 @@
   ],
   "id": "147-crafter-station-petdex",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:17Z"
+  "posted_at": "2026-07-27T20:27:17Z",
+  "pick": false,
+  "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy."
 }

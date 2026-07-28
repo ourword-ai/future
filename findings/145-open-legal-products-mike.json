@@ -23,5 +23,7 @@
   ],
   "id": "145-open-legal-products-mike",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:25Z"
+  "posted_at": "2026-07-27T19:00:25Z",
+  "pick": true,
+  "pick_reason": "The platform provides a clear product that can be monetized by offering affordable legal resources for small businesses."
 }

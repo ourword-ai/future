@@ -20,5 +20,7 @@
   "tags": [],
   "id": "123-nanmicoder-cc-haha",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:27:45Z"
+  "posted_at": "2026-07-27T18:27:45Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that integrates multiple tools for software development, which can be monetized."
 }

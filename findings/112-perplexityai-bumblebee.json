@@ -24,5 +24,7 @@
   ],
   "id": "112-perplexityai-bumblebee",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:19:53Z"
+  "posted_at": "2026-07-27T17:19:53Z",
+  "pick": true,
+  "pick_reason": "The tool provides a specific solution for security and compliance in software development, which can be monetized."
 }

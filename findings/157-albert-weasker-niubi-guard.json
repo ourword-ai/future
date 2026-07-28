@@ -25,5 +25,7 @@
   ],
   "id": "157-albert-weasker-niubi-guard",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:57Z"
+  "posted_at": "2026-07-27T20:27:57Z",
+  "pick": false,
+  "pick_reason": "The project is an open-source tool that lacks a clear monetizable product or service."
 }

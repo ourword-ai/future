@@ -25,5 +25,7 @@
   ],
   "id": "141-codeaashu-claude-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:08Z"
+  "posted_at": "2026-07-27T19:00:08Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that provides AI-driven coding assistance, which can be monetized through subscriptions or licensing."
 }

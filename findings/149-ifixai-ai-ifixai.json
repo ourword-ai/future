@@ -26,5 +26,7 @@
   ],
   "id": "149-ifixai-ai-ifixai",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:25Z"
+  "posted_at": "2026-07-27T20:27:25Z",
+  "pick": true,
+  "pick_reason": "The project addresses a growing need for independent auditing of AI agents, which can be developed into a monetizable service."
 }

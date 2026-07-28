@@ -26,5 +26,7 @@
   ],
   "id": "165-kritt-ai-open-kritt",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T22:13:11Z"
+  "posted_at": "2026-07-27T22:13:11Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for automating vulnerability detection, which companies would pay for."
 }

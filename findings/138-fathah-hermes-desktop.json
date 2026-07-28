@@ -26,5 +26,7 @@
   ],
   "id": "138-fathah-hermes-desktop",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:59:55Z"
+  "posted_at": "2026-07-27T18:59:55Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that simplifies complex systems for non-technical users, which can be monetized."
 }

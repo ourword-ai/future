@@ -26,5 +26,7 @@
   ],
   "id": "113-chattocorp-chatto",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:19:58Z"
+  "posted_at": "2026-07-27T17:19:58Z",
+  "pick": true,
+  "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services."
 }

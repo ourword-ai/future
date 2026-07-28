@@ -27,5 +27,7 @@
   ],
   "id": "159-tigicion-dao-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:51:58Z"
+  "posted_at": "2026-07-27T20:51:58Z",
+  "pick": false,
+  "pick_reason": "The project is open-source and lacks a clear monetizable product."
 }

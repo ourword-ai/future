@@ -26,5 +26,7 @@
   ],
   "id": "152-helvesec-rmux",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T20:27:37Z"
+  "posted_at": "2026-07-27T20:27:37Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for automation and integration that can be monetized through a subscription or licensing model."
 }

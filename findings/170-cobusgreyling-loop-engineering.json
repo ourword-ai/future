@@ -26,5 +26,7 @@
   ],
   "id": "170-cobusgreyling-loop-engineering",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:32Z"
+  "posted_at": "2026-07-28T00:07:32Z",
+  "pick": true,
+  "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized."
 }

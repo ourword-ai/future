@@ -26,5 +26,7 @@
   ],
   "id": "173-nexu-io-html-anything",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:41Z"
+  "posted_at": "2026-07-28T00:07:41Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product that automates HTML generation, making it a viable tool for non-technical users."
 }

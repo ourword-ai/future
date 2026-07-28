@@ -26,5 +26,7 @@
   ],
   "id": "121-tastyeffectco-sandboxd",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:20:31Z"
+  "posted_at": "2026-07-27T17:20:31Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for enterprises to build and test AI applications securely, which can be monetized."
 }

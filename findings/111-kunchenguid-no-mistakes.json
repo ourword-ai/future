@@ -20,5 +20,7 @@
   "tags": [],
   "id": "111-kunchenguid-no-mistakes",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T17:19:49Z"
+  "posted_at": "2026-07-27T17:19:49Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear tool that can be monetized by improving git workflows for development teams."
 }

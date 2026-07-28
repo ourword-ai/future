@@ -20,5 +20,7 @@
   "tags": [],
   "id": "144-teamchong-pxpipe",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T19:00:21Z"
+  "posted_at": "2026-07-27T19:00:21Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear solution to reduce costs in AI applications, which can be monetized by targeting developers looking to optimize their token usage."
 }

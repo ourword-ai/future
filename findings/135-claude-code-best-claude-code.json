@@ -20,5 +20,7 @@
   "tags": [],
   "id": "135-claude-code-best-claude-code",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:59:42Z"
+  "posted_at": "2026-07-27T18:59:42Z",
+  "pick": true,
+  "pick_reason": "The project offers a clear product for secure and reliable code execution that can be monetized in enterprise settings."
 }

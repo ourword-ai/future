@@ -27,5 +27,7 @@
   ],
   "id": "130-getagentseal-codeburn",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T18:28:12Z"
+  "posted_at": "2026-07-27T18:28:12Z",
+  "pick": true,
+  "pick_reason": "The tool addresses a specific need for cost management in AI development, allowing for a clear monetizable product."
 }

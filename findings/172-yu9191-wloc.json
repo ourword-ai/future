@@ -19,5 +19,7 @@
   "tags": [],
   "id": "172-yu9191-wloc",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:38Z"
+  "posted_at": "2026-07-28T00:07:38Z",
+  "pick": false,
+  "pick_reason": "The project is a modification tool for existing apps and lacks a clear monetizable product."
 }
