@@ -32,7 +32,9 @@
       "claim": "santifer/career-ops —— 开源 AI 求职:扫招聘网站,用结构化 A–F 评分体系把岗位打成 1.0–5.0 分。",
       "why_good": "把找工作变成对每个岗位的结构化 A–F 打分——比关键词匹配更严谨,面向一个痛苦、高频的任务。",
       "value": "给求职者卖订阅(自动扫+打分+定制投递);紧迫感和痛点都真实。",
-      "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。"
+      "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。",
+      "hook": "用 A–F 评分体系给每个岗位打分——一个严谨的 AI 求职,而非关键词匹配。"
     }
-  }
+  },
+  "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching."
 }
