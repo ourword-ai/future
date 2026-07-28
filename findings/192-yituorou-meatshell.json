@@ -2,9 +2,9 @@
   "title": "yituorou/meatshell",
   "claim": "yituorou/meatshell — 一个轻量级、低内存占用的 SSH / 终端客户端（A lightweight, low-memory SSH / terminal client）",
   "score": 8,
-  "why_good": "early traction (1,180★); 143 forks (12% of stars) — people build on it; 5 contributors, 153 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A lightweight, low-memory SSH/terminal client with early pull (1,180 stars, actively maintained) — a real niche for people on constrained machines.",
+  "value": "Charge a pro/team tier (sync, vaulted credentials, team access) like Termius does on top of a free core.",
+  "risk": "Termius/iTerm/Windows Terminal are entrenched; a lean client needs a sharp speed/UX wedge to convert payers.",
   "evidence": [
     "https://github.com/yituorou/meatshell",
     "1,180★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "192-yituorou-meatshell",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:16:56Z"
+  "posted_at": "2026-07-28T04:16:56Z",
+  "i18n": {
+    "zh": {
+      "claim": "yituorou/meatshell —— 一个轻量、低内存占用的 SSH / 终端客户端。",
+      "why_good": "一个轻量、低内存的 SSH/终端客户端,早期有牵引(1180★、活跃维护)——对受限机器的人是真实细分。",
+      "value": "像 Termius 那样在免费核心上卖专业/团队版(同步、凭证保险箱、团队访问)。",
+      "risk": "Termius/iTerm/Windows Terminal 根基深;精简客户端要靠锋利的速度/体验切口才能转化付费。"
+    }
+  }
 }
