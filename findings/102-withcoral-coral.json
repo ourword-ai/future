@@ -2,9 +2,9 @@
   "title": "withcoral/coral",
   "claim": "withcoral/coral — One SQL interface over APIs, files, and live sources — built for agents.",
   "score": 9,
-  "why_good": "Coral's unified SQL interface can streamline data access for agents, reducing the complexity of managing multiple data sources.",
-  "value": "Businesses can pay for premium features or support, while data providers might pay for integration services to enhance their offerings.",
-  "risk": "The market for data integration tools is crowded, and larger players could easily replicate Coral's functionality.",
+  "why_good": "One SQL interface over APIs, files and live sources, built for agents — a clean way to give agents reliable, typed data access instead of ad-hoc tools.",
+  "value": "Usage-based data-gateway for agent builders: query/route/govern data across sources; upsell managed connectors + enterprise.",
+  "risk": "Crowded data-virtualization space (Trino, Steampipe); 'for agents' must translate into a real distribution edge.",
   "evidence": [
     "https://github.com/withcoral/coral",
     "5,032★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:36Z",
   "pick": true,
-  "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing."
+  "pick_reason": "Coral provides a clear product that simplifies data access for agents, which can be monetized through subscriptions or licensing.",
+  "i18n": {
+    "zh": {
+      "claim": "withcoral/coral —— 面向 agent 的统一 SQL 接口,覆盖 API、文件与实时数据源。",
+      "why_good": "用一个 SQL 接口统管 API/文件/实时源,为 agent 而建——给 agent 可靠、带类型的数据访问,而非临时拼工具。",
+      "value": "给 agent 开发者做按量数据网关:跨源查询/路由/治理,upsell 托管连接器 + 企业版。",
+      "risk": "数据虚拟化很挤(Trino、Steampipe);\"为 agent\"必须真的转化成分发优势。"
+    }
+  }
 }
