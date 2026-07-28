@@ -2,9 +2,9 @@
   "title": "Homegames. An open-source game platform I've been making for 8 years",
   "claim": "Show HN: Homegames. An open-source game platform I've been making for 8 years",
   "score": 8,
-  "why_good": "Homegames taps into the growing demand for customizable and community-driven gaming experiences, appealing to indie developers and gamers alike.",
-  "value": "Revenue could be generated through premium features, subscription models for enhanced tools, or partnerships with game developers and educational institutions.",
-  "risk": "The project may struggle to scale if larger gaming platforms integrate similar features or if it fails to build a sustainable user base.",
+  "why_good": "An 8-year labor-of-love open-source game platform (play together on any screen) — deep dedication, but long without a breakout.",
+  "value": "Games/platforms monetize via a hit or a marketplace; 8 years in with modest traction is a warning on the model.",
+  "risk": "Long runway without escape velocity; couch-multiplayer platforms are hard to monetize and hit-driven.",
   "evidence": [
     "https://homegames.io",
     "https://news.ycombinator.com/item?id=48798153",
@@ -20,5 +20,13 @@
   ],
   "id": "43-homegames-an-open-source-game-platform-i-ve-been",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T12:03:12Z"
+  "posted_at": "2026-07-27T12:03:12Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Homegames —— 我做了 8 年的开源游戏平台。",
+      "why_good": "一个做了 8 年的爱之作开源游戏平台(在任意屏幕上一起玩)——投入很深,但长期没有爆发。",
+      "value": "游戏/平台靠爆款或市场变现;做了 8 年仍牵引平平,是对这个模式的警示。",
+      "risk": "长跑却没到逃逸速度;客厅多人平台难变现且靠爆款驱动。"
+    }
+  }
 }
