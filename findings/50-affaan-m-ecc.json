@@ -32,7 +32,9 @@
       "claim": "affaan-m/ECC —— agent harness 的性能优化系统:技能、直觉、记忆、安全、research-first 开发。",
       "why_good": "一套个人的「agent harness」,打包了技能/记忆/安全范式——作为参考有用,但更像某个开发者的个人配置,不是产品。",
       "value": "只有当它变成团队愿意统一采用的、有主见的托管 agent 运行时,才算生意;现在只是个配置仓库。",
-      "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。"
+      "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。",
+      "hook": "某开发者把整套 agent harness(技能/记忆/安全)开源——参考价值高,但还不是产品。"
     }
-  }
+  },
+  "hook": "One dev's entire agent 'harness' — skills, memory, security — in a repo; great reference, not yet a product."
 }
