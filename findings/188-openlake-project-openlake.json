@@ -2,9 +2,9 @@
   "title": "openlake-project/openlake",
   "claim": "openlake-project/openlake — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training",
   "score": 8,
-  "why_good": "early traction (2,290★); 422 forks (18% of stars) — people build on it; 17 contributors, 46 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A high-performance storage engine purpose-built for LLM inference and GPU training (2,290 stars, 422 forks) — real infra pain as model I/O bottlenecks GPUs.",
+  "value": "Sell to AI-infra teams and clouds as a managed/enterprise storage layer; usage + support, a budget line GPU shops already have.",
+  "risk": "Heavy infra competing with cloud-native storage and vLLM ecosystems; adoption needs benchmarks and trust at scale.",
   "evidence": [
     "https://github.com/openlake-project/openlake",
     "2,290★",
@@ -26,5 +26,13 @@
   ],
   "id": "188-openlake-project-openlake",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:16:44Z"
+  "posted_at": "2026-07-28T04:16:44Z",
+  "i18n": {
+    "zh": {
+      "claim": "openlake-project/openlake —— 面向高效 LLM 推理与 GPU 训练的高性能存储引擎。",
+      "why_good": "专为 LLM 推理和 GPU 训练打造的高性能存储引擎(2290★、422 fork)——模型 I/O 卡住 GPU,是真实的基础设施痛点。",
+      "value": "卖给 AI 基础设施团队和云厂做托管/企业存储层;按量 + 支持,GPU 团队本就有这笔预算。",
+      "risk": "重基础设施,要和云原生存储、vLLM 生态竞争;规模化采用需要跑分和信任。"
+    }
+  }
 }
