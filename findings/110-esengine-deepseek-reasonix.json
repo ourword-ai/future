@@ -34,7 +34,9 @@
       "claim": "esengine/DeepSeek-Reasonix —— DeepSeek 原生的终端编码 agent,围绕前缀缓存稳定性设计,可长驻运行。",
       "why_good": "围绕前缀缓存稳定性调优的 DeepSeek 原生终端编码 agent——对成本敏感的 DeepSeek 群体是个真实效率卖点。",
       "value": "给标准化用 DeepSeek 的团队做托管/团队版:卖可靠性、共享配置和支持。",
-      "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。"
+      "risk": "拥挤终端 agent 里的单模型封装;DeepSeek 或通用 agent 能复刻这个缓存技巧。",
+      "hook": "一个 DeepSeek 原生、针对前缀缓存稳定性调优的终端编码器——可以长驻。"
     }
-  }
+  },
+  "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running."
 }
