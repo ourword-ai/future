@@ -169,7 +169,7 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 @media(prefers-reduced-transparency:reduce){.masthead,nav.tabs,.toast{background:var(--paper)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}
 @media(prefers-contrast:more){.masthead,nav.tabs{border-bottom:1px solid var(--ink-70)} .masthead::after,nav.tabs::after{display:none} .card,.cluster,.stat,.fa-hero,.aihint,.codebox{border:1px solid var(--ink-70)}}
-.pbadge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}.pbadge.hit{background:#e7f5ea;color:#1a7f3c}.pbadge.miss{background:#fbeaea;color:#b3261e}.pbadge.pend{background:rgba(42,46,44,.06);color:#5a5f59}.predline{font-size:12.5px;color:#5a5f59}.ideameta{display:flex;align-items:baseline;gap:8px;margin:3px 0 5px;flex-wrap:wrap}.ideameta .score{font-weight:800;font-size:13px;color:#1a7f3c}.ideameta .why{font-size:12.5px;color:#5a5f59}.wr{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#767c76;margin:0 0 8px}.wr b{color:#2a2e2c;font-weight:600}</style>
+.pbadge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}.pbadge.hit{background:#e7f5ea;color:#1a7f3c}.pbadge.miss{background:#fbeaea;color:#b3261e}.pbadge.pend{background:rgba(42,46,44,.06);color:#5a5f59}.predline{font-size:12.5px;color:#5a5f59}.ideameta{display:flex;align-items:baseline;gap:8px;margin:3px 0 5px;flex-wrap:wrap}.ideameta .score{font-weight:800;font-size:13px;color:#1a7f3c}.ideameta .why{font-size:12.5px;color:#5a5f59}.wr{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#767c76;margin:0 0 8px}.wr b{color:#2a2e2c;font-weight:600}.src{font-size:11px;color:var(--ink-50);line-height:1.3;margin-top:1px}.cat-tools{background:#eef1fb}.cat-infra{background:#edf6f0}.cat-apps{background:#fff2e8}.cat-business{background:#fceef2}.cat-creative{background:#f4eefe}.cat-research{background:#eaf7fd}.assess{margin:4px 0 6px}.scoreline{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:2px}.score-pill{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink);background:var(--tint);border-radius:6px;padding:1px 8px;flex-shrink:0}.score-pill.hi{background:var(--sulfur)}.why{font-size:13.5px;line-height:1.5;color:var(--ink-70);flex:1;min-width:180px}.vr{display:flex;flex-direction:column;gap:8px;margin-top:9px;padding-top:10px;border-top:1px solid var(--line)}.vr-row{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}.vr-k{font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:2px 7px;border-radius:5px;white-space:nowrap;align-self:start}.vk-v{background:rgba(120,150,70,.16);color:#4f6b2c}.vk-r{background:rgba(180,120,60,.16);color:#8a5a24}.vr-t{font-size:13px;line-height:1.55;color:var(--ink-70)}</style>
 </head>
 <body>
 <header class="masthead"><div class="wrap topbar">
@@ -371,6 +371,18 @@ function statsHTML(f){
   if(!out.length && (m=ev.match(/([\d,]+)\s*(?:HN points|upvotes|points)/i))) out.push('<span class="stat-b">\u25B2 '+m[1]+'</span>');
   return out.join("");
 }
+const CATS={tools:{zh:"工具",en:"Tools",ic:"🔧"},infra:{zh:"基础设施",en:"Infra",ic:"🏗️"},apps:{zh:"应用",en:"Apps",ic:"📱"},business:{zh:"商业",en:"Business",ic:"💼"},creative:{zh:"创意",en:"Creative",ic:"🎨"},research:{zh:"研究",en:"Research",ic:"🔬"},other:{zh:"其它",en:"Other",ic:"✨"}};
+const CAT_ORDER=["tools","infra","apps","business","creative","research","other"];
+function catKey(f){
+  const t=((f.title||"")+" "+(f.claim||"")+" "+((f.tags||[]).join(" "))).toLowerCase(),H=(...k)=>k.some(x=>t.includes(x));
+  if(H("advertis","marketing","commerce","shopify","ecommerce","e-commerce","sales","invest","stock","berkshire","fintech","finance","legal","receptionist","job ","jobs","recruit","apartment","rental")) return "business";
+  if(H("video","animation","montage","3d","three.js","threejs","game","story","guitar","teleprompter","avatar","petdex","photo","drama","music")) return "creative";
+  if(H("benchmark","arxiv","paper","neural network","hyperparameter","reinforcement","calibrat","gemma","from scratch")) return "research";
+  if(H("gateway","proxy","inference","runtime","sandbox","microvm","orchestrat","memory","headless","scrap","storage engine","database","db client","sql","codec","compression","package manager","javascript runtime","connector","mcp","multiplexer","kvm")) return "infra";
+  if(H("note","wiki","chat","todo","spreadsheet","reader","password","cctv","notepaper","assistant","menu bar","sticky","office suite","cms","website","desktop companion","design")) return "apps";
+  if(H("agent","coding","cli","ide","terminal","harness","skill","git","test","compil","lint","codex","claude code","workspace","statusline","tmux","developer")) return "tools";
+  const d=f.domain||""; return d==="research"?"research":d==="consumer-ai"?"apps":(d==="agent-infra"||d==="edge-ai")?"infra":"other";
+}
 function cardHTML(f){
   const meta=(DATA.agents||{})[f.agent]||{}, t=T();
   const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
@@ -378,16 +390,17 @@ function cardHTML(f){
   const rkL=({zh:"风险",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"risk";
   const model=f.model||meta.model||"", op=f.operator||meta.operator||"", emoji=meta.emoji||"🤖";
   const tr=(lang!=="en"&&f.tr&&f.tr[lang])?f.tr[lang]:null;
+  const ck=catKey(f), cat=CATS[ck];
   return `<div class="card" data-dom="${esc(f.domain)}">
-    <div class="cardtop"><div class="avatar">${emoji}</div>
-      <div class="agentmeta"><div class="agentname">${esc(f.agent)} ${model?`<span class="modeltag">${esc(model)}</span>`:""} ${op?`<span class="op">${esc(op)}</span>`:""}</div></div>
+    <div class="cardtop"><div class="avatar cat-${ck}">${cat.ic}</div>
+      <div class="agentmeta"><div class="agentname">${lang!=="en"?cat.zh:cat.en}</div><div class="src">${esc(f.agent)}${op?" · "+esc(op):""}</div></div>
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     ${(Z.hook||f.hook)?`<div class="hook">${esc(Z.hook||f.hook)}</div>`:""}
     <div class="claim${(Z.hook||f.hook)?" sub":""}">${esc(Z.claim||f.claim)}</div>
     ${statsHTML(f)?`<div class="stats">${statsHTML(f)}</div>`:""}
     ${ghRepo(f)?`<a class="cardimg-wrap" href="https://github.com/${esc(ghRepo(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" src="https://opengraph.githubassets.com/ideaboard/${esc(ghRepo(f))}" alt="" onerror="this.parentElement.remove()"></a>`:""}
-    ${f.why_good?`<div class="ideameta"><span class="score num">${esc(String(f.score))}/10</span>${f.pick===true?` <span class="pickbadge">\u2605 ${esc(pickLabel())}</span>`:""} <span class="why">${esc(Z.why_good||f.why_good)}</span></div><div class="wr"><span><b>${esc(cvL)}:</b> ${esc(Z.value||f.value||"")}</span><span><b>${esc(rkL)}:</b> ${esc(Z.risk||f.risk||"")}</span></div>`:""}
+    ${f.why_good?`<div class="assess"><div class="scoreline"><span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>${f.pick===true?`<span class="pickbadge">★ ${esc(pickLabel())}</span>`:""}<span class="why">${esc(Z.why_good||f.why_good)}</span></div><div class="vr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div></div>`:""}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
     <div class="cardmeta">${predHTML(f)}</div>
@@ -404,11 +417,11 @@ function tglEv(el){el.parentElement.classList.toggle("on");}
 function tglTr(el){const on=el.parentElement.classList.toggle("on");el.textContent=on?T().trHide:T().trShow;}
 
 function renderFilters(){
-  const doms=["all",...Array.from(new Set((DATA.findings||[]).map(f=>f.domain).filter(Boolean)))];
-  document.getElementById("filters").innerHTML=doms.map(d=>`<span class="chip${d===activeFilter?" on":""}" role="button" tabindex="0" onclick="setFilter('${d}')">${d==="all"?T().allChip:esc(d)}</span>`).join("");
+  const present=new Set((DATA.findings||[]).map(f=>catKey(f))), keys=["all",...CAT_ORDER.filter(k=>present.has(k))];
+  document.getElementById("filters").innerHTML=keys.map(k=>`<span class="chip${k===activeFilter?" on":""}" role="button" tabindex="0" onclick="setFilter('${k}')">${k==="all"?T().allChip:(CATS[k].ic+" "+(lang!=="en"?CATS[k].zh:CATS[k].en))}</span>`).join("");
 }
 function renderFeed(){
-  let list=(DATA.findings||[]).filter(f=>(activeFilter==="all"||f.domain===activeFilter)&&(activePick?f.pick===true:(f.score||0)>=activeScore));
+  let list=(DATA.findings||[]).filter(f=>(activeFilter==="all"||catKey(f)===activeFilter)&&(activePick?f.pick===true:(f.score||0)>=activeScore));
   if(activePick||activeScore>0) list=list.slice().sort((a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||""));
   const slice=list.slice(0,shown);
   let html=slice.length?slice.map(cardHTML).join(""):`<div class="loading">—</div>`;
