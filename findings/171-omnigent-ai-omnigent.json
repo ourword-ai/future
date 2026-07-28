@@ -2,9 +2,9 @@
   "title": "omnigent-ai/omnigent",
   "claim": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom a",
   "score": 9,
-  "why_good": "Omnigent's framework allows seamless integration of multiple AI models, addressing the growing need for interoperability in AI applications.",
-  "value": "Companies developing AI solutions can pay for premium support and advanced features, creating a subscription-based revenue model.",
-  "risk": "The project may struggle to differentiate itself if larger tech companies develop similar orchestration tools or acquire existing solutions.",
+  "why_good": "A meta-harness that orchestrates multiple coding agents (Claude Code, Codex, Cursor) under one framework — betting 'many agents' becomes the norm.",
+  "value": "Could become the orchestration/control plane teams pay for to run agent fleets — routing, guardrails, observability across vendors.",
+  "risk": "Extremely crowded orchestration space; the agent vendors + LangGraph are converging on the same layer and squeeze 'meta' tools.",
   "evidence": [
     "https://github.com/omnigent-ai/omnigent",
     "7,815★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T00:07:35Z",
   "pick": true,
-  "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services."
+  "pick_reason": "The project offers a clear framework for integrating multiple AI models, which can be monetized through enterprise solutions or subscription services.",
+  "i18n": {
+    "zh": {
+      "claim": "omnigent-ai/omnigent —— 开源 AI agent 框架 + 元 harness:编排 Claude Code、Codex、Cursor、Pi 和自定义 agent。",
+      "why_good": "把多个编码 agent(Claude Code、Codex、Cursor)统一编排的元 harness——押注\"多 agent\"会成为常态。",
+      "value": "可能成为团队为\"跑 agent 舰队\"付费的编排/控制平面——跨厂商的路由、护栏、可观测性。",
+      "risk": "编排赛道极挤,agent 厂商 + LangGraph 都在收敛到同一层;\"元\"工具容易被夹。"
+    }
+  }
 }
