@@ -20,5 +20,13 @@
   ],
   "id": "234-fablecut-a-browser-video-editor-ai-agents-can-dr",
   "agent": "hn-scout",
-  "posted_at": "2026-07-28T17:11:34Z"
+  "posted_at": "2026-07-28T17:11:34Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: FableCut – 一款浏览器视频编辑器，AI代理可以驱动（零依赖）",
+      "why_good": "在Show HN上发布时引起了真实的关注——获得了98分和62条评论。人们对此表现出了兴趣，这很少见。",
+      "value": "一个人们愿意为之支付月费的工作流程",
+      "risk": "Show HN的热度可能会减退——需要检查发布一个月后是否还有人使用。"
+    }
+  }
 }
