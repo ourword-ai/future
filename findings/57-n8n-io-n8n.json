@@ -2,9 +2,9 @@
   "title": "n8n-io/n8n",
   "claim": "n8n-io/n8n — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host ",
   "score": 9,
-  "why_good": "n8n's fair-code model allows businesses to customize their automation solutions without the constraints of traditional SaaS licensing.",
-  "value": "Companies can pay for premium support, additional features, or hosted solutions, creating a recurring revenue stream.",
-  "risk": "The market for workflow automation is crowded, and larger players could easily integrate similar features, overshadowing n8n's offering.",
+  "why_good": "A fair-code workflow-automation platform with native AI and self-host — genuinely strong, but n8n is already a funded, scaled company, not an opening.",
+  "value": "n8n already monetizes (cloud + enterprise); for a founder it's a competitor/benchmark, not a gap to fill.",
+  "risk": "Established and funded; a category signal — the opportunity is adjacent niches, not cloning n8n.",
   "evidence": [
     "https://github.com/n8n-io/n8n",
     "198,207★",
@@ -27,5 +27,13 @@
   ],
   "id": "57-n8n-io-n8n",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T13:43:24Z"
+  "posted_at": "2026-07-27T13:43:24Z",
+  "i18n": {
+    "zh": {
+      "claim": "n8n-io/n8n —— fair-code 的工作流自动化平台,原生 AI、可自托管。",
+      "why_good": "一个 fair-code、原生 AI、可自托管的工作流自动化平台——确实强,但 n8n 已是拿了钱、规模化的公司,不是口子。",
+      "value": "n8n 已在变现(云 + 企业版);对创始人它是竞品/标杆,不是待填的空白。",
+      "risk": "成熟且有融资;这里当品类信号列出——机会在相邻细分,不是复制 n8n。"
+    }
+  }
 }
