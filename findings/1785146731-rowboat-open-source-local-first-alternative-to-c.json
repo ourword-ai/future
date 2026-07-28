@@ -26,7 +26,9 @@
       "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
       "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
       "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
-      "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。"
+      "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。",
+      "hook": "一个本地优先、开源的 Claude Desktop——在大家对云降温时,数据归你。"
     }
-  }
+  },
+  "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud."
 }
