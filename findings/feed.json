@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T11:34:20Z",
+  "generated_at": "2026-07-28T11:49:59Z",
   "board": {
     "ideas": 175,
     "domains": 6,
@@ -31,10 +31,10 @@
     {
       "title": "debpalash/OmniVoice-Studio",
       "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-      "hook": "Local voice AI just crossed the 'not obviously fake' line — the window to package it as an open ElevenLabs is open right now.",
-      "why_good": "Why now: in the last few months open local models crossed the quality bar — Chatterbox beat ElevenLabs in blind tests, and NeuTTS Air runs realistic cloning on a laptop or even a Raspberry Pi — so the moat is no longer the model, it's the app around it. Meanwhile 'expensive' appears ~170 times in ElevenLabs reviews and its API runs 10-14x pricier than Amazon Polly or Gemini Flash. OmniVoice is the packaging play: clone, TTS, dictation, dubbing and audiobook export in one local app.",
-      "value": "Buyer: dubbing studios, podcast and audiobook shops and agencies with steady volume who can't send client audio to a vendor cloud and get burned by per-character billing. Wedge: don't fight on model quality — win on workflow (batch dubbing, project files, one flat local install) and sell a supported team edition, the way Audacity-plus-a-business would look.",
-      "risk": "Who kills it: ElevenLabs open-sources a good local tier, or Descript/Adobe bundle good-enough voice into tools studios already pay for. Open models also still lack emotional control and watermarking — a compliance gap for commercial dubbing. Watch: whether it ships consent/watermarking and a real batch-dubbing workflow within ~2 quarters; without those it stays a hobbyist toy, not a studio tool.",
+      "hook": "Hand it a 3-second clip and it clones that voice in 646 languages — then dubs a whole video end-to-end, fully on your machine.",
+      "why_good": "What it does: give it a 3-second clip and it clones that voice zero-shot in 646 languages (ElevenLabs covers 32), or you design a voice from scratch by gender/age/accent/emotion. Its standout is end-to-end local video dubbing — transcribe, translate, re-voice in the cloned voice, re-time, export MP4 — plus an audiobook maker (EPUB/PDF to .m4b, multi-voice cast) and a system-wide dictation hotkey. Under the hood it's a hub over 14 TTS and 11 ASR engines with GPU auto-detect, so you pick the best model per language instead of being locked to one. Why use it: no subscription, no meter, nothing leaves your machine — and it ships an MCP server, so Claude or Cursor can drive it directly.",
+      "value": "Who'd pay: dubbing shops and creators working in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. The wedge is the 646-language, fully-local dub pipeline — sell a supported team edition and priced engine/model packs; the value is the workflow (batch, project files, invisible watermarking), not any single model.",
+      "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's also in active beta — reliability across 14 engines and three OSes is the hard part. Watch whether a real 30-minute video dubs cleanly in one click without hand-fixing timing; if output still needs babysitting, it stays a power-user tool, not a studio default.",
       "score": 8,
       "evidence": [
         "https://github.com/debpalash/OmniVoice-Studio",
@@ -60,13 +60,13 @@
       "i18n": {
         "zh": {
           "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-          "hook": "本地语音刚跨过『不再明显像机器人』这条线——把它打包成开源版 ElevenLabs 的窗口,正好是现在。",
-          "why_good": "为什么是现在:最近几个月开源本地模型跨过了质量线——Chatterbox 在盲测里赢过 ElevenLabs,NeuTTS Air 甚至能在笔记本乃至树莓派上做逼真克隆——护城河已经不是模型,而是模型外面那层 app。同时 ElevenLabs 评论里『贵』出现约 170 次,其 API 比 Amazon Polly、Gemini Flash 贵 10-14 倍。OmniVoice 就是这层打包:克隆、TTS、听写、配音、有声书导出,一个本地 app 全包。",
-          "value": "买家:有稳定量的配音工作室、播客/有声书作坊和代理机构——他们不能把客户音频传云,也被按字符计费坑过。切入:别在模型质量上硬拼,赢在工作流(批量配音、项目文件、一次性本地安装),卖带支持的团队版——像『Audacity 加一门生意』。",
-          "risk": "谁会杀死它:ElevenLabs 开源一个好用的本地档,或 Descript/Adobe 把『够用』的语音塞进工作室本就付费的工具里。开源模型还普遍缺情感控制和水印——这是商用配音的合规缺口。看指标:它能否在约两个季度内做出『授权/水印 + 批量配音工作流』;做不出,就停留在玩具,成不了工作室工具。"
+          "hook": "丢给它一段 3 秒音频,它就能用 646 种语言克隆这把嗓子——再把整段视频从头到尾配好音,全程只在你本机跑。",
+          "why_good": "它到底能干嘛:给它一段 3 秒音频,就能零样本克隆这把嗓子,支持 646 种语言(ElevenLabs 只有 32);也能按性别/年龄/口音/情绪从零设计一把声音。最强的一手是端到端的本地视频配音——转写、翻译、用克隆音色重配、对齐时间轴、导出 MP4——外加有声书制作(EPUB/PDF→.m4b、多角色)和一个全局听写快捷键。底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢,带 GPU 自动识别,你能按语言挑最合适的模型,而不被单一模型锁死。为什么用它:没订阅、不计量、数据不出本机——而且自带 MCP server,Claude、Cursor 能直接调它。",
+          "value": "谁会买单:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。切入点是『646 语种 + 全本地配音管线』——卖带支持的团队版和付费引擎/模型包;价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
+          "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它目前还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修;若产出还得人盯着,它就停在高玩工具,成不了工作室默认。"
         }
       },
-      "pick_reason": "Dated 'why now' (local models just beat ElevenLabs in blind tests) plus a workflow wedge — a packaging bet, not a model-quality bet."
+      "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, MCP-drivable — not a thin wrapper."
     },
     {
       "title": "liketrek/TREK",
