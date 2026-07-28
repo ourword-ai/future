@@ -32,7 +32,9 @@
       "claim": "MadsLorentzen/ai-job-search —— 跑在你自己机器上的 AI 求职框架(基于 Claude Code):评估岗位、定制申请。",
       "why_good": "一个本地、在你机器上跑的 AI 求职框架(评估岗位、定制申请)——对一个痛苦、高频的任务主打隐私优先。",
       "value": "给求职者卖订阅:自动化 + 定制申请;痛点和紧迫感都真实。",
-      "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。"
+      "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。",
+      "hook": "一个跑在你自己机器上的 AI 求职——评估岗位、为每份申请定制。"
     }
-  }
+  },
+  "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application."
 }
