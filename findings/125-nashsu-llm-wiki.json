@@ -2,9 +2,9 @@
   "title": "nashsu/llm_wiki",
   "claim": "nashsu/llm_wiki — LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base",
   "score": 9,
-  "why_good": "The ability to interlink and organize documents into a knowledge base addresses a common pain point in information management that many professionals face.",
-  "value": "Businesses could pay for premium features, such as advanced analytics and team collaboration tools, on a subscription basis.",
-  "risk": "The market is crowded with existing knowledge management tools, and larger companies could easily integrate similar features into their products.",
+  "why_good": "Turns local documents into an auto-interlinked, LLM-organized knowledge base on the desktop — a private, offline take on the Notion/Obsidian-AI wave.",
+  "value": "Freemium desktop: paid team sync, advanced retrieval and collaboration for people who won't put docs in a cloud AI.",
+  "risk": "Obsidian/Notion and every note app are shipping AI; a standalone 'AI wiki' needs a stickier wedge than auto-linking.",
   "evidence": [
     "https://github.com/nashsu/llm_wiki",
     "15,408★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:27:52Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable."
+  "pick_reason": "The project offers a clear product that addresses a specific need in information management, making it monetizable.",
+  "i18n": {
+    "zh": {
+      "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
+      "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
+      "value": "桌面免费增值:给\"不愿把文档放进云 AI\"的人卖付费团队同步、高级检索和协作。",
+      "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。"
+    }
+  }
 }
