@@ -32,7 +32,9 @@
       "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
       "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
       "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
-      "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。"
+      "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。",
+      "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
     }
-  }
+  },
+  "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents."
 }
