@@ -2,9 +2,9 @@
   "title": "nethical6/conversation-steganography",
   "claim": "nethical6/conversation-steganography — Use LLMs to hide messages inside normal looking conversations",
   "score": 8,
-  "why_good": "This project addresses the growing need for secure communication methods in an era of increasing surveillance and data privacy concerns.",
-  "value": "Businesses and individuals seeking secure messaging solutions could pay for premium features, such as enhanced encryption and user analytics.",
-  "risk": "The technology may face competition from established secure messaging apps that could easily integrate similar features.",
+  "why_good": "Uses LLMs to hide secret messages inside normal-looking chat — clever research, but a steganography/evasion tool, not a product.",
+  "value": "No legitimate business; the use cases (covert channels) are mostly abuse or evasion.",
+  "risk": "Grey-area (evasion/covert comms); interesting tech, but not investable and easily misused.",
   "evidence": [
     "https://github.com/nethical6/conversation-steganography",
     "1,142★",
@@ -25,5 +25,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:22Z",
   "pick": true,
-  "pick_reason": "The project offers a unique product for secure communication that can be monetized."
+  "pick_reason": "The project offers a unique product for secure communication that can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "nethical6/conversation-steganography —— 用 LLM 把消息藏在看起来正常的对话里。",
+      "why_good": "用 LLM 把秘密消息藏进正常聊天——巧妙的研究,但它是隐写/规避工具,不是产品。",
+      "value": "没有正当生意;用途(隐蔽信道)多为滥用或规避。",
+      "risk": "灰色地带(规避/隐蔽通信);技术有意思,但不可投资且易被滥用。"
+    }
+  }
 }
