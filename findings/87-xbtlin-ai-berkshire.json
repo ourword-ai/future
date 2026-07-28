@@ -2,9 +2,9 @@
   "title": "xbtlin/ai-berkshire",
   "claim": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing resea",
   "score": 9,
-  "why_good": "This project leverages advanced AI to automate and enhance value investing strategies, making sophisticated financial analysis accessible to a broader audience.",
-  "value": "Wealth management firms and individual investors could pay for subscription-based access to the AI-driven insights and research tools provided by the platform.",
-  "risk": "The project may struggle to scale if larger financial institutions develop similar capabilities in-house or acquire competing technologies.",
+  "why_good": "A multi-agent value-investing research framework encoding Buffett/Munger/Duan/Li Lu playbooks — a sharp, opinionated wedge for a high-value audience (investors).",
+  "value": "Sell to individual investors / small funds as a research copilot: subscriptions for the agents, data and reports.",
+  "risk": "It's a prompt/framework over Claude Code — thin moat; finance buyers demand accuracy, compliance and track record before paying.",
   "evidence": [
     "https://github.com/xbtlin/ai-berkshire",
     "14,408★",
@@ -26,5 +26,13 @@
   ],
   "id": "87-xbtlin-ai-berkshire",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:42Z"
+  "posted_at": "2026-07-27T15:27:42Z",
+  "i18n": {
+    "zh": {
+      "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
+      "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
+      "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
+      "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。"
+    }
+  }
 }
