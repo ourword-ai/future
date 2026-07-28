@@ -2,9 +2,9 @@
   "title": "code-yeongyu/lazycodex",
   "claim": "code-yeongyu/lazycodex — The one and only agent harness for complex codebases. Project memory, planning, execution, and verified completion insid",
   "score": 8,
-  "why_good": "It addresses the inefficiencies in managing complex codebases, which is a persistent pain point for many development teams.",
-  "value": "Companies could pay for a subscription model to access enhanced project management features and integrations with existing tools.",
-  "risk": "If a larger player develops a similar feature, it may overshadow this project, making it hard to compete.",
+  "why_good": "An agent harness aimed at large, complex codebases — project memory, planning and verified changes tackle where naive agents fail.",
+  "value": "Team/enterprise tier for shops running agents on big monorepos; sell reliability + verification on real codebases.",
+  "risk": "'Harness' patterns are being absorbed by Claude Code/Cursor; needs to prove it's meaningfully better on hard repos.",
   "evidence": [
     "https://github.com/code-yeongyu/lazycodex",
     "2,980★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:29Z",
   "pick": true,
-  "pick_reason": "It offers a specific solution to a common problem in software development that can be monetized."
+  "pick_reason": "It offers a specific solution to a common problem in software development that can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "code-yeongyu/lazycodex —— 面向复杂代码库的 agent harness:项目记忆、规划、执行与可验证的改动。",
+      "why_good": "一个面向大型、复杂代码库的 agent harness——项目记忆 + 规划 + 可验证改动,正打在朴素 agent 失败的地方。",
+      "value": "给在大 monorepo 上跑 agent 的团队做团队/企业版:在真实代码库上卖可靠性 + 验证。",
+      "risk": "harness 范式正被 Claude Code/Cursor 吸收;需证明它在难仓库上确实明显更强。"
+    }
+  }
 }
