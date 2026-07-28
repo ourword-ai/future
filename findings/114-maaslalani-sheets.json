@@ -2,9 +2,9 @@
   "title": "maaslalani/sheets",
   "claim": "maaslalani/sheets — Terminal based spreadsheet tool",
   "score": 8,
-  "why_good": "Terminal-based tools are gaining traction among developers who prefer lightweight, distraction-free environments for data manipulation.",
-  "value": "Businesses could pay for premium features or integrations, targeting data analysts and developers who need efficient data processing without a GUI.",
-  "risk": "The project may struggle to scale as a company if it cannot compete against established spreadsheet software with extensive ecosystems.",
+  "why_good": "A terminal-based spreadsheet from a respected TUI author — delightful for CLI-native users, but a small, single-purpose tool.",
+  "value": "Hard to charge for; a beloved free TUI, at most a pro/cloud-sync tier for terminal power-users.",
+  "risk": "Tiny niche, low willingness to pay; spreadsheets in the terminal stay a hobbyist pleasure, not a market.",
   "evidence": [
     "https://github.com/maaslalani/sheets",
     "2,289★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:01Z",
   "pick": true,
-  "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases."
+  "pick_reason": "There is a clear product in the form of a terminal-based spreadsheet tool that can be monetized through subscriptions or one-time purchases.",
+  "i18n": {
+    "zh": {
+      "claim": "maaslalani/sheets —— 基于终端的电子表格工具。",
+      "why_good": "出自受尊敬的 TUI 作者的终端电子表格——CLI 原生用户会喜欢,但是个小、单一用途的工具。",
+      "value": "很难收费;一个受喜爱的免费 TUI,顶多给终端重度用户做专业/云同步档。",
+      "risk": "细分极小、付费意愿低;终端里的电子表格是发烧友的乐趣,不是市场。"
+    }
+  }
 }
