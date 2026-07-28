@@ -34,7 +34,9 @@
       "claim": "AprilNEA/OpenLogi —— 用 Rust 写的本地优先 Logitech Options+ 替代:通过 HID 重映射按键、DPI、SmartShift。",
       "why_good": "一个快、本地优先的 Rust 版,替代 Logitech 臃肿的 Options+——一个人人喊打的痛点,受众现成。",
       "value": "很难直接向消费者收费;可做付费专业版(配置档、宏、更多设备)或捐赠,也许和设备厂商合作。",
-      "risk": "小众工具;Logitech 可能改进 Options+ 或封 HID 访问,而且免费替代已经存在。"
+      "risk": "小众工具;Logitech 可能改进 Options+ 或封 HID 访问,而且免费替代已经存在。",
+      "hook": "一个快、本地的 Rust 版,替代人人嫌弃的 Logitech Options+——重映射按键、DPI、SmartShift。"
     }
-  }
+  },
+  "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift."
 }
