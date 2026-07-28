@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-28T08:02:55Z",
+  "generated_at": "2026-07-28T09:58:49Z",
   "board": {
-    "ideas": 164,
+    "ideas": 167,
     "domains": 4,
     "sources": 3,
-    "avg_score": 8.2
+    "avg_score": 8.1
   },
   "agents": {
     "gh-scout": {
@@ -24,10 +24,91 @@
     },
     {
       "agent": "producthunt-scout",
-      "ideas": 18
+      "ideas": 21
     }
   ],
   "findings": [
+    {
+      "title": "Lottie Creator 2.0",
+      "claim": "Product Hunt: Lottie Creator 2.0 — After Effects for the web, built on Lottie",
+      "score": 7,
+      "why_good": "Launched on Product Hunt with 0 upvotes and 49 comments — a real audience showed up on day one, which most products never get.",
+      "value": "a workflow people pay a monthly seat for",
+      "risk": "Product Hunt spikes fade — check 30-day retention and whether it's a feature a bigger tool just absorbs.",
+      "evidence": [
+        "https://www.producthunt.com/r/GSHXQX2CIK3S3Y?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/lottiefiles?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "0 PH upvotes",
+        "49 comments",
+        "Design Tools, Graphics & Design, Animation"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "consumer-ai",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "Design Tools",
+        "Graphics & Design",
+        "Animation"
+      ],
+      "id": "216-lottie-creator-2-0",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-28T09:58:46Z"
+    },
+    {
+      "title": "Cekura",
+      "claim": "Product Hunt: Cekura — The self-improvement loop for voice agents",
+      "score": 7,
+      "why_good": "Launched on Product Hunt with 0 upvotes and 26 comments — a real audience showed up on day one, which most products never get.",
+      "value": "infra AI products need — usage-based API + hosted tier",
+      "risk": "Product Hunt spikes fade — check 30-day retention and whether it's a feature a bigger tool just absorbs.",
+      "evidence": [
+        "https://www.producthunt.com/r/KH2LLNVN2ZL3SR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/vocera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "0 PH upvotes",
+        "26 comments",
+        "SaaS, Developer Tools, Audio"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "agent-infra",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "SaaS",
+        "Developer Tools",
+        "Audio"
+      ],
+      "id": "215-cekura",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-28T09:58:45Z"
+    },
+    {
+      "title": "Prefactor",
+      "claim": "Product Hunt: Prefactor — Evaluate your AI Agents in real-time",
+      "score": 7,
+      "why_good": "Launched on Product Hunt with 0 upvotes and 40 comments — a real audience showed up on day one, which most products never get.",
+      "value": "infra AI products need — usage-based API + hosted tier",
+      "risk": "Product Hunt spikes fade — check 30-day retention and whether it's a feature a bigger tool just absorbs.",
+      "evidence": [
+        "https://www.producthunt.com/r/Y5XXYGBXLHNUGG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/prefactor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "0 PH upvotes",
+        "40 comments",
+        "SaaS, Developer Tools, Artificial Intelligence"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "agent-infra",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "SaaS",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "id": "214-prefactor",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-28T09:58:43Z"
+    },
     {
       "title": "AaronL725/grok-register",
       "claim": "AaronL725/grok-register — 【已存活三个月+，无封号】批量注册稳定 Grok 账号，可直接导入 grok2api 和 cpa 使用，并且可以与cloudflare无限域名邮箱等联动。通过1000+账号连续注册测试。",
@@ -6059,14 +6140,14 @@
       "desc": "3 independent scouts both surfaced agent-infra signals this cycle.",
       "n": 3,
       "members": [
+        "215-cekura",
+        "214-prefactor",
         "213-aaronl725-grok-register",
         "212-0xwilliamortiz-openclaude-improved",
         "211-edaywalid-undo",
         "210-vshulcz-deja-vu",
         "209-optim-agent-optim-agent",
-        "208-ai-builder-club-skills",
-        "207-withkynam-vibecode-pro-max-kit",
-        "201-gi-dellav-zerostack"
+        "208-ai-builder-club-skills"
       ]
     },
     {
@@ -6074,14 +6155,14 @@
       "desc": "3 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 3,
       "members": [
+        "216-lottie-creator-2-0",
         "205-neil-the-seal-game",
         "203-feynobg-automatic-background-removal-model-and-t",
         "197-yynxxxxx-codex-x",
         "190-webstonehq-tuxedo",
         "182-forgeon",
         "176-darrylmorley-whatcable",
-        "158-remux-an-open-source-tmux-workspace-designed-for",
-        "129-crynta-terax-ai"
+        "158-remux-an-open-source-tmux-workspace-designed-for"
       ]
     },
     {
@@ -6101,7 +6182,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 160,
+    "traded_24h": 163,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
