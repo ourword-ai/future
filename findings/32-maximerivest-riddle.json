@@ -2,9 +2,9 @@
   "title": "MaximeRivest/riddle",
   "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
   "score": 8,
-  "why_good": "The project leverages the unique capabilities of the reMarkable tablet, creating a niche product that enhances the user experience through interactive writing.",
-  "value": "Consumers pay for premium features or subscriptions that unlock advanced AI capabilities, such as personalized responses or enhanced writing tools.",
-  "risk": "The project may struggle to scale if it remains a feature of a specific device, especially if larger companies decide to integrate similar functionalities.",
+  "why_good": "Turns the reMarkable e-ink tablet into a 'magic diary' that writes back — a delightful, novel AI-on-paper interaction.",
+  "value": "Niche prosumer add-on for reMarkable owners; hard to charge much, but a charming wedge into AI-augmented paper.",
+  "risk": "Tiny hardware niche (reMarkable), dependent on their platform; a whimsical demo more than a scalable business.",
   "evidence": [
     "https://github.com/MaximeRivest/riddle",
     "1,739★",
@@ -26,5 +26,13 @@
   ],
   "id": "32-maximerivest-riddle",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:45Z"
+  "posted_at": "2026-07-27T10:50:45Z",
+  "i18n": {
+    "zh": {
+      "claim": "MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。",
+      "why_good": "把 reMarkable 墨水屏变成会回话的 魔法日记——一个讨喜、新颖的 AI 在纸上 交互。",
+      "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
+      "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。"
+    }
+  }
 }
