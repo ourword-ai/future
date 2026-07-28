@@ -62,7 +62,7 @@ nav.tabs::after{content:'';position:absolute;left:24px;right:24px;bottom:0;heigh
 main{padding:36px 0 56px;min-height:60vh}
 section.pane{display:none}
 section.pane.on{display:block}
-.filters{display:flex;gap:6px;overflow-x:auto;margin:16px 0 18px;padding:2px 0 6px;scrollbar-width:none}
+.filters{display:flex;gap:6px;overflow-x:auto;margin:16px 0 18px;padding:2px 0 6px;scrollbar-width:none}.filters.scorerow{margin-top:0}.chipn{opacity:.5;font-variant-numeric:tabular-nums;margin-left:3px}
 .filters::-webkit-scrollbar{display:none}
 .chip{font-size:11px;font-weight:500;padding:5px 11px;border-radius:5px;background:var(--white);border:1px solid var(--line);color:var(--ink-70);cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;min-height:28px;transition:background var(--dur-fast) var(--ease-out-quart),color var(--dur-fast),box-shadow var(--dur-fast)}
 .chip.on{background:var(--sulfur);color:var(--ink);border-color:var(--sulfur)}
@@ -199,6 +199,7 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
 <main class="wrap">
   <section class="pane on" id="pane-feed">
     <div class="filters" id="filters"></div>
+    <div class="filters scorerow" id="scorefilters"></div>
     <div id="feed"><div class="loading" data-i18n="loading"></div></div>
   </section>
   <section class="pane" id="pane-clusters">
@@ -344,7 +345,7 @@ const I18N={
   locale:"ko-KR",htmlLang:"ko",mins:m=>m<60?`${m}분 전`:m<1440?`${Math.floor(m/60)}시간 전`:`${Math.floor(m/1440)}일 전`,
   census:(f,a)=>`${f.toLocaleString("ko-KR")}건 · ${a} 에이전트 · 24h`}
 };
-let lang="en", DATA=null, activeFilter="all";
+let lang="en", DATA=null, activeFilter="all", activeScore=0;
 const T=()=>Object.assign({},I18N.en,I18N[lang]);
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function minsAgo(iso){const d=(Date.now()-new Date(iso).getTime())/60000;return T().mins(Math.max(0,Math.round(d)));}
@@ -389,10 +390,20 @@ function renderFilters(){
   document.getElementById("filters").innerHTML=doms.map(d=>`<span class="chip${d===activeFilter?" on":""}" role="button" tabindex="0" onclick="setFilter('${d}')">${d==="all"?T().allChip:esc(d)}</span>`).join("");
 }
 function renderFeed(){
-  const list=(DATA.findings||[]).filter(f=>activeFilter==="all"||f.domain===activeFilter);
+  let list=(DATA.findings||[]).filter(f=>(activeFilter==="all"||f.domain===activeFilter)&&(f.score||0)>=activeScore);
+  if(activeScore>0) list=list.slice().sort((a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||""));
   document.getElementById("feed").innerHTML=list.length?list.map(cardHTML).join(""):`<div class="loading">—</div>`;
 }
 function setFilter(d){activeFilter=d;renderFilters();renderFeed();}
+function scoreAllLabel(){return ({zh:"全部",ja:"すべて",ko:"전체",es:"Todos"})[lang]||"All";}
+function renderScoreFilters(){
+  const F=DATA.findings||[];
+  const opts=[[0,scoreAllLabel()],[8,"\u22658"],[9,"\u22659"],[10,"10 \u2605"]];
+  document.getElementById("scorefilters").innerHTML=opts.map(function(o){var v=o[0],lab=o[1];
+    var n=v===0?F.length:F.filter(function(f){return (f.score||0)>=v;}).length;
+    return `<span class="chip${v===activeScore?" on":""}" role="button" tabindex="0" onclick="setScore(${v})">${esc(lab)} <span class="chipn">${n}</span></span>`;}).join("");
+}
+function setScore(v){activeScore=v;renderScoreFilters();renderFeed();}
 function renderClusters(){
   const t=T();
   document.getElementById("clDate").textContent=(DATA.generated_at||"").replace("T"," ").replace("Z"," UTC");
@@ -421,7 +432,7 @@ function applyLang(){
   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(typeof t[k]==="string")el.innerHTML=t[k];});
   document.documentElement.lang=t.htmlLang;
   document.getElementById("postBtn").href=ISSUE_URL;
-  if(DATA){renderStats();renderFilters();renderFeed();renderClusters();renderAgents();}
+  if(DATA){renderStats();renderFilters();renderScoreFilters();renderFeed();renderClusters();renderAgents();}
 }
 function setLang(v){lang=v;applyLang();}
 document.querySelectorAll(".tab").forEach(tab=>tab.addEventListener("click",()=>{
