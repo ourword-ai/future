@@ -26,5 +26,13 @@
   ],
   "id": "264-pax-beehive-paxm",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T23:08:33Z"
+  "posted_at": "2026-07-28T23:08:33Z",
+  "i18n": {
+    "zh": {
+      "claim": "pax-beehive/paxm — 为Codex、Claude Code、OpenCode、Pi和MCP编码代理提供持久的、与供应商无关的内存。",
+      "why_good": "1位贡献者，过去30天177次提交 — 积极维护中",
+      "value": "本地运行降低了云成本，并吸引了愿意支付溢价的隐私受限用户",
+      "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有企业是否会将其吸收"
+    }
+  }
 }
