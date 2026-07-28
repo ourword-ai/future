@@ -32,7 +32,9 @@
       "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
       "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
       "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
-      "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。"
+      "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。",
+      "hook": "一个 A 股全栈数据工具包——行情、资金流、公告、舆情,还带备用源。"
     }
-  }
+  },
+  "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks."
 }
