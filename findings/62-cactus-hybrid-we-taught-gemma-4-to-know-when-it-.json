@@ -2,9 +2,9 @@
   "title": "Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
   "claim": "Show HN: Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
   "score": 7,
-  "why_good": "The ability to teach AI systems to recognize their own errors can lead to more reliable and trustworthy AI applications across various industries.",
-  "value": "Businesses could pay for a subscription service that enhances their AI tools with error recognition capabilities, improving performance and reducing costs associated with AI failures.",
-  "risk": "The technology could be seen as a feature rather than a standalone product, making it vulnerable to being integrated into existing AI platforms by larger companies.",
+  "why_good": "Teaches Gemma-4 to know when it's wrong (calibrated uncertainty) — tackles hallucination/confidence, one of the most valuable open problems.",
+  "value": "Calibration/uncertainty could sell as a safety layer to enterprises that need trustworthy model outputs; API or fine-tune.",
+  "risk": "Frontier labs are attacking calibration directly; a small team must show a durable, transferable method, not one model.",
   "evidence": [
     "https://github.com/cactus-compute/cactus-hybrid",
     "https://news.ycombinator.com/item?id=49010782",
@@ -20,5 +20,13 @@
   ],
   "id": "62-cactus-hybrid-we-taught-gemma-4-to-know-when-it-",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:10:49Z"
+  "posted_at": "2026-07-27T15:10:49Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Cactus Hybrid —— 我们教会 Gemma 4 知道自己什么时候错了。",
+      "why_good": "教 Gemma-4 知道自己何时出错(校准的不确定性)——攻的是幻觉/置信度,最有价值的开放问题之一。",
+      "value": "校准/不确定性可作为安全层卖给需要可信模型输出的企业;API 或微调。",
+      "risk": "前沿实验室在直接攻校准;小团队要证明一个持久、可迁移的方法,而非单个模型。"
+    }
+  }
 }
