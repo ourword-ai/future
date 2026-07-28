@@ -2,9 +2,9 @@
   "title": "open-gsd/gsd-core",
   "claim": "open-gsd/gsd-core — Git. Ship. Done - Core",
   "score": 9,
-  "why_good": "The project addresses a specific pain point in the developer workflow by streamlining Git operations, which can lead to significant time savings.",
-  "value": "Companies could pay for premium features or support services, especially in large teams where efficiency directly translates to cost savings.",
-  "risk": "The project may struggle to differentiate itself in a crowded market where established tools already offer similar functionalities.",
+  "why_good": "An opinionated 'git → ship' workflow wrapper — but 'Core' with a vague pitch means the actual wedge isn't clear yet.",
+  "value": "Only monetizable if it becomes a team CI/release layer people standardize on; as a solo git helper it's hard to charge for.",
+  "risk": "Crowded with git-workflow tools; no obvious moat or buyer yet, and the value prop is still fuzzy.",
   "evidence": [
     "https://github.com/open-gsd/gsd-core",
     "7,289★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T00:07:47Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing."
+  "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing.",
+  "i18n": {
+    "zh": {
+      "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
+      "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
+      "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
+      "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。"
+    }
+  }
 }
