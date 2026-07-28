@@ -2,8 +2,8 @@
   "title": "t8y2/dbx",
   "claim": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
   "score": 9,
-  "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus/DBeaver challenger people clearly use.",
-  "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise SSO on top of the free client.",
+  "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus.",
+  "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise.",
   "risk": "Crowded (DBeaver / TablePlus / DataGrip); needs a sharp wedge — size/speed — to pull paying users off incumbents.",
   "evidence": [
     "https://github.com/t8y2/dbx",
@@ -26,5 +26,13 @@
   ],
   "id": "1785146730-t8y2-dbx",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:05:30Z"
+  "posted_at": "2026-07-27T10:05:30Z",
+  "i18n": {
+    "zh": {
+      "claim": "t8y2/dbx —— 20MB 轻量跨平台数据库客户端,支持 70+ 种数据库(MySQL、PostgreSQL、SQLite、Redis、MongoDB…)。",
+      "why_good": "一个 20MB、支持 70+ 数据库的跨平台客户端,极活跃(150 贡献者、1438 提交/30天)——精简版 TablePlus。",
+      "value": "数据库客户端靠付费专业/团队版变现(TablePlus、DBeaver 都这么做):同步、协作、企业版。",
+      "risk": "很挤(DBeaver/TablePlus/DataGrip);要靠体积/速度的锋利切口把付费用户从现有产品撬走。"
+    }
+  }
 }
