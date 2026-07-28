@@ -2,9 +2,9 @@
   "title": "crafter-station/petdex",
   "claim": "crafter-station/petdex — The public gallery of animated pet for Codex, Claude Code, OpenCode y Gemini CLI",
   "score": 9,
-  "why_good": "The project taps into the growing trend of personalized digital avatars, which can enhance user engagement in various applications.",
-  "value": "Developers and companies can pay for premium animated pets to integrate into their platforms, creating a subscription or one-time purchase model.",
-  "risk": "The concept may struggle to scale if larger platforms decide to implement similar features in-house, overshadowing this project.",
+  "why_good": "A cute gallery of animated desktop pets for coding-agent terminals — fun and shareable, but pure novelty.",
+  "value": "No real revenue path beyond maybe cosmetic packs; a delightful side-project, not a company.",
+  "risk": "Novelty with no moat or retention; the joke fades and platforms can add their own.",
   "evidence": [
     "https://github.com/crafter-station/petdex",
     "3,607★",
@@ -29,5 +29,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:17Z",
   "pick": false,
-  "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy."
+  "pick_reason": "The project appears to be a collection of animated pets rather than a distinct product with a clear monetization strategy.",
+  "i18n": {
+    "zh": {
+      "claim": "crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI 的动画宠物公共画廊。",
+      "why_good": "给编码 agent 终端的一堆可爱动画桌宠——好玩、易传播,但纯属新奇。",
+      "value": "除了也许卖点装饰包,没有真正的收入路径;是个讨喜的业余项目,不是公司。",
+      "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。"
+    }
+  }
 }
