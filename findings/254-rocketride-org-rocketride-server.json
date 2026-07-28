@@ -26,5 +26,13 @@
   ],
   "id": "254-rocketride-org-rocketride-server",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T21:15:58Z"
+  "posted_at": "2026-07-28T21:15:58Z",
+  "i18n": {
+    "zh": {
+      "claim": "rocketride-org/rocketride-server — 高性能的AI管道引擎，核心使用C++，支持50多个Python扩展节点。构建、调试和扩展LLM工作流程。",
+      "why_good": "1,833个分支（占星标的34%）— 许多人在此基础上进行开发；49位贡献者，过去30天有112次提交 — 积极维护中。",
+      "value": "每个AI产品所需的基础设施 — 以基于使用量的API和托管/管理层进行货币化。",
+      "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有公司是否会将其吸收。"
+    }
+  }
 }

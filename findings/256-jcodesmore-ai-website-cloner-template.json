@@ -26,5 +26,13 @@
   ],
   "id": "256-jcodesmore-ai-website-cloner-template",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T21:16:01Z"
+  "posted_at": "2026-07-28T21:16:01Z",
+  "i18n": {
+    "zh": {
+      "claim": "JCodesMore/ai-website-cloner-template — 使用AI编码代理一条命令克隆任何网站",
+      "why_good": "竞争激烈（30,457★） — 真实信号但已晚；4,380个分支（14%的星标） — 人们在此基础上进行开发；强劲的增长势头（约222★/天）",
+      "value": "每个AI产品所需的基础设施 — 作为基于使用的API进行货币化 + 提供托管/管理服务",
+      "risk": "竞争已经非常激烈 — 胜者基本已定；创始人需要更明确的切入点"
+    }
+  }
 }
