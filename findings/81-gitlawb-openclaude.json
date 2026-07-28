@@ -2,9 +2,9 @@
   "title": "Gitlawb/openclaude",
   "claim": "Gitlawb/openclaude — runs anywhere. uses anything",
   "score": 9,
-  "why_good": "Openclaude's versatility in running anywhere and using anything addresses a significant gap in the agent infrastructure market, appealing to enterprises with diverse tech stacks.",
-  "value": "Companies could pay for premium support, custom integrations, and enterprise-level features, creating a subscription-based revenue model.",
-  "risk": "The project may struggle to differentiate itself in a crowded market, leading to potential acquisition by a larger player who offers similar functionalities.",
+  "why_good": "A slogan ('runs anywhere, uses anything') with no clear product behind it yet — too vague to judge as a startup.",
+  "value": "No identifiable buyer or wedge; it needs to say what it actually does before it's monetizable.",
+  "risk": "Undifferentiated and vague in a crowded agent-infra space; likely a feature or experiment, not a company.",
   "evidence": [
     "https://github.com/Gitlawb/openclaude",
     "30,375★",
@@ -26,5 +26,13 @@
   ],
   "id": "81-gitlawb-openclaude",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:12Z"
+  "posted_at": "2026-07-27T15:27:12Z",
+  "i18n": {
+    "zh": {
+      "claim": "Gitlawb/openclaude —— 随处运行,随意调用。",
+      "why_good": "一句口号(\"随处运行、随意调用\")背后还没有清晰产品——太模糊,难当创业判断。",
+      "value": "没有可辨认的买家或切口;得先说清它到底做什么才谈得上变现。",
+      "risk": "在拥挤的 agent 基础设施里既没差异又含糊;更可能是个功能或实验,不是公司。"
+    }
+  }
 }
