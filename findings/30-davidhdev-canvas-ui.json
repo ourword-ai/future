@@ -2,9 +2,9 @@
   "title": "DavidHDev/canvas-ui",
   "claim": "DavidHDev/canvas-ui — A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
   "score": 8,
-  "why_good": "The library's focus on creative canvas components with WebGL effects can attract designers and developers looking for high-performance visual solutions.",
-  "value": "Companies in gaming, advertising, and web design could pay for premium features or support, generating revenue through subscriptions or licensing.",
-  "risk": "Established frameworks or libraries may integrate similar features, diminishing the unique value proposition of this project.",
+  "why_good": "A library of creative canvas/WebGL UI components (real HTML with GPU effects) — fills the gap between plain UI kits and custom shader work.",
+  "value": "Open-core: free components + a paid pro pack/templates, the shadcn / Tailwind-UI monetization path.",
+  "risk": "Component libraries are hard to monetize (mostly free), and flashy effects are a narrow use case.",
   "evidence": [
     "https://github.com/DavidHDev/canvas-ui",
     "2,201★",
@@ -26,5 +26,13 @@
   ],
   "id": "30-davidhdev-canvas-ui",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:38Z"
+  "posted_at": "2026-07-27T10:50:38Z",
+  "i18n": {
+    "zh": {
+      "claim": "DavidHDev/canvas-ui —— 创意 canvas 组件库:真实 HTML 叠加 WebGL 效果。",
+      "why_good": "一个创意 canvas/WebGL UI 组件库(真实 HTML + GPU 效果)——填补 朴素 UI 套件 与 自写 shader 之间的空档。",
+      "value": "开源核心:免费组件 + 付费专业包/模板,shadcn/Tailwind-UI 的变现路径。",
+      "risk": "组件库很难变现(多为免费),而炫酷效果是个窄用例。"
+    }
+  }
 }
