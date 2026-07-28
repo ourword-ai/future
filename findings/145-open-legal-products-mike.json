@@ -2,9 +2,9 @@
   "title": "Open-Legal-Products/mike",
   "claim": "Open-Legal-Products/mike — OSS Legal AI Platform",
   "score": 8,
-  "why_good": "The platform addresses a significant gap in accessible legal resources for small businesses and startups, which often struggle to afford legal services.",
-  "value": "Businesses could subscribe for premium features or pay per document generated, while law firms might pay for access to a streamlined client onboarding tool.",
-  "risk": "Established legal tech companies could easily integrate similar features, overshadowing a standalone offering.",
+  "why_good": "An open-source legal-AI platform — legal is a huge, high-willingness-to-pay vertical where an open, self-hostable option appeals to firms wary of cloud.",
+  "value": "Sell hosted + compliance + firm-specific tuning to law firms and in-house legal; legal budgets are large and sticky.",
+  "risk": "Legal AI demands accuracy and liability guarantees; incumbents (Harvey, CoCounsel) are well-funded and trusted.",
   "evidence": [
     "https://github.com/Open-Legal-Products/mike",
     "4,019★",
@@ -25,5 +25,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T19:00:25Z",
   "pick": true,
-  "pick_reason": "The platform provides a clear product that can be monetized by offering affordable legal resources for small businesses."
+  "pick_reason": "The platform provides a clear product that can be monetized by offering affordable legal resources for small businesses.",
+  "i18n": {
+    "zh": {
+      "claim": "Open-Legal-Products/mike —— 开源法律 AI 平台。",
+      "why_good": "一个开源法律 AI 平台——法律是个大、高付费意愿的垂直,开源可自托管对忌惮云的律所有吸引力。",
+      "value": "向律所和法务卖托管 + 合规 + 事务所定制;法律预算大且黏。",
+      "risk": "法律 AI 要准确性和责任担保;现有玩家(Harvey、CoCounsel)有钱且被信任。"
+    }
+  }
 }
