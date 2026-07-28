@@ -32,7 +32,9 @@
       "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
       "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
       "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
-      "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。"
+      "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。",
+      "hook": "一个让自主编码「自证其功」的 agent IDE——本地优先、零信任。"
     }
-  }
+  },
+  "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust."
 }
