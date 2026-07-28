@@ -2,9 +2,9 @@
   "title": "Open-Less/openless",
   "claim": "Open-Less/openless — Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Win",
   "score": 8,
-  "why_good": "The ability to seamlessly integrate AI-polished text generation into any application could significantly enhance productivity for users across various industries.",
-  "value": "Businesses could pay for premium features or subscriptions that provide advanced customization, analytics, and integration with existing workflows.",
-  "risk": "The project may struggle to scale if larger companies develop similar features and integrate them into their existing products.",
+  "why_good": "Hold-to-talk voice input that drops AI-polished text at your cursor in any app — a slick, universal dictation UX people already pay Wispr Flow for.",
+  "value": "Prosumer subscription (like Wispr Flow / Superwhisper); open-source + local is the privacy wedge.",
+  "risk": "Wispr Flow, Superwhisper and OS-native dictation are here; needs quality + latency to win, and voice UIs are crowded.",
   "evidence": [
     "https://github.com/Open-Less/openless",
     "2,873★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T16:27:56Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product that enhances productivity through AI-polished text generation, which can be monetized."
+  "pick_reason": "The project offers a clear product that enhances productivity through AI-polished text generation, which can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "Open-Less/openless —— 按住键说话、松开,AI 润色后的文字出现在任意 app 的光标处。开源语音输入。",
+      "why_good": "按住说话、在任意 app 光标处落下 AI 润色文字——一个顺滑、通用的听写体验,人们已经在为 Wispr Flow 付费。",
+      "value": "专业订阅(像 Wispr Flow / Superwhisper);开源 + 本地是隐私切口。",
+      "risk": "Wispr Flow、Superwhisper 和系统原生听写都在;要靠质量 + 延迟取胜,语音 UI 很挤。"
+    }
+  }
 }
