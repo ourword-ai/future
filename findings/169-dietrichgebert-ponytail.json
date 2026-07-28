@@ -1,10 +1,10 @@
 {
   "title": "DietrichGebert/ponytail",
-  "claim": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+  "claim": "Ponytail — a prompt/skill layer that makes coding agents ruthlessly minimal: ship the least code that works (YAGNI as a one-line install for 20+ agents).",
   "score": 10,
-  "why_good": "This project addresses the growing need for efficiency in software development by automating decision-making processes, which can significantly reduce time spent on coding.",
-  "value": "Companies could pay for a subscription model to access the AI agent, which saves them labor costs by minimizing the need for extensive coding.",
-  "risk": "The technology could be seen as a feature rather than a standalone product, making it vulnerable to larger companies integrating similar capabilities into their existing tools.",
+  "why_good": "Attacks the #1 complaint about coding agents — overengineered slop — and the pull is real: ~90k★ in six weeks, 62 contributors, an npm package, and it works across Claude Code, Cursor and the rest.",
+  "value": "The wedge into agent behavior management: teams pay to enforce code-minimalism and style policy across every agent seat (org-wide config, policy packs, reports on bloat avoided).",
+  "risk": "It's prompts, not software — near-zero moat. Any agent vendor can ship a 'concise mode' toggle, and skill-pack virality decays as fast as it spikes.",
   "evidence": [
     "https://github.com/DietrichGebert/ponytail",
     "90,355★",
