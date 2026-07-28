@@ -35,7 +35,9 @@
       "claim": "GaoSSR/best-claude-hud —— 用 Rust 写的极简 Claude Code 状态栏 HUD。",
       "why_good": "给 Claude Code 做的清爽 Rust 状态栏——好看,但是个装饰性的开发工具插件,不是生意。",
       "value": "基本无法变现;它是个免费开源的小美化,随 Claude Code 自家 UI 生死。",
-      "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。"
+      "risk": "是功能不是公司:Anthropic 随时能出个原生状态栏,它就没了。",
+      "hook": "给 Claude Code 的漂亮 Rust 状态栏——好看,但 Anthropic 随时能自己出。"
     }
-  }
+  },
+  "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day."
 }
