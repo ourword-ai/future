@@ -2,9 +2,9 @@
   "title": "mereyabdenbekuly-ctrl/clodex-ide",
   "claim": "mereyabdenbekuly-ctrl/clodex-ide — Local-first, zero-trust agentic IDE for verifiable autonomous software development.",
   "score": 9,
-  "why_good": "153 forks (17% of stars) — people build on it; 3 contributors, 135 commits/30d — actively maintained",
-  "value": "on-device kills cloud cost and unlocks privacy-regulated buyers who pay a premium",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A local-first, zero-trust agentic IDE built around verifiable autonomous development — bets teams want agents that PROVE their changes, not just make them.",
+  "value": "Sell a team/enterprise tier (verification, audit, on-prem) to orgs that can't let autonomous agents run unchecked.",
+  "risk": "'Verifiable autonomous dev' is a big promise; Cursor/Claude Code own the IDE surface and can add verification.",
   "evidence": [
     "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
     "859★",
@@ -26,5 +26,13 @@
   ],
   "id": "206-mereyabdenbekuly-ctrl-clodex-ide",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T07:43:32Z"
+  "posted_at": "2026-07-28T07:43:32Z",
+  "i18n": {
+    "zh": {
+      "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
+      "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
+      "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
+      "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。"
+    }
+  }
 }
