@@ -2,9 +2,9 @@
   "title": "514-labs/dnsglobe",
   "claim": "514-labs/dnsglobe — Global DNS propagation checker TUI — watch a DNS record propagate across 34 public resolvers worldwide, on a world map i",
   "score": 8,
-  "why_good": "The tool addresses a critical pain point for developers and businesses managing global DNS changes, ensuring real-time monitoring across multiple regions.",
-  "value": "Companies could pay for premium features, such as advanced analytics, alerts, and integration with CI/CD pipelines, on a subscription basis.",
-  "risk": "The market is competitive, and larger DNS management services could easily integrate similar features, overshadowing a standalone offering.",
+  "why_good": "A clean TUI to watch DNS propagate across 34 global resolvers — a real, recurring devops annoyance, nicely scoped.",
+  "value": "Hard to charge for a TUI; value is as a freemium tool with a hosted monitoring tier (alerts, history, team) like whatsmydns.",
+  "risk": "Tiny scope, free web checkers exist (whatsmydns), easy to clone; more a beloved utility than a company.",
   "evidence": [
     "https://github.com/514-labs/dnsglobe",
     "926★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:52:07Z",
   "pick": true,
-  "pick_reason": "The tool provides a specific solution for DNS monitoring that can be monetized through subscriptions or usage fees."
+  "pick_reason": "The tool provides a specific solution for DNS monitoring that can be monetized through subscriptions or usage fees.",
+  "i18n": {
+    "zh": {
+      "claim": "514-labs/dnsglobe —— 全球 DNS 传播检查 TUI:在 34 个公共解析器上看一条 DNS 记录的传播。",
+      "why_good": "一个干净的 TUI,在 34 个全球解析器上看 DNS 传播——真实、反复出现的 devops 烦恼,范围收得好。",
+      "value": "TUI 很难收费;价值在做免费增值工具 + 托管监控档(告警、历史、团队),像 whatsmydns。",
+      "risk": "范围小、有免费网页工具(whatsmydns)、易被抄;更像受喜爱的工具而非公司。"
+    }
+  }
 }
