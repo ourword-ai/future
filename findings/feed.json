@@ -32,9 +32,9 @@
       "title": "edaywalid/undo",
       "claim": "edaywalid/undo — Undo what the last shell command did to the filesystem",
       "score": 8,
-      "why_good": "1 contributors, 48 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Undoes what your last shell command did to the filesystem — a genuinely scary gap (rm -rf regret) turned into a safety net.",
+      "value": "Prosumer/team CLI safety tool; devs and ops would pay for reliable filesystem undo + audit.",
+      "risk": "Hard to make truly reliable (snapshot/perf cost), and OS/filesystem snapshots partly cover it — trust is everything.",
       "evidence": [
         "https://github.com/edaywalid/undo",
         "246★",
@@ -56,15 +56,23 @@
       ],
       "id": "211-edaywalid-undo",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:40Z"
+      "posted_at": "2026-07-28T07:43:40Z",
+      "i18n": {
+        "zh": {
+          "claim": "edaywalid/undo —— 撤销上一条 shell 命令对文件系统做的事。",
+          "why_good": "撤销上一条 shell 命令对文件系统的改动——把一个真正吓人的缺口(rm -rf 后悔药)变成安全网。",
+          "value": "面向开发者/团队的 CLI 安全工具;为可靠的文件系统撤销 + 审计,他们愿意付费。",
+          "risk": "很难做到真正可靠(快照/性能成本),而系统/文件系统快照已部分覆盖——信任是关键。"
+        }
+      }
     },
     {
       "title": "vshulcz/deja-vu",
       "claim": "vshulcz/deja-vu — Your agents already solved this. deja finds it — memory operations for seventeen coding agents: retroactive search and M",
       "score": 8,
-      "why_good": "10 contributors, 343 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Shared memory across seventeen coding agents — 'your agents already solved this' — so work isn't re-done, via retroactive search + MCP recall.",
+      "value": "Sell a hosted cross-agent memory service + team sync to shops juggling multiple coding agents; usage-based.",
+      "risk": "Memory is being pulled into the agents natively, and cross-agent recall only matters while many agents coexist.",
       "evidence": [
         "https://github.com/vshulcz/deja-vu",
         "489★",
@@ -86,15 +94,23 @@
       ],
       "id": "210-vshulcz-deja-vu",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:39Z"
+      "posted_at": "2026-07-28T07:43:39Z",
+      "i18n": {
+        "zh": {
+          "claim": "vshulcz/deja-vu —— 跨十七种编码 agent 的记忆操作:回溯搜索 + MCP 召回(你的 agent 早就解决过这个)。",
+          "why_good": "跨十七种编码 agent 的共享记忆——你的 agent 早就解决过这个——靠回溯搜索 + MCP 召回,避免重复劳动。",
+          "value": "给同时用多个编码 agent 的团队卖托管的跨 agent 记忆服务 + 团队同步;按量。",
+          "risk": "记忆正被 agent 原生吸收,而跨 agent 召回只在多 agent 并存时才有意义。"
+        }
+      }
     },
     {
       "title": "Optim-Agent/optim-agent",
       "claim": "Optim-Agent/optim-agent — LLM agents as your hyperparameter optimizer.",
       "score": 8,
-      "why_good": "3 contributors, 71 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Uses LLM agents to drive hyperparameter optimization — an interesting angle (reasoning over search) for a real, costly ML pain.",
+      "value": "Sell to ML teams as an optimization service/tool; compute savings from smarter search justify paying.",
+      "risk": "HPO is well-served (Optuna, W&B Sweeps); LLM-driven search must prove it beats classic methods on cost/quality.",
       "evidence": [
         "https://github.com/Optim-Agent/optim-agent",
         "553★",
@@ -116,15 +132,23 @@
       ],
       "id": "209-optim-agent-optim-agent",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:37Z"
+      "posted_at": "2026-07-28T07:43:37Z",
+      "i18n": {
+        "zh": {
+          "claim": "Optim-Agent/optim-agent —— 用 LLM agent 当你的超参数优化器。",
+          "why_good": "用 LLM agent 驱动超参数优化——对真实、昂贵的 ML 痛点,一个有意思的角度(用推理指导搜索)。",
+          "value": "作为优化服务/工具卖给 ML 团队;更聪明搜索省下的算力足以让人付费。",
+          "risk": "HPO 已有成熟工具(Optuna、W&B Sweeps);LLM 驱动搜索要证明在成本/质量上胜过经典方法。"
+        }
+      }
     },
     {
       "title": "AI-Builder-Club/skills",
       "claim": "AI-Builder-Club/skills — Codebase harness + loop engineer",
       "score": 8,
-      "why_good": "141 forks (12% of stars) — people build on it",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A codebase harness + 'loop engineer' skill set — useful scaffolding for agent coding, but it reads as a harness/skill bundle, not a product.",
+      "value": "Hard to monetize a harness directly; the value is know-how, at best a paid template/skill pack.",
+      "risk": "Harness/skill bundles get absorbed by Claude Code/Cursor; near-zero moat as a standalone.",
       "evidence": [
         "https://github.com/AI-Builder-Club/skills",
         "1,100★",
@@ -146,15 +170,23 @@
       ],
       "id": "208-ai-builder-club-skills",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:36Z"
+      "posted_at": "2026-07-28T07:43:36Z",
+      "i18n": {
+        "zh": {
+          "claim": "AI-Builder-Club/skills —— 代码库 harness + 循环工程师。",
+          "why_good": "一个代码库 harness + 循环工程师 技能集——对 agent 编码是有用的脚手架,但更像 harness/技能包,不是产品。",
+          "value": "harness 很难直接变现;价值在 know-how,顶多做付费模板/技能包。",
+          "risk": "harness/技能包会被 Claude Code/Cursor 吸收;作为独立品护城河近乎为零。"
+        }
+      }
     },
     {
       "title": "withkynam/vibecode-pro-max-kit",
       "claim": "withkynam/vibecode-pro-max-kit — Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — sel",
       "score": 8,
-      "why_good": "219 forks (20% of stars) — people build on it",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A spec-driven coding harness that gives 'vibecoders' and non-devs persistent context — rides the vibe-coding wave with a memory hook.",
+      "value": "Prosumer subscription/template pack for non-technical builders using AI to ship; the wedge is persistent spec + context.",
+      "risk": "Harness/prompt-kit with a thin moat; the agent tools add spec/memory natively, and 'vibecoder' retention is unproven.",
       "evidence": [
         "https://github.com/withkynam/vibecode-pro-max-kit",
         "1,058★",
@@ -175,15 +207,23 @@
       ],
       "id": "207-withkynam-vibecode-pro-max-kit",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:35Z"
+      "posted_at": "2026-07-28T07:43:35Z",
+      "i18n": {
+        "zh": {
+          "claim": "withkynam/vibecode-pro-max-kit —— 你的 AI 会忘,这个记得住:面向 vibecoder、产品负责人、CEO 的规格驱动编码 harness。",
+          "why_good": "一个规格驱动的编码 harness,给 vibecoder 和非开发者持续的上下文——踩在 vibe-coding 浪潮上,以记忆为钩子。",
+          "value": "给用 AI 交付的非技术建造者卖专业订阅/模板包;切口是持续的规格 + 上下文。",
+          "risk": "harness/提示包护城河薄;agent 工具在原生加规格/记忆,而 vibecoder 留存未验证。"
+        }
+      }
     },
     {
       "title": "mereyabdenbekuly-ctrl/clodex-ide",
       "claim": "mereyabdenbekuly-ctrl/clodex-ide — Local-first, zero-trust agentic IDE for verifiable autonomous software development.",
       "score": 9,
-      "why_good": "153 forks (17% of stars) — people build on it; 3 contributors, 135 commits/30d — actively maintained",
-      "value": "on-device kills cloud cost and unlocks privacy-regulated buyers who pay a premium",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A local-first, zero-trust agentic IDE built around verifiable autonomous development — bets teams want agents that PROVE their changes, not just make them.",
+      "value": "Sell a team/enterprise tier (verification, audit, on-prem) to orgs that can't let autonomous agents run unchecked.",
+      "risk": "'Verifiable autonomous dev' is a big promise; Cursor/Claude Code own the IDE surface and can add verification.",
       "evidence": [
         "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
         "859★",
@@ -205,7 +245,15 @@
       ],
       "id": "206-mereyabdenbekuly-ctrl-clodex-ide",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:32Z"
+      "posted_at": "2026-07-28T07:43:32Z",
+      "i18n": {
+        "zh": {
+          "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
+          "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
+          "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
+          "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。"
+        }
+      }
     },
     {
       "title": "Neil the Seal Game",
