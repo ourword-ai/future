@@ -804,7 +804,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T00:07:29Z",
       "pick": false,
-      "pick_reason": "The project is too vague and resembles a concept rather than a clear, monetizable product."
+      "pick_reason": "The project is too vague and resembles a concept rather than a clear, monetizable product.",
+      "i18n": {
+        "zh": {
+          "claim": "Ponytail —— 一层让编码 agent 极简的提示/技能:只写能跑的最少代码(把 YAGNI 做成一行安装,支持 20+ 种 agent)。",
+          "why_good": "正面打编码 agent 最大的痛点——过度设计的垃圾代码;而且势头是真的:六周约 9 万星、62 位贡献者、有 npm 包,Claude Code / Cursor / Codex 通吃。",
+          "value": "切口是 agent 行为治理:团队为「在每个 agent 席位上统一强制极简与代码规范」付费(组织级配置、策略包、审计)。",
+          "risk": "它是提示词不是软件,护城河近乎为零;任何 agent 厂商加个「简洁模式」开关就能覆盖,技能包的病毒式增长退得和涨得一样快。"
+        }
+      }
     },
     {
       "title": "tianchong-zerotemp/dianxing",
@@ -2126,9 +2134,9 @@
       "title": "nexu-io/open-design",
       "claim": "nexu-io/open-design — 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine:",
       "score": 10,
-      "why_good": "The project leverages local-first technology, which can enhance user privacy and performance compared to cloud-based solutions.",
-      "value": "Design agencies and freelance designers could pay for premium features or support, creating a subscription model or one-time licensing fees.",
-      "risk": "The design software market is highly competitive, and established players may easily integrate similar capabilities, overshadowing this project.",
+      "why_good": "Turns your existing coding agent into a local-first design tool — a credible open alternative to Figma / 'Claude Design' that keeps files and IP on-device.",
+      "value": "Sell a hosted/team tier and enterprise licenses to design-dev teams who want agent-driven design without shipping their files to a cloud vendor.",
+      "risk": "Figma and the model vendors can bolt on the same agent-design flow; 'local-first' alone won't hold unless the agent-to-design UX is clearly better.",
       "evidence": [
         "https://github.com/nexu-io/open-design",
         "81,924★",
@@ -2152,7 +2160,15 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-27T18:27:41Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized."
+      "pick_reason": "The project offers a clear product in the form of a local-first design application that can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "nexu-io/open-design —— 开源的「Claude Design」替代品,本地优先的桌面 app:让你的编码 agent 变成设计引擎。",
+          "why_good": "把你现有的编码 agent 变成本地优先的设计工具——一个可信的 Figma /「Claude Design」开源替代,文件和 IP 都留在本机。",
+          "value": "向「想要 agent 驱动设计、又不愿把文件上传云厂商」的设计-研发团队,卖托管/团队版和企业授权。",
+          "risk": "Figma 和模型厂商随时能接上同样的 agent-设计流程;光靠「本地优先」守不住,除非 agent→设计 的体验明显更好。"
+        }
+      }
     },
     {
       "title": "tastyeffectco/sandboxd",
@@ -4062,9 +4078,9 @@
       "title": "mattpocock/skills",
       "claim": "mattpocock/skills — Skills for Real Engineers. Straight from my .agents directory.",
       "score": 10,
-      "why_good": "The project addresses a specific gap in skill assessment for engineers, which is often overlooked in traditional hiring processes.",
-      "value": "Companies could pay for subscription access to a platform that provides tailored skill assessments and training modules for their engineering teams.",
-      "risk": "The market for skill assessment tools is competitive, and established players could easily integrate similar features into their existing platforms.",
+      "why_good": "A well-known TypeScript educator open-sourced his personal agent 'skills' directory — strong distribution, but it's a curated file set, not a product.",
+      "value": "Hard to monetize directly; the real business would be a paid, quality-controlled 'skills registry/marketplace' with maintenance — which this isn't yet.",
+      "risk": "It's a content collection, not a company: near-zero moat, no usage/retention, and skill packs get absorbed straight into the agent platforms.",
       "evidence": [
         "https://github.com/mattpocock/skills",
         "190,868★",
@@ -4080,15 +4096,23 @@
       "tags": [],
       "id": "51-mattpocock-skills",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:42:58Z"
+      "posted_at": "2026-07-27T13:42:58Z",
+      "i18n": {
+        "zh": {
+          "claim": "mattpocock/skills —— 给「真正工程师」的技能集,直接来自作者的 .agents 目录。",
+          "why_good": "知名 TypeScript 教育者把自己的 agent「技能」目录开源——分发力强,但本质是一份精选文件集,不是产品。",
+          "value": "很难直接变现;真正的生意是一个有质控、可维护的付费「技能注册表/市场」——而这个还不是。",
+          "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。"
+        }
+      }
     },
     {
       "title": "affaan-m/ECC",
       "claim": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f",
       "score": 10,
-      "why_good": "The project leverages advanced performance optimization techniques that can be tailored for specific industries, making it adaptable to various use cases.",
-      "value": "Companies in sectors like gaming or AI can pay for premium features or support, creating a subscription model for ongoing optimization services.",
-      "risk": "The technology could be easily replicated by larger players with more resources, leading to a potential acquisition or feature absorption.",
+      "why_good": "A personal 'agent harness' bundling skills, memory and security patterns — useful as a reference, but it reads as one dev's setup, not a product.",
+      "value": "Only becomes a business if it turns into a managed, opinionated agent-runtime teams standardize on; today it's a config repo.",
+      "risk": "No clear buyer or moat yet, and harness patterns are being absorbed by the agent frameworks (LangGraph, Claude Code) themselves.",
       "evidence": [
         "https://github.com/affaan-m/ECC",
         "233,888★",
@@ -4110,7 +4134,15 @@
       ],
       "id": "50-affaan-m-ecc",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:42:54Z"
+      "posted_at": "2026-07-27T13:42:54Z",
+      "i18n": {
+        "zh": {
+          "claim": "affaan-m/ECC —— agent harness 的性能优化系统:技能、直觉、记忆、安全、research-first 开发。",
+          "why_good": "一套个人的「agent harness」,打包了技能/记忆/安全范式——作为参考有用,但更像某个开发者的个人配置,不是产品。",
+          "value": "只有当它变成团队愿意统一采用的、有主见的托管 agent 运行时,才算生意;现在只是个配置仓库。",
+          "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。"
+        }
+      }
     },
     {
       "title": "ReadKinetic – a free, local-first speed reader for your own books",
@@ -4934,7 +4966,15 @@
       ],
       "id": "1785146731-juggler-an-open-source-gui-coding-agent-by-the-c",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T10:05:31Z"
+      "posted_at": "2026-07-27T10:05:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Juggler —— 开源的图形界面(GUI)编码 agent,作者是 JUCE 的创造者。",
+          "why_good": "来自 JUCE 作者的开源 GUI 编码 agent——在热门赛道里罕见的创始人信誉。280 分。",
+          "value": "编码 agent 按席位/用量收费;一个受信任的老手做的精致 GUI,能在以 CLI 为主的工具中切出一条路。",
+          "risk": "极度拥挤(Cursor / Cline / Copilot / Codex);前沿实验室自家的 agent 才是真正的威胁。"
+        }
+      }
     },
     {
       "title": "Palmier Pro – Open-source macOS video editor built for AI",
@@ -5090,7 +5130,15 @@
       "tags": [],
       "id": "90000-justvugg-colibri",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T07:22:17Z"
+      "posted_at": "2026-07-27T07:22:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "JustVugg/colibri —— 在 25GB 内存的消费级机器上跑 GLM-5.2(744B MoE):纯 C、零依赖、专家权重从磁盘流式加载。",
+          "why_good": "把 744B 参数 MoE 模型的专家从磁盘流式加载,在 25GB 内存的笔记本上跑前沿级 AI(纯 C、零依赖);若质量/延迟撑得住,就干掉了最大障碍——显存和云成本。",
+          "value": "本地推理运行时是「在自己硬件上跑前沿 AI」的收费闸口——靠托管/专业版、本地部署的企业授权变现。",
+          "risk": "磁盘流式可能对真实负载太慢;llama.cpp / ollama 能照抄这个技巧并把它吸收掉。"
+        }
+      }
     },
     {
       "title": "lidge-jun/opencodex",
@@ -5120,7 +5168,15 @@
       ],
       "id": "90001-lidge-jun-opencodex",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T07:22:17Z"
+      "posted_at": "2026-07-27T07:22:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "lidge-jun/opencodex —— OpenAI Codex 与 Claude Code 的通用供应商代理:用任意 LLM(Claude、Gemini、Grok、DeepSeek、Ollama…)驱动 Codex。",
+          "why_good": "一个把 OpenAI Codex / Claude Code 指向任意模型(Gemini、Grok、DeepSeek、本地 Ollama)的通用代理——把最好的编码-agent 体验与单一厂商的模型解耦。",
+          "value": "卡在每个编码-agent 席位与模型之间:成为团队的模型路由网关——路由、花费管控、可观测性、自带模型(BYO)。",
+          "risk": "厂商可能锁定自家客户端来封杀代理;薄代理容易被商品化,除非它握住路由 + 可观测性这一层。"
+        }
+      }
     },
     {
       "title": "oomol-lab/open-connector",
@@ -5150,7 +5206,15 @@
       ],
       "id": "90004-oomol-lab-open-connector",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T07:22:17Z"
+      "posted_at": "2026-07-27T07:22:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "oomol-lab/open-connector —— 开源鉴权网关,通过 SDK / CLI / MCP / HTTP / OpenAPI 把 1000+ 家 SaaS 接入 AI agent。",
+          "why_good": "把 1000+ 家 SaaS 通过 SDK/CLI/MCP/HTTP/OpenAPI 接给 agent 的开源鉴权+集成网关——每个 agent 产品原本都要重造的脏活累活。",
+          "value": "集成与鉴权网关很能变现(参考 Merge.dev、Nango):按量 + 托管连接器 + 企业 SSO——而 agent 让这一层更值钱。",
+          "risk": "很挤(Nango、Composio、Merge),而且 MCP 标准本身可能吸收它;要赢得靠广度、可靠性与企业信任。"
+        }
+      }
     },
     {
       "title": "synthetic-sciences/openscience",
@@ -5180,7 +5244,15 @@
       ],
       "id": "90005-synthetic-sciences-openscience",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T07:22:17Z"
+      "posted_at": "2026-07-27T07:22:17Z",
+      "i18n": {
+        "zh": {
+          "claim": "synthetic-sciences/openscience —— 面向科研的开源 AI 工作台。",
+          "why_good": "为真实科研工作流打造的开源 AI 工作台——AI-for-science 是个大而未被满足、高价值的垂直,通用聊天工具在这里很不合适。",
+          "value": "卖给实验室 / 生物科技 / 研发部门:席位 + 算力 + 经过验证的流水线;科研预算大,且某个工作流一旦落地就很黏。",
+          "risk": "「工作台」太宽泛——它需要一个杀手级、经过验证的工作流才能立住;学术星标 ≠ 付费意愿;部分与 Benchling 这类现有玩家重叠。"
+        }
+      }
     }
   ],
   "clusters": [
