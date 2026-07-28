@@ -2,9 +2,9 @@
   "title": "akitaonrails/ai-memory",
   "claim": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
   "score": 8,
-  "why_good": "early traction (1,275★); 136 forks (10% of stars) — people build on it; 40 contributors, 374 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Long-term memory + cross-vendor handoff for coding-agent CLIs (1,275 stars, 40 contributors) — switch between Claude Code/Codex without losing context, a real friction.",
+  "value": "Sell a hosted memory service + team sync to shops that use multiple agents and want portable context.",
+  "risk": "Memory is being pulled into the agents natively, and 'handoff' only matters while multiple agents coexist.",
   "evidence": [
     "https://github.com/akitaonrails/ai-memory",
     "1,275★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "191-akitaonrails-ai-memory",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:16:54Z"
+  "posted_at": "2026-07-28T04:16:54Z",
+  "i18n": {
+    "zh": {
+      "claim": "akitaonrails/ai-memory —— 给编码 agent CLI 的长期记忆,并支持在不同 agent 厂商间交接。",
+      "why_good": "给编码 agent CLI 的长期记忆 + 跨厂商交接(1275★、40 贡献者)——让你在 Claude Code/Codex 间切换而不丢上下文,真实的摩擦。",
+      "value": "给用多个 agent、想要可携带上下文的团队卖托管记忆服务 + 团队同步。",
+      "risk": "记忆正被 agent 原生吸收,而交接只在多 agent 并存时才有意义。"
+    }
+  }
 }
