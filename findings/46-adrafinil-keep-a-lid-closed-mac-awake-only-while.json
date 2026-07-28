@@ -2,9 +2,9 @@
   "title": "Adrafinil – keep a lid-closed Mac awake only while agents work",
   "claim": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
   "score": 8,
-  "why_good": "This project addresses a common pain point for remote workers who need their laptops to stay awake during long tasks without unnecessary power consumption.",
-  "value": "Companies could pay for a subscription model to ensure their employees can optimize their devices for productivity, especially in remote work settings.",
-  "risk": "The feature could be easily replicated by existing operating systems or productivity tools, making it difficult to establish a sustainable business.",
+  "why_good": "Keeps a lid-closed Mac awake only while agents are actually working — a neat, specific fix for running agents overnight.",
+  "value": "A cheap paid Mac utility for people running long agent jobs; niche but clear.",
+  "risk": "Tiny utility (Amphetamine/Caffeine territory); easily cloned, and Apple could change power APIs.",
   "evidence": [
     "https://github.com/kageroumado/adrafinil",
     "https://news.ycombinator.com/item?id=48701512",
@@ -20,5 +20,13 @@
   ],
   "id": "46-adrafinil-keep-a-lid-closed-mac-awake-only-while",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T12:03:23Z"
+  "posted_at": "2026-07-27T12:03:23Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Adrafinil —— 仅在 agent 干活时,让合盖的 Mac 保持不休眠。",
+      "why_good": "仅在 agent 真正工作时让合盖的 Mac 不休眠——给跑通宵 agent 的人一个利落、具体的解法。",
+      "value": "给跑长 agent 任务的人卖个便宜的 Mac 小工具;细分但清晰。",
+      "risk": "极小工具(Amphetamine/Caffeine 的地盘);易被抄,Apple 也可能改电源 API。"
+    }
+  }
 }
