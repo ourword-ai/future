@@ -2,9 +2,9 @@
   "title": "emdash-cms/emdash",
   "claim": "emdash-cms/emdash — EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress",
   "score": 8,
-  "why_good": "EmDash leverages the growing demand for TypeScript-based solutions, appealing to developers seeking modern, scalable content management systems.",
-  "value": "Businesses pay for premium features, hosting, and support, creating a subscription model that generates recurring revenue.",
-  "risk": "The project may struggle to differentiate itself in a crowded market where established players like WordPress and newer entrants dominate.",
+  "why_good": "A full-stack TypeScript CMS on Astro pitched as WordPress's successor — a huge market where a modern, JS-native CMS has real pull.",
+  "value": "Hosting + themes + agency/enterprise licenses — the classic WordPress-economy playbook on a modern stack.",
+  "risk": "WordPress's moat is its plugin/theme ecosystem and installed base; 'successor' claims are common and rarely dislodge it.",
   "evidence": [
     "https://github.com/emdash-cms/emdash",
     "11,437★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T19:00:04Z",
   "pick": true,
-  "pick_reason": "EmDash offers a clear product that can be monetized by targeting developers looking for modern CMS solutions."
+  "pick_reason": "EmDash offers a clear product that can be monetized by targeting developers looking for modern CMS solutions.",
+  "i18n": {
+    "zh": {
+      "claim": "emdash-cms/emdash —— 基于 Astro 的全栈 TypeScript CMS,WordPress 的精神继承者。",
+      "why_good": "一个基于 Astro 的全栈 TS CMS,定位为 WordPress 继承者——一个大市场,现代、JS 原生的 CMS 确有吸引力。",
+      "value": "托管 + 主题 + 代理商/企业授权,在现代技术栈上复刻 WordPress 经济的经典打法。",
+      "risk": "WordPress 的护城河是插件/主题生态和存量;继承者的口号很常见,极少能撼动它。"
+    }
+  }
 }
