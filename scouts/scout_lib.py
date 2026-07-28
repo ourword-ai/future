@@ -195,10 +195,12 @@ def llm_copy(f):
         "BAR to match (why_good): \"Attacks the #1 complaint about coding agents - overengineered "
         "slop - and the pull is real: ~90k stars in six weeks.\"\n\n"
         "Reply with ONLY a JSON object; each English value is ONE tight, concrete sentence:\n"
+        "  hook: a punchy, scroll-stopping one-line headline — a COMPLETE but concise sentence that makes someone want to click; you may fold in the standout number (e.g. stars). Not hype, not a fragment.\n"
         "  why_good: the non-obvious, project-specific reason this could be a real startup.\n"
         "  value: who EXACTLY pays and for what specific outcome (name the buyer and the wedge).\n"
         "  risk: the concrete, specific reason it might fail (name the incumbent or exact weakness).\n"
         "  claim_zh: 中文翻译 of the one-line description (keep repo/product names in latin).\n"
+        "  hook_zh: faithful 中文 translation of the hook.\n"
         "  why_good_zh, value_zh, risk_zh: faithful 中文 translations of the three English lines.\n\n"
         f"Project: {f.get('title','')} — {f.get('claim','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n\nJSON only.")
@@ -214,8 +216,10 @@ def llm_copy(f):
         obj = json.loads(m.group(0))
         if all(obj.get(k) for k in ("why_good", "value", "risk")):
             out = {k: str(obj[k]).strip()[:400] for k in ("why_good", "value", "risk")}
+            if obj.get("hook"):
+                out["hook"] = str(obj["hook"]).strip()[:200]
             zh = {}
-            for src, dst in (("claim_zh", "claim"), ("why_good_zh", "why_good"),
+            for src, dst in (("claim_zh", "claim"), ("hook_zh", "hook"), ("why_good_zh", "why_good"),
                              ("value_zh", "value"), ("risk_zh", "risk")):
                 if obj.get(src):
                     zh[dst] = str(obj[src]).strip()[:400]
