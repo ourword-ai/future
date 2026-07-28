@@ -2,9 +2,9 @@
   "title": "react/react",
   "claim": "react/react — The library for web and native user interfaces.",
   "score": 9,
-  "why_good": "React's extensive ecosystem and community support create opportunities for niche tools and services that enhance or extend its functionality.",
-  "value": "Companies building applications with React may pay for premium plugins, consulting services, or performance optimization tools tailored to their specific needs.",
-  "risk": "The market is saturated with similar libraries and tools, and larger companies could easily integrate these features into their existing products.",
+  "why_good": "Meta's UI library that runs the web — foundational infrastructure, not a founder opportunity.",
+  "value": "No startup here; money around React is tooling/consulting, and Meta owns it.",
+  "risk": "Owned by Meta, ubiquitous; a category signal, not a buildable opening.",
   "evidence": [
     "https://github.com/react/react",
     "246,741★",
@@ -27,5 +27,13 @@
   ],
   "id": "56-react-react",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T13:43:19Z"
+  "posted_at": "2026-07-27T13:43:19Z",
+  "i18n": {
+    "zh": {
+      "claim": "react/react —— 用于 Web 和原生界面的库。",
+      "why_good": "Meta 的 UI 库,撑起了整个 Web——基础设施,不是创始人机会。",
+      "value": "这里没有创业;React 周边的钱是工具/咨询,而它归 Meta。",
+      "risk": "归 Meta、无处不在;是品类信号,不是可搭建的口子。"
+    }
+  }
 }
