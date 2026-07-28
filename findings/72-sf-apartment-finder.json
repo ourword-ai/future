@@ -2,9 +2,9 @@
   "title": "SF Apartment Finder",
   "claim": "Product Hunt: SF Apartment Finder — Tinder for live SF rentals from across the web",
   "score": 7,
-  "why_good": "The platform leverages real-time data aggregation and user preferences to streamline the apartment hunting process, addressing a significant pain point in a competitive market.",
-  "value": "Landlords and property management companies can pay for premium listings and analytics on user engagement, while renters could be charged for additional features like personalized alerts.",
-  "risk": "The startup may struggle against established real estate platforms that could easily integrate similar features or acquire the technology.",
+  "why_good": "A 'Tinder for SF rentals' aggregating live listings across the web — a real, painful, high-intent problem (finding housing in SF).",
+  "value": "Rentals monetize well (lead-gen, broker fees, premium alerts); high-intent users in a high-price market pay.",
+  "risk": "Hyper-local (SF only), listing access is a legal/ToS fight (Zillow/Craigslist), and it must expand beyond one city.",
   "evidence": [
     "https://www.producthunt.com/r/O3D2UFH7U4P7SI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/sf-apartment-finder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -24,5 +24,13 @@
   ],
   "id": "72-sf-apartment-finder",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T15:18:19Z"
+  "posted_at": "2026-07-27T15:18:19Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: SF Apartment Finder —— 聚合全网旧金山实时房源的 租房版 Tinder。",
+      "why_good": "一个聚合全网旧金山实时房源的租房版 Tinder——真实、痛、高意图的问题(在旧金山找房)。",
+      "value": "租房很好变现(导流、中介费、付费提醒);高价市场里的高意图用户会付费。",
+      "risk": "超本地(仅 SF)、房源抓取是法律/ToS 之争(Zillow/Craigslist),且必须扩出单一城市。"
+    }
+  }
 }
