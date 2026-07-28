@@ -32,7 +32,9 @@
       "claim": "oomol-lab/open-connector —— 开源鉴权网关,通过 SDK / CLI / MCP / HTTP / OpenAPI 把 1000+ 家 SaaS 接入 AI agent。",
       "why_good": "把 1000+ 家 SaaS 通过 SDK/CLI/MCP/HTTP/OpenAPI 接给 agent 的开源鉴权+集成网关——每个 agent 产品原本都要重造的脏活累活。",
       "value": "集成与鉴权网关很能变现(参考 Merge.dev、Nango):按量 + 托管连接器 + 企业 SSO——而 agent 让这一层更值钱。",
-      "risk": "很挤(Nango、Composio、Merge),而且 MCP 标准本身可能吸收它;要赢得靠广度、可靠性与企业信任。"
+      "risk": "很挤(Nango、Composio、Merge),而且 MCP 标准本身可能吸收它;要赢得靠广度、可靠性与企业信任。",
+      "hook": "每个 agent 都要重造的脏活:一个把 1000+ SaaS 接给 agent 的网关。"
     }
-  }
+  },
+  "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents."
 }
