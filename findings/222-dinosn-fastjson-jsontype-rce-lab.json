@@ -1,0 +1,30 @@
+{
+  "title": "dinosn/fastjson-jsontype-rce-lab",
+  "claim": "dinosn/fastjson-jsontype-rce-lab — Docker labs + defensive scanner for fastjson remote-class-load RCE. fastjson 1.2.66-1.2.83: @JSONType resource probe (CV",
+  "score": 9,
+  "why_good": "87 forks (47% of stars) — people build on it",
+  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "evidence": [
+    "https://github.com/dinosn/fastjson-jsontype-rce-lab",
+    "184★",
+    "87 forks",
+    "1 contributors",
+    "16 commits/30d",
+    "created 2026-07-20"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "appsec",
+    "autotype",
+    "deserialization",
+    "fastjson",
+    "fastjson2"
+  ],
+  "id": "222-dinosn-fastjson-jsontype-rce-lab",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-28T10:42:34Z"
+}
