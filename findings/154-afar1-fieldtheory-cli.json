@@ -2,9 +2,9 @@
   "title": "afar1/fieldtheory-cli",
   "claim": "afar1/fieldtheory-cli — Field Theory CLI for bookmarks, Library, commands, and agent workflows",
   "score": 8,
-  "why_good": "The project addresses the growing need for efficient bookmark management and workflow automation in an increasingly digital workspace.",
-  "value": "Businesses could pay for premium features or integrations, while individual users might subscribe for enhanced productivity tools.",
-  "risk": "The solution may struggle to gain traction if larger productivity tools incorporate similar features, overshadowing this niche offering.",
+  "why_good": "A personal CLI unifying bookmarks, a command library and agent workflows — handy, but broad and reads like one dev's toolkit.",
+  "value": "Unclear buyer; a pro/sync tier is possible but the scope is too diffuse to charge for yet.",
+  "risk": "Diffuse scope, no clear wedge; more a personal productivity script than a company.",
   "evidence": [
     "https://github.com/afar1/fieldtheory-cli",
     "1,976★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T20:27:45Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product for efficient bookmark management and workflow automation that can be monetized."
+  "pick_reason": "The project offers a clear product for efficient bookmark management and workflow automation that can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "afar1/fieldtheory-cli —— 管理书签、Library、命令与 agent 工作流的 CLI。",
+      "why_good": "一个把书签、命令库和 agent 工作流统一起来的个人 CLI——方便,但范围宽、像某个开发者的工具箱。",
+      "value": "买家不清晰;可做专业/同步档,但范围太散,暂时难收费。",
+      "risk": "范围发散、没有清晰切口;更像个人效率脚本而非公司。"
+    }
+  }
 }
