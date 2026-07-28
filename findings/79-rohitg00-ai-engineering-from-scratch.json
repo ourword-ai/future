@@ -32,7 +32,9 @@
       "claim": "rohitg00/ai-engineering-from-scratch —— 学会它、做出来、交付给别人。",
       "why_good": "一套动手的\"从零做 AI 工程\"课程——有价值的学习内容,但它是教育材料,不是产品。",
       "value": "只能靠课程/训练营/咨询变现;内容生意是真的,但和软件创业不是一回事。",
-      "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。"
+      "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。",
+      "hook": "在动手里学 AI 工程——动手课程,不是产品。"
     }
-  }
+  },
+  "hook": "Learn AI engineering by building it — a hands-on curriculum, not a product."
 }
