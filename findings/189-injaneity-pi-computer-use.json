@@ -2,9 +2,9 @@
   "title": "injaneity/pi-computer-use",
   "claim": "injaneity/pi-computer-use — Let Pi control your apps on MacOS & Windows",
   "score": 8,
-  "why_good": "early traction (1,618★); 11 contributors, 116 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Gives the Pi agent computer-use control over desktop apps (1,618 stars, active) — the OS-automation layer agents need to actually do work.",
+  "value": "Usage/seat pricing for teams automating desktop workflows; the wedge is reliable cross-app control.",
+  "risk": "Anthropic/OpenAI computer-use and the OS makers are racing here; a third-party control layer fights giants.",
   "evidence": [
     "https://github.com/injaneity/pi-computer-use",
     "1,618★",
@@ -22,5 +22,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-28T04:16:46Z",
   "pick": true,
-  "pick_reason": "The project offers a clear product that allows users to control applications on MacOS and Windows, which can be monetized."
+  "pick_reason": "The project offers a clear product that allows users to control applications on MacOS and Windows, which can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "injaneity/pi-computer-use —— 让 Pi 在 macOS 和 Windows 上操控你的应用。",
+      "why_good": "给 Pi agent 桌面应用的 computer-use 控制(1618★、活跃)——agent 真正干活需要的操作系统自动化层。",
+      "value": "按用量/席位卖给自动化桌面流程的团队;切口是可靠的跨应用控制。",
+      "risk": "Anthropic/OpenAI 的 computer-use 和操作系统厂商都在抢;第三方控制层是在跟巨头硬碰。"
+    }
+  }
 }
