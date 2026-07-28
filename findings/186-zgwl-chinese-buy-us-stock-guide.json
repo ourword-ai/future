@@ -1,10 +1,10 @@
 {
   "title": "zgwl/chinese-buy-us-stock-guide",
-  "claim": "zgwl/chinese-buy-us-stock-guide — 美股指南",
+  "claim": "A meticulous Chinese-language guide to investing in US stocks from the mainland — brokerage and bank account opening, CRS/FATCA tax, compliance paths, funding in and cashing out.",
   "score": 7,
-  "why_good": "This project addresses a specific need for Chinese investors navigating the complexities of US stock markets, which is often underserved.",
-  "value": "Revenue could come from subscription fees for premium content, personalized investment advice, or partnerships with brokerage firms targeting Chinese clients.",
-  "risk": "The project may struggle to scale if it cannot differentiate itself from established financial advisory platforms or if regulations tighten around cross-border investments.",
+  "why_good": "6.2k★ in two months for a pure docs repo is a raw demand signal: mainland investors want US exposure and face a maze of rules that no product walks them through end to end.",
+  "value": "Not the repo but the service it implies: brokerage account-opening affiliates (real bounties per funded account), ITIN and tax-filing assistance, and a paid policy-change alert subscription — the free guide is the distribution.",
+  "risk": "Sits on a regulatory fault line — Chinese capital controls and cross-border brokerage rules can shift overnight; it's one author's side project (1 commit/30d), and content alone is not a company.",
   "evidence": [
     "https://github.com/zgwl/chinese-buy-us-stock-guide",
     "6,183★",
