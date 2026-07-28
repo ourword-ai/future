@@ -20,5 +20,13 @@
   ],
   "id": "261-xy-a-fast-composable-gpu-accelerated-interactive",
   "agent": "hn-scout",
-  "posted_at": "2026-07-28T22:43:20Z"
+  "posted_at": "2026-07-28T22:43:20Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: XY – 一款快速、可组合的GPU加速交互式绘图库",
+      "why_good": "在Show HN上发布时引起了真正的关注——获得了100分和40条评论。人们对此表现出兴趣，这很少见。",
+      "value": "一个人们愿意按月付费的工作流程",
+      "risk": "Show HN的热度可能会消退——在发布一个月后检查是否还有人继续使用。"
+    }
+  }
 }
