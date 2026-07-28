@@ -2,9 +2,9 @@
   "title": "rohitg00/ai-engineering-from-scratch",
   "claim": "rohitg00/ai-engineering-from-scratch — Learn it. Build it. Ship it for others.",
   "score": 9,
-  "why_good": "This project addresses the growing demand for practical AI engineering skills, filling a gap between theoretical knowledge and real-world application.",
-  "value": "Companies could pay for premium courses, certifications, and consulting services to train their teams in AI engineering best practices.",
-  "risk": "The project could struggle to scale if it fails to differentiate itself from existing educational platforms or if larger competitors offer similar content.",
+  "why_good": "A hands-on 'AI engineering from scratch' curriculum — valuable learning content, but it's education material, not a product.",
+  "value": "Monetizes only as courses/cohorts/consulting; content businesses are real but different from a software startup.",
+  "risk": "Crowded free-education space; tutorials get commoditized fast and rarely build a durable moat.",
   "evidence": [
     "https://github.com/rohitg00/ai-engineering-from-scratch",
     "44,115★",
@@ -26,5 +26,13 @@
   ],
   "id": "79-rohitg00-ai-engineering-from-scratch",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T15:27:02Z"
+  "posted_at": "2026-07-27T15:27:02Z",
+  "i18n": {
+    "zh": {
+      "claim": "rohitg00/ai-engineering-from-scratch —— 学会它、做出来、交付给别人。",
+      "why_good": "一套动手的\"从零做 AI 工程\"课程——有价值的学习内容,但它是教育材料,不是产品。",
+      "value": "只能靠课程/训练营/咨询变现;内容生意是真的,但和软件创业不是一回事。",
+      "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。"
+    }
+  }
 }
