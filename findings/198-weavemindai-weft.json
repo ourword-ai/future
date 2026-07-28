@@ -2,9 +2,9 @@
   "title": "WeaveMindAI/weft",
   "claim": "WeaveMindAI/weft — A programming language for AI orchestrations (POC)",
   "score": 7,
-  "why_good": "early traction (1,679★); 189 forks (11% of stars) — people build on it",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "A programming language for AI orchestration (still a POC) — an ambitious bet that agent workflows need their own language.",
+  "value": "Languages monetize via a cloud/runtime around them; far off, and only if it gets real adoption.",
+  "risk": "POC stage; new languages almost never achieve adoption, and orchestration is crowded with libraries, not languages.",
   "evidence": [
     "https://github.com/WeaveMindAI/weft",
     "1,679★",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "198-weavemindai-weft",
   "agent": "gh-scout",
-  "posted_at": "2026-07-28T04:17:10Z"
+  "posted_at": "2026-07-28T04:17:10Z",
+  "i18n": {
+    "zh": {
+      "claim": "WeaveMindAI/weft —— 面向 AI 编排的编程语言(POC)。",
+      "why_good": "一门面向 AI 编排的编程语言(还是 POC)——一个雄心押注:agent 工作流需要自己的语言。",
+      "value": "语言靠围绕它的云/运行时变现;很遥远,且只有真获得采用才行。",
+      "risk": "POC 阶段;新语言几乎从不成功,而编排是 库 而非 语言 在竞争。"
+    }
+  }
 }
