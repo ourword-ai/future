@@ -32,9 +32,9 @@
       "title": "Neil the Seal Game",
       "claim": "Show HN: Neil the Seal Game",
       "score": 8,
-      "why_good": "Launched on Show HN with real interest — 99 points / 88 comments. People turned up for it, which is rare.",
-      "value": "a workflow people pay a monthly seat for",
-      "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+      "why_good": "A quirky Show HN browser game that caught real attention (99 pts / 88 comments) — fun and viral, but a one-off game, not a startup.",
+      "value": "Games monetize only with a hit franchise or platform; a single novelty game rarely becomes a company.",
+      "risk": "Novelty spike; games are hit-driven and this is a solo curiosity, not a durable business.",
       "evidence": [
         "https://neiltheseal.app/",
         "https://news.ycombinator.com/item?id=48794042",
@@ -50,15 +50,23 @@
       ],
       "id": "204-neil-the-seal-game",
       "agent": "hn-scout",
-      "posted_at": "2026-07-28T06:38:21Z"
+      "posted_at": "2026-07-28T06:38:21Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Neil the Seal 游戏。",
+          "why_good": "一个古怪的 Show HN 网页游戏,真的抓到了注意(99 分 / 88 评论)——好玩、易传播,但是个一次性游戏,不是创业。",
+          "value": "游戏只有靠爆款 IP 或平台才变现;单个新奇游戏很少成公司。",
+          "risk": "新奇一波;游戏靠爆款驱动,这是个人好奇之作,不是持久生意。"
+        }
+      }
     },
     {
       "title": "FeyNoBg – Automatic background removal model and training library",
       "claim": "Show HN: FeyNoBg – Automatic background removal model and training library",
       "score": 8,
-      "why_good": "Launched on Show HN with real interest — 101 points / 22 comments. People turned up for it, which is rare.",
-      "value": "a workflow people pay a monthly seat for",
-      "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+      "why_good": "An open background-removal model + training library — a proven paid category (remove.bg) with a fresh open, self-trainable angle.",
+      "value": "Sell an API + a fine-tuning/hosting tier to apps and studios doing bulk image editing; per-image or subscription.",
+      "risk": "remove.bg and the big image models already do this well; open weights help, but quality + throughput must compete.",
       "evidence": [
         "https://usefeyn.com/blog/feynobg/",
         "https://news.ycombinator.com/item?id=49072462",
@@ -74,7 +82,15 @@
       ],
       "id": "203-feynobg-automatic-background-removal-model-and-t",
       "agent": "hn-scout",
-      "posted_at": "2026-07-28T06:38:19Z"
+      "posted_at": "2026-07-28T06:38:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: FeyNoBg —— 自动抠图模型与训练库。",
+          "why_good": "一个开源抠图模型 + 训练库——一个已被验证会付费的品类(remove.bg),但带开源、可自训的新角度。",
+          "value": "给做批量图像编辑的 app/工作室卖 API + 微调/托管档;按张或订阅。",
+          "risk": "remove.bg 和大图像模型已做得好;开源权重有帮助,但质量 + 吞吐要能竞争。"
+        }
+      }
     },
     {
       "title": "Rescript",
@@ -353,9 +369,9 @@
       "title": "yituorou/meatshell",
       "claim": "yituorou/meatshell — 一个轻量级、低内存占用的 SSH / 终端客户端（A lightweight, low-memory SSH / terminal client）",
       "score": 8,
-      "why_good": "early traction (1,180★); 143 forks (12% of stars) — people build on it; 5 contributors, 153 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A lightweight, low-memory SSH/terminal client with early pull (1,180 stars, actively maintained) — a real niche for people on constrained machines.",
+      "value": "Charge a pro/team tier (sync, vaulted credentials, team access) like Termius does on top of a free core.",
+      "risk": "Termius/iTerm/Windows Terminal are entrenched; a lean client needs a sharp speed/UX wedge to convert payers.",
       "evidence": [
         "https://github.com/yituorou/meatshell",
         "1,180★",
@@ -371,15 +387,23 @@
       "tags": [],
       "id": "192-yituorou-meatshell",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:16:56Z"
+      "posted_at": "2026-07-28T04:16:56Z",
+      "i18n": {
+        "zh": {
+          "claim": "yituorou/meatshell —— 一个轻量、低内存占用的 SSH / 终端客户端。",
+          "why_good": "一个轻量、低内存的 SSH/终端客户端,早期有牵引(1180★、活跃维护)——对受限机器的人是真实细分。",
+          "value": "像 Termius 那样在免费核心上卖专业/团队版(同步、凭证保险箱、团队访问)。",
+          "risk": "Termius/iTerm/Windows Terminal 根基深;精简客户端要靠锋利的速度/体验切口才能转化付费。"
+        }
+      }
     },
     {
       "title": "akitaonrails/ai-memory",
       "claim": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "score": 8,
-      "why_good": "early traction (1,275★); 136 forks (10% of stars) — people build on it; 40 contributors, 374 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Long-term memory + cross-vendor handoff for coding-agent CLIs (1,275 stars, 40 contributors) — switch between Claude Code/Codex without losing context, a real friction.",
+      "value": "Sell a hosted memory service + team sync to shops that use multiple agents and want portable context.",
+      "risk": "Memory is being pulled into the agents natively, and 'handoff' only matters while multiple agents coexist.",
       "evidence": [
         "https://github.com/akitaonrails/ai-memory",
         "1,275★",
@@ -395,15 +419,23 @@
       "tags": [],
       "id": "191-akitaonrails-ai-memory",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:16:54Z"
+      "posted_at": "2026-07-28T04:16:54Z",
+      "i18n": {
+        "zh": {
+          "claim": "akitaonrails/ai-memory —— 给编码 agent CLI 的长期记忆,并支持在不同 agent 厂商间交接。",
+          "why_good": "给编码 agent CLI 的长期记忆 + 跨厂商交接(1275★、40 贡献者)——让你在 Claude Code/Codex 间切换而不丢上下文,真实的摩擦。",
+          "value": "给用多个 agent、想要可携带上下文的团队卖托管记忆服务 + 团队同步。",
+          "risk": "记忆正被 agent 原生吸收,而交接只在多 agent 并存时才有意义。"
+        }
+      }
     },
     {
       "title": "webstonehq/tuxedo",
       "claim": "webstonehq/tuxedo — A fast, keyboard-driven terminal UI for todo.txt.",
       "score": 8,
-      "why_good": "early traction (1,503★); 19 contributors, 23 commits/30d — actively maintained",
-      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A fast, keyboard-driven terminal UI for todo.txt (1,503 stars) — beloved by CLI power-users who live in the terminal.",
+      "value": "Hard to charge for a todo TUI; at best a pro tier (sync, mobile), or it stays a loved free tool.",
+      "risk": "todo.txt tooling is a tiny, free-by-culture niche; low willingness to pay and easy to clone.",
       "evidence": [
         "https://github.com/webstonehq/tuxedo",
         "1,503★",
@@ -426,15 +458,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T04:16:50Z",
       "pick": true,
-      "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions."
+      "pick_reason": "The project offers a unique terminal UI for managing to-do lists, which can be monetized through premium features or subscriptions.",
+      "i18n": {
+        "zh": {
+          "claim": "webstonehq/tuxedo —— 一个快速、键盘驱动的 todo.txt 终端 UI。",
+          "why_good": "一个快、键盘驱动的 todo.txt 终端 UI(1503★)——终端重度用户很爱。",
+          "value": "todo TUI 很难收费;顶多做专业版(同步、移动端),否则就是个受喜爱的免费工具。",
+          "risk": "todo.txt 工具是个小、文化上就免费的细分;付费意愿低且易被抄。"
+        }
+      }
     },
     {
       "title": "injaneity/pi-computer-use",
       "claim": "injaneity/pi-computer-use — Let Pi control your apps on MacOS & Windows",
       "score": 8,
-      "why_good": "early traction (1,618★); 11 contributors, 116 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Gives the Pi agent computer-use control over desktop apps (1,618 stars, active) — the OS-automation layer agents need to actually do work.",
+      "value": "Usage/seat pricing for teams automating desktop workflows; the wedge is reliable cross-app control.",
+      "risk": "Anthropic/OpenAI computer-use and the OS makers are racing here; a third-party control layer fights giants.",
       "evidence": [
         "https://github.com/injaneity/pi-computer-use",
         "1,618★",
@@ -452,15 +492,23 @@
       "agent": "gh-scout",
       "posted_at": "2026-07-28T04:16:46Z",
       "pick": true,
-      "pick_reason": "The project offers a clear product that allows users to control applications on MacOS and Windows, which can be monetized."
+      "pick_reason": "The project offers a clear product that allows users to control applications on MacOS and Windows, which can be monetized.",
+      "i18n": {
+        "zh": {
+          "claim": "injaneity/pi-computer-use —— 让 Pi 在 macOS 和 Windows 上操控你的应用。",
+          "why_good": "给 Pi agent 桌面应用的 computer-use 控制(1618★、活跃)——agent 真正干活需要的操作系统自动化层。",
+          "value": "按用量/席位卖给自动化桌面流程的团队;切口是可靠的跨应用控制。",
+          "risk": "Anthropic/OpenAI 的 computer-use 和操作系统厂商都在抢;第三方控制层是在跟巨头硬碰。"
+        }
+      }
     },
     {
       "title": "openlake-project/openlake",
       "claim": "openlake-project/openlake — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training",
       "score": 8,
-      "why_good": "early traction (2,290★); 422 forks (18% of stars) — people build on it; 17 contributors, 46 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "A high-performance storage engine purpose-built for LLM inference and GPU training (2,290 stars, 422 forks) — real infra pain as model I/O bottlenecks GPUs.",
+      "value": "Sell to AI-infra teams and clouds as a managed/enterprise storage layer; usage + support, a budget line GPU shops already have.",
+      "risk": "Heavy infra competing with cloud-native storage and vLLM ecosystems; adoption needs benchmarks and trust at scale.",
       "evidence": [
         "https://github.com/openlake-project/openlake",
         "2,290★",
@@ -482,7 +530,15 @@
       ],
       "id": "188-openlake-project-openlake",
       "agent": "gh-scout",
-      "posted_at": "2026-07-28T04:16:44Z"
+      "posted_at": "2026-07-28T04:16:44Z",
+      "i18n": {
+        "zh": {
+          "claim": "openlake-project/openlake —— 面向高效 LLM 推理与 GPU 训练的高性能存储引擎。",
+          "why_good": "专为 LLM 推理和 GPU 训练打造的高性能存储引擎(2290★、422 fork)——模型 I/O 卡住 GPU,是真实的基础设施痛点。",
+          "value": "卖给 AI 基础设施团队和云厂做托管/企业存储层;按量 + 支持,GPU 团队本就有这笔预算。",
+          "risk": "重基础设施,要和云原生存储、vLLM 生态竞争;规模化采用需要跑分和信任。"
+        }
+      }
     },
     {
       "title": "zgwl/chinese-buy-us-stock-guide",
@@ -3760,9 +3816,9 @@
       "title": "MemPalace/mempalace",
       "claim": "MemPalace/mempalace — The best-benchmarked open-source AI memory system. And it's free.",
       "score": 9,
-      "why_good": "The project leverages cutting-edge AI techniques to enhance memory retention, appealing to educational institutions and professional training programs.",
-      "value": "Revenue could come from subscription-based models for premium features or enterprise solutions tailored for organizations looking to improve learning outcomes.",
-      "risk": "The open-source nature may attract larger tech companies to develop similar solutions, potentially overshadowing the project.",
+      "why_good": "Positions as the best-benchmarked open-source memory layer for agents — memory is a real, unsolved need every agent product hits.",
+      "value": "Sell a hosted/managed memory API + enterprise (retention, multi-tenant) to agent builders who don't want to run it.",
+      "risk": "Crowded (Mem0, Zep, Letta) and memory may get absorbed into the agent frameworks; 'best benchmark' needs independent proof.",
       "evidence": [
         "https://github.com/MemPalace/mempalace",
         "57,793★",
@@ -3784,15 +3840,23 @@
       ],
       "id": "78-mempalace-mempalace",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:26:57Z"
+      "posted_at": "2026-07-27T15:26:57Z",
+      "i18n": {
+        "zh": {
+          "claim": "MemPalace/mempalace —— 跑分最好的开源 AI 记忆系统,而且免费。",
+          "why_good": "定位为 agent 的跑分最好开源记忆层——记忆是每个 agent 产品都会撞上、且尚未解决的真实需求。",
+          "value": "给不想自建的 agent 开发者卖托管记忆 API + 企业版(留存、多租户)。",
+          "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。"
+        }
+      }
     },
     {
       "title": "santifer/career-ops",
       "claim": "santifer/career-ops — Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor",
       "score": 9,
-      "why_good": "The structured scoring system can provide a unique and objective way for job seekers to assess opportunities beyond traditional metrics.",
-      "value": "Companies could pay for premium access to tailored job listings and analytics to improve their hiring processes and candidate matching.",
-      "risk": "The project may struggle to scale if larger job platforms integrate similar features, overshadowing its unique offering.",
+      "why_good": "Turns job hunting into a structured A–F rubric score per listing — more rigorous than keyword matching, for a painful high-volume task.",
+      "value": "Subscription for job seekers (auto-scan + score + tailored apply); the urgency and pain are real.",
+      "risk": "Same saturated space as every AI job tool; LinkedIn/Indeed can add scoring, and retention ends at the hire.",
       "evidence": [
         "https://github.com/santifer/career-ops",
         "61,813★",
@@ -3814,7 +3878,15 @@
       ],
       "id": "77-santifer-career-ops",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:26:53Z"
+      "posted_at": "2026-07-27T15:26:53Z",
+      "i18n": {
+        "zh": {
+          "claim": "santifer/career-ops —— 开源 AI 求职:扫招聘网站,用结构化 A–F 评分体系把岗位打成 1.0–5.0 分。",
+          "why_good": "把找工作变成对每个岗位的结构化 A–F 打分——比关键词匹配更严谨,面向一个痛苦、高频的任务。",
+          "value": "给求职者卖订阅(自动扫+打分+定制投递);紧迫感和痛点都真实。",
+          "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。"
+        }
+      }
     },
     {
       "title": "Speechius",
@@ -4202,9 +4274,9 @@
       "title": "ohmyzsh/ohmyzsh",
       "claim": "ohmyzsh/ohmyzsh — 🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300",
       "score": 9,
-      "why_good": "The extensive community and contributor base indicates strong user engagement and ongoing support, which can drive continuous innovation.",
-      "value": "Businesses could pay for premium themes, plugins, or support services that enhance their development environments, creating a recurring revenue model.",
-      "risk": "The project could fail if larger incumbents in the terminal or shell space decide to integrate similar features, diminishing the need for a standalone solution.",
+      "why_good": "A beloved, massive community zsh framework — foundational OSS, but a 15-year-old config manager, not a foundable startup.",
+      "value": "No real business here; it's infrastructure people love and nobody pays for.",
+      "risk": "Not a company: mature, community-run, zero monetization intent — on this board as a signal, not an opportunity.",
       "evidence": [
         "https://github.com/ohmyzsh/ohmyzsh",
         "188,859★",
@@ -4226,15 +4298,23 @@
       ],
       "id": "61-ohmyzsh-ohmyzsh",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:42Z"
+      "posted_at": "2026-07-27T13:43:42Z",
+      "i18n": {
+        "zh": {
+          "claim": "ohmyzsh/ohmyzsh —— 广受欢迎、2500+ 贡献者的 zsh 配置管理社区框架。",
+          "why_good": "一个深受喜爱的大型社区 zsh 框架——基础性开源,但它是个 15 年的配置管理器,不是可创办的创业。",
+          "value": "这里没有真正的生意;它是大家喜爱、但没人付费的基础设施。",
+          "risk": "根本不是公司:成熟、社区运营、零变现意图——出现在看板上只是信号,不是机会。"
+        }
+      }
     },
     {
       "title": "flutter/flutter",
       "claim": "flutter/flutter — Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "score": 9,
-      "why_good": "Flutter's cross-platform capabilities allow for rapid development, which can significantly reduce time-to-market for new applications.",
-      "value": "Companies pay for premium support, training, and custom development services to leverage Flutter for their app solutions.",
-      "risk": "The risk lies in established players like Google or Microsoft potentially integrating similar features into their existing ecosystems, overshadowing independent offerings.",
+      "why_good": "Google's cross-platform UI toolkit — a foundational framework, not an opening for a founder.",
+      "value": "No startup wedge; the money around Flutter is services/consulting, and Google owns the platform.",
+      "risk": "Owned by Google and already dominant; listed as an ecosystem signal, not a buildable opportunity.",
       "evidence": [
         "https://github.com/flutter/flutter",
         "177,951★",
@@ -4256,15 +4336,23 @@
       ],
       "id": "60-flutter-flutter",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:38Z"
+      "posted_at": "2026-07-27T13:43:38Z",
+      "i18n": {
+        "zh": {
+          "claim": "flutter/flutter —— 让你快速构建漂亮的跨端 app(移动及更多)。",
+          "why_good": "Google 的跨平台 UI 工具包——一个基础框架,不是创始人的口子。",
+          "value": "没有创业切口;Flutter 周边的钱是服务/咨询,而平台归 Google。",
+          "risk": "归 Google 且已主导;这里当生态信号列出,不是可搭建的机会。"
+        }
+      }
     },
     {
       "title": "Significant-Gravitas/AutoGPT",
       "claim": "Significant-Gravitas/AutoGPT — AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so tha",
       "score": 9,
-      "why_good": "AutoGPT's modular design allows for rapid customization, making it appealing for niche applications across various industries.",
-      "value": "Businesses could pay for premium features, support, or custom integrations, creating a subscription or licensing revenue model.",
-      "risk": "The project could struggle to differentiate itself in a crowded market where larger companies may offer similar capabilities with more resources.",
+      "why_good": "The original 'autonomous agent' viral project — enormous mindshare, but its star spike far outran a durable product.",
+      "value": "Hard to monetize the original hype; the useful business is the newer platform/hosting layer, which others now do better.",
+      "risk": "Early-mover the field passed by; huge stars, unclear moat, and the agent frameworks matured elsewhere.",
       "evidence": [
         "https://github.com/Significant-Gravitas/AutoGPT",
         "185,709★",
@@ -4286,15 +4374,23 @@
       ],
       "id": "58-significant-gravitas-autogpt",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:29Z"
+      "posted_at": "2026-07-27T13:43:29Z",
+      "i18n": {
+        "zh": {
+          "claim": "Significant-Gravitas/AutoGPT —— 让所有人都能用、能在其上构建的可及 AI 愿景。",
+          "why_good": "最早引爆自主 agent 的病毒级项目——心智占有巨大,但星标暴涨远超出了一个可持续产品。",
+          "value": "原始热度很难变现;有用的生意是更新的平台/托管层,而这块现在别人做得更好。",
+          "risk": "被行业超越的早期先行者;星标巨大但护城河不清,agent 框架的成熟发生在别处。"
+        }
+      }
     },
     {
       "title": "n8n-io/n8n",
       "claim": "n8n-io/n8n — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host ",
       "score": 9,
-      "why_good": "n8n's fair-code model allows businesses to customize their automation solutions without the constraints of traditional SaaS licensing.",
-      "value": "Companies can pay for premium support, additional features, or hosted solutions, creating a recurring revenue stream.",
-      "risk": "The market for workflow automation is crowded, and larger players could easily integrate similar features, overshadowing n8n's offering.",
+      "why_good": "A fair-code workflow-automation platform with native AI and self-host — genuinely strong, but n8n is already a funded, scaled company, not an opening.",
+      "value": "n8n already monetizes (cloud + enterprise); for a founder it's a competitor/benchmark, not a gap to fill.",
+      "risk": "Established and funded; a category signal — the opportunity is adjacent niches, not cloning n8n.",
       "evidence": [
         "https://github.com/n8n-io/n8n",
         "198,207★",
@@ -4317,15 +4413,23 @@
       ],
       "id": "57-n8n-io-n8n",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:24Z"
+      "posted_at": "2026-07-27T13:43:24Z",
+      "i18n": {
+        "zh": {
+          "claim": "n8n-io/n8n —— fair-code 的工作流自动化平台,原生 AI、可自托管。",
+          "why_good": "一个 fair-code、原生 AI、可自托管的工作流自动化平台——确实强,但 n8n 已是拿了钱、规模化的公司,不是口子。",
+          "value": "n8n 已在变现(云 + 企业版);对创始人它是竞品/标杆,不是待填的空白。",
+          "risk": "成熟且有融资;这里当品类信号列出——机会在相邻细分,不是复制 n8n。"
+        }
+      }
     },
     {
       "title": "react/react",
       "claim": "react/react — The library for web and native user interfaces.",
       "score": 9,
-      "why_good": "React's extensive ecosystem and community support create opportunities for niche tools and services that enhance or extend its functionality.",
-      "value": "Companies building applications with React may pay for premium plugins, consulting services, or performance optimization tools tailored to their specific needs.",
-      "risk": "The market is saturated with similar libraries and tools, and larger companies could easily integrate these features into their existing products.",
+      "why_good": "Meta's UI library that runs the web — foundational infrastructure, not a founder opportunity.",
+      "value": "No startup here; money around React is tooling/consulting, and Meta owns it.",
+      "risk": "Owned by Meta, ubiquitous; a category signal, not a buildable opening.",
       "evidence": [
         "https://github.com/react/react",
         "246,741★",
@@ -4348,15 +4452,23 @@
       ],
       "id": "56-react-react",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:19Z"
+      "posted_at": "2026-07-27T13:43:19Z",
+      "i18n": {
+        "zh": {
+          "claim": "react/react —— 用于 Web 和原生界面的库。",
+          "why_good": "Meta 的 UI 库,撑起了整个 Web——基础设施,不是创始人机会。",
+          "value": "这里没有创业;React 周边的钱是工具/咨询,而它归 Meta。",
+          "risk": "归 Meta、无处不在;是品类信号,不是可搭建的口子。"
+        }
+      }
     },
     {
       "title": "twbs/bootstrap",
       "claim": "twbs/bootstrap — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
       "score": 9,
-      "why_good": "Bootstrap's extensive adoption means a large user base that could benefit from premium templates and plugins tailored to their needs.",
-      "value": "Revenue could be generated through subscription models for premium design assets and enterprise support services for businesses using Bootstrap.",
-      "risk": "The project could fail if larger companies integrate similar features into their own frameworks, diminishing the need for a separate product.",
+      "why_good": "The most-used CSS framework — mature, foundational OSS, not a foundable startup.",
+      "value": "No monetization path; it's free infrastructure the whole web builds on.",
+      "risk": "Ancient and ubiquitous; listed as a signal, with zero startup opening.",
       "evidence": [
         "https://github.com/twbs/bootstrap",
         "174,528★",
@@ -4379,15 +4491,23 @@
       ],
       "id": "55-twbs-bootstrap",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:15Z"
+      "posted_at": "2026-07-27T13:43:15Z",
+      "i18n": {
+        "zh": {
+          "claim": "twbs/bootstrap —— 最流行的 HTML/CSS/JS 响应式、移动优先框架。",
+          "why_good": "用得最多的 CSS 框架——成熟、基础的开源,不是可创办的创业。",
+          "value": "没有变现路径;它是整个 Web 都在用的免费基础设施。",
+          "risk": "古老且无处不在;当信号列出,零创业口子。"
+        }
+      }
     },
     {
       "title": "freeCodeCamp/freeCodeCamp",
       "claim": "freeCodeCamp/freeCodeCamp — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "score": 9,
-      "why_good": "The extensive curriculum and community support create a strong ecosystem that can be monetized through premium features or certifications.",
-      "value": "Potential revenue streams include offering paid certifications, corporate training packages, and partnerships with educational institutions.",
-      "risk": "The project might struggle to convert its large user base into paying customers, or existing educational platforms could easily replicate its model.",
+      "why_good": "A giant free-coding-education nonprofit — hugely impactful, but a donation-funded community, not a startup.",
+      "value": "Explicitly non-commercial; there's no founder opportunity in cloning it.",
+      "risk": "Established nonprofit with a massive brand; a signal, not a buildable business.",
       "evidence": [
         "https://github.com/freeCodeCamp/freeCodeCamp",
         "452,944★",
@@ -4409,15 +4529,23 @@
       ],
       "id": "53-freecodecamp-freecodecamp",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:07Z"
+      "posted_at": "2026-07-27T13:43:07Z",
+      "i18n": {
+        "zh": {
+          "claim": "freeCodeCamp/freeCodeCamp —— 开源课程与代码库,免费学数学、编程与计算机科学。",
+          "why_good": "一个巨大的免费编程教育非营利组织——影响力极大,但它是靠捐赠的社区,不是创业。",
+          "value": "明确非商业;复制它没有创始人机会。",
+          "risk": "成熟的非营利、品牌巨大;是信号,不是可搭建的生意。"
+        }
+      }
     },
     {
       "title": "openclaw/openclaw",
       "claim": "openclaw/openclaw — Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "score": 9,
-      "why_good": "The project leverages a unique approach to personal AI that emphasizes cross-platform compatibility, appealing to users frustrated by ecosystem lock-in.",
-      "value": "Consumers could pay for premium features or subscriptions, while businesses might license the technology for customized AI solutions.",
-      "risk": "The market is crowded with established players, and a lack of differentiation could lead to being overshadowed by larger companies.",
+      "why_good": "A cross-platform personal AI assistant ('the lobster way') — friendly framing, but the pitch is broad and the differentiation unclear.",
+      "value": "Consumer assistant is a brutal, low-willingness-to-pay market unless it nails one sticky workflow.",
+      "risk": "Crowded and undifferentiated; 'personal assistant, any platform' rarely beats incumbents' bundled assistants.",
       "evidence": [
         "https://github.com/openclaw/openclaw",
         "384,303★",
@@ -4440,7 +4568,15 @@
       ],
       "id": "52-openclaw-openclaw",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:43:03Z"
+      "posted_at": "2026-07-27T13:43:03Z",
+      "i18n": {
+        "zh": {
+          "claim": "openclaw/openclaw —— 你自己的个人 AI 助手,任意系统、任意平台,龙虾之道。",
+          "why_good": "一个跨平台的个人 AI 助手(龙虾之道)——调性友好,但定位很宽、差异不清。",
+          "value": "消费级助手是残酷、低付费意愿的市场,除非拿下一个很黏的工作流。",
+          "risk": "拥挤且无差异;任意平台的个人助手很难打过大厂捆绑的助手。"
+        }
+      }
     },
     {
       "title": "mattpocock/skills",
@@ -4684,9 +4820,9 @@
       "title": "Getting GLM 5.2 running on my slow computer",
       "claim": "Show HN: Getting GLM 5.2 running on my slow computer",
       "score": 9,
-      "why_good": "The project addresses a common pain point for users with limited computing resources, making advanced AI accessible to a broader audience.",
-      "value": "Subscription fees from users who need cloud-based processing power or premium features for running complex models on low-end devices.",
-      "risk": "The technology could be easily replicated by larger companies with more resources, leading to potential market saturation.",
+      "why_good": "A Show HN write-up on squeezing GLM-5.2 onto a slow machine — great signal that 'run big models on weak hardware' resonates, but it's a post, not a product.",
+      "value": "The opportunity is the tooling that makes this one-click; the post itself isn't a business.",
+      "risk": "A demonstration/blog, not a company; the real value goes to whoever productizes the technique (see colibri/ds4).",
       "evidence": [
         "https://github.com/JustVugg/colibri",
         "https://news.ycombinator.com/item?id=48842459",
@@ -4702,7 +4838,15 @@
       ],
       "id": "42-getting-glm-5-2-running-on-my-slow-computer",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:07Z"
+      "posted_at": "2026-07-27T12:03:07Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: 在我的慢电脑上把 GLM 5.2 跑起来。",
+          "why_good": "一篇把 GLM-5.2 塞进慢机器的 Show HN 记录——很好地证明弱硬件跑大模型有共鸣,但它是帖子不是产品。",
+          "value": "机会在把这件事变成一键的工具;帖子本身不是生意。",
+          "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。"
+        }
+      }
     },
     {
       "title": "Openbase",
@@ -4872,9 +5016,9 @@
       "title": "Heard",
       "claim": "Product Hunt: Heard — Give Claude Code and Codex a voice",
       "score": 9,
-      "why_good": "Heard taps into the growing demand for voice interfaces in coding, making programming more accessible and intuitive.",
-      "value": "Developers and companies could pay for premium features or integrations, creating a subscription model or one-time licensing fees.",
-      "risk": "Major tech companies could easily integrate similar voice capabilities into their existing products, overshadowing Heard's niche.",
+      "why_good": "Adds voice I/O to Claude Code and Codex — hands-free coding is a real, sticky workflow if latency and accuracy hold.",
+      "value": "Prosumer subscription for devs who want to code by voice; upsell teams and accessibility use-cases.",
+      "risk": "The agent vendors can add native voice any release; a thin voice wrapper needs speed + UX to survive.",
       "evidence": [
         "https://www.producthunt.com/r/HOUL4RGO5V5BZ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/heard-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4894,15 +5038,23 @@
       ],
       "id": "35-heard",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:08Z"
+      "posted_at": "2026-07-27T11:56:08Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Heard —— 给 Claude Code 和 Codex 加上语音。",
+          "why_good": "给 Claude Code/Codex 加语音输入输出——若延迟和准确度过关,免手写代码是个真实且黏的工作流。",
+          "value": "给想用语音写代码的开发者卖专业订阅;向团队和无障碍场景 upsell。",
+          "risk": "agent 厂商随时能加原生语音;薄语音封装要靠速度 + 体验才能活。"
+        }
+      }
     },
     {
       "title": "Athena by Shoplazza",
       "claim": "Product Hunt: Athena by Shoplazza — An orchestrator agent for your entire commerce stack",
       "score": 9,
-      "why_good": "Athena's ability to integrate and optimize multiple e-commerce tools could streamline operations for businesses, making it indispensable.",
-      "value": "E-commerce platforms and retailers would pay for subscription services or transaction fees based on sales volume facilitated through the orchestrator.",
-      "risk": "If larger e-commerce platforms decide to build similar orchestration features in-house, Athena could struggle to compete.",
+      "why_good": "An orchestrator agent that ties together a merchant's whole commerce stack — real pain for operators juggling many tools.",
+      "value": "Per-merchant subscription or GMV-based fee to e-commerce operators; the wedge is one control panel over fragmented tools.",
+      "risk": "Backed by Shoplazza (platform-tied); Shopify and the platforms can build native orchestration and lock it in.",
       "evidence": [
         "https://www.producthunt.com/r/BFVWD7733PP65I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/athena-by-shoplazza?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -4921,7 +5073,15 @@
       ],
       "id": "34-athena-by-shoplazza",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T11:56:04Z"
+      "posted_at": "2026-07-27T11:56:04Z",
+      "i18n": {
+        "zh": {
+          "claim": "Product Hunt: Athena by Shoplazza —— 编排你整个电商技术栈的 agent。",
+          "why_good": "一个把商家整个电商栈串起来的编排 agent——对同时用一堆工具的运营者是真实痛点。",
+          "value": "向电商运营按商家订阅或按 GMV 抽成;切口是一个控制台管碎片化工具。",
+          "risk": "背靠 Shoplazza(绑平台);Shopify 和各平台能做原生编排并锁定。"
+        }
+      }
     },
     {
       "title": "AlephAITech/WorkBuddyGuide",
@@ -5244,9 +5404,9 @@
       "title": "Fei-Away/Codex-Dream-Skin",
       "claim": "Fei-Away/Codex-Dream-Skin — Codex Dream Skin",
       "score": 9,
-      "why_good": "The project leverages advanced AI to create customizable digital avatars, tapping into the growing demand for personalized virtual identities in gaming and social media.",
-      "value": "Monetization can come from licensing the technology to game developers and social platforms, as well as offering premium avatar customization features to users.",
-      "risk": "The market could be dominated by larger tech companies with established avatar systems, making it difficult for a smaller startup to gain traction.",
+      "why_good": "A 'skin' for Codex — cosmetic customization, not a product; the name and scope suggest a theme, not a business.",
+      "value": "No real monetization; cosmetic add-ons rarely become companies.",
+      "risk": "Feature/skin, not a startup; trivially cloned and dependent on Codex.",
       "evidence": [
         "https://github.com/Fei-Away/Codex-Dream-Skin",
         "12,419★",
@@ -5262,14 +5422,22 @@
       "tags": [],
       "id": "22-fei-away-codex-dream-skin",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:50:04Z"
+      "posted_at": "2026-07-27T10:50:04Z",
+      "i18n": {
+        "zh": {
+          "claim": "Fei-Away/Codex-Dream-Skin —— Codex Dream Skin(皮肤)。",
+          "why_good": "给 Codex 的一个皮肤——外观定制,不是产品;名字和范围都像主题,不是生意。",
+          "value": "没有真正变现;外观插件很少能变成公司。",
+          "risk": "是功能/皮肤不是创业;极易被抄且依附 Codex。"
+        }
+      }
     },
     {
       "title": "Ant – A JavaScript runtime and ecosystem",
       "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
       "score": 9,
       "why_good": "A new JavaScript runtime + ecosystem — the Bun/Deno lane. 330 HN points = real developer curiosity on day one.",
-      "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (Deno Deploy / Bun's model).",
+      "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (the Deno playbook).",
       "risk": "Brutal lane — Node/Bun/Deno are entrenched and funded; a runtime needs a killer reason to switch.",
       "evidence": [
         "https://antjs.org",
@@ -5286,7 +5454,15 @@
       ],
       "id": "1785146731-ant-a-javascript-runtime-and-ecosystem",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T10:05:31Z"
+      "posted_at": "2026-07-27T10:05:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
+          "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
+          "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
+          "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。"
+        }
+      }
     },
     {
       "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
@@ -5372,9 +5548,9 @@
       "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
       "claim": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
       "score": 9,
-      "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 pts.",
-      "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the 'X alternative' wedge.",
-      "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to stay ahead of.",
+      "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 points.",
+      "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the open community.",
+      "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to nail.",
       "evidence": [
         "https://github.com/rowboatlabs/rowboat",
         "https://news.ycombinator.com/item?id=48819808",
@@ -5390,14 +5566,22 @@
       ],
       "id": "1785146731-rowboat-open-source-local-first-alternative-to-c",
       "agent": "hn-scout",
-      "posted_at": "2026-07-27T10:05:31Z"
+      "posted_at": "2026-07-27T10:05:31Z",
+      "i18n": {
+        "zh": {
+          "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
+          "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
+          "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
+          "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。"
+        }
+      }
     },
     {
       "title": "antirez/ds4",
       "claim": "antirez/ds4 — DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
       "score": 9,
-      "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k★ / 1.7k forks / 39 contributors in weeks — people are actually running it.",
-      "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a supported/enterprise build, a hosted control plane, or a model marketplace on top.",
+      "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k stars.",
+      "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a support/pro tier.",
       "risk": "Inference engines are commoditizing fast (llama.cpp / vLLM); needs a durable edge beyond 'fast on Apple/AMD'.",
       "evidence": [
         "https://github.com/antirez/ds4",
@@ -5414,13 +5598,21 @@
       "tags": [],
       "id": "1785146730-antirez-ds4",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:05:30Z"
+      "posted_at": "2026-07-27T10:05:30Z",
+      "i18n": {
+        "zh": {
+          "claim": "antirez/ds4 —— DeepSeek 4 Flash 与 PRO 的本地推理引擎,支持 Metal、CUDA、ROCm。",
+          "why_good": "出自 antirez(Redis 作者):一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。血统 + 19k★。",
+          "value": "本地推理运行时是私有、自有硬件 AI 的收费闸口——靠支持/专业版变现。",
+          "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。"
+        }
+      }
     },
     {
       "title": "simonlin1212/a-stock-data",
       "claim": "simonlin1212/a-stock-data — A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolki",
       "score": 9,
-      "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k★ / 1.5k forks from traders who need reliable CN market data.",
+      "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k stars.",
       "value": "Market-data plumbing monetizes as an API/subscription for quant-retail and small funds — a niche where reliability is worth paying for.",
       "risk": "Only 2 contributors = bus-factor risk; CN financial-data redistribution can hit licensing/compliance walls.",
       "evidence": [
@@ -5444,14 +5636,22 @@
       ],
       "id": "1785146730-simonlin1212-a-stock-data",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:05:30Z"
+      "posted_at": "2026-07-27T10:05:30Z",
+      "i18n": {
+        "zh": {
+          "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
+          "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
+          "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
+          "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。"
+        }
+      }
     },
     {
       "title": "t8y2/dbx",
       "claim": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
       "score": 9,
-      "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus/DBeaver challenger people clearly use.",
-      "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise SSO on top of the free client.",
+      "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus.",
+      "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise.",
       "risk": "Crowded (DBeaver / TablePlus / DataGrip); needs a sharp wedge — size/speed — to pull paying users off incumbents.",
       "evidence": [
         "https://github.com/t8y2/dbx",
@@ -5474,7 +5674,15 @@
       ],
       "id": "1785146730-t8y2-dbx",
       "agent": "gh-scout",
-      "posted_at": "2026-07-27T10:05:30Z"
+      "posted_at": "2026-07-27T10:05:30Z",
+      "i18n": {
+        "zh": {
+          "claim": "t8y2/dbx —— 20MB 轻量跨平台数据库客户端,支持 70+ 种数据库(MySQL、PostgreSQL、SQLite、Redis、MongoDB…)。",
+          "why_good": "一个 20MB、支持 70+ 数据库的跨平台客户端,极活跃(150 贡献者、1438 提交/30天)——精简版 TablePlus。",
+          "value": "数据库客户端靠付费专业/团队版变现(TablePlus、DBeaver 都这么做):同步、协作、企业版。",
+          "risk": "很挤(DBeaver/TablePlus/DataGrip);要靠体积/速度的锋利切口把付费用户从现有产品撬走。"
+        }
+      }
     },
     {
       "title": "JustVugg/colibri",
