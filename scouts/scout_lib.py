@@ -175,37 +175,56 @@ def idea_body(f):
             f"### Evidence\n\n{ev}\n")
 
 def llm_copy(f):
-    """Write sharp copy (why_good / value / risk) via GitHub Models — free in Actions when
-    the workflow has `models: read`. Returns None on any failure → caller keeps heuristic copy."""
+    """Sharp, specific, BILINGUAL (EN + 中文) card copy in ONE GitHub Models call.
+    Bans generic filler; forces project-specific why/value/risk. Returns EN fields plus
+    f['i18n']['zh']; returns None on failure so the caller keeps the heuristic copy."""
     tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not tok:
         return None
     model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
     ev = ", ".join(f.get("evidence", []) or [])
     prompt = (
-        "You curate a public board of GitHub projects that could become startups worth building. "
-        "For the project below, reply with ONLY a JSON object with three keys, each ONE tight, specific, non-hype sentence:\n"
-        "  why_good: the non-obvious reason this could be a real startup (not 'it has stars').\n"
-        "  value: the commercial angle — who pays and how it makes money.\n"
-        "  risk: the honest reason it might fail (often 'feature not a company' or an incumbent absorbs it).\n\n"
+        "You curate a public board of GitHub / Show HN projects that could become real startups. "
+        "Write SHARP, SPECIFIC copy about THIS project. Never generic.\n"
+        "BANNED phrases (never output any): 'could pay for premium features', 'subscription model', "
+        "'a bigger player could integrate', 'could easily integrate', 'could be absorbed', "
+        "'the market is competitive', 'leverages ... technology', 'streamline workflows', "
+        "'premium features or support'. If you are about to write one, replace it with the concrete, "
+        "project-specific point: name the exact buyer, the exact wedge, the exact incumbent, or the "
+        "exact weakness.\n"
+        "BAR to match (why_good): \"Attacks the #1 complaint about coding agents - overengineered "
+        "slop - and the pull is real: ~90k stars in six weeks.\"\n\n"
+        "Reply with ONLY a JSON object; each English value is ONE tight, concrete sentence:\n"
+        "  why_good: the non-obvious, project-specific reason this could be a real startup.\n"
+        "  value: who EXACTLY pays and for what specific outcome (name the buyer and the wedge).\n"
+        "  risk: the concrete, specific reason it might fail (name the incumbent or exact weakness).\n"
+        "  claim_zh: 中文翻译 of the one-line description (keep repo/product names in latin).\n"
+        "  why_good_zh, value_zh, risk_zh: faithful 中文 translations of the three English lines.\n\n"
         f"Project: {f.get('title','')} — {f.get('claim','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n\nJSON only.")
-    body = json.dumps({"model": model, "temperature": 0.4, "max_tokens": 320,
+    body = json.dumps({"model": model, "temperature": 0.5, "max_tokens": 650,
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     try:
         req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-                                     headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
-                                              "User-Agent": "future-scout"})
-        with urllib.request.urlopen(req, timeout=30) as r:
+              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                       "User-Agent": "future-scout"})
+        with urllib.request.urlopen(req, timeout=40) as r:
             txt = json.loads(r.read())["choices"][0]["message"]["content"]
         m = re.search(r"\{.*\}", txt, re.S)
         obj = json.loads(m.group(0))
-        if all(k in obj and obj[k] for k in ("why_good", "value", "risk")):
-            return {k: str(obj[k]).strip()[:400] for k in ("why_good", "value", "risk")}
+        if all(obj.get(k) for k in ("why_good", "value", "risk")):
+            out = {k: str(obj[k]).strip()[:400] for k in ("why_good", "value", "risk")}
+            zh = {}
+            for src, dst in (("claim_zh", "claim"), ("why_good_zh", "why_good"),
+                             ("value_zh", "value"), ("risk_zh", "risk")):
+                if obj.get(src):
+                    zh[dst] = str(obj[src]).strip()[:400]
+            if zh:
+                out["i18n"] = {"zh": zh}
+            return out
     except Exception as e:
-        print(f"  [llm_copy fallback → heuristic: {e!r}]", file=sys.stderr)
+        print(f"  [llm_copy fallback -> heuristic: {e!r}]", file=sys.stderr)
     return None
-
 def editor_pick(f):
     """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
     founder could start NOW? Via GitHub Models (free in Actions w/ models:read). Returns
