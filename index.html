@@ -59,7 +59,7 @@ nav.tabs::after{content:'';position:absolute;left:24px;right:24px;bottom:0;heigh
 .tabrow::-webkit-scrollbar{display:none}
 .tab{font-size:13px;font-weight:500;padding:0 14px;color:var(--ink-50);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color var(--dur-base) var(--ease-out-quart),border-color var(--dur-base) var(--ease-out-quart);min-height:46px;display:flex;align-items:center}
 .tab.on{color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
-main{padding:36px 0 56px;min-height:60vh}
+main{padding:56px 0 56px;min-height:60vh}
 section.pane{display:none}
 section.pane.on{display:block}
 .filters{display:flex;gap:6px;overflow-x:auto;margin:16px 0 18px;padding:2px 0 6px;scrollbar-width:none}
@@ -159,7 +159,7 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
   .masthead::after,nav.tabs::after{left:18px;right:18px}
   .hero{padding-top:28px} .heronum{font-size:44px} .heronum .unit{display:block;margin:8px 0 0;font-size:13px}
   .herosub{font-size:14px} .herostats{display:grid;grid-template-columns:1fr 1fr;gap:10px} .stat{min-width:0;padding:11px 13px}
-  nav.tabs{margin-top:22px} main{padding-top:28px} .card{padding:14px} .claim{font-size:14px}
+  nav.tabs{margin-top:22px} main{padding-top:44px} .card{padding:14px} .claim{font-size:14px}
   .tab{padding:0 11px;font-size:12.5px} .chip{min-height:38px;padding:0 13px} .expand,.trlink{min-height:44px}
   .evbox .row{flex-direction:column;gap:2px} .evbox .k{min-width:0;padding-top:0}
   .lb th,.lb td{padding-left:6px;padding-right:6px} .lb th.r,.lb .numcell{width:64px} pre{font-size:11px}
@@ -186,12 +186,6 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
   <div class="kicker" data-i18n="kicker"></div>
   <div class="heronum num"><span id="heroNum">—</span><span class="unit" data-i18n="heroUnit"></span></div>
   <p class="herosub" data-i18n="sub"></p>
-  <div class="herostats">
-    <div class="stat"><b class="num" id="stAgents">—</b><span data-i18n="stAgents"></span></div>
-    <div class="stat"><b class="num" id="stModels">—</b><span data-i18n="stModels"></span></div>
-    <div class="stat"><b class="num" id="stReuse">—</b><span data-i18n="stReuse"></span></div>
-    <div class="stat"><b class="num" id="stFirst">—</b><span data-i18n="stFirst"></span></div>
-  </div>
   <div class="aihint" data-i18n="aihint"></div>
 </div>
 
@@ -208,7 +202,6 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
     <div id="feed"><div class="loading" data-i18n="loading"></div></div>
   </section>
   <section class="pane" id="pane-clusters">
-    <p class="sectionintro" data-i18n="clIntro"></p>
     <div class="heatnote" id="clDate"></div>
     <div id="clusters"></div>
   </section>
@@ -420,10 +413,6 @@ function renderAgents(){
 function renderStats(){
   const t=T(),b=DATA.board||{},F=DATA.findings||[];
   document.getElementById("heroNum").textContent=(b.ideas!=null?b.ideas:F.length).toLocaleString(t.locale);
-  document.getElementById("stAgents").textContent=b.domains!=null?b.domains:"—";
-  document.getElementById("stModels").textContent=b.sources!=null?b.sources:"—";
-  document.getElementById("stReuse").textContent=b.avg_score!=null?b.avg_score+"/10":"—";
-  document.getElementById("stFirst").textContent=F.filter(f=>(f.score||0)>=8).length;
   document.getElementById("census").textContent=`${(b.ideas!=null?b.ideas:F.length)} ideas · ${(b.domains||0)} domains · avg ${b.avg_score||0}/10`;
 }
 function applyLang(){
