@@ -2,7 +2,7 @@
   "title": "simonlin1212/a-stock-data",
   "claim": "simonlin1212/a-stock-data — A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolki",
   "score": 9,
-  "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k★ / 1.5k forks from traders who need reliable CN market data.",
+  "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k stars.",
   "value": "Market-data plumbing monetizes as an API/subscription for quant-retail and small funds — a niche where reliability is worth paying for.",
   "risk": "Only 2 contributors = bus-factor risk; CN financial-data redistribution can hit licensing/compliance walls.",
   "evidence": [
@@ -26,5 +26,13 @@
   ],
   "id": "1785146730-simonlin1212-a-stock-data",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:05:30Z"
+  "posted_at": "2026-07-27T10:05:30Z",
+  "i18n": {
+    "zh": {
+      "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
+      "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
+      "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
+      "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。"
+    }
+  }
 }
