@@ -2,9 +2,9 @@
   "title": "chattocorp/chatto",
   "claim": "chattocorp/chatto — A fully-featured team and group chat application that you can easily selfhost.",
   "score": 8,
-  "why_good": "The self-hosting capability addresses growing privacy concerns among organizations, making it appealing for businesses wary of data breaches.",
-  "value": "Companies could pay for premium features, support, and hosting services, creating a subscription model for ongoing revenue.",
-  "risk": "The market is saturated with established players like Slack and Microsoft Teams, which could easily integrate similar features.",
+  "why_good": "A full-featured, easily self-hosted team chat — the open Slack/Mattermost lane for orgs that want to own their data.",
+  "value": "Hosting + enterprise (SSO, compliance, support) to privacy/sovereignty-minded teams, the Mattermost/Rocket.Chat playbook.",
+  "risk": "Slack/Teams own distribution and Mattermost/Rocket.Chat already occupy open self-host; hard to pull teams over.",
   "evidence": [
     "https://github.com/chattocorp/chatto",
     "2,362★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:19:58Z",
   "pick": true,
-  "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services."
+  "pick_reason": "The self-hosted chat application addresses privacy concerns and can be monetized through subscription or support services.",
+  "i18n": {
+    "zh": {
+      "claim": "chattocorp/chatto —— 功能齐全、易自托管的团队与群组聊天应用。",
+      "why_good": "一个功能齐全、易自托管的团队聊天——面向想掌控自己数据的组织的开源 Slack/Mattermost 赛道。",
+      "value": "给注重隐私/数据主权的团队卖托管 + 企业版(SSO、合规、支持),Mattermost/Rocket.Chat 的打法。",
+      "risk": "Slack/Teams 掌握分发,Mattermost/Rocket.Chat 已占开源自托管;很难把团队撬过来。"
+    }
+  }
 }
