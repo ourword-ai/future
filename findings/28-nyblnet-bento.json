@@ -2,9 +2,9 @@
   "title": "nyblnet/bento",
   "claim": "nyblnet/bento — Bento, the office suite that fits in a file",
   "score": 8,
-  "why_good": "Bento's lightweight approach to office productivity tools could appeal to remote and hybrid teams seeking efficiency without the bloat of traditional suites.",
-  "value": "Businesses could pay for premium features or integrations, creating a subscription model for teams that want enhanced collaboration tools.",
-  "risk": "The project may struggle against established players like Microsoft and Google, who could easily replicate its features and leverage their existing user bases.",
+  "why_good": "A whole office suite (view/edit/data/collab) packed into a single HTML file — a radically portable, no-install take on documents.",
+  "value": "Freemium: free single-file suite, paid collaboration/hosting/enterprise; portability is a genuine wedge vs cloud suites.",
+  "risk": "Google/Microsoft own docs; 'in one file' is neat but must win real workflows, not just novelty.",
   "evidence": [
     "https://github.com/nyblnet/bento",
     "2,472★",
@@ -26,5 +26,13 @@
   ],
   "id": "28-nyblnet-bento",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:50:30Z"
+  "posted_at": "2026-07-27T10:50:30Z",
+  "i18n": {
+    "zh": {
+      "claim": "nyblnet/bento —— 装进一个文件里的办公套件。",
+      "why_good": "把整套办公套件(查看/编辑/数据/协作)塞进一个 HTML 文件——一种极致可移植、免安装的文档做法。",
+      "value": "免费增值:单文件套件免费,协作/托管/企业收费;可移植性相对云套件是真实切口。",
+      "risk": "Google/微软掌控文档;装进一个文件 很妙,但要赢真实工作流,不能只靠新奇。"
+    }
+  }
 }
