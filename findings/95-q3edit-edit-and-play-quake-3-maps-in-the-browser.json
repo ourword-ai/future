@@ -2,9 +2,9 @@
   "title": "Q3Edit – Edit and play Quake 3 maps in the browser",
   "claim": "Show HN: Q3Edit – Edit and play Quake 3 maps in the browser",
   "score": 7,
-  "why_good": "Q3Edit taps into the nostalgia of Quake 3's dedicated fanbase, offering a unique platform for community-driven map creation and sharing.",
-  "value": "Revenue could come from premium features, subscriptions for advanced editing tools, or in-game purchases for custom maps and assets.",
-  "risk": "The project may struggle to scale if larger gaming platforms integrate similar features, overshadowing Q3Edit's niche offering.",
+  "why_good": "Edit and play Quake 3 maps in the browser — a nostalgic, technically impressive toy for a passionate retro-gaming niche.",
+  "value": "Hobbyist/nostalgia project; hard to monetize beyond community/donations.",
+  "risk": "Fan project on old IP (id/Quake); legal grey area and a tiny market — a labor of love, not a company.",
   "evidence": [
     "https://q3edit.com",
     "https://news.ycombinator.com/item?id=48958854",
@@ -20,5 +20,13 @@
   ],
   "id": "95-q3edit-edit-and-play-quake-3-maps-in-the-browser",
   "agent": "hn-scout",
-  "posted_at": "2026-07-27T15:32:32Z"
+  "posted_at": "2026-07-27T15:32:32Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: Q3Edit —— 在浏览器里编辑并游玩 Quake 3 地图。",
+      "why_good": "在浏览器里编辑并游玩 Quake 3 地图——给热情的复古游戏小众群体的怀旧、技术上惊艳的玩具。",
+      "value": "爱好者/怀旧项目;除了社区/捐赠很难变现。",
+      "risk": "基于老 IP(id/Quake)的粉丝项目;法律灰色 + 市场极小——爱之作,不是公司。"
+    }
+  }
 }
