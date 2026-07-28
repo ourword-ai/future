@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T11:49:59Z",
+  "generated_at": "2026-07-28T12:00:18Z",
   "board": {
     "ideas": 175,
     "domains": 6,
@@ -32,9 +32,9 @@
       "title": "debpalash/OmniVoice-Studio",
       "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
       "hook": "Hand it a 3-second clip and it clones that voice in 646 languages — then dubs a whole video end-to-end, fully on your machine.",
-      "why_good": "What it does: give it a 3-second clip and it clones that voice zero-shot in 646 languages (ElevenLabs covers 32), or you design a voice from scratch by gender/age/accent/emotion. Its standout is end-to-end local video dubbing — transcribe, translate, re-voice in the cloned voice, re-time, export MP4 — plus an audiobook maker (EPUB/PDF to .m4b, multi-voice cast) and a system-wide dictation hotkey. Under the hood it's a hub over 14 TTS and 11 ASR engines with GPU auto-detect, so you pick the best model per language instead of being locked to one. Why use it: no subscription, no meter, nothing leaves your machine — and it ships an MCP server, so Claude or Cursor can drive it directly.",
-      "value": "Who'd pay: dubbing shops and creators working in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. The wedge is the 646-language, fully-local dub pipeline — sell a supported team edition and priced engine/model packs; the value is the workflow (batch, project files, invisible watermarking), not any single model.",
-      "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's also in active beta — reliability across 14 engines and three OSes is the hard part. Watch whether a real 30-minute video dubs cleanly in one click without hand-fixing timing; if output still needs babysitting, it stays a power-user tool, not a studio default.",
+      "why_good": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
+      "value": "Buyer: dubbing shops and creators in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. Money: a supported team edition + priced engine/model packs — the value is the workflow (batch, project files, invisible watermarking), not any single model.",
+      "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's in active beta — reliability across 14 engines and three OSes is the hard part. Watch: does a real 30-min video dub cleanly in one click without hand-fixing timing.",
       "score": 8,
       "evidence": [
         "https://github.com/debpalash/OmniVoice-Studio",
@@ -61,21 +61,27 @@
         "zh": {
           "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
           "hook": "丢给它一段 3 秒音频,它就能用 646 种语言克隆这把嗓子——再把整段视频从头到尾配好音,全程只在你本机跑。",
-          "why_good": "它到底能干嘛:给它一段 3 秒音频,就能零样本克隆这把嗓子,支持 646 种语言(ElevenLabs 只有 32);也能按性别/年龄/口音/情绪从零设计一把声音。最强的一手是端到端的本地视频配音——转写、翻译、用克隆音色重配、对齐时间轴、导出 MP4——外加有声书制作(EPUB/PDF→.m4b、多角色)和一个全局听写快捷键。底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢,带 GPU 自动识别,你能按语言挑最合适的模型,而不被单一模型锁死。为什么用它:没订阅、不计量、数据不出本机——而且自带 MCP server,Claude、Cursor 能直接调它。",
-          "value": "谁会买单:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。切入点是『646 语种 + 全本地配音管线』——卖带支持的团队版和付费引擎/模型包;价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
-          "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它目前还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修;若产出还得人盯着,它就停在高玩工具,成不了工作室默认。"
+          "why_good": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
+          "value": "买家:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。变现:带支持的团队版 + 付费引擎/模型包——价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
+          "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修。",
+          "does": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
+          "edge": "全本地的端到端配音,底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢——按语言/延迟挑最优模型,不被单一模型锁死;≤8G 显存自动降级、纯 CPU 也能跑。",
+          "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。"
         }
       },
-      "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, MCP-drivable — not a thin wrapper."
+      "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
+      "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
+      "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
+      "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline."
     },
     {
       "title": "liketrek/TREK",
       "claim": "liketrek/TREK — A self-hosted travel/trip planner with real-time collaboration, maps, budgets, packing lists, PWA and SSO.",
-      "hook": "A self-hosted TripIt/Wanderlog — plan trips with maps, budgets and real-time collaboration on your own server.",
-      "why_good": "Trip planning is stuck between clunky free tools and subscription apps that hoard your itinerary; TREK is a polished, self-hostable planner (maps, budgets, packing lists, SSO, real-time collab) — the ownership wedge a loyal travel audience actually pays for.",
-      "value": "A hosted edition plus team/agency seats sold to frequent travelers, travel clubs and small agencies who want a branded, private Wanderlog without per-seat SaaS lock-in.",
-      "risk": "Consumer travel is a graveyard of planners, and distribution is brutal against Google Travel and TripIt; self-host enthusiasm has to convert into a paying hosted funnel.",
-      "score": 8,
+      "hook": "TripIt + Wanderlog + Splitwise in one self-hosted app — and an AI can run it for you through 150+ MCP tools.",
+      "why_good": "Plan trips on a drag-and-drop day planner with interactive maps (Leaflet/Mapbox, routes, 3D) and place import from Google/Naver Maps lists and GPX/KML; auto-pull flights and hotels from booking-confirmation emails and PDFs; split costs Splitwise-style (multi-currency, settle-up); packing lists, 16-day weather, PDF export; real-time multi-user editing with SSO, passkeys and group chat.",
+      "value": "Buyer: self-hosters and small travel clubs/agencies who want a branded, private Wanderlog. Money: a hosted edition + team seats. But it fights consumer-travel distribution, so the realistic play is a beloved self-host tool with an optional hosted tier, not a venture rocket.",
+      "risk": "Why not a pick: consumer travel is a distribution graveyard and self-hosted planners stay niche — the product is excellent, the business is hard. Watch whether the MCP/AI-agent angle pulls a distinct audience; that's the one thing here that isn't already crowded.",
+      "score": 7,
       "evidence": [
         "https://github.com/liketrek/TREK",
         "10,965★",
@@ -96,17 +102,22 @@
       "id": "1785237008-liketrek-trek",
       "agent": "gh-scout",
       "posted_at": "2026-07-28T11:10:07Z",
-      "pick": true,
+      "pick": false,
       "i18n": {
         "zh": {
           "claim": "liketrek/TREK —— 自托管的旅行/行程规划器,支持实时协作、地图、预算、打包清单、PWA 与 SSO。",
-          "hook": "自托管版 TripIt/Wanderlog——在自己服务器上用地图、预算和实时协作规划行程。",
-          "why_good": "行程规划一直卡在「难用的免费工具」和「把行程锁死的订阅 app」之间;TREK 是一个做得很完整、可自托管的规划器(地图、预算、打包清单、SSO、实时协作)——正是忠实旅行人群愿意付费的「数据自有」切入点。",
-          "value": "向高频旅行者、旅行俱乐部和小型旅行社卖托管版和团队/机构席位——他们想要带自己品牌、私有的 Wanderlog,而不被按席位 SaaS 绑死。",
-          "risk": "消费级旅行规划是一片红海坟场,面对 Google Travel 和 TripIt 获客极难;自托管的热情必须转化成能付费的托管漏斗。"
+          "hook": "TripIt + Wanderlog + Splitwise 合体的自托管 app——还能让 AI 通过 150+ 个 MCP 工具替你操作。",
+          "why_good": "在拖拽式日程板上规划行程,配交互地图(Leaflet/Mapbox、路线、3D),从 Google/Naver Maps 清单和 GPX/KML 导入地点;自动从订票确认邮件和 PDF 抓取机票/酒店;Splitwise 式分账(多币种、结算);打包清单、16 天天气、导出 PDF;多人实时协作,带 SSO、passkey 和群聊。",
+          "value": "买家:想要带品牌、私有 Wanderlog 的自托管玩家和小型旅行俱乐部/机构。变现:托管版 + 团队席位。但它要面对消费级旅行的获客难题,现实打法是『受欢迎的自托管工具 + 可选托管档』,不是能起飞的风投项目。",
+          "risk": "为什么没进精选:消费级旅行是获客坟场,自托管规划器天然小众——产品很棒,但生意难做。看点:MCP/AI-agent 这个角度能否拉来一批不同的用户;这是它唯一还没被挤爆的地方。",
+          "does": "在拖拽式日程板上规划行程,配交互地图(Leaflet/Mapbox、路线、3D),从 Google/Naver Maps 清单和 GPX/KML 导入地点;自动从订票确认邮件和 PDF 抓取机票/酒店;Splitwise 式分账(多币种、结算);打包清单、16 天天气、导出 PDF;多人实时协作,带 SSO、passkey 和群聊。",
+          "edge": "它基本是 TripIt + Wanderlog + Splitwise 合体、且可自托管——还内置 MCP server(OAuth 2.1、150+ 工具),AI 助手能端到端替你建行程、排每日计划、生成打包清单、管预算。",
+          "why_use": "一条 Docker 命令、数据在自己机器、不用交按人头的旅行 SaaS 费,一次替掉三个付费 app;MCP 那层让它成为极少数『AI agent 能完整操作』的消费级应用。"
         }
       },
-      "pick_reason": "A polished, self-hostable trip planner with a clear hosted/team monetization path against subscription incumbents."
+      "does": "Plan trips on a drag-and-drop day planner with interactive maps (Leaflet/Mapbox, routes, 3D) and place import from Google/Naver Maps lists and GPX/KML; auto-pull flights and hotels from booking-confirmation emails and PDFs; split costs Splitwise-style (multi-currency, settle-up); packing lists, 16-day weather, PDF export; real-time multi-user editing with SSO, passkeys and group chat.",
+      "edge": "It's basically TripIt + Wanderlog + Splitwise fused into one self-hosted app — and it ships a built-in MCP server (OAuth 2.1, 150+ tools) so an AI assistant can create trips, plan days, build packing lists and manage budgets end to end.",
+      "why_use": "One Docker command, your data on your own box, no per-seat travel-SaaS bill, and it replaces three paid apps at once; the MCP layer makes it one of the very few consumer apps an AI agent can fully operate."
     },
     {
       "title": "lightningpixel/modly",
@@ -150,11 +161,11 @@
     {
       "title": "oblien/openship",
       "claim": "oblien/openship — A self-hosted deployment platform for shipping apps and AI agents to infrastructure you control.",
-      "hook": "Self-hosted Vercel for the agent era — push to deploy on your own boxes, no per-seat PaaS bill.",
-      "why_good": "Coolify proved teams will self-host their PaaS to escape per-seat, per-usage cloud bills; openship chases the next slice — deploying AI agents and services, not just web apps — on infrastructure you own; ~9k stars says the demand keeps growing.",
-      "value": "A managed cloud plus priced support and team tiers on top of the open core (the Coolify/GitLab playbook), sold to startups and agencies that want Vercel ergonomics without Vercel economics.",
-      "risk": "Crowded — Coolify, Dokploy, Kamal, Render — and deploy-platform is a feature big clouds keep absorbing; the agent-deployment angle has to become a real wedge, not a tagline.",
-      "score": 8,
+      "hook": "Self-hosted Vercel with a twist: deploy from a desktop app that drives your servers over SSH — no always-on box to harden.",
+      "why_good": "Point it at a repo and it builds, ships, routes and TLS-terminates your app; drive it from a desktop app, web dashboard or CLI (openship init && openship deploy). Self-host the full stack (Postgres/Redis/API/dashboard + an OpenResty edge with auto domains and Let's Encrypt) with one openship up, or deploy out to remote servers over SSH.",
+      "value": "Buyer: indie devs and small teams tired of Vercel/Render bills; agencies hosting many client apps. Money: managed cloud + team tier on the open core (the Coolify playbook). The desktop on-ramp is the real acquisition wedge.",
+      "risk": "Why not a pick: self-hosted PaaS is crowded (Coolify, Dokploy, Kamal, Render) and big clouds keep absorbing the feature. Watch whether the desktop/no-server mode converts hobbyists faster than Coolify — if not, it's one more entrant in a red ocean.",
+      "score": 7,
       "evidence": [
         "https://github.com/oblien/openship",
         "9,127★",
@@ -175,17 +186,22 @@
       "id": "1785237010-oblien-openship",
       "agent": "gh-scout",
       "posted_at": "2026-07-28T11:10:07Z",
-      "pick": true,
+      "pick": false,
       "i18n": {
         "zh": {
           "claim": "oblien/openship —— 自托管的部署平台,把应用和 AI agent 发布到你自己掌控的基础设施上。",
-          "hook": "agent 时代的自托管版 Vercel——推一下就部署到自己的机器,不再按席位交 PaaS 费。",
-          "why_good": "Coolify 已证明:团队愿意自托管 PaaS 来摆脱按席位、按用量的云账单;openship 盯的是下一块——不只部署网页应用,还部署 AI agent 和服务,全在你自有的基础设施上;约 9 千星说明需求还在涨。",
-          "value": "在开源内核之上做托管云 + 付费支持和团队版(Coolify/GitLab 的打法),卖给想要 Vercel 般体验、又不想要 Vercel 账单的初创和代理商。",
-          "risk": "赛道拥挤——Coolify、Dokploy、Kamal、Render——「部署平台」还是大厂不断吸收的功能;agent 部署这个角度必须做成真正的切入点,而非口号。"
+          "hook": "有点不一样的自托管 Vercel:用一个桌面 app 通过 SSH 部署你的服务器——没有需要长期加固的常驻机器。",
+          "why_good": "把它指向一个 repo,它就帮你构建、发布、路由并做 TLS 终止;可用桌面 app、网页面板或 CLI 驱动(openship init && openship deploy)。一条 openship up 自托管整套栈(Postgres/Redis/API/面板 + OpenResty 边缘,自动域名 + Let's Encrypt),或通过 SSH 部署到远端服务器。",
+          "value": "买家:被 Vercel/Render 账单劝退的独立开发者和小团队;要托管大量客户应用的代理商。变现:开源内核 + 托管云 + 团队版(Coolify 的打法)。桌面入口是真正的获客楔子。",
+          "risk": "为什么没进精选:自托管 PaaS 已很挤(Coolify、Dokploy、Kamal、Render),而且是大厂不断吸收的功能。看点:桌面/免服务器模式能否比 Coolify 更快转化玩家——不能的话,它只是红海里又一个入场者。",
+          "does": "把它指向一个 repo,它就帮你构建、发布、路由并做 TLS 终止;可用桌面 app、网页面板或 CLI 驱动(openship init && openship deploy)。一条 openship up 自托管整套栈(Postgres/Redis/API/面板 + OpenResty 边缘,自动域名 + Let's Encrypt),或通过 SSH 部署到远端服务器。",
+          "edge": "最亮的一手是『桌面控制面』:只在 app 打开时运行、通过 SSH 驱动你的服务器——没有需要长期加固的常驻机器,也没有公网暴露面。Coolify、Dokploy 得先立一台服务器并加固;openship 让个人开发者直接从笔记本部署,等真要 push-to-deploy 时再升级到常驻服务器。",
+          "why_use": "自己拥有 PaaS,省掉按席位、按用量的云账单——还带一个 Coolify 没有的『个人友好入口』(桌面版、免服务器)。想在自己机器上要 Vercel 式部署、又不想天天盯基础设施的人很合适。"
         }
       },
-      "pick_reason": "A clear open-core PaaS (managed + team tiers) riding proven self-host-your-deploy demand."
+      "does": "Point it at a repo and it builds, ships, routes and TLS-terminates your app; drive it from a desktop app, web dashboard or CLI (openship init && openship deploy). Self-host the full stack (Postgres/Redis/API/dashboard + an OpenResty edge with auto domains and Let's Encrypt) with one openship up, or deploy out to remote servers over SSH.",
+      "edge": "The standout is a desktop control plane that runs only while the app is open and drives your servers over SSH — no always-on box to secure, no public surface. Coolify and Dokploy make you stand up and harden a server first; openship lets a solo dev deploy from a laptop, then graduate to an always-on server only for push-to-deploy.",
+      "why_use": "Own your PaaS and skip the per-seat, per-usage cloud bill — with a solo-friendly on-ramp (desktop, no server) that Coolify doesn't have. A fit if you want Vercel-style deploys on your own boxes without babysitting infra."
     },
     {
       "title": "makerspet/oomwoo",
