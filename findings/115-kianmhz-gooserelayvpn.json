@@ -2,9 +2,9 @@
   "title": "Kianmhz/GooseRelayVPN",
   "claim": "Kianmhz/GooseRelayVPN — SOCKS5 VPN that tunnels raw TCP through Google Apps Script to a VPS exit server, with end-to-end AES-256-GCM and domain-",
   "score": 8,
-  "why_good": "The use of Google Apps Script for tunneling provides a unique way to bypass traditional VPN restrictions, making it appealing for users in restrictive environments.",
-  "value": "Businesses and individuals seeking secure, uncensored internet access would pay for subscription plans, especially in regions with heavy internet censorship.",
-  "risk": "The project may struggle to scale as a business if larger VPN providers integrate similar features or if Google restricts the use of their Apps Script for such purposes.",
+  "why_good": "A SOCKS5 tunnel routed through Google Apps Script — a clever censorship-circumvention hack, but it abuses Google's platform.",
+  "value": "No legitimate business; it depends on abusing a free Google service that will block it.",
+  "risk": "ToS-violating and fragile; Google will shut the vector, and it's a hack, not a company.",
   "evidence": [
     "https://github.com/Kianmhz/GooseRelayVPN",
     "1,416★",
@@ -27,5 +27,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:06Z",
   "pick": true,
-  "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments."
+  "pick_reason": "The project offers a unique VPN solution that can be monetized by providing secure access to users in restrictive environments.",
+  "i18n": {
+    "zh": {
+      "claim": "Kianmhz/GooseRelayVPN —— 通过 Google Apps Script 把原始 TCP 隧道到 VPS 出口的 SOCKS5 VPN,端到端 AES。",
+      "why_good": "一个借道 Google Apps Script 的 SOCKS5 隧道——巧妙的翻墙 hack,但它滥用了 Google 平台。",
+      "value": "没有正当生意;它依赖滥用一个会封杀它的免费 Google 服务。",
+      "risk": "违反 ToS 且脆弱;Google 会封掉这个通道,而且它是 hack 不是公司。"
+    }
+  }
 }
