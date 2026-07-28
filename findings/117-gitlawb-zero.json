@@ -2,9 +2,9 @@
   "title": "Gitlawb/zero",
   "claim": "Gitlawb/zero — The coding agent that answers to you, your model, your machine, your rules.",
   "score": 8,
-  "why_good": "It leverages customizable AI agents that can adapt to specific coding environments, addressing unique developer needs.",
-  "value": "Companies could pay for premium support and customization services, as well as subscription fees for advanced features.",
-  "risk": "The technology could be rendered obsolete if larger platforms integrate similar capabilities into their existing tools.",
+  "why_good": "A 'your model, your machine, your rules' coding agent pitched on control/privacy — but the differentiation stays at the slogan level.",
+  "value": "No clear paid wedge yet; a 'sovereign coding agent' needs a concrete reason teams switch and pay.",
+  "risk": "Undifferentiated in a saturated coding-agent field; more manifesto than product so far.",
   "evidence": [
     "https://github.com/Gitlawb/zero",
     "1,178★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:15Z",
   "pick": true,
-  "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers."
+  "pick_reason": "The project offers a customizable AI coding agent that can be monetized through subscriptions or licensing for developers.",
+  "i18n": {
+    "zh": {
+      "claim": "Gitlawb/zero —— 只听你的编码 agent:你的模型、你的机器、你的规则。",
+      "why_good": "一个主打控制/隐私的 你的模型、你的机器、你的规则 编码 agent——但差异化停在口号层面。",
+      "value": "还没有清晰的付费切口;主权编码 agent 需要一个团队愿意迁移并付费的具体理由。",
+      "risk": "在饱和的编码 agent 里没差异;目前更像宣言而非产品。"
+    }
+  }
 }
