@@ -2,9 +2,9 @@
   "title": "Speechius",
   "claim": "Product Hunt: Speechius — The teleprompter that actually listens",
   "score": 7,
-  "why_good": "Speechius leverages AI to enhance user engagement by adapting the teleprompter's script in real-time based on audience reactions.",
-  "value": "Content creators and businesses pay for subscriptions to access advanced features, including analytics and personalized script adjustments.",
-  "risk": "The technology could be seen as a feature rather than a standalone product, risking absorption by larger video conferencing platforms.",
+  "why_good": "A teleprompter that follows your voice and scrolls as you speak — a real, specific improvement for creators and speakers.",
+  "value": "Prosumer subscription for creators, execs and educators; voice-following is a concrete upgrade people pay for.",
+  "risk": "Small niche and easily cloned; existing teleprompter apps can add voice-tracking.",
   "evidence": [
     "https://www.producthunt.com/r/D6XV5RID3EJJR3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/speechius?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,5 +23,13 @@
   ],
   "id": "76-speechius",
   "agent": "producthunt-scout",
-  "posted_at": "2026-07-27T15:18:38Z"
+  "posted_at": "2026-07-27T15:18:38Z",
+  "i18n": {
+    "zh": {
+      "claim": "Product Hunt: Speechius —— 真正会听的提词器。",
+      "why_good": "一个跟着你的声音滚动的提词器——对创作者和演讲者是真实、具体的改进。",
+      "value": "给创作者、高管、教育者卖专业订阅;跟读滚动是人们愿付费的具体升级。",
+      "risk": "细分小、易被抄;现有提词器 app 能加语音跟踪。"
+    }
+  }
 }
