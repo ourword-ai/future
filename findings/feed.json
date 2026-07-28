@@ -6890,8 +6890,8 @@
   },
   "health": {
     "status": "ok",
-    "checked_at": "2026-07-28T16:47:06Z",
-    "feed_age_hours": 0.9,
+    "checked_at": "2026-07-28T18:22:01Z",
+    "feed_age_hours": 0.3,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
