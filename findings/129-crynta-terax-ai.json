@@ -2,9 +2,9 @@
   "title": "crynta/terax-ai",
   "claim": "crynta/terax-ai — Lightweight (7MB) Terminal-first AI-native dev workspace",
   "score": 9,
-  "why_good": "The terminal-first approach caters to developers who prefer lightweight tools, potentially increasing productivity in coding environments.",
-  "value": "Companies could pay for premium features or enterprise licenses, while individual developers might subscribe for advanced AI capabilities.",
-  "risk": "If larger IDE platforms integrate similar AI functionalities, it could overshadow this project, making it hard to compete.",
+  "why_good": "A 7MB terminal-native AI dev workspace — bets devs want a fast, local CLI over heavy AI IDEs.",
+  "value": "Charge teams for a pro/enterprise tier (shared config, SSO, private models) on a free lightweight core.",
+  "risk": "Crowded terminal-agent space (Aider, Claude Code, Codex); 'lightweight' alone rarely holds a moat.",
   "evidence": [
     "https://github.com/crynta/terax-ai",
     "8,702★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T18:28:08Z",
   "pick": true,
-  "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing."
+  "pick_reason": "The project offers a specific product that caters to a niche market of developers, allowing for monetization through subscriptions or licensing.",
+  "i18n": {
+    "zh": {
+      "claim": "crynta/terax-ai —— 轻量(7MB)、终端优先的 AI 原生开发工作区。",
+      "why_good": "7MB 的终端原生 AI 开发工作区——押注开发者想要快、本地的 CLI,而非笨重的 AI IDE。",
+      "value": "在免费轻量核心上给团队卖专业/企业版(共享配置、SSO、私有模型)。",
+      "risk": "终端 agent 很挤(Aider、Claude Code、Codex);光\"轻量\"很难成护城河。"
+    }
+  }
 }
