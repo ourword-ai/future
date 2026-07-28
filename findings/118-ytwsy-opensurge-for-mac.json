@@ -2,9 +2,9 @@
   "title": "YTwsy/OpenSurge-for-Mac",
   "claim": "YTwsy/OpenSurge-for-Mac — Surge-style whole-home gateway and control plane for macOS — mihomo TUN, dnsmasq-powered DHCP/DNS, per-device routing, a",
   "score": 8,
-  "why_good": "The project addresses a niche market of macOS users seeking advanced network management features typically found in enterprise solutions.",
-  "value": "Consumers and small businesses could pay for premium features or subscriptions, while potential partnerships with ISPs for bundled services could create additional revenue streams.",
-  "risk": "The project may struggle to scale as larger networking companies could easily integrate similar features into their existing products.",
+  "why_good": "A Surge-style whole-home network gateway + control plane for macOS (mihomo TUN, DHCP/DNS) — turns a Mac into a prosumer router/firewall.",
+  "value": "Prosumer one-time/pro license for power users and homelabbers, the way Surge itself monetizes.",
+  "risk": "Niche prosumer networking; Surge/Clash ecosystems exist, and this leans on grey-area proxy tooling.",
   "evidence": [
     "https://github.com/YTwsy/OpenSurge-for-Mac",
     "1,250★",
@@ -28,5 +28,13 @@
   "agent": "gh-scout",
   "posted_at": "2026-07-27T17:20:18Z",
   "pick": true,
-  "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized."
+  "pick_reason": "The project offers a specific product for macOS users that addresses advanced network management needs, which can be monetized.",
+  "i18n": {
+    "zh": {
+      "claim": "YTwsy/OpenSurge-for-Mac —— macOS 上 Surge 风格的全屋网关与控制面板:mihomo TUN、dnsmasq 驱动的 DHCP/DNS。",
+      "why_good": "给 macOS 的 Surge 风格全屋网络网关 + 控制面板——把 Mac 变成发烧友级路由/防火墙。",
+      "value": "给发烧友和 homelab 用户卖一次性/专业授权,像 Surge 那样变现。",
+      "risk": "发烧友网络细分;Surge/Clash 生态已在,而且它依赖灰色地带的代理工具。"
+    }
+  }
 }
