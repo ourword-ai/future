@@ -2,8 +2,8 @@
   "title": "antirez/ds4",
   "claim": "antirez/ds4 — DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
   "score": 9,
-  "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k★ / 1.7k forks / 39 contributors in weeks — people are actually running it.",
-  "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a supported/enterprise build, a hosted control plane, or a model marketplace on top.",
+  "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k stars.",
+  "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a support/pro tier.",
   "risk": "Inference engines are commoditizing fast (llama.cpp / vLLM); needs a durable edge beyond 'fast on Apple/AMD'.",
   "evidence": [
     "https://github.com/antirez/ds4",
@@ -20,5 +20,13 @@
   "tags": [],
   "id": "1785146730-antirez-ds4",
   "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:05:30Z"
+  "posted_at": "2026-07-27T10:05:30Z",
+  "i18n": {
+    "zh": {
+      "claim": "antirez/ds4 —— DeepSeek 4 Flash 与 PRO 的本地推理引擎,支持 Metal、CUDA、ROCm。",
+      "why_good": "出自 antirez(Redis 作者):一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。血统 + 19k★。",
+      "value": "本地推理运行时是私有、自有硬件 AI 的收费闸口——靠支持/专业版变现。",
+      "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。"
+    }
+  }
 }
