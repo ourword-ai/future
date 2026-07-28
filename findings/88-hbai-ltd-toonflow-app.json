@@ -32,7 +32,9 @@
       "claim": "HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧本快速转成动画短剧(AI 编剧、智能分镜、角色与视频生成),跨平台桌面轻量部署。",
       "why_good": "用 AI 把小说/剧本变成动画短剧(编剧、分镜、角色+视频生成)——踩在中国爆火的短剧经济上,量和成本正是关键。",
       "value": "按托管版 + AI 视频生成点数,卖给创作者/机构/教育;短剧市场愿为便宜的批量产出付费。",
-      "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。"
+      "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。",
+      "hook": "用 AI 把小说或剧本变成动画短剧——踩在中国短剧的风口上。"
     }
-  }
+  },
+  "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom."
 }
