@@ -6,3 +6,4 @@ import os, sys
 sys.path.insert(0, "scouts")
 import scout_lib as S
 S.translate_missing(cap=int(os.environ.get("TRANSLATE_CAP", "8")))
+S.copy_fill(cap=int(os.environ.get("COPY_FILL_CAP", "6")))
