@@ -258,7 +258,8 @@ INTEGRITY_VETO = [
     ("account-farming",  r"(batch|bulk|mass|auto)[\s_-]?(regist|signup|sign-up)|account (generator|creator|farm|pool)|批量注册|养号|账号\s*(池|工厂)"),
     ("captcha-evasion",  r"\b(re)?captcha\b.{0,40}\b(solv|bypass|break)|\b(bypass|evade|defeat)\b.{0,25}\b(rate limit|ban|detection|risk control)|验证码.{0,10}(识别|绕过|破解)|风控绕过"),
     ("temp-identity",    r"(temp(orary)?[\s_-]?(mail|email|phone|sms)|sms.{0,10}(verification|receive)).{0,60}(regist|signup|account)|接码平台|临时邮箱.{0,20}注册"),
-    ("paid-api-resale",  r"\b(free|unlimited)\b.{0,25}\b(api|quota|credits?|tokens?)\b.{0,25}\b(pool|proxy|mirror|unlimited|forever)|reverse[\s_-]?prox\w*.{0,30}(openai|anthropic|claude|grok|gemini|chatgpt)|\b2api\b.{0,30}(账号|批量|池)|白嫖|免费.{0,8}(额度|接口|key)"),
+    ("paid-api-resale",  r"\b(free|unlimited)\b.{0,25}\b(api|quota|credits?|tokens?)\b.{0,25}\b(pool|proxy|mirror|unlimited|forever)|reverse[\s_-]?prox\w*.{0,30}(openai|anthropic|claude|grok|gemini|chatgpt)|\w*2api\b|白嫖|免费.{0,8}(额度|接口|key)"),
+    ("platform-account-abuse", r"云微信|微信(多开|分身|托管)|(cloud|hosted)[\s_-]?wechat|wechat[\s_-]?(bot|automation|multi[\s_-]?account)|whatsapp.{0,40}(bulk|mass|blast|broadcasts?)"),
     ("credential-pool",  r"(cookie|session|token|credential|account)\s*(pool|farm)|号池|cookie池|共享账号"),
     ("piracy",           r"\b(keygen|nulled|activator|cracked)\b|licen[cs]e\s*(crack|patch|bypass)|破解|激活码"),
     ("engagement-farm",  r"(auto|bulk|mass)[\s_-]?(like|follow|view|upvote|retweet)\w*|\b(like|follow|view|engagement)[\s_-](bot|farm|booster)\b|刷(粉|赞|量|播放|阅读)|涨粉神器"),
@@ -271,7 +272,7 @@ DERIVATIVE_NAME = re.compile(
     r"|^(open|free)(ai|claude|codex|cursor|grok|gemini|chatgpt|copilot|devin|manus|clawde|claude-?code)\b",
     re.I)
 # Content, not product: the board's own rule, enforced deterministically too.
-COLLECTION_NAME = re.compile(r"^(awesome|curated)[-_]|[-_](awesome|cheatsheet|cheat-sheet|handbook|guide|tutorials?|course|notes|roadmap|anthology|gallery|prompts?|skins?|themes?)$", re.I)
+COLLECTION_NAME = re.compile(r"^(awesome|curated)[-_]|(^|[-_])(awesome|cheatsheet|cheat-sheet|handbook|guide|tutorials?|course|notes|roadmap|anthology|gallery|prompts?|skins?|themes?|skills?)$|[-_]from[-_]scratch$", re.I)
 
 def _ev_int(f, pat):
     for e in f.get("evidence") or []:
