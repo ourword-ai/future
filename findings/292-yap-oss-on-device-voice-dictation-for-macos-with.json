@@ -1,10 +1,10 @@
 {
   "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
-  "claim": "Show HN: Yap – OSS on-device voice dictation for macOS with no model to download",
+  "claim": "Yap — open-source macOS menu-bar dictation that types into any focused app via Apple's on-device Speech framework: no model download, no API key, nothing leaves the machine.",
   "score": 8,
-  "why_good": "Yap enables seamless voice dictation directly on macOS, allowing users to dictate text into any application without needing an internet connection or downloading heavy models. It operates entirely on-device, utilizing Apple's Speech framework for real-time transcription.",
-  "value": "Developers and professionals seeking efficient, on-device dictation without compromising speed or privacy will pay for Yap to enhance their productivity.",
-  "risk": "Yap may struggle against established voice dictation software that offers broader features or integrations, especially if users prioritize extensive functionality over simplicity.",
+  "why_good": "Hold a key, talk, and it types into whatever app has focus. It rides Apple's built-in speech stack, so it starts instantly, works offline, and the whole tool stays a thin, hackable Swift wrapper (101 HN points, 41 comments).",
+  "value": "Honest read: thin on its own. The paid lane (Wispr Flow, ~$12/mo) is LLM cleanup, custom vocabulary, and cross-device sync; a free wrapper of Apple's free API can seed that funnel, but the wedge must be the polish layer, not the transcription.",
+  "risk": "Apple's built-in dictation is one settings toggle away and improves every OS release — and Yap is a side project of a funded startup (Frigade), so the repo is marketing, not an opening someone else can own.",
   "evidence": [
     "https://github.com/FrigadeHQ/yap",
     "https://news.ycombinator.com/item?id=49073834",
@@ -18,20 +18,20 @@
   "tags": [
     "show-hn"
   ],
-  "does": "Yap enables seamless voice dictation directly on macOS, allowing users to dictate text into any application without needing an internet connection or downloading heavy models. It operates entirely on-device, utilizing Apple's Speech framework for real-time transcription.",
-  "edge": "Yap's standout capability is its zero dependency on external models or APIs, ensuring privacy and speed while dictating.",
+  "does": "Hold a key, talk, and it types into whatever app has focus. It rides Apple's built-in speech stack, so it starts instantly, works offline, and the whole tool stays a thin, hackable Swift wrapper (101 HN points, 41 comments).",
+  "edge": "Zero-setup on-device dictation: no Whisper download, no API key, no cloud round-trip — the anti-bloat answer to Wispr Flow.",
   "why_use": "Choose Yap for its lightweight, fast, and private dictation experience, especially if you want to avoid the bloat and latency of other voice dictation tools that rely on heavy models or cloud services.",
-  "hook": "Yap: On-device voice dictation for macOS that requires no model download.",
+  "hook": "Yap: hold a key, talk, and it types — fully on-device macOS dictation with zero setup.",
   "i18n": {
     "zh": {
-      "claim": "Yap：无需下载模型的macOS本地语音转录。",
-      "hook": "Yap：无需下载模型的macOS本地语音转录。",
-      "does": "Yap使用户能够在macOS上无缝进行语音转录，允许用户在任何应用程序中进行文本输入，而无需互联网连接或下载大型模型。它完全在设备上运行，利用Apple的语音框架进行实时转录。",
-      "edge": "Yap的突出能力是它对外部模型或API的零依赖，确保了在转录过程中的隐私和速度。",
-      "why_use": "选择Yap是因为它提供轻量、快速和私密的转录体验，特别是如果您想避免其他依赖于大型模型或云服务的语音转录工具的臃肿和延迟。",
-      "value": "寻求高效本地转录而不妥协速度或隐私的开发者和专业人士将为Yap支付，以提升他们的生产力。",
-      "risk": "Yap可能会面临与提供更广泛功能或集成的成熟语音转录软件的竞争，特别是如果用户优先考虑广泛的功能而非简单性。",
-      "why_good": "Yap使用户能够在macOS上无缝进行语音转录，允许用户在任何应用程序中进行文本输入，而无需互联网连接或下载大型模型。它完全在设备上运行，利用Apple的语音框架进行实时转录。"
+      "claim": "Yap：开源 macOS 菜单栏听写工具，按住即说、松开即输入到任意应用，基于苹果本地 Speech 框架——无需下载模型、无需 API key、数据不出本机。",
+      "hook": "Yap：按住说话即输入——零配置的 macOS 本地听写。",
+      "does": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
+      "edge": "零配置本地听写：不用下 Whisper、不用 API key、没有云端往返——对臃肿听写工具的反击。",
+      "why_use": "想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。",
+      "value": "商业价值：坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
+      "risk": "苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。",
+      "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。"
     }
   },
   "pick": true,
