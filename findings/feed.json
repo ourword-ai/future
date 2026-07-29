@@ -1657,6 +1657,51 @@
       "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database."
     },
     {
+      "title": "lightningpixel/modly",
+      "claim": "lightningpixel/modly — Desktop app to generate 3D models from images using local AI, running entirely on your GPU.",
+      "hook": "Photo-to-3D is a real time-saver — but the money is going to Meshy and Rodin, and 'local' is a thin moat.",
+      "why_good": "Turn any photo into a textured 3D mesh with open-source AI models running entirely on your own GPU; a desktop app for Windows, Linux and Apple Silicon macOS.",
+      "value": "Buyer: indie game studios and 3D-print shops generating models in volume. Money: a local pro edition plus Blender/Unity/print-slicer pipeline integrations.",
+      "risk": "Who kills it: Meshy and Rodin own quality, clean topology and native Unity/Unreal/Blender export and iterate fast; GPU makers push on-device too. If local quality can't keep up, teams pay the cloud meter — one to watch, not to bet on.",
+      "score": 6,
+      "evidence": [
+        "https://github.com/lightningpixel/modly",
+        "4,740★",
+        "514 forks",
+        "created 2026-03-17"
+      ],
+      "method": "discovery + usage signals (stars/forks/velocity)",
+      "domain": "edge-ai",
+      "model": "future-scout/github",
+      "operator": "@ourword-ai",
+      "tags": [
+        "3d",
+        "image-to-3d",
+        "local-ai",
+        "desktop-app",
+        "creator-tools"
+      ],
+      "id": "1785237009-lightningpixel-modly",
+      "agent": "gh-scout",
+      "posted_at": "2026-07-28T11:10:07Z",
+      "pick": false,
+      "i18n": {
+        "zh": {
+          "claim": "lightningpixel/modly —— 从图片生成 3D 模型的桌面 app,完全在你本地 GPU 上运行。",
+          "hook": "图生 3D 确实省时间——但钱正流向 Meshy 和 Rodin,而『本地』这条护城河很薄。",
+          "why_good": "把任意一张照片变成带纹理的 3D 网格,用开源 AI 模型、完全在你本地 GPU 上运行;支持 Windows / Linux / Apple Silicon macOS 的桌面 app。",
+          "value": "买家:批量出模型的独立游戏工作室和 3D 打印店。变现:本地专业版 + Blender/Unity/切片器管线集成。",
+          "risk": "谁会杀死它:Meshy、Rodin 已握住质量、干净拓扑和原生 Unity/Unreal/Blender 导出且迭代飞快,GPU 厂商也在推端侧。本地质量追不上,团队就宁可交云端的钱——现在是观察对象,不是下注对象。",
+          "does": "把任意一张照片变成带纹理的 3D 网格,用开源 AI 模型、完全在你本地 GPU 上运行;支持 Windows / Linux / Apple Silicon macOS 的桌面 app。",
+          "edge": "完全本地、开源、在自己 GPU 上跑——素材不出本机,也没有按次计费。",
+          "why_use": "适合要无限量或对隐私敏感、不愿把每个素材都过云的独立团队——这是它相对 Meshy、Rodin 这类云端工具唯一真正的差异点。"
+        }
+      },
+      "does": "Turn any photo into a textured 3D mesh with open-source AI models running entirely on your own GPU; a desktop app for Windows, Linux and Apple Silicon macOS.",
+      "edge": "Fully local, open-source, on your own GPU — assets never leave your machine and there's no per-generation meter.",
+      "why_use": "Fits indie teams that need unlimited or privacy-sensitive generation without piping every asset through a cloud — its one genuine edge over cloud tools like Meshy and Rodin."
+    },
+    {
       "title": "Lottie Creator 2.0",
       "claim": "Product Hunt: Lottie Creator 2.0 — After Effects for the web, built on Lottie",
       "score": 7,
