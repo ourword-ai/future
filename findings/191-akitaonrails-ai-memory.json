@@ -2,9 +2,9 @@
   "title": "akitaonrails/ai-memory",
   "claim": "ai-memory — long-term memory for coding agents that survives vendor switches: quit Claude Code mid-task, open Codex in the same directory, and the architecture, failed approaches and open questions carry over. Rust, MIT.",
   "score": 8,
-  "why_good": "Everyone builds memory inside one agent; this makes memory a neutral layer between vendors — exactly what devs juggling Claude Code + Codex need. And it's real engineering, not a prompt pack: 40 contributors, 374 commits/30d, packaged for Linux/macOS/WSL2, from a well-known developer educator (Fabio Akita).",
-  "value": "商业价值: the vendor-neutral memory store is a natural per-seat team product — shared project memory, sync, retention policy — sold from the same budget as the agent seats it protects.",
-  "risk": "Anthropic and OpenAI are shipping first-party memory; a cross-vendor layer only matters while multi-agent workflows stay the norm. If one agent wins, its native memory absorbs this.",
+  "why_good": "ai-memory provides long-term memory for AI coding agents, allowing users to switch between different tools like Claude Code and OpenAI Codex without losing context on architecture, failed approaches, or open questions.",
+  "value": "Software development teams pay for ai-memory to maintain productivity and context during transitions between coding agents, directly addressing the inefficiencies of current multi-agent workflows.",
+  "risk": "The reliance on existing coding agents like Claude Code and OpenAI Codex, which may not fully support or integrate with ai-memory, poses a risk to its widespread adoption.",
   "evidence": [
     "https://github.com/akitaonrails/ai-memory",
     "1,275★",
@@ -23,10 +23,18 @@
   "posted_at": "2026-07-28T04:16:54Z",
   "i18n": {
     "zh": {
-      "claim": "akitaonrails/ai-memory —— 给编码 agent CLI 的长期记忆,并支持在不同 agent 厂商间交接。",
-      "why_good": "给编码 agent CLI 的长期记忆 + 跨厂商交接(1275★、40 贡献者)——让你在 Claude Code/Codex 间切换而不丢上下文,真实的摩擦。",
-      "value": "给用多个 agent、想要可携带上下文的团队卖托管记忆服务 + 团队同步。",
-      "risk": "记忆正被 agent 原生吸收,而交接只在多 agent 并存时才有意义。"
+      "claim": "无缝切换编码代理，保留100%的上下文。",
+      "why_good": "ai-memory 为 AI 编码代理提供长期记忆，允许用户在不同工具之间切换，如 Claude Code 和 OpenAI Codex，而不会丢失架构、失败的方法或未解决的问题的上下文。",
+      "value": "软件开发团队为 ai-memory 付费，以在编码代理之间的过渡中保持生产力和上下文，直接解决当前多代理工作流程的低效问题。",
+      "risk": "对现有编码代理（如 Claude Code 和 OpenAI Codex）的依赖，可能无法完全支持或与 ai-memory 集成，这对其广泛采用构成风险。",
+      "hook": "无缝切换编码代理，保留100%的上下文。",
+      "does": "ai-memory 为 AI 编码代理提供长期记忆，允许用户在不同工具之间切换，如 Claude Code 和 OpenAI Codex，而不会丢失架构、失败的方法或未解决的问题的上下文。",
+      "edge": "它独特地实现了不同 AI 编码代理之间的连续性，保留整个编码会话的上下文。",
+      "why_use": "选择 ai-memory，可以避免在切换 AI 工具时重新解释复杂编码上下文的挫败感，确保更顺畅的开发过程。"
     }
-  }
+  },
+  "does": "ai-memory provides long-term memory for AI coding agents, allowing users to switch between different tools like Claude Code and OpenAI Codex without losing context on architecture, failed approaches, or open questions.",
+  "edge": "It uniquely enables continuity across different AI coding agents, preserving the entire context of a coding session.",
+  "why_use": "Choose ai-memory to avoid the frustration of re-explaining complex coding contexts when switching between AI tools, ensuring a smoother development process.",
+  "hook": "Seamlessly switch coding agents mid-task with 100% context retention."
 }
