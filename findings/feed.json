@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T06:41:25Z",
+  "generated_at": "2026-07-29T06:47:09Z",
   "board": {
     "ideas": 213,
     "domains": 6,
@@ -966,9 +966,9 @@
       "title": "rocketride-org/rocketride-server",
       "claim": "rocketride-org/rocketride-server — High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflo",
       "score": 8,
-      "why_good": "1,833 forks (34% of stars) — people build on it; 49 contributors, 112 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "RocketRide enables you to build, debug, and deploy production-ready AI solutions directly within your IDE or terminal. It features a visual pipeline builder for seamless integration of various AI and ML workloads.",
+      "value": "AI developers and data scientists pay for RocketRide to create scalable, production-ready AI applications without the constraints of traditional platforms.",
+      "risk": "RocketRide may struggle against established incumbents like AWS or Azure, which offer comprehensive AI services and integrations.",
       "evidence": [
         "https://github.com/rocketride-org/rocketride-server",
         "5,386★",
@@ -993,20 +993,28 @@
       "posted_at": "2026-07-28T21:15:58Z",
       "i18n": {
         "zh": {
-          "claim": "rocketride-org/rocketride-server — 高性能的AI管道引擎，核心使用C++，支持50多个Python扩展节点。构建、调试和扩展LLM工作流程。",
-          "why_good": "1,833个分支（占星标的34%）— 许多人在此基础上进行开发；49位贡献者，过去30天有112次提交 — 积极维护中。",
-          "value": "每个AI产品所需的基础设施 — 以基于使用量的API和托管/管理层进行货币化。",
-          "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有公司是否会将其吸收。"
+          "claim": "将您的IDE转变为高性能AI开发强大工具，使用RocketRide的50多个可扩展节点。",
+          "why_good": "RocketRide使您能够直接在IDE或终端中构建、调试和部署生产就绪的AI解决方案。它具有可视化管道构建器，可无缝集成各种AI和ML工作负载。",
+          "value": "AI开发人员和数据科学家为RocketRide付费，以创建可扩展的、生产就绪的AI应用程序，而不受传统平台的限制。",
+          "risk": "RocketRide可能会在与AWS或Azure等成熟竞争者的竞争中面临挑战，这些竞争者提供全面的AI服务和集成。",
+          "hook": "将您的IDE转变为高性能AI开发强大工具，使用RocketRide的50多个可扩展节点。",
+          "does": "RocketRide使您能够直接在IDE或终端中构建、调试和部署生产就绪的AI解决方案。它具有可视化管道构建器，可无缝集成各种AI和ML工作负载。",
+          "edge": "能够直接在代码编辑器中可视化设计复杂的AI工作流程，具有实时可观察性和零供应商锁定。",
+          "why_use": "选择RocketRide，因为它无与伦比的性能和灵活性，使您能够在自己的基础设施上运行AI管道，而无需依赖麻烦。"
         }
-      }
+      },
+      "does": "RocketRide enables you to build, debug, and deploy production-ready AI solutions directly within your IDE or terminal. It features a visual pipeline builder for seamless integration of various AI and ML workloads.",
+      "edge": "The ability to visually design complex AI workflows directly in your code editor, with real-time observability and zero vendor lock-in.",
+      "why_use": "Choose RocketRide for its unmatched performance and flexibility, allowing you to run AI pipelines on your own infrastructure without dependency headaches.",
+      "hook": "Transform your IDE into a high-performance AI development powerhouse with RocketRide's 50+ extensible nodes."
     },
     {
       "title": "ValueCell-ai/ClawX",
       "claim": "ValueCell-ai/ClawX — ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration i",
       "score": 8,
-      "why_good": "1,128 forks (14% of stars) — people build on it; 24 contributors, 49 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "ClawX provides a graphical interface that eliminates the need for command-line interactions, allowing users to automate workflows and manage AI channels effortlessly. It features zero configuration barriers and an intelligent chat interface for real-time communication with AI agents.",
+      "value": "Small to medium-sized businesses and individual developers pay for ClawX to simplify AI agent management and enhance productivity through a user-friendly interface.",
+      "risk": "ClawX may struggle against entrenched CLI-based solutions that have established user bases and extensive documentation, potentially limiting its adoption among experienced developers.",
       "evidence": [
         "https://github.com/ValueCell-ai/ClawX",
         "7,557★",
@@ -1031,20 +1039,28 @@
       "posted_at": "2026-07-28T21:15:57Z",
       "i18n": {
         "zh": {
-          "claim": "ValueCell-ai/ClawX — ClawX 是一款桌面应用程序，为 OpenClaw AI 代理提供图形界面。它将基于 CLI 的 AI 编排转变为更直观的操作。",
-          "why_good": "1,128 个分支（占星标的 14%）— 许多人在此基础上进行开发；24 位贡献者，过去 30 天内有 49 次提交 — 积极维护中。",
-          "value": "每个 AI 产品所需的基础设施 — 以基于使用量的 API 形式盈利，并提供托管/管理服务。",
-          "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有公司是否会将其吸收。"
+          "claim": "使用ClawX转变AI编排：为OpenClaw代理提供无缝桌面界面。",
+          "why_good": "ClawX提供一个图形界面，消除了命令行交互的需要，使用户能够轻松自动化工作流程和管理AI通道。它具有零配置障碍和智能聊天界面，支持与AI代理的实时通信。",
+          "value": "中小型企业和个人开发者为ClawX付费，以简化AI代理管理，并通过用户友好的界面提高生产力。",
+          "risk": "ClawX可能会面临已经建立用户基础和广泛文档的传统CLI解决方案的竞争，这可能限制其在经验丰富的开发者中的采用。",
+          "hook": "使用ClawX转变AI编排：为OpenClaw代理提供无缝桌面界面。",
+          "does": "ClawX提供一个图形界面，消除了命令行交互的需要，使用户能够轻松自动化工作流程和管理AI通道。它具有零配置障碍和智能聊天界面，支持与AI代理的实时通信。",
+          "edge": "ClawX独特地提供了一个完整的设置体验，无需任何终端命令或配置文件，使非技术用户也能轻松使用。",
+          "why_use": "选择ClawX，因为它直观的设计尊重您的时间，使您能够立即与AI互动，而无需掌握CLI工具的陡峭学习曲线。"
         }
-      }
+      },
+      "does": "ClawX provides a graphical interface that eliminates the need for command-line interactions, allowing users to automate workflows and manage AI channels effortlessly. It features zero configuration barriers and an intelligent chat interface for real-time communication with AI agents.",
+      "edge": "ClawX uniquely offers a complete setup experience without any terminal commands or configuration files, making it accessible to non-technical users.",
+      "why_use": "Choose ClawX for its intuitive design that respects your time, enabling immediate engagement with AI without the steep learning curve associated with CLI tools.",
+      "hook": "Transform AI orchestration with ClawX: a seamless desktop interface for OpenClaw agents."
     },
     {
       "title": "yizhiyanhua-ai/fireworks-tech-graph",
       "claim": "yizhiyanhua-ai/fireworks-tech-graph — Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workfl",
       "score": 8,
-      "why_good": "797 forks (8% of stars) — people build on it; 14 contributors, 15 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+      "value": "Software engineers and technical project managers pay for fireworks-tech-graph to enhance their documentation and diagramming processes, addressing the inefficiencies of manual diagram creation.",
+      "risk": "The reliance on existing diagramming tools like Lucidchart or Microsoft Visio, which have established user bases and comprehensive feature sets, poses a risk to adoption.",
       "evidence": [
         "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
         "9,487★",
@@ -1069,12 +1085,20 @@
       "posted_at": "2026-07-28T21:15:56Z",
       "i18n": {
         "zh": {
-          "claim": "yizhiyanhua-ai/fireworks-tech-graph — 从自然语言生成生产级的SVG+PNG技术图表。支持7种风格和UML，以及AI/Agent工作流程。",
-          "why_good": "797个分支（占星标的8%） — 许多人在此基础上进行开发；14位贡献者，过去30天内有15次提交 — 维护活跃。",
-          "value": "每个AI产品都需要的基础设施 — 以基于使用的API和托管/管理层进行盈利。",
-          "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有公司是否会将其吸收。"
+          "claim": "将自然语言转化为高质量的图表，提供11种独特风格。",
+          "why_good": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
+          "value": "软件工程师和技术项目经理为fireworks-tech-graph付费，以提升他们的文档和图表制作流程，解决手动图表创建的低效问题。",
+          "risk": "依赖于现有的图表工具，如Lucidchart或Microsoft Visio，这些工具拥有成熟的用户基础和全面的功能集，可能会对采用构成风险。",
+          "hook": "将自然语言转化为高质量的图表，提供11种独特风格。",
+          "does": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
+          "edge": "AI创作的“黑色奢华”风格提供了竞争工具中没有的独特美学。",
+          "why_use": "选择fireworks-tech-graph，因为它能够生成几何检查的图表，与开发者工作流程无缝集成，非常适合技术文档和架构设计。"
         }
-      }
+      },
+      "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+      "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
+      "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
+      "hook": "Transform natural language into production-quality diagrams with 11 unique styles."
     },
     {
       "title": "Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
@@ -1112,9 +1136,9 @@
       "title": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
       "claim": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin — Codex plugin that turns attached object images into code-only, animation-ready procedural Three.js models.",
       "score": 8,
-      "why_good": "158 forks (10% of stars) — people build on it",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
+      "value": "Game developers and 3D artists pay for this tool to quickly generate high-quality, animation-ready props and objects from reference images, addressing the need for efficient model creation.",
+      "risk": "The reliance on Codex for model generation could be a weakness if competing solutions offer more robust or user-friendly alternatives.",
       "evidence": [
         "https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
         "1,508★",
@@ -1133,12 +1157,20 @@
       "posted_at": "2026-07-28T20:04:59Z",
       "i18n": {
         "zh": {
-          "claim": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin — Codex 插件，可以将附加的对象图像转换为仅包含代码的、可动画的程序化 Three.js 模型。",
-          "why_good": "158 个分支（占星标的 10%）— 说明有人在此基础上进行开发",
-          "value": "每个 AI 产品所需的基础设施 — 以基于使用量的 API 收费，并提供托管/管理服务",
-          "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有公司是否会将其吸纳"
+          "claim": "将图像转换为动画准备好的Three.js模型，精确无误。",
+          "why_good": "Three.js对象雕刻师将附加的物体图像转换为仅包含代码的程序化Three.js模型，引导用户通过包括验证、分解和动画层次结构设置的雕刻工作流程。",
+          "value": "游戏开发者和3D艺术家为这个工具付费，以便快速从参考图像生成高质量的、准备好动画的道具和物体，满足高效模型创建的需求。",
+          "risk": "依赖Codex进行模型生成可能是一个弱点，如果竞争解决方案提供更强大或更用户友好的替代品。",
+          "hook": "将图像转换为动画准备好的Three.js模型，精确无误。",
+          "does": "Three.js对象雕刻师将附加的物体图像转换为仅包含代码的程序化Three.js模型，引导用户通过包括验证、分解和动画层次结构设置的雕刻工作流程。",
+          "edge": "它独特地结合了图像验证与结构化的雕刻过程，确保生成的模型不仅准确，而且准备好进行动画。",
+          "why_use": "选择这个插件是因为它能够直接从图像创建复杂的、准备好动画的模型，而不会遭遇摄影测量或网格提取的陷阱。"
         }
-      }
+      },
+      "does": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
+      "edge": "It uniquely combines image validation with a structured sculpting process, ensuring that the generated models are not only accurate but also ready for animation.",
+      "why_use": "Choose this plugin for its ability to create complex, animation-ready models directly from images, without the pitfalls of photogrammetry or mesh extraction.",
+      "hook": "Transform images into animation-ready Three.js models with precision."
     },
     {
       "title": "tandpfun/wardrobe",
@@ -1307,9 +1339,9 @@
       "title": "anomalyco/opencode",
       "claim": "anomalyco/opencode — The open source coding agent.",
       "score": 7,
-      "why_good": "already crowded (190,526★) — real signal but late; 24,211 forks (12% of stars) — people build on it; 983 contributors, 668 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+      "why_good": "OpenCode is an AI coding agent that provides two distinct agents: a full-access build agent for development and a read-only plan agent for code exploration. It allows users to switch seamlessly between agents for tailored coding tasks.",
+      "value": "Developers and software teams pay for OpenCode to enhance their coding efficiency and safety in exploring new projects, addressing the need for both development and analysis in one tool.",
+      "risk": "OpenCode may struggle against established IDEs that dominate the market, which offer deep integrations and extensive ecosystems that users are accustomed to.",
       "evidence": [
         "https://github.com/anomalyco/opencode",
         "190,526★",
@@ -1328,20 +1360,28 @@
       "posted_at": "2026-07-28T19:44:07Z",
       "i18n": {
         "zh": {
-          "claim": "anomalyco/opencode — 开源编码代理。",
-          "why_good": "竞争已经非常激烈（190,526★）— 真实信号但已晚；24,211个分支（占星数的12%）— 人们在此基础上进行开发；983位贡献者，过去30天668次提交 — 积极维护中。",
-          "value": "每个AI产品所需的基础设施 — 以基于使用的API形式盈利，并提供托管/管理层。",
-          "risk": "竞争已经相当激烈 — 胜者基本已定；创始人需要更具竞争力的切入点。"
+          "claim": "用OpenCode，开放源代码的AI编码代理，改变您的编码体验，拥有190,526颗星！",
+          "why_good": "OpenCode是一个AI编码代理，提供两个不同的代理：用于开发的完全访问构建代理和用于代码探索的只读计划代理。它允许用户无缝切换代理，以满足特定的编码任务。",
+          "value": "开发人员和软件团队为OpenCode付费，以提高编码效率和在探索新项目时的安全性，满足一个工具中开发和分析的需求。",
+          "risk": "OpenCode可能会面临市场上占主导地位的成熟IDE的竞争，这些IDE提供深度集成和用户习惯的广泛生态系统。",
+          "hook": "用OpenCode，开放源代码的AI编码代理，改变您的编码体验，拥有190,526颗星！",
+          "does": "OpenCode是一个AI编码代理，提供两个不同的代理：用于开发的完全访问构建代理和用于代码探索的只读计划代理。它允许用户无缝切换代理，以满足特定的编码任务。",
+          "edge": "独特的双代理系统使用户能够轻松在开发和分析模式之间切换，满足编码和探索需求。",
+          "why_use": "选择OpenCode，因为它无与伦比的双代理功能，支持主动编码和安全探索不熟悉的代码库，与标准编码工具不同。"
         }
-      }
+      },
+      "does": "OpenCode is an AI coding agent that provides two distinct agents: a full-access build agent for development and a read-only plan agent for code exploration. It allows users to switch seamlessly between agents for tailored coding tasks.",
+      "edge": "The unique dual-agent system enables users to switch between development and analysis modes effortlessly, catering to both coding and exploratory needs.",
+      "why_use": "Choose OpenCode for its unparalleled dual-agent functionality, which supports both active coding and safe exploration of unfamiliar codebases, unlike standard coding tools.",
+      "hook": "Transform your coding experience with OpenCode, the open-source AI coding agent boasting 190,526 stars!"
     },
     {
       "title": "obra/superpowers",
       "claim": "obra/superpowers — An agentic skills framework & software development methodology that works.",
       "score": 7,
-      "why_good": "already crowded (262,633★) — real signal but late; 23,454 forks (8% of stars) — people build on it; 44 contributors, 71 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+      "why_good": "Superpowers enhances coding agents by guiding them through the development process, from spec creation to implementation, ensuring clarity and adherence to best practices like TDD and DRY.",
+      "value": "Enterprise software teams pay for Superpowers to gain structured support and enhanced productivity in software development, addressing the challenge of managing junior engineers effectively.",
+      "risk": "It may struggle against established development methodologies and tools that are deeply integrated into existing workflows, potentially limiting adoption.",
       "evidence": [
         "https://github.com/obra/superpowers",
         "262,633★",
@@ -1366,12 +1406,20 @@
       "posted_at": "2026-07-28T19:44:03Z",
       "i18n": {
         "zh": {
-          "claim": "obra/superpowers — 一种有效的技能框架和软件开发方法论。",
-          "why_good": "市场竞争激烈（262,633★） — 真实信号但已较晚；23,454个分支（占星数的8%） — 人们在此基础上进行开发；44位贡献者，过去30天内71次提交 — 积极维护中。",
-          "value": "每个AI产品所需的基础设施 — 以基于使用的API形式盈利，并提供托管/管理服务。",
-          "risk": "竞争已经非常激烈 — 胜者基本已定；创始人需要更具锋利的切入点。"
+          "claim": "通过Superpowers改变您的编码代理：一个全面的软件开发方法论。",
+          "why_good": "Superpowers通过引导编码代理完成开发过程，从规格创建到实施，确保清晰性和遵循最佳实践，如TDD和DRY。",
+          "value": "企业软件团队为Superpowers付费，以在软件开发中获得结构化支持和提高生产力，解决有效管理初级工程师的挑战。",
+          "risk": "它可能面临与已深度集成到现有工作流程中的成熟开发方法和工具的竞争，这可能限制其采用。",
+          "hook": "通过Superpowers改变您的编码代理：一个全面的软件开发方法论。",
+          "does": "Superpowers通过引导编码代理完成开发过程，从规格创建到实施，确保清晰性和遵循最佳实践，如TDD和DRY。",
+          "edge": "其突出能力是子代理驱动开发过程，允许编码代理在保持专注于商定实施计划的同时独立工作。",
+          "why_use": "选择Superpowers，因为它能够促进结构化的开发对话，导致清晰、可操作的计划，与其他直接跳入编码的工具不同。"
         }
-      }
+      },
+      "does": "Superpowers enhances coding agents by guiding them through the development process, from spec creation to implementation, ensuring clarity and adherence to best practices like TDD and DRY.",
+      "edge": "Its standout capability is the subagent-driven-development process, allowing coding agents to work autonomously while maintaining focus on the agreed implementation plan.",
+      "why_use": "Choose Superpowers for its unique ability to facilitate structured development conversations that lead to clear, actionable plans, unlike other tools that jump straight to coding.",
+      "hook": "Transform your coding agents with Superpowers: a comprehensive software development methodology."
     },
     {
       "title": "FableCut – A browser video editor AI agents can drive (zero deps)",
