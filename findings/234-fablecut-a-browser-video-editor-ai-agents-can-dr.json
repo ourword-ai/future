@@ -1,10 +1,10 @@
 {
   "title": "FableCut – A browser video editor AI agents can drive (zero deps)",
-  "claim": "Show HN: FableCut – A browser video editor AI agents can drive (zero deps)",
+  "claim": "Zero-dependency browser video editor built to be driven by AI agents — a JSON timeline as the source of truth, MCP + REST APIs, live-reloading UI.",
   "score": 8,
-  "why_good": "Launched on Show HN with real interest — 98 points / 62 comments. People turned up for it, which is rare.",
-  "value": "a workflow people pay a monthly seat for",
-  "risk": "Show HN spikes fade — check whether anyone still uses it a month after launch day.",
+  "why_good": "Every “AI video agent” demo still bottoms out in a human-operated editor; FableCut inverts that by making the timeline a machine-writable format first and a UI second. Agent-operable creative tools are an empty shelf right now.",
+  "value": "The editing backend for AI video products — usage-priced API for agent-driven edits, with the open editor as distribution. Owning the timeline format agents speak is a standards play.",
+  "risk": "Video editing is a graveyard of feature-rich incumbents; if CapCut or Descript expose agent APIs, a zero-dep editor's headroom shrinks to a niche. 557 stars is interest, not yet usage.",
   "evidence": [
     "https://github.com/ronak-create/FableCut",
     "https://news.ycombinator.com/item?id=48845422",
@@ -23,10 +23,10 @@
   "posted_at": "2026-07-28T17:11:34Z",
   "i18n": {
     "zh": {
-      "claim": "Show HN: FableCut – 一款浏览器视频编辑器，AI代理可以驱动（零依赖）",
-      "why_good": "在Show HN上发布时引起了真实的关注——获得了98分和62条评论。人们对此表现出了兴趣，这很少见。",
-      "value": "一个人们愿意为之支付月费的工作流程",
-      "risk": "Show HN的热度可能会减退——需要检查发布一个月后是否还有人使用。"
+      "claim": "零依赖、跑在浏览器里的视频剪辑器，为 AI 代理操控而生 — JSON 时间线为唯一事实源，MCP + REST 接口，界面实时热更新。",
+      "why_good": "所有“AI 视频代理”的演示最后都卡在需要人操作的剪辑器上；FableCut 反过来：时间线先是机器可写的格式，其次才是界面。“代理可操作的创作工具”眼下还是空货架。",
+      "value": "商业价值：做 AI 视频产品的剪辑后端 — 按用量计费的代理剪辑 API，开源编辑器充当获客渠道。占住“代理通用的时间线格式”是一场标准之争。",
+      "risk": "视频剪辑是功能齐全的巨头坟场；若 CapCut/Descript 开放代理接口，零依赖编辑器的空间会缩到利基。557 星是关注，还不是使用。"
     }
   }
 }
