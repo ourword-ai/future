@@ -15,7 +15,14 @@ KILL_KW = ["linkedin", "instagram", "tiktok bot", "twitter bot", "auto-dm", "mas
            # star-farmed "coding-agent skill / prompt pack" genre + content repos = not companies
            "skill for", "skill router", "skill pack", "prompt pack", "coding agent skill",
            "claude code skill", "awesome list", "awesome-", "cheatsheet", "cheat sheet",
-           "curated list", "collection of prompts", "study notes", "interview questions"]
+           "curated list", "collection of prompts", "study notes", "interview questions",
+           # tutorials / courses / roadmaps / templates — content, not companies
+           "tutorial", "from 0 to 1", "from zero to", "learning path", "roadmap",
+           "bootcamp", "study plan", "step-by-step guide", "教程", "从0到1", "从零到一",
+           "boilerplate", "starter kit", "starter-kit", "-template", "template repo",
+           # offensive-security / dual-use — not featurable startups
+           "exploits for", "exploit poc", "0day", "0-day", "malware", "ransomware",
+           "red-team framework", "clone any website", "website cloner"]
 BIG_VENDORS = {"google", "google-research", "google-deepmind", "openai", "microsoft", "meta",
                "facebook", "facebookresearch", "baidu", "xai-org", "alibaba", "alibaba-inc",
                "bytedance", "tencent", "nvidia", "apple", "amazon", "aws", "anthropics",
