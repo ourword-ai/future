@@ -2,9 +2,9 @@
   "title": "snownico0722/PaperTodo",
   "claim": "snownico0722/PaperTodo — 极简 Windows 桌面便签工具。让桌面上有几张安静、可用、不会打扰人的纸。WPF 原生，支持待办与 Markdown。——A minimalist Windows desktop sticky note tool. It puts a ",
   "score": 7,
-  "why_good": "1 contributors, 163 commits/30d — actively maintained",
-  "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
+  "value": "Individual users seeking a distraction-free note-taking experience pay for the ability to jot down thoughts and tasks instantly, without the overhead of traditional apps.",
+  "risk": "Established productivity tools like Microsoft OneNote or Evernote dominate the market, posing a challenge for user adoption due to their extensive feature sets.",
   "evidence": [
     "https://github.com/snownico0722/PaperTodo",
     "1,282★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T15:27:20Z",
   "i18n": {
     "zh": {
-      "claim": "snownico0722/PaperTodo — 一款极简的 Windows 桌面便签工具。让你的桌面上有几张安静、实用且不会打扰你的便签。基于 WPF 原生开发，支持待办事项和 Markdown。",
-      "why_good": "1 位贡献者，过去 30 天内有 163 次提交 — 积极维护中",
-      "value": "一个成熟的工作流程，专业用户愿意为此支付月费，并且可以进行团队升级",
-      "risk": "可能只是一个功能，而不是一家公司 — 需要评估市场壁垒以及现有竞争者是否会将其吸收"
+      "claim": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
+      "why_good": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
+      "value": "寻求无干扰记笔记体验的个人用户为能够即时记录想法和任务而付费，无需传统应用的复杂性。",
+      "risk": "微软 OneNote 或 Evernote 等成熟的生产力工具主导市场，因其丰富的功能集，用户采用面临挑战。",
+      "hook": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
+      "does": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
+      "edge": "每张便签作为独立窗口操作，使用户能够快速访问和互动，而无需多余的点击或干扰。",
+      "why_use": "选择 PaperTodo，因其简单性和对即时可用性的关注，与其他需要复杂设置和账号管理的记事应用不同。"
     }
-  }
+  },
+  "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
+  "edge": "Each note operates as an independent window, enabling quick access and interaction without unnecessary clicks or distractions.",
+  "why_use": "Choose PaperTodo for its simplicity and focus on immediate usability, unlike other note-taking apps that require complex setups and account management.",
+  "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!"
 }

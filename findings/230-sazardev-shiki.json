@@ -2,9 +2,9 @@
   "title": "sazardev/shiki",
   "claim": "sazardev/shiki — TUI note-taking app in Rust — Yazi-style navigation, notebooks as independent git repos, real per-note version history, ",
   "score": 8,
-  "why_good": "2 contributors, 74 commits/30d — actively maintained",
-  "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
+  "value": "Developers and power users pay for Shiki to maintain detailed version histories of their notes and leverage git's capabilities for organization and retrieval.",
+  "risk": "Shiki may struggle against established note-taking apps like Notion or Obsidian, which have larger user bases and extensive feature sets.",
   "evidence": [
     "https://github.com/sazardev/shiki",
     "108★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T15:27:19Z",
   "i18n": {
     "zh": {
-      "claim": "sazardev/shiki — Rust 编写的 TUI 笔记应用 — Yazi 风格的导航，笔记本作为独立的 git 仓库，真正的每条笔记版本历史",
-      "why_good": "2 位贡献者，过去 30 天内有 74 次提交 — 积极维护中",
-      "value": "一个成熟的工作流程，专业用户每月支付使用费，团队可进行升级",
-      "risk": "可能只是一个功能，而非一家公司 — 需评估护城河以及现有竞争者是否会将其吸收"
+      "claim": "通过 Shiki 改变您的笔记记录：一个跟踪每个变化的 TUI 应用，支持独立的 git 仓库。",
+      "why_good": "Shiki 是一个基于终端的笔记记录应用，采用三窗格 Yazi 风格导航，允许用户将笔记本管理为独立的 git 仓库。它具有真实的每笔记版本历史、快速模糊搜索和可定制主题。",
+      "value": "开发者和高级用户为 Shiki 付费，以维护其笔记的详细版本历史，并利用 git 的能力进行组织和检索。",
+      "risk": "Shiki 可能会面临来自 Notion 或 Obsidian 等成熟笔记记录应用的竞争，这些应用拥有更大的用户基础和广泛的功能集。",
+      "hook": "通过 Shiki 改变您的笔记记录：一个跟踪每个变化的 TUI 应用，支持独立的 git 仓库。",
+      "does": "Shiki 是一个基于终端的笔记记录应用，采用三窗格 Yazi 风格导航，允许用户将笔记本管理为独立的 git 仓库。它具有真实的每笔记版本历史、快速模糊搜索和可定制主题。",
+      "edge": "Shiki 的突出能力是其真实的每笔记版本历史，使用户能够直接从 TUI 浏览和恢复更改，与其他笔记记录应用不同。",
+      "why_use": "选择 Shiki 由于其与现有 markdown 文件和 git 工作流的无缝集成，使其成为重视版本控制的笔记记录用户的理想选择。"
     }
-  }
+  },
+  "does": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
+  "edge": "Shiki's standout capability is its real per-note version history, enabling users to browse and revert changes directly from the TUI, unlike other note-taking apps.",
+  "why_use": "Choose Shiki for its seamless integration with existing markdown files and git workflows, making it ideal for users who prioritize version control in their note-taking.",
+  "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos."
 }

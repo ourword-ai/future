@@ -2,9 +2,9 @@
   "title": "simonlin1212/TradingAgents-astock",
   "claim": "Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external services.",
   "score": 8,
-  "why_good": "Localization is a moat the US-centric upstream can't casually replicate: T+1 and price-limit rules, 龙虎榜 and 解禁 signals aren't in the original. 708 forks (26% of stars) says Chinese quants adopt it as a base layer, not a bookmark.",
-  "value": "Credible path is paid A-share data + hosted 'AI 投研' on top of the open core — backtest infra, research output, or white-label for brokers and fintechs serving retail that can't use US-built tools.",
-  "risk": "Self-declared research/teaching reproduction ('not investment advice') — productizing walks into CSRC investment-advisory licensing; and upstream TradingAgents or a funded clone could ship official multi-market support.",
+  "why_good": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+  "value": "Institutional investors and trading firms pay for enhanced decision-making capabilities and insights into A-share market dynamics, leveraging the unique roles and data sources that directly impact trading strategies.",
+  "risk": "The project may struggle against established trading platforms that already offer comprehensive analytics and data integration, potentially limiting its adoption among traditional investors.",
   "evidence": [
     "https://github.com/simonlin1212/TradingAgents-astock",
     "2,656★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T12:58:07Z",
   "i18n": {
     "zh": {
-      "claim": "基于65k★ TradingAgents论文框架的深度A股分支：7位AI分析师在中国市场规则下就牛市/熊市进行辩论，使用A股本土数据（龙虎榜/游资/解禁）—— Apache-2.0，pip安装，无需外部服务。",
-      "why_good": "本地化是美国中心上游无法轻易复制的护城河：T+1和价格限制规则，龙虎榜和解禁信号在原始版本中并不存在。708个分支（占星标的26%）表明中国量化分析师将其作为基础层，而非书签。",
-      "value": "可信的路径是付费A股数据 + 基于开放核心的托管‘AI 投研’——回测基础设施、研究成果，或为无法使用美国构建工具的零售经纪商和金融科技公司提供白标服务。",
-      "risk": "自我声明的研究/教学复制（‘非投资建议’）——产品化可能会触及CSRC投资顾问许可；而上游的TradingAgents或一个获得资金的克隆可能会推出官方的多市场支持。"
+      "claim": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
+      "why_good": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+      "value": "机构投资者和交易公司为增强决策能力和对A股市场动态的洞察付费，利用直接影响交易策略的独特角色和数据源。",
+      "risk": "该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。",
+      "hook": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
+      "does": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+      "edge": "其独特能力在于整合7个专业分析师角色，包括政策和游资追踪，这对于应对A股市场的复杂性至关重要。",
+      "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。"
     }
-  }
+  },
+  "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+  "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
+  "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
+  "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!"
 }

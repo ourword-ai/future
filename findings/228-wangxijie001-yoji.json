@@ -2,9 +2,9 @@
   "title": "wangxijie001/yoji",
   "claim": "wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 协助办公 · MCP 无限扩展 | An AI desktop companion with emotions — privacy-first, voice wake, office",
   "score": 8,
-  "why_good": "85 forks (16% of stars) — people build on it",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+  "value": "Tech-savvy professionals and privacy-conscious users pay for a customizable AI assistant that enhances productivity and personal interaction without compromising data security.",
+  "risk": "Yoji may struggle against established AI assistants like Siri or Google Assistant, which have extensive ecosystems and user bases.",
   "evidence": [
     "https://github.com/wangxijie001/yoji",
     "516★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T15:27:15Z",
   "i18n": {
     "zh": {
-      "claim": "wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 办公助手 · MCP 无限扩展 | 一款具有情感的 AI 桌面伴侣 — 以隐私为先，支持语音唤醒，助力办公",
-      "why_good": "85 个分支（占星标的 16%） — 许多人在此基础上进行开发",
-      "value": "每个 AI 产品所需的基础设施 — 以使用量计费的 API + 托管/管理服务",
-      "risk": "可能只是一个功能，而非一家公司 — 需要评估护城河以及现有企业是否会将其吸纳"
+      "claim": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
+      "why_good": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+      "value": "技术精英和注重隐私的用户为一个可定制的 AI 助手付费，该助手在不妥协数据安全的情况下提升生产力和个人互动。",
+      "risk": "Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。",
+      "hook": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
+      "does": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+      "edge": "Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造更具吸引力的用户体验。",
+      "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。"
     }
-  }
+  },
+  "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+  "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
+  "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
+  "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer."
 }

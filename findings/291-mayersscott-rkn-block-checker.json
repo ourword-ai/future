@@ -35,7 +35,8 @@
       "why_use": "与普通的“网站无法访问”消息不同，它能识别具体的审查机制，使用户能够选择合适的规避工具或报告精确的问题。",
       "value": "网络管理员和审查规避开发者使用它诊断干扰并优化缓解策略。",
       "risk": "可能难以应对Roskomnadzor不断发展的审查技术，或在ISP采用更不透明的封锁方法时面临功能冗余的风险。",
-      "why_good": "通过分析DNS、TCP、TLS和HTTP层的故障，诊断RKN/TSPU互联网封锁。为每个站点输出清晰的判决，并根据信号强度校准信心等级。"
+      "why_good": "通过分析DNS、TCP、TLS和HTTP层的故障，诊断RKN/TSPU互联网封锁。为每个站点输出清晰的判决，并根据信号强度校准信心等级。",
+      "claim": "MayersScott/rkn-block-checker — 逐层诊断 RKN/TSPU 网络封锁（DNS、TCP、TLS、HTTP）"
     }
   },
   "id": "291-mayersscott-rkn-block-checker",

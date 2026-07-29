@@ -2,9 +2,9 @@
   "title": "change-42-yhmm/quota-float",
   "claim": "change-42-yhmm/quota-float — A lightweight Windows/macOS desktop widget that keeps your Codex quota visible from your local Codex Desktop session.",
   "score": 7,
-  "why_good": "309★, 20 forks, ~16★/day",
-  "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
+  "value": "Codex users who need precise quota monitoring will pay for Quota Float to avoid unexpected usage limits that could disrupt their workflows.",
+  "risk": "The primary risk is competition from existing Codex management tools that may offer broader features, potentially overshadowing Quota Float's focused utility.",
   "evidence": [
     "https://github.com/change-42-yhmm/quota-float",
     "309★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T15:27:22Z",
   "i18n": {
     "zh": {
-      "claim": "change-42-yhmm/quota-float — 一款轻量级的 Windows/macOS 桌面小工具，能够在本地 Codex Desktop 会话中实时显示您的 Codex 配额。",
-      "why_good": "309★，20 个分支，约每天 16★",
-      "value": "一个完善的工作流程，专业用户为其支付月费，并且可以进行团队升级",
-      "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有竞争者是否会将其吸收"
+      "claim": "通过Quota Float的始终在线桌面小部件，永远不会错过Codex配额更新！",
+      "why_good": "Quota Float是一个轻量级的Windows和macOS桌面小部件，显示您的Codex配额，包括5小时和每周限制，以紧凑、始终可见的格式。它提供有关配额状态和重置时间的实时更新。",
+      "value": "需要精确配额监控的Codex用户将为Quota Float支付，以避免意外的使用限制，这可能会干扰他们的工作流程。",
+      "risk": "主要风险来自现有的Codex管理工具，它们可能提供更广泛的功能，从而可能掩盖Quota Float的专注效用。",
+      "hook": "通过Quota Float的始终在线桌面小部件，永远不会错过Codex配额更新！",
+      "does": "Quota Float是一个轻量级的Windows和macOS桌面小部件，显示您的Codex配额，包括5小时和每周限制，以紧凑、始终可见的格式。它提供有关配额状态和重置时间的实时更新。",
+      "edge": "其独特的浮动球设计在空闲时会折叠，仅在悬停时展开，确保在保持关键信息可访问的同时，减少干扰。",
+      "why_use": "选择Quota Float是因为它提供准确的实时配额跟踪，而不需要其他配额管理工具中可能没有的杂乱功能。"
     }
-  }
+  },
+  "does": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
+  "edge": "Its unique floating orb design collapses when idle, expanding only on hover, ensuring minimal distraction while keeping critical information accessible.",
+  "why_use": "Choose Quota Float for its accurate, real-time quota tracking without the clutter of unnecessary features, unlike other quota management tools that may not provide live updates.",
+  "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!"
 }
