@@ -1,10 +1,10 @@
 {
   "title": "Renhuai123/ziwei-doushu",
-  "claim": "Renhuai123/ziwei-doushu — 紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+  "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文数据 — a Zi Wei Dou Shu (Chinese astrology) charting engine with the classical texts as structured data.",
   "score": 7,
-  "why_good": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
-  "value": "Astrology app developers and AI researchers pay for access to a rich dataset and charting capabilities, allowing them to enhance their products with authentic astrological insights.",
-  "risk": "The reliance on traditional astrological practices may limit appeal in a tech-driven market dominated by mainstream astrology applications and platforms.",
+  "why_good": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data — exactly the substrate 'AI fortune-telling' apps currently hand-roll badly.",
+  "value": "商业价值: Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
+  "risk": "Two contributors, and the category is policy-fragile: app stores and payment channels in China restrict fortune-telling monetization, and any large 测算 app can re-derive the algorithms from the same public classics.",
   "evidence": [
     "https://github.com/Renhuai123/ziwei-doushu",
     "3,317★",
@@ -23,20 +23,20 @@
     "fortune-telling",
     "nextjs"
   ],
-  "does": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
-  "edge": "It uniquely offers an extensive dataset of 518,400 astrological samples, enabling precise model training and deep analysis.",
+  "does": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data that an AI product can query directly.",
+  "edge": "The moat is the corpus, not the code: digitized classical sources plus a rules engine, where competitors ship vibes-based LLM prompts.",
   "why_use": "Choose this engine for its unparalleled dataset and open-source accessibility, which allows for extensive customization and integration into various applications without licensing fees.",
-  "hook": "Unlock 518,400 unique Zi Wei Dou Shu charts with our open-source engine!",
+  "hook": "The open charting engine for Zi Wei Dou Shu — classical astrology as structured data, ready for AI apps.",
   "i18n": {
     "zh": {
-      "claim": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
-      "hook": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
-      "does": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。",
-      "edge": "它独特地提供了518,400个命盘样本的广泛数据集，使得精确的模型训练和深入分析成为可能。",
-      "why_use": "选择这个引擎，因为它无与伦比的数据集和开源可访问性，允许广泛的定制和集成到各种应用中，无需许可费用。",
-      "value": "占星应用开发者和AI研究者支付以获取丰富的数据集和排盘能力，使他们能够用真实的占星洞见增强他们的产品。",
-      "risk": "对传统占星实践的依赖可能会限制其在被主流占星应用和平台主导的科技驱动市场中的吸引力。",
-      "why_good": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。"
+      "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文结构化数据。",
+      "hook": "紫微斗数开源排盘引擎——把古籍命理变成 AI 能直接调用的结构化数据。",
+      "does": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据，AI 产品可以直接查询调用。",
+      "edge": "护城河在语料不在代码：数字化古籍 + 规则引擎，而竞品大多只是拿 LLM 凭感觉生成。",
+      "why_use": "做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。",
+      "value": "商业价值：中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
+      "risk": "只有 2 个贡献者，且品类政策脆弱：国内应用商店和支付渠道对命理变现多有限制，大厂测算 App 也能从同样的公开古籍重新推导算法。",
+      "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。"
     }
   },
   "pick": true,
