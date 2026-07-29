@@ -1,10 +1,10 @@
 {
   "title": "calesthio/Crucix",
-  "claim": "calesthio/Crucix — Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.",
+  "claim": "Self-hosted “personal intelligence terminal”: one command spins up a dashboard watching 27 OSINT sources — zero cloud, a single dependency — and pings you when something changes.",
   "score": 7,
-  "why_good": "1,717 forks (15% of stars) — people build on it; 17 contributors, 0 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "10.9k stars in two months proved the appetite: Bloomberg-terminal-style situational awareness without anyone else's cloud in the loop. The radical simplicity (one express dep, Docker-ready) is the actual feature.",
+  "value": "The self-hosted monitoring seat for traders, journalists and security teams — paid source packs, alert routing, and a hosted tier for those who won't self-host. Situational-awareness dashboards are classic prosumer subscription territory.",
+  "risk": "No commits since May 20 with 10.9k stars watching — the maintainer may have already walked away, and an OSINT aggregator lives or dies by source upkeep: when scrapers rot, the product rots with them.",
   "evidence": [
     "https://github.com/calesthio/Crucix",
     "10,887★",
@@ -26,10 +26,10 @@
   "posted_at": "2026-07-28T21:16:04Z",
   "i18n": {
     "zh": {
-      "claim": "calesthio/Crucix — 你的个人智能助手。从多个数据源监控世界，当发生变化时及时通知你。",
-      "why_good": "1,717 个分支（15% 的星标）— 人们在此基础上进行开发；17 位贡献者，过去 30 天没有提交 — 维护活跃",
-      "value": "每个 AI 产品所需的基础设施 — 以基于使用的 API 形式盈利 + 提供托管/管理服务",
-      "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有企业是否会将其吸收"
+      "claim": "自托管的“个人情报终端”：一条命令拉起监控 27 个 OSINT 信息源的仪表盘（零云依赖、仅一个依赖包），有变化即时提醒。",
+      "why_good": "两个月 1.09 万星证明了需求：人们想要彭博终端式的态势感知，却不想让别人的云插在中间。极简本身就是卖点（仅 express 一个依赖、Docker 即开即用）。",
+      "value": "商业价值：面向交易员、记者与安全团队的自托管监控席位 — 付费信息源包、告警路由，以及给不愿自托管者的托管版。态势感知仪表盘是典型的专业消费者订阅生意。",
+      "risk": "5 月 20 日后再无提交，1 万星围观下维护者可能已经离场；OSINT 聚合器的命脉是信息源维护 — 爬虫一烂，产品跟着烂。"
     }
   }
 }
