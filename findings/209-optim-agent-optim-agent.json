@@ -34,5 +34,7 @@
       "value": "作为优化服务/工具卖给 ML 团队;更聪明搜索省下的算力足以让人付费。",
       "risk": "HPO 已有成熟工具(Optuna、W&B Sweeps);LLM 驱动搜索要证明在成本/质量上胜过经典方法。"
     }
-  }
+  },
+  "pick": true,
+  "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization."
 }

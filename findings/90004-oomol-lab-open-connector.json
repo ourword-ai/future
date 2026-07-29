@@ -36,5 +36,7 @@
       "hook": "每个 agent 都要重造的脏活:一个把 1000+ SaaS 接给 agent 的网关。"
     }
   },
-  "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents."
+  "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents.",
+  "pick": true,
+  "pick_reason": "The project provides a valuable integration solution for AI agents, addressing a clear market need with potential for monetization."
 }

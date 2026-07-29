@@ -36,5 +36,7 @@
       "hook": "一个面向真实科研的开源 AI 工作台——通用聊天工具很不合适的大而未被满足的垂直。"
     }
   },
-  "hook": "An open AI workbench built for real science — a big, underserved vertical where chat tools fit poorly."
+  "hook": "An open AI workbench built for real science — a big, underserved vertical where chat tools fit poorly.",
+  "pick": true,
+  "pick_reason": "The project addresses a specific need in scientific research with a clear product offering that can be monetized."
 }

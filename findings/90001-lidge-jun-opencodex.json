@@ -36,5 +36,7 @@
       "hook": "把 OpenAI Codex 或 Claude Code 指向任意模型——Gemini、Grok、DeepSeek、本地 Ollama。"
     }
   },
-  "hook": "Point OpenAI Codex or Claude Code at ANY model — Gemini, Grok, DeepSeek, or local Ollama."
+  "hook": "Point OpenAI Codex or Claude Code at ANY model — Gemini, Grok, DeepSeek, or local Ollama.",
+  "pick": true,
+  "pick_reason": "The project offers a valuable solution for developers by providing a universal proxy for various LLMs, addressing a clear market need."
 }

@@ -28,5 +28,7 @@
       "value": "给 agent 开发者/团队做按量的临时 VM 服务(E2B 赛道):按 VM 小时计费、企业隔离。",
       "risk": "E2B、Modal、Daytona 和各实验室都在抢 agent 沙箱;要靠速度、成本或体验优势才突出。"
     }
-  }
+  },
+  "pick": true,
+  "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees."
 }

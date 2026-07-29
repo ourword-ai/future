@@ -34,5 +34,7 @@
       "value": "面向开发者/团队的 CLI 安全工具;为可靠的文件系统撤销 + 审计,他们愿意付费。",
       "risk": "很难做到真正可靠(快照/性能成本),而系统/文件系统快照已部分覆盖——信任是关键。"
     }
-  }
+  },
+  "pick": true,
+  "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands."
 }

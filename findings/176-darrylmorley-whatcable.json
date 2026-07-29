@@ -36,5 +36,7 @@
       "hook": "终于搞清每根 USB-C 线到底能干嘛——就在 Mac 菜单栏里。"
     }
   },
-  "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar."
+  "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar.",
+  "pick": true,
+  "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized."
 }

@@ -36,5 +36,7 @@
       "hook": "一个跑在你自己机器上的 AI 求职——评估岗位、为每份申请定制。"
     }
   },
-  "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application."
+  "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application.",
+  "pick": true,
+  "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization."
 }

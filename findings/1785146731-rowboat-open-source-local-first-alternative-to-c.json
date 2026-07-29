@@ -30,5 +30,7 @@
       "hook": "一个本地优先、开源的 Claude Desktop——在大家对云降温时,数据归你。"
     }
   },
-  "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud."
+  "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud.",
+  "pick": true,
+  "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential."
 }

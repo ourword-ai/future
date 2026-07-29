@@ -36,5 +36,7 @@
       "hook": "一个拼你 token 账单、而非拼功能的 agent——同样预算,干更多有用的活。"
     }
   },
-  "hook": "The agent that competes on your token bill, not features — same budget, more useful work."
+  "hook": "The agent that competes on your token bill, not features — same budget, more useful work.",
+  "pick": true,
+  "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development."
 }

@@ -36,5 +36,7 @@
       "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
     }
   },
-  "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents."
+  "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
+  "pick": true,
+  "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market."
 }

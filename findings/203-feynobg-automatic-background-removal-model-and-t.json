@@ -28,5 +28,7 @@
       "value": "给做批量图像编辑的 app/工作室卖 API + 微调/托管档;按张或订阅。",
       "risk": "remove.bg 和大图像模型已做得好;开源权重有帮助,但质量 + 吞吐要能竞争。"
     }
-  }
+  },
+  "pick": true,
+  "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization."
 }

@@ -34,5 +34,7 @@
       "hook": "给 Claude Code 和 Codex 一副嗓子——若延迟过关,就能免手写代码。"
     }
   },
-  "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds."
+  "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds.",
+  "pick": true,
+  "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption."
 }

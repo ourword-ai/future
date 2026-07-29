@@ -28,5 +28,7 @@
       "value": "一种人们愿意每月付费的工作流程",
       "risk": "展示 HN 的热度可能会消退——在发布一个月后检查是否还有人使用。"
     }
-  }
+  },
+  "pick": false,
+  "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition."
 }

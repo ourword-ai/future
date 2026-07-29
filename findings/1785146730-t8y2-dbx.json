@@ -42,5 +42,7 @@
   "hook": "Unleash the power of 70+ databases in a lightweight 20 MB client.",
   "does": "DBX is a cross-platform database client that supports over 70 databases, offering a seamless experience across desktop, Docker, and web environments. It features an AI SQL assistant that generates and optimizes SQL queries based on plain language descriptions.",
   "edge": "The built-in AI assistant allows users to generate SQL queries directly from natural language descriptions, eliminating the need for copy-pasting between tools.",
-  "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific."
+  "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific.",
+  "pick": true,
+  "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need."
 }

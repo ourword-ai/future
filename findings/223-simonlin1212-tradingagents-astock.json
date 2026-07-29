@@ -42,5 +42,7 @@
   "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
   "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
   "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
-  "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!"
+  "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
+  "pick": true,
+  "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics."
 }

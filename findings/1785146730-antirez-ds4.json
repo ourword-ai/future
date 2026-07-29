@@ -30,5 +30,7 @@
       "hook": "出自 Redis 作者:一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。"
     }
   },
-  "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm."
+  "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm.",
+  "pick": false,
+  "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model."
 }

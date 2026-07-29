@@ -36,5 +36,7 @@
       "hook": "一个让自主编码「自证其功」的 agent IDE——本地优先、零信任。"
     }
   },
-  "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust."
+  "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust.",
+  "pick": false,
+  "pick_reason": "The project is too vague and lacks a clear business model or product offering."
 }

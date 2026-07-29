@@ -30,5 +30,7 @@
       "hook": "把 GLM-5.2 塞进慢电脑——证明「弱硬件跑大模型」很有共鸣。"
     }
   },
-  "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates."
+  "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates.",
+  "pick": false,
+  "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering."
 }

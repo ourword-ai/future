@@ -36,5 +36,7 @@
       "hook": "用 A–F 评分体系给每个岗位打分——一个严谨的 AI 求职,而非关键词匹配。"
     }
   },
-  "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching."
+  "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching.",
+  "pick": false,
+  "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition."
 }

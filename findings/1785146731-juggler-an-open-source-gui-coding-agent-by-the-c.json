@@ -30,5 +30,7 @@
       "hook": "JUCE 的作者做了个开源 GUI 编码 agent——在拥挤赛道里罕见的创始人信誉。"
     }
   },
-  "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race."
+  "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race.",
+  "pick": true,
+  "pick_reason": "The project has strong founder credibility and addresses a clear need in the GUI development space."
 }

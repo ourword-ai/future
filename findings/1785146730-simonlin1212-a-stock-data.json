@@ -36,5 +36,7 @@
       "hook": "一个 A 股全栈数据工具包——行情、资金流、公告、舆情,还带备用源。"
     }
   },
-  "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks."
+  "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks.",
+  "pick": false,
+  "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product."
 }

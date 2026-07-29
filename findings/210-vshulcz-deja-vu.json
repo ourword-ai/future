@@ -34,5 +34,7 @@
       "value": "给同时用多个编码 agent 的团队卖托管的跨 agent 记忆服务 + 团队同步;按量。",
       "risk": "记忆正被 agent 原生吸收,而跨 agent 召回只在多 agent 并存时才有意义。"
     }
-  }
+  },
+  "pick": false,
+  "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product."
 }

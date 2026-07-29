@@ -36,5 +36,7 @@
       "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
     }
   },
-  "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real."
+  "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
+  "pick": false,
+  "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model."
 }

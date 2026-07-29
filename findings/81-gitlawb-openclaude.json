@@ -36,5 +36,7 @@
       "hook": "「随处运行、随意调用」——口号很大,产品还没跟上。"
     }
   },
-  "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it."
+  "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it.",
+  "pick": false,
+  "pick_reason": "The project lacks a clear product and is too vague to assess as a viable startup."
 }

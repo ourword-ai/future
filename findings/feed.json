@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T09:58:43Z",
+  "generated_at": "2026-07-29T10:44:19Z",
   "findings": [
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
@@ -1410,7 +1410,9 @@
       "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
       "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
       "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
-      "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!"
+      "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
+      "pick": true,
+      "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics."
     },
     {
       "title": "debpalash/OmniVoice-Studio",
@@ -1772,7 +1774,9 @@
           "value": "一种人们愿意每月付费的工作流程",
           "risk": "展示 HN 的热度可能会消退——在发布一个月后检查是否还有人使用。"
         }
-      }
+      },
+      "pick": false,
+      "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition."
     },
     {
       "title": "edaywalid/undo",
@@ -1810,7 +1814,9 @@
           "value": "面向开发者/团队的 CLI 安全工具;为可靠的文件系统撤销 + 审计,他们愿意付费。",
           "risk": "很难做到真正可靠(快照/性能成本),而系统/文件系统快照已部分覆盖——信任是关键。"
         }
-      }
+      },
+      "pick": true,
+      "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands."
     },
     {
       "title": "vshulcz/deja-vu",
@@ -1848,7 +1854,9 @@
           "value": "给同时用多个编码 agent 的团队卖托管的跨 agent 记忆服务 + 团队同步;按量。",
           "risk": "记忆正被 agent 原生吸收,而跨 agent 召回只在多 agent 并存时才有意义。"
         }
-      }
+      },
+      "pick": false,
+      "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product."
     },
     {
       "title": "Optim-Agent/optim-agent",
@@ -1886,7 +1894,9 @@
           "value": "作为优化服务/工具卖给 ML 团队;更聪明搜索省下的算力足以让人付费。",
           "risk": "HPO 已有成熟工具(Optuna、W&B Sweeps);LLM 驱动搜索要证明在成本/质量上胜过经典方法。"
         }
-      }
+      },
+      "pick": true,
+      "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization."
     },
     {
       "title": "mereyabdenbekuly-ctrl/clodex-ide",
@@ -1926,7 +1936,9 @@
           "hook": "一个让自主编码「自证其功」的 agent IDE——本地优先、零信任。"
         }
       },
-      "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust."
+      "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust.",
+      "pick": false,
+      "pick_reason": "The project is too vague and lacks a clear business model or product offering."
     },
     {
       "title": "FeyNoBg – Automatic background removal model and training library",
@@ -1958,7 +1970,9 @@
           "value": "给做批量图像编辑的 app/工作室卖 API + 微调/托管档;按张或订阅。",
           "risk": "remove.bg 和大图像模型已做得好;开源权重有帮助,但质量 + 吞吐要能竞争。"
         }
-      }
+      },
+      "pick": true,
+      "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization."
     },
     {
       "title": "Rescript",
@@ -2274,7 +2288,9 @@
           "value": "像 Termius 那样在免费核心上卖专业/团队版(同步、凭证保险箱、团队访问)。",
           "risk": "Termius/iTerm/Windows Terminal 根基深;精简客户端要靠锋利的速度/体验切口才能转化付费。"
         }
-      }
+      },
+      "pick": true,
+      "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market."
     },
     {
       "title": "akitaonrails/ai-memory",
@@ -2314,7 +2330,9 @@
       "does": "ai-memory provides long-term memory for AI coding agents, allowing users to switch between different tools like Claude Code and OpenAI Codex without losing context on architecture, failed approaches, or open questions.",
       "edge": "It uniquely enables continuity across different AI coding agents, preserving the entire context of a coding session.",
       "why_use": "Choose ai-memory to avoid the frustration of re-explaining complex coding contexts when switching between AI tools, ensuring a smoother development process.",
-      "hook": "Seamlessly switch coding agents mid-task with 100% context retention."
+      "hook": "Seamlessly switch coding agents mid-task with 100% context retention.",
+      "pick": true,
+      "pick_reason": "The project addresses a clear need for continuity in AI coding environments, enabling users to maintain context across different tools."
     },
     {
       "title": "webstonehq/tuxedo",
@@ -2567,7 +2585,9 @@
           "hook": "一个拼你 token 账单、而非拼功能的 agent——同样预算,干更多有用的活。"
         }
       },
-      "hook": "The agent that competes on your token bill, not features — same budget, more useful work."
+      "hook": "The agent that competes on your token bill, not features — same budget, more useful work.",
+      "pick": true,
+      "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development."
     },
     {
       "title": "darrylmorley/whatcable",
@@ -2607,7 +2627,9 @@
           "hook": "终于搞清每根 USB-C 线到底能干嘛——就在 Mac 菜单栏里。"
         }
       },
-      "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar."
+      "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar.",
+      "pick": true,
+      "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized."
     },
     {
       "title": "open-gsd/gsd-core",
@@ -5098,7 +5120,9 @@
           "hook": "用 AI 把小说或剧本变成动画短剧——踩在中国短剧的风口上。"
         }
       },
-      "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom."
+      "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom.",
+      "pick": false,
+      "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions."
     },
     {
       "title": "xbtlin/ai-berkshire",
@@ -5138,7 +5162,9 @@
           "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
         }
       },
-      "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents."
+      "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
+      "pick": true,
+      "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market."
     },
     {
       "title": "ogulcancelik/herdr",
@@ -5179,7 +5205,9 @@
           "hook": "agent 版 tmux:在一个终端里跑并调度多个编码 agent。"
         }
       },
-      "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal."
+      "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal.",
+      "pick": false,
+      "pick_reason": "While it addresses a real need for developers, it appears to be a thin utility without a clear monetization strategy."
     },
     {
       "title": "iOfficeAI/OfficeCLI",
@@ -5219,7 +5247,9 @@
           "hook": "给 AI agent 一双操作 Office 的手——读、改、自动化 Word、Excel、PPT。"
         }
       },
-      "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint."
+      "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint.",
+      "pick": false,
+      "pick_reason": "The project appears to be a wrapper around existing office software without a unique value proposition."
     },
     {
       "title": "MadsLorentzen/ai-job-search",
@@ -5259,7 +5289,9 @@
           "hook": "一个跑在你自己机器上的 AI 求职——评估岗位、为每份申请定制。"
         }
       },
-      "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application."
+      "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application.",
+      "pick": true,
+      "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization."
     },
     {
       "title": "Gitlawb/openclaude",
@@ -5299,7 +5331,9 @@
           "hook": "「随处运行、随意调用」——口号很大,产品还没跟上。"
         }
       },
-      "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it."
+      "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it.",
+      "pick": false,
+      "pick_reason": "The project lacks a clear product and is too vague to assess as a viable startup."
     },
     {
       "title": "calesthio/OpenMontage",
@@ -5339,7 +5373,9 @@
           "hook": "一个一体化、agent 驱动的视频工作室——12 条流水线、100+ 工具,野心极大。"
         }
       },
-      "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious."
+      "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious.",
+      "pick": false,
+      "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product."
     },
     {
       "title": "MemPalace/mempalace",
@@ -5379,7 +5415,9 @@
           "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
         }
       },
-      "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real."
+      "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
+      "pick": false,
+      "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model."
     },
     {
       "title": "santifer/career-ops",
@@ -5419,7 +5457,9 @@
           "hook": "用 A–F 评分体系给每个岗位打分——一个严谨的 AI 求职,而非关键词匹配。"
         }
       },
-      "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching."
+      "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching.",
+      "pick": false,
+      "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition."
     },
     {
       "title": "Speechius",
@@ -6147,7 +6187,9 @@
           "hook": "把 GLM-5.2 塞进慢电脑——证明「弱硬件跑大模型」很有共鸣。"
         }
       },
-      "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates."
+      "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates.",
+      "pick": false,
+      "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering."
     },
     {
       "title": "Openbase",
@@ -6397,7 +6439,9 @@
           "hook": "给 Claude Code 和 Codex 一副嗓子——若延迟过关,就能免手写代码。"
         }
       },
-      "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds."
+      "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds.",
+      "pick": true,
+      "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption."
     },
     {
       "title": "Athena by Shoplazza",
@@ -6434,7 +6478,9 @@
           "hook": "一个编排 agent,统管商家的整个电商技术栈。"
         }
       },
-      "hook": "One orchestrator agent to run a merchant's entire commerce stack."
+      "hook": "One orchestrator agent to run a merchant's entire commerce stack.",
+      "pick": true,
+      "pick_reason": "Athena addresses a significant pain point in e-commerce by integrating multiple tools, showing strong market potential."
     },
     {
       "title": "MaximeRivest/riddle",
@@ -6728,7 +6774,9 @@
           "hook": "一个挑战 Node/Bun/Deno 的新 JS 运行时——上线首日 330 HN 分。"
         }
       },
-      "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one."
+      "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one.",
+      "pick": false,
+      "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition."
     },
     {
       "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
@@ -6760,7 +6808,9 @@
           "value": "给 agent 开发者/团队做按量的临时 VM 服务(E2B 赛道):按 VM 小时计费、企业隔离。",
           "risk": "E2B、Modal、Daytona 和各实验室都在抢 agent 沙箱;要靠速度、成本或体验优势才突出。"
         }
-      }
+      },
+      "pick": true,
+      "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees."
     },
     {
       "title": "Juggler – an open-source GUI coding agent, by the creator of JUCE",
@@ -6794,7 +6844,9 @@
           "hook": "JUCE 的作者做了个开源 GUI 编码 agent——在拥挤赛道里罕见的创始人信誉。"
         }
       },
-      "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race."
+      "hook": "The creator of JUCE built an open-source GUI coding agent — rare founder credibility in a crowded race.",
+      "pick": true,
+      "pick_reason": "The project has strong founder credibility and addresses a clear need in the GUI development space."
     },
     {
       "title": "Palmier Pro – Open-source macOS video editor built for AI",
@@ -6860,7 +6912,9 @@
           "hook": "一个本地优先、开源的 Claude Desktop——在大家对云降温时,数据归你。"
         }
       },
-      "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud."
+      "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud.",
+      "pick": true,
+      "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential."
     },
     {
       "title": "antirez/ds4",
@@ -6894,7 +6948,9 @@
           "hook": "出自 Redis 作者:一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。"
         }
       },
-      "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm."
+      "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm.",
+      "pick": false,
+      "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model."
     },
     {
       "title": "simonlin1212/a-stock-data",
@@ -6934,7 +6990,9 @@
           "hook": "一个 A 股全栈数据工具包——行情、资金流、公告、舆情,还带备用源。"
         }
       },
-      "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks."
+      "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks.",
+      "pick": false,
+      "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product."
     },
     {
       "title": "t8y2/dbx",
@@ -6980,7 +7038,9 @@
       "hook": "Unleash the power of 70+ databases in a lightweight 20 MB client.",
       "does": "DBX is a cross-platform database client that supports over 70 databases, offering a seamless experience across desktop, Docker, and web environments. It features an AI SQL assistant that generates and optimizes SQL queries based on plain language descriptions.",
       "edge": "The built-in AI assistant allows users to generate SQL queries directly from natural language descriptions, eliminating the need for copy-pasting between tools.",
-      "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific."
+      "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific.",
+      "pick": true,
+      "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need."
     },
     {
       "title": "JustVugg/colibri",
@@ -7014,7 +7074,9 @@
           "hook": "靠从磁盘流式加载专家,在 25GB 笔记本上跑 744B 模型——纯 C、零依赖。"
         }
       },
-      "hook": "Runs a 744B model on a 25GB laptop by streaming experts from disk — pure C, zero deps."
+      "hook": "Runs a 744B model on a 25GB laptop by streaming experts from disk — pure C, zero deps.",
+      "pick": true,
+      "pick_reason": "The project addresses a significant barrier in running large AI models on consumer hardware, showing strong potential for commercialization."
     },
     {
       "title": "lidge-jun/opencodex",
@@ -7054,7 +7116,9 @@
           "hook": "把 OpenAI Codex 或 Claude Code 指向任意模型——Gemini、Grok、DeepSeek、本地 Ollama。"
         }
       },
-      "hook": "Point OpenAI Codex or Claude Code at ANY model — Gemini, Grok, DeepSeek, or local Ollama."
+      "hook": "Point OpenAI Codex or Claude Code at ANY model — Gemini, Grok, DeepSeek, or local Ollama.",
+      "pick": true,
+      "pick_reason": "The project offers a valuable solution for developers by providing a universal proxy for various LLMs, addressing a clear market need."
     },
     {
       "title": "oomol-lab/open-connector",
@@ -7094,7 +7158,9 @@
           "hook": "每个 agent 都要重造的脏活:一个把 1000+ SaaS 接给 agent 的网关。"
         }
       },
-      "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents."
+      "hook": "The unglamorous plumbing every agent rebuilds: one gateway wiring 1000+ SaaS to your agents.",
+      "pick": true,
+      "pick_reason": "The project provides a valuable integration solution for AI agents, addressing a clear market need with potential for monetization."
     },
     {
       "title": "synthetic-sciences/openscience",
@@ -7134,11 +7200,13 @@
           "hook": "一个面向真实科研的开源 AI 工作台——通用聊天工具很不合适的大而未被满足的垂直。"
         }
       },
-      "hook": "An open AI workbench built for real science — a big, underserved vertical where chat tools fit poorly."
+      "hook": "An open AI workbench built for real science — a big, underserved vertical where chat tools fit poorly.",
+      "pick": true,
+      "pick_reason": "The project addresses a specific need in scientific research with a clear product offering that can be monetized."
     }
   ],
   "stats": {
-    "traded_24h": 50,
+    "traded_24h": 39,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
@@ -7151,13 +7219,13 @@
       "n": 3,
       "members": [
         "291-mayersscott-rkn-block-checker",
-        "288-openbmb-pilotdeck",
-        "287-gloridust-wechatoncloud",
         "285-mouseww-anything-analyzer",
         "284-renhuai123-ziwei-doushu",
         "282-kunagent-kun",
-        "281-basketikun-infinite-canvas",
-        "280-1weiho-open-slide"
+        "280-1weiho-open-slide",
+        "273-tokio-rs-topcoat",
+        "260-nullclaw-nullclaw",
+        "259-narcooo-inkos"
       ]
     },
     {
@@ -7194,11 +7262,11 @@
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 143
+      "ideas": 128
     },
     {
       "agent": "hn-scout",
-      "ideas": 38
+      "ideas": 37
     },
     {
       "agent": "producthunt-scout",
@@ -7206,7 +7274,7 @@
     }
   ],
   "board": {
-    "ideas": 204,
+    "ideas": 188,
     "domains": 6,
     "sources": 3,
     "avg_score": 8.0

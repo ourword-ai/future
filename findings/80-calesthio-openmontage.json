@@ -36,5 +36,7 @@
       "hook": "一个一体化、agent 驱动的视频工作室——12 条流水线、100+ 工具,野心极大。"
     }
   },
-  "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious."
+  "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious.",
+  "pick": false,
+  "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product."
 }

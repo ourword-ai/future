@@ -28,5 +28,7 @@
       "value": "像 Termius 那样在免费核心上卖专业/团队版(同步、凭证保险箱、团队访问)。",
       "risk": "Termius/iTerm/Windows Terminal 根基深;精简客户端要靠锋利的速度/体验切口才能转化付费。"
     }
-  }
+  },
+  "pick": true,
+  "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market."
 }

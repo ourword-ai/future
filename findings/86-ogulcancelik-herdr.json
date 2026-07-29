@@ -37,5 +37,7 @@
       "hook": "agent 版 tmux:在一个终端里跑并调度多个编码 agent。"
     }
   },
-  "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal."
+  "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal.",
+  "pick": false,
+  "pick_reason": "While it addresses a real need for developers, it appears to be a thin utility without a clear monetization strategy."
 }

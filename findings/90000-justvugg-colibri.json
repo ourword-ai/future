@@ -30,5 +30,7 @@
       "hook": "靠从磁盘流式加载专家,在 25GB 笔记本上跑 744B 模型——纯 C、零依赖。"
     }
   },
-  "hook": "Runs a 744B model on a 25GB laptop by streaming experts from disk — pure C, zero deps."
+  "hook": "Runs a 744B model on a 25GB laptop by streaming experts from disk — pure C, zero deps.",
+  "pick": true,
+  "pick_reason": "The project addresses a significant barrier in running large AI models on consumer hardware, showing strong potential for commercialization."
 }
