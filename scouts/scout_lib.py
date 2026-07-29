@@ -10,7 +10,7 @@ the engine pay it back + record it. Fault-tolerant by design: any single failure
 skipped, never aborts the run.
 """
 from __future__ import annotations
-import os, sys, time, json, re, subprocess as sp, urllib.request
+import os, sys, time, json, re, subprocess as sp, urllib.request, urllib.parse
 
 # import the barter engine from repo root
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
@@ -365,14 +365,64 @@ _PAIN = re.compile(r"\b(i (hate|gave up|wasted|struggle|can'?t)|so (annoying|pai
                    r"every ?(day|time) i|no (good|other) (tool|way)|too (hard|complicated) (to|for))|"
                    r"太麻烦|受不了|折腾|一直没找到|痛点|劝退", re.I)
 
+_SEARCH_OK = True   # GitHub issue search is a shared 30/min budget; disabled after a refusal
+
+
+def _bot(text, user=""):
+    """Bot chatter (coderabbit summaries, CI bots) drowns out real users in the latest-comment
+    window — drop it before matching."""
+    u = (user or "").lower()
+    if u.endswith("[bot]") or u in ("coderabbitai", "dependabot", "github-actions", "codecov-commenter"):
+        return True
+    t = (text or "")[:400].lower()
+    return ("auto-generated comment" in t or "summarize by coderabbit" in t
+            or t.startswith("<!--") or "walkthrough" in t and "coderabbit" in t)
+
+
+def _clean(t):
+    t = re.sub(r"```.*?```", " ", str(t or ""), flags=re.S)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
+    t = re.sub(r"<[^>]+>", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def demand_voices(f, cap=3):
-    """Mine first-hand demand quotes for a candidate that already passed the gates.
-    Cheap by design (docs/STANDARD.md 4): a couple of public API calls, no extra LLM call.
-    Returns [{"quote","url","src"}] — the hardest evidence the standard recognises."""
-    out, tok = [], (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"))
+    """Mine first-hand demand quotes for a candidate that already passed the cheap gates
+    (docs/STANDARD.md 4). Willingness-to-pay first, then genuine pain. Search first (high hit
+    rate on the phrases that matter), then the newest comments, then the HN thread.
+    Cheap by design: a handful of public API calls, no extra LLM call."""
+    out, seen = [], set()
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     hdr = {"User-Agent": "future-scout", "Accept": "application/vnd.github+json"}
     if tok:
         hdr["Authorization"] = f"Bearer {tok}"
+
+    def _get(url):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=20) as r:
+                return json.loads(r.read())
+        except Exception as e:
+            print(f"  [voices {url[:70]}: {e!r}]", file=sys.stderr)
+            return None
+
+    def _add(text, url, src, user=""):
+        if len(out) >= cap or _bot(text, user):
+            return
+        t = _clean(text)
+        if len(t) < 20:
+            return
+        kind = "pay" if _PAY.search(t) else ("pain" if _PAIN.search(t) else None)
+        if not kind:
+            return
+        m = _PAY.search(t) or _PAIN.search(t)
+        a, b = max(0, m.start() - 90), min(len(t), m.end() + 130)
+        quote = ("…" if a else "") + t[a:b].strip() + ("…" if b < len(t) else "")
+        key = quote[:60]
+        if key in seen:
+            return
+        seen.add(key)
+        out.append({"quote": quote[:260], "url": url, "src": src, "kind": kind})
+
     repo = None
     for x in [f.get("title", "")] + (f.get("evidence") or []):
         m = re.search(r"github\.com/([^/\s]+)/([^/\s#?\"']+)", str(x))
@@ -381,73 +431,96 @@ def demand_voices(f, cap=3):
             break
     if repo is None and re.fullmatch(r"[\w.-]+/[\w.-]+", str(f.get("title", "") or "")):
         repo = f["title"]
-    def _get(url):
-        try:
-            req = urllib.request.Request(url, headers=hdr)
-            with urllib.request.urlopen(req, timeout=20) as r:
-                return json.loads(r.read())
-        except Exception as e:
-            print(f"  [voices {url[:60]}: {e!r}]", file=sys.stderr)
-            return []
+
     if repo:
-        items = _get(f"https://api.github.com/repos/{repo}/issues/comments?per_page=60&sort=created&direction=desc")
-        items = items if isinstance(items, list) else []
-        if len(items) < 8:
-            iss = _get(f"https://api.github.com/repos/{repo}/issues?state=all&per_page=25&sort=comments&direction=desc")
-            items += [{"body": (i.get("title", "") + " — " + (i.get("body") or "")), "html_url": i.get("html_url", "")}
-                      for i in (iss if isinstance(iss, list) else [])]
-        for c in items:
-            body = re.sub(r"```.*?```", " ", str(c.get("body") or ""), flags=re.S)
-            body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()
-            if len(body) < 20:
-                continue
-            hit = "pay" if _PAY.search(body) else ("pain" if _PAIN.search(body) else None)
-            if not hit:
-                continue
-            out.append({"quote": body[:240], "url": c.get("html_url") or f"https://github.com/{repo}/issues",
-                        "src": "github", "kind": hit})
+        # 1) targeted phrase search — finds the sentence we care about wherever it lives
+        for phrase in ('"would pay"', '"willing to pay"', '"pay for this"', '"take my money"',
+                       '"付费" OR "多少钱"', '"gave up" OR "so annoying" OR frustrating'):
             if len(out) >= cap:
                 break
-    # Show HN / Ask HN threads carry the loudest first-hand pain
+            q = urllib.parse.urlencode({"q": f"repo:{repo} is:issue {phrase}", "per_page": 4})
+            r = _get(f"https://api.github.com/search/issues?{q}")
+            for it in ((r or {}).get("items") or []):
+                _add((it.get("title") or "") + " — " + (it.get("body") or ""),
+                     it.get("html_url") or f"https://github.com/{repo}/issues",
+                     "github", ((it.get("user") or {}).get("login") or ""))
+        # 2) newest comments (bots filtered), then the most-discussed issues
+        if len(out) < cap:
+            for c in (_get(f"https://api.github.com/repos/{repo}/issues/comments"
+                           f"?per_page=100&sort=created&direction=desc") or []):
+                _add(c.get("body"), c.get("html_url") or f"https://github.com/{repo}/issues",
+                     "github", ((c.get("user") or {}).get("login") or ""))
+        if len(out) < cap:
+            for it in (_get(f"https://api.github.com/repos/{repo}/issues"
+                            f"?state=all&per_page=30&sort=comments&direction=desc") or []):
+                _add((it.get("title") or "") + " — " + (it.get("body") or ""),
+                     it.get("html_url") or f"https://github.com/{repo}/issues",
+                     "github", ((it.get("user") or {}).get("login") or ""))
+
+    # 3) Show HN / Ask HN threads carry the loudest first-hand pain
     hn = next((e for e in (f.get("evidence") or []) if "news.ycombinator.com" in str(e)), None)
     if hn and len(out) < cap:
         m = re.search(r"id=(\d+)", str(hn))
         if m:
             d = _get(f"https://hn.algolia.com/api/v1/items/{m.group(1)}")
+
             def walk(node, depth=0):
                 if len(out) >= cap or depth > 2 or not isinstance(node, dict):
                     return
-                t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(node.get("text") or ""))).strip()
-                if len(t) > 25 and (_PAY.search(t) or _PAIN.search(t)):
-                    out.append({"quote": t[:240], "url": f"https://news.ycombinator.com/item?id={node.get('id')}",
-                                "src": "hn", "kind": "pay" if _PAY.search(t) else "pain"})
+                _add(node.get("text"), f"https://news.ycombinator.com/item?id={node.get('id')}",
+                     "hn", node.get("author") or "")
                 for ch in (node.get("children") or []):
                     walk(ch, depth + 1)
             walk(d)
+
     out.sort(key=lambda v: 0 if v["kind"] == "pay" else 1)   # willingness-to-pay first
     return out[:cap]
+
+
+def behaviour_signal(f):
+    """Behaviour is weaker than a quote but still first-hand: people forking to self-host, a
+    maintained project with several contributors, a busy issue tracker. Used so a genuinely
+    wanted project is not stuck in the archive just because its users never write 'I would pay'."""
+    def n(pat):
+        for e in f.get("evidence") or []:
+            m = re.search(pat, str(e))
+            if m:
+                try:
+                    return int(m.group(1).replace(",", ""))
+                except Exception:
+                    return None
+        return None
+    stars, forks = n(r"([\d,]+)\s*(?:★|stars)"), n(r"([\d,]+)\s*forks")
+    contrib, commits = n(r"(\d[\d,]*)\s*contributors?"), n(r"(\d[\d,]*)\s*commits")
+    out = []
+    if stars and forks and stars >= 200 and forks / stars >= 0.35:
+        out.append(f"forks/stars {forks}/{stars} — people are standing up their own copies, not bookmarking")
+    if (contrib or 0) >= 5 and (commits or 0) >= 20:
+        out.append(f"{contrib} contributors, {commits} commits/30d — maintained, others build on it")
+    return "; ".join(out)
+
 
 def editor_pick(f, voices=None):
     """The Standard (docs/STANDARD.md 1 & 3) as a single judgement call.
 
     A useful entry = verified pain x a nameable gap x a wedge open to the operator.
-    Returns (pick, reason, score, extra) where extra carries verdict/workload/gap/
-    consumer_angle; (None, None, None, {}) if the model is unavailable -> caller holds
-    the candidate for the next run rather than shipping it unvetted."""
+    Returns (pick, reason, score, extra) with extra carrying verdict/workload/gap/
+    consumer_angle; (None, None, None, {}) if the model is unavailable -> the caller holds the
+    candidate for the next run rather than shipping it unvetted."""
     tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not tok:
         return None, None, None, {}
     model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
     ev = ", ".join(f.get("evidence", []) or [])
     vq = "\n".join(f"- [{v.get('kind')}] {v.get('quote','')[:180]}" for v in (voices or [])) or "(none found)"
+    bh = behaviour_signal(f)
     prompt = (
         "You are the editor of a board whose ONE job is to surface product opportunities a solo "
         "founder could copy and build now. Judge the project against this standard.\n\n"
-        "A useful entry needs ALL THREE:\n"
+        "A front-page entry needs ALL THREE:\n"
         " (1) VERIFIED PAIN — first-hand evidence real people want this: someone saying they'd pay, "
         "someone genuinely complaining, people forking it to run their own. Stars are attention, NOT "
-        "demand, and never satisfy this alone. Repo age is irrelevant: an older project with real "
-        "users beats a fresh star spike.\n"
+        "demand. Repo age is irrelevant: an older project with real users beats a fresh star spike.\n"
         " (2) A GAP YOU CAN NAME IN ONE SENTENCE — one of: only geeks can use it (CLI/self-host, no "
         "product around the capability); the Chinese/local-market case is empty; it hits a real pain "
         "but solves it imperfectly.\n"
@@ -458,26 +531,32 @@ def editor_pick(f, voices=None):
         "Developer/agent-infra tools are NOT opportunities in themselves, only capability signals: "
         "they may reach the front page only if you can state the opportunity on the ordinary-person "
         "side — put that in consumer_angle. Ordinary-person products are preferred.\n"
-        "HARD VETO (verdict=drop, score<=3), popularity is no defence: core value depends on abusing "
+        "HARD VETO (verdict='drop', score<=3), popularity is no defence: core value depends on abusing "
         "another service (mass account creation, CAPTCHA/rate-limit/ban evasion, temp-mail or SMS "
         "identity farms, reselling/proxying a paid API, credential or cookie pools, piracy, engagement "
-        "farming, scraping personal data for resale, impersonation); or it is a renamed fork / thin "
-        "wrapper with no substantive delta; or it is content dressed as product (awesome list, guide, "
-        "course, prompt gallery, cosmetic skin). A legitimate tool that merely COULD be misused is fine.\n\n"
+        "farming, scraping personal data for resale, impersonation); or a renamed fork / thin wrapper "
+        "with no substantive delta; or content dressed as product (awesome list, guide, course, prompt "
+        "gallery, cosmetic skin). A legitimate tool that merely COULD be misused is fine.\n\n"
         "verdict:\n"
         "  'build'   = all three conditions hold, the gap is concrete, workload is 2w or 2m\n"
         "  'watch'   = pain is verified but the gap or the wedge is not clear yet, or workload is heavy\n"
-        "  'archive' = worth keeping as evidence (capability signal, crowded family) but not front page\n"
-        "  'drop'    = fails the red line, or no verified pain at all\n"
+        "  'archive' = worth keeping as evidence — a capability signal, a crowded family, or demand "
+        "that is simply not verified yet\n"
+        "  'drop'    = ONLY the hard veto above. NEVER drop something merely because you found no "
+        "quote or no proof of demand: collection is wide and promotion is strict, so that case is "
+        "'archive'. Fresh repos usually have no comments yet — that is 'archive', not 'drop'.\n"
         "score = is it worth BUILDING, 0-10, strictly: 10 once-a-month exceptional; 9 breakout with an "
         "open market; 8 strong with a visible weakness; 7 borderline; <=6 not front-page. An empty top "
         "tier is an acceptable outcome — do NOT inflate to fill the board.\n"
         "workload = '2w' (a solo dev + AI ships a usable version in two weeks) | '2m' (about two "
-        "months) | 'no' (out of reach for one person).\n\n"
+        "months) | 'no' (out of reach for one person).\n"
+        "pain_verified = true if EITHER a quote below shows willingness to pay or real pain, OR the "
+        "behavioural evidence shows people actually running and maintaining it.\n\n"
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
         f"What it does: {f.get('does') or f.get('why_good','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n"
-        f"First-hand quotes found in issues/HN (may be empty):\n{vq}\n\n"
+        f"First-hand quotes from issues/HN (may be empty):\n{vq}\n"
+        f"Behavioural demand evidence (weaker than a quote, still first-hand): {bh or '(none)'}\n\n"
         "Reply with ONLY JSON: {\"verdict\":\"build|watch|archive|drop\", \"score\":0-10, "
         "\"workload\":\"2w|2m|no\", \"pain_verified\":true|false, "
         "\"gap\":\"one sentence: why it is not solved well yet\", "
@@ -499,11 +578,12 @@ def editor_pick(f, voices=None):
         sc = int(sc) if isinstance(sc, (int, float)) and 0 <= sc <= 10 else None
         wl = str(obj.get("workload") or "").strip().lower()
         wl = wl if wl in ("2w", "2m", "no") else None
-        pain = bool(obj.get("pain_verified"))
-        # The standard is enforced here, not in the model's goodwill:
-        # no verified pain -> never the top tier; unreachable workload -> watch at best.
-        if verdict == "build" and (not (pain or voices) or wl == "no"):
-            verdict = "watch"
+        pain = bool(obj.get("pain_verified")) or bool(voices) or bool(bh)
+        # The standard is enforced here, not in the model's goodwill.
+        if verdict == "build" and (not pain or wl == "no"):
+            verdict = "watch"          # top tier needs verified pain and a reachable wedge
+        if verdict == "drop" and not integrity_veto(f):
+            verdict = "archive"        # only the red line drops; thin demand is archived
         extra = {"verdict": verdict, "pain_verified": pain}
         if wl:
             extra["workload"] = wl
@@ -514,6 +594,7 @@ def editor_pick(f, voices=None):
     except Exception as e:
         print(f"  [editor_pick skip: {e!r}]", file=sys.stderr)
         return None, None, None, {}
+
 
 MARKS = load_marks()   # operator ⭐/❌ (docs/STANDARD.md 5)
 

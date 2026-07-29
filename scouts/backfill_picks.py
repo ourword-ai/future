@@ -17,10 +17,12 @@ for p in sorted(glob.glob("findings/*.json")):
         continue
     if (f.get("score") or 0) < 8 or "pick" in f:
         continue
-    pk, why, _sc = S.editor_pick(f)
+    pk, why, _sc, _extra = S.editor_pick(f, S.demand_voices(f))
     if pk is None:
         print("model unavailable/limited — stopping (re-run later to continue)")
         break
+    if _extra:
+        f.update(_extra)
     f["pick"] = pk
     if why:
         f["pick_reason"] = why
