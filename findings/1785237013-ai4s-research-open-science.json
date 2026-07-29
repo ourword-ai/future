@@ -2,9 +2,9 @@
   "title": "ai4s-research/open-science",
   "claim": "ai4s-research/open-science — Open Science Desktop: a local-first, model-agnostic AI research workbench for macOS, Windows and Linux.",
   "hook": "A local-first, bring-your-own-model research workbench — the open Claude-for-Science that keeps your data on your machine.",
-  "why_good": "Scientists want agentic help without uploading unpublished data or locking into one vendor; this Tauri + MCP desktop runs model-agnostic agents locally — an early but fast-rising bet (1k stars in three weeks) on AI-for-science that stays private and reproducible.",
-  "value": "Lab and team licenses plus a hosted collaboration tier for universities, biotech and research groups that need reproducible, on-prem AI workflows they cannot run on cloud science assistants.",
-  "risk": "Research tooling monetizes slowly and grant-funded users are price-sensitive; and a local-first agent desktop is a shell a well-funded incumbent — or the model labs — can ship.",
+  "why_good": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
+  "value": "Buyer: universities, biotech and R&D teams under data-governance constraints. Money: lab/team licenses and a hosted collaboration tier.",
+  "risk": "Research tooling monetizes slowly and grant-funded users are price-sensitive; a local agent desktop is also a shell the model labs could ship themselves. The benchmark lead is real but weeks old — watch whether it holds as tasks get harder.",
   "score": 7,
   "evidence": [
     "https://github.com/ai4s-research/open-science",
@@ -31,9 +31,15 @@
     "zh": {
       "claim": "ai4s-research/open-science —— Open Science Desktop:本地优先、模型无关的 AI 科研工作台,支持 macOS/Windows/Linux。",
       "hook": "本地优先、自带模型的科研工作台——把数据留在本机的开源版「Claude for Science」。",
-      "why_good": "科研人员想要 agent 帮忙,但不愿上传未发表数据、也不想被单一厂商锁死;这个 Tauri + MCP 桌面端在本地跑模型无关的 agent——一个很早期但涨得很快的押注(三周 1 千星),赌「AI for science,但私有、可复现」。",
-      "value": "向大学、生物科技和科研团队卖实验室/团队授权和托管协作版——他们需要可复现、在本地/内网跑的 AI 流程,云端科研助手用不了。",
-      "risk": "科研工具变现慢,靠经费的用户对价格敏感;而且「本地优先的 agent 桌面」是个壳,财力雄厚的巨头(或模型厂商自己)随时能做一个。"
+      "why_good": "一个本地优先、模型无关的 AI 科研工作台(Tauri + MCP + agent 技能),把科研全流程——探索、文献综述、假设、实验代码、分析、作图、成文——跑在一个可审计、可复现的桌面会话里;还能驱动你自己的 Chrome,并从手机上查看。",
+      "value": "买家:受数据合规约束的大学、生物科技和研发团队。变现:实验室/团队授权和托管协作版。",
+      "risk": "科研工具变现慢,靠经费的用户对价格敏感;而『本地 agent 桌面』这层壳,模型厂商自己也能做。基准领先是真的但才几周——看它在更难任务上能不能守住。",
+      "does": "一个本地优先、模型无关的 AI 科研工作台(Tauri + MCP + agent 技能),把科研全流程——探索、文献综述、假设、实验代码、分析、作图、成文——跑在一个可审计、可复现的桌面会话里;还能驱动你自己的 Chrome,并从手机上查看。",
+      "edge": "它在 ResearchClawBench(自主科研 agent 的端到端 Pass@1 基准)上排第一,同时把数据留在本地、不绑定单一厂商——『有实测能力』又『私有』的组合很少见。",
+      "why_use": "适合想要 agent 帮忙、但不愿上传未发表数据、也不想被单一模型锁死的实验室、生物科技和科研团队——可复现、可内网部署的 AI 科研。"
     }
-  }
+  },
+  "does": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
+  "edge": "It ranks #1 on ResearchClawBench (a Pass@1 end-to-end benchmark for autonomous science agents) while keeping data local and vendor-agnostic — a rare mix of measured capability and privacy.",
+  "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research."
 }
