@@ -574,9 +574,11 @@ function tierNote(t){
            archive:{zh:"能力信号与拥挤同族，留档备查",en:"Capability signals and crowded families, kept as evidence"}}[t]||{};
   return (lang!=="en"?M.zh:M.en)||"";
 }
-function carryNote(n){
+function carryNote(n,fresh){
+  if(fresh) return lang!=="en" ? ("今天 "+fresh+" 条，补上前两天的 "+n+" 条凑满三条")
+                               : ("today: "+fresh+" — topped up with "+n+" from the past two days");
   return lang!=="en" ? ("今天暂无新达标，带上前两天的 "+n+" 条")
-                     : ("Nothing new cleared today — carrying "+n+" from the past two days");
+                     : ("nothing new cleared today — carrying "+n+" from the past two days");
 }
 function emptyTop(){
   return lang!=="en"
@@ -612,20 +614,22 @@ function renderFeed(){
     const buildAll=cand.filter(f=>verdictOf(f)==="build").sort(byScore);
     CARRY={};
     let build=buildAll.filter(f=>dayKey(f.posted_at)===dayKey(new Date().toISOString()));
+    const freshCount=build.length;
     let carried=0;
-    if(!build.length){
-      /* Nothing cleared the bar today — carry in the last two days' picks, at most three,
-         each labelled with the day it landed, so the page is never dishonestly blank. */
-      build=buildAll.filter(f=>{const d=daysAgo(f.posted_at);return d>=1&&d<=2;})
+    if(build.length<3){
+      /* Fewer than three cleared the bar today — top the tier up from the last two days,
+         newest day first, each labelled with the day it landed. Never by lowering the bar. */
+      const extra=buildAll.filter(f=>{const d=daysAgo(f.posted_at);return d>=1&&d<=2;})
                     .sort((a,b)=>daysAgo(a.posted_at)-daysAgo(b.posted_at)||byScore(a,b))
-                    .slice(0,3);
-      build.forEach(f=>{CARRY[f.id]=carryLabel(daysAgo(f.posted_at));});
-      carried=build.length;
+                    .slice(0,3-build.length);
+      extra.forEach(f=>{CARRY[f.id]=carryLabel(daysAgo(f.posted_at));});
+      build=build.concat(extra);
+      carried=extra.length;
     }
     const watch=cand.filter(f=>verdictOf(f)==="watch").sort(byScore).slice(0,12);
     const seen=new Set(build.concat(watch).map(f=>f.id));
     const rest=cand.filter(f=>!seen.has(f.id));
-    let html=sectionHTML("build",build,carried?carryNote(carried):null)+sectionHTML("watch",watch)+catTopsHTML(cand);
+    let html=sectionHTML("build",build,carried?carryNote(carried,freshCount):null)+sectionHTML("watch",watch)+catTopsHTML(cand);
     const restSlice=rest.slice(0,shown);
     html+=`<div class="tier tier-archive"><div class="tierhd"><span class="tiername">${esc(tierLabel("archive"))}</span><span class="tiern">${rest.length}</span><span class="tiernote">${esc(tierNote("archive"))}</span></div>${restSlice.map(cardHTML).join("")}</div>`;
     if(rest.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(rest.length-shown))}</div>`;
