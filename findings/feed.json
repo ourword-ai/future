@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T01:13:32Z",
+  "generated_at": "2026-07-29T04:07:03Z",
   "board": {
     "ideas": 207,
     "domains": 6,
@@ -1481,10 +1481,10 @@
       "title": "makerspet/oomwoo",
       "claim": "makerspet/oomwoo — An open-source robot vacuum: LiDAR SLAM on ESP32, ROS2, Home Assistant, fully hackable.",
       "hook": "An open-source robot vacuum you can build and flash yourself — LiDAR SLAM, ROS2 and Home Assistant, no cloud.",
-      "why_good": "Roomba-class navigation (LiDAR SLAM on a cheap ESP32) as a fully open, hackable platform is what privacy-minded smart-home owners and robotics tinkerers have wanted — the Valetudo idea extended to the whole robot; 6.6k stars in seven weeks shows the pull.",
-      "value": "A hardware-plus-firmware community play: assembled units, part kits, or a supported pro firmware and fleet dashboard for the home-lab and education market that already buys Prusa and Home Assistant gear.",
-      "risk": "Hardware is capital- and support-heavy; staying a beloved DIY project is far easier than becoming a company, and iRobot and Roborock own manufacturing and price.",
-      "score": 7,
+      "why_good": "An open-source robot vacuum you build yourself — Raspberry Pi, 3D-printed chassis, Arduino/ESP32, a cheap 2D LiDAR for mapping and autonomous ROS2/Nav2 navigation, native Home Assistant, fully local with no cloud.",
+      "value": "Buyer: home-lab makers and robotics-education programs. Money: parts kits or assembled units and a supported pro firmware/app layer.",
+      "risk": "Very early: official build instructions land Fall 2026 and v0 is bare-bones with most deliverables unfinished. Hardware is capital- and support-heavy, and iRobot/Roborock own manufacturing and price — right now it's 'can they ship,' not a usable product.",
+      "score": 6,
       "evidence": [
         "https://github.com/makerspet/oomwoo",
         "6,639★",
@@ -1510,20 +1510,26 @@
         "zh": {
           "claim": "makerspet/oomwoo —— 开源扫地机器人:ESP32 上跑 LiDAR SLAM,支持 ROS2、Home Assistant,完全可魔改。",
           "hook": "一台你能自己组装、自己刷固件的开源扫地机器人——LiDAR SLAM、ROS2、接 Home Assistant,全程不上云。",
-          "why_good": "把 Roomba 级导航(在便宜的 ESP32 上跑 LiDAR SLAM)做成完全开源、可魔改的平台,正是注重隐私的智能家居玩家和机器人爱好者想要的——把 Valetudo 的思路扩展到「整台机器人」;七周 6.6 千星说明有拉力。",
-          "value": "走硬件 + 固件的社区路线:卖整机、零件套件,或面向已在买 Prusa、Home Assistant 的家庭实验室与教育市场,卖带支持的专业版固件和车队看板。",
-          "risk": "硬件既烧钱又烧售后;当一个受欢迎的 DIY 项目,比做成一家公司容易太多,而 iRobot、石头科技握着制造与价格。"
+          "why_good": "一台你自己动手造的开源扫地机器人:Raspberry Pi + 3D 打印外壳 + Arduino/ESP32,用便宜的 2D LiDAR 建图、跑 ROS2/Nav2 自主导航,原生接 Home Assistant,全本地、不依赖云。",
+          "value": "买家:家庭实验室创客和机器人教育项目。变现:零件套件或整机,以及带支持的专业固件/应用层。",
+          "risk": "现状很早:官方 build 说明要 2026 秋才出,v0 还是骨架、多数交付项没完成。硬件既烧钱又烧售后,iRobot/石头握着制造与价格——现在是『看它能不能真交付』,不是能上手的产品。",
+          "does": "一台你自己动手造的开源扫地机器人:Raspberry Pi + 3D 打印外壳 + Arduino/ESP32,用便宜的 2D LiDAR 建图、跑 ROS2/Nav2 自主导航,原生接 Home Assistant,全本地、不依赖云。",
+          "edge": "它把整台机器人都开源了——家电级的硬件、固件和 ROS2 软件,全部可 3D 打印、可魔改、无厂商锁定——市面上几乎没有第二家。",
+          "why_use": "适合注重隐私、爱折腾的智能家居玩家和机器人教育——想要一台不上云、能自己改和自己修的扫地机。"
         }
-      }
+      },
+      "does": "An open-source robot vacuum you build yourself — Raspberry Pi, 3D-printed chassis, Arduino/ESP32, a cheap 2D LiDAR for mapping and autonomous ROS2/Nav2 navigation, native Home Assistant, fully local with no cloud.",
+      "edge": "It opens up the whole robot — appliance-grade hardware, firmware and ROS2 software, all 3D-printable and hackable with no vendor lock-in — which basically nothing on the market offers.",
+      "why_use": "For privacy-minded smart-home tinkerers and robotics education who want a no-cloud vacuum they can actually modify and repair."
     },
     {
       "title": "shy3130/tickflow-stock-panel",
       "claim": "shy3130/tickflow-stock-panel — A self-hosted, zero-ops quant workbench for China A-shares: screening, monitoring and backtesting with an LLM co-pilot.",
       "hook": "A self-hosted quant desk for China A-shares — screen, backtest and monitor stocks with an LLM co-pilot, zero ops.",
-      "why_good": "Retail quant tooling for A-shares is mostly clunky or paywalled; this packages screening, backtesting and LLM-driven analysis into a zero-ops self-host stack (DuckDB/Polars/FastAPI) — a clear wedge into China's massive retail-investor base.",
-      "value": "A hosted edition plus premium data connectors and strategy packs for retail A-share traders and small funds who want their own quant desk without a Bloomberg budget.",
-      "risk": "It leans on a third-party data source (TickFlow) it does not control, and financial tooling invites data-licensing and regulatory headaches; the moat is the workflow, not the data.",
-      "score": 7,
+      "why_good": "A self-hosted, zero-ops quant workbench for China A-shares: an 18-strategy screener (plus custom and AI-generated signals) that scans the whole market in milliseconds with Polars, an indicator pipeline, a backtester (T+1, fees, slippage, stop-loss), a monitoring center with voice/Feishu alerts, and AI per-stock analysis.",
+      "value": "Realistically not a startup you can lift: the author's license forbids commercial use and it rides a third-party data source (TickFlow) it doesn't control. Treat it as an open reference architecture, not a business.",
+      "risk": "Beyond the license and data dependency, financial tooling invites regulatory and data-licensing headaches, and the author deliberately avoids stock-picking/AI-prediction claims. The value here is the workflow blueprint, not a defensible product.",
+      "score": 5,
       "evidence": [
         "https://github.com/shy3130/tickflow-stock-panel",
         "2,386★",
@@ -1549,19 +1555,25 @@
         "zh": {
           "claim": "shy3130/tickflow-stock-panel —— 自托管、零运维的 A 股量化工作台:选股、监控、回测,配 LLM 副驾。",
           "hook": "自托管的 A 股量化工作台——选股、回测、盯盘,配一个 LLM 副驾,零运维。",
-          "why_good": "面向散户的 A 股量化工具大多要么难用、要么付费墙;它把选股、回测和 LLM 驱动的分析打包成零运维的自托管栈(DuckDB/Polars/FastAPI)——一个切入中国庞大散户群体的清晰楔子。",
-          "value": "向散户 A 股交易者和小型基金卖托管版 + 高级数据接口和策略包——他们想要自己的量化台,又没有彭博的预算。",
-          "risk": "它依赖一个自己不掌控的第三方数据源(TickFlow),金融工具还会招来数据授权与监管麻烦;护城河是工作流,不是数据。"
+          "why_good": "一个自托管、零运维的 A 股量化工作台:18 个策略的选股器(还可自定义/AI 生成信号),用 Polars 毫秒级扫全 A 股,配指标流水线、回测(T+1/手续费/滑点/止损)、带语音/飞书提醒的监控中心,以及 AI 个股分析。",
+          "value": "现实点说,它不是能直接抄去做的生意:作者的许可证明确禁止商用,而且它依赖一个自己不掌控的第三方数据源(TickFlow)。把它当开源参考架构,不是生意。",
+          "risk": "除了许可证和数据源依赖,金融工具还招来监管与数据授权的麻烦,作者也刻意不做『荐股/AI 预测』。它的价值是工作流蓝图,不是有护城河的产品。",
+          "does": "一个自托管、零运维的 A 股量化工作台:18 个策略的选股器(还可自定义/AI 生成信号),用 Polars 毫秒级扫全 A 股,配指标流水线、回测(T+1/手续费/滑点/止损)、带语音/飞书提醒的监控中心,以及 AI 个股分析。",
+          "edge": "把散户量化的完整闭环——选股、回测、监控、复盘——打包成一套可自托管的栈(Polars/DuckDB/FastAPI),跑在你自己机器上。",
+          "why_use": "如果你想要一套私有的 A 股量化台、又没有彭博的预算,它是很好的参照实现。"
         }
-      }
+      },
+      "does": "A self-hosted, zero-ops quant workbench for China A-shares: an 18-strategy screener (plus custom and AI-generated signals) that scans the whole market in milliseconds with Polars, an indicator pipeline, a backtester (T+1, fees, slippage, stop-loss), a monitoring center with voice/Feishu alerts, and AI per-stock analysis.",
+      "edge": "It bundles the full retail-quant loop — screen, backtest, monitor, review — into one self-hostable stack (Polars/DuckDB/FastAPI) running on your own box.",
+      "why_use": "Useful as a reference build if you want your own private A-share quant desk without a Bloomberg budget."
     },
     {
       "title": "ai4s-research/open-science",
       "claim": "ai4s-research/open-science — Open Science Desktop: a local-first, model-agnostic AI research workbench for macOS, Windows and Linux.",
       "hook": "A local-first, bring-your-own-model research workbench — the open Claude-for-Science that keeps your data on your machine.",
-      "why_good": "Scientists want agentic help without uploading unpublished data or locking into one vendor; this Tauri + MCP desktop runs model-agnostic agents locally — an early but fast-rising bet (1k stars in three weeks) on AI-for-science that stays private and reproducible.",
-      "value": "Lab and team licenses plus a hosted collaboration tier for universities, biotech and research groups that need reproducible, on-prem AI workflows they cannot run on cloud science assistants.",
-      "risk": "Research tooling monetizes slowly and grant-funded users are price-sensitive; and a local-first agent desktop is a shell a well-funded incumbent — or the model labs — can ship.",
+      "why_good": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
+      "value": "Buyer: universities, biotech and R&D teams under data-governance constraints. Money: lab/team licenses and a hosted collaboration tier.",
+      "risk": "Research tooling monetizes slowly and grant-funded users are price-sensitive; a local agent desktop is also a shell the model labs could ship themselves. The benchmark lead is real but weeks old — watch whether it holds as tasks get harder.",
       "score": 7,
       "evidence": [
         "https://github.com/ai4s-research/open-science",
@@ -1588,19 +1600,25 @@
         "zh": {
           "claim": "ai4s-research/open-science —— Open Science Desktop:本地优先、模型无关的 AI 科研工作台,支持 macOS/Windows/Linux。",
           "hook": "本地优先、自带模型的科研工作台——把数据留在本机的开源版「Claude for Science」。",
-          "why_good": "科研人员想要 agent 帮忙,但不愿上传未发表数据、也不想被单一厂商锁死;这个 Tauri + MCP 桌面端在本地跑模型无关的 agent——一个很早期但涨得很快的押注(三周 1 千星),赌「AI for science,但私有、可复现」。",
-          "value": "向大学、生物科技和科研团队卖实验室/团队授权和托管协作版——他们需要可复现、在本地/内网跑的 AI 流程,云端科研助手用不了。",
-          "risk": "科研工具变现慢,靠经费的用户对价格敏感;而且「本地优先的 agent 桌面」是个壳,财力雄厚的巨头(或模型厂商自己)随时能做一个。"
+          "why_good": "一个本地优先、模型无关的 AI 科研工作台(Tauri + MCP + agent 技能),把科研全流程——探索、文献综述、假设、实验代码、分析、作图、成文——跑在一个可审计、可复现的桌面会话里;还能驱动你自己的 Chrome,并从手机上查看。",
+          "value": "买家:受数据合规约束的大学、生物科技和研发团队。变现:实验室/团队授权和托管协作版。",
+          "risk": "科研工具变现慢,靠经费的用户对价格敏感;而『本地 agent 桌面』这层壳,模型厂商自己也能做。基准领先是真的但才几周——看它在更难任务上能不能守住。",
+          "does": "一个本地优先、模型无关的 AI 科研工作台(Tauri + MCP + agent 技能),把科研全流程——探索、文献综述、假设、实验代码、分析、作图、成文——跑在一个可审计、可复现的桌面会话里;还能驱动你自己的 Chrome,并从手机上查看。",
+          "edge": "它在 ResearchClawBench(自主科研 agent 的端到端 Pass@1 基准)上排第一,同时把数据留在本地、不绑定单一厂商——『有实测能力』又『私有』的组合很少见。",
+          "why_use": "适合想要 agent 帮忙、但不愿上传未发表数据、也不想被单一模型锁死的实验室、生物科技和科研团队——可复现、可内网部署的 AI 科研。"
         }
-      }
+      },
+      "does": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
+      "edge": "It ranks #1 on ResearchClawBench (a Pass@1 end-to-end benchmark for autonomous science agents) while keeping data local and vendor-agnostic — a rare mix of measured capability and privacy.",
+      "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research."
     },
     {
       "title": "malisper/pgrust",
       "claim": "malisper/pgrust — Postgres rewritten in Rust, already passing 100% of the Postgres regression tests.",
       "hook": "Postgres, rewritten in Rust — and it already passes 100% of Postgres's own regression tests.",
-      "why_good": "A memory-safe, from-the-ground-up Postgres that already passes the full regression suite is a serious systems feat — the foundation a safer managed Postgres or an embeddable engine could be built on; a rare lead signal in a space usually owned by decades-old C.",
-      "value": "The engine is not the business; a managed or embedded offering, or enterprise support on a safer Postgres (the Cockroach/ClickHouse path), is — once it reaches production readiness.",
-      "risk": "Taking a Postgres reimplementation to production trust is a multi-year slog; passing regression tests is far from run-your-bank-on-it, and the incumbent is free, battle-tested and everywhere.",
+      "why_good": "A ground-up rewrite of Postgres in Rust that already matches Postgres 18.3 output across 46,000+ regression queries and is disk-compatible — it can boot straight from an existing Postgres data directory.",
+      "value": "The engine isn't the business; a managed/embedded offering or enterprise support on a safer, faster Postgres (the Cockroach/ClickHouse path) is — once it's production-ready.",
+      "risk": "It says plainly it's not production-ready or perf-optimized yet, and extensions like PL/Python aren't compatible. Getting a Postgres reimplementation to 'run your bank on it' is a multi-year slog against a free, battle-tested incumbent. Watch the published benchmarks and first production users.",
       "score": 7,
       "evidence": [
         "https://github.com/malisper/pgrust",
@@ -1626,11 +1644,17 @@
         "zh": {
           "claim": "malisper/pgrust —— 用 Rust 重写的 Postgres,已经 100% 通过 Postgres 官方回归测试。",
           "hook": "用 Rust 重写的 Postgres——而且已经 100% 通过了 Postgres 自己的回归测试。",
-          "why_good": "一个内存安全、从零重写、且已通过完整回归测试套件的 Postgres,是硬核的系统工程成就——这种底座之上可长出更安全的托管 Postgres 或可嵌入引擎;在通常被几十年老 C 代码统治的领域,这是难得的领先信号。",
-          "value": "引擎本身不是生意;在更安全的 Postgres 之上做托管/嵌入式产品或企业支持(Cockroach/ClickHouse 的路子)才是——前提是达到生产可用。",
-          "risk": "把一个 Postgres 重写版做到「生产可信」是多年苦役;通过回归测试离「敢让银行用」还差得远,而现有 Postgres 免费、久经沙场、无处不在。"
+          "why_good": "用 Rust 从零重写的 Postgres,已在 46,000+ 条回归查询上匹配 Postgres 18.3 的输出,而且磁盘兼容——能直接从现有的 Postgres 数据目录启动。",
+          "value": "引擎本身不是生意;在更安全、更快的 Postgres 之上做托管/嵌入式产品或企业支持(Cockroach/ClickHouse 的路子)才是——前提是达到生产可用。",
+          "risk": "它明说还没到生产可用、也没做性能优化,PL/Python 等扩展也还不兼容。把一个 Postgres 重写版做到『敢让银行用』是多年苦役,对手还是免费、久经沙场的原版。看它公开的基准和第一批生产用户。",
+          "does": "用 Rust 从零重写的 Postgres,已在 46,000+ 条回归查询上匹配 Postgres 18.3 的输出,而且磁盘兼容——能直接从现有的 Postgres 数据目录启动。",
+          "edge": "作者称尚未发布的新版本已 100% 通过 Postgres 回归套件、事务负载快约 50%、分析负载快约 300 倍(逼近 ClickHouse)——一个『Postgres 兼容』又有 HTAP 级分析性能的引擎,若成立就很重磅。",
+          "why_use": "卖点:保留 Postgres 兼容和你的数据文件,却拿到内存安全和快得多的分析性能——是『原地替换』,而不是迁到另一套分析数据库。"
         }
-      }
+      },
+      "does": "A ground-up rewrite of Postgres in Rust that already matches Postgres 18.3 output across 46,000+ regression queries and is disk-compatible — it can boot straight from an existing Postgres data directory.",
+      "edge": "A newer unpublished build reportedly passes 100% of the Postgres regression suite, is ~50% faster on transactional workloads and ~300x faster on analytical ones (approaching ClickHouse) — a Postgres-compatible engine with HTAP-class analytics is a big deal if it holds up.",
+      "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database."
     },
     {
       "title": "Lottie Creator 2.0",
