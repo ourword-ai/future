@@ -86,11 +86,11 @@ section.pane.on{display:block}
 .modeltag{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;background:var(--tint);box-shadow:0 0 0 1px var(--line);color:var(--ink-50)}
 .time{font-size:11px;color:var(--ink-30);white-space:nowrap;font-variant-numeric:tabular-nums}.cardsig{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}.cardsig .pickbadge{margin-left:0}
 .first{display:inline-block;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--up);background:var(--up-bg);padding:2px 6px;border-radius:3px;margin-bottom:8px;line-height:1.4}
-.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.tagrow{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap}
-.tagrow .tags{flex:1;min-width:0}
-.sharebtn{flex-shrink:0;cursor:pointer;user-select:none;font-size:11px;font-weight:600;letter-spacing:.01em;color:var(--ink-50);background:var(--tint);box-shadow:0 0 0 1px var(--line);border-radius:6px;padding:3px 9px;transition:color var(--dur-base) var(--ease-out-quart),background var(--dur-base) var(--ease-out-quart)}
+.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.sharebtn{cursor:pointer;user-select:none;font-size:10px;font-weight:600;color:var(--ink-50);background:var(--tint);box-shadow:0 0 0 1px var(--line);padding:2px 7px;border-radius:3px;margin-left:2px;transition:color var(--dur-base) var(--ease-out-quart),background var(--dur-base) var(--ease-out-quart)}
 .sharebtn:hover{color:var(--ink);background:var(--paper)}
 .sharebtn:active{transform:translateY(1px)}
+.card:not(:hover) .sharebtn{opacity:.62}
+.tags+.cardmeta{margin-top:10px}
 .card.hl{box-shadow:0 0 0 2px var(--up,#2e7d32),var(--shadow-card)}
 .tier{margin:0 0 26px}
 .tierhd{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;padding:0 2px 9px;border-bottom:1px solid var(--line);margin-bottom:12px}
@@ -525,8 +525,7 @@ function cardHTML(f){
     ${cardImg(f)?`<a class="cardimg-wrap" href="${esc(cardHref(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" referrerpolicy="no-referrer" src="${esc(cardImg(f))}" alt="" data-try="0" onerror="imgRetry(this)"></a>`:""}
     ${(Z.does||f.does)?`<div class="pr">${vrow("vk-d",doesL,[(Z.does||f.does),(Z.edge||f.edge)].filter(Boolean).join(" "))}${voicesHTML(f)}${vrow("vk-w",whyL,Z.why_use||f.why_use)}${vrow("vk-g",gapL,Z.gap||f.gap)}${vrow("vk-c",cntL,Z.counter||f.counter)}${vrow("vk-x",difL,Z.differentiator||f.differentiator)}${vrow("vk-v",cvL,Z.value||f.value)}${(!(f.gap||f.counter))?vrow("vk-r",rkL,Z.risk||f.risk):""}</div>`:`${(Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:""}${(f.value||f.risk)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div>`:""}`}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
-    <div class="tagrow"><div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
-      <span class="sharebtn" role="button" tabindex="0" title="${esc(t.shared)}" onclick="shareCard('${esc(f.id||"")}')" onkeypress="if(event.key==='Enter')shareCard('${esc(f.id||"")}')">⇪ ${esc(t.shareL)}</span></div>
+    <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}<span class="sharebtn" role="button" tabindex="0" title="${esc(t.shared)}" onclick="shareCard('${esc(f.id||"")}')" onkeypress="if(event.key==='Enter')shareCard('${esc(f.id||"")}')">⇪ ${esc(t.shareL)}</span></div>
     <div class="cardmeta">${predHTML(f)}</div>
     <div class="evwrap"><div class="expand" role="button" tabindex="0" onclick="tglEv(this)"><span class="caret">▸</span>${t.evShow}</div>
       <div class="ev"><div class="evin"><div class="evbox">
