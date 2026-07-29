@@ -2,9 +2,9 @@
   "title": "Sahir619/fable-method",
   "claim": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it hone",
   "score": 9,
-  "why_good": "It directly addresses the frustration of AI developers who struggle with existing models' convoluted processes, offering a clear path to efficiency.",
-  "value": "AI developers at startups and enterprises will pay for a straightforward implementation that enhances model performance and reduces onboarding time.",
-  "risk": "The reliance on Claude Fable 5 means it could falter if Claude's ecosystem evolves in a way that renders this method obsolete.",
+  "why_good": "Not another prompt pack: four skills with explicit thresholds a mid-tier model can follow literally, plus an adversarial eval harness (15 rounds, 260+ runs) with the failures kept in the log — the eval discipline is rarer than the workflow.",
+  "value": "商业价值: the durable asset is the eval harness — proving your agent still works as models get swapped is a real budget line; the workflow is the marketing, the testing layer is the product.",
+  "risk": "Tied to the mythos of a retired model, and methodology repos age in months; unless the eval harness becomes a hosted product this stays a well-executed content artifact, not a company.",
   "evidence": [
     "https://github.com/Sahir619/fable-method",
     "1,958★",
@@ -32,9 +32,9 @@
     "zh": {
       "claim": "Fable Method通过将Claude Fable 5的复杂工作流程简化为任何模型可执行的可操作技能，获得了1,958个星标。",
       "hook": "Fable Method通过简化Claude Fable 5的复杂工作流程，获得1,958个星标，提供任何模型可执行的技能。",
-      "why_good": "它直接解决了AI开发者在现有模型复杂流程中遇到的挫折，提供了高效的清晰路径。",
-      "value": "初创企业和企业的AI开发者将为提高模型性能和减少培训时间的简单实现付费。",
-      "risk": "对Claude Fable 5的依赖意味着如果Claude的生态系统发生变化，可能会使该方法失去效用。"
+      "why_good": "不是又一个提示词合集：四个技能带明确阈值、中端模型也能照做，外加对抗性评测框架（15 轮、260+ 次运行）且失败记录全留档——这种评测纪律比工作流本身更稀缺。",
+      "value": "商业价值：真正耐久的资产是评测框架——团队换模型时“证明 Agent 没退化”是实打实的预算；工作流负责传播，测试层才是能卖的产品。",
+      "risk": "绑定在一个已退役模型的情怀上，方法论仓库几个月就过时；不把评测框架做成托管产品，它只是一件执行漂亮的内容作品，不是公司。"
     }
   },
   "pick": false,
