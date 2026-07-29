@@ -108,8 +108,15 @@ else leads in English. Both languages are always present.
 
 ## 5. How the standard gets sharper
 
-- **Operator marks entries ⭐ / ❌ directly in `marks.json`** (`{"<finding id or repo>": {"mark":
-  "star|no", "why": "...", "at": "YYYY-MM-DD"}}`). The board renders the mark; scouts read it.
+- **Operator marks entries ✅ / ❌ on the board itself.** Every card carries the two buttons; a
+  mark is stored in the browser immediately and the bar above the feed offers *copy marks.json*,
+  which yields the exact `{"marks": {...}}` block to paste into `marks.json` at the repo root
+  (`{"<finding id or repo>": {"mark": "star|no", "at": "YYYY-MM-DD"}}`). Scouts and the autopilot
+  read that file.
+- **A mark outranks the model.** ✅ is a human confirmation that something is worth doing, so it
+  enters the top tier regardless of which fields are filled in; ❌ leaves the top tier for good and
+  the card renders dimmed. Marks are the primary training signal for what "worth building" means —
+  the weekly retro reads them before it touches any rule.
 - **Weekly retro** — what happened to last week's `build` entries (still alive? absorbed by a
   platform? dead?) and the ⭐/❌ distribution. The ⭐ rate on `build` entries is the one number
   that says whether the board works. Retro findings adjust the scoring rules, in this file.
@@ -194,8 +201,11 @@ issue 区也会把真话埋掉。所以**行为算较弱的一手证据**：fork
 
 ## 5. 标准怎么变准
 
-- **你直接在 `marks.json` 里标 ⭐/❌**（格式 `{"<条目 id 或 owner/repo>": {"mark":"star|no",
-  "why":"…","at":"YYYY-MM-DD"}}`）。板子会显示标记，scout 会读它。
+- **直接在板上标 ✅/❌**：每张卡片都有这两个按钮，点了立刻存在浏览器里，信息流上方的小条提供
+  「复制 marks.json」，把 `{"marks": {...}}` 整块粘到仓库根目录的 `marks.json` 即可
+  （格式 `{"<条目 id 或 owner/repo>": {"mark":"star|no","at":"YYYY-MM-DD"}}`），scout 与 autopilot 都读它。
+- **人的标记压过模型**：✅ 是"我确认这值得做"，无论字段齐不齐都直接进顶档；❌ 永久离开顶档、卡片变灰。
+  标记是"什么叫值得做"最主要的训练信号——每周复盘先读标记，再动任何规则。
 - **每周复盘**：上周 `build` 条目后来怎么了（活着？被平台吸收？凉了？）＋⭐/❌ 分布。`build` 条目的
   ⭐率是判断这块板有没有用的唯一数字。复盘结论直接改这份文件里的规则。
 - 你在痛点雷达的历史标记（⭐36 / ❌176）**只作参考不作准**：卡片上提示"你标过类似的 #xxx"，不自动改分。

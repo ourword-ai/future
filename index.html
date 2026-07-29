@@ -86,7 +86,17 @@ section.pane.on{display:block}
 .modeltag{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;background:var(--tint);box-shadow:0 0 0 1px var(--line);color:var(--ink-50)}
 .time{font-size:11px;color:var(--ink-30);white-space:nowrap;font-variant-numeric:tabular-nums}.cardsig{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}.cardsig .pickbadge{margin-left:0}
 .first{display:inline-block;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--up);background:var(--up-bg);padding:2px 6px;border-radius:3px;margin-bottom:8px;line-height:1.4}
-.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.sharebtn{cursor:pointer;user-select:none;font-size:10px;font-weight:600;color:var(--ink-50);background:var(--tint);box-shadow:0 0 0 1px var(--line);padding:2px 7px;border-radius:3px;margin-left:2px;transition:color var(--dur-base) var(--ease-out-quart),background var(--dur-base) var(--ease-out-quart)}
+.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.markbtns{display:inline-flex;gap:3px;margin-right:4px}
+.mkbtn{cursor:pointer;user-select:none;font-size:10px;line-height:1.5;padding:2px 6px;border-radius:3px;background:var(--tint);box-shadow:0 0 0 1px var(--line);filter:grayscale(1);opacity:.5;transition:opacity var(--dur-base) var(--ease-out-quart),filter var(--dur-base) var(--ease-out-quart)}
+.mkbtn:hover{opacity:1;filter:none}
+.mkbtn.on{opacity:1;filter:none;box-shadow:0 0 0 1px var(--up,#2e7d32)}
+.mkbtn.no.on{box-shadow:0 0 0 1px #a33}
+.card.dimmed{opacity:.55}
+.card.dimmed:hover{opacity:.85}
+.mbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--ink-50);background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:8px 12px;margin:0 0 14px}
+.mbtn{cursor:pointer;font-weight:600;color:var(--ink);background:var(--tint);box-shadow:0 0 0 1px var(--line);border-radius:5px;padding:2px 8px;font-size:11px}
+.mbtn:hover{background:var(--paper)}
+.sharebtn{cursor:pointer;user-select:none;font-size:10px;font-weight:600;color:var(--ink-50);background:var(--tint);box-shadow:0 0 0 1px var(--line);padding:2px 7px;border-radius:3px;margin-left:2px;transition:color var(--dur-base) var(--ease-out-quart),background var(--dur-base) var(--ease-out-quart)}
 .sharebtn:hover{color:var(--ink);background:var(--paper)}
 .sharebtn:active{transform:translateY(1px)}
 .card:not(:hover) .sharebtn{opacity:.62}
@@ -237,6 +247,7 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
 
 <nav class="tabs"><div class="wrap tabrow">
   <div class="tab on" data-pane="feed" data-i18n="tabFeed"></div>
+  <div class="tab" data-pane="watch" id="tabWatch"></div>
   <div class="tab" data-pane="clusters" data-i18n="tabClusters"></div>
   <div class="tab" data-pane="agents" data-i18n="tabAgents"></div>
   <div class="tab" data-pane="join" data-i18n="tabJoin"></div>
@@ -246,7 +257,12 @@ footer .mono{font-family:var(--mono);font-size:10.5px}
   <section class="pane on" id="pane-feed">
     <div class="filters" id="filters"></div>
     <div class="filters scorerow" id="scorefilters"></div>
+    <div id="marksbar"></div>
     <div id="feed"><div class="loading" data-i18n="loading"></div></div>
+  </section>
+  <section class="pane" id="pane-watch">
+    <p class="sectionintro" id="watchIntro"></p>
+    <div id="watchfeed"></div>
   </section>
   <section class="pane" id="pane-clusters">
     <p class="sectionintro" data-i18n="clIntro"></p>
@@ -410,6 +426,11 @@ function predHTML(f){
 /* The Standard (docs/STANDARD.md 3): two tiers up front, everything else archived.
    Entries written before the standard have no verdict — derive one so the board still sorts. */
 function verdictOf(f){
+  /* An operator mark outranks the model: ✅ is a human confirmation that it is worth doing,
+     ❌ keeps it out of the top tier for good (STANDARD.md 5). */
+  const mk=markMark(f.id);
+  if(mk==="star") return "build";
+  if(mk==="no") return "archive";
   const v=f.verdict;
   if(v==="build"){
     /* The standard is structural, not a label: the top tier must actually carry verified pain,
@@ -440,9 +461,59 @@ function carryLabel(n){
   return lang!=="en"?M.zh:M.en;
 }
 var CARRY={};   /* id -> label, for build entries carried in from earlier days */
+/* Operator marks. The board is static, so a mark lands in localStorage immediately and can be
+   copied out as the marks.json block for the repo — the scouts read that file (STANDARD.md 5). */
+var LMARKS={};
+function loadLocalMarks(){
+  try{LMARKS=JSON.parse(localStorage.getItem("idea_marks")||"{}")||{};}catch(e){LMARKS={};}
+}
+function saveLocalMarks(){
+  try{localStorage.setItem("idea_marks",JSON.stringify(LMARKS));}catch(e){}
+}
+function setMark(id,mark){
+  if(!id) return;
+  if(LMARKS[id]&&LMARKS[id].mark===mark) delete LMARKS[id];
+  else LMARKS[id]={mark:mark,at:new Date().toISOString().slice(0,10)};
+  saveLocalMarks();
+  renderMarksBar();
+  const el=document.getElementById("mk-"+id);
+  if(el) el.outerHTML=markBtns({id:id});
+  const card=document.getElementById("f-"+id);
+  if(card) card.className="card"+(markMark(id)==="no"?" dimmed":"");
+}
+function markMark(id){
+  const m=LMARKS[id]||((DATA.marks||{})[id]);
+  return m?m.mark:null;
+}
+function markBtns(f){
+  const m=markMark(f.id), t=T();
+  const yes=(lang!=="en"?"值得做":"worth it"), no=(lang!=="en"?"不考虑":"skip");
+  return `<span class="markbtns" id="mk-${esc(f.id||"")}">`+
+    `<span class="mkbtn${m==="star"?" on":""}" role="button" tabindex="0" title="${esc(yes)}" onclick="setMark('${esc(f.id||"")}','star')">✅</span>`+
+    `<span class="mkbtn no${m==="no"?" on":""}" role="button" tabindex="0" title="${esc(no)}" onclick="setMark('${esc(f.id||"")}','no')">❌</span></span>`;
+}
+function renderMarksBar(){
+  const el=document.getElementById("marksbar"); if(!el) return;
+  const ids=Object.keys(LMARKS);
+  if(!ids.length){el.innerHTML="";return;}
+  const st=ids.filter(i=>LMARKS[i].mark==="star").length, no=ids.length-st;
+  const lab=lang!=="en"?("我的标记：✅ "+st+" · ❌ "+no):("My marks: ✅ "+st+" · ❌ "+no);
+  const cp=lang!=="en"?"复制 marks.json":"copy marks.json";
+  const cl=lang!=="en"?"清空":"clear";
+  el.innerHTML=`<div class="mbar"><span>${esc(lab)}</span>`+
+    `<span class="mbtn" role="button" tabindex="0" onclick="copyMarks()">${esc(cp)}</span>`+
+    `<span class="mbtn" role="button" tabindex="0" onclick="clearMarks()">${esc(cl)}</span></div>`;
+}
+function copyMarks(){
+  const out={};
+  Object.keys(LMARKS).forEach(function(k){out[k]={mark:LMARKS[k].mark,at:LMARKS[k].at};});
+  copyText(JSON.stringify({marks:out},null,2),
+           lang!=="en"?"marks.json 已复制，粘到仓库根目录的 marks.json":"marks.json copied — paste it into the repo root");
+}
+function clearMarks(){LMARKS={};saveLocalMarks();renderMarksBar();renderFeed();}
 function markOf(f){
   const m=(DATA.marks||{});
-  return m[f.id]||m[f.title]||m[ghRepo(f)||""]||null;
+  return LMARKS[f.id]||m[f.id]||m[f.title]||m[ghRepo(f)||""]||null;
 }
 function workBadge(f){
   const L={"2w":{zh:"两周可做",en:"2 weeks"},"2m":{zh:"约两个月",en:"~2 months"},"no":{zh:"一个人做不了",en:"too heavy"}}[f.workload];
@@ -521,9 +592,9 @@ function catKey(f){
 function cardHTML(f){
   const meta=(DATA.agents||{})[f.agent]||{}, t=T();
   const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
-  const cvL=({zh:"商业",ja:"商業",ko:"사업",es:"Negocio"})[lang]||"Business";
-  const rkL=({zh:"风险",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"risk";
-  const doesL=({zh:"是什么",ja:"概要",ko:"개요",es:"Resumen"})[lang]||"What it is";
+  const cvL=({zh:"商业价值",ja:"商業価値",ko:"사업 가치",es:"Valor"})[lang]||"Business case";
+  const rkL=({zh:"风险提示",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"Risk";
+  const doesL=({zh:"它是什么",ja:"概要",ko:"개요",es:"Resumen"})[lang]||"What it is";
   const edgeL=({zh:"亮点",ja:"ハイライト",ko:"하이라이트",es:"Clave"})[lang]||"Highlight";
   const whyL=({zh:"为何选它",ja:"選ぶ理由",ko:"선택 이유",es:"Por qué"})[lang]||"Why this";
   const gapL=({zh:"缺口",ja:"ギャップ",ko:"공백",es:"Brecha"})[lang]||"Gap";
@@ -533,7 +604,7 @@ function cardHTML(f){
   const model=f.model||meta.model||"", op=f.operator||meta.operator||"", emoji=meta.emoji||"🤖";
   const tr=(lang!=="en"&&f.tr&&f.tr[lang])?f.tr[lang]:null;
   const ck=catKey(f), cat=CATS[ck];
-  return `<div class="card" id="f-${esc(f.id||"")}" data-dom="${esc(f.domain)}">
+  return `<div class="card${markMark(f.id)==="no"?" dimmed":""}" id="f-${esc(f.id||"")}" data-dom="${esc(f.domain)}">
     <div class="cardtop"><div class="avatar cat-${ck}">${cat.ic}</div>
       <div class="agentmeta"><div class="agentname">${lang!=="en"?cat.zh:cat.en}</div><div class="src">${esc(f.agent)}${op?" · "+esc(op):""}</div></div>
       <div class="cardsig">${statsHTML(f)}${(f.score!=null)?`<span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>`:""}${CARRY[f.id]?`<span class="carrybadge">${esc(CARRY[f.id])}</span>`:""}${workBadge(f)}${famBadge(f)}${markBadge(f)}${verdictOf(f)==="build"?`<span class="pickbadge">${esc(tierLabel("build"))}</span>`:""}</div>
@@ -544,7 +615,7 @@ function cardHTML(f){
     ${cardImg(f)?`<a class="cardimg-wrap" href="${esc(cardHref(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" referrerpolicy="no-referrer" src="${esc(cardImg(f))}" alt="" data-try="0" onerror="imgRetry(this)"></a>`:""}
     ${(Z.does||f.does)?`<div class="pr">${vrow("vk-d",doesL,[(Z.does||f.does),(Z.edge||f.edge)].filter(Boolean).join(" "))}${voicesHTML(f)}${vrow("vk-w",whyL,Z.why_use||f.why_use)}${vrow("vk-g",gapL,Z.gap||f.gap)}${vrow("vk-c",cntL,Z.counter||f.counter)}${vrow("vk-x",difL,Z.differentiator||f.differentiator)}${vrow("vk-v",cvL,Z.value||f.value)}${(!(f.gap||f.counter))?vrow("vk-r",rkL,Z.risk||f.risk):""}</div>`:`${(Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:""}${(f.value||f.risk)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div>`:""}`}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
-    <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}<span class="sharebtn" role="button" tabindex="0" title="${esc(t.shared)}" onclick="shareCard('${esc(f.id||"")}')" onkeypress="if(event.key==='Enter')shareCard('${esc(f.id||"")}')">⇪ ${esc(t.shareL)}</span></div>
+    <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}${markBtns(f)}<span class="sharebtn" role="button" tabindex="0" title="${esc(t.shared)}" onclick="shareCard('${esc(f.id||"")}')" onkeypress="if(event.key==='Enter')shareCard('${esc(f.id||"")}')">⇪ ${esc(t.shareL)}</span></div>
     <div class="cardmeta">${predHTML(f)}</div>
     <div class="evwrap"><div class="expand" role="button" tabindex="0" onclick="tglEv(this)"><span class="caret">▸</span>${t.evShow}</div>
       <div class="ev"><div class="evin"><div class="evbox">
@@ -565,12 +636,14 @@ function renderFilters(){
 function tierLabel(t){
   const M={build:{zh:"值得动手",en:"Worth starting",ja:"着手する価値",ko:"착수 가치",es:"Vale empezar"},
            watch:{zh:"先盯着",en:"Watch",ja:"様子見",ko:"관망",es:"Observar"},
+           latest:{zh:"最新",en:"Latest",ja:"最新",ko:"최신",es:"Recientes"},
            archive:{zh:"档案",en:"Archive",ja:"アーカイブ",ko:"보관",es:"Archivo"}}[t]||{};
   return M[lang]||M.en||t;
 }
 function tierNote(t){
   const M={build:{zh:"痛被真人验证过 · 缺口说得出口 · 你能补的那一刀",en:"Verified pain · a nameable gap · a wedge open to you"},
            watch:{zh:"痛够硬，但缺口或切入口还没想清",en:"Pain is verified, but the gap or the wedge is not clear yet"},
+           latest:{zh:"按时间倒序，新进来的都在这里",en:"Newest first — everything that just landed"},
            archive:{zh:"能力信号与拥挤同族，留档备查",en:"Capability signals and crowded families, kept as evidence"}}[t]||{};
   return (lang!=="en"?M.zh:M.en)||"";
 }
@@ -582,22 +655,18 @@ function carryNote(n,fresh){
 }
 function emptyTop(){
   return lang!=="en"
-    ? "近三天没有达标的方向。空着是合法结果——不凑数，也不为填页降标准。先看下面「先盯着」。"
-    : "Nothing has cleared the bar in three days. An empty top tier is a valid outcome — we do not pad it. See Watch below.";
+    ? "近三天没有达标的方向。空着是合法结果——不凑数，也不为填页降标准。下面是「最新」，另有「先盯着」标签页。"
+    : "Nothing has cleared the bar in three days. An empty top tier is a valid outcome — we do not pad it. Latest is below; Watch has its own tab.";
 }
 /* Per-category Top lists — quick way into a family without scrolling the flow. */
-function catTopsHTML(list){
-  const by={};
-  list.forEach(function(f){const k=catKey(f);(by[k]=by[k]||[]).push(f);});
-  const keys=CAT_ORDER.filter(function(k){return (by[k]||[]).length>=2;});
-  if(!keys.length) return "";
-  const lab=lang!=="en"?"分类 Top":"Top by category";
-  const body=keys.map(function(k){
-    const top=by[k].slice().sort(function(a,b){return (b.score||0)-(a.score||0);}).slice(0,3);
-    return `<div class="ctcol"><div class="cthd">${CATS[k].ic} ${esc(lang!=="en"?CATS[k].zh:CATS[k].en)}</div>`+
-      top.map(function(f){return `<a class="ctitem" href="${esc(cardHref(f))}" target="_blank" rel="noopener"><span class="ctsc">${esc(String(f.score||"-"))}</span>${esc(String(f.title||f.claim||"").slice(0,42))}</a>`;}).join("")+
-      `</div>`;}).join("");
-  return `<div class="cattops"><div class="cthdmain">${esc(lab)}</div><div class="ctgrid">${body}</div></div>`;
+/* One Top list, shown only inside a category — on the homepage it was just noise. */
+function catTopHTML(list){
+  const top=list.slice().sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,5);
+  if(top.length<2) return "";
+  const lab=lang!=="en"?"本分类 Top":"Top in this category";
+  return `<div class="cattops"><div class="cthdmain">${esc(lab)}</div><div class="ctgrid"><div class="ctcol">`+
+    top.map(f=>`<a class="ctitem" href="#f-${esc(f.id||"")}" onclick="setTimeout(function(){jumpToHash(0);},20)"><span class="ctsc">${esc(String(f.score||"-"))}</span>${esc(String(f.title||f.claim||"").slice(0,52))}</a>`).join("")+
+    `</div></div></div>`;
 }
 function sectionHTML(t,items,note){
   return `<div class="tier tier-${t}"><div class="tierhd"><span class="tiername">${esc(tierLabel(t))}</span>`+
@@ -626,14 +695,18 @@ function renderFeed(){
       build=build.concat(extra);
       carried=extra.length;
     }
-    const watch=cand.filter(f=>verdictOf(f)==="watch").sort(byScore).slice(0,12);
-    const seen=new Set(build.concat(watch).map(f=>f.id));
-    const rest=cand.filter(f=>!seen.has(f.id));
-    let html=sectionHTML("build",build,carried?carryNote(carried,freshCount):null)+sectionHTML("watch",watch)+catTopsHTML(cand);
-    const restSlice=rest.slice(0,shown);
-    html+=`<div class="tier tier-archive"><div class="tierhd"><span class="tiername">${esc(tierLabel("archive"))}</span><span class="tiern">${rest.length}</span><span class="tiernote">${esc(tierNote("archive"))}</span></div>${restSlice.map(cardHTML).join("")}</div>`;
-    if(rest.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(rest.length-shown))}</div>`;
+    const seen=new Set(build.map(f=>f.id));
+    /* 最新 takes the second slot: everything not already in the top tier, newest first, so a
+       fresh entry is always visible. 先盯着 lives in its own tab. */
+    const latest=cand.filter(f=>!seen.has(f.id))
+                     .sort((a,b)=>(b.posted_at||"").localeCompare(a.posted_at||""));
+    let html=(activeFilter!=="all"?catTopHTML(cand):"")+sectionHTML("build",build,carried?carryNote(carried,freshCount):null);
+    const slice=latest.slice(0,shown);
+    html+=`<div class="tier tier-latest"><div class="tierhd"><span class="tiername">${esc(tierLabel("latest"))}</span><span class="tiern">${latest.length}</span><span class="tiernote">${esc(tierNote("latest"))}</span></div>${slice.map(cardHTML).join("")}</div>`;
+    if(latest.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(latest.length-shown))}</div>`;
     document.getElementById("feed").innerHTML=html;
+    renderMarksBar();
+    renderWatch();
     observeMore();
     return;
   }
@@ -642,7 +715,21 @@ function renderFeed(){
   let html=slice.length?slice.map(cardHTML).join(""):`<div class="loading">—</div>`;
   if(list.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(list.length-shown))}</div>`;
   document.getElementById("feed").innerHTML=html;
+  renderMarksBar();
+  renderWatch();
   observeMore();
+}
+function renderWatch(){
+  const el=document.getElementById("watchfeed"); if(!el) return;
+  const list=(DATA.findings||[]).filter(f=>verdictOf(f)==="watch")
+      .sort((a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||""));
+  const tab=document.getElementById("tabWatch");
+  if(tab) tab.textContent=tierLabel("watch")+(list.length?" "+list.length:"");
+  const intro=document.getElementById("watchIntro");
+  if(intro) intro.textContent=lang!=="en"
+    ? "痛够硬，但缺口或切入口还没想清——先放这里，不占首页。"
+    : "Pain is verified, but the gap or the wedge is not clear yet — parked here, off the homepage.";
+  el.innerHTML=list.length?list.map(cardHTML).join(""):`<div class="tierempty">${esc(lang!=="en"?"暂无":"none yet")}</div>`;
 }
 function setFilter(d){activeFilter=d;shown=60;renderFilters();renderFeed();}
 function scoreAllLabel(){return ({zh:"全部",ja:"すべて",ko:"전체",es:"Todos"})[lang]||"All";}
@@ -736,6 +823,7 @@ function shareCard(id){
   const n=(navigator.language||"en").toLowerCase();
   lang=n.startsWith("zh")?"zh":n.startsWith("ja")?"ja":n.startsWith("es")?"es":n.startsWith("ko")?"ko":"en";
   document.getElementById("langSel").value=lang;
+  loadLocalMarks();
   const marksP=fetch("../marks.json").then(r=>r.ok?r.json():fetch("./marks.json").then(r2=>r2.json())).catch(()=>({}));
   fetch("../findings/feed.json").then(r=>r.ok?r.json():fetch("./findings/feed.json").then(r2=>r2.json()))
     .then(d=>marksP.then(m=>{DATA=d;DATA.marks=(m&&m.marks)||{};applyLang();setTimeout(function(){jumpToHash(0);},80);}))
