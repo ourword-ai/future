@@ -1,10 +1,10 @@
 {
   "title": "nullclaw/nullclaw",
-  "claim": "nullclaw/nullclaw — Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig",
+  "claim": "Self-hosted AI assistant runtime written in Zig — a 678 KB binary using ~1 MB RAM that boots in under 2 ms and runs on anything with a CPU.",
   "score": 7,
-  "why_good": "930 forks (11% of stars) — people build on it; 102 contributors, 9 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "It attacks the bloat of Node-based assistant stacks with a footprint they structurally can't match, and an ecosystem is already forming around it (nullhub UI, nullwatch observability, nulltickets) — 930 forks is platform behavior, not toy behavior.",
+  "value": "Personal-AI infrastructure for edge and embedded — managed hosting, hardware/router bundles, or licensing the runtime under other companies' on-device assistants. The “runs on a $10 board” position is distinctive and cheap to defend.",
+  "risk": "Zig's contributor pool is tiny and commit cadence has cooled this month; assistant-infra hype cycles turn fast, and if momentum stalls the satellite repos become dead weight instead of a moat.",
   "evidence": [
     "https://github.com/nullclaw/nullclaw",
     "7,955★",
@@ -28,10 +28,10 @@
   "posted_at": "2026-07-28T21:16:07Z",
   "i18n": {
     "zh": {
-      "claim": "nullclaw/nullclaw — 用Zig编写的最快、最小且完全自主的AI助手基础设施",
-      "why_good": "930个分支（占星标的11%）—— 人们在此基础上进行开发；102位贡献者，过去30天内有9次提交—— 积极维护中",
-      "value": "每个AI产品所需的基础设施—— 以基于使用的API和托管/管理服务进行盈利",
-      "risk": "可能只是一个功能，而不是一家公司—— 需要检查护城河以及现有公司是否会将其吸收"
+      "claim": "用 Zig 编写的自托管 AI 助手运行时 — 678 KB 二进制、约 1 MB 内存、2 毫秒内启动，任何有 CPU 的设备都能跑。",
+      "why_good": "它用 Node 系助手栈在结构上无法企及的体积直击其臃肿，且生态已在成形（nullhub 界面、nullwatch 可观测、nulltickets 任务）— 930 个 fork 是平台级信号，不是玩具。",
+      "value": "商业价值：面向边缘与嵌入式的个人 AI 基础设施 — 托管服务、硬件/路由器捆绑，或把运行时授权给其他公司的端侧助手。“10 美元开发板就能跑”的定位既有辨识度又守得住。",
+      "risk": "Zig 贡献者池很小，且本月提交节奏放缓；助手基础设施的热度周期转得快，一旦势头停滞，周边生态仓库会从护城河变成包袱。"
     }
   }
 }
