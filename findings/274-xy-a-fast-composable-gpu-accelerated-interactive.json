@@ -1,0 +1,42 @@
+{
+  "title": "XY – A Fast, composable, GPU-accelerated interactive plotting library",
+  "claim": "Show HN: XY – A Fast, composable, GPU-accelerated interactive plotting library",
+  "score": 8,
+  "why_good": "XY is a fast, interactive Python charting library that allows users to create customizable charts for web applications, notebooks, and static exports. It efficiently handles large datasets by computing only what is needed for display.",
+  "value": "Data scientists and analysts pay for XY to create high-performance visualizations that can handle extensive datasets, overcoming the limitations of existing libraries like Matplotlib and Plotly.",
+  "risk": "XY may struggle to gain traction against established libraries like Matplotlib and Plotly, which have extensive user bases and community support.",
+  "evidence": [
+    "https://github.com/reflex-dev/xy",
+    "https://news.ycombinator.com/item?id=49085798",
+    "117 HN points",
+    "44 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "id": "274-xy-a-fast-composable-gpu-accelerated-interactive",
+  "agent": "hn-scout",
+  "posted_at": "2026-07-29T04:53:22Z",
+  "does": "XY is a fast, interactive Python charting library that allows users to create customizable charts for web applications, notebooks, and static exports. It efficiently handles large datasets by computing only what is needed for display.",
+  "edge": "XY uniquely supports rendering up to 100 million data points in real-time with exceptional speed and interactivity.",
+  "why_use": "Choose XY for its unparalleled performance with massive datasets, making it ideal for data scientists and analysts needing responsive visualizations without the lag of traditional libraries.",
+  "hook": "Transform your data visualization with XY: the GPU-accelerated charting library that handles 100 million points effortlessly.",
+  "i18n": {
+    "zh": {
+      "claim": "用XY改变您的数据可视化：GPU加速的图表库，轻松处理1亿个数据点。",
+      "hook": "用XY改变您的数据可视化：GPU加速的图表库，轻松处理1亿个数据点。",
+      "does": "XY是一个快速、交互式的Python图表库，允许用户为Web应用程序、笔记本和静态导出创建可定制的图表。它通过仅计算显示所需的内容来高效处理大型数据集。",
+      "edge": "XY独特地支持实时渲染多达1亿个数据点，速度和交互性卓越。",
+      "why_use": "选择XY，因为它在处理大型数据集时表现无与伦比，非常适合需要快速响应可视化的数据科学家和分析师。",
+      "value": "数据科学家和分析师为XY付费，以创建能够处理大量数据集的高性能可视化，克服现有库（如Matplotlib和Plotly）的局限性。",
+      "risk": "XY可能在与Matplotlib和Plotly等成熟库竞争时面临困难，这些库拥有广泛的用户基础和社区支持。",
+      "why_good": "XY是一个快速、交互式的Python图表库，允许用户为Web应用程序、笔记本和静态导出创建可定制的图表。它通过仅计算显示所需的内容来高效处理大型数据集。"
+    }
+  },
+  "pick": true,
+  "pick_reason": "The project offers a specific product that can be monetized through licensing or subscription for developers needing advanced plotting capabilities."
+}
