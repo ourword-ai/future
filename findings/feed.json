@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T09:49:42Z",
+  "generated_at": "2026-07-29T09:58:43Z",
   "findings": [
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
@@ -2652,9 +2652,9 @@
       "title": "akitaonrails/ai-memory",
       "claim": "ai-memory — long-term memory for coding agents that survives vendor switches: quit Claude Code mid-task, open Codex in the same directory, and the architecture, failed approaches and open questions carry over. Rust, MIT.",
       "score": 8,
-      "why_good": "Everyone builds memory inside one agent; this makes memory a neutral layer between vendors — exactly what devs juggling Claude Code + Codex need. And it's real engineering, not a prompt pack: 40 contributors, 374 commits/30d, packaged for Linux/macOS/WSL2, from a well-known developer educator (Fabio Akita).",
-      "value": "商业价值: the vendor-neutral memory store is a natural per-seat team product — shared project memory, sync, retention policy — sold from the same budget as the agent seats it protects.",
-      "risk": "Anthropic and OpenAI are shipping first-party memory; a cross-vendor layer only matters while multi-agent workflows stay the norm. If one agent wins, its native memory absorbs this.",
+      "why_good": "ai-memory provides long-term memory for AI coding agents, allowing users to switch between different tools like Claude Code and OpenAI Codex without losing context on architecture, failed approaches, or open questions.",
+      "value": "Software development teams pay for ai-memory to maintain productivity and context during transitions between coding agents, directly addressing the inefficiencies of current multi-agent workflows.",
+      "risk": "The reliance on existing coding agents like Claude Code and OpenAI Codex, which may not fully support or integrate with ai-memory, poses a risk to its widespread adoption.",
       "evidence": [
         "https://github.com/akitaonrails/ai-memory",
         "1,275★",
@@ -2673,12 +2673,20 @@
       "posted_at": "2026-07-28T04:16:54Z",
       "i18n": {
         "zh": {
-          "claim": "akitaonrails/ai-memory —— 给编码 agent CLI 的长期记忆,并支持在不同 agent 厂商间交接。",
-          "why_good": "给编码 agent CLI 的长期记忆 + 跨厂商交接(1275★、40 贡献者)——让你在 Claude Code/Codex 间切换而不丢上下文,真实的摩擦。",
-          "value": "给用多个 agent、想要可携带上下文的团队卖托管记忆服务 + 团队同步。",
-          "risk": "记忆正被 agent 原生吸收,而交接只在多 agent 并存时才有意义。"
+          "claim": "无缝切换编码代理，保留100%的上下文。",
+          "why_good": "ai-memory 为 AI 编码代理提供长期记忆，允许用户在不同工具之间切换，如 Claude Code 和 OpenAI Codex，而不会丢失架构、失败的方法或未解决的问题的上下文。",
+          "value": "软件开发团队为 ai-memory 付费，以在编码代理之间的过渡中保持生产力和上下文，直接解决当前多代理工作流程的低效问题。",
+          "risk": "对现有编码代理（如 Claude Code 和 OpenAI Codex）的依赖，可能无法完全支持或与 ai-memory 集成，这对其广泛采用构成风险。",
+          "hook": "无缝切换编码代理，保留100%的上下文。",
+          "does": "ai-memory 为 AI 编码代理提供长期记忆，允许用户在不同工具之间切换，如 Claude Code 和 OpenAI Codex，而不会丢失架构、失败的方法或未解决的问题的上下文。",
+          "edge": "它独特地实现了不同 AI 编码代理之间的连续性，保留整个编码会话的上下文。",
+          "why_use": "选择 ai-memory，可以避免在切换 AI 工具时重新解释复杂编码上下文的挫败感，确保更顺畅的开发过程。"
         }
-      }
+      },
+      "does": "ai-memory provides long-term memory for AI coding agents, allowing users to switch between different tools like Claude Code and OpenAI Codex without losing context on architecture, failed approaches, or open questions.",
+      "edge": "It uniquely enables continuity across different AI coding agents, preserving the entire context of a coding session.",
+      "why_use": "Choose ai-memory to avoid the frustration of re-explaining complex coding contexts when switching between AI tools, ensuring a smoother development process.",
+      "hook": "Seamlessly switch coding agents mid-task with 100% context retention."
     },
     {
       "title": "webstonehq/tuxedo",
@@ -7557,9 +7565,9 @@
       "title": "t8y2/dbx",
       "claim": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
       "score": 9,
-      "why_good": "A 20MB cross-platform client for 70+ databases, extremely active (150 contributors, 1,438 commits/30d) — a lean TablePlus.",
-      "value": "DB clients monetize as a paid pro/team tier (TablePlus and DBeaver both do): sync, collaboration, enterprise.",
-      "risk": "Crowded (DBeaver / TablePlus / DataGrip); needs a sharp wedge — size/speed — to pull paying users off incumbents.",
+      "why_good": "DBX is a cross-platform database client that supports over 70 databases, offering a seamless experience across desktop, Docker, and web environments. It features an AI SQL assistant that generates and optimizes SQL queries based on plain language descriptions.",
+      "value": "Database administrators and developers pay for DBX to efficiently manage and query multiple databases from a single lightweight tool, overcoming the limitations of heavier alternatives.",
+      "risk": "DBX may struggle against established incumbents like DBeaver or TablePlus, which have larger user bases and more extensive feature sets.",
       "evidence": [
         "https://github.com/t8y2/dbx",
         "11,852★",
@@ -7584,14 +7592,20 @@
       "posted_at": "2026-07-27T10:05:30Z",
       "i18n": {
         "zh": {
-          "claim": "t8y2/dbx —— 20MB 轻量跨平台数据库客户端,支持 70+ 种数据库(MySQL、PostgreSQL、SQLite、Redis、MongoDB…)。",
-          "why_good": "一个 20MB、支持 70+ 数据库的跨平台客户端,极活跃(150 贡献者、1438 提交/30天)——精简版 TablePlus。",
-          "value": "数据库客户端靠付费专业/团队版变现(TablePlus、DBeaver 都这么做):同步、协作、企业版。",
-          "risk": "很挤(DBeaver/TablePlus/DataGrip);要靠体积/速度的锋利切口把付费用户从现有产品撬走。",
-          "hook": "一个 20MB、支持 70+ 数据库的客户端——精简版 TablePlus,月提交 1400+。"
+          "claim": "释放70多种数据库的力量，使用轻量级20 MB客户端。",
+          "why_good": "DBX是一个跨平台数据库客户端，支持70多种数据库，提供无缝的桌面、Docker和Web环境体验。它具有AI SQL助手，可以根据自然语言描述生成和优化SQL查询。",
+          "value": "数据库管理员和开发人员为DBX付费，以高效管理和查询多个数据库，克服较重替代品的限制。",
+          "risk": "DBX可能会面临像DBeaver或TablePlus这样的成熟竞争者的挑战，这些竞争者拥有更大的用户基础和更广泛的功能集。",
+          "hook": "释放70多种数据库的力量，使用轻量级20 MB客户端。",
+          "does": "DBX是一个跨平台数据库客户端，支持70多种数据库，提供无缝的桌面、Docker和Web环境体验。它具有AI SQL助手，可以根据自然语言描述生成和优化SQL查询。",
+          "edge": "内置的AI助手允许用户直接从自然语言描述生成SQL查询，消除了在工具之间复制粘贴的需要。",
+          "why_use": "选择DBX，因为它没有运行时膨胀，能够在任何平台上运行，无需额外依赖，而竞争对手则需要Java或仅限于某个操作系统。"
         }
       },
-      "hook": "A 20MB client for 70+ databases — a lean TablePlus shipping 1,400+ commits a month."
+      "hook": "Unleash the power of 70+ databases in a lightweight 20 MB client.",
+      "does": "DBX is a cross-platform database client that supports over 70 databases, offering a seamless experience across desktop, Docker, and web environments. It features an AI SQL assistant that generates and optimizes SQL queries based on plain language descriptions.",
+      "edge": "The built-in AI assistant allows users to generate SQL queries directly from natural language descriptions, eliminating the need for copy-pasting between tools.",
+      "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific."
     },
     {
       "title": "JustVugg/colibri",
