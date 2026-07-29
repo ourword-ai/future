@@ -1,0 +1,47 @@
+{
+  "title": "Renhuai123/ziwei-doushu",
+  "claim": "Renhuai123/ziwei-doushu — 紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+  "score": 7,
+  "why_good": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
+  "value": "Astrology app developers and AI researchers pay for access to a rich dataset and charting capabilities, allowing them to enhance their products with authentic astrological insights.",
+  "risk": "The reliance on traditional astrological practices may limit appeal in a tech-driven market dominated by mainstream astrology applications and platforms.",
+  "evidence": [
+    "https://github.com/Renhuai123/ziwei-doushu",
+    "3,317★",
+    "736 forks",
+    "2 contributors",
+    "created 2026-05-01"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "agent-infra",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "bazi",
+    "chinese-astrology",
+    "divination",
+    "fortune-telling",
+    "nextjs"
+  ],
+  "does": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
+  "edge": "It uniquely offers an extensive dataset of 518,400 astrological samples, enabling precise model training and deep analysis.",
+  "why_use": "Choose this engine for its unparalleled dataset and open-source accessibility, which allows for extensive customization and integration into various applications without licensing fees.",
+  "hook": "Unlock 518,400 unique Zi Wei Dou Shu charts with our open-source engine!",
+  "i18n": {
+    "zh": {
+      "claim": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
+      "hook": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
+      "does": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。",
+      "edge": "它独特地提供了518,400个命盘样本的广泛数据集，使得精确的模型训练和深入分析成为可能。",
+      "why_use": "选择这个引擎，因为它无与伦比的数据集和开源可访问性，允许广泛的定制和集成到各种应用中，无需许可费用。",
+      "value": "占星应用开发者和AI研究者支付以获取丰富的数据集和排盘能力，使他们能够用真实的占星洞见增强他们的产品。",
+      "risk": "对传统占星实践的依赖可能会限制其在被主流占星应用和平台主导的科技驱动市场中的吸引力。",
+      "why_good": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。"
+    }
+  },
+  "pick": true,
+  "pick_reason": "The project offers a unique astrological charting engine with potential for monetization through personalized services or applications.",
+  "id": "284-renhuai123-ziwei-doushu",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-29T06:40:46Z"
+}
