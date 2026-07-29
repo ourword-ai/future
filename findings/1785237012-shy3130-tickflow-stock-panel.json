@@ -2,10 +2,10 @@
   "title": "shy3130/tickflow-stock-panel",
   "claim": "shy3130/tickflow-stock-panel — A self-hosted, zero-ops quant workbench for China A-shares: screening, monitoring and backtesting with an LLM co-pilot.",
   "hook": "A self-hosted quant desk for China A-shares — screen, backtest and monitor stocks with an LLM co-pilot, zero ops.",
-  "why_good": "Retail quant tooling for A-shares is mostly clunky or paywalled; this packages screening, backtesting and LLM-driven analysis into a zero-ops self-host stack (DuckDB/Polars/FastAPI) — a clear wedge into China's massive retail-investor base.",
-  "value": "A hosted edition plus premium data connectors and strategy packs for retail A-share traders and small funds who want their own quant desk without a Bloomberg budget.",
-  "risk": "It leans on a third-party data source (TickFlow) it does not control, and financial tooling invites data-licensing and regulatory headaches; the moat is the workflow, not the data.",
-  "score": 7,
+  "why_good": "A self-hosted, zero-ops quant workbench for China A-shares: an 18-strategy screener (plus custom and AI-generated signals) that scans the whole market in milliseconds with Polars, an indicator pipeline, a backtester (T+1, fees, slippage, stop-loss), a monitoring center with voice/Feishu alerts, and AI per-stock analysis.",
+  "value": "Realistically not a startup you can lift: the author's license forbids commercial use and it rides a third-party data source (TickFlow) it doesn't control. Treat it as an open reference architecture, not a business.",
+  "risk": "Beyond the license and data dependency, financial tooling invites regulatory and data-licensing headaches, and the author deliberately avoids stock-picking/AI-prediction claims. The value here is the workflow blueprint, not a defensible product.",
+  "score": 5,
   "evidence": [
     "https://github.com/shy3130/tickflow-stock-panel",
     "2,386★",
@@ -31,9 +31,15 @@
     "zh": {
       "claim": "shy3130/tickflow-stock-panel —— 自托管、零运维的 A 股量化工作台:选股、监控、回测,配 LLM 副驾。",
       "hook": "自托管的 A 股量化工作台——选股、回测、盯盘,配一个 LLM 副驾,零运维。",
-      "why_good": "面向散户的 A 股量化工具大多要么难用、要么付费墙;它把选股、回测和 LLM 驱动的分析打包成零运维的自托管栈(DuckDB/Polars/FastAPI)——一个切入中国庞大散户群体的清晰楔子。",
-      "value": "向散户 A 股交易者和小型基金卖托管版 + 高级数据接口和策略包——他们想要自己的量化台,又没有彭博的预算。",
-      "risk": "它依赖一个自己不掌控的第三方数据源(TickFlow),金融工具还会招来数据授权与监管麻烦;护城河是工作流,不是数据。"
+      "why_good": "一个自托管、零运维的 A 股量化工作台:18 个策略的选股器(还可自定义/AI 生成信号),用 Polars 毫秒级扫全 A 股,配指标流水线、回测(T+1/手续费/滑点/止损)、带语音/飞书提醒的监控中心,以及 AI 个股分析。",
+      "value": "现实点说,它不是能直接抄去做的生意:作者的许可证明确禁止商用,而且它依赖一个自己不掌控的第三方数据源(TickFlow)。把它当开源参考架构,不是生意。",
+      "risk": "除了许可证和数据源依赖,金融工具还招来监管与数据授权的麻烦,作者也刻意不做『荐股/AI 预测』。它的价值是工作流蓝图,不是有护城河的产品。",
+      "does": "一个自托管、零运维的 A 股量化工作台:18 个策略的选股器(还可自定义/AI 生成信号),用 Polars 毫秒级扫全 A 股,配指标流水线、回测(T+1/手续费/滑点/止损)、带语音/飞书提醒的监控中心,以及 AI 个股分析。",
+      "edge": "把散户量化的完整闭环——选股、回测、监控、复盘——打包成一套可自托管的栈(Polars/DuckDB/FastAPI),跑在你自己机器上。",
+      "why_use": "如果你想要一套私有的 A 股量化台、又没有彭博的预算,它是很好的参照实现。"
     }
-  }
+  },
+  "does": "A self-hosted, zero-ops quant workbench for China A-shares: an 18-strategy screener (plus custom and AI-generated signals) that scans the whole market in milliseconds with Polars, an indicator pipeline, a backtester (T+1, fees, slippage, stop-loss), a monitoring center with voice/Feishu alerts, and AI per-stock analysis.",
+  "edge": "It bundles the full retail-quant loop — screen, backtest, monitor, review — into one self-hostable stack (Polars/DuckDB/FastAPI) running on your own box.",
+  "why_use": "Useful as a reference build if you want your own private A-share quant desk without a Bloomberg budget."
 }
