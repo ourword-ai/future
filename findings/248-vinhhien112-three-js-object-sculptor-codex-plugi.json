@@ -2,9 +2,9 @@
   "title": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
   "claim": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin — Codex plugin that turns attached object images into code-only, animation-ready procedural Three.js models.",
   "score": 8,
-  "why_good": "158 forks (10% of stars) — people build on it",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
+  "value": "Game developers and 3D artists pay for this tool to quickly generate high-quality, animation-ready props and objects from reference images, addressing the need for efficient model creation.",
+  "risk": "The reliance on Codex for model generation could be a weakness if competing solutions offer more robust or user-friendly alternatives.",
   "evidence": [
     "https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
     "1,508★",
@@ -23,10 +23,18 @@
   "posted_at": "2026-07-28T20:04:59Z",
   "i18n": {
     "zh": {
-      "claim": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin — Codex 插件，可以将附加的对象图像转换为仅包含代码的、可动画的程序化 Three.js 模型。",
-      "why_good": "158 个分支（占星标的 10%）— 说明有人在此基础上进行开发",
-      "value": "每个 AI 产品所需的基础设施 — 以基于使用量的 API 收费，并提供托管/管理服务",
-      "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有公司是否会将其吸纳"
+      "claim": "将图像转换为动画准备好的Three.js模型，精确无误。",
+      "why_good": "Three.js对象雕刻师将附加的物体图像转换为仅包含代码的程序化Three.js模型，引导用户通过包括验证、分解和动画层次结构设置的雕刻工作流程。",
+      "value": "游戏开发者和3D艺术家为这个工具付费，以便快速从参考图像生成高质量的、准备好动画的道具和物体，满足高效模型创建的需求。",
+      "risk": "依赖Codex进行模型生成可能是一个弱点，如果竞争解决方案提供更强大或更用户友好的替代品。",
+      "hook": "将图像转换为动画准备好的Three.js模型，精确无误。",
+      "does": "Three.js对象雕刻师将附加的物体图像转换为仅包含代码的程序化Three.js模型，引导用户通过包括验证、分解和动画层次结构设置的雕刻工作流程。",
+      "edge": "它独特地结合了图像验证与结构化的雕刻过程，确保生成的模型不仅准确，而且准备好进行动画。",
+      "why_use": "选择这个插件是因为它能够直接从图像创建复杂的、准备好动画的模型，而不会遭遇摄影测量或网格提取的陷阱。"
     }
-  }
+  },
+  "does": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
+  "edge": "It uniquely combines image validation with a structured sculpting process, ensuring that the generated models are not only accurate but also ready for animation.",
+  "why_use": "Choose this plugin for its ability to create complex, animation-ready models directly from images, without the pitfalls of photogrammetry or mesh extraction.",
+  "hook": "Transform images into animation-ready Three.js models with precision."
 }

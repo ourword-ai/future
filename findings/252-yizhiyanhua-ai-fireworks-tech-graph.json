@@ -2,9 +2,9 @@
   "title": "yizhiyanhua-ai/fireworks-tech-graph",
   "claim": "yizhiyanhua-ai/fireworks-tech-graph — Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workfl",
   "score": 8,
-  "why_good": "797 forks (8% of stars) — people build on it; 14 contributors, 15 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+  "value": "Software engineers and technical project managers pay for fireworks-tech-graph to enhance their documentation and diagramming processes, addressing the inefficiencies of manual diagram creation.",
+  "risk": "The reliance on existing diagramming tools like Lucidchart or Microsoft Visio, which have established user bases and comprehensive feature sets, poses a risk to adoption.",
   "evidence": [
     "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
     "9,487★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T21:15:56Z",
   "i18n": {
     "zh": {
-      "claim": "yizhiyanhua-ai/fireworks-tech-graph — 从自然语言生成生产级的SVG+PNG技术图表。支持7种风格和UML，以及AI/Agent工作流程。",
-      "why_good": "797个分支（占星标的8%） — 许多人在此基础上进行开发；14位贡献者，过去30天内有15次提交 — 维护活跃。",
-      "value": "每个AI产品都需要的基础设施 — 以基于使用的API和托管/管理层进行盈利。",
-      "risk": "可能只是一个功能，而不是一家公司 — 需要检查护城河以及现有公司是否会将其吸收。"
+      "claim": "将自然语言转化为高质量的图表，提供11种独特风格。",
+      "why_good": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
+      "value": "软件工程师和技术项目经理为fireworks-tech-graph付费，以提升他们的文档和图表制作流程，解决手动图表创建的低效问题。",
+      "risk": "依赖于现有的图表工具，如Lucidchart或Microsoft Visio，这些工具拥有成熟的用户基础和全面的功能集，可能会对采用构成风险。",
+      "hook": "将自然语言转化为高质量的图表，提供11种独特风格。",
+      "does": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
+      "edge": "AI创作的“黑色奢华”风格提供了竞争工具中没有的独特美学。",
+      "why_use": "选择fireworks-tech-graph，因为它能够生成几何检查的图表，与开发者工作流程无缝集成，非常适合技术文档和架构设计。"
     }
-  }
+  },
+  "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+  "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
+  "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
+  "hook": "Transform natural language into production-quality diagrams with 11 unique styles."
 }

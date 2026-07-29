@@ -2,9 +2,9 @@
   "title": "obra/superpowers",
   "claim": "obra/superpowers — An agentic skills framework & software development methodology that works.",
   "score": 7,
-  "why_good": "already crowded (262,633★) — real signal but late; 23,454 forks (8% of stars) — people build on it; 44 contributors, 71 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+  "why_good": "Superpowers enhances coding agents by guiding them through the development process, from spec creation to implementation, ensuring clarity and adherence to best practices like TDD and DRY.",
+  "value": "Enterprise software teams pay for Superpowers to gain structured support and enhanced productivity in software development, addressing the challenge of managing junior engineers effectively.",
+  "risk": "It may struggle against established development methodologies and tools that are deeply integrated into existing workflows, potentially limiting adoption.",
   "evidence": [
     "https://github.com/obra/superpowers",
     "262,633★",
@@ -29,10 +29,18 @@
   "posted_at": "2026-07-28T19:44:03Z",
   "i18n": {
     "zh": {
-      "claim": "obra/superpowers — 一种有效的技能框架和软件开发方法论。",
-      "why_good": "市场竞争激烈（262,633★） — 真实信号但已较晚；23,454个分支（占星数的8%） — 人们在此基础上进行开发；44位贡献者，过去30天内71次提交 — 积极维护中。",
-      "value": "每个AI产品所需的基础设施 — 以基于使用的API形式盈利，并提供托管/管理服务。",
-      "risk": "竞争已经非常激烈 — 胜者基本已定；创始人需要更具锋利的切入点。"
+      "claim": "通过Superpowers改变您的编码代理：一个全面的软件开发方法论。",
+      "why_good": "Superpowers通过引导编码代理完成开发过程，从规格创建到实施，确保清晰性和遵循最佳实践，如TDD和DRY。",
+      "value": "企业软件团队为Superpowers付费，以在软件开发中获得结构化支持和提高生产力，解决有效管理初级工程师的挑战。",
+      "risk": "它可能面临与已深度集成到现有工作流程中的成熟开发方法和工具的竞争，这可能限制其采用。",
+      "hook": "通过Superpowers改变您的编码代理：一个全面的软件开发方法论。",
+      "does": "Superpowers通过引导编码代理完成开发过程，从规格创建到实施，确保清晰性和遵循最佳实践，如TDD和DRY。",
+      "edge": "其突出能力是子代理驱动开发过程，允许编码代理在保持专注于商定实施计划的同时独立工作。",
+      "why_use": "选择Superpowers，因为它能够促进结构化的开发对话，导致清晰、可操作的计划，与其他直接跳入编码的工具不同。"
     }
-  }
+  },
+  "does": "Superpowers enhances coding agents by guiding them through the development process, from spec creation to implementation, ensuring clarity and adherence to best practices like TDD and DRY.",
+  "edge": "Its standout capability is the subagent-driven-development process, allowing coding agents to work autonomously while maintaining focus on the agreed implementation plan.",
+  "why_use": "Choose Superpowers for its unique ability to facilitate structured development conversations that lead to clear, actionable plans, unlike other tools that jump straight to coding.",
+  "hook": "Transform your coding agents with Superpowers: a comprehensive software development methodology."
 }

@@ -2,9 +2,9 @@
   "title": "anomalyco/opencode",
   "claim": "anomalyco/opencode — The open source coding agent.",
   "score": 7,
-  "why_good": "already crowded (190,526★) — real signal but late; 24,211 forks (12% of stars) — people build on it; 983 contributors, 668 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "already a crowded race — the winners are largely set; a founder needs a sharper wedge",
+  "why_good": "OpenCode is an AI coding agent that provides two distinct agents: a full-access build agent for development and a read-only plan agent for code exploration. It allows users to switch seamlessly between agents for tailored coding tasks.",
+  "value": "Developers and software teams pay for OpenCode to enhance their coding efficiency and safety in exploring new projects, addressing the need for both development and analysis in one tool.",
+  "risk": "OpenCode may struggle against established IDEs that dominate the market, which offer deep integrations and extensive ecosystems that users are accustomed to.",
   "evidence": [
     "https://github.com/anomalyco/opencode",
     "190,526★",
@@ -23,10 +23,18 @@
   "posted_at": "2026-07-28T19:44:07Z",
   "i18n": {
     "zh": {
-      "claim": "anomalyco/opencode — 开源编码代理。",
-      "why_good": "竞争已经非常激烈（190,526★）— 真实信号但已晚；24,211个分支（占星数的12%）— 人们在此基础上进行开发；983位贡献者，过去30天668次提交 — 积极维护中。",
-      "value": "每个AI产品所需的基础设施 — 以基于使用的API形式盈利，并提供托管/管理层。",
-      "risk": "竞争已经相当激烈 — 胜者基本已定；创始人需要更具竞争力的切入点。"
+      "claim": "用OpenCode，开放源代码的AI编码代理，改变您的编码体验，拥有190,526颗星！",
+      "why_good": "OpenCode是一个AI编码代理，提供两个不同的代理：用于开发的完全访问构建代理和用于代码探索的只读计划代理。它允许用户无缝切换代理，以满足特定的编码任务。",
+      "value": "开发人员和软件团队为OpenCode付费，以提高编码效率和在探索新项目时的安全性，满足一个工具中开发和分析的需求。",
+      "risk": "OpenCode可能会面临市场上占主导地位的成熟IDE的竞争，这些IDE提供深度集成和用户习惯的广泛生态系统。",
+      "hook": "用OpenCode，开放源代码的AI编码代理，改变您的编码体验，拥有190,526颗星！",
+      "does": "OpenCode是一个AI编码代理，提供两个不同的代理：用于开发的完全访问构建代理和用于代码探索的只读计划代理。它允许用户无缝切换代理，以满足特定的编码任务。",
+      "edge": "独特的双代理系统使用户能够轻松在开发和分析模式之间切换，满足编码和探索需求。",
+      "why_use": "选择OpenCode，因为它无与伦比的双代理功能，支持主动编码和安全探索不熟悉的代码库，与标准编码工具不同。"
     }
-  }
+  },
+  "does": "OpenCode is an AI coding agent that provides two distinct agents: a full-access build agent for development and a read-only plan agent for code exploration. It allows users to switch seamlessly between agents for tailored coding tasks.",
+  "edge": "The unique dual-agent system enables users to switch between development and analysis modes effortlessly, catering to both coding and exploratory needs.",
+  "why_use": "Choose OpenCode for its unparalleled dual-agent functionality, which supports both active coding and safe exploration of unfamiliar codebases, unlike standard coding tools.",
+  "hook": "Transform your coding experience with OpenCode, the open-source AI coding agent boasting 190,526 stars!"
 }
