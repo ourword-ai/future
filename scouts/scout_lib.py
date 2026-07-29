@@ -248,6 +248,61 @@ def llm_copy(f):
             print(f"  [llm_copy attempt {_i+1} ({_mdl}) failed: {e!r}]", file=sys.stderr)
             time.sleep(4*(_i+1))
     return None
+# ---------------------------------------------------------------------------
+# Integrity + originality gate. The board recommends what is worth BUILDING, so
+# projects whose core value depends on abusing someone else's service, or that are
+# renamed forks with no substantive delta, never ship — regardless of star count.
+# Deterministic (runs before any LLM call) so it cannot be talked around.
+# ---------------------------------------------------------------------------
+INTEGRITY_VETO = [
+    ("account-farming",  r"(batch|bulk|mass|auto)[\s_-]?(regist|signup|sign-up)|account (generator|creator|farm|pool)|批量注册|养号|账号\s*(池|工厂)"),
+    ("captcha-evasion",  r"\b(re)?captcha\b.{0,40}\b(solv|bypass|break)|\b(bypass|evade|defeat)\b.{0,25}\b(rate limit|ban|detection|risk control)|验证码.{0,10}(识别|绕过|破解)|风控绕过"),
+    ("temp-identity",    r"(temp(orary)?[\s_-]?(mail|email|phone|sms)|sms.{0,10}(verification|receive)).{0,60}(regist|signup|account)|接码平台|临时邮箱.{0,20}注册"),
+    ("paid-api-resale",  r"\b(free|unlimited)\b.{0,25}\b(api|quota|credits?|tokens?)\b.{0,25}\b(pool|proxy|mirror|unlimited|forever)|reverse[\s_-]?prox\w*.{0,30}(openai|anthropic|claude|grok|gemini|chatgpt)|\b2api\b.{0,30}(账号|批量|池)|白嫖|免费.{0,8}(额度|接口|key)"),
+    ("credential-pool",  r"(cookie|session|token|credential|account)\s*(pool|farm)|号池|cookie池|共享账号"),
+    ("piracy",           r"\b(keygen|nulled|activator|cracked)\b|licen[cs]e\s*(crack|patch|bypass)|破解|激活码"),
+    ("engagement-farm",  r"(auto|bulk|mass)[\s_-]?(like|follow|view|upvote|retweet)\w*|\b(like|follow|view|engagement)[\s_-](bot|farm|booster)\b|刷(粉|赞|量|播放|阅读)|涨粉神器"),
+    ("impersonation",    r"(deepfake|face[\s_-]?swap|voice[\s_-]?clon\w+).{0,40}(anyone|celebrit|politic|kyc|verification|scam)|换脸.{0,10}(冒充|诈骗)"),
+    ("pii-harvest",      r"(email|phone|contact|lead)s?\s*(list|database|dump)\s*(scrap|extract|harvest)|scrap\w*[^.。!?]{0,30}\b(personal data|pii|resell)\b|爬取[^。]{0,12}(售卖|出售)"),
+]
+# Renamed forks / cosmetic derivatives of an existing well-known project.
+DERIVATIVE_NAME = re.compile(
+    r"[-_](improved|enhanced|plus|promax|pro-max|better|ultimate|reborn|remake|clone|mirror|copy|fork)$"
+    r"|^(open|free)(ai|claude|codex|cursor|grok|gemini|chatgpt|copilot|devin|manus|clawde|claude-?code)\b",
+    re.I)
+# Content, not product: the board's own rule, enforced deterministically too.
+COLLECTION_NAME = re.compile(r"^(awesome|curated)[-_]|[-_](awesome|cheatsheet|cheat-sheet|handbook|guide|tutorials?|course|notes|roadmap|anthology|gallery|prompts?|skins?|themes?)$", re.I)
+
+def _ev_int(f, pat):
+    for e in f.get("evidence") or []:
+        m = re.search(pat, str(e))
+        if m:
+            try: return int(m.group(1).replace(",", ""))
+            except Exception: return None
+    return None
+
+def integrity_veto(f):
+    """Return a veto reason string, or None if the candidate is clean."""
+    zh = (f.get("i18n") or {}).get("zh") or {}
+    blob = " ".join(str(x) for x in [
+        f.get("title", ""), f.get("claim", ""), f.get("why_good", ""), f.get("does", ""),
+        f.get("edge", ""), f.get("value", ""), f.get("hook", ""),
+        zh.get("claim", ""), zh.get("hook", ""), zh.get("does", ""), zh.get("value", ""),
+    ] + list(f.get("tags") or [])).lower()
+    for name, pat in INTEGRITY_VETO:
+        if re.search(pat, blob, re.I):
+            return f"integrity:{name}"
+    repo = (f.get("title") or "")
+    slug = repo.split("/")[-1] if "/" in repo else repo
+    contributors = _ev_int(f, r"(\d[\d,]*)\s*contributors?")
+    commits = _ev_int(f, r"(\d[\d,]*)\s*commits")
+    if DERIVATIVE_NAME.search(slug) and (contributors is None or contributors <= 2) \
+       and (commits is None or commits <= 30):
+        return "derivative: renamed fork with no substantive delta"
+    if COLLECTION_NAME.search(slug):
+        return "collection: content/list, not a product"
+    return None
+
 def editor_pick(f):
     """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
     founder could start NOW? Via GitHub Models (free in Actions w/ models:read). Returns
@@ -260,8 +315,16 @@ def editor_pick(f):
     prompt = (
         "You are a hard-nosed startup scout. Judge the project below.\n"
         "pick=false if it is any of: a skills/prompt/awesome/content collection or list; a course, "
-        "book, or newsletter; a demo/toy/joke; an already-huge or famous project or a big company's "
-        "product (no opening left); or too vague to be a business.\n"
+        "book, guide, or newsletter; a demo/toy/joke/cosmetic skin or theme; an already-huge or famous "
+        "project or a big company's product (no opening left); a renamed fork or thin wrapper of an "
+        "existing project with no substantive delta; or too vague to be a business.\n"
+        "HARD VETO — set pick=false AND score<=3 if the project's core value depends on abusing "
+        "another service: mass/automated account creation, CAPTCHA or rate-limit or ban evasion, "
+        "temp-mail/SMS identity farms, reselling or proxying access to a paid API, credential/cookie "
+        "pools, piracy or licence cracking, engagement farming (auto likes/follows/views), scraping "
+        "personal data for resale, or impersonation. Popularity is NOT a defence: a repo can have "
+        "10k stars and still be vetoed here. A legitimate tool that merely CAN be misused (a browser "
+        "automation library, a debugging proxy) is fine — judge the core pitch, not the edge case.\n"
         "pick=true only if there is a clear product a small team could build and charge money for.\n"
         "score = startup-worthiness 0-10, STRICTLY calibrated so scores spread out:\n"
         "  10 = once-a-month exceptional; 9 = clear breakout, real pull AND an open market;\n"
@@ -300,6 +363,10 @@ def post_ideas(cands, scout, cap=6):
             if key in have:
                 continue
             # ---- quality is settled AT INGEST: copy + editorial gate BEFORE anything ships ----
+            _veto = integrity_veto(f)
+            if _veto:
+                print(f"  \u2717 {_veto}: {f.get('title')}", file=sys.stderr)
+                continue
             _score = f.get("score") or 0
             if _score >= 7:
                 c = llm_copy(f)                  # README-grounded bilingual copy (retried + fallback model)
