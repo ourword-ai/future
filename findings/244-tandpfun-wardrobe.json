@@ -2,9 +2,9 @@
   "title": "tandpfun/wardrobe",
   "claim": "tandpfun/wardrobe — Your clothes, extracted and organized with gpt-image.",
   "score": 9,
-  "why_good": "This project directly addresses the frustration of managing clothing choices, offering a unique solution for busy professionals who want to optimize their wardrobe without the hassle.",
-  "value": "Fashion-conscious individuals pay for a seamless way to visualize and curate their outfits, eliminating decision fatigue and enhancing their personal style.",
-  "risk": "The reliance on image recognition technology may falter against established fashion apps like Cladwell, which already have a loyal user base.",
+  "why_good": "Ships the thing closet apps never had: gpt-image cutouts of your clothes plus photos of you wearing generated outfits — the viral personal-lookbook demo made self-hostable, and 233 forks in two weeks means people actually run it.",
+  "value": "商业价值: digital-closet apps (Whering, Acloset) already charge subscriptions on far less; add affiliate outfit commerce and resale listings on top of closet data and try-on becomes the front end of a shopping funnel.",
+  "risk": "Today it needs your own OpenAI key and a reference photo — any incumbent is one mobile app away from the same feature, and per-image generation cost squeezes consumer-subscription margins.",
   "evidence": [
     "https://github.com/tandpfun/wardrobe",
     "1,576★",
@@ -26,9 +26,9 @@
     "zh": {
       "claim": "Wardrobe使用AI提取和组织您的衣物，为您的衣橱提供个人造型师。",
       "hook": "Wardrobe使用AI组织您的衣橱，将1,576颗星转化为您的个人造型师。",
-      "why_good": "该项目直接解决了管理服装选择的烦恼，为忙碌的专业人士提供了一种独特的解决方案，帮助他们优化衣橱而不感到麻烦。",
-      "value": "注重时尚的个人为可视化和策划他们的服装付费，消除决策疲劳，提升个人风格。",
-      "risk": "对图像识别技术的依赖可能会在面对已经拥有忠实用户基础的成熟时尚应用如Cladwell时遇到困难。"
+      "why_good": "它做出了衣橱类 App 一直缺的东西：gpt-image 抠出你的衣服，再生成“你本人”的穿搭效果图——把爆火的个人 Lookbook 演示变成可自部署的产品，两周 233 fork 说明有人真的在跑。",
+      "value": "商业价值：数字衣橱应用（Whering、Acloset）靠更弱的功能已经在收订阅费；再叠加基于衣橱数据的穿搭带货与二手挂单，试穿就成了购物漏斗的入口。",
+      "risk": "目前要自备 OpenAI Key 和参考照片——任何在位者一个手机 App 就能复刻同样功能，按张计费的生图成本也会压薄消费订阅的利润。"
     }
   },
   "pick": true,
