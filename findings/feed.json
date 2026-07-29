@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T08:08:54Z",
+  "generated_at": "2026-07-29T08:12:15Z",
   "board": {
     "ideas": 210,
     "domains": 6,
@@ -65,7 +65,8 @@
           "why_use": "与普通的“网站无法访问”消息不同，它能识别具体的审查机制，使用户能够选择合适的规避工具或报告精确的问题。",
           "value": "网络管理员和审查规避开发者使用它诊断干扰并优化缓解策略。",
           "risk": "可能难以应对Roskomnadzor不断发展的审查技术，或在ISP采用更不透明的封锁方法时面临功能冗余的风险。",
-          "why_good": "通过分析DNS、TCP、TLS和HTTP层的故障，诊断RKN/TSPU互联网封锁。为每个站点输出清晰的判决，并根据信号强度校准信心等级。"
+          "why_good": "通过分析DNS、TCP、TLS和HTTP层的故障，诊断RKN/TSPU互联网封锁。为每个站点输出清晰的判决，并根据信号强度校准信心等级。",
+          "claim": "MayersScott/rkn-block-checker — 逐层诊断 RKN/TSPU 网络封锁（DNS、TCP、TLS、HTTP）"
         }
       },
       "id": "291-mayersscott-rkn-block-checker",
@@ -1359,9 +1360,9 @@
       "title": "change-42-yhmm/quota-float",
       "claim": "change-42-yhmm/quota-float — A lightweight Windows/macOS desktop widget that keeps your Codex quota visible from your local Codex Desktop session.",
       "score": 7,
-      "why_good": "309★, 20 forks, ~16★/day",
-      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
+      "value": "Codex users who need precise quota monitoring will pay for Quota Float to avoid unexpected usage limits that could disrupt their workflows.",
+      "risk": "The primary risk is competition from existing Codex management tools that may offer broader features, potentially overshadowing Quota Float's focused utility.",
       "evidence": [
         "https://github.com/change-42-yhmm/quota-float",
         "309★",
@@ -1386,20 +1387,28 @@
       "posted_at": "2026-07-28T15:27:22Z",
       "i18n": {
         "zh": {
-          "claim": "change-42-yhmm/quota-float — 一款轻量级的 Windows/macOS 桌面小工具，能够在本地 Codex Desktop 会话中实时显示您的 Codex 配额。",
-          "why_good": "309★，20 个分支，约每天 16★",
-          "value": "一个完善的工作流程，专业用户为其支付月费，并且可以进行团队升级",
-          "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有竞争者是否会将其吸收"
+          "claim": "通过Quota Float的始终在线桌面小部件，永远不会错过Codex配额更新！",
+          "why_good": "Quota Float是一个轻量级的Windows和macOS桌面小部件，显示您的Codex配额，包括5小时和每周限制，以紧凑、始终可见的格式。它提供有关配额状态和重置时间的实时更新。",
+          "value": "需要精确配额监控的Codex用户将为Quota Float支付，以避免意外的使用限制，这可能会干扰他们的工作流程。",
+          "risk": "主要风险来自现有的Codex管理工具，它们可能提供更广泛的功能，从而可能掩盖Quota Float的专注效用。",
+          "hook": "通过Quota Float的始终在线桌面小部件，永远不会错过Codex配额更新！",
+          "does": "Quota Float是一个轻量级的Windows和macOS桌面小部件，显示您的Codex配额，包括5小时和每周限制，以紧凑、始终可见的格式。它提供有关配额状态和重置时间的实时更新。",
+          "edge": "其独特的浮动球设计在空闲时会折叠，仅在悬停时展开，确保在保持关键信息可访问的同时，减少干扰。",
+          "why_use": "选择Quota Float是因为它提供准确的实时配额跟踪，而不需要其他配额管理工具中可能没有的杂乱功能。"
         }
-      }
+      },
+      "does": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
+      "edge": "Its unique floating orb design collapses when idle, expanding only on hover, ensuring minimal distraction while keeping critical information accessible.",
+      "why_use": "Choose Quota Float for its accurate, real-time quota tracking without the clutter of unnecessary features, unlike other quota management tools that may not provide live updates.",
+      "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!"
     },
     {
       "title": "snownico0722/PaperTodo",
       "claim": "snownico0722/PaperTodo — 极简 Windows 桌面便签工具。让桌面上有几张安静、可用、不会打扰人的纸。WPF 原生，支持待办与 Markdown。——A minimalist Windows desktop sticky note tool. It puts a ",
       "score": 7,
-      "why_good": "1 contributors, 163 commits/30d — actively maintained",
-      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
+      "value": "Individual users seeking a distraction-free note-taking experience pay for the ability to jot down thoughts and tasks instantly, without the overhead of traditional apps.",
+      "risk": "Established productivity tools like Microsoft OneNote or Evernote dominate the market, posing a challenge for user adoption due to their extensive feature sets.",
       "evidence": [
         "https://github.com/snownico0722/PaperTodo",
         "1,282★",
@@ -1424,20 +1433,28 @@
       "posted_at": "2026-07-28T15:27:20Z",
       "i18n": {
         "zh": {
-          "claim": "snownico0722/PaperTodo — 一款极简的 Windows 桌面便签工具。让你的桌面上有几张安静、实用且不会打扰你的便签。基于 WPF 原生开发，支持待办事项和 Markdown。",
-          "why_good": "1 位贡献者，过去 30 天内有 163 次提交 — 积极维护中",
-          "value": "一个成熟的工作流程，专业用户愿意为此支付月费，并且可以进行团队升级",
-          "risk": "可能只是一个功能，而不是一家公司 — 需要评估市场壁垒以及现有竞争者是否会将其吸收"
+          "claim": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
+          "why_good": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
+          "value": "寻求无干扰记笔记体验的个人用户为能够即时记录想法和任务而付费，无需传统应用的复杂性。",
+          "risk": "微软 OneNote 或 Evernote 等成熟的生产力工具主导市场，因其丰富的功能集，用户采用面临挑战。",
+          "hook": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
+          "does": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
+          "edge": "每张便签作为独立窗口操作，使用户能够快速访问和互动，而无需多余的点击或干扰。",
+          "why_use": "选择 PaperTodo，因其简单性和对即时可用性的关注，与其他需要复杂设置和账号管理的记事应用不同。"
         }
-      }
+      },
+      "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
+      "edge": "Each note operates as an independent window, enabling quick access and interaction without unnecessary clicks or distractions.",
+      "why_use": "Choose PaperTodo for its simplicity and focus on immediate usability, unlike other note-taking apps that require complex setups and account management.",
+      "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!"
     },
     {
       "title": "sazardev/shiki",
       "claim": "sazardev/shiki — TUI note-taking app in Rust — Yazi-style navigation, notebooks as independent git repos, real per-note version history, ",
       "score": 8,
-      "why_good": "2 contributors, 74 commits/30d — actively maintained",
-      "value": "a finished workflow prosumers pay a monthly seat for, with a team upsell",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
+      "value": "Developers and power users pay for Shiki to maintain detailed version histories of their notes and leverage git's capabilities for organization and retrieval.",
+      "risk": "Shiki may struggle against established note-taking apps like Notion or Obsidian, which have larger user bases and extensive feature sets.",
       "evidence": [
         "https://github.com/sazardev/shiki",
         "108★",
@@ -1462,20 +1479,28 @@
       "posted_at": "2026-07-28T15:27:19Z",
       "i18n": {
         "zh": {
-          "claim": "sazardev/shiki — Rust 编写的 TUI 笔记应用 — Yazi 风格的导航，笔记本作为独立的 git 仓库，真正的每条笔记版本历史",
-          "why_good": "2 位贡献者，过去 30 天内有 74 次提交 — 积极维护中",
-          "value": "一个成熟的工作流程，专业用户每月支付使用费，团队可进行升级",
-          "risk": "可能只是一个功能，而非一家公司 — 需评估护城河以及现有竞争者是否会将其吸收"
+          "claim": "通过 Shiki 改变您的笔记记录：一个跟踪每个变化的 TUI 应用，支持独立的 git 仓库。",
+          "why_good": "Shiki 是一个基于终端的笔记记录应用，采用三窗格 Yazi 风格导航，允许用户将笔记本管理为独立的 git 仓库。它具有真实的每笔记版本历史、快速模糊搜索和可定制主题。",
+          "value": "开发者和高级用户为 Shiki 付费，以维护其笔记的详细版本历史，并利用 git 的能力进行组织和检索。",
+          "risk": "Shiki 可能会面临来自 Notion 或 Obsidian 等成熟笔记记录应用的竞争，这些应用拥有更大的用户基础和广泛的功能集。",
+          "hook": "通过 Shiki 改变您的笔记记录：一个跟踪每个变化的 TUI 应用，支持独立的 git 仓库。",
+          "does": "Shiki 是一个基于终端的笔记记录应用，采用三窗格 Yazi 风格导航，允许用户将笔记本管理为独立的 git 仓库。它具有真实的每笔记版本历史、快速模糊搜索和可定制主题。",
+          "edge": "Shiki 的突出能力是其真实的每笔记版本历史，使用户能够直接从 TUI 浏览和恢复更改，与其他笔记记录应用不同。",
+          "why_use": "选择 Shiki 由于其与现有 markdown 文件和 git 工作流的无缝集成，使其成为重视版本控制的笔记记录用户的理想选择。"
         }
-      }
+      },
+      "does": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
+      "edge": "Shiki's standout capability is its real per-note version history, enabling users to browse and revert changes directly from the TUI, unlike other note-taking apps.",
+      "why_use": "Choose Shiki for its seamless integration with existing markdown files and git workflows, making it ideal for users who prioritize version control in their note-taking.",
+      "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos."
     },
     {
       "title": "Prism-Shadow/penguin-harness",
       "claim": "Prism-Shadow/penguin-harness — 🐧 Automated Agent Factory on Your Desktop: The Best Self-Improving Harness",
       "score": 8,
-      "why_good": "6 contributors, 86 commits/30d — actively maintained",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "PenguinHarness automates the creation of agent applications by allowing users to type a single sentence, which generates a complete application with scaffolding, code, and run instructions. It connects to over 1,000 models and optimizes itself for improved performance over time.",
+      "value": "AI developers and businesses pay for PenguinHarness to rapidly create and optimize agent applications, gaining a significant edge in productivity and cost savings.",
+      "risk": "The primary risk is competition from established platforms like LangChain, which currently dominate the agent-building space.",
       "evidence": [
         "https://github.com/Prism-Shadow/penguin-harness",
         "209★",
@@ -1500,20 +1525,28 @@
       "posted_at": "2026-07-28T15:27:17Z",
       "i18n": {
         "zh": {
-          "claim": "Prism-Shadow/penguin-harness — 🐧 桌面上的自动化代理工厂：最佳自我改进工具",
-          "why_good": "6 位贡献者，30 天内 86 次提交 — 积极维护中",
-          "value": "每个 AI 产品都需要的基础设施 — 以基于使用的 API 形式盈利 + 提供托管/管理服务",
-          "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有企业是否会将其吸收"
+          "claim": "用PenguinHarness以100倍的速度构建代理应用！",
+          "why_good": "PenguinHarness通过允许用户输入一句话来自动创建代理应用，生成完整的应用程序，包括脚手架、代码和运行指令。它连接到超过1000个模型，并随着时间的推移优化自身性能。",
+          "value": "AI开发者和企业为PenguinHarness付费，以快速创建和优化代理应用，从而在生产力和成本节约上获得显著优势。",
+          "risk": "主要风险来自于像LangChain这样的成熟平台，它们目前在代理构建领域占据主导地位。",
+          "hook": "用PenguinHarness以100倍的速度构建代理应用！",
+          "does": "PenguinHarness通过允许用户输入一句话来自动创建代理应用，生成完整的应用程序，包括脚手架、代码和运行指令。它连接到超过1000个模型，并随着时间的推移优化自身性能。",
+          "edge": "其突出能力是自我进化，代理不仅构建应用程序，还在每次使用后进行评估和优化。",
+          "why_use": "选择PenguinHarness，因为它在数据分析中提供无与伦比的成本效益，以极低的成本提供最佳准确性，远低于竞争对手Claude Code。"
         }
-      }
+      },
+      "does": "PenguinHarness automates the creation of agent applications by allowing users to type a single sentence, which generates a complete application with scaffolding, code, and run instructions. It connects to over 1,000 models and optimizes itself for improved performance over time.",
+      "edge": "Its standout capability is self-evolution, where agents not only build applications but also evaluate and optimize themselves after each use.",
+      "why_use": "Choose PenguinHarness for its unmatched cost-effectiveness, delivering the best accuracy in data analysis at a fraction of the cost compared to competitors like Claude Code.",
+      "hook": "Build agent applications 100× faster with PenguinHarness!"
     },
     {
       "title": "wangxijie001/yoji",
       "claim": "wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 协助办公 · MCP 无限扩展 | An AI desktop companion with emotions — privacy-first, voice wake, office",
       "score": 8,
-      "why_good": "85 forks (16% of stars) — people build on it",
-      "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-      "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+      "why_good": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+      "value": "Tech-savvy professionals and privacy-conscious users pay for a customizable AI assistant that enhances productivity and personal interaction without compromising data security.",
+      "risk": "Yoji may struggle against established AI assistants like Siri or Google Assistant, which have extensive ecosystems and user bases.",
       "evidence": [
         "https://github.com/wangxijie001/yoji",
         "516★",
@@ -1538,12 +1571,20 @@
       "posted_at": "2026-07-28T15:27:15Z",
       "i18n": {
         "zh": {
-          "claim": "wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 办公助手 · MCP 无限扩展 | 一款具有情感的 AI 桌面伴侣 — 以隐私为先，支持语音唤醒，助力办公",
-          "why_good": "85 个分支（占星标的 16%） — 许多人在此基础上进行开发",
-          "value": "每个 AI 产品所需的基础设施 — 以使用量计费的 API + 托管/管理服务",
-          "risk": "可能只是一个功能，而非一家公司 — 需要评估护城河以及现有企业是否会将其吸纳"
+          "claim": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
+          "why_good": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+          "value": "技术精英和注重隐私的用户为一个可定制的 AI 助手付费，该助手在不妥协数据安全的情况下提升生产力和个人互动。",
+          "risk": "Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。",
+          "hook": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
+          "does": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+          "edge": "Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造更具吸引力的用户体验。",
+          "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。"
         }
-      }
+      },
+      "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+      "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
+      "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
+      "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer."
     },
     {
       "title": "William-Lu-stack/Flawless",
@@ -1705,9 +1746,9 @@
       "title": "simonlin1212/TradingAgents-astock",
       "claim": "Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external services.",
       "score": 8,
-      "why_good": "Localization is a moat the US-centric upstream can't casually replicate: T+1 and price-limit rules, 龙虎榜 and 解禁 signals aren't in the original. 708 forks (26% of stars) says Chinese quants adopt it as a base layer, not a bookmark.",
-      "value": "Credible path is paid A-share data + hosted 'AI 投研' on top of the open core — backtest infra, research output, or white-label for brokers and fintechs serving retail that can't use US-built tools.",
-      "risk": "Self-declared research/teaching reproduction ('not investment advice') — productizing walks into CSRC investment-advisory licensing; and upstream TradingAgents or a funded clone could ship official multi-market support.",
+      "why_good": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+      "value": "Institutional investors and trading firms pay for enhanced decision-making capabilities and insights into A-share market dynamics, leveraging the unique roles and data sources that directly impact trading strategies.",
+      "risk": "The project may struggle against established trading platforms that already offer comprehensive analytics and data integration, potentially limiting its adoption among traditional investors.",
       "evidence": [
         "https://github.com/simonlin1212/TradingAgents-astock",
         "2,656★",
@@ -1732,12 +1773,20 @@
       "posted_at": "2026-07-28T12:58:07Z",
       "i18n": {
         "zh": {
-          "claim": "基于65k★ TradingAgents论文框架的深度A股分支：7位AI分析师在中国市场规则下就牛市/熊市进行辩论，使用A股本土数据（龙虎榜/游资/解禁）—— Apache-2.0，pip安装，无需外部服务。",
-          "why_good": "本地化是美国中心上游无法轻易复制的护城河：T+1和价格限制规则，龙虎榜和解禁信号在原始版本中并不存在。708个分支（占星标的26%）表明中国量化分析师将其作为基础层，而非书签。",
-          "value": "可信的路径是付费A股数据 + 基于开放核心的托管‘AI 投研’——回测基础设施、研究成果，或为无法使用美国构建工具的零售经纪商和金融科技公司提供白标服务。",
-          "risk": "自我声明的研究/教学复制（‘非投资建议’）——产品化可能会触及CSRC投资顾问许可；而上游的TradingAgents或一个获得资金的克隆可能会推出官方的多市场支持。"
+          "claim": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
+          "why_good": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+          "value": "机构投资者和交易公司为增强决策能力和对A股市场动态的洞察付费，利用直接影响交易策略的独特角色和数据源。",
+          "risk": "该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。",
+          "hook": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
+          "does": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+          "edge": "其独特能力在于整合7个专业分析师角色，包括政策和游资追踪，这对于应对A股市场的复杂性至关重要。",
+          "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。"
         }
-      }
+      },
+      "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+      "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
+      "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
+      "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!"
     },
     {
       "title": "debpalash/OmniVoice-Studio",
