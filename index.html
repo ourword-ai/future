@@ -86,7 +86,35 @@ section.pane.on{display:block}
 .modeltag{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;background:var(--tint);box-shadow:0 0 0 1px var(--line);color:var(--ink-50)}
 .time{font-size:11px;color:var(--ink-30);white-space:nowrap;font-variant-numeric:tabular-nums}.cardsig{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}.cardsig .pickbadge{margin-left:0}
 .first{display:inline-block;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--up);background:var(--up-bg);padding:2px 6px;border-radius:3px;margin-bottom:8px;line-height:1.4}
-.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.cardimg-wrap{display:block;margin:4px 0 12px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--tint)}.cardimg{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}.hook{font-size:16.5px;font-weight:700;letter-spacing:-.015em;line-height:1.32;margin:2px 0 3px;color:var(--ink)}.lead{font-size:14.5px;line-height:1.6;color:var(--ink);font-weight:450;letter-spacing:-.005em;margin:1px 0 10px}.lead.take{font-size:13.5px;color:var(--ink-70);font-weight:400;margin-top:-2px}.claim.sub{font-size:12.5px;font-weight:500;color:var(--ink-50);line-height:1.4;margin-bottom:7px}.stats{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.stat-b{font-size:11px;font-weight:600;color:var(--ink-50);font-variant-numeric:tabular-nums;background:var(--tint);border:1px solid var(--line);border-radius:5px;padding:2px 7px}
+.claim{font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.45;overflow-wrap:break-word}.tier{margin:0 0 26px}
+.tierhd{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;padding:0 2px 9px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.tiername{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.tiern{font-family:var(--mono);font-size:10px;font-weight:600;padding:1px 6px;border-radius:4px;background:var(--tint);color:var(--ink-50)}
+.tiernote{font-size:11.5px;color:var(--ink-30);line-height:1.5}
+.tierempty{font-size:13.5px;line-height:1.65;color:var(--ink-50);background:var(--tint);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.tier-archive .tierhd{opacity:.72}
+.wbadge{font-size:9.5px;font-weight:600;letter-spacing:.02em;padding:2px 6px;border-radius:4px;background:var(--tint);box-shadow:0 0 0 1px var(--line);color:var(--ink-50);white-space:nowrap}
+.wbadge.heavy{opacity:.6;text-decoration:line-through}
+.fambadge{font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:4px;background:transparent;box-shadow:0 0 0 1px var(--line);color:var(--ink-30);white-space:nowrap}
+.markbadge{font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap}
+.mk-star{background:var(--up-bg,#eef7ee);color:var(--up,#2e7d32)}
+.mk-no{background:var(--tint);color:var(--ink-30);text-decoration:line-through}
+.voices{display:flex;flex-direction:column;gap:6px}
+.voice{display:block;font-size:12.5px;line-height:1.55;color:var(--ink);background:var(--tint);border-left:2px solid var(--line);border-radius:0 6px 6px 0;padding:6px 9px;text-decoration:none}
+.voice.pay{border-left-color:var(--up,#2e7d32)}
+.voice:hover{background:var(--paper)}
+.vk-q{color:var(--up,#2e7d32)}
+.vk-g{color:#b06a00}
+.vk-c{color:#a33}
+.vk-x{color:#3060a8}
+.cattops{margin:4px 0 22px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.cthdmain{font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink-50);margin-bottom:10px;text-transform:uppercase}
+.ctgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.cthd{font-size:12px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ctitem{display:block;font-size:12px;line-height:1.5;color:var(--ink-50);text-decoration:none;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ctitem:hover{color:var(--ink)}
+.ctsc{font-family:var(--mono);font-size:9.5px;color:var(--ink-30);margin-right:6px}
+.cardimg-wrap{display:block;margin:4px 0 12px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--tint)}.cardimg{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}.hook{font-size:16.5px;font-weight:700;letter-spacing:-.015em;line-height:1.32;margin:2px 0 3px;color:var(--ink)}.lead{font-size:14.5px;line-height:1.6;color:var(--ink);font-weight:450;letter-spacing:-.005em;margin:1px 0 10px}.lead.take{font-size:13.5px;color:var(--ink-70);font-weight:400;margin-top:-2px}.claim.sub{font-size:12.5px;font-weight:500;color:var(--ink-50);line-height:1.4;margin-bottom:7px}.stats{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.stat-b{font-size:11px;font-weight:600;color:var(--ink-50);font-variant-numeric:tabular-nums;background:var(--tint);border:1px solid var(--line);border-radius:5px;padding:2px 7px}
 .trwrap{display:none}
 .trlink{font-size:12px;font-weight:500;color:var(--ink-50);cursor:pointer;user-select:none;display:inline-flex;align-items:center;min-height:28px}
 .trbox{display:grid;grid-template-rows:0fr;transition:grid-template-rows var(--dur-slow) var(--ease-out-expo)}
@@ -371,6 +399,40 @@ function predHTML(f){
   const obs=(f.observed!=null)?` · ${L('pWas')} ${Number(f.observed).toLocaleString()}`:"";
   return `<span class="predline">🎯 <b>${esc(p.target_id)}</b> ${esc(p.op)} ${Number(p.target).toLocaleString()} · ${L('pBy')} ${esc(p.resolve_on)}${obs}</span> ${badge}`;
 }
+/* The Standard (docs/STANDARD.md 3): two tiers up front, everything else archived.
+   Entries written before the standard have no verdict — derive one so the board still sorts. */
+function verdictOf(f){
+  const v=f.verdict;
+  if(v==="build"){
+    /* The standard is structural, not a label: the top tier must actually carry verified pain,
+       a nameable gap and a reachable wedge (STANDARD.md 1). Otherwise it drops to Watch. */
+    const painOK=(f.voices&&f.voices.length)||f.pain_verified===true;
+    return (painOK && (f.gap||f.differentiator) && f.workload!=="no") ? "build" : "watch";
+  }
+  if(v==="watch"||v==="archive") return v;
+  if(v==="drop") return "archive";
+  const sc=f.score||0;   /* written before the standard — never the top tier until backfilled */
+  return (sc>=8 && f.pick===true) ? "watch" : "archive";
+}
+function markOf(f){
+  const m=(DATA.marks||{});
+  return m[f.id]||m[f.title]||m[ghRepo(f)||""]||null;
+}
+function workBadge(f){
+  const L={"2w":{zh:"两周可做",en:"2 weeks"},"2m":{zh:"约两个月",en:"~2 months"},"no":{zh:"一个人做不了",en:"too heavy"}}[f.workload];
+  if(!L) return "";
+  return `<span class="wbadge${f.workload==="no"?" heavy":""}">${esc(lang!=="en"?L.zh:L.en)}</span>`;
+}
+function famBadge(f){
+  if(!f.family) return "";
+  const n=(DATA.findings||[]).filter(x=>x.family===f.family).length;
+  return `<span class="fambadge" title="${esc(f.family)}">#${esc(f.family)}${n>2?" ×"+n:""}</span>`;
+}
+function markBadge(f){
+  const mk=markOf(f); if(!mk) return "";
+  const st=mk.mark==="star", t=(mk.why||"");
+  return `<span class="markbadge ${st?"mk-star":"mk-no"}" title="${esc(t)}">${st?"★":"✕"}</span>`;
+}
 function cardImg(f){
   if(f.image) return String(f.image);
   const r=ghRepo(f); return r?("https://opengraph.githubassets.com/ideaboard/"+r):"";
@@ -398,6 +460,18 @@ function ghRepo(f){
   if(/^[\w.-]+\/[\w.-]+$/.test(f.title||""))return f.title;
   return null;
 }
+function vrow(k,label,text){
+  if(!text) return "";
+  return `<div class="vr-row"><span class="vr-k ${k}">${esc(label)}</span><span class="vr-t">${esc(text)}</span></div>`;
+}
+/* First-hand demand quotes — the hardest evidence the standard recognises (STANDARD.md 1). */
+function voicesHTML(f){
+  const v=(f.voices||[]).slice(0,3);
+  if(!v.length) return "";
+  const lab=({zh:"用户原声",ja:"ユーザーの声",ko:"사용자 목소리",es:"Voces"})[lang]||"Voices";
+  const body=v.map(x=>`<a class="voice${x.kind==="pay"?" pay":""}" href="${esc(x.url||"#")}" target="_blank" rel="noopener">${x.kind==="pay"?"💸 ":"😖 "}${esc(String(x.quote||"").slice(0,180))}</a>`).join("");
+  return `<div class="vr-row"><span class="vr-k vk-q">${esc(lab)}</span><span class="vr-t voices">${body}</span></div>`;
+}
 function statsHTML(f){
   const ev=(f.evidence||[]).join("  ");var out=[],m;
   if((m=ev.match(/([\d,]+)\s*(?:\u2605|stars)/i))) out.push('<span class="stat-b">\u2605 '+m[1]+'</span>');
@@ -423,21 +497,26 @@ function cardHTML(f){
   const Z=(lang!=="en"&&f.i18n&&f.i18n[lang])?f.i18n[lang]:{};
   const cvL=({zh:"商业",ja:"商業",ko:"사업",es:"Negocio"})[lang]||"Business";
   const rkL=({zh:"风险",ja:"リスク",ko:"리스크",es:"Riesgo"})[lang]||"risk";
-  const doesL=({zh:"简介",ja:"概要",ko:"개요",es:"Resumen"})[lang]||"Overview";
+  const doesL=({zh:"是什么",ja:"概要",ko:"개요",es:"Resumen"})[lang]||"What it is";
   const edgeL=({zh:"亮点",ja:"ハイライト",ko:"하이라이트",es:"Clave"})[lang]||"Highlight";
+  const whyL=({zh:"为何选它",ja:"選ぶ理由",ko:"선택 이유",es:"Por qué"})[lang]||"Why this";
+  const gapL=({zh:"缺口",ja:"ギャップ",ko:"공백",es:"Brecha"})[lang]||"Gap";
+  const cntL=({zh:"反面",ja:"反論",ko:"반론",es:"En contra"})[lang]||"Against";
+  const difL=({zh:"我会怎么做",ja:"差別化",ko:"차별화",es:"Mi enfoque"})[lang]||"My wedge";
+  const vocL=({zh:"用户原声",ja:"ユーザーの声",ko:"사용자 목소리",es:"Voces"})[lang]||"Voices";
   const model=f.model||meta.model||"", op=f.operator||meta.operator||"", emoji=meta.emoji||"🤖";
   const tr=(lang!=="en"&&f.tr&&f.tr[lang])?f.tr[lang]:null;
   const ck=catKey(f), cat=CATS[ck];
   return `<div class="card" data-dom="${esc(f.domain)}">
     <div class="cardtop"><div class="avatar cat-${ck}">${cat.ic}</div>
       <div class="agentmeta"><div class="agentname">${lang!=="en"?cat.zh:cat.en}</div><div class="src">${esc(f.agent)}${op?" · "+esc(op):""}</div></div>
-      <div class="cardsig">${statsHTML(f)}${(f.score!=null)?`<span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>`:""}${f.pick===true?`<span class="pickbadge">★ ${esc(pickLabel())}</span>`:""}</div>
+      <div class="cardsig">${statsHTML(f)}${(f.score!=null)?`<span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>`:""}${workBadge(f)}${famBadge(f)}${markBadge(f)}${verdictOf(f)==="build"?`<span class="pickbadge">${esc(tierLabel("build"))}</span>`:""}</div>
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     ${(Z.hook||f.hook)?`<div class="hook">${esc(Z.hook||f.hook)}</div>`:""}
     <div class="claim${(Z.hook||f.hook)?" sub":""}">${esc(Z.claim||f.claim)}</div>
     ${cardImg(f)?`<a class="cardimg-wrap" href="${esc(cardHref(f))}" target="_blank" rel="noopener"><img class="cardimg" loading="lazy" referrerpolicy="no-referrer" src="${esc(cardImg(f))}" alt="" data-try="0" onerror="imgRetry(this)"></a>`:""}
-    ${(Z.does||f.does)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-d">${esc(doesL)}</span><span class="vr-t">${esc(Z.does||f.does)}</span></div><div class="vr-row"><span class="vr-k vk-e">${esc(edgeL)}</span><span class="vr-t">${esc([(Z.edge||f.edge),(Z.why_use||f.why_use)].filter(Boolean).join(" "))}</span></div><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div>`:`${(Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:""}${(f.value||f.risk)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div>`:""}`}
+    ${(Z.does||f.does)?`<div class="pr">${vrow("vk-d",doesL,[(Z.does||f.does),(Z.edge||f.edge)].filter(Boolean).join(" "))}${voicesHTML(f)}${vrow("vk-w",whyL,Z.why_use||f.why_use)}${vrow("vk-g",gapL,Z.gap||f.gap)}${vrow("vk-c",cntL,Z.counter||f.counter)}${vrow("vk-x",difL,Z.differentiator||f.differentiator)}${vrow("vk-v",cvL,Z.value||f.value)}${(!(f.gap||f.counter))?vrow("vk-r",rkL,Z.risk||f.risk):""}</div>`:`${(Z.why_good||f.why_good)?`<div class="lead">${esc(Z.why_good||f.why_good)}</div>`:""}${(f.value||f.risk)?`<div class="pr"><div class="vr-row"><span class="vr-k vk-v">${esc(cvL)}</span><span class="vr-t">${esc(Z.value||f.value||"")}</span></div><div class="vr-row"><span class="vr-k vk-r">${esc(rkL)}</span><span class="vr-t">${esc(Z.risk||f.risk||"")}</span></div></div>`:""}`}
     ${tr?`<div class="trwrap"><span class="trlink" role="button" tabindex="0" onclick="tglTr(this)">${t.trShow}</span><div class="trbox"><div class="trin"><div class="trcard"><div class="trnote">${t.trNote}</div>${esc(tr)}</div></div></div></div>`:""}
     <div class="tags">${(f.tags||[]).map(x=>`<span class="tag">#${esc(x)}</span>`).join("")}</div>
     <div class="cardmeta">${predHTML(f)}</div>
@@ -457,9 +536,62 @@ function renderFilters(){
   const present=new Set((DATA.findings||[]).map(f=>catKey(f))), keys=["all",...CAT_ORDER.filter(k=>present.has(k))];
   document.getElementById("filters").innerHTML=keys.map(k=>`<span class="chip${k===activeFilter?" on":""}" role="button" tabindex="0" onclick="setFilter('${k}')">${k==="all"?T().allChip:(CATS[k].ic+" "+(lang!=="en"?CATS[k].zh:CATS[k].en))}</span>`).join("");
 }
+function tierLabel(t){
+  const M={build:{zh:"值得动手",en:"Worth starting",ja:"着手する価値",ko:"착수 가치",es:"Vale empezar"},
+           watch:{zh:"先盯着",en:"Watch",ja:"様子見",ko:"관망",es:"Observar"},
+           archive:{zh:"档案",en:"Archive",ja:"アーカイブ",ko:"보관",es:"Archivo"}}[t]||{};
+  return M[lang]||M.en||t;
+}
+function tierNote(t){
+  const M={build:{zh:"痛被真人验证过 · 缺口说得出口 · 你能补的那一刀",en:"Verified pain · a nameable gap · a wedge open to you"},
+           watch:{zh:"痛够硬，但缺口或切入口还没想清",en:"Pain is verified, but the gap or the wedge is not clear yet"},
+           archive:{zh:"能力信号与拥挤同族，留档备查",en:"Capability signals and crowded families, kept as evidence"}}[t]||{};
+  return (lang!=="en"?M.zh:M.en)||"";
+}
+function emptyTop(){
+  return lang!=="en"
+    ? "今天没有达标的方向。空着是合法结果——不凑数，也不为填页降标准。先看下面「先盯着」。"
+    : "Nothing clears the bar today. An empty top tier is a valid outcome — we do not pad it. See Watch below.";
+}
+/* Per-category Top lists — quick way into a family without scrolling the flow. */
+function catTopsHTML(list){
+  const by={};
+  list.forEach(function(f){const k=catKey(f);(by[k]=by[k]||[]).push(f);});
+  const keys=CAT_ORDER.filter(function(k){return (by[k]||[]).length>=2;});
+  if(!keys.length) return "";
+  const lab=lang!=="en"?"分类 Top":"Top by category";
+  const body=keys.map(function(k){
+    const top=by[k].slice().sort(function(a,b){return (b.score||0)-(a.score||0);}).slice(0,3);
+    return `<div class="ctcol"><div class="cthd">${CATS[k].ic} ${esc(lang!=="en"?CATS[k].zh:CATS[k].en)}</div>`+
+      top.map(function(f){return `<a class="ctitem" href="${esc(cardHref(f))}" target="_blank" rel="noopener"><span class="ctsc">${esc(String(f.score||"-"))}</span>${esc(String(f.title||f.claim||"").slice(0,42))}</a>`;}).join("")+
+      `</div>`;}).join("");
+  return `<div class="cattops"><div class="cthdmain">${esc(lab)}</div><div class="ctgrid">${body}</div></div>`;
+}
+function sectionHTML(t,items,note){
+  return `<div class="tier tier-${t}"><div class="tierhd"><span class="tiername">${esc(tierLabel(t))}</span>`+
+    `<span class="tiern">${items.length}</span><span class="tiernote">${esc(note||tierNote(t))}</span></div>`+
+    (items.length?items.map(cardHTML).join(""):`<div class="tierempty">${esc(emptyTop())}</div>`)+`</div>`;
+}
 function renderFeed(){
-  let list=(DATA.findings||[]).filter(f=>(activeFilter==="all"||catKey(f)===activeFilter)&&(activePick?f.pick===true:(f.score||0)>=activeScore));
-  if(activePick||activeScore>0) list=list.slice().sort((a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||""));
+  const all=(DATA.findings||[]);
+  const inCat=f=>(activeFilter==="all"||catKey(f)===activeFilter);
+  const byScore=(a,b)=>(b.score||0)-(a.score||0)||(b.posted_at||"").localeCompare(a.posted_at||"");
+  // Default view = the two tiers (STANDARD.md 3). Any explicit filter falls back to the flow.
+  if(!activePick && activeScore===0){
+    const cand=all.filter(inCat);
+    const build=cand.filter(f=>verdictOf(f)==="build").sort(byScore);
+    const watch=cand.filter(f=>verdictOf(f)==="watch").sort(byScore).slice(0,12);
+    const seen=new Set(build.concat(watch).map(f=>f.id));
+    const rest=cand.filter(f=>!seen.has(f.id));
+    let html=sectionHTML("build",build)+sectionHTML("watch",watch)+catTopsHTML(cand);
+    const restSlice=rest.slice(0,shown);
+    html+=`<div class="tier tier-archive"><div class="tierhd"><span class="tiername">${esc(tierLabel("archive"))}</span><span class="tiern">${rest.length}</span><span class="tiernote">${esc(tierNote("archive"))}</span></div>${restSlice.map(cardHTML).join("")}</div>`;
+    if(rest.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(rest.length-shown))}</div>`;
+    document.getElementById("feed").innerHTML=html;
+    observeMore();
+    return;
+  }
+  let list=all.filter(f=>inCat(f)&&(activePick?verdictOf(f)==="build":(f.score||0)>=activeScore)).slice().sort(byScore);
   const slice=list.slice(0,shown);
   let html=slice.length?slice.map(cardHTML).join(""):`<div class="loading">—</div>`;
   if(list.length>shown) html+=`<div class="loadmore" id="loadmore" role="button" tabindex="0" onclick="loadMore()">${esc(moreLabel(list.length-shown))}</div>`;
@@ -471,13 +603,13 @@ function scoreAllLabel(){return ({zh:"全部",ja:"すべて",ko:"전체",es:"Tod
 function pickLabel(){return ({zh:"精选",ja:"精選",ko:"엄선",es:"Selección"})[lang]||"Pick";}
 function renderScoreFilters(){
   const F=DATA.findings||[];
-  const np=F.filter(function(f){return f.pick===true;}).length;
+  const np=F.filter(function(f){return verdictOf(f)==="build";}).length;
   const opts=[[0,scoreAllLabel()],[8,"\u22658"],[9,"\u22659"],[10,"10 \u2605"]];
   var h=opts.map(function(o){var v=o[0],lab=o[1];
     var n=v===0?F.length:F.filter(function(f){return (f.score||0)>=v;}).length;
     var on=(!activePick&&v===activeScore)?" on":"";
     return `<span class="chip${on}" role="button" tabindex="0" onclick="setScore(${v})">${esc(lab)} <span class="chipn">${n}</span></span>`;}).join("");
-  h+=`<span class="chip pickchip${activePick?" on":""}" role="button" tabindex="0" onclick="setPick()">\u2605 ${esc(pickLabel())} <span class="chipn">${np}</span></span>`;
+  h+=`<span class="chip pickchip${activePick?" on":""}" role="button" tabindex="0" onclick="setPick()">\u2605 ${esc(tierLabel("build"))} <span class="chipn">${np}</span></span>`;
   document.getElementById("scorefilters").innerHTML=h;
 }
 function setScore(v){activeScore=v;activePick=false;shown=60;renderScoreFilters();renderFeed();}
@@ -526,8 +658,9 @@ function copySnippet(){const txt=document.getElementById("snippet").innerText;co
   const n=(navigator.language||"en").toLowerCase();
   lang=n.startsWith("zh")?"zh":n.startsWith("ja")?"ja":n.startsWith("es")?"es":n.startsWith("ko")?"ko":"en";
   document.getElementById("langSel").value=lang;
+  const marksP=fetch("../marks.json").then(r=>r.ok?r.json():fetch("./marks.json").then(r2=>r2.json())).catch(()=>({}));
   fetch("../findings/feed.json").then(r=>r.ok?r.json():fetch("./findings/feed.json").then(r2=>r2.json()))
-    .then(d=>{DATA=d;applyLang();})
+    .then(d=>marksP.then(m=>{DATA=d;DATA.marks=(m&&m.marks)||{};applyLang();}))
     .catch(()=>{DATA={findings:[],agents:{},clusters:[],stats:{}};applyLang();document.getElementById("feed").innerHTML=`<div class="loading">${T().loadFail}</div>`;});
   applyLang();
 })();

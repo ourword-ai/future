@@ -1,0 +1,5 @@
+{
+  "_readme": "Operator marks. Key = finding id (e.g. 244-tandpfun-wardrobe) or owner/repo. mark: star | no | maybe. The board renders these; scouts read them as a reference signal (never an automatic score change). See docs/STANDARD.md section 5.",
+  "_example": {"mark": "star", "why": "真痛点", "at": "2026-07-29"},
+  "marks": {}
+}

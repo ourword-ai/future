@@ -204,20 +204,35 @@ def llm_copy(f):
     model=os.environ.get("GH_MODELS_MODEL","openai/gpt-4o-mini")
     ev=", ".join(f.get("evidence", []) or [])
     readme=_fetch_readme(f)
+    voices_txt = "\n".join(f"- [{v.get('kind')}] {v.get('quote','')[:200]} ({v.get('url','')})"
+                            for v in (f.get("voices") or [])) or "(none)"
     prompt=(
-        "You curate a public board of open-source projects that could become startups. Write "
-        "PRODUCT-FIRST, SPECIFIC copy grounded in the README below - never generic, never invented.\n"
+        "You write cards for a board whose ONE job is to surface product opportunities a solo "
+        "founder could copy and build now (see docs/STANDARD.md). Write PRODUCT-FIRST, SPECIFIC copy "
+        "grounded in the README below - never generic, never invented.\n"
+        "The reader spends ten minutes a day here and asks one question: is this worth me building?\n"
         "BANNED (never output): 'could pay for premium features', 'subscription model', 'a bigger "
         "player could integrate', 'the market is competitive', 'leverages ... technology', "
         "'streamline workflows'. Replace with the concrete buyer / wedge / incumbent / weakness.\n\n"
         "Reply with ONLY a JSON object. English values first, then faithful 中文 in the *_zh keys:\n"
-        "  hook: one punchy, complete headline sentence (you may fold in the standout number).\n"
-        "  does: what it concretely does - the real capabilities, from the README, in 1-2 tight sentences.\n"
-        "  edge: its single most notable, standout capability (the thing it does that others do not).\n"
-        "  why_use: the concrete reason to pick THIS over the alternatives.\n"
+        "  hook: WHO IS IN PAIN, AND IN PAIN ENOUGH TO PAY - one concrete sentence naming the people "
+        "and the pain. This is the first line the reader sees. Not a slogan, not a feature list.\n"
+        "  does: what it concretely is and its standout capability, MERGED into 1-2 tight sentences "
+        "from the README (overview + the thing it does that others do not).\n"
+        "  why_use: the concrete reason to pick THIS over the alternatives; if first-hand quotes are "
+        "supplied below, lean on what they actually complain about.\n"
+        "  gap: why it is NOT solved well yet - one sentence, the entry point for a new builder. Use "
+        "one of: only geeks can use it (CLI/self-host, no product around it); the Chinese/local-market "
+        "case is empty; it hits a real pain but solves it imperfectly. Be specific about what is missing.\n"
+        "  counter: the case AGAINST building it, and make it sting - who already owns this, whether a "
+        "platform kills it with one feature, why it may be a feature and not a company. No hedging.\n"
+        "  differentiator: what YOU would do differently to win - the wedge (package it for ordinary "
+        "people / a local-private version / the Chinese-market version), concrete, one sentence.\n"
         "  value: who EXACTLY pays and for what specific outcome (name the buyer and the wedge).\n"
-        "  risk: the concrete reason it might fail - name the incumbent or the exact weakness. Be honest.\n"
-        "  claim_zh, hook_zh, does_zh, edge_zh, why_use_zh, value_zh, risk_zh: faithful 中文.\n\n"
+        "  risk: the single concrete reason it fails - name the incumbent or the exact weakness.\n"
+        "  claim_zh, hook_zh, does_zh, why_use_zh, gap_zh, counter_zh, differentiator_zh, value_zh, "
+        "risk_zh: faithful 中文 (the operator reads 中文 first for China-market entries).\n\n"
+        f"First-hand quotes mined from issues/HN - quote or lean on these, do NOT invent any:\n{voices_txt}\n\n"
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n\n"
         f"README (for grounding):\n{readme}\n\nJSON only.")
@@ -231,14 +246,17 @@ def llm_copy(f):
             with urllib.request.urlopen(req, timeout=45) as r:
                 txt=json.loads(r.read())["choices"][0]["message"]["content"]
             obj=json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
-            if all(obj.get(k) for k in ("does","edge","value","risk")):
-                out={k:str(obj[k]).strip()[:500] for k in ("does","edge","value","risk")}
+            if all(obj.get(k) for k in ("does","value","risk")):
+                out={k:str(obj[k]).strip()[:500] for k in ("does","value","risk")}
                 out["why_good"]=out["does"]
-                if obj.get("why_use"): out["why_use"]=str(obj["why_use"]).strip()[:400]
-                if obj.get("hook"):    out["hook"]=str(obj["hook"]).strip()[:220]
+                for _k,_lim in (("why_use",400),("gap",400),("counter",400),
+                                ("differentiator",400),("edge",500),("hook",220)):
+                    if obj.get(_k): out[_k]=str(obj[_k]).strip()[:_lim]
                 zh={}
                 for _src,dst in (("claim_zh","claim"),("hook_zh","hook"),("does_zh","does"),
-                                ("edge_zh","edge"),("why_use_zh","why_use"),("value_zh","value"),("risk_zh","risk")):
+                                ("edge_zh","edge"),("why_use_zh","why_use"),("gap_zh","gap"),
+                                ("counter_zh","counter"),("differentiator_zh","differentiator"),
+                                ("value_zh","value"),("risk_zh","risk")):
                     if obj.get(_src): zh[dst]=str(obj[_src]).strip()[:500]
                 if zh.get("does"): zh["why_good"]=zh["does"]
                 if zh: out["i18n"]={"zh":zh}
@@ -282,6 +300,28 @@ def _ev_int(f, pat):
             except Exception: return None
     return None
 
+FAMILIES = [
+    ("voice-clone",      ["tts", "voice clone", "voice-clone", "speech synthesis", "声音克隆", "配音"]),
+    ("video-edit",       ["video edit", "timeline", "clip", "剪辑", "montage"]),
+    ("photo-memory",     ["photo", "album", "memories", "相册", "照片", "scrapbook"]),
+    ("handwriting-ink",  ["handwriting", "e-ink", "eink", "remarkable", "手写"]),
+    ("local-llm",        ["llama.cpp", "gguf", "on-device", "local model", "offline llm", "端侧", "本地模型"]),
+    ("agent-harness",    ["harness", "coding agent", "cli agent", "agent runtime", "orchestrat"]),
+    ("personal-context", ["memory", "context", "second brain", "human.md", "第二大脑", "上下文"]),
+    ("home-sensing",     ["wifi sensing", "esp32", "sensor", "presence", "感知", "睡眠"]),
+    ("doc-translate",    ["lab result", "contract", "insurance", "体检", "保单", "合同"]),
+]
+
+def family_of(f):
+    """Same-family label. Pile-ups are kept and tagged — the crowding is itself the signal
+    (docs/STANDARD.md 3)."""
+    blob = " ".join(str(x) for x in [f.get("title", ""), f.get("claim", ""), f.get("does", ""),
+                                     f.get("hook", "")] + list(f.get("tags") or [])).lower()
+    for name, kws in FAMILIES:
+        if any(k in blob for k in kws):
+            return name
+    return None
+
 def integrity_veto(f):
     """Return a veto reason string, or None if the candidate is clean."""
     zh = (f.get("i18n") or {}).get("zh") or {}
@@ -304,52 +344,171 @@ def integrity_veto(f):
         return "collection: content/list, not a product"
     return None
 
-def editor_pick(f):
-    """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
-    founder could start NOW? Via GitHub Models (free in Actions w/ models:read). Returns
-    (True/False, reason) or (None, None) if the model is unavailable -> caller leaves it unset."""
+def load_marks(path="marks.json"):
+    """Operator ⭐/❌ marks (docs/STANDARD.md 5). Reference signal only — never auto-scores."""
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+        return d.get("marks") or {}
+    except Exception:
+        return {}
+
+_PAY = re.compile(r"(would|i'?d|happily)\s+pay|pay(ing)?\s+for\s+this|take my money|"
+                  r"是否收费|多少钱|愿意付费|想付钱|付费版|有没有付费|求托管|求个 ?saas", re.I)
+_PAIN = re.compile(r"\b(i (hate|gave up|wasted|struggle|can'?t)|so (annoying|painful|frustrating)|"
+                   r"every ?(day|time) i|no (good|other) (tool|way)|too (hard|complicated) (to|for))|"
+                   r"太麻烦|受不了|折腾|一直没找到|痛点|劝退", re.I)
+
+def demand_voices(f, cap=3):
+    """Mine first-hand demand quotes for a candidate that already passed the gates.
+    Cheap by design (docs/STANDARD.md 4): a couple of public API calls, no extra LLM call.
+    Returns [{"quote","url","src"}] — the hardest evidence the standard recognises."""
+    out, tok = [], (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"))
+    hdr = {"User-Agent": "future-scout", "Accept": "application/vnd.github+json"}
+    if tok:
+        hdr["Authorization"] = f"Bearer {tok}"
+    repo = None
+    for x in [f.get("title", "")] + (f.get("evidence") or []):
+        m = re.search(r"github\.com/([^/\s]+)/([^/\s#?\"']+)", str(x))
+        if m:
+            repo = f"{m.group(1)}/{m.group(2)}"
+            break
+    if repo is None and re.fullmatch(r"[\w.-]+/[\w.-]+", str(f.get("title", "") or "")):
+        repo = f["title"]
+    def _get(url):
+        try:
+            req = urllib.request.Request(url, headers=hdr)
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return json.loads(r.read())
+        except Exception as e:
+            print(f"  [voices {url[:60]}: {e!r}]", file=sys.stderr)
+            return []
+    if repo:
+        items = _get(f"https://api.github.com/repos/{repo}/issues/comments?per_page=60&sort=created&direction=desc")
+        items = items if isinstance(items, list) else []
+        if len(items) < 8:
+            iss = _get(f"https://api.github.com/repos/{repo}/issues?state=all&per_page=25&sort=comments&direction=desc")
+            items += [{"body": (i.get("title", "") + " — " + (i.get("body") or "")), "html_url": i.get("html_url", "")}
+                      for i in (iss if isinstance(iss, list) else [])]
+        for c in items:
+            body = re.sub(r"```.*?```", " ", str(c.get("body") or ""), flags=re.S)
+            body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()
+            if len(body) < 20:
+                continue
+            hit = "pay" if _PAY.search(body) else ("pain" if _PAIN.search(body) else None)
+            if not hit:
+                continue
+            out.append({"quote": body[:240], "url": c.get("html_url") or f"https://github.com/{repo}/issues",
+                        "src": "github", "kind": hit})
+            if len(out) >= cap:
+                break
+    # Show HN / Ask HN threads carry the loudest first-hand pain
+    hn = next((e for e in (f.get("evidence") or []) if "news.ycombinator.com" in str(e)), None)
+    if hn and len(out) < cap:
+        m = re.search(r"id=(\d+)", str(hn))
+        if m:
+            d = _get(f"https://hn.algolia.com/api/v1/items/{m.group(1)}")
+            def walk(node, depth=0):
+                if len(out) >= cap or depth > 2 or not isinstance(node, dict):
+                    return
+                t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(node.get("text") or ""))).strip()
+                if len(t) > 25 and (_PAY.search(t) or _PAIN.search(t)):
+                    out.append({"quote": t[:240], "url": f"https://news.ycombinator.com/item?id={node.get('id')}",
+                                "src": "hn", "kind": "pay" if _PAY.search(t) else "pain"})
+                for ch in (node.get("children") or []):
+                    walk(ch, depth + 1)
+            walk(d)
+    out.sort(key=lambda v: 0 if v["kind"] == "pay" else 1)   # willingness-to-pay first
+    return out[:cap]
+
+def editor_pick(f, voices=None):
+    """The Standard (docs/STANDARD.md 1 & 3) as a single judgement call.
+
+    A useful entry = verified pain x a nameable gap x a wedge open to the operator.
+    Returns (pick, reason, score, extra) where extra carries verdict/workload/gap/
+    consumer_angle; (None, None, None, {}) if the model is unavailable -> caller holds
+    the candidate for the next run rather than shipping it unvetted."""
     tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not tok:
-        return None, None, None
+        return None, None, None, {}
     model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
     ev = ", ".join(f.get("evidence", []) or [])
+    vq = "\n".join(f"- [{v.get('kind')}] {v.get('quote','')[:180]}" for v in (voices or [])) or "(none found)"
     prompt = (
-        "You are a hard-nosed startup scout. Judge the project below.\n"
-        "pick=false if it is any of: a skills/prompt/awesome/content collection or list; a course, "
-        "book, guide, or newsletter; a demo/toy/joke/cosmetic skin or theme; an already-huge or famous "
-        "project or a big company's product (no opening left); a renamed fork or thin wrapper of an "
-        "existing project with no substantive delta; or too vague to be a business.\n"
-        "HARD VETO — set pick=false AND score<=3 if the project's core value depends on abusing "
-        "another service: mass/automated account creation, CAPTCHA or rate-limit or ban evasion, "
-        "temp-mail/SMS identity farms, reselling or proxying access to a paid API, credential/cookie "
-        "pools, piracy or licence cracking, engagement farming (auto likes/follows/views), scraping "
-        "personal data for resale, or impersonation. Popularity is NOT a defence: a repo can have "
-        "10k stars and still be vetoed here. A legitimate tool that merely CAN be misused (a browser "
-        "automation library, a debugging proxy) is fine — judge the core pitch, not the edge case.\n"
-        "pick=true only if there is a clear product a small team could build and charge money for.\n"
-        "score = startup-worthiness 0-10, STRICTLY calibrated so scores spread out:\n"
-        "  10 = once-a-month exceptional; 9 = clear breakout, real pull AND an open market;\n"
-        "  8 = strong but a visible weakness; 7 = borderline keep; 6 or less = not board-worthy.\n"
-        "Most keeps should land on 7-8. Reserve 9-10 for evidence, not vibes.\n\n"
+        "You are the editor of a board whose ONE job is to surface product opportunities a solo "
+        "founder could copy and build now. Judge the project against this standard.\n\n"
+        "A useful entry needs ALL THREE:\n"
+        " (1) VERIFIED PAIN — first-hand evidence real people want this: someone saying they'd pay, "
+        "someone genuinely complaining, people forking it to run their own. Stars are attention, NOT "
+        "demand, and never satisfy this alone. Repo age is irrelevant: an older project with real "
+        "users beats a fresh star spike.\n"
+        " (2) A GAP YOU CAN NAME IN ONE SENTENCE — one of: only geeks can use it (CLI/self-host, no "
+        "product around the capability); the Chinese/local-market case is empty; it hits a real pain "
+        "but solves it imperfectly.\n"
+        " (3) A WEDGE OPEN TO A SOLO FOUNDER — NOT hardware manufacturing, NOT a burn-money-for-speed "
+        "race, NOT anything needing BD/enterprise sales to start, NOT pure B2B internal tooling.\n\n"
+        "'Someone already built it' is GOOD news — it is demand evidence. The window only closes if "
+        "they have also served non-technical users well.\n"
+        "Developer/agent-infra tools are NOT opportunities in themselves, only capability signals: "
+        "they may reach the front page only if you can state the opportunity on the ordinary-person "
+        "side — put that in consumer_angle. Ordinary-person products are preferred.\n"
+        "HARD VETO (verdict=drop, score<=3), popularity is no defence: core value depends on abusing "
+        "another service (mass account creation, CAPTCHA/rate-limit/ban evasion, temp-mail or SMS "
+        "identity farms, reselling/proxying a paid API, credential or cookie pools, piracy, engagement "
+        "farming, scraping personal data for resale, impersonation); or it is a renamed fork / thin "
+        "wrapper with no substantive delta; or it is content dressed as product (awesome list, guide, "
+        "course, prompt gallery, cosmetic skin). A legitimate tool that merely COULD be misused is fine.\n\n"
+        "verdict:\n"
+        "  'build'   = all three conditions hold, the gap is concrete, workload is 2w or 2m\n"
+        "  'watch'   = pain is verified but the gap or the wedge is not clear yet, or workload is heavy\n"
+        "  'archive' = worth keeping as evidence (capability signal, crowded family) but not front page\n"
+        "  'drop'    = fails the red line, or no verified pain at all\n"
+        "score = is it worth BUILDING, 0-10, strictly: 10 once-a-month exceptional; 9 breakout with an "
+        "open market; 8 strong with a visible weakness; 7 borderline; <=6 not front-page. An empty top "
+        "tier is an acceptable outcome — do NOT inflate to fill the board.\n"
+        "workload = '2w' (a solo dev + AI ships a usable version in two weeks) | '2m' (about two "
+        "months) | 'no' (out of reach for one person).\n\n"
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
-        f"Why: {f.get('why_good','')}\nSignals: {ev}\nDomain: {f.get('domain','')}\n\n"
-        "Reply with ONLY JSON: {\"pick\": true|false, \"score\": 0-10, \"reason\": \"one short sentence\"}")
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 140,
+        f"What it does: {f.get('does') or f.get('why_good','')}\n"
+        f"Signals: {ev}\nDomain: {f.get('domain','')}\n"
+        f"First-hand quotes found in issues/HN (may be empty):\n{vq}\n\n"
+        "Reply with ONLY JSON: {\"verdict\":\"build|watch|archive|drop\", \"score\":0-10, "
+        "\"workload\":\"2w|2m|no\", \"pain_verified\":true|false, "
+        "\"gap\":\"one sentence: why it is not solved well yet\", "
+        "\"consumer_angle\":\"the ordinary-person opportunity, or empty if it already is one\", "
+        "\"reason\":\"one short sentence\"}")
+    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 320,
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     try:
         req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
               headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
                        "User-Agent": "future-scout"})
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(req, timeout=40) as r:
             txt = json.loads(r.read())["choices"][0]["message"]["content"]
-        m = re.search(r"\{.*\}", txt, re.S)
-        obj = json.loads(m.group(0))
+        obj = json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
+        verdict = str(obj.get("verdict") or "").strip().lower()
+        if verdict not in ("build", "watch", "archive", "drop"):
+            verdict = "archive"
         sc = obj.get("score")
         sc = int(sc) if isinstance(sc, (int, float)) and 0 <= sc <= 10 else None
-        return bool(obj.get("pick")), str(obj.get("reason", ""))[:200], sc
+        wl = str(obj.get("workload") or "").strip().lower()
+        wl = wl if wl in ("2w", "2m", "no") else None
+        pain = bool(obj.get("pain_verified"))
+        # The standard is enforced here, not in the model's goodwill:
+        # no verified pain -> never the top tier; unreachable workload -> watch at best.
+        if verdict == "build" and (not (pain or voices) or wl == "no"):
+            verdict = "watch"
+        extra = {"verdict": verdict, "pain_verified": pain}
+        if wl:
+            extra["workload"] = wl
+        for k in ("gap", "consumer_angle"):
+            if obj.get(k):
+                extra[k] = str(obj[k]).strip()[:300]
+        return (verdict == "build"), str(obj.get("reason", ""))[:200], sc, extra
     except Exception as e:
         print(f"  [editor_pick skip: {e!r}]", file=sys.stderr)
-        return None, None, None
+        return None, None, None, {}
+
+MARKS = load_marks()   # operator ⭐/❌ (docs/STANDARD.md 5)
 
 def post_ideas(cands, scout, cap=6):
     """Write vetted startup-worthy ideas to the board (no predictions). Dedup by repo."""
@@ -370,6 +529,11 @@ def post_ideas(cands, scout, cap=6):
                 continue
             _score = f.get("score") or 0
             if _score >= 7:
+                # first-hand demand quotes — mined only for candidates that already passed the
+                # cheap gates (docs/STANDARD.md 4: mine late, mine cheap)
+                voices = demand_voices(f)
+                if voices:
+                    f["voices"] = voices
                 c = llm_copy(f)                  # README-grounded bilingual copy (retried + fallback model)
                 if c is None:                    # never ship template copy — candidate retries next run
                     print(f"  [hold] llm_copy unavailable — {f.get('title')} retried next run", file=sys.stderr)
@@ -378,9 +542,11 @@ def post_ideas(cands, scout, cap=6):
                 f.update(c)
                 if zh:
                     f.setdefault("i18n", {}).setdefault("zh", {}).update(zh)
-                pk, why, esc = editor_pick(f)    # strict editorial gate + calibrated score
-                if pk is False:
-                    print(f"  ✗ editor veto: {f.get('title')} — {why}", file=sys.stderr)
+                pk, why, esc, extra = editor_pick(f, voices)   # the Standard, as one call
+                if extra:
+                    f.update(extra)
+                if extra.get("verdict") == "drop":
+                    print(f"  ✗ dropped: {f.get('title')} — {why}", file=sys.stderr)
                     continue
                 if pk is not None:
                     f["pick"] = pk
@@ -391,6 +557,11 @@ def post_ideas(cands, scout, cap=6):
                         print(f"  ✗ below bar ({esc}/10): {f.get('title')}", file=sys.stderr)
                         continue
                     f["score"] = esc
+                f.setdefault("family", family_of(f))
+                _mk = MARKS.get(f.get("title") or "")
+                if _mk and _mk.get("mark") == "no":
+                    # reference, not a rule (docs/STANDARD.md 5): surface it, never auto-score
+                    f["similar_marked"] = {"mark": "no", "why": (_mk.get("why") or "")[:120]}
             body = idea_body(f)
             title = "idea: " + (f.get("title") or f["claim"][:50])
             url = None

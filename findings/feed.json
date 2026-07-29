@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T10:44:19Z",
+  "generated_at": "2026-07-29T11:03:14Z",
   "findings": [
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
