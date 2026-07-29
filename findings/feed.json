@@ -7278,5 +7278,19 @@
     "domains": 6,
     "sources": 3,
     "avg_score": 8.0
+  },
+  "health": {
+    "status": "ok",
+    "checked_at": "2026-07-29T12:10:35Z",
+    "feed_age_hours": 1.1,
+    "open": 0,
+    "resolved": 0,
+    "overdue_unresolved": 0,
+    "demand": {
+      "used_by_outsiders": false,
+      "external_finding_agents": [],
+      "external_issue_authors": [],
+      "external_issue_count": 0
+    }
   }
 }
