@@ -2,10 +2,10 @@
   "title": "makerspet/oomwoo",
   "claim": "makerspet/oomwoo — An open-source robot vacuum: LiDAR SLAM on ESP32, ROS2, Home Assistant, fully hackable.",
   "hook": "An open-source robot vacuum you can build and flash yourself — LiDAR SLAM, ROS2 and Home Assistant, no cloud.",
-  "why_good": "Roomba-class navigation (LiDAR SLAM on a cheap ESP32) as a fully open, hackable platform is what privacy-minded smart-home owners and robotics tinkerers have wanted — the Valetudo idea extended to the whole robot; 6.6k stars in seven weeks shows the pull.",
-  "value": "A hardware-plus-firmware community play: assembled units, part kits, or a supported pro firmware and fleet dashboard for the home-lab and education market that already buys Prusa and Home Assistant gear.",
-  "risk": "Hardware is capital- and support-heavy; staying a beloved DIY project is far easier than becoming a company, and iRobot and Roborock own manufacturing and price.",
-  "score": 7,
+  "why_good": "An open-source robot vacuum you build yourself — Raspberry Pi, 3D-printed chassis, Arduino/ESP32, a cheap 2D LiDAR for mapping and autonomous ROS2/Nav2 navigation, native Home Assistant, fully local with no cloud.",
+  "value": "Buyer: home-lab makers and robotics-education programs. Money: parts kits or assembled units and a supported pro firmware/app layer.",
+  "risk": "Very early: official build instructions land Fall 2026 and v0 is bare-bones with most deliverables unfinished. Hardware is capital- and support-heavy, and iRobot/Roborock own manufacturing and price — right now it's 'can they ship,' not a usable product.",
+  "score": 6,
   "evidence": [
     "https://github.com/makerspet/oomwoo",
     "6,639★",
@@ -31,9 +31,15 @@
     "zh": {
       "claim": "makerspet/oomwoo —— 开源扫地机器人:ESP32 上跑 LiDAR SLAM,支持 ROS2、Home Assistant,完全可魔改。",
       "hook": "一台你能自己组装、自己刷固件的开源扫地机器人——LiDAR SLAM、ROS2、接 Home Assistant,全程不上云。",
-      "why_good": "把 Roomba 级导航(在便宜的 ESP32 上跑 LiDAR SLAM)做成完全开源、可魔改的平台,正是注重隐私的智能家居玩家和机器人爱好者想要的——把 Valetudo 的思路扩展到「整台机器人」;七周 6.6 千星说明有拉力。",
-      "value": "走硬件 + 固件的社区路线:卖整机、零件套件,或面向已在买 Prusa、Home Assistant 的家庭实验室与教育市场,卖带支持的专业版固件和车队看板。",
-      "risk": "硬件既烧钱又烧售后;当一个受欢迎的 DIY 项目,比做成一家公司容易太多,而 iRobot、石头科技握着制造与价格。"
+      "why_good": "一台你自己动手造的开源扫地机器人:Raspberry Pi + 3D 打印外壳 + Arduino/ESP32,用便宜的 2D LiDAR 建图、跑 ROS2/Nav2 自主导航,原生接 Home Assistant,全本地、不依赖云。",
+      "value": "买家:家庭实验室创客和机器人教育项目。变现:零件套件或整机,以及带支持的专业固件/应用层。",
+      "risk": "现状很早:官方 build 说明要 2026 秋才出,v0 还是骨架、多数交付项没完成。硬件既烧钱又烧售后,iRobot/石头握着制造与价格——现在是『看它能不能真交付』,不是能上手的产品。",
+      "does": "一台你自己动手造的开源扫地机器人:Raspberry Pi + 3D 打印外壳 + Arduino/ESP32,用便宜的 2D LiDAR 建图、跑 ROS2/Nav2 自主导航,原生接 Home Assistant,全本地、不依赖云。",
+      "edge": "它把整台机器人都开源了——家电级的硬件、固件和 ROS2 软件,全部可 3D 打印、可魔改、无厂商锁定——市面上几乎没有第二家。",
+      "why_use": "适合注重隐私、爱折腾的智能家居玩家和机器人教育——想要一台不上云、能自己改和自己修的扫地机。"
     }
-  }
+  },
+  "does": "An open-source robot vacuum you build yourself — Raspberry Pi, 3D-printed chassis, Arduino/ESP32, a cheap 2D LiDAR for mapping and autonomous ROS2/Nav2 navigation, native Home Assistant, fully local with no cloud.",
+  "edge": "It opens up the whole robot — appliance-grade hardware, firmware and ROS2 software, all 3D-printable and hackable with no vendor lock-in — which basically nothing on the market offers.",
+  "why_use": "For privacy-minded smart-home tinkerers and robotics education who want a no-cloud vacuum they can actually modify and repair."
 }
