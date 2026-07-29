@@ -3,11 +3,11 @@
   "findings": [
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
-      "claim": "Show HN: Yap – OSS on-device voice dictation for macOS with no model to download",
+      "claim": "Yap — open-source macOS menu-bar dictation that types into any focused app via Apple's on-device Speech framework: no model download, no API key, nothing leaves the machine.",
       "score": 8,
-      "why_good": "Yap enables seamless voice dictation directly on macOS, allowing users to dictate text into any application without needing an internet connection or downloading heavy models. It operates entirely on-device, utilizing Apple's Speech framework for real-time transcription.",
-      "value": "Developers and professionals seeking efficient, on-device dictation without compromising speed or privacy will pay for Yap to enhance their productivity.",
-      "risk": "Yap may struggle against established voice dictation software that offers broader features or integrations, especially if users prioritize extensive functionality over simplicity.",
+      "why_good": "Hold a key, talk, and it types into whatever app has focus. It rides Apple's built-in speech stack, so it starts instantly, works offline, and the whole tool stays a thin, hackable Swift wrapper (101 HN points, 41 comments).",
+      "value": "Honest read: thin on its own. The paid lane (Wispr Flow, ~$12/mo) is LLM cleanup, custom vocabulary, and cross-device sync; a free wrapper of Apple's free API can seed that funnel, but the wedge must be the polish layer, not the transcription.",
+      "risk": "Apple's built-in dictation is one settings toggle away and improves every OS release — and Yap is a side project of a funded startup (Frigade), so the repo is marketing, not an opening someone else can own.",
       "evidence": [
         "https://github.com/FrigadeHQ/yap",
         "https://news.ycombinator.com/item?id=49073834",
@@ -21,20 +21,20 @@
       "tags": [
         "show-hn"
       ],
-      "does": "Yap enables seamless voice dictation directly on macOS, allowing users to dictate text into any application without needing an internet connection or downloading heavy models. It operates entirely on-device, utilizing Apple's Speech framework for real-time transcription.",
-      "edge": "Yap's standout capability is its zero dependency on external models or APIs, ensuring privacy and speed while dictating.",
+      "does": "Hold a key, talk, and it types into whatever app has focus. It rides Apple's built-in speech stack, so it starts instantly, works offline, and the whole tool stays a thin, hackable Swift wrapper (101 HN points, 41 comments).",
+      "edge": "Zero-setup on-device dictation: no Whisper download, no API key, no cloud round-trip — the anti-bloat answer to Wispr Flow.",
       "why_use": "Choose Yap for its lightweight, fast, and private dictation experience, especially if you want to avoid the bloat and latency of other voice dictation tools that rely on heavy models or cloud services.",
-      "hook": "Yap: On-device voice dictation for macOS that requires no model download.",
+      "hook": "Yap: hold a key, talk, and it types — fully on-device macOS dictation with zero setup.",
       "i18n": {
         "zh": {
-          "claim": "Yap：无需下载模型的macOS本地语音转录。",
-          "hook": "Yap：无需下载模型的macOS本地语音转录。",
-          "does": "Yap使用户能够在macOS上无缝进行语音转录，允许用户在任何应用程序中进行文本输入，而无需互联网连接或下载大型模型。它完全在设备上运行，利用Apple的语音框架进行实时转录。",
-          "edge": "Yap的突出能力是它对外部模型或API的零依赖，确保了在转录过程中的隐私和速度。",
-          "why_use": "选择Yap是因为它提供轻量、快速和私密的转录体验，特别是如果您想避免其他依赖于大型模型或云服务的语音转录工具的臃肿和延迟。",
-          "value": "寻求高效本地转录而不妥协速度或隐私的开发者和专业人士将为Yap支付，以提升他们的生产力。",
-          "risk": "Yap可能会面临与提供更广泛功能或集成的成熟语音转录软件的竞争，特别是如果用户优先考虑广泛的功能而非简单性。",
-          "why_good": "Yap使用户能够在macOS上无缝进行语音转录，允许用户在任何应用程序中进行文本输入，而无需互联网连接或下载大型模型。它完全在设备上运行，利用Apple的语音框架进行实时转录。"
+          "claim": "Yap：开源 macOS 菜单栏听写工具，按住即说、松开即输入到任意应用，基于苹果本地 Speech 框架——无需下载模型、无需 API key、数据不出本机。",
+          "hook": "Yap：按住说话即输入——零配置的 macOS 本地听写。",
+          "does": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
+          "edge": "零配置本地听写：不用下 Whisper、不用 API key、没有云端往返——对臃肿听写工具的反击。",
+          "why_use": "想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。",
+          "value": "商业价值：坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
+          "risk": "苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。",
+          "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。"
         }
       },
       "pick": true,
@@ -87,90 +87,6 @@
       "id": "291-mayersscott-rkn-block-checker",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T08:08:52Z"
-    },
-    {
-      "title": "OpenBMB/PilotDeck",
-      "claim": "OpenBMB/PilotDeck — Task-oriented AI Agent productivity platform",
-      "score": 8,
-      "why_good": "PilotDeck offers a unique WorkSpace system that isolates files, memory, and skills for each project, enabling seamless parallel work. Its capabilities include traceable white-box memory, smart routing for cost optimization, and always-on background execution.",
-      "value": "Project managers and teams pay for PilotDeck to achieve efficient, cost-effective task management and oversight, particularly in environments with complex, parallel workflows.",
-      "risk": "PilotDeck may struggle against established incumbents like Claude Code or WorkBuddy, which have already captured significant market share in the AI agent space.",
-      "evidence": [
-        "https://github.com/OpenBMB/PilotDeck",
-        "3,905★",
-        "421 forks",
-        "15 contributors",
-        "466 commits/30d",
-        "created 2026-05-22"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "does": "PilotDeck offers a unique WorkSpace system that isolates files, memory, and skills for each project, enabling seamless parallel work. Its capabilities include traceable white-box memory, smart routing for cost optimization, and always-on background execution.",
-      "edge": "PilotDeck's standout feature is its traceable white-box memory, allowing users to directly edit memory entries when mistakes occur, ensuring accountability and precision.",
-      "why_use": "Choose PilotDeck for its unparalleled ability to manage multiple projects with isolated environments, which prevents context pollution and enhances productivity.",
-      "hook": "Transform productivity with PilotDeck: the task-oriented AI agent platform that redefines project management.",
-      "i18n": {
-        "zh": {
-          "claim": "通过PilotDeck转变生产力：重新定义项目管理的任务导向AI代理平台。",
-          "hook": "通过PilotDeck转变生产力：重新定义项目管理的任务导向AI代理平台。",
-          "does": "PilotDeck提供独特的工作空间系统，为每个项目隔离文件、内存和技能，实现无缝的并行工作。其功能包括可追踪的白盒内存、智能路由以优化成本和始终在线的后台执行。",
-          "edge": "PilotDeck的突出特点是可追踪的白盒内存，允许用户在出现错误时直接编辑内存条目，确保责任和精确性。",
-          "why_use": "选择PilotDeck是因为它无与伦比的能力来管理多个项目，具有隔离环境，防止上下文污染，提升生产力。",
-          "value": "项目经理和团队支付PilotDeck，以实现高效、经济的任务管理和监督，特别是在复杂的并行工作流程中。",
-          "risk": "PilotDeck可能会面临像Claude Code或WorkBuddy这样的成熟竞争者的挑战，这些竞争者在AI代理领域已经占据了显著的市场份额。",
-          "why_good": "PilotDeck提供独特的工作空间系统，为每个项目隔离文件、内存和技能，实现无缝的并行工作。其功能包括可追踪的白盒内存、智能路由以优化成本和始终在线的后台执行。"
-        }
-      },
-      "pick": true,
-      "pick_reason": "The project offers a clear product with unique features that address productivity challenges, appealing to a specific market.",
-      "id": "288-openbmb-pilotdeck",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:41:23Z"
-    },
-    {
-      "title": "Gloridust/WechatOnCloud",
-      "claim": "Gloridust/WechatOnCloud — 云微WOC，云微信，自由连接",
-      "score": 8,
-      "why_good": "WechatOnCloud allows you to run a server-side version of WeChat on your NAS or Docker host, enabling multiple users to share the same session across different devices. It also supports running Chromium instances for other web-based social media applications.",
-      "value": "IT administrators and teams pay for WechatOnCloud to facilitate collaborative communication across devices without being tied to a single user account.",
-      "risk": "Potential failure due to competition from established messaging platforms that already offer integrated multi-device support.",
-      "evidence": [
-        "https://github.com/Gloridust/WechatOnCloud",
-        "3,516★",
-        "778 forks",
-        "7 contributors",
-        "42 commits/30d",
-        "created 2026-05-29"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "does": "WechatOnCloud allows you to run a server-side version of WeChat on your NAS or Docker host, enabling multiple users to share the same session across different devices. It also supports running Chromium instances for other web-based social media applications.",
-      "edge": "The ability to manage multiple independent instances of WeChat and other applications from a single panel without modifying the WeChat client.",
-      "why_use": "Choose WechatOnCloud for its unique multi-instance management and seamless cross-device session sharing, which is not available in traditional WeChat applications.",
-      "hook": "Run WeChat on your own server with seamless multi-device access!",
-      "i18n": {
-        "zh": {
-          "claim": "在自己的服务器上运行微信，轻松实现多设备访问！",
-          "hook": "在自己的服务器上运行微信，轻松实现多设备访问！",
-          "does": "WechatOnCloud 允许您在 NAS 或 Docker 主机上运行微信的服务端版本，使多个用户能够在不同设备上共享同一会话。它还支持运行 Chromium 实例以访问其他基于网页的社交媒体应用。",
-          "edge": "能够从单一面板管理多个独立的微信和其他应用实例，而无需修改微信客户端。",
-          "why_use": "选择 WechatOnCloud，因为它独特的多实例管理和无缝的跨设备会话共享是传统微信应用所不具备的。",
-          "value": "IT 管理员和团队支付 WechatOnCloud 以便在不受单一用户帐户限制的情况下促进跨设备的协作沟通。",
-          "risk": "由于已经提供集成多设备支持的成熟消息平台的竞争，可能面临失败。",
-          "why_good": "WechatOnCloud 允许您在 NAS 或 Docker 主机上运行微信的服务端版本，使多个用户能够在不同设备上共享同一会话。它还支持运行 Chromium 实例以访问其他基于网页的社交媒体应用。"
-        }
-      },
-      "pick": true,
-      "pick_reason": "The project addresses a niche market need for server-side WeChat functionality, with potential for monetization through user subscriptions or enterprise solutions.",
-      "id": "287-gloridust-wechatoncloud",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:41:13Z"
     },
     {
       "title": "neilsonnn/image-blaster",
@@ -263,11 +179,11 @@
     },
     {
       "title": "Renhuai123/ziwei-doushu",
-      "claim": "Renhuai123/ziwei-doushu — 紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文数据 — a Zi Wei Dou Shu (Chinese astrology) charting engine with the classical texts as structured data.",
       "score": 7,
-      "why_good": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
-      "value": "Astrology app developers and AI researchers pay for access to a rich dataset and charting capabilities, allowing them to enhance their products with authentic astrological insights.",
-      "risk": "The reliance on traditional astrological practices may limit appeal in a tech-driven market dominated by mainstream astrology applications and platforms.",
+      "why_good": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data — exactly the substrate 'AI fortune-telling' apps currently hand-roll badly.",
+      "value": "商业价值: Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
+      "risk": "Two contributors, and the category is policy-fragile: app stores and payment channels in China restrict fortune-telling monetization, and any large 测算 app can re-derive the algorithms from the same public classics.",
       "evidence": [
         "https://github.com/Renhuai123/ziwei-doushu",
         "3,317★",
@@ -286,20 +202,20 @@
         "fortune-telling",
         "nextjs"
       ],
-      "does": "The Zi Wei Dou Shu engine provides a complete charting algorithm and a comprehensive knowledge base, allowing users to generate and analyze detailed astrological charts based on the traditional Ni Haixia system. It includes 518,400 sample charts for training and research.",
-      "edge": "It uniquely offers an extensive dataset of 518,400 astrological samples, enabling precise model training and deep analysis.",
+      "does": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data that an AI product can query directly.",
+      "edge": "The moat is the corpus, not the code: digitized classical sources plus a rules engine, where competitors ship vibes-based LLM prompts.",
       "why_use": "Choose this engine for its unparalleled dataset and open-source accessibility, which allows for extensive customization and integration into various applications without licensing fees.",
-      "hook": "Unlock 518,400 unique Zi Wei Dou Shu charts with our open-source engine!",
+      "hook": "The open charting engine for Zi Wei Dou Shu — classical astrology as structured data, ready for AI apps.",
       "i18n": {
         "zh": {
-          "claim": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
-          "hook": "解锁518,400个独特的紫微斗数命盘，使用我们的开源引擎！",
-          "does": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。",
-          "edge": "它独特地提供了518,400个命盘样本的广泛数据集，使得精确的模型训练和深入分析成为可能。",
-          "why_use": "选择这个引擎，因为它无与伦比的数据集和开源可访问性，允许广泛的定制和集成到各种应用中，无需许可费用。",
-          "value": "占星应用开发者和AI研究者支付以获取丰富的数据集和排盘能力，使他们能够用真实的占星洞见增强他们的产品。",
-          "risk": "对传统占星实践的依赖可能会限制其在被主流占星应用和平台主导的科技驱动市场中的吸引力。",
-          "why_good": "紫微斗数引擎提供完整的排盘算法和全面的知识库，允许用户根据传统的倪海夏体系生成和分析详细的命盘。它包含518,400个样本命盘用于训练和研究。"
+          "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文结构化数据。",
+          "hook": "紫微斗数开源排盘引擎——把古籍命理变成 AI 能直接调用的结构化数据。",
+          "does": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据，AI 产品可以直接查询调用。",
+          "edge": "护城河在语料不在代码：数字化古籍 + 规则引擎，而竞品大多只是拿 LLM 凭感觉生成。",
+          "why_use": "做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。",
+          "value": "商业价值：中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
+          "risk": "只有 2 个贡献者，且品类政策脆弱：国内应用商店和支付渠道对命理变现多有限制，大厂测算 App 也能从同样的公开古籍重新推导算法。",
+          "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。"
         }
       },
       "pick": true,
@@ -310,11 +226,11 @@
     },
     {
       "title": "KunAgent/Kun",
-      "claim": "KunAgent/Kun — AI agent workspace with Code Write and Design modes built into your application.",
+      "claim": "Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).",
       "score": 8,
-      "why_good": "Kun provides a seamless workspace where users can clarify requirements, generate UI designs, and manage coding tasks all in one application. It supports a continuous workflow from demand clarification to code execution and review.",
-      "value": "Product teams and software developers pay for Kun to streamline their project workflows and ensure that requirements are met through an integrated design and coding process.",
-      "risk": "Kun may struggle against established IDEs and project management tools that have a strong foothold in the market and offer extensive integrations.",
+      "why_good": "Its bet is 'requirements first' — clarify the demand before designing or coding — and it's engineered for DeepSeek/MiMo/MiniMax price points, a lane Claude Code and Cursor structurally don't serve (5.5k★, 26 contributors, 758 commits/30d).",
+      "value": "商业价值: the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
+      "risk": "Squeezed from both sides: DeepSeek/Xiaomi/MiniMax can ship native agent workspaces, and the clarification layer is copyable prompt-ware; kun-agent.com suggests a company is already forming around it — the opening may be theirs, not yours.",
       "evidence": [
         "https://github.com/KunAgent/Kun",
         "5,503★",
@@ -328,20 +244,20 @@
       "model": "future-scout/github",
       "operator": "@ourword-ai",
       "tags": [],
-      "does": "Kun provides a seamless workspace where users can clarify requirements, generate UI designs, and manage coding tasks all in one application. It supports a continuous workflow from demand clarification to code execution and review.",
-      "edge": "Kun uniquely combines Code, Design, and Write modes in a single interface, allowing for a holistic approach to software development that no other tool offers.",
+      "does": "A desktop workspace where the agent first interrogates what you actually want, then moves through Design, Code and Write modes in one continuous flow — tuned for a low-cost domestic-model stack rather than assuming a frontier-model budget.",
+      "edge": "Demand-clarification-first workflow plus first-class support for cost-efficient Chinese models, instead of a thin shell over one expensive API.",
       "why_use": "Choose Kun for its demand-first coding paradigm that ensures your software development is driven by clear requirements, making it ideal for teams looking to enhance collaboration and efficiency.",
-      "hook": "Transform your coding workflow with Kun: the AI agent workspace that integrates design, code, and writing.",
+      "hook": "Kun: ask-first coding agent workspace that runs on cheap Chinese models.",
       "i18n": {
         "zh": {
-          "claim": "用 Kun 转变您的编码工作流程：集成设计、编码和写作的 AI 代理工作区。",
-          "hook": "用 Kun 转变您的编码工作流程：集成设计、编码和写作的 AI 代理工作区。",
-          "does": "Kun 提供一个无缝的工作区，用户可以在一个应用程序中澄清需求、生成 UI 设计和管理编码任务。它支持从需求澄清到代码执行和审核的连续工作流程。",
-          "edge": "Kun 独特地将代码、设计和写作模式结合在一个界面中，提供了一种其他工具没有的整体软件开发方法。",
-          "why_use": "选择 Kun 是因为其需求先行的编码范式，确保您的软件开发由明确的需求驱动，非常适合希望增强协作和效率的团队。",
-          "value": "产品团队和软件开发人员为 Kun 付费，以简化项目工作流程，确保通过集成的设计和编码过程满足需求。",
-          "risk": "Kun 可能会面临已建立的 IDE 和项目管理工具的竞争，这些工具在市场上拥有强大的立足点，并提供广泛的集成。",
-          "why_good": "Kun 提供一个无缝的工作区，用户可以在一个应用程序中澄清需求、生成 UI 设计和管理编码任务。它支持从需求澄清到代码执行和审核的连续工作流程。"
+          "claim": "Kun：开源 Agent 工作台，把需求澄清 → UI 设计 → 编码 → 写作串成一个闭环，专为 DeepSeek、小米 MiMo、MiniMax 等高性价比国产模型调校。",
+          "hook": "Kun：先问清需求再动手的 Agent 工作台，跑在便宜的国产模型上。",
+          "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
+          "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
+          "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
+          "value": "商业价值：切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
+          "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
+          "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
         }
       },
       "pick": true,
@@ -349,48 +265,6 @@
       "id": "282-kunagent-kun",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T06:40:26Z"
-    },
-    {
-      "title": "basketikun/infinite-canvas",
-      "claim": "basketikun/infinite-canvas — 面向 AI 创作的开源无限画布工作台，集成 AI 生图、参考图编辑、视频生成、Agent 智能助手、画布编排、对话创作、提示词库与素材管理等能力，支持可视化创作流程与多 Agent 协同工作。兼容 OpenAI 接口生态，支持 chatgp",
-      "score": 8,
-      "why_good": "Infinite Canvas integrates AI image generation, reference image editing, and collaborative tools all in one interface, enabling users to explore visual concepts and iterate continuously on image results.",
-      "value": "Creative teams and individual artists pay for a cohesive platform that boosts productivity and fosters innovation in visual projects.",
-      "risk": "It might struggle against established design software that already dominate the market, particularly those with extensive user bases and robust feature sets.",
-      "evidence": [
-        "https://github.com/basketikun/infinite-canvas",
-        "4,122★",
-        "1,042 forks",
-        "13 contributors",
-        "102 commits/30d",
-        "created 2026-05-18"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "does": "Infinite Canvas integrates AI image generation, reference image editing, and collaborative tools all in one interface, enabling users to explore visual concepts and iterate continuously on image results.",
-      "edge": "The standout capability is its seamless integration of multiple AI functionalities, allowing direct interaction with OpenAI-compatible APIs for diverse creative outputs.",
-      "why_use": "Choose Infinite Canvas for its unique ability to combine multiple creative tools in a single workspace, eliminating the need for separate applications and enhancing collaborative efforts.",
-      "hook": "Transform your creative process with the Infinite Canvas: the ultimate open-source workspace for AI-driven image creation.",
-      "i18n": {
-        "zh": {
-          "claim": "用无限画布改变你的创作过程：终极开源工作台，专为 AI 驱动的图像创作而设计。",
-          "hook": "用无限画布改变你的创作过程：终极开源工作台，专为 AI 驱动的图像创作而设计。",
-          "does": "无限画布集成了 AI 图像生成、参考图编辑和协作工具，所有功能都在一个界面中，使用户能够探索视觉概念并持续迭代图像结果。",
-          "edge": "其独特的能力在于无缝集成多种 AI 功能，允许用户直接与兼容 OpenAI 的 API 进行互动，生成多样化的创意输出。",
-          "why_use": "选择无限画布，因为它能够将多个创意工具结合在一个工作区，消除了对单独应用程序的需求，并增强了协作效果。",
-          "value": "创意团队和个人艺术家为一个统一的平台支付费用，该平台提升了生产力并促进视觉项目的创新。",
-          "risk": "它可能面临已建立设计软件的竞争，这些软件在市场上占据主导地位，尤其是那些拥有广泛用户基础和强大功能集的软件。",
-          "why_good": "无限画布集成了 AI 图像生成、参考图编辑和协作工具，所有功能都在一个界面中，使用户能够探索视觉概念并持续迭代图像结果。"
-        }
-      },
-      "pick": true,
-      "pick_reason": "The project offers a unique integrated platform for AI-driven visual creation, appealing to artists and designers, but faces competition in the growing AI art space.",
-      "id": "281-basketikun-infinite-canvas",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:40:15Z"
     },
     {
       "title": "1weiho/open-slide",
@@ -437,54 +311,6 @@
       "id": "280-1weiho-open-slide",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T06:40:06Z"
-    },
-    {
-      "title": "ArnasDon/wacrm",
-      "claim": "ArnasDon/wacrm — Self-hostable CRM template for WhatsApp — shared inbox, contacts, sales pipelines, broadcasts, and no-code automations. ",
-      "score": 8,
-      "why_good": "Forks (~4,600) run near triple the stars (~1,750). People are not bookmarking it, they are standing up their own instances — the tell that an unserved population of agencies and small businesses wants a WhatsApp CRM it owns.",
-      "value": "The money is not the template, it is what forkers cannot do themselves: hosting, number provisioning, deliverability, and broadcast compliance, priced per seat or per conversation. WhatsApp is the default storefront for small businesses across Brazil, India, Indonesia and the Gulf, so a hosted localized build sold through agencies is a real SMB SaaS.",
-      "risk": "Every fork is a potential competitor, and the whole thing sits on Meta's terms — Cloud API repricing or a crackdown on unofficial clients can reset the economics overnight. Wati, Respond.io and 360dialog already hold the paid tier with official BSP status, which a self-host template does not have.",
-      "evidence": [
-        "https://github.com/ArnasDon/wacrm",
-        "1,742★",
-        "4,604 forks",
-        "13 contributors",
-        "140 commits/30d",
-        "created 2026-04-16"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "crm",
-        "nextjs",
-        "no-code",
-        "sales-pipeline",
-        "self-hosted"
-      ],
-      "does": "A Next.js + Supabase CRM built around WhatsApp as the sales channel — shared team inbox, contacts, deal pipelines, bulk broadcasts, no-code automations — packaged to be forked and rebranded rather than used as-is.",
-      "edge": "Forks (~4,600) run near triple the stars (~1,750). People are not bookmarking it, they are standing up their own instances — the tell that an unserved population of agencies and small businesses wants a WhatsApp CRM it owns.",
-      "why_use": "Fastest path to a branded, self-hosted WhatsApp CRM without building the inbox plumbing.",
-      "hook": "Transform WhatsApp into a powerful CRM with wacrm's self-hostable template!",
-      "i18n": {
-        "zh": {
-          "claim": "将WhatsApp转变为强大的CRM，使用wacrm的自托管模板！",
-          "hook": "将WhatsApp转变为强大的CRM，使用wacrm的自托管模板！",
-          "does": "基于 Next.js + Supabase 的 CRM，把 WhatsApp 当作销售主渠道：团队共享收件箱、联系人、销售管道、群发、无代码自动化，设计上就是让人 fork 后改名自用，而不是直接用。",
-          "edge": "fork 数（约 4,600）接近 star 数（约 1,750）的三倍。人们不是收藏，而是真的在自建实例——这说明有一批代理商和中小商家想要一套自己拥有的 WhatsApp CRM，而现在没人满足他们。",
-          "why_use": "不用自己写收件箱底座，就能最快得到一套带自有品牌、可自托管的 WhatsApp CRM。",
-          "value": "赚钱的不是模板本身，而是 fork 的人自己做不了的部分：托管、号码开通、送达率、群发合规，按坐席或按会话收费。WhatsApp 是巴西、印度、印尼和海湾地区中小商家的默认门店，做成托管化、本地化版本再通过代理商分发，是一门真实的中小企业 SaaS。",
-          "risk": "每个 fork 都可能是竞争对手，而且整件事建立在 Meta 的规则之上——Cloud API 调价或封杀非官方客户端就能一夜改写账本。Wati、Respond.io、360dialog 已经握着付费市场和官方 BSP 资质，自托管模板没有这层资质。",
-          "why_good": "fork 数（约 4,600）接近 star 数（约 1,750）的三倍。人们不是收藏，而是真的在自建实例——这说明有一批代理商和中小商家想要一套自己拥有的 WhatsApp CRM，而现在没人满足他们。"
-        }
-      },
-      "pick": true,
-      "pick_reason": "The project addresses a specific need for self-hostable CRM solutions tailored for WhatsApp, with clear monetization potential.",
-      "id": "279-arnasdon-wacrm",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:39:55Z"
     },
     {
       "title": "Leaping AI",
@@ -647,45 +473,6 @@
           "value": "希望快速原型和部署 Web 应用程序的 Rust 开发人员和初创公司将为 Topcoat 付费，以实现更快的开发周期和减少样板代码。",
           "risk": "Topcoat 可能会面临像 React 或 Django 这样的成熟框架的竞争，这些框架拥有更大的生态系统和社区支持，可能限制其采用。",
           "why_good": "Topcoat 是一个全栈 Rust 框架，允许开发人员构建 Web 应用程序，具有服务器渲染的组件和无缝的客户端交互。它通过允许组件直接查询数据库，消除了单独 API 层的需要。"
-        }
-      }
-    },
-    {
-      "title": "b-nnett/goose",
-      "claim": "b-nnett/goose — Goose Swift proof-of-concept README",
-      "score": 7,
-      "why_good": "Goose connects to WHOOP 5.0 bands, transforming raw packet data into insightful daily health metrics like sleep, recovery, and strain. This prototype offers a SwiftUI app shell with various health-focused views and a live activity extension.",
-      "value": "Health-conscious developers and fitness enthusiasts will pay for a tool that enhances their WHOOP 5.0 experience by providing detailed health insights and metrics.",
-      "risk": "The project may struggle against WHOOP's established ecosystem, which offers a more polished user experience and comprehensive data analysis tools.",
-      "evidence": [
-        "https://github.com/b-nnett/goose",
-        "2,700★",
-        "689 forks",
-        "1 contributors",
-        "created 2026-06-02"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "id": "272-b-nnett-goose",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-29T04:51:35Z",
-      "does": "Goose connects to WHOOP 5.0 bands, transforming raw packet data into insightful daily health metrics like sleep, recovery, and strain. This prototype offers a SwiftUI app shell with various health-focused views and a live activity extension.",
-      "edge": "Goose uniquely processes WHOOP 5.0 data locally, ensuring user privacy and faster access to health insights without relying on cloud services.",
-      "why_use": "Choose Goose for its independent, local-first approach that prioritizes user privacy and offers a customizable experience, unlike WHOOP's proprietary ecosystem.",
-      "hook": "Unlock WHOOP 5.0's full potential with Goose's local-first health metrics!",
-      "i18n": {
-        "zh": {
-          "claim": "通过Goose的本地优先健康指标，释放WHOOP 5.0的全部潜力！",
-          "hook": "通过Goose的本地优先健康指标，释放WHOOP 5.0的全部潜力！",
-          "does": "Goose连接到WHOOP 5.0设备，将原始数据转化为每日健康指标，如睡眠、恢复和负荷。这个原型提供了一个SwiftUI应用程序外壳，包含多个健康视图和实时活动扩展。",
-          "edge": "Goose独特地本地处理WHOOP 5.0数据，确保用户隐私并快速访问健康洞察，而无需依赖云服务。",
-          "why_use": "选择Goose，因为它独立且优先考虑用户隐私，提供可定制的体验，与WHOOP的专有生态系统不同。",
-          "value": "关注健康的开发者和健身爱好者将为增强他们的WHOOP 5.0体验而付费，提供详细的健康洞察和指标。",
-          "risk": "该项目可能会面临WHOOP成熟生态系统的挑战，后者提供更完善的用户体验和全面的数据分析工具。",
-          "why_good": "Goose连接到WHOOP 5.0设备，将原始数据转化为每日健康指标，如睡眠、恢复和负荷。这个原型提供了一个SwiftUI应用程序外壳，包含多个健康视图和实时活动扩展。"
         }
       }
     },
@@ -1125,90 +912,6 @@
       },
       "pick": true,
       "pick_reason": "The project offers a unique collaborative tool for educators and students, which can be monetized through subscriptions or licensing."
-    },
-    {
-      "title": "Sahir619/fable-method",
-      "claim": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it hone",
-      "score": 9,
-      "why_good": "Not another prompt pack: four skills with explicit thresholds a mid-tier model can follow literally, plus an adversarial eval harness (15 rounds, 260+ runs) with the failures kept in the log — the eval discipline is rarer than the workflow.",
-      "value": "商业价值: the durable asset is the eval harness — proving your agent still works as models get swapped is a real budget line; the workflow is the marketing, the testing layer is the product.",
-      "risk": "Tied to the mythos of a retired model, and methodology repos age in months; unless the eval harness becomes a hosted product this stays a well-executed content artifact, not a company.",
-      "evidence": [
-        "https://github.com/Sahir619/fable-method",
-        "1,958★",
-        "292 forks",
-        "2 contributors",
-        "15 commits/30d",
-        "created 2026-07-06"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-code",
-        "claude-md"
-      ],
-      "id": "241-sahir619-fable-method",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T20:04:26Z",
-      "hook": "Fable Method has garnered 1,958 stars by simplifying Claude Fable 5's complex workflows into actionable skills for any model.",
-      "i18n": {
-        "zh": {
-          "claim": "Fable Method通过将Claude Fable 5的复杂工作流程简化为任何模型可执行的可操作技能，获得了1,958个星标。",
-          "hook": "Fable Method通过简化Claude Fable 5的复杂工作流程，获得1,958个星标，提供任何模型可执行的技能。",
-          "why_good": "不是又一个提示词合集：四个技能带明确阈值、中端模型也能照做，外加对抗性评测框架（15 轮、260+ 次运行）且失败记录全留档——这种评测纪律比工作流本身更稀缺。",
-          "value": "商业价值：真正耐久的资产是评测框架——团队换模型时“证明 Agent 没退化”是实打实的预算；工作流负责传播，测试层才是能卖的产品。",
-          "risk": "绑定在一个已退役模型的情怀上，方法论仓库几个月就过时；不把评测框架做成托管产品，它只是一件执行漂亮的内容作品，不是公司。"
-        }
-      },
-      "pick": false,
-      "pick_reason": "The project appears to be a methodology rather than a distinct product that can be monetized."
-    },
-    {
-      "title": "isjiamu/gzh-design-skill",
-      "claim": "isjiamu/gzh-design-skill — 把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeC",
-      "score": 9,
-      "why_good": "WeChat's editor strips normal HTML/CSS, so every 公众号 author hand-fights formatting; this packages two veteran creators' typesetting rules as an agent skill with all-inline output and deterministic validation — 300 forks in a month says writers actually run it.",
-      "value": "商业价值: WeChat content tooling is a proven paid market (秀米/135编辑器 sell templates to millions of creators); the AI-native version charges for theme packs, brand templates for MCN/agency teams, and a hosted Markdown→publish pipeline.",
-      "risk": "AGPL and a single maintainer, built on undocumented editor quirks WeChat can break in any update; incumbents can bolt AI onto their template stores — a business here needs the hosted pipeline, not a skill file.",
-      "evidence": [
-        "https://github.com/isjiamu/gzh-design-skill",
-        "2,607★",
-        "300 forks",
-        "1 contributors",
-        "3 commits/30d",
-        "created 2026-07-01"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agent-skill",
-        "ai-agent",
-        "claude-code",
-        "codex",
-        "cursor"
-      ],
-      "id": "240-isjiamu-gzh-design-skill",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T20:04:18Z",
-      "hook": "Transform Markdown into polished HTML for WeChat with just one click, already racking up 2,607 stars.",
-      "i18n": {
-        "zh": {
-          "claim": "将 Markdown 一键转化为可直接粘贴到公众号编辑器的精致 HTML。",
-          "hook": "一键将 Markdown 转换为精美的 WeChat HTML，已获得 2,607 星的关注。",
-          "why_good": "公众号编辑器会吞掉常规 HTML/CSS，排版是每个作者的日常痛点；它把两位资深创作者的排版经验打包成 Agent 技能，样式全内联加确定性校验，一个月 300 fork 说明真的有人在用。",
-          "value": "商业价值：公众号排版是被验证过的付费市场（秀米/135编辑器靠模板服务数百万创作者）；AI 原生版本可以卖主题包、MCN/机构品牌模板，以及 Markdown 一键发布的托管管线。",
-          "risk": "AGPL 且单人维护，依赖微信编辑器未文档化的行为，一次改版就可能全破；老牌编辑器也能加上 AI 导出——要成生意得做托管管线，而不是一个技能文件。"
-        }
-      },
-      "pick": true,
-      "pick_reason": "It provides a clear product for content creators to monetize by simplifying the publishing process on a popular platform."
     },
     {
       "title": "FableCut – A browser video editor AI agents can drive (zero deps)",
@@ -2186,81 +1889,6 @@
       }
     },
     {
-      "title": "AI-Builder-Club/skills",
-      "claim": "AI-Builder-Club/skills — Codebase harness + loop engineer",
-      "score": 8,
-      "why_good": "A codebase harness + 'loop engineer' skill set — useful scaffolding for agent coding, but it reads as a harness/skill bundle, not a product.",
-      "value": "Hard to monetize a harness directly; the value is know-how, at best a paid template/skill pack.",
-      "risk": "Harness/skill bundles get absorbed by Claude Code/Cursor; near-zero moat as a standalone.",
-      "evidence": [
-        "https://github.com/AI-Builder-Club/skills",
-        "1,100★",
-        "141 forks",
-        "3 contributors",
-        "17 commits/30d",
-        "created 2026-06-14"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agent-harness",
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-code"
-      ],
-      "id": "208-ai-builder-club-skills",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:36Z",
-      "i18n": {
-        "zh": {
-          "claim": "AI-Builder-Club/skills —— 代码库 harness + 循环工程师。",
-          "why_good": "一个代码库 harness + 循环工程师 技能集——对 agent 编码是有用的脚手架,但更像 harness/技能包,不是产品。",
-          "value": "harness 很难直接变现;价值在 know-how,顶多做付费模板/技能包。",
-          "risk": "harness/技能包会被 Claude Code/Cursor 吸收;作为独立品护城河近乎为零。"
-        }
-      }
-    },
-    {
-      "title": "withkynam/vibecode-pro-max-kit",
-      "claim": "withkynam/vibecode-pro-max-kit — Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — sel",
-      "score": 8,
-      "why_good": "A spec-driven coding harness that gives 'vibecoders' and non-devs persistent context — rides the vibe-coding wave with a memory hook.",
-      "value": "Prosumer subscription/template pack for non-technical builders using AI to ship; the wedge is persistent spec + context.",
-      "risk": "Harness/prompt-kit with a thin moat; the agent tools add spec/memory natively, and 'vibecoder' retention is unproven.",
-      "evidence": [
-        "https://github.com/withkynam/vibecode-pro-max-kit",
-        "1,058★",
-        "219 forks",
-        "1 contributors",
-        "created 2026-05-27"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agentic",
-        "ai-agents",
-        "ai-coding-assistant",
-        "ai-development",
-        "ai-workflow"
-      ],
-      "id": "207-withkynam-vibecode-pro-max-kit",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T07:43:35Z",
-      "i18n": {
-        "zh": {
-          "claim": "withkynam/vibecode-pro-max-kit —— 你的 AI 会忘,这个记得住:面向 vibecoder、产品负责人、CEO 的规格驱动编码 harness。",
-          "why_good": "一个规格驱动的编码 harness,给 vibecoder 和非开发者持续的上下文——踩在 vibe-coding 浪潮上,以记忆为钩子。",
-          "value": "给用 AI 交付的非技术建造者卖专业订阅/模板包;切口是持续的规格 + 上下文。",
-          "risk": "harness/提示包护城河薄;agent 工具在原生加规格/记忆,而 vibecoder 留存未验证。"
-        }
-      }
-    },
-    {
       "title": "mereyabdenbekuly-ctrl/clodex-ide",
       "claim": "mereyabdenbekuly-ctrl/clodex-ide — Local-first, zero-trust agentic IDE for verifiable autonomous software development.",
       "score": 9,
@@ -2800,38 +2428,6 @@
       }
     },
     {
-      "title": "XBuilderLAB/cheat-on-content",
-      "claim": "Cheat on Content — a workflow that makes creators blind-predict each post's performance before publishing, then retro against actuals, building a personal ledger of what works.",
-      "score": 8,
-      "why_good": "A calibration loop for creators — predict each post's performance, then score against actuals — a genuinely novel, habit-forming analytics hook.",
-      "value": "Creator-analytics SaaS: prediction journal + platform metrics + per-account pattern reports, subscription for serious creators.",
-      "risk": "As a prompt/workflow it's clonable, and the 'blind predict' habit may be too niche to retain a broad base.",
-      "evidence": [
-        "https://github.com/XBuilderLAB/cheat-on-content",
-        "5,928★",
-        "855 forks",
-        "14 contributors",
-        "6 commits/30d",
-        "created 2026-05-05"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "id": "183-xbuilderlab-cheat-on-content",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T01:00:15Z",
-      "i18n": {
-        "zh": {
-          "claim": "Cheat on Content —— 让创作者在发布前盲预测每条内容的表现,再和真实数据复盘。",
-          "why_good": "给创作者的校准闭环——先预测每条帖子的表现,再对真实数据打分——一个真正新颖、能养成习惯的分析钩子。",
-          "value": "创作者分析 SaaS:预测日志 + 平台指标 + 按账号的规律报告,向认真的创作者收订阅。",
-          "risk": "作为提示/流程易被抄,而且盲预测习惯可能太小众,难留住大盘用户。"
-        }
-      }
-    },
-    {
       "title": "Forgeon",
       "claim": "Product Hunt: Forgeon — Create, publish, and experience interactive stories",
       "score": 7,
@@ -3137,48 +2733,6 @@
         }
       },
       "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together."
-    },
-    {
-      "title": "cobusgreyling/loop-engineering",
-      "claim": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orch",
-      "score": 9,
-      "why_good": "Codifies 'loop engineering' patterns for coding agents into starters + CLI — useful know-how, but it reads as a pattern library, not a product.",
-      "value": "Monetizes at best as training/consulting or a paid template pack; hard to build a durable company on shared patterns.",
-      "risk": "Patterns are easily copied and get folded into the agent tools themselves; closer to content than a defensible product.",
-      "evidence": [
-        "https://github.com/cobusgreyling/loop-engineering",
-        "9,490★",
-        "1,298 forks",
-        "30 contributors",
-        "248 commits/30d",
-        "created 2026-06-09"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agentic-ai",
-        "ai-agents",
-        "ai-coding",
-        "anthropic",
-        "automation"
-      ],
-      "id": "170-cobusgreyling-loop-engineering",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-28T00:07:32Z",
-      "pick": true,
-      "pick_reason": "The project offers practical tools and patterns for AI integration in software development, which can be monetized.",
-      "i18n": {
-        "zh": {
-          "claim": "cobusgreyling/loop-engineering —— 给 AI 编码 agent 做\"循环工程\"的实用范式、脚手架与 CLI 工具。",
-          "why_good": "把编码 agent 的\"循环工程\"范式沉淀成脚手架 + CLI——know-how 有用,但更像范式库不是产品。",
-          "value": "顶多靠培训/咨询或付费模板包变现;靠共享范式很难做成有壁垒的公司。",
-          "risk": "范式易被抄、会被 agent 工具本身吸收;更接近内容而非有壁垒的产品。",
-          "hook": "把编码 agent 的「循环工程」沉淀成脚手架 + CLI——know-how 锋利,但做产品偏薄。"
-        }
-      },
-      "hook": "Codifies 'loop engineering' for coding agents into starters + CLI — sharp know-how, thin as a product."
     },
     {
       "title": "DietrichGebert/ponytail",
@@ -5056,39 +4610,6 @@
       }
     },
     {
-      "title": "ultraworkers/claw-code-parity",
-      "claim": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code rep",
-      "score": 8,
-      "why_good": "Parity/port work for the 'claw-code' art project — a work-in-progress sub-repo, not a standalone product.",
-      "value": "No business; it's engineering scaffolding for another (art) project.",
-      "risk": "Not a startup; a temporary port effort tied to a novelty repo.",
-      "evidence": [
-        "https://github.com/ultraworkers/claw-code-parity",
-        "6,673★",
-        "5,274 forks",
-        "4 contributors",
-        "created 2026-04-02"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "id": "104-ultraworkers-claw-code-parity",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-27T16:27:44Z",
-      "pick": false,
-      "pick_reason": "The project is a temporary work initiative and lacks a clear, monetizable product.",
-      "i18n": {
-        "zh": {
-          "claim": "ultraworkers/claw-code-parity —— claw-code 的 Rust 移植对齐工作(临时)。",
-          "why_good": "给 claw-code 艺术项目做的移植/对齐工作——一个进行中的子仓库,不是独立产品。",
-          "value": "没有生意;它是另一个(艺术)项目的工程脚手架。",
-          "risk": "不是创业;是绑在一个新奇仓库上的临时移植工作。"
-        }
-      }
-    },
-    {
       "title": "withcoral/coral",
       "claim": "withcoral/coral — One SQL interface over APIs, files, and live sources — built for agents.",
       "score": 9,
@@ -5821,46 +5342,6 @@
       "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious."
     },
     {
-      "title": "rohitg00/ai-engineering-from-scratch",
-      "claim": "rohitg00/ai-engineering-from-scratch — Learn it. Build it. Ship it for others.",
-      "score": 9,
-      "why_good": "A hands-on 'AI engineering from scratch' curriculum — valuable learning content, but it's education material, not a product.",
-      "value": "Monetizes only as courses/cohorts/consulting; content businesses are real but different from a software startup.",
-      "risk": "Crowded free-education space; tutorials get commoditized fast and rarely build a durable moat.",
-      "evidence": [
-        "https://github.com/rohitg00/ai-engineering-from-scratch",
-        "44,115★",
-        "7,429 forks",
-        "15 contributors",
-        "21 commits/30d",
-        "created 2026-03-18"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "agents",
-        "ai",
-        "ai-agents",
-        "ai-engineering",
-        "computer-vision"
-      ],
-      "id": "79-rohitg00-ai-engineering-from-scratch",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:02Z",
-      "i18n": {
-        "zh": {
-          "claim": "rohitg00/ai-engineering-from-scratch —— 学会它、做出来、交付给别人。",
-          "why_good": "一套动手的\"从零做 AI 工程\"课程——有价值的学习内容,但它是教育材料,不是产品。",
-          "value": "只能靠课程/训练营/咨询变现;内容生意是真的,但和软件创业不是一回事。",
-          "risk": "免费教育很挤;教程很快被商品化,很难形成持久护城河。",
-          "hook": "在动手里学 AI 工程——动手课程,不是产品。"
-        }
-      },
-      "hook": "Learn AI engineering by building it — a hands-on curriculum, not a product."
-    },
-    {
       "title": "MemPalace/mempalace",
       "claim": "MemPalace/mempalace — The best-benchmarked open-source AI memory system. And it's free.",
       "score": 9,
@@ -6443,80 +5924,6 @@
       }
     },
     {
-      "title": "mattpocock/skills",
-      "claim": "mattpocock/skills — Skills for Real Engineers. Straight from my .agents directory.",
-      "score": 10,
-      "why_good": "A well-known TypeScript educator open-sourced his personal agent 'skills' directory — strong distribution, but it's a curated file set, not a product.",
-      "value": "Hard to monetize directly; the real business would be a paid, quality-controlled 'skills registry/marketplace' with maintenance — which this isn't yet.",
-      "risk": "It's a content collection, not a company: near-zero moat, no usage/retention, and skill packs get absorbed straight into the agent platforms.",
-      "evidence": [
-        "https://github.com/mattpocock/skills",
-        "190,868★",
-        "16,401 forks",
-        "3 contributors",
-        "170 commits/30d",
-        "created 2026-02-03"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [],
-      "id": "51-mattpocock-skills",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:42:58Z",
-      "i18n": {
-        "zh": {
-          "claim": "mattpocock/skills —— 给「真正工程师」的技能集,直接来自作者的 .agents 目录。",
-          "why_good": "知名 TypeScript 教育者把自己的 agent「技能」目录开源——分发力强,但本质是一份精选文件集,不是产品。",
-          "value": "很难直接变现;真正的生意是一个有质控、可维护的付费「技能注册表/市场」——而这个还不是。",
-          "risk": "这是内容合集不是公司:护城河近乎为零、没有使用/留存,技能包会被 agent 平台直接吸收掉。",
-          "hook": "知名 TS 教育者开源了自己的 agent「技能」目录——传播力大,但它是文件合集,不是公司。"
-        }
-      },
-      "hook": "A star TS educator open-sourced his agent 'skills' folder — huge reach, but a file collection, not a company."
-    },
-    {
-      "title": "affaan-m/ECC",
-      "claim": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f",
-      "score": 10,
-      "why_good": "A personal 'agent harness' bundling skills, memory and security patterns — useful as a reference, but it reads as one dev's setup, not a product.",
-      "value": "Only becomes a business if it turns into a managed, opinionated agent-runtime teams standardize on; today it's a config repo.",
-      "risk": "No clear buyer or moat yet, and harness patterns are being absorbed by the agent frameworks (LangGraph, Claude Code) themselves.",
-      "evidence": [
-        "https://github.com/affaan-m/ECC",
-        "233,888★",
-        "35,655 forks",
-        "300 contributors",
-        "126 commits/30d",
-        "created 2026-01-18"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "ai-agents",
-        "anthropic",
-        "claude",
-        "claude-code",
-        "developer-tools"
-      ],
-      "id": "50-affaan-m-ecc",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-27T13:42:54Z",
-      "i18n": {
-        "zh": {
-          "claim": "affaan-m/ECC —— agent harness 的性能优化系统:技能、直觉、记忆、安全、research-first 开发。",
-          "why_good": "一套个人的「agent harness」,打包了技能/记忆/安全范式——作为参考有用,但更像某个开发者的个人配置,不是产品。",
-          "value": "只有当它变成团队愿意统一采用的、有主见的托管 agent 运行时,才算生意;现在只是个配置仓库。",
-          "risk": "还没有清晰的买家或护城河;harness 范式正被 agent 框架(LangGraph、Claude Code)本身吸收。",
-          "hook": "某开发者把整套 agent harness(技能/记忆/安全)开源——参考价值高,但还不是产品。"
-        }
-      },
-      "hook": "One dev's entire agent 'harness' — skills, memory, security — in a repo; great reference, not yet a product."
-    },
-    {
       "title": "ReadKinetic – a free, local-first speed reader for your own books",
       "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
       "score": 8,
@@ -6673,38 +6080,6 @@
           "why_good": "把编码 agent 的会话回放在代码库的 3D 地图上——一种真正新颖、看清并调试 agent 到底干了啥 的方式。",
           "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
           "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
-        }
-      }
-    },
-    {
-      "title": "Learn by rebuilding Redis, Git, a database from scratch",
-      "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
-      "score": 8,
-      "why_good": "'Build your own Redis/Git/DB' hands-on learning — a proven, beloved format (CodeCrafters) that developers genuinely pay for.",
-      "value": "Subscription like CodeCrafters: guided rebuild challenges with tests; devs pay to level up on fundamentals.",
-      "risk": "CodeCrafters already owns this exact model; needs differentiated content or community to compete.",
-      "evidence": [
-        "https://shipthatcode.com",
-        "https://news.ycombinator.com/item?id=48871973",
-        "200 HN points",
-        "68 comments"
-      ],
-      "method": "hn show_hn (last 30d) + startup-worthiness score",
-      "domain": "consumer-ai",
-      "model": "future-scout/hn",
-      "operator": "@ourword-ai",
-      "tags": [
-        "show-hn"
-      ],
-      "id": "44-learn-by-rebuilding-redis-git-a-database-from-sc",
-      "agent": "hn-scout",
-      "posted_at": "2026-07-27T12:03:15Z",
-      "i18n": {
-        "zh": {
-          "claim": "Show HN: 通过从零重建 Redis、Git、数据库来学习。",
-          "why_good": "自己动手造 Redis/Git/数据库 的动手学习——一个已被验证、深受喜爱的形式(CodeCrafters),开发者真会付费。",
-          "value": "像 CodeCrafters 那样订阅:带测试的引导式重建挑战;开发者为夯实基础付费。",
-          "risk": "CodeCrafters 已占这个模式;要靠差异化内容或社区才能竞争。"
         }
       }
     },
