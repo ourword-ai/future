@@ -221,30 +221,32 @@ def llm_copy(f):
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n\n"
         f"README (for grounding):\n{readme}\n\nJSON only.")
-    body=json.dumps({"model":model,"temperature":0.4,"max_tokens":1100,
-                     "messages":[{"role":"user","content":prompt}]}).encode()
-    try:
-        req=urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-            headers={"Authorization":f"Bearer {tok}","Content-Type":"application/json","User-Agent":"future-scout"})
-        with urllib.request.urlopen(req, timeout=45) as r:
-            txt=json.loads(r.read())["choices"][0]["message"]["content"]
-        obj=json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
-        if all(obj.get(k) for k in ("does","edge","value","risk")):
-            out={k:str(obj[k]).strip()[:500] for k in ("does","edge","value","risk")}
-            out["why_good"]=out["does"]
-            if obj.get("why_use"): out["why_use"]=str(obj["why_use"]).strip()[:400]
-            if obj.get("hook"):    out["hook"]=str(obj["hook"]).strip()[:220]
-            zh={}
-            for src,dst in (("claim_zh","claim"),("hook_zh","hook"),("does_zh","does"),
-                            ("edge_zh","edge"),("why_use_zh","why_use"),("value_zh","value"),("risk_zh","risk")):
-                if obj.get(src): zh[dst]=str(obj[src]).strip()[:500]
-            if zh.get("does"): zh["why_good"]=zh["does"]
-            if zh: out["i18n"]={"zh":zh}
-            return out
-    except Exception as e:
-        print(f"  [llm_copy fallback -> heuristic: {e!r}]", file=sys.stderr)
-    return None
-
+    fallback=os.environ.get("GH_MODELS_FALLBACK","openai/gpt-4o")
+    for _i, _mdl in enumerate((model, model, fallback)):   # retry, then a stronger fallback model
+        body=json.dumps({"model":_mdl,"temperature":0.4,"max_tokens":1100,
+                         "messages":[{"role":"user","content":prompt}]}).encode()
+        try:
+            req=urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
+                headers={"Authorization":f"Bearer {tok}","Content-Type":"application/json","User-Agent":"future-scout"})
+            with urllib.request.urlopen(req, timeout=45) as r:
+                txt=json.loads(r.read())["choices"][0]["message"]["content"]
+            obj=json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
+            if all(obj.get(k) for k in ("does","edge","value","risk")):
+                out={k:str(obj[k]).strip()[:500] for k in ("does","edge","value","risk")}
+                out["why_good"]=out["does"]
+                if obj.get("why_use"): out["why_use"]=str(obj["why_use"]).strip()[:400]
+                if obj.get("hook"):    out["hook"]=str(obj["hook"]).strip()[:220]
+                zh={}
+                for _src,dst in (("claim_zh","claim"),("hook_zh","hook"),("does_zh","does"),
+                                ("edge_zh","edge"),("why_use_zh","why_use"),("value_zh","value"),("risk_zh","risk")):
+                    if obj.get(_src): zh[dst]=str(obj[_src]).strip()[:500]
+                if zh.get("does"): zh["why_good"]=zh["does"]
+                if zh: out["i18n"]={"zh":zh}
+                return out
+            raise ValueError("incomplete copy fields")
+        except Exception as e:
+            print(f"  [llm_copy attempt {_i+1} ({_mdl}) failed: {e!r}]", file=sys.stderr)
+            time.sleep(4*(_i+1))
     return None
 def editor_pick(f):
     """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
@@ -252,20 +254,23 @@ def editor_pick(f):
     (True/False, reason) or (None, None) if the model is unavailable -> caller leaves it unset."""
     tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not tok:
-        return None, None
+        return None, None, None
     model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
     ev = ", ".join(f.get("evidence", []) or [])
     prompt = (
-        "You are a hard-nosed startup scout. Decide if the project below is something a small "
-        "founder could realistically turn into a real, monetizable startup RIGHT NOW.\n"
-        "Answer FALSE if it is any of: a skills/prompt/awesome/content collection or list; a course, "
+        "You are a hard-nosed startup scout. Judge the project below.\n"
+        "pick=false if it is any of: a skills/prompt/awesome/content collection or list; a course, "
         "book, or newsletter; a demo/toy/joke; an already-huge or famous project or a big company's "
         "product (no opening left); or too vague to be a business.\n"
-        "Answer TRUE only if there is a clear product a team could build and charge money for.\n\n"
+        "pick=true only if there is a clear product a small team could build and charge money for.\n"
+        "score = startup-worthiness 0-10, STRICTLY calibrated so scores spread out:\n"
+        "  10 = once-a-month exceptional; 9 = clear breakout, real pull AND an open market;\n"
+        "  8 = strong but a visible weakness; 7 = borderline keep; 6 or less = not board-worthy.\n"
+        "Most keeps should land on 7-8. Reserve 9-10 for evidence, not vibes.\n\n"
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
         f"Why: {f.get('why_good','')}\nSignals: {ev}\nDomain: {f.get('domain','')}\n\n"
-        "Reply with ONLY JSON: {\"pick\": true|false, \"reason\": \"one short sentence\"}")
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 120,
+        "Reply with ONLY JSON: {\"pick\": true|false, \"score\": 0-10, \"reason\": \"one short sentence\"}")
+    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 140,
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     try:
         req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
@@ -275,10 +280,12 @@ def editor_pick(f):
             txt = json.loads(r.read())["choices"][0]["message"]["content"]
         m = re.search(r"\{.*\}", txt, re.S)
         obj = json.loads(m.group(0))
-        return bool(obj.get("pick")), str(obj.get("reason", ""))[:200]
+        sc = obj.get("score")
+        sc = int(sc) if isinstance(sc, (int, float)) and 0 <= sc <= 10 else None
+        return bool(obj.get("pick")), str(obj.get("reason", ""))[:200], sc
     except Exception as e:
         print(f"  [editor_pick skip: {e!r}]", file=sys.stderr)
-        return None, None
+        return None, None, None
 
 def post_ideas(cands, scout, cap=6):
     """Write vetted startup-worthy ideas to the board (no predictions). Dedup by repo."""
@@ -292,6 +299,30 @@ def post_ideas(cands, scout, cap=6):
             key = f.get("title") or (f.get("evidence") or [""])[0]
             if key in have:
                 continue
+            # ---- quality is settled AT INGEST: copy + editorial gate BEFORE anything ships ----
+            _score = f.get("score") or 0
+            if _score >= 7:
+                c = llm_copy(f)                  # README-grounded bilingual copy (retried + fallback model)
+                if c is None:                    # never ship template copy — candidate retries next run
+                    print(f"  [hold] llm_copy unavailable — {f.get('title')} retried next run", file=sys.stderr)
+                    continue
+                zh = (c.pop("i18n", None) or {}).get("zh") or {}
+                f.update(c)
+                if zh:
+                    f.setdefault("i18n", {}).setdefault("zh", {}).update(zh)
+                pk, why, esc = editor_pick(f)    # strict editorial gate + calibrated score
+                if pk is False:
+                    print(f"  ✗ editor veto: {f.get('title')} — {why}", file=sys.stderr)
+                    continue
+                if pk is not None:
+                    f["pick"] = pk
+                    if why:
+                        f["pick_reason"] = why
+                if esc is not None:
+                    if esc < 7:                  # the >=7 standard is enforced at the door, not post-hoc
+                        print(f"  ✗ below bar ({esc}/10): {f.get('title')}", file=sys.stderr)
+                        continue
+                    f["score"] = esc
             body = idea_body(f)
             title = "idea: " + (f.get("title") or f["claim"][:50])
             url = None
@@ -305,17 +336,6 @@ def post_ideas(cands, scout, cap=6):
             rec = dict(f)
             rec.update({"id": fid, "agent": scout,
                         "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
-            _score = rec.get("score") or 0
-            if _score >= 7:                      # product-first structured copy for the visible tier
-                c = llm_copy(rec)                # README-grounded bilingual 简介/亮点/为什么用/商业/风险
-                if c:
-                    rec.update(c)
-            if _score >= 8:
-                pk, why = editor_pick(rec)
-                if pk is not None:
-                    rec["pick"] = pk
-                    if why:
-                        rec["pick_reason"] = why
             os.makedirs("findings", exist_ok=True)
             json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
             if url and not DRY:
@@ -492,6 +512,66 @@ def translate_missing(cap=8):
         print(f"  译 {(f.get('title') or f.get('id') or '')[:46]} -> {list(tr)}")
         time.sleep(2)
     print(f"translated={done}")
+    return done
+
+
+_TPL_VALUES = {
+    "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
+    "a finished workflow prosumers pay a monthly seat for, with a team upsell",
+    "on-device kills cloud cost and unlocks privacy-regulated buyers who pay a premium",
+    "first to productize the method captures the teams who can't reproduce it themselves",
+    "people already spend time/tools on this — a product turns that into subscription revenue",
+    "a clear paid wedge if it owns one workflow end-to-end",
+}
+_TPL_RISK_PREFIX = ("could be a feature, not a company", "already a crowded race")
+
+def needs_copy(f):
+    """Detect idea findings still carrying the scout's heuristic template copy."""
+    if f.get("does") or f.get("prediction") or f.get("status") == "pending":
+        return False
+    if not isinstance(f.get("score"), (int, float)):
+        return False
+    risk = (f.get("risk") or "").strip().lower()
+    if any(risk.startswith(t) for t in _TPL_RISK_PREFIX):
+        return True
+    if (f.get("value") or "").strip() in _TPL_VALUES:
+        return True
+    why = f.get("why_good") or ""
+    return bool(re.search(r"forks \(\d+% of stars\)|commits/30d|★/day|^[\d,]+★, [\d,]+ forks", why))
+
+def copy_fill(cap=6):
+    """Hourly self-healing: any idea still showing heuristic template copy (e.g. the model
+    was rate-limited at ingest) gets the README-grounded bilingual copy — newest first,
+    capped per run, stops cleanly on quota so the next run continues."""
+    import glob
+    recs = []
+    for p in sorted(glob.glob("findings/*.json")):
+        if os.path.basename(p) == "feed.json":
+            continue
+        try:
+            recs.append((p, json.load(open(p, encoding="utf-8"))))
+        except Exception:
+            pass
+    recs.sort(key=lambda x: x[1].get("posted_at", ""), reverse=True)
+    done = 0
+    for p, f in recs:
+        if done >= cap:
+            break
+        if not needs_copy(f):
+            continue
+        c = llm_copy(f)
+        if c is None:
+            print("  [copy_fill] model limited — stopping (next run continues)", file=sys.stderr)
+            break
+        zh = (c.pop("i18n", None) or {}).get("zh") or {}
+        f.update(c)
+        if zh:
+            f.setdefault("i18n", {}).setdefault("zh", {}).update(zh)
+        json.dump(f, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        done += 1
+        print(f"  ✍ re-copy {(f.get('title') or f.get('id') or '')[:46]}")
+        time.sleep(2)
+    print(f"copy_filled={done}")
     return done
 
 
