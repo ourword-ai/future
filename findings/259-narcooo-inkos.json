@@ -1,10 +1,10 @@
 {
   "title": "Narcooo/inkos",
-  "claim": "Narcooo/inkos — Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content",
+  "claim": "Agent system for long-form story creation — novels, screenplays, interactive film/games, IP franchises and multilingual translation — shipped as an npm package (@actalk/inkos) under AGPL.",
   "score": 7,
-  "why_good": "1,554 forks (18% of stars) — people build on it; 9 contributors, 151 commits/30d — actively maintained",
-  "value": "infra every AI product needs — monetizes as a usage-based API + a hosted/managed tier",
-  "risk": "could be a feature, not a company — check the moat and whether the incumbent just absorbs it",
+  "why_good": "Long-form consistency (plot state, character continuity) is exactly what chat-based AI writing can't hold, and inkos productizes the full pipeline for it. 1,558 forks with near-daily commits shows real builder adoption, rooted in the Chinese web-novel/IP market that already pays for writing throughput.",
+  "value": "Per-seat tooling for webnovel studios and IP factories, plus AGPL dual-licensing for platforms that embed it. The wedge is owning the production pipeline of AI-native fiction, where output volume converts directly to revenue.",
+  "risk": "With an open AGPL pipeline the differentiation lives in prompts and orchestration that frontier models may absorb natively; and content businesses carry copyright overhang on both training inputs and generated IP.",
   "evidence": [
     "https://github.com/Narcooo/inkos",
     "8,403★",
@@ -29,10 +29,10 @@
   "posted_at": "2026-07-28T21:16:06Z",
   "i18n": {
     "zh": {
-      "claim": "Narcooo/inkos — 小说、剧本、翻译、互动游戏及知识产权内容的故事创作AI代理",
-      "why_good": "1,554个分支（占星标的18%）— 人们在此基础上进行开发；9位贡献者，过去30天内151次提交 — 维护活跃",
-      "value": "每个AI产品都需要的基础设施 — 以基于使用量的API形式盈利，并提供托管/管理服务",
-      "risk": "可能只是一个功能，而非一家公司 — 需要检查护城河以及现有企业是否会将其吸收"
+      "claim": "面向长篇创作的智能体系统 — 长短篇小说、剧本、互动影游、IP 内容与多语言翻译，以 npm 包（@actalk/inkos）发布，AGPL 协议。",
+      "why_good": "长篇一致性（情节状态、人物连续性）正是聊天式 AI 写作守不住的东西，inkos 把整条流水线产品化。1,558 个 fork 加上近乎日更的提交说明有真实的开发者采用，且扎根于本就为写作产能付费的中文网文/IP 市场。",
+      "value": "商业价值：面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
+      "risk": "AGPL 开放流水线意味着差异化只剩提示词与编排，前沿模型可能原生吸收；内容生意在训练输入与生成 IP 两端都悬着版权风险。"
     }
   }
 }
