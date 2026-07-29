@@ -2,9 +2,9 @@
   "title": "penecho/penecho",
   "claim": "penecho/penecho — Think with AI beyond the chat box. A shared canvas for handwriting, equations, diagrams, and spatial reasoning.",
   "score": 9,
-  "why_good": "This project targets educators and students who are frustrated with traditional chatbots, offering a unique canvas for visual learning and collaboration.",
-  "value": "Teachers and students will pay for Penecho to enhance interactive lessons and improve understanding through visual aids and spatial reasoning.",
-  "risk": "The reliance on established platforms like Miro and Notion for visual collaboration poses a significant challenge to user adoption.",
+  "why_good": "Chat is the wrong interface for math and diagrams; a canvas the model can both read and draw on is a real interaction unlock — and 9-language READMEs, a Discord, and 1.3k weekly npm installs show deliberate community building, not a weekend demo.",
+  "value": "商业价值: education is the wedge — per-seat SaaS for tutoring platforms and schools where students show work by hand and the AI works in the margins; longer term it is the AI-whiteboard seat sold next to Miro-style team pricing.",
+  "risk": "Canvas+AI is on every incumbent roadmap (Miro, FigJam, Excalidraw, ChatGPT Canvas), so it must own education before whiteboards absorb the feature; AGPL self-hosting earns love, not revenue.",
   "evidence": [
     "https://github.com/penecho/penecho",
     "1,765★",
@@ -33,9 +33,9 @@
     "zh": {
       "claim": "Penecho让您超越聊天框，使用AI共同思考，提供手写、方程、图表和空间推理的共享画布。",
       "hook": "Penecho通过将AI交互转变为协作的视觉体验，已经获得了1,765颗星。",
-      "why_good": "该项目针对对传统聊天机器人感到沮丧的教育工作者和学生，提供了一个独特的视觉学习和协作画布。",
-      "value": "教师和学生将为Penecho付费，以通过视觉辅助和空间推理增强互动课程和理解。",
-      "risk": "对Miro和Notion等成熟平台的依赖，对用户采用构成了重大挑战。"
+      "why_good": "数学和图示本来就不该用聊天框交互；一块模型既能“看”又能“画”的画布是真正的交互解锁——9 种语言 README、Discord 社区、npm 周下载 1.3k，是在认真做社区而非周末 Demo。",
+      "value": "商业价值：教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
+      "risk": "画布+AI 在所有在位者的路线图上（Miro、FigJam、Excalidraw、ChatGPT Canvas），必须抢先吃下教育场景；AGPL 自部署赚口碑不赚钱。"
     }
   },
   "pick": true,
