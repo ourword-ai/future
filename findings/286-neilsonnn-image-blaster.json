@@ -2,9 +2,9 @@
   "title": "neilsonnn/image-blaster",
   "claim": "neilsonnn/image-blaster — An image-to-world skillset for Claude.",
   "score": 8,
-  "why_good": "IMAGE-BLASTER generates 3D environments, SFX, and meshes from a single image using advanced AI skills. It allows users to create textured models, low-poly versions, or geometry-only models tailored to their needs.",
-  "value": "Game developers and architects pay for IMAGE-BLASTER to quickly generate high-quality 3D environments from simple images, reducing their design time and costs.",
-  "risk": "The risk lies in established 3D modeling software companies that already dominate the market and may not easily allow users to switch to a new tool.",
+  "why_good": "A few hundred lines of orchestration drew 4.7k stars — the vote is for the destination, not the code: image-to-usable-3D is wanted badly enough that people star a glue script for it. Worth noting commits stopped in mid-May, so the pull is on the outcome, not this implementation.",
+  "value": "The buyer is anyone paying a 3D artist for blockout work: indie game studios, arch-viz and previz shops, AR and product teams. The business is the unglamorous middle — retopology, scale and pivot correction, UVs, engine-ready export — sold per asset or per seat, because raw generative meshes are not shippable and cleanup is where the hours go.",
+  "risk": "Thin orchestration over two paid APIs, and both World Labs and FAL have every reason to ship the finished pipeline themselves. Output quality is still short of production-usable, so any business rests on cleanup tooling maturing faster than the generators absorb it — and this repo has been idle since May.",
   "evidence": [
     "https://github.com/neilsonnn/image-blaster",
     "4,765★",
@@ -17,20 +17,20 @@
   "model": "future-scout/github",
   "operator": "@ourword-ai",
   "tags": [],
-  "does": "IMAGE-BLASTER generates 3D environments, SFX, and meshes from a single image using advanced AI skills. It allows users to create textured models, low-poly versions, or geometry-only models tailored to their needs.",
-  "edge": "Unlike competitors, IMAGE-BLASTER can produce a fully meshed 3D environment with a target face count of just 50,000, significantly lower than the 500,000 default of Hunyuan's API.",
-  "why_use": "Choose IMAGE-BLASTER for its efficiency in creating detailed 3D models quickly, making it ideal for game developers and architects who need rapid prototyping.",
+  "does": "A Claude skill pack that walks a single image through World Labs and FAL to a meshed 3D environment with sound effects, in a few minutes.",
+  "edge": "A few hundred lines of orchestration drew 4.7k stars — the vote is for the destination, not the code: image-to-usable-3D is wanted badly enough that people star a glue script for it. Worth noting commits stopped in mid-May, so the pull is on the outcome, not this implementation.",
+  "why_use": "Gets you from a reference image to a rough 3D environment fast enough to be worth trying before modelling anything.",
   "hook": "Transform a single image into a fully meshed 3D environment in seconds with IMAGE-BLASTER.",
   "i18n": {
     "zh": {
       "claim": "将单张图像在几秒钟内转化为完整的网格3D环境，使用IMAGE-BLASTER。",
       "hook": "将单张图像在几秒钟内转化为完整的网格3D环境，使用IMAGE-BLASTER。",
-      "does": "IMAGE-BLASTER利用先进的AI技能从单张图像生成3D环境、特效和网格。它允许用户根据需求创建纹理模型、低多边形版本或仅几何模型。",
-      "edge": "与竞争对手不同，IMAGE-BLASTER可以以仅50,000的目标面数生成完整的网格3D环境，显著低于Hunyuan API的500,000默认值。",
-      "why_use": "选择IMAGE-BLASTER，因为它在快速创建详细3D模型方面的高效性，特别适合需要快速原型设计的游戏开发者和建筑师。",
-      "value": "游戏开发者和建筑师为IMAGE-BLASTER付费，以快速从简单图像生成高质量的3D环境，从而减少设计时间和成本。",
-      "risk": "风险在于已经主导市场的成熟3D建模软件公司，可能不会轻易让用户转向新工具。",
-      "why_good": "IMAGE-BLASTER利用先进的AI技能从单张图像生成3D环境、特效和网格。它允许用户根据需求创建纹理模型、低多边形版本或仅几何模型。"
+      "does": "一套 Claude 技能包，把一张图片依次送过 World Labs 和 FAL，几分钟内产出带音效的、已经布好网格的 3D 场景。",
+      "edge": "几百行胶水代码换来 4.7k star——大家投的是这个结果，而不是这段代码：从图片到可用 3D 的需求强到让人愿意给一段脚本点星。要注意提交在 5 月中就停了，所以拉力在目标上，不在这个实现上。",
+      "why_use": "从一张参考图到粗模场景足够快，快到值得在正式建模前先试一遍。",
+      "value": "买家是现在花钱请 3D 美术做白模的人：独立游戏团队、建筑可视化和前期分镜工作室、AR 与产品团队。生意在不体面的中间环节——重拓扑、尺度与轴心修正、UV、引擎可用的导出——按资产或按坐席收费，因为生成出来的原始网格没法直接上线，工时都耗在收拾上。",
+      "risk": "本质是两个付费 API 之上的薄胶水层，而 World Labs 和 FAL 都有充足理由自己把整条流水线做完。输出质量距离可交付仍有差距，所以这门生意取决于收尾工具的成熟速度能不能快过生成方的吞并——而这个仓库自 5 月起就没动了。",
+      "why_good": "几百行胶水代码换来 4.7k star——大家投的是这个结果，而不是这段代码：从图片到可用 3D 的需求强到让人愿意给一段脚本点星。要注意提交在 5 月中就停了，所以拉力在目标上，不在这个实现上。"
     }
   },
   "pick": true,
