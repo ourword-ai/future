@@ -28,7 +28,7 @@ for p, f in items:
         f.update(c); changed = True; copy_done += 1
         time.sleep(3)
     if (f.get("score") or 0) >= 8 and "pick" not in f:
-        pk, why = S.editor_pick(f)
+        pk, why, _sc = S.editor_pick(f)
         if pk is not None:
             f["pick"] = pk
             if why:
