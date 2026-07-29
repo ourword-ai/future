@@ -23,6 +23,14 @@ complaining in earnest, someone forking it to run their own. Stars measure atten
 demand, and never satisfy this condition on their own. Repo age is *not* part of the standard:
 a six-month-old project with real users beats a two-day-old repo with a spike.
 
+*Calibration, 2026-07-29:* a verbatim quote is the strongest evidence but cannot be a hard gate —
+fresh repos often have no comments at all, and a bot-filled issue tracker hides the real ones. So
+**behaviour counts as weaker first-hand evidence**: forks outnumbering a third of stars (people
+standing up their own copies rather than bookmarking), or several contributors on an actively
+maintained tracker. Quotes still outrank behaviour, and a card shows them whenever they exist.
+What must never happen is the reverse of this rule: an entry with no evidence yet is **archived,
+never dropped** — collection is wide, promotion is strict. Only the integrity red line drops.
+
 **(2) There is a gap you can say out loud.** One of:
 - *only geeks can use it* — CLI, self-hosting, config files, no product around the capability;
 - *the Chinese / local-market case is empty* — it exists in English, nobody built it here;
@@ -132,6 +140,11 @@ deliberately: the operator's judgement comes first.
 **（1）痛被真人验证过**——不是我们推断的。至少一条可核查的一手证据：有人说愿意付钱、有人在认真抱怨、
 有人 fork 回去自己搭。星数只衡量注意力，单独永远不满足这一条。项目新旧**不进标准**：一个跑了半年有真
 用户的项目，胜过一个两天涨一波星的新仓。
+
+*校准（2026-07-29）*：真句子是最硬的证据，但**不能当硬门槛**——新仓常常一条评论都没有，机器人刷满的
+issue 区也会把真话埋掉。所以**行为算较弱的一手证据**：fork 数超过 star 的三分之一（说明人们在自己搭而
+不是收藏）、或活跃维护且有多位贡献者。原声仍然优先于行为，有原声就在卡片上显示。绝不能反向操作的是：
+暂时没有证据的条目**进档案，不是丢弃**——收录宽、推送严，只有完整性红线才丢弃。
 
 **（2）缺口能一句话说清**，三种之一：只有极客用得了（命令行、自己部署、能力外面没有产品）／中文本土场景
 空白（英文世界有了，这边没人做）／痛点击中了但解得不完美（把这一件事做对就是切入口）。写不出缺口，不算数。
