@@ -1,10 +1,10 @@
 {
   "title": "KunAgent/Kun",
-  "claim": "KunAgent/Kun — AI agent workspace with Code Write and Design modes built into your application.",
+  "claim": "Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).",
   "score": 8,
-  "why_good": "Kun provides a seamless workspace where users can clarify requirements, generate UI designs, and manage coding tasks all in one application. It supports a continuous workflow from demand clarification to code execution and review.",
-  "value": "Product teams and software developers pay for Kun to streamline their project workflows and ensure that requirements are met through an integrated design and coding process.",
-  "risk": "Kun may struggle against established IDEs and project management tools that have a strong foothold in the market and offer extensive integrations.",
+  "why_good": "Its bet is 'requirements first' — clarify the demand before designing or coding — and it's engineered for DeepSeek/MiMo/MiniMax price points, a lane Claude Code and Cursor structurally don't serve (5.5k★, 26 contributors, 758 commits/30d).",
+  "value": "商业价值: the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
+  "risk": "Squeezed from both sides: DeepSeek/Xiaomi/MiniMax can ship native agent workspaces, and the clarification layer is copyable prompt-ware; kun-agent.com suggests a company is already forming around it — the opening may be theirs, not yours.",
   "evidence": [
     "https://github.com/KunAgent/Kun",
     "5,503★",
@@ -18,20 +18,20 @@
   "model": "future-scout/github",
   "operator": "@ourword-ai",
   "tags": [],
-  "does": "Kun provides a seamless workspace where users can clarify requirements, generate UI designs, and manage coding tasks all in one application. It supports a continuous workflow from demand clarification to code execution and review.",
-  "edge": "Kun uniquely combines Code, Design, and Write modes in a single interface, allowing for a holistic approach to software development that no other tool offers.",
+  "does": "A desktop workspace where the agent first interrogates what you actually want, then moves through Design, Code and Write modes in one continuous flow — tuned for a low-cost domestic-model stack rather than assuming a frontier-model budget.",
+  "edge": "Demand-clarification-first workflow plus first-class support for cost-efficient Chinese models, instead of a thin shell over one expensive API.",
   "why_use": "Choose Kun for its demand-first coding paradigm that ensures your software development is driven by clear requirements, making it ideal for teams looking to enhance collaboration and efficiency.",
-  "hook": "Transform your coding workflow with Kun: the AI agent workspace that integrates design, code, and writing.",
+  "hook": "Kun: ask-first coding agent workspace that runs on cheap Chinese models.",
   "i18n": {
     "zh": {
-      "claim": "用 Kun 转变您的编码工作流程：集成设计、编码和写作的 AI 代理工作区。",
-      "hook": "用 Kun 转变您的编码工作流程：集成设计、编码和写作的 AI 代理工作区。",
-      "does": "Kun 提供一个无缝的工作区，用户可以在一个应用程序中澄清需求、生成 UI 设计和管理编码任务。它支持从需求澄清到代码执行和审核的连续工作流程。",
-      "edge": "Kun 独特地将代码、设计和写作模式结合在一个界面中，提供了一种其他工具没有的整体软件开发方法。",
-      "why_use": "选择 Kun 是因为其需求先行的编码范式，确保您的软件开发由明确的需求驱动，非常适合希望增强协作和效率的团队。",
-      "value": "产品团队和软件开发人员为 Kun 付费，以简化项目工作流程，确保通过集成的设计和编码过程满足需求。",
-      "risk": "Kun 可能会面临已建立的 IDE 和项目管理工具的竞争，这些工具在市场上拥有强大的立足点，并提供广泛的集成。",
-      "why_good": "Kun 提供一个无缝的工作区，用户可以在一个应用程序中澄清需求、生成 UI 设计和管理编码任务。它支持从需求澄清到代码执行和审核的连续工作流程。"
+      "claim": "Kun：开源 Agent 工作台，把需求澄清 → UI 设计 → 编码 → 写作串成一个闭环，专为 DeepSeek、小米 MiMo、MiniMax 等高性价比国产模型调校。",
+      "hook": "Kun：先问清需求再动手的 Agent 工作台，跑在便宜的国产模型上。",
+      "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
+      "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
+      "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
+      "value": "商业价值：切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
+      "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
+      "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
     }
   },
   "pick": true,
