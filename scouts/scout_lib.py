@@ -174,60 +174,77 @@ def idea_body(f):
             f"### Startup-worthiness\n\n{f.get('score','')}/10\n\n"
             f"### Evidence\n\n{ev}\n")
 
+def _fetch_readme(f):
+    """Best-effort README text (main then master) for grounding, HTML/img-stripped, truncated."""
+    repo=None; t=f.get("title") or ""
+    if "/" in t and " " not in t and not t.startswith("http"):
+        repo=t
+    else:
+        for e in (f.get("evidence") or []):
+            m=re.search(r"github\.com/([^/\s]+/[^/\s#?]+)", str(e))
+            if m: repo=m.group(1); break
+    if not repo: return ""
+    for br in ("main","master"):
+        try:
+            req=urllib.request.Request(f"https://raw.githubusercontent.com/{repo}/{br}/README.md",
+                                       headers={"User-Agent":"future-scout"})
+            with urllib.request.urlopen(req, timeout=12) as r:
+                txt=r.read().decode("utf-8","ignore")
+            txt=re.sub(r"<[^>]+>"," ",txt); txt=re.sub(r"!\[[^\]]*\]\([^)]*\)"," ",txt)
+            return txt[:5000]
+        except Exception:
+            continue
+    return ""
+
 def llm_copy(f):
-    """Sharp, specific, BILINGUAL (EN + 中文) card copy in ONE GitHub Models call.
-    Bans generic filler; forces project-specific why/value/risk. Returns EN fields plus
-    f['i18n']['zh']; returns None on failure so the caller keeps the heuristic copy."""
-    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not tok:
-        return None
-    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
-    ev = ", ".join(f.get("evidence", []) or [])
-    prompt = (
-        "You curate a public board of GitHub / Show HN projects that could become real startups. "
-        "Write SHARP, SPECIFIC copy about THIS project. Never generic.\n"
-        "BANNED phrases (never output any): 'could pay for premium features', 'subscription model', "
-        "'a bigger player could integrate', 'could easily integrate', 'could be absorbed', "
-        "'the market is competitive', 'leverages ... technology', 'streamline workflows', "
-        "'premium features or support'. If you are about to write one, replace it with the concrete, "
-        "project-specific point: name the exact buyer, the exact wedge, the exact incumbent, or the "
-        "exact weakness.\n"
-        "BAR to match (why_good): \"Attacks the #1 complaint about coding agents - overengineered "
-        "slop - and the pull is real: ~90k stars in six weeks.\"\n\n"
-        "Reply with ONLY a JSON object; each English value is ONE tight, concrete sentence:\n"
-        "  hook: a punchy, scroll-stopping one-line headline — a COMPLETE but concise sentence that makes someone want to click; you may fold in the standout number (e.g. stars). Not hype, not a fragment.\n"
-        "  why_good: the non-obvious, project-specific reason this could be a real startup.\n"
+    """Product-first, BILINGUAL, README-grounded card copy in ONE GitHub Models call. Returns
+    does/edge/why_use/value/risk (+hook) plus f['i18n']['zh']; None on failure (keep heuristic)."""
+    tok=os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not tok: return None
+    model=os.environ.get("GH_MODELS_MODEL","openai/gpt-4o-mini")
+    ev=", ".join(f.get("evidence", []) or [])
+    readme=_fetch_readme(f)
+    prompt=(
+        "You curate a public board of open-source projects that could become startups. Write "
+        "PRODUCT-FIRST, SPECIFIC copy grounded in the README below - never generic, never invented.\n"
+        "BANNED (never output): 'could pay for premium features', 'subscription model', 'a bigger "
+        "player could integrate', 'the market is competitive', 'leverages ... technology', "
+        "'streamline workflows'. Replace with the concrete buyer / wedge / incumbent / weakness.\n\n"
+        "Reply with ONLY a JSON object. English values first, then faithful 中文 in the *_zh keys:\n"
+        "  hook: one punchy, complete headline sentence (you may fold in the standout number).\n"
+        "  does: what it concretely does - the real capabilities, from the README, in 1-2 tight sentences.\n"
+        "  edge: its single most notable, standout capability (the thing it does that others do not).\n"
+        "  why_use: the concrete reason to pick THIS over the alternatives.\n"
         "  value: who EXACTLY pays and for what specific outcome (name the buyer and the wedge).\n"
-        "  risk: the concrete, specific reason it might fail (name the incumbent or exact weakness).\n"
-        "  claim_zh: 中文翻译 of the one-line description (keep repo/product names in latin).\n"
-        "  hook_zh: faithful 中文 translation of the hook.\n"
-        "  why_good_zh, value_zh, risk_zh: faithful 中文 translations of the three English lines.\n\n"
-        f"Project: {f.get('title','')} — {f.get('claim','')}\n"
-        f"Signals: {ev}\nDomain: {f.get('domain','')}\n\nJSON only.")
-    body = json.dumps({"model": model, "temperature": 0.5, "max_tokens": 650,
-                       "messages": [{"role": "user", "content": prompt}]}).encode()
+        "  risk: the concrete reason it might fail - name the incumbent or the exact weakness. Be honest.\n"
+        "  claim_zh, hook_zh, does_zh, edge_zh, why_use_zh, value_zh, risk_zh: faithful 中文.\n\n"
+        f"Project: {f.get('title','')} - {f.get('claim','')}\n"
+        f"Signals: {ev}\nDomain: {f.get('domain','')}\n\n"
+        f"README (for grounding):\n{readme}\n\nJSON only.")
+    body=json.dumps({"model":model,"temperature":0.4,"max_tokens":1100,
+                     "messages":[{"role":"user","content":prompt}]}).encode()
     try:
-        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
-                       "User-Agent": "future-scout"})
-        with urllib.request.urlopen(req, timeout=40) as r:
-            txt = json.loads(r.read())["choices"][0]["message"]["content"]
-        m = re.search(r"\{.*\}", txt, re.S)
-        obj = json.loads(m.group(0))
-        if all(obj.get(k) for k in ("why_good", "value", "risk")):
-            out = {k: str(obj[k]).strip()[:400] for k in ("why_good", "value", "risk")}
-            if obj.get("hook"):
-                out["hook"] = str(obj["hook"]).strip()[:200]
-            zh = {}
-            for src, dst in (("claim_zh", "claim"), ("hook_zh", "hook"), ("why_good_zh", "why_good"),
-                             ("value_zh", "value"), ("risk_zh", "risk")):
-                if obj.get(src):
-                    zh[dst] = str(obj[src]).strip()[:400]
-            if zh:
-                out["i18n"] = {"zh": zh}
+        req=urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
+            headers={"Authorization":f"Bearer {tok}","Content-Type":"application/json","User-Agent":"future-scout"})
+        with urllib.request.urlopen(req, timeout=45) as r:
+            txt=json.loads(r.read())["choices"][0]["message"]["content"]
+        obj=json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
+        if all(obj.get(k) for k in ("does","edge","value","risk")):
+            out={k:str(obj[k]).strip()[:500] for k in ("does","edge","value","risk")}
+            out["why_good"]=out["does"]
+            if obj.get("why_use"): out["why_use"]=str(obj["why_use"]).strip()[:400]
+            if obj.get("hook"):    out["hook"]=str(obj["hook"]).strip()[:220]
+            zh={}
+            for src,dst in (("claim_zh","claim"),("hook_zh","hook"),("does_zh","does"),
+                            ("edge_zh","edge"),("why_use_zh","why_use"),("value_zh","value"),("risk_zh","risk")):
+                if obj.get(src): zh[dst]=str(obj[src]).strip()[:500]
+            if zh.get("does"): zh["why_good"]=zh["does"]
+            if zh: out["i18n"]={"zh":zh}
             return out
     except Exception as e:
         print(f"  [llm_copy fallback -> heuristic: {e!r}]", file=sys.stderr)
+    return None
+
     return None
 def editor_pick(f):
     """Strict editorial gate: is this genuinely a buildable, monetizable startup a small
@@ -288,10 +305,12 @@ def post_ideas(cands, scout, cap=6):
             rec = dict(f)
             rec.update({"id": fid, "agent": scout,
                         "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
-            if (rec.get("score") or 0) >= 9:   # ration free LLM quota to the top tier only
-                c = llm_copy(rec)                # sharp bilingual EN/中文
+            _score = rec.get("score") or 0
+            if _score >= 7:                      # product-first structured copy for the visible tier
+                c = llm_copy(rec)                # README-grounded bilingual 简介/亮点/为什么用/商业/风险
                 if c:
                     rec.update(c)
+            if _score >= 8:
                 pk, why = editor_pick(rec)
                 if pk is not None:
                     rec["pick"] = pk
