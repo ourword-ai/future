@@ -17,7 +17,7 @@ for p in sorted(glob.glob("findings/*.json")):
         continue
     if (f.get("score") or 0) < 8 or "pick" in f:
         continue
-    pk, why = S.editor_pick(f)
+    pk, why, _sc = S.editor_pick(f)
     if pk is None:
         print("model unavailable/limited — stopping (re-run later to continue)")
         break
