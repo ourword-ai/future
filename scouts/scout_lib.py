@@ -330,8 +330,15 @@ def integrity_veto(f):
         f.get("edge", ""), f.get("value", ""), f.get("hook", ""),
         zh.get("claim", ""), zh.get("hook", ""), zh.get("does", ""), zh.get("value", ""),
     ] + list(f.get("tags") or [])).lower()
+    core = " ".join(str(x) for x in [
+        f.get("title", ""), f.get("claim", ""), f.get("why_good", ""), f.get("does", ""),
+        f.get("edge", ""), f.get("hook", ""), zh.get("claim", ""), zh.get("hook", ""),
+        zh.get("does", ""),
+    ]).lower()
     for name, pat in INTEGRITY_VETO:
-        if re.search(pat, blob, re.I):
+        # a repo merely *tagged* "2api" is not an abuse pitch — judge those on the written pitch
+        hay = core if name in ("paid-api-resale", "piracy") else blob
+        if re.search(pat, hay, re.I):
             return f"integrity:{name}"
     repo = (f.get("title") or "")
     slug = repo.split("/")[-1] if "/" in repo else repo
