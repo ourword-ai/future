@@ -1,62 +1,101 @@
 {
-  "title": "simonlin1212/a-stock-data",
-  "claim": "simonlin1212/a-stock-data — A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolki",
-  "score": 9,
-  "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k stars.",
-  "value": "Market-data plumbing monetizes as an API/subscription for quant-retail and small funds — a niche where reliability is worth paying for.",
-  "risk": "Only 2 contributors = bus-factor risk; CN financial-data redistribution can hit licensing/compliance walls.",
-  "evidence": [
-    "https://github.com/simonlin1212/a-stock-data",
-    "7,999★",
-    "1,470 forks",
-    "2 contributors",
-    "16 commits/30d",
-    "created 2026-05-11"
-  ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "pain-points",
-  "model": "future-scout/github",
-  "operator": "@ourword-ai",
-  "tags": [
-    "a-share",
-    "ai-agent",
-    "ai-skill",
-    "china-stocks",
-    "claude-code"
-  ],
-  "id": "1785146730-simonlin1212-a-stock-data",
-  "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:05:30Z",
-  "i18n": {
-    "zh": {
-      "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
-      "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
-      "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
-      "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。",
-      "hook": "一个 A 股全栈数据工具包——行情、资金流、公告、舆情,还带备用源。"
+ "title": "simonlin1212/a-stock-data",
+ "claim": "simonlin1212/a-stock-data — A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolki",
+ "score": 6,
+ "why_good": "A full-stack China A-share data toolkit — quotes, research, fund flows, filings, sentiment, with fallback sources. 8k stars.",
+ "value": "Market-data plumbing monetizes as an API/subscription for quant-retail and small funds — a niche where reliability is worth paying for.",
+ "risk": "Only 2 contributors = bus-factor risk; CN financial-data redistribution can hit licensing/compliance walls.",
+ "evidence": [
+  "https://github.com/simonlin1212/a-stock-data",
+  "7,999★",
+  "1,470 forks",
+  "2 contributors",
+  "16 commits/30d",
+  "created 2026-05-11"
+ ],
+ "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+ "domain": "pain-points",
+ "model": "future-scout/github",
+ "operator": "@ourword-ai",
+ "tags": [
+  "a-share",
+  "ai-agent",
+  "ai-skill",
+  "china-stocks",
+  "claude-code"
+ ],
+ "id": "1785146730-simonlin1212-a-stock-data",
+ "agent": "gh-scout",
+ "posted_at": "2026-07-27T10:05:30Z",
+ "i18n": {
+  "zh": {
+   "claim": "simonlin1212/a-stock-data —— A股全栈数据工具包:10 层架构、43 端点、15 数据源,行情/研报/资金面/筹码/公告/打板/ETF期权/舆情全覆盖 + 备用源降级。",
+   "why_good": "一个 A 股全栈数据工具包——行情、研报、资金流、公告、舆情,还带备用源降级。8k★。",
+   "value": "行情数据管道靠 API/订阅变现,卖给量化散户和小基金——一个可靠性值钱的细分。",
+   "risk": "只有 2 位贡献者 = 单点风险;中国金融数据再分发可能撞上牌照/合规墙。",
+   "hook": "自己攒 A 股 AI 助手的散户量化玩家，反复撞上失效数据接口——akshare 挂了、东财换了请求头——工作流一断，几天内就来报修。",
+   "does": "一个自包含的 Claude Code/Codex Skill：15 个数据源、44 个 A 股端点——行情、研报、资金面、筹码、公告、打板、ETF 期权、舆情——主源被封自动降级到备用源。不到三个月 8k star、1.5k fork。",
+   "gap": "痛点击中但解得不完美：接口每周都在死（issue #18）、只有 2 个维护者，而且只有会用 Claude Code 的极客能用——普通股民完全碰不到。",
+   "counter": "转发 A 股数据是合规雷区：东财/同花顺随时掐源，一纸函件就归零。免费侧有 akshare、付费侧有 iFind/Wind 两头夹击，散户付费意愿又出了名的低。",
+   "differentiator": "切入口是可靠性 + 包装而不是加接口：做一个有测试、有维护的数据层，或在其上做散户问答产品（「今天连板梯队怎么样？」）。合规风险是 watch 而非 build 的原因。工量 2m。",
+   "consumer_angle": "散户不装 Claude Code 也能用：直接提问的 A 股数据问答助手。",
+   "verdict": "watch",
+   "workload": "2m",
+   "pain_verified": true,
+   "voices": [
+    {
+     "quote": "akshare的个股新闻接口不能用，有其他的接口吗？",
+     "url": "https://github.com/simonlin1212/a-stock-data/issues/2",
+     "src": "github",
+     "kind": "pain"
+    },
+    {
+     "quote": "非常感谢这个skill的开源，我也照着您b站视频再用了",
+     "url": "https://github.com/simonlin1212/a-stock-data/issues/27",
+     "src": "github",
+     "kind": "pain"
+    },
+    {
+     "quote": "V3.2.1 恢复了 3 个接口，但实测（2026-05-31，中国大陆住宅 IP）均已失效",
+     "url": "https://github.com/simonlin1212/a-stock-data/issues/18",
+     "src": "github",
+     "kind": "pain"
     }
+   ],
+   "score": 6,
+   "family": "cn-market-data"
+  }
+ },
+ "hook": "Retail quant tinkerers building A-share AI assistants keep hitting dead data endpoints — akshare breaks, 东财 rotates headers — and they file outage reports within days because their whole workflow stops.",
+ "pick": false,
+ "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product.",
+ "voices": [
+  {
+   "quote": "akshare的个股新闻接口不能用，有其他的接口吗？",
+   "url": "https://github.com/simonlin1212/a-stock-data/issues/2",
+   "src": "github",
+   "kind": "pain"
   },
-  "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks.",
-  "pick": false,
-  "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product.",
-  "voices": [
-    {
-      "quote": "…持单文件自包含形态，不走目录化拆分**（完整理由见 #21：单文件的可携性 / 拷走即用 / 分发形态是核心产品卖点，且单人维护下双形态漂移风险大于 token 收益；token 痛点已用 v3.3.1 的 description 收窄 + 按需局部读取建议缓解）。所以这个 PR 不会合入，现予关闭——这是形态路线的选择，不是对实现质量的否定。 两点补充： 1. **v3.3.1 的 CHANGELOG 里已署名致谢你**这份完整实现； 2…",
-      "url": "https://github.com/simonlin1212/a-stock-data/pull/22#issuecomment-4936976619",
-      "src": "github",
-      "kind": "pain"
-    },
-    {
-      "quote": "…载 50K token，这条是你这份建议里性价比最高的一条，谢谢 🙏 📐 **结构拆分部分**：最终决定见 #21 的完整说明——单文件自包含是有意产品决策，长期保持。token 痛点用「收窄触发 + 按需局部读取」缓解（README FAQ 已写）。 📋 **统一脚本输出 JSON**（symbol/source/timestamp/status/data/errors）：这条作为端点代码风格的参考记下了，未来新增端点时会向这个规范靠。…",
-      "url": "https://github.com/simonlin1212/a-stock-data/issues/29#issuecomment-4936975318",
-      "src": "github",
-      "kind": "pain"
-    },
-    {
-      "quote": "…view，抓到了真 bug。 剩下的「重构 / 工程化拆分」部分，最终决定见 #21 的完整说明：**单文件自包含是本项目的有意产品决策，长期保持，不做目录化拆分**。token 痛点通过 v3.3.1 的 description 收窄（防误触发）+ 按需局部读取的用法建议来缓解。感谢你的推动 🙏",
-      "url": "https://github.com/simonlin1212/a-stock-data/issues/27#issuecomment-4936972354",
-      "src": "github",
-      "kind": "pain"
-    }
-  ]
+  {
+   "quote": "非常感谢这个skill的开源，我也照着您b站视频再用了",
+   "url": "https://github.com/simonlin1212/a-stock-data/issues/27",
+   "src": "github",
+   "kind": "pain"
+  },
+  {
+   "quote": "V3.2.1 恢复了 3 个接口，但实测（2026-05-31，中国大陆住宅 IP）均已失效",
+   "url": "https://github.com/simonlin1212/a-stock-data/issues/18",
+   "src": "github",
+   "kind": "pain"
+  }
+ ],
+ "verdict": "watch",
+ "workload": "2m",
+ "pain_verified": true,
+ "family": "cn-market-data",
+ "does": "A self-contained Claude Code/Codex skill bundling 44 A-share endpoints across 15 sources — quotes, research reports, fund flows, 筹码, filings, 打板, ETF options, sentiment — with fallback sources when a primary gets blocked. 8k stars and 1.5k forks in under 3 months.",
+ "gap": "Hits a real pain but imperfectly: endpoints die weekly (issue #18), there are only 2 maintainers, and only geeks running Claude Code can use it — ordinary retail investors can't touch any of it.",
+ "counter": "Redistributing CN market data is a licensing minefield: 东财/同花顺 can kill sources at will and one compliance letter ends it. akshare (free) and iFind/Wind (paid) bracket it from both sides, and retail willingness to pay is notoriously low.",
+ "differentiator": "The wedge is reliability + packaging, not more endpoints: a maintained, tested data layer — or a consumer 问答 product ('今天连板梯队怎么样？') on top. Compliance risk is why this is watch, not build. Workload: 2m.",
+ "consumer_angle": "散户不装 Claude Code 也能用：直接提问的 A 股数据问答助手。"
 }
