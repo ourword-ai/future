@@ -28,16 +28,43 @@
   "id": "242-penecho-penecho",
   "agent": "gh-scout",
   "posted_at": "2026-07-28T20:04:33Z",
-  "hook": "Penecho has already garnered 1,765 stars by transforming AI interaction into a collaborative, visual experience beyond text.",
+  "hook": "People who think in handwriting, equations and diagrams — students, engineers, hobbyists — are forcing spatial ideas through a chat box, and non-developers are spending hours fighting Node and PowerShell just to try the alternative.",
   "i18n": {
     "zh": {
       "claim": "Penecho让您超越聊天框，使用AI共同思考，提供手写、方程、图表和空间推理的共享画布。",
-      "hook": "Penecho通过将AI交互转变为协作的视觉体验，已经获得了1,765颗星。",
+      "hook": "用手写、公式和图表思考的人——学生、工程师、爱好者——正被迫把空间化的想法塞进聊天框；非开发者为了试个替代品要跟 Node 和 PowerShell 搏斗几个小时。",
       "why_good": "数学和图示本来就不该用聊天框交互；一块模型既能“看”又能“画”的画布是真正的交互解锁——9 种语言 README、Discord 社区、npm 周下载 1.3k，是在认真做社区而非周末 Demo。",
       "value": "商业价值：教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
-      "risk": "画布+AI 在所有在位者的路线图上（Miro、FigJam、Excalidraw、ChatGPT Canvas），必须抢先吃下教育场景；AGPL 自部署赚口碑不赚钱。"
+      "risk": "画布+AI 在所有在位者的路线图上（Miro、FigJam、Excalidraw、ChatGPT Canvas），必须抢先吃下教育场景；AGPL 自部署赚口碑不赚钱。",
+      "does": "一块共享画布：手写、公式、图表和空间上下文都成为 AI 对话的一部分——模型在同一张纸上既能看也能画。npm 分发，每周约 1400 次下载，README 有 9 种语言。",
+      "gap": "只有极客能用：一位医院职工为了测试它要装 Node、Codex CLI、还得改 PowerShell 策略——而这块画布真正面向的人群（学生、记笔记的人）根本没有开箱即用的平板/桌面应用。",
+      "counter": "Apple 数学笔记和 OneNote+Copilot 正带着操作系统级的分发盘旋在同一片手写+AI 领地上；画布类应用在演示魔法褪去后向来留存艰难。",
+      "differentiator": "把画布打包成一键安装的 iPad/桌面应用，内置模型，以教育为楔子（数学作业、实验笔记）——非技术用户已经在涌来，却被安装流程弹开。",
+      "consumer_angle": "本来就是普通人产品：在纸上思考、AI 能读懂你的涂写——楔子就是去掉极客式安装。"
     }
   },
   "pick": true,
-  "pick_reason": "The project offers a unique collaborative tool for educators and students, which can be monetized through subscriptions or licensing."
+  "pick_reason": "The project offers a unique collaborative tool for educators and students, which can be monetized through subscriptions or licensing.",
+  "does": "A shared canvas where handwriting, equations, diagrams and spatial context become part of the AI conversation — the model both sees and draws on the same surface. npm-distributed, ~1.4k downloads/wk, README in 9 languages.",
+  "voices": [
+    {
+      "quote": "I am an Italian user and today I spent several hours installing, configuring and testing PenEcho on Windows… I installed Node.js, solved the Windows PowerShell execution policy issue, installed Codex CLI… I am not a software developer. I work in a hospital.",
+      "url": "https://github.com/penecho/penecho/issues/20",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Allow users to bring real-world visual content into PenEcho by importing an existing image or taking a photo with the device camera.",
+      "url": "https://github.com/penecho/penecho/issues/5",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "pain_verified": true,
+  "gap": "Only geeks can use it: a hospital worker needed Node, Codex CLI and PowerShell policy fixes to test it — there is no packaged tablet/desktop app for exactly the audience (students, note-takers) the canvas is for.",
+  "counter": "Apple Math Notes and OneNote+Copilot are circling the same handwriting-AI territory with OS-level distribution, and canvas apps historically struggle with retention once the demo magic fades.",
+  "differentiator": "Package the canvas as a one-click iPad/desktop app with a built-in model and an education wedge (math homework, lab notes) — the non-technical users are already arriving and bouncing off the install.",
+  "workload": "2m",
+  "consumer_angle": "Already an ordinary-person product: think-on-paper with an AI that reads your scribbles — the wedge is removing the geek setup.",
+  "verdict": "build"
 }
