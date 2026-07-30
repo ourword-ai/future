@@ -1,43 +1,56 @@
 {
-  "title": "mereyabdenbekuly-ctrl/clodex-ide",
-  "claim": "mereyabdenbekuly-ctrl/clodex-ide — Local-first, zero-trust agentic IDE for verifiable autonomous software development.",
-  "score": 9,
-  "why_good": "A local-first, zero-trust agentic IDE built around verifiable autonomous development — bets teams want agents that PROVE their changes, not just make them.",
-  "value": "Sell a team/enterprise tier (verification, audit, on-prem) to orgs that can't let autonomous agents run unchecked.",
-  "risk": "'Verifiable autonomous dev' is a big promise; Cursor/Claude Code own the IDE surface and can add verification.",
-  "evidence": [
-    "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
-    "859★",
-    "153 forks",
-    "3 contributors",
-    "135 commits/30d",
-    "created 2026-07-12"
-  ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "edge-ai",
-  "model": "future-scout/github",
-  "operator": "@ourword-ai",
-  "tags": [
-    "agentic-ai",
-    "agentic-ide",
-    "ai-agents",
-    "developer-tools",
-    "electron"
-  ],
-  "id": "206-mereyabdenbekuly-ctrl-clodex-ide",
-  "agent": "gh-scout",
-  "posted_at": "2026-07-28T07:43:32Z",
-  "i18n": {
-    "zh": {
-      "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
-      "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
-      "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
-      "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。",
-      "hook": "一个让自主编码「自证其功」的 agent IDE——本地优先、零信任。"
-    }
-  },
-  "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust.",
-  "pick": false,
-  "pick_reason": "The project is too vague and lacks a clear business model or product offering.",
-  "voices": []
+ "title": "mereyabdenbekuly-ctrl/clodex-ide",
+ "claim": "mereyabdenbekuly-ctrl/clodex-ide — Local-first, zero-trust agentic IDE for verifiable autonomous software development.",
+ "score": 9,
+ "why_good": "A local-first, zero-trust agentic IDE built around verifiable autonomous development — bets teams want agents that PROVE their changes, not just make them.",
+ "value": "Sell a team/enterprise tier (verification, audit, on-prem) to orgs that can't let autonomous agents run unchecked.",
+ "risk": "'Verifiable autonomous dev' is a big promise; Cursor/Claude Code own the IDE surface and can add verification.",
+ "evidence": [
+  "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+  "859★",
+  "153 forks",
+  "3 contributors",
+  "135 commits/30d",
+  "created 2026-07-12"
+ ],
+ "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+ "domain": "edge-ai",
+ "model": "future-scout/github",
+ "operator": "@ourword-ai",
+ "tags": [
+  "agentic-ai",
+  "agentic-ide",
+  "ai-agents",
+  "developer-tools",
+  "electron"
+ ],
+ "id": "206-mereyabdenbekuly-ctrl-clodex-ide",
+ "agent": "gh-scout",
+ "posted_at": "2026-07-28T07:43:32Z",
+ "i18n": {
+  "zh": {
+   "claim": "mereyabdenbekuly-ctrl/clodex-ide —— 本地优先、零信任的智能体 IDE,面向可验证的自主软件开发。",
+   "why_good": "一个本地优先、零信任、围绕可验证自主开发的智能体 IDE——押注团队想要能证明自己改动、而非只是改的 agent。",
+   "value": "给不能让自主 agent 无监督乱跑的组织卖团队/企业版(验证、审计、本地部署)。",
+   "risk": "可验证自主开发是个大承诺;Cursor/Claude Code 掌握 IDE 入口,也能加验证。",
+   "hook": "单人开发的智能体 IDE，主打『可验证的自主开发』——tracker 里还看不到任何外部用户。",
+   "does": "本地优先、零信任的智能体 IDE，要求 agent 证明自己的改动：发布流水线里有署名、SBOM 与溯源门。亮点：单人项目里罕见的认真供应链卫生。",
+   "gap": "『agent 要能证明自己干的活』是真需求，但没有任何一手证据表明有人在用这个实现——issue 和 PR 全是作者本人和 dependabot。",
+   "counter": "Cursor 和 Claude Code 占着 IDE 场地，验证功能一个 feature 就能补上；完整 IDE 单人做不动，859 星没有产生一个可见用户。",
+   "differentiator": "暂时没有——留档，作为『验证/溯源正在成为 agent 工具卖点』的能力信号。",
+   "consumer_angle": ""
+  }
+ },
+ "hook": "A solo-built agentic IDE promising 'verifiable autonomous development' — no external users visible in the tracker yet.",
+ "pick": false,
+ "pick_reason": "The project is too vague and lacks a clear business model or product offering.",
+ "voices": [],
+ "does": "Local-first, zero-trust agentic IDE where agents must prove their changes: attribution, SBOM and provenance gates in the release pipeline. Standout: unusually serious supply-chain hygiene for a solo project.",
+ "pain_verified": false,
+ "gap": "'Agents that prove their work' is a real need, but there is no first-hand evidence anyone uses this implementation — every issue and PR is the author or dependabot.",
+ "counter": "Cursor and Claude Code own the IDE surface and can add verification as a feature; a full IDE is out of solo reach and the 859 stars have produced zero visible users.",
+ "differentiator": "None yet — archived as a capability signal that verification/provenance is becoming a selling point in agent tooling.",
+ "workload": "no",
+ "consumer_angle": "",
+ "verdict": "archive"
 }
