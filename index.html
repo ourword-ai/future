@@ -607,7 +607,7 @@ function cardHTML(f){
   return `<div class="card${markMark(f.id)==="no"?" dimmed":""}" id="f-${esc(f.id||"")}" data-dom="${esc(f.domain)}">
     <div class="cardtop"><div class="avatar cat-${ck}">${cat.ic}</div>
       <div class="agentmeta"><div class="agentname">${lang!=="en"?cat.zh:cat.en}</div><div class="src">${esc(f.agent)}${op?" · "+esc(op):""}</div></div>
-      <div class="cardsig">${statsHTML(f)}${(f.score!=null)?`<span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>`:""}${CARRY[f.id]?`<span class="carrybadge">${esc(CARRY[f.id])}</span>`:""}${workBadge(f)}${famBadge(f)}${markBadge(f)}${verdictOf(f)==="build"?`<span class="pickbadge">${esc(tierLabel("build"))}</span>`:""}</div>
+      <div class="cardsig">${statsHTML(f)}${(f.score!=null)?`<span class="score-pill${(f.score||0)>=9?" hi":""}">${esc(String(f.score))}/10</span>`:""}${famBadge(f)}${markBadge(f)}</div>
       <div class="time">${f.posted_at?minsAgo(f.posted_at):""}</div></div>
     ${f.first?`<div class="first">${t.novelty==="novelty"?"First discovery":"⚡"}</div>`:""}
     ${(Z.hook||f.hook)?`<div class="hook">${esc(Z.hook||f.hook)}</div>`:""}
