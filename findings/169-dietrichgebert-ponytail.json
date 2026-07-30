@@ -1,7 +1,7 @@
 {
   "title": "DietrichGebert/ponytail",
   "claim": "Ponytail — a prompt/skill layer that makes coding agents ruthlessly minimal: ship the least code that works (YAGNI as a one-line install for 20+ agents).",
-  "score": 10,
+  "score": 5,
   "why_good": "Attacks the #1 complaint about coding agents — overengineered slop — and the pull is real: ~90k★ in six weeks, 62 contributors, an npm package, and it works across Claude Code, Cursor and the rest.",
   "value": "The wedge into agent behavior management: teams pay to enforce code-minimalism and style policy across every agent seat (org-wide config, policy packs, reports on bloat avoided).",
   "risk": "It's prompts, not software — near-zero moat. Any agent vendor can ship a 'concise mode' toggle, and skill-pack virality decays as fast as it spikes.",
@@ -35,8 +35,41 @@
       "why_good": "正面打编码 agent 最大的痛点——过度设计的垃圾代码;而且势头是真的:六周约 9 万星、62 位贡献者、有 npm 包,Claude Code / Cursor / Codex 通吃。",
       "value": "切口是 agent 行为治理:团队为「在每个 agent 席位上统一强制极简与代码规范」付费(组织级配置、策略包、审计)。",
       "risk": "它是提示词不是软件,护城河近乎为零;任何 agent 厂商加个「简洁模式」开关就能覆盖,技能包的病毒式增长退得和涨得一样快。",
-      "hook": "让你的 AI 别再写屎山代码——六周 9 万星,说明人人都想要。"
+      "hook": "开发者受够了 AI 把 40 行能解决的事写成 400 行——愤怒到愿意装一个 9 万星的陌生人提示层，但没人证明过这些层真的有效。",
+      "does": "可一键安装进 20+ 编码代理的提示/技能层，强制极简主义——只写能跑的最少代码、显式标注刻意的捷径。npm 打包，自带尺寸/成本/延迟的小型基准。",
+      "gap": "所有提示层都在卖感觉，没人卖证据——社区基准显示 ponytail 把任务通过率从 15/15 拉到 10/15，而市面上没有任何产品在你把代码库交给这些层之前先验证它们。",
+      "counter": "核心产物就是一段系统提示——零护城河、随手可抄，作者握着 9.1 万星的心智份额；Anthropic/OpenAI 随时能把'精简模式'做成一个开关。",
+      "differentiator": "别抄提示——做证明：一个能对任何提示包/技能跑真实代理任务基准并公布通过率差异的平台，就是这些讨论串在呼唤的'消费者报告'。",
+      "consumer_angle": "本身没有——这是能力信号：提示层的分发是病毒式的，但'信任'才是没被满足的需求。"
     }
   },
-  "hook": "Stops your AI from writing bloated code — and 90k stars in six weeks says everyone wanted it."
+  "hook": "Developers sick of AI agents shipping 400 lines where 40 would do — angry enough to install a stranger's prompt layer 91k-stars deep, but nobody has proven any of these layers actually work.",
+  "does": "A prompt/skill layer installable into 20+ coding agents that forces ruthless minimalism — ship the least code that works, mark deliberate shortcuts. One-line install, npm-packaged, with a small self-run benchmark on size/cost/latency.",
+  "voices": [
+    {
+      "quote": "I've seen many system prompts that reduce token usage, explain things clearly, and plan better. But I never see them tested against benchmarks, so how can we know they're working?",
+      "url": "https://github.com/DietrichGebert/ponytail/issues/65",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "I have zero incentive to even consider using this when there's a real risk in it degrading model performance. Actual benchmarks would be super appreciated.",
+      "url": "https://github.com/DietrichGebert/ponytail/issues/65",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "I don't want it to mark anything as ponytail. This should be a tool for writing better code, not to leave its branding everywhere.",
+      "url": "https://github.com/DietrichGebert/ponytail/issues/120",
+      "src": "github",
+      "kind": "pain"
+    }
+  ],
+  "pain_verified": true,
+  "gap": "Every prompt layer sells vibes, none sells proof — a community benchmark in the repo showed ponytail dropping task success from 15/15 to 10/15, and no product exists that verifies these layers before you trust your codebase to them.",
+  "counter": "The core artifact is a system prompt — zero moat, trivially copied, and the author owns 91k stars of mindshare; agent vendors (Anthropic, OpenAI) can absorb 'concise mode' as a toggle any quarter.",
+  "differentiator": "Don't copy the prompt — build the proof: a harness that benchmarks any prompt pack/skill against real agent tasks and publishes pass-rate deltas, the 'Consumer Reports' these threads are begging for.",
+  "workload": "2m",
+  "consumer_angle": "None in itself — this is a capability signal that prompt-layer distribution is viral but trust is the unmet need.",
+  "verdict": "archive"
 }
