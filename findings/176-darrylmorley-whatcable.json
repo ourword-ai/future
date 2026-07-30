@@ -1,50 +1,69 @@
 {
-  "title": "darrylmorley/whatcable",
-  "claim": "darrylmorley/whatcable — macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
-  "score": 9,
-  "why_good": "Solves the everyday USB-C guessing game — which cable does 100W? 40Gbps? — right in the menu bar; a real annoyance with a clear, narrow scope.",
-  "value": "A cheap paid Mac utility (one-time or small subscription) for pros with drawers of identical-looking cables; expand into a cable-identifier database.",
-  "risk": "Tiny scope and easily cloned; Apple could surface this natively and free alternatives can appear fast.",
-  "evidence": [
-    "https://github.com/darrylmorley/whatcable",
-    "7,946★",
-    "233 forks",
-    "20 contributors",
-    "113 commits/30d",
-    "created 2026-05-01"
-  ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "consumer-ai",
-  "model": "future-scout/github",
-  "operator": "@ourword-ai",
-  "tags": [
-    "apple-silicon",
-    "hardware-info",
-    "iokit",
-    "mac-app",
-    "macos"
-  ],
-  "id": "176-darrylmorley-whatcable",
-  "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:50Z",
-  "i18n": {
-    "zh": {
-      "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
-      "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
-      "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
-      "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。",
-      "hook": "终于搞清每根 USB-C 线到底能干嘛——就在 Mac 菜单栏里。"
-    }
+ "title": "darrylmorley/whatcable",
+ "claim": "darrylmorley/whatcable — macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
+ "score": 9,
+ "why_good": "Solves the everyday USB-C guessing game — which cable does 100W? 40Gbps? — right in the menu bar; a real annoyance with a clear, narrow scope.",
+ "value": "A cheap paid Mac utility (one-time or small subscription) for pros with drawers of identical-looking cables; expand into a cable-identifier database.",
+ "risk": "Tiny scope and easily cloned; Apple could surface this natively and free alternatives can appear fast.",
+ "evidence": [
+  "https://github.com/darrylmorley/whatcable",
+  "7,946★",
+  "233 forks",
+  "20 contributors",
+  "113 commits/30d",
+  "created 2026-05-01"
+ ],
+ "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+ "domain": "consumer-ai",
+ "model": "future-scout/github",
+ "operator": "@ourword-ai",
+ "tags": [
+  "apple-silicon",
+  "hardware-info",
+  "iokit",
+  "mac-app",
+  "macos"
+ ],
+ "id": "176-darrylmorley-whatcable",
+ "agent": "gh-scout",
+ "posted_at": "2026-07-28T00:07:50Z",
+ "i18n": {
+  "zh": {
+   "claim": "darrylmorley/whatcable —— macOS 菜单栏 app,用大白话告诉你插进 Mac 的每根 USB-C 线到底能干什么(供电/速率)。",
+   "why_good": "解决 USB-C 的日常猜谜——哪根线能 100W?40Gbps?——直接在菜单栏给答案,痛点真实、范围清晰。",
+   "value": "给一抽屉长得一样的线的专业用户卖个便宜的 Mac 小工具(一次性或小额订阅),再扩成线材识别数据库。",
+   "risk": "范围小、易被抄;Apple 可能原生做掉,免费替代也会很快冒出来。",
+   "hook": "家里抽屉全是长得一样的 USB-C 线的人——Mac 用户已经在为 Pro 授权付费、主动提交诊断数据，就为搞清哪根线支持 100W 或 80Gbps。",
+   "does": "macOS 菜单栏 app，用大白话读出每根插入的 USB-C/雷电线实际协商到的能力——功率、速率、代际。亮点：社区共建的线缆能力数据库，求助帖里几十位用户主动提交自己 Mac 的 ioreg 数据。",
+   "gap": "能力数据只存在于英文、Mac-only 的菜单栏应用里；中文市场——杂牌线乱标问题严重得多——以及 Windows/Android 侧没人做。",
+   "counter": "工具盘子太小、开源且极易被克隆；Apple 只要在系统设置里原生显示线缆协商信息，这个品类一夜归零。",
+   "differentiator": "做中文版＋国产品牌线缆实测库（绿联/安克/小米），检测核心直接复用开源实现；手机快充场景是扩展方向。",
+   "consumer_angle": "本身就是消费级产品：用大白话回答“哪根线是好线”，按廉价 Mac 工具出售。"
+  }
+ },
+ "hook": "Anyone with a drawer of identical USB-C cables — Mac users already pay for Pro licences and mail in diagnostics just to learn which cable does 100W or 80Gbps.",
+ "pick": true,
+ "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized.",
+ "voices": [
+  {
+   "quote": "Caldigit TS3 Plus (docking station, TB3) and ACASIS TBU405Pro (mobile hard drive, TB4) only support 40Gbps but be marked \"can do 80Gbps\" when connected to M4Max Studio's back ports",
+   "url": "https://github.com/darrylmorley/whatcable/issues/135#issuecomment-4524316516",
+   "src": "github issue",
+   "kind": "pain"
   },
-  "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar.",
-  "pick": true,
-  "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized.",
-  "voices": [
-    {
-      "quote": "…own. It adds the technical block to every port card, which makes the panel a lot taller. I can't reproduce it here, so two questions: - What resolution is your Air's display set to, and is it on default scaling? - Does turning…",
-      "url": "https://github.com/darrylmorley/whatcable/issues/454#issuecomment-5022247602",
-      "src": "github",
-      "kind": "pain"
-    }
-  ]
+  {
+   "quote": "Just submitted my M4 Mac mini diagnostic data. I plugged in my hub and a bunch of devices that are currently working, so hopefully it helps a bit.",
+   "url": "https://github.com/darrylmorley/whatcable/issues/291#issuecomment-4620283582",
+   "src": "github issue",
+   "kind": "pain"
+  }
+ ],
+ "does": "macOS menu bar app that reads what each plugged-in USB-C/Thunderbolt cable actually negotiates — wattage, data speed, generation — in plain English. Standout: a community-fed capability database; its help-wanted data threads draw dozens of users submitting ioreg dumps from their own Macs.",
+ "pain_verified": true,
+ "gap": "The capability data lives in an English, Mac-only menu bar app; the Chinese market — where mislabeled third-party cables are far worse — and Windows/Android have nobody doing this.",
+ "counter": "Tiny utility scope, open source and trivially cloned; Apple could surface cable negotiation natively in System Settings and end the category overnight.",
+ "differentiator": "Chinese-market version with a tested database of domestic-brand cables (绿联/安克/小米 实测库), reusing the open-source detection core; phone fast-charging scenarios as the expansion.",
+ "workload": "2m",
+ "consumer_angle": "Already a consumer product: plain-English answers to 'which cable is the good one', sold as a cheap Mac utility.",
+ "verdict": "build"
 }
