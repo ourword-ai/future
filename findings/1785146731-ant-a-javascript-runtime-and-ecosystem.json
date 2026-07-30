@@ -1,37 +1,71 @@
 {
-  "title": "Ant – A JavaScript runtime and ecosystem",
-  "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
-  "score": 9,
-  "why_good": "A new JavaScript runtime + ecosystem — the Bun/Deno lane. 330 HN points = real developer curiosity on day one.",
-  "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (the Deno playbook).",
-  "risk": "Brutal lane — Node/Bun/Deno are entrenched and funded; a runtime needs a killer reason to switch.",
-  "evidence": [
-    "https://antjs.org",
-    "https://news.ycombinator.com/item?id=48875377",
-    "330 HN points",
-    "149 comments"
-  ],
-  "method": "hn show_hn (last 30d) + startup-worthiness score",
-  "domain": "agent-infra",
-  "model": "future-scout/hn",
-  "operator": "@ourword-ai",
-  "tags": [
-    "show-hn"
-  ],
-  "id": "1785146731-ant-a-javascript-runtime-and-ecosystem",
-  "agent": "hn-scout",
-  "posted_at": "2026-07-27T10:05:31Z",
-  "i18n": {
-    "zh": {
-      "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
-      "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
-      "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
-      "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。",
-      "hook": "一个挑战 Node/Bun/Deno 的新 JS 运行时——上线首日 330 HN 分。"
+ "title": "Ant – A JavaScript runtime and ecosystem",
+ "claim": "Show HN: Ant – A JavaScript runtime and ecosystem",
+ "score": 3,
+ "why_good": "A new JavaScript runtime + ecosystem — the Bun/Deno lane. 330 HN points = real developer curiosity on day one.",
+ "value": "Runtimes monetize indirectly: a paid cloud/deploy layer or enterprise support around the fast runtime (the Deno playbook).",
+ "risk": "Brutal lane — Node/Bun/Deno are entrenched and funded; a runtime needs a killer reason to switch.",
+ "evidence": [
+  "https://antjs.org",
+  "https://news.ycombinator.com/item?id=48875377",
+  "330 HN points",
+  "149 comments"
+ ],
+ "method": "hn show_hn (last 30d) + startup-worthiness score",
+ "domain": "agent-infra",
+ "model": "future-scout/hn",
+ "operator": "@ourword-ai",
+ "tags": [
+  "show-hn"
+ ],
+ "id": "1785146731-ant-a-javascript-runtime-and-ecosystem",
+ "agent": "hn-scout",
+ "posted_at": "2026-07-27T10:05:31Z",
+ "i18n": {
+  "zh": {
+   "claim": "Show HN: Ant —— 一个 JavaScript 运行时与生态。",
+   "why_good": "一个新的 JavaScript 运行时 + 生态——Bun/Deno 那条赛道。330 HN 分 = 开发者第一天就真好奇。",
+   "value": "运行时靠间接变现:围绕快运行时做付费云/部署层或企业支持(Deno 的路子)。",
+   "risk": "残酷赛道——Node/Bun/Deno 根基深且有融资;运行时需要一个非换不可的杀手理由。",
+   "hook": "受够了为 5 MB 界面发 150 MB Electron 包的开发者——Ant 拿到 330 HN 分靠的是「含运行时约 8 MB」的桌面故事，不是运行时本身。",
+   "does": "独立开发者（theMackabu）的新 JavaScript 运行时与生态：node 兼容、约 8 MB 可嵌入二进制，WIP 的 ant-desktop（Electron 替代）刚发到 npm。",
+   "gap": "说得出口的缺口在轻量桌面打包（Tauri 的赛道），不在新运行时——而那条赛道已经有主了。",
+   "counter": "Node/Bun/Deno 根基深且有融资；单人运行时是 bus factor = 1 的赌注（HN 评论区自己就说了），运行时要熬好几年才有人付一分钱。",
+   "differentiator": "对我们没有切入口。留档作能力信号：小型可嵌入 JS 运行时越来越便宜，做微型桌面应用的成本持续下降。工量 no。",
+   "consumer_angle": "",
+   "verdict": "archive",
+   "workload": "no",
+   "pain_verified": true,
+   "voices": [
+    {
+     "quote": "How big are these binaries? the big electron complaint is the large binaries. if these are under 10mb, you have a winner.",
+     "url": "https://news.ycombinator.com/item?id=48875377",
+     "src": "hn",
+     "kind": "pain"
     }
-  },
-  "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one.",
-  "pick": false,
-  "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition.",
-  "voices": []
+   ],
+   "score": 3,
+   "family": "js-runtimes"
+  }
+ },
+ "hook": "Developers sick of shipping 150 MB Electron apps for 5 MB of UI — Ant's ~8 MB runtime-included desktop story is what earned the 330 HN points, not the runtime itself.",
+ "pick": false,
+ "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition.",
+ "voices": [
+  {
+   "quote": "How big are these binaries? the big electron complaint is the large binaries. if these are under 10mb, you have a winner.",
+   "url": "https://news.ycombinator.com/item?id=48875377",
+   "src": "hn",
+   "kind": "pain"
+  }
+ ],
+ "verdict": "archive",
+ "workload": "no",
+ "pain_verified": true,
+ "family": "js-runtimes",
+ "does": "A new JavaScript runtime and ecosystem by a solo dev (theMackabu): node-compat, an ~8 MB embeddable binary, and a WIP ant-desktop (Electron alternative) that just shipped to npm.",
+ "gap": "The nameable gap belongs to lightweight desktop packaging (Tauri's lane), not to a new runtime — and that lane already has an owner.",
+ "counter": "Node/Bun/Deno are entrenched and funded; a solo-dev runtime is a bus-factor-of-one bet (HN said so in the thread), and runtimes take years before anyone pays for anything.",
+ "differentiator": "None for us. File as a capability signal: small embeddable JS runtimes keep getting cheaper, which keeps lowering the cost of shipping tiny desktop apps. Workload: no.",
+ "consumer_angle": ""
 }
