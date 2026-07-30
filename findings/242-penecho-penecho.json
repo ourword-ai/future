@@ -3,7 +3,7 @@
   "claim": "penecho/penecho — Think with AI beyond the chat box. A shared canvas for handwriting, equations, diagrams, and spatial reasoning.",
   "score": 9,
   "why_good": "Chat is the wrong interface for math and diagrams; a canvas the model can both read and draw on is a real interaction unlock — and 9-language READMEs, a Discord, and 1.3k weekly npm installs show deliberate community building, not a weekend demo.",
-  "value": "商业价值: education is the wedge — per-seat SaaS for tutoring platforms and schools where students show work by hand and the AI works in the margins; longer term it is the AI-whiteboard seat sold next to Miro-style team pricing.",
+  "value": "education is the wedge — per-seat SaaS for tutoring platforms and schools where students show work by hand and the AI works in the margins; longer term it is the AI-whiteboard seat sold next to Miro-style team pricing.",
   "risk": "Canvas+AI is on every incumbent roadmap (Miro, FigJam, Excalidraw, ChatGPT Canvas), so it must own education before whiteboards absorb the feature; AGPL self-hosting earns love, not revenue.",
   "evidence": [
     "https://github.com/penecho/penecho",
@@ -34,7 +34,7 @@
       "claim": "Penecho让您超越聊天框，使用AI共同思考，提供手写、方程、图表和空间推理的共享画布。",
       "hook": "用手写、公式和图表思考的人——学生、工程师、爱好者——正被迫把空间化的想法塞进聊天框；非开发者为了试个替代品要跟 Node 和 PowerShell 搏斗几个小时。",
       "why_good": "数学和图示本来就不该用聊天框交互；一块模型既能“看”又能“画”的画布是真正的交互解锁——9 种语言 README、Discord 社区、npm 周下载 1.3k，是在认真做社区而非周末 Demo。",
-      "value": "商业价值：教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
+      "value": "教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
       "risk": "画布+AI 在所有在位者的路线图上（Miro、FigJam、Excalidraw、ChatGPT Canvas），必须抢先吃下教育场景；AGPL 自部署赚口碑不赚钱。",
       "does": "一块共享画布：手写、公式、图表和空间上下文都成为 AI 对话的一部分——模型在同一张纸上既能看也能画。npm 分发，每周约 1400 次下载，README 有 9 种语言。",
       "gap": "只有极客能用：一位医院职工为了测试它要装 Node、Codex CLI、还得改 PowerShell 策略——而这块画布真正面向的人群（学生、记笔记的人）根本没有开箱即用的平板/桌面应用。",

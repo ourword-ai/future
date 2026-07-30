@@ -3,7 +3,7 @@
   "claim": "OpenLake — a Rust/io_uring distributed object store built for GPU workloads: training data, checkpoints and KV-cache served at million-plus IOPS with sub-ms latency, RDMA support, and a hosted cloud already live.",
   "score": 8,
   "why_good": "GPU clusters increasingly idle while storage feeds them — checkpoint restore and KV-cache offload are the bottleneck you can't fix by buying more GPUs. A store designed for that access pattern (not a generic S3 clone) attacks real burn, and 111 open issues show users genuinely pushing on it.",
-  "value": "商业价值: sell throughput to GPU-rich teams — managed cloud (cloud.theopenlake.com) plus on-prem enterprise licenses; storage priced against wasted GPU-hours is one of the easiest ROI stories in AI infra.",
+  "value": "sell throughput to GPU-rich teams — managed cloud (cloud.theopenlake.com) plus on-prem enterprise licenses; storage priced against wasted GPU-hours is one of the easiest ROI stories in AI infra.",
   "risk": "Storage is the hardest enterprise sale — durability trust against VAST, Weka, MinIO and every cloud's own AI tier. 17 contributors and no visible funding is thin backing for a system customers bet training runs on.",
   "evidence": [
     "https://github.com/openlake-project/openlake",

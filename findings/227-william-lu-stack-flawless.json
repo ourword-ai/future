@@ -3,7 +3,7 @@
   "claim": "William-Lu-stack/Flawless — AI SRE AgenticOps for Kubernetes and cloud infrastructure.",
   "score": 9,
   "why_good": "Goes past the AIOps chatbot that only suggests: a full act-and-verify loop — evidence, dry-run, human approval, remediation, proof of recovery — which is the one shape enterprises will let touch production; bilingual docs also aim it at China's huge K8s ops market.",
-  "value": "商业价值: incident automation prices against downtime, the budget PagerDuty and incident.io live on; its PolyForm Noncommercial license is a deliberate open-core setup — free to evaluate, paid to run in production.",
+  "value": "incident automation prices against downtime, the budget PagerDuty and incident.io live on; its PolyForm Noncommercial license is a deliberate open-core setup — free to evaluate, paid to run in production.",
   "risk": "Two contributors against Datadog/PagerDuty/incident.io all shipping AI SRE; trust to auto-remediate prod takes years to earn and one bad rollback to lose, and the noncommercial license throttles bottom-up adoption.",
   "evidence": [
     "https://github.com/William-Lu-stack/Flawless",
@@ -33,7 +33,7 @@
       "claim": "Flawless 是一个 AI 驱动的 SRE 解决方案，正在重新定义 Kubernetes 和云基础设施的管理。",
       "hook": "被告警淹没的 SRE 团队想要能自我解释、自我修复的基础设施——但把自动修复回路卖进生产环境 K8s 是企业销售动作，不是单人产品。",
       "why_good": "它跨过了“只会建议的 AIOps 聊天框”：证据收集→预演→人工审批→执行→恢复验证的完整闭环——这是企业唯一敢放进生产环境的形态；中英双语文档同时瞄准中国庞大的 K8s 运维市场。",
-      "value": "商业价值：故障自动化按停机成本定价，正是 PagerDuty、incident.io 吃的预算；PolyForm 非商业许可证是刻意的 open-core 布局——评估免费，生产付费。",
+      "value": "故障自动化按停机成本定价，正是 PagerDuty、incident.io 吃的预算；PolyForm 非商业许可证是刻意的 open-core 布局——评估免费，生产付费。",
       "risk": "2 个贡献者对阵 Datadog/PagerDuty/incident.io 全线押注 AI SRE；让企业信任自动修复生产要花数年、毁掉只要一次错误回滚，非商业许可证还会抑制自下而上的渗透。",
       "does": "面向 Kubernetes 的 AI 原生 SRE 控制平面：把告警、证据、拓扑、人工审批、受控修复和恢复验证连成一个可审计的 AgenticOps 回路。PolyForm 非商业许可。",
       "gap": "带审计链的自愈基础设施确实没人解决好——但买方是平台团队，销售极度依赖信任，且许可证已经堵死了商业分叉。",

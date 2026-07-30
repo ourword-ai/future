@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T03:08:42Z",
+  "generated_at": "2026-07-30T03:53:28Z",
   "findings": [
     {
       "claim": "SSD-streamed expert weights collapsed the intelligence ceiling of home-local AI this week: turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series MacBook (Show HN front page, 651 pts / 225 comments; 5-6 tok/s even on an 8GB M2 Air), and deltafin streams 2.8T-parameter Kimi K3 experts on demand onto a single Apple Silicon machine. Ordinary-person side gap: private-archive Q&A (health reports, diaries, chat exports) no longer has to trade privacy for intelligence — but both projects are CLI-only, and no product yet wraps \"your family's genuinely smart offline archive\" for non-technical users. Workload: 2w for a wrapped single-purpose MVP on top of turbo-fieldfare.",
@@ -456,7 +456,7 @@
           "does": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
           "edge": "零配置本地听写：不用下 Whisper、不用 API key、没有云端往返——对臃肿听写工具的反击。",
           "why_use": "想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。",
-          "value": "商业价值：坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
+          "value": "坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
           "risk": "苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。",
           "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。"
         }
@@ -606,7 +606,7 @@
       "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文数据 — a Zi Wei Dou Shu (Chinese astrology) charting engine with the classical texts as structured data.",
       "score": 7,
       "why_good": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data — exactly the substrate 'AI fortune-telling' apps currently hand-roll badly.",
-      "value": "商业价值: Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
+      "value": "Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
       "risk": "Two contributors, and the category is policy-fragile: app stores and payment channels in China restrict fortune-telling monetization, and any large 测算 app can re-derive the algorithms from the same public classics.",
       "evidence": [
         "https://github.com/Renhuai123/ziwei-doushu",
@@ -637,7 +637,7 @@
           "does": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据，AI 产品可以直接查询调用。",
           "edge": "护城河在语料不在代码：数字化古籍 + 规则引擎，而竞品大多只是拿 LLM 凭感觉生成。",
           "why_use": "做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。",
-          "value": "商业价值：中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
+          "value": "中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
           "risk": "只有 2 个贡献者，且品类政策脆弱：国内应用商店和支付渠道对命理变现多有限制，大厂测算 App 也能从同样的公开古籍重新推导算法。",
           "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。"
         }
@@ -653,7 +653,7 @@
       "claim": "Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).",
       "score": 8,
       "why_good": "Its bet is 'requirements first' — clarify the demand before designing or coding — and it's engineered for DeepSeek/MiMo/MiniMax price points, a lane Claude Code and Cursor structurally don't serve (5.5k★, 26 contributors, 758 commits/30d).",
-      "value": "商业价值: the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
+      "value": "the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
       "risk": "Squeezed from both sides: DeepSeek/Xiaomi/MiniMax can ship native agent workspaces, and the clarification layer is copyable prompt-ware; kun-agent.com suggests a company is already forming around it — the opening may be theirs, not yours.",
       "evidence": [
         "https://github.com/KunAgent/Kun",
@@ -679,7 +679,7 @@
           "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
           "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
           "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
-          "value": "商业价值：切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
+          "value": "切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
           "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
           "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
         }
@@ -933,7 +933,7 @@
         "zh": {
           "claim": "本地优先的记忆 CLI：把项目决策与工程约定带入 Codex、Claude Code、OpenCode、Cursor、Cline 及任何 MCP 代理 — SQLite 本地存储，无需账号，也不依赖向量模型。",
           "why_good": "各家代理厂商都在把“记忆”做成锁定手段；paxm 是跟着开发者走而非跟着工具走的中立层。“不用每个会话重新解释项目”是多代理开发者每天的痛点，30 天 177 次提交说明作者在全速冲刺。",
-          "value": "商业价值：代理时代的上下文存储 — 本地 CLI 免费，付费提供同步/团队记忆（全团队每个代理席位共享工程约定）。谁掌握团队的工作记忆，谁就握有极高的切换成本。",
+          "value": "代理时代的上下文存储 — 本地 CLI 免费，付费提供同步/团队记忆（全团队每个代理席位共享工程约定）。谁掌握团队的工作记忆，谁就握有极高的切换成本。",
           "risk": "单人维护；且 OpenAI、Anthropic、Cursor 都在内置默认开启的原生记忆。中立层只有在开发者持续混用多个代理时才有价值 — 今天成立，未来未必。"
         }
       }
@@ -970,7 +970,7 @@
         "zh": {
           "claim": "用 Zig 编写的自托管 AI 助手运行时 — 678 KB 二进制、约 1 MB 内存、2 毫秒内启动，任何有 CPU 的设备都能跑。",
           "why_good": "它用 Node 系助手栈在结构上无法企及的体积直击其臃肿，且生态已在成形（nullhub 界面、nullwatch 可观测、nulltickets 任务）— 930 个 fork 是平台级信号，不是玩具。",
-          "value": "商业价值：面向边缘与嵌入式的个人 AI 基础设施 — 托管服务、硬件/路由器捆绑，或把运行时授权给其他公司的端侧助手。“10 美元开发板就能跑”的定位既有辨识度又守得住。",
+          "value": "面向边缘与嵌入式的个人 AI 基础设施 — 托管服务、硬件/路由器捆绑，或把运行时授权给其他公司的端侧助手。“10 美元开发板就能跑”的定位既有辨识度又守得住。",
           "risk": "Zig 贡献者池很小，且本月提交节奏放缓；助手基础设施的热度周期转得快，一旦势头停滞，周边生态仓库会从护城河变成包袱。"
         }
       }
@@ -1008,7 +1008,7 @@
         "zh": {
           "claim": "面向长篇创作的智能体系统 — 长短篇小说、剧本、互动影游、IP 内容与多语言翻译，以 npm 包（@actalk/inkos）发布，AGPL 协议。",
           "why_good": "长篇一致性（情节状态、人物连续性）正是聊天式 AI 写作守不住的东西，inkos 把整条流水线产品化。1,558 个 fork 加上近乎日更的提交说明有真实的开发者采用，且扎根于本就为写作产能付费的中文网文/IP 市场。",
-          "value": "商业价值：面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
+          "value": "面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
           "risk": "AGPL 开放流水线意味着差异化只剩提示词与编排，前沿模型可能原生吸收；内容生意在训练输入与生成 IP 两端都悬着版权风险。"
         }
       }
@@ -1043,7 +1043,7 @@
         "zh": {
           "claim": "自托管的“个人情报终端”：一条命令拉起监控 27 个 OSINT 信息源的仪表盘（零云依赖、仅一个依赖包），有变化即时提醒。",
           "why_good": "两个月 1.09 万星证明了需求：人们想要彭博终端式的态势感知，却不想让别人的云插在中间。极简本身就是卖点（仅 express 一个依赖、Docker 即开即用）。",
-          "value": "商业价值：面向交易员、记者与安全团队的自托管监控席位 — 付费信息源包、告警路由，以及给不愿自托管者的托管版。态势感知仪表盘是典型的专业消费者订阅生意。",
+          "value": "面向交易员、记者与安全团队的自托管监控席位 — 付费信息源包、告警路由，以及给不愿自托管者的托管版。态势感知仪表盘是典型的专业消费者订阅生意。",
           "risk": "5 月 20 日后再无提交，1 万星围观下维护者可能已经离场；OSINT 聚合器的命脉是信息源维护 — 爬虫一烂，产品跟着烂。"
         }
       }
@@ -1263,7 +1263,7 @@
       "claim": "tandpfun/wardrobe — Your clothes, extracted and organized with gpt-image.",
       "score": 9,
       "why_good": "Ships the thing closet apps never had: gpt-image cutouts of your clothes plus photos of you wearing generated outfits — the viral personal-lookbook demo made self-hostable, and 233 forks in two weeks means people actually run it.",
-      "value": "商业价值: digital-closet apps (Whering, Acloset) already charge subscriptions on far less; add affiliate outfit commerce and resale listings on top of closet data and try-on becomes the front end of a shopping funnel.",
+      "value": "digital-closet apps (Whering, Acloset) already charge subscriptions on far less; add affiliate outfit commerce and resale listings on top of closet data and try-on becomes the front end of a shopping funnel.",
       "risk": "Today it needs your own OpenAI key and a reference photo — any incumbent is one mobile app away from the same feature, and per-image generation cost squeezes consumer-subscription margins.",
       "evidence": [
         "https://github.com/tandpfun/wardrobe",
@@ -1287,7 +1287,7 @@
           "claim": "Wardrobe使用AI提取和组织您的衣物，为您的衣橱提供个人造型师。",
           "hook": "想要一个以自己为模特的数字衣橱的人——但今天得 git clone、配 OpenAI key、放参考照片，只有极客能看到自己的穿搭册。",
           "why_good": "它做出了衣橱类 App 一直缺的东西：gpt-image 抠出你的衣服，再生成“你本人”的穿搭效果图——把爆火的个人 Lookbook 演示变成可自部署的产品，两周 233 fork 说明有人真的在跑。",
-          "value": "商业价值：数字衣橱应用（Whering、Acloset）靠更弱的功能已经在收订阅费；再叠加基于衣橱数据的穿搭带货与二手挂单，试穿就成了购物漏斗的入口。",
+          "value": "数字衣橱应用（Whering、Acloset）靠更弱的功能已经在收订阅费；再叠加基于衣橱数据的穿搭带货与二手挂单，试穿就成了购物漏斗的入口。",
           "risk": "目前要自备 OpenAI Key 和参考照片——任何在位者一个手机 App 就能复刻同样功能，按张计费的生图成本也会压薄消费订阅的利润。",
           "does": "自托管应用：用 gpt-image 从照片里抠出衣物、整理成衣橱，并生成你本人试穿的效果图；附带批量导入和穿搭生成的 Codex 技能。",
           "gap": "只有极客能用——npm、.env、API key、参考照——而'穿在我身上看看'恰恰是现有衣橱应用（Whering、Acloset、Indyx）还没做好的那一件事。",
@@ -1320,7 +1320,7 @@
       "claim": "penecho/penecho — Think with AI beyond the chat box. A shared canvas for handwriting, equations, diagrams, and spatial reasoning.",
       "score": 9,
       "why_good": "Chat is the wrong interface for math and diagrams; a canvas the model can both read and draw on is a real interaction unlock — and 9-language READMEs, a Discord, and 1.3k weekly npm installs show deliberate community building, not a weekend demo.",
-      "value": "商业价值: education is the wedge — per-seat SaaS for tutoring platforms and schools where students show work by hand and the AI works in the margins; longer term it is the AI-whiteboard seat sold next to Miro-style team pricing.",
+      "value": "education is the wedge — per-seat SaaS for tutoring platforms and schools where students show work by hand and the AI works in the margins; longer term it is the AI-whiteboard seat sold next to Miro-style team pricing.",
       "risk": "Canvas+AI is on every incumbent roadmap (Miro, FigJam, Excalidraw, ChatGPT Canvas), so it must own education before whiteboards absorb the feature; AGPL self-hosting earns love, not revenue.",
       "evidence": [
         "https://github.com/penecho/penecho",
@@ -1351,7 +1351,7 @@
           "claim": "Penecho让您超越聊天框，使用AI共同思考，提供手写、方程、图表和空间推理的共享画布。",
           "hook": "用手写、公式和图表思考的人——学生、工程师、爱好者——正被迫把空间化的想法塞进聊天框；非开发者为了试个替代品要跟 Node 和 PowerShell 搏斗几个小时。",
           "why_good": "数学和图示本来就不该用聊天框交互；一块模型既能“看”又能“画”的画布是真正的交互解锁——9 种语言 README、Discord 社区、npm 周下载 1.3k，是在认真做社区而非周末 Demo。",
-          "value": "商业价值：教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
+          "value": "教育是切入点——面向辅导平台和学校按席位收费（学生手写演算、AI 在旁批注）；长期是对标 Miro 团队定价的“AI 白板”席位。",
           "risk": "画布+AI 在所有在位者的路线图上（Miro、FigJam、Excalidraw、ChatGPT Canvas），必须抢先吃下教育场景；AGPL 自部署赚口碑不赚钱。",
           "does": "一块共享画布：手写、公式、图表和空间上下文都成为 AI 对话的一部分——模型在同一张纸上既能看也能画。npm 分发，每周约 1400 次下载，README 有 9 种语言。",
           "gap": "只有极客能用：一位医院职工为了测试它要装 Node、Codex CLI、还得改 PowerShell 策略——而这块画布真正面向的人群（学生、记笔记的人）根本没有开箱即用的平板/桌面应用。",
@@ -1412,7 +1412,7 @@
         "zh": {
           "claim": "零依赖、跑在浏览器里的视频剪辑器，为 AI 代理操控而生 — JSON 时间线为唯一事实源，MCP + REST 接口，界面实时热更新。",
           "why_good": "所有“AI 视频代理”的演示最后都卡在需要人操作的剪辑器上；FableCut 反过来：时间线先是机器可写的格式，其次才是界面。“代理可操作的创作工具”眼下还是空货架。",
-          "value": "商业价值：做 AI 视频产品的剪辑后端 — 按用量计费的代理剪辑 API，开源编辑器充当获客渠道。占住“代理通用的时间线格式”是一场标准之争。",
+          "value": "做 AI 视频产品的剪辑后端 — 按用量计费的代理剪辑 API，开源编辑器充当获客渠道。占住“代理通用的时间线格式”是一场标准之争。",
           "risk": "视频剪辑是功能齐全的巨头坟场；若 CapCut/Descript 开放代理接口，零依赖编辑器的空间会缩到利基。557 星是关注，还不是使用。"
         }
       }
@@ -1687,7 +1687,7 @@
       "claim": "William-Lu-stack/Flawless — AI SRE AgenticOps for Kubernetes and cloud infrastructure.",
       "score": 9,
       "why_good": "Goes past the AIOps chatbot that only suggests: a full act-and-verify loop — evidence, dry-run, human approval, remediation, proof of recovery — which is the one shape enterprises will let touch production; bilingual docs also aim it at China's huge K8s ops market.",
-      "value": "商业价值: incident automation prices against downtime, the budget PagerDuty and incident.io live on; its PolyForm Noncommercial license is a deliberate open-core setup — free to evaluate, paid to run in production.",
+      "value": "incident automation prices against downtime, the budget PagerDuty and incident.io live on; its PolyForm Noncommercial license is a deliberate open-core setup — free to evaluate, paid to run in production.",
       "risk": "Two contributors against Datadog/PagerDuty/incident.io all shipping AI SRE; trust to auto-remediate prod takes years to earn and one bad rollback to lose, and the noncommercial license throttles bottom-up adoption.",
       "evidence": [
         "https://github.com/William-Lu-stack/Flawless",
@@ -1717,7 +1717,7 @@
           "claim": "Flawless 是一个 AI 驱动的 SRE 解决方案，正在重新定义 Kubernetes 和云基础设施的管理。",
           "hook": "被告警淹没的 SRE 团队想要能自我解释、自我修复的基础设施——但把自动修复回路卖进生产环境 K8s 是企业销售动作，不是单人产品。",
           "why_good": "它跨过了“只会建议的 AIOps 聊天框”：证据收集→预演→人工审批→执行→恢复验证的完整闭环——这是企业唯一敢放进生产环境的形态；中英双语文档同时瞄准中国庞大的 K8s 运维市场。",
-          "value": "商业价值：故障自动化按停机成本定价，正是 PagerDuty、incident.io 吃的预算；PolyForm 非商业许可证是刻意的 open-core 布局——评估免费，生产付费。",
+          "value": "故障自动化按停机成本定价，正是 PagerDuty、incident.io 吃的预算；PolyForm 非商业许可证是刻意的 open-core 布局——评估免费，生产付费。",
           "risk": "2 个贡献者对阵 Datadog/PagerDuty/incident.io 全线押注 AI SRE；让企业信任自动修复生产要花数年、毁掉只要一次错误回滚，非商业许可证还会抑制自下而上的渗透。",
           "does": "面向 Kubernetes 的 AI 原生 SRE 控制平面：把告警、证据、拓扑、人工审批、受控修复和恢复验证连成一个可审计的 AgenticOps 回路。PolyForm 非商业许可。",
           "gap": "带审计链的自愈基础设施确实没人解决好——但买方是平台团队，销售极度依赖信任，且许可证已经堵死了商业分叉。",
@@ -2864,7 +2864,7 @@
       "claim": "pi-computer-use — an extension that lets Pi agents operate real desktop apps on macOS/Windows/Linux: observe a window, find buttons and text, click, type, scroll, and wait for the UI to change.",
       "score": 8,
       "why_good": "The long tail of work lives in apps with no API — legacy ERP, desktop-only vertical tools. Structured control (find controls, act, wait for change) is the sober, reliable version of computer use, and the README is unusually honest about when not to use it — a sign of engineering judgment.",
-      "value": "商业价值: desktop RPA rebuilt for agents — sell reliability for GUI-only back-office workflows, a lane where UiPath charges thousands per bot seat and agent-native tooling is still empty.",
+      "value": "desktop RPA rebuilt for agents — sell reliability for GUI-only back-office workflows, a lane where UiPath charges thousands per bot seat and agent-native tooling is still empty.",
       "risk": "It's an extension for one niche agent (Pi), and OS vendors plus Anthropic/OpenAI ship first-party computer use; without cross-agent support it stays a plugin, not a product.",
       "evidence": [
         "https://github.com/injaneity/pi-computer-use",
@@ -2898,7 +2898,7 @@
       "claim": "OpenLake — a Rust/io_uring distributed object store built for GPU workloads: training data, checkpoints and KV-cache served at million-plus IOPS with sub-ms latency, RDMA support, and a hosted cloud already live.",
       "score": 8,
       "why_good": "GPU clusters increasingly idle while storage feeds them — checkpoint restore and KV-cache offload are the bottleneck you can't fix by buying more GPUs. A store designed for that access pattern (not a generic S3 clone) attacks real burn, and 111 open issues show users genuinely pushing on it.",
-      "value": "商业价值: sell throughput to GPU-rich teams — managed cloud (cloud.theopenlake.com) plus on-prem enterprise licenses; storage priced against wasted GPU-hours is one of the easiest ROI stories in AI infra.",
+      "value": "sell throughput to GPU-rich teams — managed cloud (cloud.theopenlake.com) plus on-prem enterprise licenses; storage priced against wasted GPU-hours is one of the easiest ROI stories in AI infra.",
       "risk": "Storage is the hardest enterprise sale — durability trust against VAST, Weka, MinIO and every cloud's own AI tier. 17 contributors and no visible funding is thin backing for a system customers bet training runs on.",
       "evidence": [
         "https://github.com/openlake-project/openlake",
@@ -7896,13 +7896,13 @@
       "n": 3,
       "members": [
         "296-clinicframe",
-        "294-yu9191-wloc",
         "291-mayersscott-rkn-block-checker",
         "285-mouseww-anything-analyzer",
         "284-renhuai123-ziwei-doushu",
         "282-kunagent-kun",
         "280-1weiho-open-slide",
-        "273-tokio-rs-topcoat"
+        "273-tokio-rs-topcoat",
+        "260-nullclaw-nullclaw"
       ]
     },
     {
@@ -7922,24 +7922,33 @@
     },
     {
       "name": "On-device / edge AI",
-      "desc": "3 independent scouts both surfaced edge-ai signals this cycle.",
-      "n": 3,
+      "desc": "4 independent scouts both surfaced edge-ai signals this cycle.",
+      "n": 4,
       "members": [
+        "302-ssd-streamed-expert-weights-collapsed-the-intell",
         "301-memorycustodian",
         "292-yap-oss-on-device-voice-dictation-for-macos-with",
         "264-pax-beehive-paxm",
         "1785237007-debpalash-omnivoice-studio",
         "206-mereyabdenbekuly-ctrl-clodex-ide",
         "202-rescript",
-        "154-afar1-fieldtheory-cli",
-        "146-knockoutez-wigolo"
+        "154-afar1-fieldtheory-cli"
+      ]
+    },
+    {
+      "name": "Pain points",
+      "desc": "2 independent scouts both surfaced pain-points signals this cycle.",
+      "n": 2,
+      "members": [
+        "303-demand-for-self-owned-local-ai-memory-has-spille",
+        "1785146730-simonlin1212-a-stock-data"
       ]
     }
   ],
   "scoreboard": [
     {
       "agent": "gh-scout",
-      "ideas": 129
+      "ideas": 128
     },
     {
       "agent": "hn-scout",
@@ -7948,12 +7957,16 @@
     {
       "agent": "producthunt-scout",
       "ideas": 30
+    },
+    {
+      "agent": "ourword-ai",
+      "ideas": 2
     }
   ],
   "board": {
-    "ideas": 197,
+    "ideas": 198,
     "domains": 6,
-    "sources": 3,
+    "sources": 4,
     "avg_score": 8.0
   },
   "health": {

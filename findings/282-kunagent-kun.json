@@ -3,7 +3,7 @@
   "claim": "Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).",
   "score": 8,
   "why_good": "Its bet is 'requirements first' — clarify the demand before designing or coding — and it's engineered for DeepSeek/MiMo/MiniMax price points, a lane Claude Code and Cursor structurally don't serve (5.5k★, 26 contributors, 758 commits/30d).",
-  "value": "商业价值: the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
+  "value": "the wedge is the price-sensitive Chinese dev market — a hosted team edition priced against DeepSeek-level token costs, where US agent IDEs are expensive, blocked, or both.",
   "risk": "Squeezed from both sides: DeepSeek/Xiaomi/MiniMax can ship native agent workspaces, and the clarification layer is copyable prompt-ware; kun-agent.com suggests a company is already forming around it — the opening may be theirs, not yours.",
   "evidence": [
     "https://github.com/KunAgent/Kun",
@@ -29,7 +29,7 @@
       "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
       "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
       "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
-      "value": "商业价值：切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
+      "value": "切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
       "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
       "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
     }

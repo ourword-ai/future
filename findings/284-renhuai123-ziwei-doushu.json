@@ -3,7 +3,7 @@
   "claim": "紫微斗数开源排盘引擎（倪海厦《天纪》体系）：完整排盘算法 + 四化系统 + 格局知识库 + 古籍原文数据 — a Zi Wei Dou Shu (Chinese astrology) charting engine with the classical texts as structured data.",
   "score": 7,
   "why_good": "Turns a folklore domain into machine-readable infrastructure: full charting algorithms, the four-transformations system, a pattern knowledge base, and original classical-text data — exactly the substrate 'AI fortune-telling' apps currently hand-roll badly.",
-  "value": "商业价值: Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
+  "value": "Chinese-language fortune-telling is a proven paying market (测算 apps, 知识付费, livestream readings). Sell it as the charting API / licensed backend for AI companion and 测算 products instead of going consumer.",
   "risk": "Two contributors, and the category is policy-fragile: app stores and payment channels in China restrict fortune-telling monetization, and any large 测算 app can re-derive the algorithms from the same public classics.",
   "evidence": [
     "https://github.com/Renhuai123/ziwei-doushu",
@@ -34,7 +34,7 @@
       "does": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据，AI 产品可以直接查询调用。",
       "edge": "护城河在语料不在代码：数字化古籍 + 规则引擎，而竞品大多只是拿 LLM 凭感觉生成。",
       "why_use": "做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。",
-      "value": "商业价值：中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
+      "value": "中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
       "risk": "只有 2 个贡献者，且品类政策脆弱：国内应用商店和支付渠道对命理变现多有限制，大厂测算 App 也能从同样的公开古籍重新推导算法。",
       "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。"
     }

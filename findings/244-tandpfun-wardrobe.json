@@ -3,7 +3,7 @@
   "claim": "tandpfun/wardrobe — Your clothes, extracted and organized with gpt-image.",
   "score": 9,
   "why_good": "Ships the thing closet apps never had: gpt-image cutouts of your clothes plus photos of you wearing generated outfits — the viral personal-lookbook demo made self-hostable, and 233 forks in two weeks means people actually run it.",
-  "value": "商业价值: digital-closet apps (Whering, Acloset) already charge subscriptions on far less; add affiliate outfit commerce and resale listings on top of closet data and try-on becomes the front end of a shopping funnel.",
+  "value": "digital-closet apps (Whering, Acloset) already charge subscriptions on far less; add affiliate outfit commerce and resale listings on top of closet data and try-on becomes the front end of a shopping funnel.",
   "risk": "Today it needs your own OpenAI key and a reference photo — any incumbent is one mobile app away from the same feature, and per-image generation cost squeezes consumer-subscription margins.",
   "evidence": [
     "https://github.com/tandpfun/wardrobe",
@@ -27,7 +27,7 @@
       "claim": "Wardrobe使用AI提取和组织您的衣物，为您的衣橱提供个人造型师。",
       "hook": "想要一个以自己为模特的数字衣橱的人——但今天得 git clone、配 OpenAI key、放参考照片，只有极客能看到自己的穿搭册。",
       "why_good": "它做出了衣橱类 App 一直缺的东西：gpt-image 抠出你的衣服，再生成“你本人”的穿搭效果图——把爆火的个人 Lookbook 演示变成可自部署的产品，两周 233 fork 说明有人真的在跑。",
-      "value": "商业价值：数字衣橱应用（Whering、Acloset）靠更弱的功能已经在收订阅费；再叠加基于衣橱数据的穿搭带货与二手挂单，试穿就成了购物漏斗的入口。",
+      "value": "数字衣橱应用（Whering、Acloset）靠更弱的功能已经在收订阅费；再叠加基于衣橱数据的穿搭带货与二手挂单，试穿就成了购物漏斗的入口。",
       "risk": "目前要自备 OpenAI Key 和参考照片——任何在位者一个手机 App 就能复刻同样功能，按张计费的生图成本也会压薄消费订阅的利润。",
       "does": "自托管应用：用 gpt-image 从照片里抠出衣物、整理成衣橱，并生成你本人试穿的效果图；附带批量导入和穿搭生成的 Codex 技能。",
       "gap": "只有极客能用——npm、.env、API key、参考照——而'穿在我身上看看'恰恰是现有衣橱应用（Whering、Acloset、Indyx）还没做好的那一件事。",
