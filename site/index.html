@@ -464,6 +464,31 @@ var CARRY={};   /* id -> label, for build entries carried in from earlier days *
 /* Operator marks. The board is static, so a mark lands in localStorage immediately and can be
    copied out as the marks.json block for the repo — the scouts read that file (STANDARD.md 5). */
 var LMARKS={};
+function opToken(ask){
+  let t="";try{t=localStorage.getItem("idea_op_token")||"";}catch(e){}
+  if(!t&&ask){
+    try{t=(prompt("粘贴 GitHub token（只存你这台浏览器）：标记将自动同步给雷达学习。取消=仅存本地")||"").trim();
+        if(t)localStorage.setItem("idea_op_token",t);}catch(e){}
+  }
+  return t;
+}
+function syncMark(id,ask){
+  const num=parseInt(String(id).split("-")[0],10);
+  if(!num||num>=90000||!LMARKS[id]||LMARKS[id].synced) return;
+  const tok=opToken(ask!==false);
+  if(!tok) return;
+  const content=LMARKS[id].mark==="star"?"+1":"-1";
+  fetch("https://api.github.com/repos/ourword-ai/idea/issues/"+num+"/reactions",{method:"POST",
+    headers:{"Authorization":"Bearer "+tok,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
+    body:JSON.stringify({content:content})})
+   .then(function(r){if(r.ok||r.status===200||r.status===201){if(LMARKS[id]){LMARKS[id].synced=1;saveLocalMarks();}}})
+   .catch(function(){});
+}
+function syncAllMarks(){
+  if(!opToken(false)) return;
+  Object.keys(LMARKS).forEach(function(k){syncMark(k,false);});
+}
+
 function loadLocalMarks(){
   try{LMARKS=JSON.parse(localStorage.getItem("idea_marks")||"{}")||{};}catch(e){LMARKS={};}
 }
@@ -475,6 +500,7 @@ function setMark(id,mark){
   if(LMARKS[id]&&LMARKS[id].mark===mark) delete LMARKS[id];
   else LMARKS[id]={mark:mark,at:new Date().toISOString().slice(0,10)};
   saveLocalMarks();
+  syncMark(id);
   renderMarksBar();
   const el=document.getElementById("mk-"+id);
   if(el) el.outerHTML=markBtns({id:id});
@@ -494,6 +520,7 @@ function markBtns(f){
 }
 function renderMarksBar(){
   const el=document.getElementById("marksbar"); if(!el) return;
+  el.innerHTML="";return;
   const ids=Object.keys(LMARKS);
   if(!ids.length){el.innerHTML="";return;}
   const st=ids.filter(i=>LMARKS[i].mark==="star").length, no=ids.length-st;
@@ -824,7 +851,7 @@ function shareCard(id){
   const n=(navigator.language||"en").toLowerCase();
   lang=n.startsWith("zh")?"zh":n.startsWith("ja")?"ja":n.startsWith("es")?"es":n.startsWith("ko")?"ko":"en";
   document.getElementById("langSel").value=lang;
-  loadLocalMarks();
+  loadLocalMarks();syncAllMarks();
   const marksP=fetch("../marks.json").then(r=>r.ok?r.json():fetch("./marks.json").then(r2=>r2.json())).catch(()=>({}));
   fetch("../findings/feed.json").then(r=>r.ok?r.json():fetch("./findings/feed.json").then(r2=>r2.json()))
     .then(d=>marksP.then(m=>{DATA=d;DATA.marks=(m&&m.marks)||{};applyLang();setTimeout(function(){jumpToHash(0);},80);}))
