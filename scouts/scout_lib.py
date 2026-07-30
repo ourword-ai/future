@@ -631,6 +631,9 @@ def post_ideas(cands, scout, cap=6):
                 if zh:
                     f.setdefault("i18n", {}).setdefault("zh", {}).update(zh)
                 pk, why, esc, extra = editor_pick(f, voices)   # the Standard, as one call
+                if pk is None:                   # model unavailable — never ship unvetted (STANDARD 3)
+                    print(f"  [hold] editor_pick unavailable — {f.get('title')} retried next run", file=sys.stderr)
+                    continue
                 if extra:
                     f.update(extra)
                 if extra.get("verdict") == "drop":
