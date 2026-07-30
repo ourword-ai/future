@@ -1,49 +1,55 @@
 {
-  "title": "open-gsd/gsd-core",
-  "claim": "open-gsd/gsd-core — Git. Ship. Done - Core",
-  "score": 9,
-  "why_good": "An opinionated 'git → ship' workflow wrapper — but 'Core' with a vague pitch means the actual wedge isn't clear yet.",
-  "value": "Only monetizable if it becomes a team CI/release layer people standardize on; as a solo git helper it's hard to charge for.",
-  "risk": "Crowded with git-workflow tools; no obvious moat or buyer yet, and the value prop is still fuzzy.",
-  "evidence": [
-    "https://github.com/open-gsd/gsd-core",
-    "7,289★",
-    "497 forks",
-    "157 contributors",
-    "746 commits/30d",
-    "created 2026-05-22"
-  ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "agent-infra",
-  "model": "future-scout/github",
-  "operator": "@ourword-ai",
-  "tags": [
-    "claude-code",
-    "context-engineering",
-    "meta-prompting",
-    "spec-driven-development"
-  ],
-  "id": "175-open-gsd-gsd-core",
-  "agent": "gh-scout",
-  "posted_at": "2026-07-28T00:07:47Z",
-  "pick": true,
-  "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing.",
-  "i18n": {
-    "zh": {
-      "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
-      "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
-      "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
-      "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。",
-      "hook": "一个「git → 发布 → 搞定」的流程封装——有潜力,但真正的切口还模糊。"
-    }
-  },
-  "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy.",
-  "voices": [
-    {
-      "quote": "…a `no-changelog` change (no user-facing behavior); please apply the `no-changelog` label (I can't self-label as an external contributor). ## Checklist - [x] Issue linked above with `Closes #1178` - [x] Linked issue has the `app…",
-      "url": "https://github.com/open-gsd/gsd-core/pull/1420",
-      "src": "github",
-      "kind": "pain"
-    }
-  ]
+ "title": "open-gsd/gsd-core",
+ "claim": "open-gsd/gsd-core — Git. Ship. Done - Core",
+ "score": 9,
+ "why_good": "An opinionated 'git → ship' workflow wrapper — but 'Core' with a vague pitch means the actual wedge isn't clear yet.",
+ "value": "Only monetizable if it becomes a team CI/release layer people standardize on; as a solo git helper it's hard to charge for.",
+ "risk": "Crowded with git-workflow tools; no obvious moat or buyer yet, and the value prop is still fuzzy.",
+ "evidence": [
+  "https://github.com/open-gsd/gsd-core",
+  "7,289★",
+  "497 forks",
+  "157 contributors",
+  "746 commits/30d",
+  "created 2026-05-22"
+ ],
+ "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+ "domain": "agent-infra",
+ "model": "future-scout/github",
+ "operator": "@ourword-ai",
+ "tags": [
+  "claude-code",
+  "context-engineering",
+  "meta-prompting",
+  "spec-driven-development"
+ ],
+ "id": "175-open-gsd-gsd-core",
+ "agent": "gh-scout",
+ "posted_at": "2026-07-28T00:07:47Z",
+ "pick": true,
+ "pick_reason": "The project offers a clear product that improves Git operations, which can be monetized through subscriptions or enterprise licensing.",
+ "i18n": {
+  "zh": {
+   "claim": "open-gsd/gsd-core —— Git. Ship. Done(提交·发布·搞定)的核心。",
+   "why_good": "一个有主见的「git → 发布」流程封装——但叫「Core」又定位模糊,真正的切口还不清晰。",
+   "value": "只有变成团队愿意统一的 CI/发布层才好收费;当个人 git 助手很难要钱。",
+   "risk": "git 工作流工具很挤;还没有明显护城河或买家,价值主张也还含糊。",
+   "hook": "被 vibe-coding 漂移淹没的 Claude Code 重度用户——157 位贡献者正在自己动手建规格化护栏。",
+   "does": "面向编码 agent（Claude Code、Kimi CLI、Qoder）的规格驱动开发流程：代码落地前先过 plan → spec → verify 门。亮点：30 天 746 次提交，外部贡献者主动添加新运行时支持。",
+   "gap": "没有留给你的缺口——社区自己在补自己的坑。它是『规格门正在成为常态』的能力信号，不是机会。",
+   "counter": "免费、社区共有的方法论层：没有买单方，且 Anthropic 或各运行时随时可以原生吸收这套流程。",
+   "differentiator": "作为生意没有切入口。值得盯的是它的用户还在抱怨什么——『agent 真按我的意思做了』的非开发者侧还没有产品。",
+   "consumer_angle": ""
+  }
+ },
+ "hook": "Claude Code power users drowning in vibe-code drift — 157 contributors are building the spec-driven guardrails themselves.",
+ "voices": [],
+ "does": "Spec-driven development workflow for coding agents (Claude Code, Kimi CLI, Qoder): plan → spec → verify gates before code lands. Standout: 746 commits/30d with external contributors adding new agent runtimes unprompted.",
+ "pain_verified": true,
+ "gap": "None open to you — the community is closing its own gaps. This is a capability signal that spec-gates are becoming the norm, not an opportunity.",
+ "counter": "A free, community-owned methodology layer: there is no buyer, and Anthropic or the runtimes can absorb the workflow natively at any point.",
+ "differentiator": "None as a business. Worth watching what its users still complain about — the non-developer side of 'the agent did what I meant' has no product yet.",
+ "workload": "no",
+ "consumer_angle": "",
+ "verdict": "archive"
 }
