@@ -1,50 +1,71 @@
 {
-  "title": "antirez/ds4",
-  "claim": "antirez/ds4 — DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
-  "score": 9,
-  "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k stars.",
-  "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a support/pro tier.",
-  "risk": "Inference engines are commoditizing fast (llama.cpp / vLLM); needs a durable edge beyond 'fast on Apple/AMD'.",
-  "evidence": [
-    "https://github.com/antirez/ds4",
-    "19,281★",
-    "1,704 forks",
-    "39 contributors",
-    "15 commits/30d",
-    "created 2026-05-06"
-  ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-  "domain": "edge-ai",
-  "model": "future-scout/github",
-  "operator": "@ourword-ai",
-  "tags": [],
-  "id": "1785146730-antirez-ds4",
-  "agent": "gh-scout",
-  "posted_at": "2026-07-27T10:05:30Z",
-  "i18n": {
-    "zh": {
-      "claim": "antirez/ds4 —— DeepSeek 4 Flash 与 PRO 的本地推理引擎,支持 Metal、CUDA、ROCm。",
-      "why_good": "出自 antirez(Redis 作者):一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。血统 + 19k★。",
-      "value": "本地推理运行时是私有、自有硬件 AI 的收费闸口——靠支持/专业版变现。",
-      "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。",
-      "hook": "出自 Redis 作者:一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。"
-    }
-  },
-  "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm.",
-  "pick": false,
-  "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model.",
-  "voices": [
+ "title": "antirez/ds4",
+ "claim": "antirez/ds4 — DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+ "score": 8,
+ "why_good": "From antirez (Redis's creator): a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm. Pedigree + 19k stars.",
+ "value": "The local-inference runtime is the toll booth for private, on-your-own-hardware AI — monetize via a support/pro tier.",
+ "risk": "Inference engines are commoditizing fast (llama.cpp / vLLM); needs a durable edge beyond 'fast on Apple/AMD'.",
+ "evidence": [
+  "https://github.com/antirez/ds4",
+  "19,281★",
+  "1,704 forks",
+  "39 contributors",
+  "15 commits/30d",
+  "created 2026-05-06"
+ ],
+ "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+ "domain": "edge-ai",
+ "model": "future-scout/github",
+ "operator": "@ourword-ai",
+ "tags": [],
+ "id": "1785146730-antirez-ds4",
+ "agent": "gh-scout",
+ "posted_at": "2026-07-27T10:05:30Z",
+ "i18n": {
+  "zh": {
+   "claim": "antirez/ds4 —— DeepSeek 4 Flash 与 PRO 的本地推理引擎,支持 Metal、CUDA、ROCm。",
+   "why_good": "出自 antirez(Redis 作者):一个精简的 DeepSeek-4 本地推理引擎,跨 Metal/CUDA/ROCm。血统 + 19k★。",
+   "value": "本地推理运行时是私有、自有硬件 AI 的收费闸口——靠支持/专业版变现。",
+   "risk": "推理引擎正快速商品化(llama.cpp/vLLM);需要超越在苹果/A卡上快的持久优势。",
+   "hook": "为 128GB MacBook、DGX Spark、多卡 3090 旧机花了大钱的人，至今跑不好前沿开源模型——现有量化不准或干脆没有，vLLM 还放弃了他们的卡。",
+   "does": "antirez（Redis 作者）的自包含本地推理引擎：模型加载、KV 状态、HTTP 服务、编码 agent 一体构建测试，面向 DeepSeek V4 Flash/PRO 与 GLM 5.2，支持 Metal/CUDA/ROCm。亮点：SSD 流式能跑超出内存的模型，微批处理把退役 L40S 服务器变成多人 LLM 服务器。",
+   "gap": "只有极客用得了：C 引擎 + 命令行 + HTTP 服务。还没人把「在你已有的 Mac 上跑私有前沿模型，内存不够也能 SSD 流式跑」包成一键消费级应用。",
+   "counter": "推理引擎几个月就商品化——llama.cpp/vLLM 吸收一切技巧，Ollama 已占住「简单本地模型」，Apple 或 DeepSeek 随时可能出官方运行时。套别人引擎的 GUI 是功能不是公司，antirez 的名气也保证抄袭者来得飞快。",
+   "differentiator": "不比引擎，比包装：在 ds4 的 SSD 流式能力上做一键 Mac/Windows 应用（「36GB 内存跑 DeepSeek V4」），中文版默认 GLM 5.2 + 国内下载源。工量 2m。",
+   "consumer_angle": "在自己硬件上的私有 ChatGPT——不上云、不订阅，给数据不能离机的人（律师、医生、金融）。",
+   "verdict": "build",
+   "workload": "2m",
+   "pain_verified": true,
+   "voices": [
     {
-      "quote": "…6bca9bb983adbb78f43273dfa722f0) I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
-      "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5084696090",
-      "src": "github",
-      "kind": "pain"
-    },
-    {
-      "quote": "…b6bca9bb983adbb78f43273dfa722f0 I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
-      "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5073730737",
-      "src": "github",
-      "kind": "pain"
+     "quote": "I have a 4x3090 + 128GB RAM I would love to use with these quants, since other quants are currently lacking in accuracy or just straight up don't exist",
+     "url": "https://github.com/antirez/ds4/issues/123",
+     "src": "github",
+     "kind": "pain"
     }
-  ]
+   ],
+   "score": 8,
+   "family": "local-inference"
+  }
+ },
+ "hook": "Owners of 128 GB MacBooks, DGX Sparks and old multi-3090 rigs paid thousands for hardware that still can't run frontier open models well — existing quants are inaccurate or missing, and vLLM has dropped their cards.",
+ "pick": false,
+ "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model.",
+ "voices": [
+  {
+   "quote": "I have a 4x3090 + 128GB RAM I would love to use with these quants, since other quants are currently lacking in accuracy or just straight up don't exist",
+   "url": "https://github.com/antirez/ds4/issues/123",
+   "src": "github",
+   "kind": "pain"
+  }
+ ],
+ "verdict": "build",
+ "workload": "2m",
+ "pain_verified": true,
+ "family": "local-inference",
+ "does": "A self-contained local inference engine from antirez (Redis's creator): model loading, KV state, HTTP server and coding agent built and tested as one unit, for DeepSeek V4 Flash/PRO and GLM 5.2 on Metal/CUDA/ROCm. Standout: SSD streaming runs models bigger than RAM, and micro-batching turns retired L40S servers into multi-user LLM boxes.",
+ "gap": "Only geeks can use it: a C engine with a CLI and an HTTP server. Nobody has wrapped 'a private frontier model on the Mac you already own — even without enough RAM, via SSD streaming' into a one-click consumer app.",
+ "counter": "Inference engines commoditize in months — llama.cpp and vLLM absorb every trick, Ollama already owns 'easy local models', and Apple or DeepSeek can ship an official runtime any quarter. A GUI over someone else's engine is a feature, not a company, and antirez's pedigree guarantees fast copycats.",
+ "differentiator": "Don't compete on the engine — package it: a one-click Mac/Windows app on ds4's SSD streaming ('run DeepSeek V4 on 36 GB'), Chinese build defaulting to GLM 5.2 with domestic download mirrors. Workload: 2m.",
+ "consumer_angle": "A private ChatGPT on hardware you already own — no cloud, no subscription — for people whose data can't leave the machine (lawyers, doctors, finance)."
 }
