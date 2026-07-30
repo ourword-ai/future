@@ -36,5 +36,19 @@
       "risk": "风险在于依赖像 Tampermonkey 这样的用户脚本管理器，这可能限制对不熟悉安装扩展的用户的采用。",
       "why_good": "HNewhere 是一个轻量级用户脚本，可以自动检测 Hacker News 故事，并在侧边栏中显示评论，从而允许用户在阅读文章时无缝浏览讨论。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…think capture-phase wheel listeners on window fire before the event reaches the sidebar, I can't come up with a fix for that right now. Tested on firefox, chrome, safari. You should see the sidebar scroll independently, even t…",
+      "url": "https://github.com/twalichiewicz/HNewhere/pull/11",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "This. I gather interesting posts this way in my browser tabs in the phone and everytime I finish reading something I click &quot;Back&quot; and there&#x27;s usually a discussion there, unless I opened the link originall…",
+      "url": "https://news.ycombinator.com/item?id=49095559",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ]
 }

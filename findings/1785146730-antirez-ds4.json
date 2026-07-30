@@ -32,5 +32,19 @@
   },
   "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm.",
   "pick": false,
-  "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model."
+  "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model.",
+  "voices": [
+    {
+      "quote": "…6bca9bb983adbb78f43273dfa722f0) I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
+      "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5084696090",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…b6bca9bb983adbb78f43273dfa722f0 I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
+      "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5073730737",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -34,5 +34,13 @@
       "value": "很难收费;顶多免费 TUI 加个小众专业档。",
       "risk": "细分极小,glow/mdcat 已在;是个好工具,不是公司。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "I was hoping for different themes based on my system's light or dark mode. I can't think of a way to do this with the current single-theme support.",
+      "url": "https://github.com/RivoLink/leaf/issues/202#issuecomment-4883802105",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

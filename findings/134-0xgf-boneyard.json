@@ -32,5 +32,13 @@
       "hook": "从你的 UI 自动生成骨架屏——确实省时,虽然范围窄。"
     }
   },
-  "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one."
+  "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one.",
+  "voices": [
+    {
+      "quote": "…changes...\". There doesn't appear to be any other debug output which is not very useful. I can't figure out where it is stuck, what it is waiting on etc. More debug logging would be very useful.",
+      "url": "https://github.com/0xGF/boneyard/issues/75",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -36,5 +36,13 @@
       "value": "卖给 agent/自动化开发者做可靠的终端控制层:按量 + 企业支持。",
       "risk": "底层基础设施,受众窄(但真实);agent/框架可能原生内置终端控制。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…. ## Compromises 1. We can't have split screens when using passthrough mode - or at least I can't think how that might work so splitting windows is disabled, only full window switching of Ctrl-b-n works. If someone can suggest…",
+      "url": "https://github.com/Helvesec/rmux/pull/26",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -36,5 +36,13 @@
       "value": "还没有清晰的付费切口;主权编码 agent 需要一个团队愿意迁移并付费的具体理由。",
       "risk": "在饱和的编码 agent 里没差异;目前更像宣言而非产品。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…on route rather than a darwin shell regression, for a reason I want to be straight about: I can't run or verify a seatbelt test from this host, and a test I can't execute is worse than an honest comment. The comment on `protect…",
+      "url": "https://github.com/Gitlawb/zero/pull/685#issuecomment-5109387976",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

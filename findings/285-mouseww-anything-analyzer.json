@@ -44,5 +44,6 @@
   "pick_reason": "The project offers a comprehensive tool for protocol analysis with AI integration, addressing a clear market need in cybersecurity and development.",
   "id": "285-mouseww-anything-analyzer",
   "agent": "gh-scout",
-  "posted_at": "2026-07-29T06:40:56Z"
+  "posted_at": "2026-07-29T06:40:56Z",
+  "voices": []
 }

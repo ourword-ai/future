@@ -38,5 +38,25 @@
   },
   "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks.",
   "pick": false,
-  "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product."
+  "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product.",
+  "voices": [
+    {
+      "quote": "…持单文件自包含形态，不走目录化拆分**（完整理由见 #21：单文件的可携性 / 拷走即用 / 分发形态是核心产品卖点，且单人维护下双形态漂移风险大于 token 收益；token 痛点已用 v3.3.1 的 description 收窄 + 按需局部读取建议缓解）。所以这个 PR 不会合入，现予关闭——这是形态路线的选择，不是对实现质量的否定。 两点补充： 1. **v3.3.1 的 CHANGELOG 里已署名致谢你**这份完整实现； 2…",
+      "url": "https://github.com/simonlin1212/a-stock-data/pull/22#issuecomment-4936976619",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…载 50K token，这条是你这份建议里性价比最高的一条，谢谢 🙏 📐 **结构拆分部分**：最终决定见 #21 的完整说明——单文件自包含是有意产品决策，长期保持。token 痛点用「收窄触发 + 按需局部读取」缓解（README FAQ 已写）。 📋 **统一脚本输出 JSON**（symbol/source/timestamp/status/data/errors）：这条作为端点代码风格的参考记下了，未来新增端点时会向这个规范靠。…",
+      "url": "https://github.com/simonlin1212/a-stock-data/issues/29#issuecomment-4936975318",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…view，抓到了真 bug。 剩下的「重构 / 工程化拆分」部分，最终决定见 #21 的完整说明：**单文件自包含是本项目的有意产品决策，长期保持，不做目录化拆分**。token 痛点通过 v3.3.1 的 description 收窄（防误触发）+ 按需局部读取的用法建议来缓解。感谢你的推动 🙏",
+      "url": "https://github.com/simonlin1212/a-stock-data/issues/27#issuecomment-4936972354",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

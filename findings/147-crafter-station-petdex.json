@@ -39,5 +39,6 @@
       "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。"
     }
   },
-  "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat."
+  "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
+  "voices": []
 }

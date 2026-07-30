@@ -42,5 +42,13 @@
   "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
   "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
   "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
-  "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer."
+  "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer.",
+  "voices": [
+    {
+      "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
+      "url": "https://github.com/wangxijie001/yoji/issues/3",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

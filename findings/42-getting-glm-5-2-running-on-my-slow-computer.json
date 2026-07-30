@@ -32,5 +32,25 @@
   },
   "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates.",
   "pick": false,
-  "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering."
+  "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering.",
+  "voices": [
+    {
+      "quote": "…t cause entirely** and `TC_W4A16` is a coincidence — his config differs from mine in ways I can't test here: 4×A100, `CUDA_EXPERT_GB=auto`, `PIN_GB=all` (full residency, so the `:1575` resident path rather than my streaming one…",
+      "url": "https://github.com/JustVugg/colibri/issues/685#issuecomment-5121251282",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…llows it (projected peak 456.6 GB; set CAP_RAISE=0 to disable) ### Reproduction steps Hi, I can't get colibri answering correctly with cuda enabled and 4 H100 40G cards I only get random tokens as response Am I missing somethin…",
+      "url": "https://github.com/JustVugg/colibri/issues/685",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…ault. The comment justifying it cites a **speed** measurement (+14%, expert-matmul −16%); I can't find a quality number anywhere. On real ARM decode the loss is probably **larger** than what I measured, because at S=1 the exper…",
+      "url": "https://github.com/JustVugg/colibri/issues/153",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

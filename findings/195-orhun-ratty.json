@@ -34,5 +34,25 @@
       "value": "终端很难变现(文化上免费);顶多做专业档,否则是个受喜爱的开源展示。",
       "risk": "终端模拟器是免费、拥挤的空间(Ghostty、WezTerm);内联 3D 很酷但小众。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "I can't reproduce this :/ More info would be helpful. Can you maybe increase the log level with `RUST_LOG=trace`?",
+      "url": "https://github.com/orhun/ratty/issues/116#issuecomment-4952666402",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "rust is too hard. i can't do this.",
+      "url": "https://github.com/orhun/ratty/issues/8#issuecomment-4642935018",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Spanish keyboard layout doesn't really work — I can't type `{` `}` `~` for instance, which are all typed using `AltGr` (`~` is `AltGr`+`4` for instance). Seems like Ratty doesn't like…",
+      "url": "https://github.com/orhun/ratty/issues/82",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

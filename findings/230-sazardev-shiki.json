@@ -42,5 +42,6 @@
   "does": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
   "edge": "Shiki's standout capability is its real per-note version history, enabling users to browse and revert changes directly from the TUI, unlike other note-taking apps.",
   "why_use": "Choose Shiki for its seamless integration with existing markdown files and git workflows, making it ideal for users who prioritize version control in their note-taking.",
-  "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos."
+  "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos.",
+  "voices": []
 }

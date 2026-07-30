@@ -38,5 +38,25 @@
   "why_use": "Choose ai-memory to avoid the frustration of re-explaining complex coding contexts when switching between AI tools, ensuring a smoother development process.",
   "hook": "Seamlessly switch coding agents mid-task with 100% context retention.",
   "pick": true,
-  "pick_reason": "The project addresses a clear need for continuity in AI coding environments, enabling users to maintain context across different tools."
+  "pick_reason": "The project addresses a clear need for continuity in AI coding environments, enabling users to maintain context across different tools.",
+  "voices": [
+    {
+      "quote": "…-merge for Kimi in d72f31b — let's not repeat it. 3. **[Confirm] Native-flag contract** — I can't verify `--session-id`/`--resume` behavior locally (no Grok CLI on this machine). Can you confirm in a reply that the acceptance r…",
+      "url": "https://github.com/akitaonrails/ai-memory/pull/237#issuecomment-5071924288",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…rrect regardless and may well fix Windows (stricter URI handling there is plausible), but I can't prove it from this side. Since you offered: could you run the patched build on your setup? Two useful outcomes: it either just wo…",
+      "url": "https://github.com/akitaonrails/ai-memory/issues/188#issuecomment-4982408453",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…s you pass > --force (which also backs up). > > Both guards have shipped since v1.4.0, so I can't see how the CLI path > loses curated content. > > One path that behaves differently: the memory_install_self_routing MCP > tool r…",
+      "url": "https://github.com/akitaonrails/ai-memory/issues/140#issuecomment-4856496528",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

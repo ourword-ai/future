@@ -27,5 +27,13 @@
       "value": "可能变成团队付费的路由/规划层(花费管控 + 质量);切口是编排强+便宜两档模型。",
       "risk": "它是个会被 agent 框架(和 shadcn 自己生态)吸收的范式/工具;做独立生意偏薄。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…nce? — Hey — thanks for this skill, I've been leaning on it a lot. Running into something I can't figure out from the docs and wanted to ask before inventing my own convention. `plans/` lives at the repo root and gets committed…",
+      "url": "https://github.com/shadcn/improve/issues/15",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

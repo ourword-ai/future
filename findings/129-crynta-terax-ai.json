@@ -38,5 +38,13 @@
       "hook": "一个 7MB 的终端 AI 工作区,给想要快、本地、不想要笨重 IDE 的开发者。"
     }
   },
-  "hook": "A 7MB terminal AI workspace for devs who want fast and local, not a heavy IDE."
+  "hook": "A 7MB terminal AI workspace for devs who want fast and local, not a heavy IDE.",
+  "voices": [
+    {
+      "quote": "Strange. I can't test again in the next hours Maybe there is a difference if you installed scoop or the app from inside terax?",
+      "url": "https://github.com/crynta/terax-ai/issues/1049#issuecomment-5089669407",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

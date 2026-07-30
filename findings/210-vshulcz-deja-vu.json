@@ -36,5 +36,6 @@
     }
   },
   "pick": false,
-  "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product."
+  "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product.",
+  "voices": []
 }

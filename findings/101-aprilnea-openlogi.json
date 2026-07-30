@@ -38,5 +38,6 @@
       "hook": "一个快、本地的 Rust 版,替代人人嫌弃的 Logitech Options+——重映射按键、DPI、SmartShift。"
     }
   },
-  "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift."
+  "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift.",
+  "voices": []
 }

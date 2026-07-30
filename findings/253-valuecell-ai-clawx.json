@@ -42,5 +42,6 @@
   "does": "An Electron desktop app that puts a GUI over OpenClaw's CLI agents — sessions, config and orchestration without touching a terminal.",
   "edge": "7.5k stars for a wrapper is a statement about the layer, not the agent: the capability already existed and the terminal was the thing keeping people out. Whoever owns the non-developer entry point to agent tooling reaches the far larger audience, and today that is an unbranded community app.",
   "why_use": "Run agent orchestration as a normal desktop app instead of learning a CLI.",
-  "hook": "Transform AI orchestration with ClawX: a seamless desktop interface for OpenClaw agents."
+  "hook": "Transform AI orchestration with ClawX: a seamless desktop interface for OpenClaw agents.",
+  "voices": []
 }

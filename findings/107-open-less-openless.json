@@ -36,5 +36,6 @@
       "value": "专业订阅(像 Wispr Flow / Superwhisper);开源 + 本地是隐私切口。",
       "risk": "Wispr Flow、Superwhisper 和系统原生听写都在;要靠质量 + 延迟取胜,语音 UI 很挤。"
     }
-  }
+  },
+  "voices": []
 }

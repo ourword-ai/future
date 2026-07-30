@@ -38,5 +38,13 @@
   },
   "hook": "The agent that competes on your token bill, not features — same budget, more useful work.",
   "pick": true,
-  "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development."
+  "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development.",
+  "voices": [
+    {
+      "quote": "…ches the ensemble `custom_b5` lineup, and that is a real functional gap worth fixing. But I can't merge this as it stands: **the default test suite is red on this branch**, the `agent.py` change regresses a DashScope recovery p…",
+      "url": "https://github.com/opensquilla/opensquilla/pull/797#issuecomment-5079817080",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -32,5 +32,6 @@
       "hook": "用一个 SQL 接口统管 API、文件与实时源——为 agent 打造的可靠数据访问。"
     }
   },
-  "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents."
+  "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents.",
+  "voices": []
 }

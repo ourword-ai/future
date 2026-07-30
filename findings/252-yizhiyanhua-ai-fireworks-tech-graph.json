@@ -42,5 +42,13 @@
   "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
   "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
   "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
-  "hook": "Transform natural language into production-quality diagrams with 11 unique styles."
+  "hook": "Transform natural language into production-quality diagrams with 11 unique styles.",
+  "voices": [
+    {
+      "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
+      "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph/issues/6",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

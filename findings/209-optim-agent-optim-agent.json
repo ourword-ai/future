@@ -36,5 +36,6 @@
     }
   },
   "pick": true,
-  "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization."
+  "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization.",
+  "voices": []
 }

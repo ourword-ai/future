@@ -42,5 +42,19 @@
   "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
   "edge": "Each note operates as an independent window, enabling quick access and interaction without unnecessary clicks or distractions.",
   "why_use": "Choose PaperTodo for its simplicity and focus on immediate usability, unlike other note-taking apps that require complex setups and account management.",
-  "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!"
+  "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!",
+  "voices": [
+    {
+      "quote": "…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…",
+      "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5060997604",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
+      "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5058072660",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

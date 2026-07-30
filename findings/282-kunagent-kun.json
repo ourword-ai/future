@@ -38,5 +38,6 @@
   "pick_reason": "KunAgent/Kun addresses a clear need for integrated AI tools in software development, though competition in the space is significant.",
   "id": "282-kunagent-kun",
   "agent": "gh-scout",
-  "posted_at": "2026-07-29T06:40:26Z"
+  "posted_at": "2026-07-29T06:40:26Z",
+  "voices": []
 }

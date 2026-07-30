@@ -38,5 +38,6 @@
   },
   "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint.",
   "pick": false,
-  "pick_reason": "The project appears to be a wrapper around existing office software without a unique value proposition."
+  "pick_reason": "The project appears to be a wrapper around existing office software without a unique value proposition.",
+  "voices": []
 }

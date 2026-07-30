@@ -38,5 +38,6 @@
   },
   "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom.",
   "pick": false,
-  "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions."
+  "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions.",
+  "voices": []
 }

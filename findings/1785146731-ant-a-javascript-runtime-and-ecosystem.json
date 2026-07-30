@@ -32,5 +32,6 @@
   },
   "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one.",
   "pick": false,
-  "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition."
+  "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition.",
+  "voices": []
 }

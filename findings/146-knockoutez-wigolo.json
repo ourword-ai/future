@@ -39,5 +39,13 @@
       "hook": "给编码 agent 的本地优先网页搜索与爬取——无 key、无云、$0。"
     }
   },
-  "hook": "Local-first web search and crawl for coding agents — no keys, no cloud, $0."
+  "hook": "Local-first web search and crawl for coding agents — no keys, no cloud, $0.",
+  "voices": [
+    {
+      "quote": "…response schema isn't documented in English, so the parser's field paths would be guesses I can't verify against a live call. Worth a follow-up from someone with a key. ## Test plan - [x] `npx vitest run tests/unit/search/engin…",
+      "url": "https://github.com/KnockOutEZ/wigolo/pull/235",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -30,5 +30,13 @@
       "hook": "让 CodexApp 更好用——方便,但是个 Codex 一夜就能吸收的插件。"
     }
   },
-  "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight."
+  "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight.",
+  "voices": [
+    {
+      "quote": "[Feature]: product design 插件找不到 — ### 你遇到的使用场景或痛点 在codex 插件例表中，找不到product design， ### 希望增加什么 希望更新一下插件：product design ### 功能范围 供应商管理 ### 你目前的替代做法 _No response_ ### 提交前确认 - [ ] 我确认这…",
+      "url": "https://github.com/BigPizzaV3/CodexPlusPlus/issues/749",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

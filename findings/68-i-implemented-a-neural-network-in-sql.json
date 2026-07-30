@@ -28,5 +28,13 @@
       "value": "没有生意;它是教学/猎奇之作,价值在内容而非软件。",
       "risk": "是特技/演示;迷人但没东西可卖,也没有有持续需求的用户。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "Is this PR still relevant? Forgive me, I can't remember, but I recall that we got rid of the unique call in the first place.",
+      "url": "https://github.com/xqlsystems/xarray-sql/issues/170#issuecomment-4770951393",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -40,5 +40,6 @@
   },
   "does": "A ground-up rewrite of Postgres in Rust that already matches Postgres 18.3 output across 46,000+ regression queries and is disk-compatible — it can boot straight from an existing Postgres data directory.",
   "edge": "A newer unpublished build reportedly passes 100% of the Postgres regression suite, is ~50% faster on transactional workloads and ~300x faster on analytical ones (approaching ClickHouse) — a Postgres-compatible engine with HTAP-class analytics is a big deal if it holds up.",
-  "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database."
+  "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database.",
+  "voices": []
 }

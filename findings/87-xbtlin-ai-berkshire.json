@@ -38,5 +38,25 @@
   },
   "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
   "pick": true,
-  "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market."
+  "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market.",
+  "voices": [
+    {
+      "quote": "> 请问用的啥模型，这个报告用了多少钱的token 我用的 deepseek v4, 跑一个股票差不多 2-3 元一次",
+      "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829672988",
+      "src": "github",
+      "kind": "pay"
+    },
+    {
+      "quote": "请问用的啥模型，这个报告用了多少钱的token",
+      "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829624364",
+      "src": "github",
+      "kind": "pay"
+    },
+    {
+      "quote": "…rect errorlevel handling) and merge-tested locally against latest main with no conflicts. I can't execute Windows scripts on macOS, so relying on your posted verification for runtime behavior — if any Windows user hits an issue…",
+      "url": "https://github.com/xbtlin/ai-berkshire/pull/46#issuecomment-4881098896",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

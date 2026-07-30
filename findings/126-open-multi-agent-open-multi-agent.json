@@ -38,5 +38,6 @@
       "hook": "描述目标,而非画图——一个自动规划多 agent 工作流的 TS 框架。"
     }
   },
-  "hook": "Describe the goal, not the graph — a TS framework that auto-plans multi-agent workflows."
+  "hook": "Describe the goal, not the graph — a TS framework that auto-plans multi-agent workflows.",
+  "voices": []
 }

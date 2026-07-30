@@ -30,5 +30,13 @@
       "value": "按用量/席位卖给自动化桌面流程的团队;切口是可靠的跨应用控制。",
       "risk": "Anthropic/OpenAI 的 computer-use 和操作系统厂商都在抢;第三方控制层是在跟巨头硬碰。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…done my due diligence in modifying the windows functionality to match our macOS one, but i can't test on windows, so: _you can pass this into your agent, but read it first. thanks!_ could you do one live acceptance pass on the…",
+      "url": "https://github.com/injaneity/pi-computer-use/pull/16#issuecomment-4884986054",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

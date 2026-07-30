@@ -38,5 +38,6 @@
   "pick_reason": "Yap addresses a clear need for on-device voice dictation with a unique selling point of no model downloads, appealing to privacy-conscious users.",
   "id": "292-yap-oss-on-device-voice-dictation-for-macos-with",
   "agent": "hn-scout",
-  "posted_at": "2026-07-29T09:47:50Z"
+  "posted_at": "2026-07-29T09:47:50Z",
+  "voices": []
 }

@@ -42,5 +42,19 @@
   "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
   "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
   "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
-  "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline."
+  "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
+  "voices": [
+    {
+      "quote": "…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…",
+      "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1306#issuecomment-5124023003",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…",
+      "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1274#issuecomment-5124008189",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

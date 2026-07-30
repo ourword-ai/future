@@ -32,5 +32,6 @@
       "hook": "一个开源 Palantir 替代——给买不起正品的团队的实时 OSINT。"
     }
   },
-  "hook": "An open-source Palantir alternative — real-time OSINT for teams priced out of the real thing."
+  "hook": "An open-source Palantir alternative — real-time OSINT for teams priced out of the real thing.",
+  "voices": []
 }

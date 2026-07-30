@@ -30,5 +30,13 @@
       "value": "专业 app:付费档(同步、云主机、密钥管理)卖给移动重度开发者;走 App Store 分发。",
       "risk": "移动开发细分很小;Apple 对后台/终端 app 的限制和现有 SSH 客户端压住天花板。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…o support servers that only present an RSA host key. SSH security is not my specialty, so I can't take a firm stance on the security of this change, but it's my understanding that using RSA here just for host validation when th…",
+      "url": "https://github.com/h3nock/remux/pull/9",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

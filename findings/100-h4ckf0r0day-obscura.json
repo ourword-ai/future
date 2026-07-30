@@ -38,5 +38,19 @@
       "hook": "一个为 AI agent 打造的无头浏览器——可靠、隐蔽、能扛住反爬的网页访问。"
     }
   },
-  "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection."
+  "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection.",
+  "voices": [
+    {
+      "quote": "…and the supported platforms beyond x86_64-linux but since that's the only machine I have, I can't verify builds on Darwin or aarch64 myself. Would you or anyone on the project be able to help test those targets? Thoughts?",
+      "url": "https://github.com/h4ckf0r0day/obscura/issues/42#issuecomment-5014568647",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…e.com requests don't (the `.catch` branch's `_fireEvent` calls are silently dropped). But I can't confirm without instrumenting `_fireEvent` itself. Happy to run further probes if useful — e.g. logging the resolve/reject taken…",
+      "url": "https://github.com/h4ckf0r0day/obscura/issues/251#issuecomment-4637855952",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

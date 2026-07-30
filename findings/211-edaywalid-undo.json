@@ -36,5 +36,6 @@
     }
   },
   "pick": true,
-  "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands."
+  "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands.",
+  "voices": []
 }

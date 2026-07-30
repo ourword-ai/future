@@ -38,5 +38,25 @@
   },
   "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application.",
   "pick": true,
-  "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization."
+  "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization.",
+  "voices": [
+    {
+      "quote": "…2.5.1 and it renders identical to current `master`, two pages, no clash. **The one thing I can't check from here is whether `\\namefont` exists in 2.3.1.** It's been part of moderncv's style architecture for a long time so I'd…",
+      "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083767204",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…lysis neither reproduces: `lualatex cv/main_example.tex` exits 0 with no option clash. So I can't confirm the 2.3.1 failures directly, but both mechanisms check out on inspection. `moderncv.cls` really does load hyperref itself…",
+      "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083313655",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…the model is \"read this one folder, then copy it in\", so the user reviews what they run. I can't offer the same standing endorsement for a whole application whose code can change after I've linked it, and I don't want to keep…",
+      "url": "https://github.com/MadsLorentzen/ai-job-search/issues/234#issuecomment-5070008472",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

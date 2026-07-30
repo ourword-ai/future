@@ -44,5 +44,25 @@
   "edge": "The built-in AI assistant allows users to generate SQL queries directly from natural language descriptions, eliminating the need for copy-pasting between tools.",
   "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific.",
   "pick": true,
-  "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need."
+  "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need.",
+  "voices": [
+    {
+      "quote": "[Feature] 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了 — ### 数据库类型和版本 通用 ### 当前痛点 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了。要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要每次都要选。这个功能的本质就是快，要快不要墨迹 ### 期望方案 要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要…",
+      "url": "https://github.com/t8y2/dbx/issues/2337",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…es，确认没有重复建议。 - [x] 这个建议与 DBX 的数据库管理、查询、浏览、导出或桌面体验有关。 ### 建议类型 连接管理 ### 相关数据库 SQLite ### 当前痛点 目前只支持连接本地磁盘的 SQLIte，无法通过 \\\\wsl.localhost\\WSL\\home\\xxx\\data.db 连接，每次管理 WSL 里的 SQLite 都需要复制到宿主机 ### 期望方案 SQLite 文件路径能支持 \\\\wsl.local…",
+      "url": "https://github.com/t8y2/dbx/issues/67",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "[💡 Feature] 希望能够支持针对kerberos权限校验的支持 — ### 当前痛点 目前很多hive数据库使用的是通过kerberos进行鉴权，否则无法链接。 ### 期望方案 能够通过配置数据源的kerberos认证文件然后连接到数据源 ### 补充信息 _No response_",
+      "url": "https://github.com/t8y2/dbx/issues/937",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

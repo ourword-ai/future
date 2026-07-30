@@ -37,5 +37,6 @@
       "value": "给标准化用 DeepSeek 的团队做团队/托管版:卖可靠性 + 共享配置。",
       "risk": "又一个单模型终端 agent;很挤,而且 DeepSeek 可能出自家一方 agent。"
     }
-  }
+  },
+  "voices": []
 }

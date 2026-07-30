@@ -35,5 +35,13 @@
       "value": "买家不清晰;可做专业/同步档,但范围太散,暂时难收费。",
       "risk": "范围发散、没有清晰切口;更像个人效率脚本而非公司。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "Yeah, I can't merge my own PR because I'm not a maintainer and I didn't have an approval anyways. From his comment on this issue, I thought And…",
+      "url": "https://github.com/afar1/fieldtheory-cli/issues/53#issuecomment-4269816997",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

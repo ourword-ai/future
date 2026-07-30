@@ -38,5 +38,6 @@
       "hook": "跨聊天平台跑 AI agent 的控制室——会话、定时任务、用量分析。"
     }
   },
-  "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics."
+  "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics.",
+  "voices": []
 }

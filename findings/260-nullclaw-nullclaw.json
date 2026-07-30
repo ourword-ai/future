@@ -33,5 +33,25 @@
       "value": "面向边缘与嵌入式的个人 AI 基础设施 — 托管服务、硬件/路由器捆绑，或把运行时授权给其他公司的端侧助手。“10 美元开发板就能跑”的定位既有辨识度又守得住。",
       "risk": "Zig 贡献者池很小，且本月提交节奏放缓；助手基础设施的热度周期转得快，一旦势头停滞，周边生态仓库会从护城河变成包袱。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…it with `expect` or a PTY, which is more fragile. I haven't tried the grok CLI myself, so I can't confirm the subcommand interface. If someone has it installed, `grok --help` or checking the binary's subcommands would answer th…",
+      "url": "https://github.com/nullclaw/nullclaw/issues/975#issuecomment-4944099528",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "…to a similar issue where an cron job doesn't send a message to personal telegram chat id. I can't provide logs as I don't know where they are stored or how to generate them",
+      "url": "https://github.com/nullclaw/nullclaw/issues/941#issuecomment-4662331209",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "NullClaw is the only one in the Claw family that I can't get to work directly with DuckDuckGo for internet searches. In fact, I can't get it to perform searches with anything that isn't…",
+      "url": "https://github.com/nullclaw/nullclaw/issues/871#issuecomment-4347665700",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

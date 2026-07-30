@@ -38,5 +38,13 @@
       "hook": "用检索渲染后的像素取代脆弱的 HTML 爬取——如果准确度站得住的话。"
     }
   },
-  "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up."
+  "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up.",
+  "voices": [
+    {
+      "quote": "…bypasses the idle wait — it needs the same watcher wired into its `_Conn` event loop, and I can't benchmark turbo on this machine (`/dev/shm` + patched headless_shell). The silent fallback is now an explicit log line; turbo idl…",
+      "url": "https://github.com/StarTrail-org/PixelRAG/pull/120",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

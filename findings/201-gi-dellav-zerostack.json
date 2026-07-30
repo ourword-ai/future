@@ -34,5 +34,19 @@
       "value": "没有清晰的付费切口;更轻的编码 agent 很难在免费、有融资的对手前变现。",
       "risk": "残酷的编码 agent 品类(Claude Code/Cursor/Aider);光 轻量 不是生意。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "True; I'm currently working on `setup`+`/tutor`, so I can't go back to work on the TUI for some time, would you be interested in trying to implement column tracking? Cheers, Giuseppe Della…",
+      "url": "https://github.com/gi-dellav/zerostack/issues/179#issuecomment-4929561171",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Try now (I don't have homebrew on my machine so I can't test)",
+      "url": "https://github.com/gi-dellav/zerostack/issues/170#issuecomment-4904460088",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

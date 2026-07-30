@@ -41,5 +41,13 @@
   },
   "does": "Plan trips on a drag-and-drop day planner with interactive maps (Leaflet/Mapbox, routes, 3D) and place import from Google/Naver Maps lists and GPX/KML; auto-pull flights and hotels from booking-confirmation emails and PDFs; split costs Splitwise-style (multi-currency, settle-up); packing lists, 16-day weather, PDF export; real-time multi-user editing with SSO, passkeys and group chat.",
   "edge": "It's basically TripIt + Wanderlog + Splitwise fused into one self-hosted app — and it ships a built-in MCP server (OAuth 2.1, 150+ tools) so an AI assistant can create trips, plan days, build packing lists and manage budgets end to end.",
-  "why_use": "One Docker command, your data on your own box, no per-seat travel-SaaS bill, and it replaces three paid apps at once; the MCP layer makes it one of the very few consumer apps an AI agent can fully operate."
+  "why_use": "One Docker command, your data on your own box, no per-seat travel-SaaS bill, and it replaces three paid apps at once; the MCP layer makes it one of the very few consumer apps an AI agent can fully operate.",
+  "voices": [
+    {
+      "quote": "…sion 3.1.0 ### Describe the bug Just pulled the latest Docker image from mauriceboe/trek. I can't sign in. Container logs keeps repeating this... sh: 1: exec: su-exec: not found ### Steps to reproduce docker pull mauriceboe/tre…",
+      "url": "https://github.com/liketrek/TREK/issues/1221",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

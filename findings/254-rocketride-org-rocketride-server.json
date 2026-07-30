@@ -42,5 +42,6 @@
   "does": "RocketRide enables you to build, debug, and deploy production-ready AI solutions directly within your IDE or terminal. It features a visual pipeline builder for seamless integration of various AI and ML workloads.",
   "edge": "The ability to visually design complex AI workflows directly in your code editor, with real-time observability and zero vendor lock-in.",
   "why_use": "Choose RocketRide for its unmatched performance and flexibility, allowing you to run AI pipelines on your own infrastructure without dependency headaches.",
-  "hook": "Transform your IDE into a high-performance AI development powerhouse with RocketRide's 50+ extensible nodes."
+  "hook": "Transform your IDE into a high-performance AI development powerhouse with RocketRide's 50+ extensible nodes.",
+  "voices": []
 }

@@ -28,5 +28,6 @@
       "value": "给跑长 agent 任务的人卖个便宜的 Mac 小工具;细分但清晰。",
       "risk": "极小工具(Amphetamine/Caffeine 的地盘);易被抄,Apple 也可能改电源 API。"
     }
-  }
+  },
+  "voices": []
 }

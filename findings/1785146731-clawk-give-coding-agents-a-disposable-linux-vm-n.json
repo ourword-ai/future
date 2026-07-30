@@ -30,5 +30,13 @@
     }
   },
   "pick": true,
-  "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees."
+  "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees.",
+  "voices": [
+    {
+      "quote": "…issue to be opened. The output might be helpful, but I haven't reviewed it myself and so I can't co-sign it's veracity.",
+      "url": "https://github.com/clawkwork/clawk/issues/1#issuecomment-4982910781",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

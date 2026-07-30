@@ -36,5 +36,6 @@
   },
   "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds.",
   "pick": true,
-  "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption."
+  "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption.",
+  "voices": []
 }

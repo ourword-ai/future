@@ -37,5 +37,13 @@
       "hook": "一个「git → 发布 → 搞定」的流程封装——有潜力,但真正的切口还模糊。"
     }
   },
-  "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy."
+  "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy.",
+  "voices": [
+    {
+      "quote": "…a `no-changelog` change (no user-facing behavior); please apply the `no-changelog` label (I can't self-label as an external contributor). ## Checklist - [x] Issue linked above with `Closes #1178` - [x] Linked issue has the `app…",
+      "url": "https://github.com/open-gsd/gsd-core/pull/1420",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

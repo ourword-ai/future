@@ -36,5 +36,13 @@
       "value": "卖给安全/工程团队做扫描 + 分诊服务;按仓库/席位或按量,安全组织本就有这笔预算。",
       "risk": "拥挤且重信任(Snyk、Semgrep、GitHub);agent 找到的漏洞要低误报 + 有证据才被信任。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…ched existing issues and discussions and this isn't a duplicate. ### Problem / motivation i cant use ollama api key ### Proposed solution pleas make it compatible with ollama provider ### Which area? not sure ### Alternatives…",
+      "url": "https://github.com/Kritt-ai/open-kritt/issues/23",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

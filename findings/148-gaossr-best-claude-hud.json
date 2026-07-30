@@ -39,5 +39,6 @@
       "hook": "给 Claude Code 的漂亮 Rust 状态栏——好看,但 Anthropic 随时能自己出。"
     }
   },
-  "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day."
+  "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day.",
+  "voices": []
 }

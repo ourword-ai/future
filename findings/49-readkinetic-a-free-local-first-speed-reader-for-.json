@@ -28,5 +28,13 @@
       "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
       "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "…hen use the tool for the prose. It’s not really fixable at the format level too, there is no good way of showing a person a graph word by word. I suppose what I really should add is some kind of flag to say there was a figure here…",
+      "url": "https://news.ycombinator.com/item?id=49002857",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ]
 }

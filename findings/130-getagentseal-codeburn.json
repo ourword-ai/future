@@ -39,5 +39,13 @@
       "hook": "看清你的 AI 编码到底花了多少——本地统计 31 种 agent 的 token 花费。"
     }
   },
-  "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally."
+  "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally.",
+  "voices": [
+    {
+      "quote": "## Follow-on work after #847 — five decisions I can't make alone #847 is the first of three changes I've prepared against `feat/core-extraction`. It's build/release/CI only, no `src/`…",
+      "url": "https://github.com/getagentseal/codeburn/issues/809#issuecomment-5097385166",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

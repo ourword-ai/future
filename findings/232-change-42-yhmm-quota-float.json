@@ -42,5 +42,6 @@
   "does": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
   "edge": "Its unique floating orb design collapses when idle, expanding only on hover, ensuring minimal distraction while keeping critical information accessible.",
   "why_use": "Choose Quota Float for its accurate, real-time quota tracking without the clutter of unnecessary features, unlike other quota management tools that may not provide live updates.",
-  "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!"
+  "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!",
+  "voices": []
 }

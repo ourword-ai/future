@@ -36,5 +36,6 @@
       "value": "给在大 monorepo 上跑 agent 的团队做团队/企业版:在真实代码库上卖可靠性 + 验证。",
       "risk": "harness 范式正被 Claude Code/Cursor 吸收;需证明它在难仓库上确实明显更强。"
     }
-  }
+  },
+  "voices": []
 }

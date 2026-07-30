@@ -38,5 +38,13 @@
       "hook": "一个 DeepSeek 原生、针对前缀缓存稳定性调优的终端编码器——可以长驻。"
     }
   },
-  "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running."
+  "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running.",
+  "voices": [
+    {
+      "quote": "> +1, 本地Windows 远程Linux 也是这个问题 > > @zixuan-chen 你是咋配的，能贴下配置不，谢谢。我配置折腾几天了，连接都连不上。powershell 指定rsa密钥都能正常免密登录过去了，但是客户端就是不行。",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix/issues/6747#issuecomment-5077381501",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

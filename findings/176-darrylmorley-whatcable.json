@@ -38,5 +38,13 @@
   },
   "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar.",
   "pick": true,
-  "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized."
+  "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized.",
+  "voices": [
+    {
+      "quote": "…own. It adds the technical block to every port card, which makes the panel a lot taller. I can't reproduce it here, so two questions: - What resolution is your Air's display set to, and is it on default scaling? - Does turning…",
+      "url": "https://github.com/darrylmorley/whatcable/issues/454#issuecomment-5022247602",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

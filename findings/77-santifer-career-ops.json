@@ -38,5 +38,6 @@
   },
   "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching.",
   "pick": false,
-  "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition."
+  "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition.",
+  "voices": []
 }

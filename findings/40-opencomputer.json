@@ -31,5 +31,6 @@
       "value": "按量的托管 agent 主机(agent 版 Vercel 赛道);团队为不用自己跑 agent 基础设施 付费。",
       "risk": "托管 agent 主机很挤(E2B、Modal、各实验室);要赢得靠可靠性 + 体验 + 规模化价格。"
     }
-  }
+  },
+  "voices": []
 }

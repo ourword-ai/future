@@ -35,5 +35,6 @@
   },
   "hook": "One orchestrator agent to run a merchant's entire commerce stack.",
   "pick": true,
-  "pick_reason": "Athena addresses a significant pain point in e-commerce by integrating multiple tools, showing strong market potential."
+  "pick_reason": "Athena addresses a significant pain point in e-commerce by integrating multiple tools, showing strong market potential.",
+  "voices": []
 }

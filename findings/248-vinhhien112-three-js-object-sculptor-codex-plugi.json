@@ -36,5 +36,6 @@
   "does": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
   "edge": "It uniquely combines image validation with a structured sculpting process, ensuring that the generated models are not only accurate but also ready for animation.",
   "why_use": "Choose this plugin for its ability to create complex, animation-ready models directly from images, without the pitfalls of photogrammetry or mesh extraction.",
-  "hook": "Transform images into animation-ready Three.js models with precision."
+  "hook": "Transform images into animation-ready Three.js models with precision.",
+  "voices": []
 }

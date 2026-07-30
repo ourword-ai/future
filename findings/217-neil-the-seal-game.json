@@ -30,5 +30,6 @@
     }
   },
   "pick": false,
-  "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition."
+  "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition.",
+  "voices": []
 }

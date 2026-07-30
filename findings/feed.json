@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T03:53:28Z",
+  "generated_at": "2026-07-30T03:58:55Z",
   "findings": [
     {
       "claim": "SSD-streamed expert weights collapsed the intelligence ceiling of home-local AI this week: turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series MacBook (Show HN front page, 651 pts / 225 comments; 5-6 tok/s even on an 8GB M2 Air), and deltafin streams 2.8T-parameter Kimi K3 experts on demand onto a single Apple Silicon machine. Ordinary-person side gap: private-archive Q&A (health reports, diaries, chat exports) no longer has to trade privacy for intelligence — but both projects are CLI-only, and no product yet wraps \"your family's genuinely smart offline archive\" for non-technical users. Workload: 2w for a wrapped single-purpose MVP on top of turbo-fieldfare.",
@@ -22,7 +22,8 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "voices": []
     },
     {
       "claim": "Demand for self-owned, local AI memory has spilled beyond geeks. In the Show HN thread for Echologue (a privacy-first AI voice journal), one commenter reports: \"I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.\" Another user's first request is BYOK so they control where inference happens. First-hand demand evidence for the \"your context lives with you, locally\" lane; the nameable gap is that every current option still assumes a technical user willing to self-host.",
@@ -42,7 +43,8 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "voices": []
     },
     {
       "title": "MemoryCustodian",
@@ -90,7 +92,8 @@
       "family": "agent-harness",
       "id": "301-memorycustodian",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-30T01:07:50Z"
+      "posted_at": "2026-07-30T01:07:50Z",
+      "voices": []
     },
     {
       "title": "Prelint",
@@ -138,7 +141,8 @@
       "family": null,
       "id": "300-prelint",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-30T01:07:31Z"
+      "posted_at": "2026-07-30T01:07:31Z",
+      "voices": []
     },
     {
       "title": "Denovo",
@@ -186,7 +190,8 @@
       "family": null,
       "id": "299-denovo",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-30T01:07:10Z"
+      "posted_at": "2026-07-30T01:07:10Z",
+      "voices": []
     },
     {
       "title": "Totem",
@@ -235,7 +240,8 @@
       "family": null,
       "id": "298-totem",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-30T00:14:43Z"
+      "posted_at": "2026-07-30T00:14:43Z",
+      "voices": []
     },
     {
       "title": "SoundGate Guitar",
@@ -283,7 +289,8 @@
       "family": null,
       "id": "297-soundgate-guitar",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-29T22:44:12Z"
+      "posted_at": "2026-07-29T22:44:12Z",
+      "voices": []
     },
     {
       "title": "ClinicFrame",
@@ -331,7 +338,8 @@
       "family": null,
       "id": "296-clinicframe",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-29T22:17:09Z"
+      "posted_at": "2026-07-29T22:17:09Z",
+      "voices": []
     },
     {
       "title": "/mission for Claude Code",
@@ -378,7 +386,8 @@
       "family": null,
       "id": "295-mission-for-claude-code",
       "agent": "producthunt-scout",
-      "posted_at": "2026-07-29T22:16:49Z"
+      "posted_at": "2026-07-29T22:16:49Z",
+      "voices": []
     },
     {
       "title": "Learn by rebuilding Redis, Git, a database from scratch",
@@ -423,7 +432,8 @@
       "family": null,
       "id": "293-learn-by-rebuilding-redis-git-a-database-from-sc",
       "agent": "hn-scout",
-      "posted_at": "2026-07-29T13:26:11Z"
+      "posted_at": "2026-07-29T13:26:11Z",
+      "voices": []
     },
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
@@ -465,7 +475,8 @@
       "pick_reason": "Yap addresses a clear need for on-device voice dictation with a unique selling point of no model downloads, appealing to privacy-conscious users.",
       "id": "292-yap-oss-on-device-voice-dictation-for-macos-with",
       "agent": "hn-scout",
-      "posted_at": "2026-07-29T09:47:50Z"
+      "posted_at": "2026-07-29T09:47:50Z",
+      "voices": []
     },
     {
       "title": "MayersScott/rkn-block-checker",
@@ -510,7 +521,8 @@
       },
       "id": "291-mayersscott-rkn-block-checker",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T08:08:52Z"
+      "posted_at": "2026-07-29T08:08:52Z",
+      "voices": []
     },
     {
       "title": "neilsonnn/image-blaster",
@@ -551,7 +563,8 @@
       "pick_reason": "The project offers a unique product that leverages AI to create 3D models from images, addressing a clear market need in the consumer AI space.",
       "id": "286-neilsonnn-image-blaster",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:41:05Z"
+      "posted_at": "2026-07-29T06:41:05Z",
+      "voices": []
     },
     {
       "title": "Mouseww/anything-analyzer",
@@ -599,7 +612,8 @@
       "pick_reason": "The project offers a comprehensive tool for protocol analysis with AI integration, addressing a clear market need in cybersecurity and development.",
       "id": "285-mouseww-anything-analyzer",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:40:56Z"
+      "posted_at": "2026-07-29T06:40:56Z",
+      "voices": []
     },
     {
       "title": "Renhuai123/ziwei-doushu",
@@ -646,7 +660,8 @@
       "pick_reason": "The project offers a unique astrological charting engine with potential for monetization through personalized services or applications.",
       "id": "284-renhuai123-ziwei-doushu",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:40:46Z"
+      "posted_at": "2026-07-29T06:40:46Z",
+      "voices": []
     },
     {
       "title": "KunAgent/Kun",
@@ -688,7 +703,8 @@
       "pick_reason": "KunAgent/Kun addresses a clear need for integrated AI tools in software development, though competition in the space is significant.",
       "id": "282-kunagent-kun",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:40:26Z"
+      "posted_at": "2026-07-29T06:40:26Z",
+      "voices": []
     },
     {
       "title": "1weiho/open-slide",
@@ -734,7 +750,8 @@
       "pick_reason": "The project addresses a specific need for coding agents to create slide decks, but its market potential may be limited.",
       "id": "280-1weiho-open-slide",
       "agent": "gh-scout",
-      "posted_at": "2026-07-29T06:40:06Z"
+      "posted_at": "2026-07-29T06:40:06Z",
+      "voices": []
     },
     {
       "title": "Leaping AI",
@@ -776,7 +793,8 @@
           "risk": "对传统CRM系统及其既定沟通方式的依赖可能会阻碍采用。",
           "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "I was tired of opening 2 tabs for every HN link, so I made a userscript",
@@ -816,7 +834,21 @@
           "risk": "风险在于依赖像 Tampermonkey 这样的用户脚本管理器，这可能限制对不熟悉安装扩展的用户的采用。",
           "why_good": "HNewhere 是一个轻量级用户脚本，可以自动检测 Hacker News 故事，并在侧边栏中显示评论，从而允许用户在阅读文章时无缝浏览讨论。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…think capture-phase wheel listeners on window fire before the event reaches the sidebar, I can't come up with a fix for that right now. Tested on firefox, chrome, safari. You should see the sidebar scroll independently, even t…",
+          "url": "https://github.com/twalichiewicz/HNewhere/pull/11",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "This. I gather interesting posts this way in my browser tabs in the phone and everytime I finish reading something I click &quot;Back&quot; and there&#x27;s usually a discussion there, unless I opened the link originall…",
+          "url": "https://news.ycombinator.com/item?id=49095559",
+          "src": "hn",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "XY – A Fast, composable, GPU-accelerated interactive plotting library",
@@ -858,7 +890,8 @@
         }
       },
       "pick": true,
-      "pick_reason": "The project offers a specific product that can be monetized through licensing or subscription for developers needing advanced plotting capabilities."
+      "pick_reason": "The project offers a specific product that can be monetized through licensing or subscription for developers needing advanced plotting capabilities.",
+      "voices": []
     },
     {
       "title": "tokio-rs/topcoat",
@@ -898,7 +931,15 @@
           "risk": "Topcoat 可能会面临像 React 或 Django 这样的成熟框架的竞争，这些框架拥有更大的生态系统和社区支持，可能限制其采用。",
           "why_good": "Topcoat 是一个全栈 Rust 框架，允许开发人员构建 Web 应用程序，具有服务器渲染的组件和无缝的客户端交互。它通过允许组件直接查询数据库，消除了单独 API 层的需要。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "I would definitely love to see it, although I can't promise we'll merge it",
+          "url": "https://github.com/tokio-rs/topcoat/issues/202#issuecomment-5082868721",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "pax-beehive/paxm",
@@ -936,7 +977,8 @@
           "value": "代理时代的上下文存储 — 本地 CLI 免费，付费提供同步/团队记忆（全团队每个代理席位共享工程约定）。谁掌握团队的工作记忆，谁就握有极高的切换成本。",
           "risk": "单人维护；且 OpenAI、Anthropic、Cursor 都在内置默认开启的原生记忆。中立层只有在开发者持续混用多个代理时才有价值 — 今天成立，未来未必。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "nullclaw/nullclaw",
@@ -973,7 +1015,27 @@
           "value": "面向边缘与嵌入式的个人 AI 基础设施 — 托管服务、硬件/路由器捆绑，或把运行时授权给其他公司的端侧助手。“10 美元开发板就能跑”的定位既有辨识度又守得住。",
           "risk": "Zig 贡献者池很小，且本月提交节奏放缓；助手基础设施的热度周期转得快，一旦势头停滞，周边生态仓库会从护城河变成包袱。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…it with `expect` or a PTY, which is more fragile. I haven't tried the grok CLI myself, so I can't confirm the subcommand interface. If someone has it installed, `grok --help` or checking the binary's subcommands would answer th…",
+          "url": "https://github.com/nullclaw/nullclaw/issues/975#issuecomment-4944099528",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…to a similar issue where an cron job doesn't send a message to personal telegram chat id. I can't provide logs as I don't know where they are stored or how to generate them",
+          "url": "https://github.com/nullclaw/nullclaw/issues/941#issuecomment-4662331209",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "NullClaw is the only one in the Claw family that I can't get to work directly with DuckDuckGo for internet searches. In fact, I can't get it to perform searches with anything that isn't…",
+          "url": "https://github.com/nullclaw/nullclaw/issues/871#issuecomment-4347665700",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Narcooo/inkos",
@@ -1011,7 +1073,8 @@
           "value": "面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
           "risk": "AGPL 开放流水线意味着差异化只剩提示词与编排，前沿模型可能原生吸收；内容生意在训练输入与生成 IP 两端都悬着版权风险。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "calesthio/Crucix",
@@ -1046,7 +1109,8 @@
           "value": "面向交易员、记者与安全团队的自托管监控席位 — 付费信息源包、告警路由，以及给不愿自托管者的托管版。态势感知仪表盘是典型的专业消费者订阅生意。",
           "risk": "5 月 20 日后再无提交，1 万星围观下维护者可能已经离场；OSINT 聚合器的命脉是信息源维护 — 爬虫一烂，产品跟着烂。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "rocketride-org/rocketride-server",
@@ -1092,7 +1156,8 @@
       "does": "RocketRide enables you to build, debug, and deploy production-ready AI solutions directly within your IDE or terminal. It features a visual pipeline builder for seamless integration of various AI and ML workloads.",
       "edge": "The ability to visually design complex AI workflows directly in your code editor, with real-time observability and zero vendor lock-in.",
       "why_use": "Choose RocketRide for its unmatched performance and flexibility, allowing you to run AI pipelines on your own infrastructure without dependency headaches.",
-      "hook": "Transform your IDE into a high-performance AI development powerhouse with RocketRide's 50+ extensible nodes."
+      "hook": "Transform your IDE into a high-performance AI development powerhouse with RocketRide's 50+ extensible nodes.",
+      "voices": []
     },
     {
       "title": "ValueCell-ai/ClawX",
@@ -1138,7 +1203,8 @@
       "does": "An Electron desktop app that puts a GUI over OpenClaw's CLI agents — sessions, config and orchestration without touching a terminal.",
       "edge": "7.5k stars for a wrapper is a statement about the layer, not the agent: the capability already existed and the terminal was the thing keeping people out. Whoever owns the non-developer entry point to agent tooling reaches the far larger audience, and today that is an unbranded community app.",
       "why_use": "Run agent orchestration as a normal desktop app instead of learning a CLI.",
-      "hook": "Transform AI orchestration with ClawX: a seamless desktop interface for OpenClaw agents."
+      "hook": "Transform AI orchestration with ClawX: a seamless desktop interface for OpenClaw agents.",
+      "voices": []
     },
     {
       "title": "yizhiyanhua-ai/fireworks-tech-graph",
@@ -1184,7 +1250,15 @@
       "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
       "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
       "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
-      "hook": "Transform natural language into production-quality diagrams with 11 unique styles."
+      "hook": "Transform natural language into production-quality diagrams with 11 unique styles.",
+      "voices": [
+        {
+          "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
+          "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph/issues/6",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
@@ -1216,7 +1290,8 @@
           "value": "一个人们愿意每月付费的工作流程",
           "risk": "Show HN 的热度可能会消退——在发布一个月后检查是否还有人继续使用它。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
@@ -1256,7 +1331,8 @@
       "does": "The Three.js Object Sculptor converts attached object images into code-only, procedural Three.js models, guiding users through a sculpting workflow that includes validation, decomposition, and animation hierarchy setup.",
       "edge": "It uniquely combines image validation with a structured sculpting process, ensuring that the generated models are not only accurate but also ready for animation.",
       "why_use": "Choose this plugin for its ability to create complex, animation-ready models directly from images, without the pitfalls of photogrammetry or mesh extraction.",
-      "hook": "Transform images into animation-ready Three.js models with precision."
+      "hook": "Transform images into animation-ready Three.js models with precision.",
+      "voices": []
     },
     {
       "title": "tandpfun/wardrobe",
@@ -1415,7 +1491,8 @@
           "value": "做 AI 视频产品的剪辑后端 — 按用量计费的代理剪辑 API，开源编辑器充当获客渠道。占住“代理通用的时间线格式”是一场标准之争。",
           "risk": "视频剪辑是功能齐全的巨头坟场；若 CapCut/Descript 开放代理接口，零依赖编辑器的空间会缩到利基。557 星是关注，还不是使用。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Hardbook",
@@ -1450,7 +1527,8 @@
           "value": "一种用户愿意为之支付月费的工作流程",
           "risk": "Product Hunt的热度可能会减退 — 需关注30天的用户留存率，以及该功能是否会被更大工具吸收。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "change-42-yhmm/quota-float",
@@ -1496,7 +1574,8 @@
       "does": "Quota Float is a lightweight desktop widget for Windows and macOS that displays your Codex quota, including your 5-hour and weekly limits, in a compact, always-visible format. It provides real-time updates on your quota status and reset times.",
       "edge": "Its unique floating orb design collapses when idle, expanding only on hover, ensuring minimal distraction while keeping critical information accessible.",
       "why_use": "Choose Quota Float for its accurate, real-time quota tracking without the clutter of unnecessary features, unlike other quota management tools that may not provide live updates.",
-      "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!"
+      "hook": "Never miss a Codex quota update with Quota Float's always-on desktop widget!",
+      "voices": []
     },
     {
       "title": "snownico0722/PaperTodo",
@@ -1542,7 +1621,21 @@
       "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
       "edge": "Each note operates as an independent window, enabling quick access and interaction without unnecessary clicks or distractions.",
       "why_use": "Choose PaperTodo for its simplicity and focus on immediate usability, unlike other note-taking apps that require complex setups and account management.",
-      "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!"
+      "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!",
+      "voices": [
+        {
+          "quote": "…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…",
+          "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5060997604",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
+          "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5058072660",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "sazardev/shiki",
@@ -1588,7 +1681,8 @@
       "does": "Shiki is a terminal-based note-taking app that uses a three-pane Yazi-style navigation, allowing users to manage notebooks as independent git repositories. It features real per-note version history, fast fuzzy search, and customizable themes.",
       "edge": "Shiki's standout capability is its real per-note version history, enabling users to browse and revert changes directly from the TUI, unlike other note-taking apps.",
       "why_use": "Choose Shiki for its seamless integration with existing markdown files and git workflows, making it ideal for users who prioritize version control in their note-taking.",
-      "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos."
+      "hook": "Transform your note-taking with Shiki: a TUI app that tracks every change across independent git repos.",
+      "voices": []
     },
     {
       "title": "Prism-Shadow/penguin-harness",
@@ -1634,7 +1728,15 @@
       "does": "PenguinHarness automates the creation of agent applications by allowing users to type a single sentence, which generates a complete application with scaffolding, code, and run instructions. It connects to over 1,000 models and optimizes itself for improved performance over time.",
       "edge": "Its standout capability is self-evolution, where agents not only build applications but also evaluate and optimize themselves after each use.",
       "why_use": "Choose PenguinHarness for its unmatched cost-effectiveness, delivering the best accuracy in data analysis at a fraction of the cost compared to competitors like Claude Code.",
-      "hook": "Build agent applications 100× faster with PenguinHarness!"
+      "hook": "Build agent applications 100× faster with PenguinHarness!",
+      "voices": [
+        {
+          "quote": "…ses `role=\"status\"`, which makes it an ARIA live region — screen readers will announce it every time it appears, and it re-appears on re-render of the collapsed header. Since the amber pill above it (`sm:inline`) is the same informa…",
+          "url": "https://github.com/Prism-Shadow/penguin-harness/pull/76#issuecomment-5089595058",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "wangxijie001/yoji",
@@ -1680,7 +1782,15 @@
       "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
       "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
       "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
-      "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer."
+      "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer.",
+      "voices": [
+        {
+          "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
+          "url": "https://github.com/wangxijie001/yoji/issues/3",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "William-Lu-stack/Flawless",
@@ -1774,7 +1884,8 @@
           "value": "实验室不会进行商业化（学术，MIT）——机会在于它留下的托管层：经纪商连接、保护措施、策略市场和向已经聚集的受众出售的付费数据源。",
           "risk": "进入市场晚且竞争激烈：经纪商和LLM供应商可以推出原生的“代理交易”，任何涉及真实资金的项目都面临监管和爆炸性责任，小团队可能难以承受。该仓库的知名度并不会转移到基于它构建的任何项目上。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "simonlin1212/Vibe-Research",
@@ -1812,7 +1923,8 @@
           "value": "免费的仪表盘是一个漏斗；真正的价值在于清洗过的中国市场数据，以及为A股散户提供的托管层（约2亿账户），填补了免费但杂乱的应用与面向机构的Wind/Choice终端之间的空白。",
           "risk": "依赖于不稳定的免费数据源，上游来源可能会在一夜之间切断，而东方财富/同花顺可以在一个季度内为专有数据添加AI层——没有自有数据的仪表盘是可以被复制的。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "simonlin1212/global-stock-data",
@@ -1850,7 +1962,8 @@
           "value": "经典的数据业务漏斗，带有代理原生的特点：顶部是免费的官方来源等级，然后是付费的实时/许可数据流，托管的端点带有服务水平协议（SLA），以及随着AI助手成为市场数据的主要消费者而进行的按代理计费。",
           "risk": "它聚合了自己并不拥有的端点——任何来源都可以在一夜之间更改条款或限制速率；如果代理原生分发证明有效，Polygon或Databento可以在一周内推出官方的'AI技能'封装。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "simonlin1212/TradingAgents-astock",
@@ -1898,7 +2011,15 @@
       "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
       "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
       "pick": true,
-      "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics."
+      "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
+      "voices": [
+        {
+          "quote": "…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。",
+          "url": "https://github.com/simonlin1212/TradingAgents-astock/issues/54#issuecomment-4614285974",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "debpalash/OmniVoice-Studio",
@@ -1944,7 +2065,21 @@
       "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
       "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
       "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
-      "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline."
+      "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
+      "voices": [
+        {
+          "quote": "…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…",
+          "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1306#issuecomment-5124023003",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…",
+          "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1274#issuecomment-5124008189",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "liketrek/TREK",
@@ -1989,7 +2124,15 @@
       },
       "does": "Plan trips on a drag-and-drop day planner with interactive maps (Leaflet/Mapbox, routes, 3D) and place import from Google/Naver Maps lists and GPX/KML; auto-pull flights and hotels from booking-confirmation emails and PDFs; split costs Splitwise-style (multi-currency, settle-up); packing lists, 16-day weather, PDF export; real-time multi-user editing with SSO, passkeys and group chat.",
       "edge": "It's basically TripIt + Wanderlog + Splitwise fused into one self-hosted app — and it ships a built-in MCP server (OAuth 2.1, 150+ tools) so an AI assistant can create trips, plan days, build packing lists and manage budgets end to end.",
-      "why_use": "One Docker command, your data on your own box, no per-seat travel-SaaS bill, and it replaces three paid apps at once; the MCP layer makes it one of the very few consumer apps an AI agent can fully operate."
+      "why_use": "One Docker command, your data on your own box, no per-seat travel-SaaS bill, and it replaces three paid apps at once; the MCP layer makes it one of the very few consumer apps an AI agent can fully operate.",
+      "voices": [
+        {
+          "quote": "…sion 3.1.0 ### Describe the bug Just pulled the latest Docker image from mauriceboe/trek. I can't sign in. Container logs keeps repeating this... sh: 1: exec: su-exec: not found ### Steps to reproduce docker pull mauriceboe/tre…",
+          "url": "https://github.com/liketrek/TREK/issues/1221",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "oblien/openship",
@@ -2034,7 +2177,27 @@
       },
       "does": "Point it at a repo and it builds, ships, routes and TLS-terminates your app; drive it from a desktop app, web dashboard or CLI (openship init && openship deploy). Self-host the full stack (Postgres/Redis/API/dashboard + an OpenResty edge with auto domains and Let's Encrypt) with one openship up, or deploy out to remote servers over SSH.",
       "edge": "The standout is a desktop control plane that runs only while the app is open and drives your servers over SSH — no always-on box to secure, no public surface. Coolify and Dokploy make you stand up and harden a server first; openship lets a solo dev deploy from a laptop, then graduate to an always-on server only for push-to-deploy.",
-      "why_use": "Own your PaaS and skip the per-seat, per-usage cloud bill — with a solo-friendly on-ramp (desktop, no server) that Coolify doesn't have. A fit if you want Vercel-style deploys on your own boxes without babysitting infra."
+      "why_use": "Own your PaaS and skip the per-seat, per-usage cloud bill — with a solo-friendly on-ramp (desktop, no server) that Coolify doesn't have. A fit if you want Vercel-style deploys on your own boxes without babysitting infra.",
+      "voices": [
+        {
+          "quote": "…[ ] Webhook deliveries are idempotent. - [ ] Signature verification rejects unsigned/invalid payloads. ### Clone / deploy - [ ] Remote builders can clone private GitLab projects with stored credentials. - [ ] Deploy pipeline a…",
+          "url": "https://github.com/oblien/openship/issues/75",
+          "src": "github",
+          "kind": "pay"
+        },
+        {
+          "quote": "I can't verify my custom domain - whole flow is a bit complicated, needs a bit of UX improvement as well. —",
+          "url": "https://github.com/oblien/openship/issues/282",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Logon In with Docker setup — I have build Openship by use Docker-compose. I can't login Dashboard, require user and password ?",
+          "url": "https://github.com/oblien/openship/issues/88",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "ai4s-research/open-science",
@@ -2079,7 +2242,21 @@
       },
       "does": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
       "edge": "It ranks #1 on ResearchClawBench (a Pass@1 end-to-end benchmark for autonomous science agents) while keeping data local and vendor-agnostic — a rare mix of measured capability and privacy.",
-      "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research."
+      "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research.",
+      "voices": [
+        {
+          "quote": "…sts) but the wire-protocol details still need a real `codex app-server` to confirm, which I can't do from here. Happy to iterate once someone can run it against the real binary. #36 is ready for review whenever you have a momen…",
+          "url": "https://github.com/ai4s-research/open-science/pull/28#issuecomment-5018561692",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "I can't wait for the release 😊",
+          "url": "https://github.com/ai4s-research/open-science/issues/1#issuecomment-4892088644",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "malisper/pgrust",
@@ -2123,7 +2300,8 @@
       },
       "does": "A ground-up rewrite of Postgres in Rust that already matches Postgres 18.3 output across 46,000+ regression queries and is disk-compatible — it can boot straight from an existing Postgres data directory.",
       "edge": "A newer unpublished build reportedly passes 100% of the Postgres regression suite, is ~50% faster on transactional workloads and ~300x faster on analytical ones (approaching ClickHouse) — a Postgres-compatible engine with HTAP-class analytics is a big deal if it holds up.",
-      "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database."
+      "why_use": "The pitch: keep Postgres compatibility and your data files, but gain memory-safety and far faster analytics — a drop-in path instead of migrating to a separate analytics database.",
+      "voices": []
     },
     {
       "title": "Lottie Creator 2.0",
@@ -2158,7 +2336,8 @@
           "value": "一个用户愿意为之支付月费的工作流程",
           "risk": "Product Hunt 的热度可能会消退 — 检查 30 天的留存率，以及这个功能是否会被更大工具所吸收。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Cekura",
@@ -2193,7 +2372,8 @@
           "value": "基础设施AI产品所需——基于使用的API + 托管服务",
           "risk": "Product Hunt的热度会消退——检查30天的留存率，以及这个功能是否会被更大工具吸收。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Prefactor",
@@ -2228,7 +2408,8 @@
           "value": "基础设施AI产品所需——基于使用的API + 托管层",
           "risk": "Product Hunt的热度会减退——检查30天的留存率，以及这个功能是否会被更大的工具所吸收。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Neil the Seal Game",
@@ -2262,7 +2443,8 @@
         }
       },
       "pick": false,
-      "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition."
+      "pick_reason": "The project appears to be a simple game without a clear monetization strategy or unique value proposition.",
+      "voices": []
     },
     {
       "title": "edaywalid/undo",
@@ -2302,7 +2484,8 @@
         }
       },
       "pick": true,
-      "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands."
+      "pick_reason": "The project addresses a critical pain point for developers by providing a safety net for potentially destructive shell commands.",
+      "voices": []
     },
     {
       "title": "vshulcz/deja-vu",
@@ -2342,7 +2525,8 @@
         }
       },
       "pick": false,
-      "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product."
+      "pick_reason": "The project appears to be a collection of memory operations without a clear monetizable product.",
+      "voices": []
     },
     {
       "title": "Optim-Agent/optim-agent",
@@ -2382,7 +2566,8 @@
         }
       },
       "pick": true,
-      "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization."
+      "pick_reason": "The project addresses a significant pain point in machine learning with a novel approach, showing potential for commercialization.",
+      "voices": []
     },
     {
       "title": "mereyabdenbekuly-ctrl/clodex-ide",
@@ -2424,7 +2609,8 @@
       },
       "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust.",
       "pick": false,
-      "pick_reason": "The project is too vague and lacks a clear business model or product offering."
+      "pick_reason": "The project is too vague and lacks a clear business model or product offering.",
+      "voices": []
     },
     {
       "title": "FeyNoBg – Automatic background removal model and training library",
@@ -2458,7 +2644,8 @@
         }
       },
       "pick": true,
-      "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization."
+      "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization.",
+      "voices": []
     },
     {
       "title": "Rescript",
@@ -2494,7 +2681,8 @@
           "value": "免费增值:浏览器编辑免费,导出/协作/云收费;Descript 证明有人为 文字式编辑 付费。",
           "risk": "Descript 有钱且精致;浏览器性能 + 转写质量是门槛,而且赛道拥挤。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "gi-dellav/zerostack",
@@ -2532,7 +2720,21 @@
           "value": "没有清晰的付费切口;更轻的编码 agent 很难在免费、有融资的对手前变现。",
           "risk": "残酷的编码 agent 品类(Claude Code/Cursor/Aider);光 轻量 不是生意。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "True; I'm currently working on `setup`+`/tutor`, so I can't go back to work on the TUI for some time, would you be interested in trying to implement column tracking? Cheers, Giuseppe Della…",
+          "url": "https://github.com/gi-dellav/zerostack/issues/179#issuecomment-4929561171",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Try now (I don't have homebrew on my machine so I can't test)",
+          "url": "https://github.com/gi-dellav/zerostack/issues/170#issuecomment-4904460088",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "jdx/aube",
@@ -2564,7 +2766,8 @@
           "value": "包管理器靠间接变现(企业、注册表、支持);切口是速度 + 零配置体验。",
           "risk": "npm/pnpm/Bun 占据这块;再好的工具没有注册表/云打法也难成生意。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "RivoLink/leaf",
@@ -2602,7 +2805,15 @@
           "value": "很难收费;顶多免费 TUI 加个小众专业档。",
           "risk": "细分极小,glow/mdcat 已在;是个好工具,不是公司。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "I was hoping for different themes based on my system's light or dark mode. I can't think of a way to do this with the current single-theme support.",
+          "url": "https://github.com/RivoLink/leaf/issues/202#issuecomment-4883802105",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "WeaveMindAI/weft",
@@ -2634,7 +2845,8 @@
           "value": "语言靠围绕它的云/运行时变现;很遥远,且只有真获得采用才行。",
           "risk": "POC 阶段;新语言几乎从不成功,而编排是 库 而非 语言 在竞争。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "yynxxxxx/Codex-X",
@@ -2666,7 +2878,8 @@
           "value": "很薄;顶多做专业档,Codex 加原生配置/切换就没了杠杆。",
           "risk": "是功能不是公司;绑单一厂商、易被作废。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "deeplethe/forkd",
@@ -2704,7 +2917,8 @@
           "value": "卖给跑大量并行沙箱的 agent 平台/云:按量 + 企业版,一个真实的性能原语。",
           "risk": "深度基础设施、专家买家窄;要和 Firecracker/E2B 的内部机制竞争,需要扎实的可靠性证明。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "orhun/ratty",
@@ -2742,7 +2956,27 @@
           "value": "终端很难变现(文化上免费);顶多做专业档,否则是个受喜爱的开源展示。",
           "risk": "终端模拟器是免费、拥挤的空间(Ghostty、WezTerm);内联 3D 很酷但小众。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "I can't reproduce this :/ More info would be helpful. Can you maybe increase the log level with `RUST_LOG=trace`?",
+          "url": "https://github.com/orhun/ratty/issues/116#issuecomment-4952666402",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "rust is too hard. i can't do this.",
+          "url": "https://github.com/orhun/ratty/issues/8#issuecomment-4642935018",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Spanish keyboard layout doesn't really work — I can't type `{` `}` `~` for instance, which are all typed using `AltGr` (`~` is `AltGr`+`4` for instance). Seems like Ratty doesn't like…",
+          "url": "https://github.com/orhun/ratty/issues/82",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "yituorou/meatshell",
@@ -2776,7 +3010,8 @@
         }
       },
       "pick": true,
-      "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market."
+      "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market.",
+      "voices": []
     },
     {
       "title": "akitaonrails/ai-memory",
@@ -2818,7 +3053,27 @@
       "why_use": "Choose ai-memory to avoid the frustration of re-explaining complex coding contexts when switching between AI tools, ensuring a smoother development process.",
       "hook": "Seamlessly switch coding agents mid-task with 100% context retention.",
       "pick": true,
-      "pick_reason": "The project addresses a clear need for continuity in AI coding environments, enabling users to maintain context across different tools."
+      "pick_reason": "The project addresses a clear need for continuity in AI coding environments, enabling users to maintain context across different tools.",
+      "voices": [
+        {
+          "quote": "…-merge for Kimi in d72f31b — let's not repeat it. 3. **[Confirm] Native-flag contract** — I can't verify `--session-id`/`--resume` behavior locally (no Grok CLI on this machine). Can you confirm in a reply that the acceptance r…",
+          "url": "https://github.com/akitaonrails/ai-memory/pull/237#issuecomment-5071924288",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…rrect regardless and may well fix Windows (stricter URI handling there is plausible), but I can't prove it from this side. Since you offered: could you run the patched build on your setup? Two useful outcomes: it either just wo…",
+          "url": "https://github.com/akitaonrails/ai-memory/issues/188#issuecomment-4982408453",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…s you pass > --force (which also backs up). > > Both guards have shipped since v1.4.0, so I can't see how the CLI path > loses curated content. > > One path that behaves differently: the memory_install_self_routing MCP > tool r…",
+          "url": "https://github.com/akitaonrails/ai-memory/issues/140#issuecomment-4856496528",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "webstonehq/tuxedo",
@@ -2857,7 +3112,8 @@
           "value": "todo TUI 很难收费;顶多做专业版(同步、移动端),否则就是个受喜爱的免费工具。",
           "risk": "todo.txt 工具是个小、文化上就免费的细分;付费意愿低且易被抄。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "injaneity/pi-computer-use",
@@ -2891,7 +3147,15 @@
           "value": "按用量/席位卖给自动化桌面流程的团队;切口是可靠的跨应用控制。",
           "risk": "Anthropic/OpenAI 的 computer-use 和操作系统厂商都在抢;第三方控制层是在跟巨头硬碰。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…done my due diligence in modifying the windows functionality to match our macOS one, but i can't test on windows, so: _you can pass this into your agent, but read it first. thanks!_ could you do one live acceptance pass on the…",
+          "url": "https://github.com/injaneity/pi-computer-use/pull/16#issuecomment-4884986054",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "openlake-project/openlake",
@@ -2929,7 +3193,8 @@
           "value": "卖给 AI 基础设施团队和云厂做托管/企业存储层;按量 + 支持,GPU 团队本就有这笔预算。",
           "risk": "重基础设施,要和云原生存储、vLLM 生态竞争;规模化采用需要跑分和信任。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Forgeon",
@@ -2965,7 +3230,8 @@
           "value": "创作者平台:订阅 + 已发布故事的市场/分成;AI 降低创作门槛。",
           "risk": "互动小说是个热情但小的市场;AI Dungeon 和角色 app 已在争夺。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Estera",
@@ -3000,7 +3266,8 @@
           "value": "按席位/分钟向中小企业(诊所、美容院、装修)收费;漏接=丢收入,他们愿意付。",
           "risk": "AI 语音前台很挤;可靠性、延迟和本地语言处理决定输赢。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "shadcn/improve",
@@ -3031,7 +3298,15 @@
           "value": "可能变成团队付费的路由/规划层(花费管控 + 质量);切口是编排强+便宜两档模型。",
           "risk": "它是个会被 agent 框架(和 shadcn 自己生态)吸收的范式/工具;做独立生意偏薄。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…nce? — Hey — thanks for this skill, I've been leaning on it a lot. Running into something I can't figure out from the docs and wanted to ask before inventing my own convention. `plans/` lives at the repo root and gets committed…",
+          "url": "https://github.com/shadcn/improve/issues/15",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "opensquilla/opensquilla",
@@ -3073,7 +3348,15 @@
       },
       "hook": "The agent that competes on your token bill, not features — same budget, more useful work.",
       "pick": true,
-      "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development."
+      "pick_reason": "The project addresses a clear market need for token efficiency in AI agents, backed by strong community engagement and active development.",
+      "voices": [
+        {
+          "quote": "…ches the ensemble `custom_b5` lineup, and that is a real functional gap worth fixing. But I can't merge this as it stands: **the default test suite is red on this branch**, the `agent.py` change regresses a DashScope recovery p…",
+          "url": "https://github.com/opensquilla/opensquilla/pull/797#issuecomment-5079817080",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "darrylmorley/whatcable",
@@ -3115,7 +3398,15 @@
       },
       "hook": "Finally know what each USB-C cable can actually do — right in your Mac's menu bar.",
       "pick": true,
-      "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized."
+      "pick_reason": "Addresses a common consumer pain point with a clear product that can be monetized.",
+      "voices": [
+        {
+          "quote": "…own. It adds the technical block to every port card, which makes the panel a lot taller. I can't reproduce it here, so two questions: - What resolution is your Air's display set to, and is it on default scaling? - Does turning…",
+          "url": "https://github.com/darrylmorley/whatcable/issues/454#issuecomment-5022247602",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "open-gsd/gsd-core",
@@ -3156,7 +3447,15 @@
           "hook": "一个「git → 发布 → 搞定」的流程封装——有潜力,但真正的切口还模糊。"
         }
       },
-      "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy."
+      "hook": "A 'git → ship → done' workflow wrapper — promising, but the real wedge is still fuzzy.",
+      "voices": [
+        {
+          "quote": "…a `no-changelog` change (no user-facing behavior); please apply the `no-changelog` label (I can't self-label as an external contributor). ## Checklist - [x] Issue linked above with `Closes #1178` - [x] Linked issue has the `app…",
+          "url": "https://github.com/open-gsd/gsd-core/pull/1420",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "StarTrail-org/PixelRAG",
@@ -3198,7 +3497,15 @@
           "hook": "用检索渲染后的像素取代脆弱的 HTML 爬取——如果准确度站得住的话。"
         }
       },
-      "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up."
+      "hook": "Kills fragile HTML scraping by searching rendered pixels instead — if the accuracy holds up.",
+      "voices": [
+        {
+          "quote": "…bypasses the idle wait — it needs the same watcher wired into its `_Conn` event loop, and I can't benchmark turbo on this machine (`/dev/shm` + patched headless_shell). The silent fallback is now an explicit log line; turbo idl…",
+          "url": "https://github.com/StarTrail-org/PixelRAG/pull/120",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "omnigent-ai/omnigent",
@@ -3240,7 +3547,15 @@
           "hook": "一个元 harness,把 Claude Code、Codex、Cursor 统一编排。"
         }
       },
-      "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together."
+      "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together.",
+      "voices": [
+        {
+          "quote": "…send a message) and it wakes up. Before, the app slammed up a red \"something broke!\" sign every time it dozed off. Now it tiptoes out quietly, and the sign only appears when the runner actually falls over. ## Test Plan Ran the affec…",
+          "url": "https://github.com/omnigent-ai/omnigent/pull/3060",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "DietrichGebert/ponytail",
@@ -3352,7 +3667,8 @@
           "value": "向安全/工程团队卖扫描 + 分诊;按仓库/席位,安全组织本就有这笔预算。",
           "risk": "重信任且拥挤(Snyk、Semgrep);误报和证据是采用门槛。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Kritt-ai/open-kritt",
@@ -3392,7 +3708,15 @@
           "value": "卖给安全/工程团队做扫描 + 分诊服务;按仓库/席位或按量,安全组织本就有这笔预算。",
           "risk": "拥挤且重信任(Snyk、Semgrep、GitHub);agent 找到的漏洞要低误报 + 有证据才被信任。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…ched existing issues and discussions and this isn't a duplicate. ### Problem / motivation i cant use ollama api key ### Proposed solution pleas make it compatible with ollama provider ### Which area? not sure ### Alternatives…",
+          "url": "https://github.com/Kritt-ai/open-kritt/issues/23",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "2aronS/Duel-Agents",
@@ -3430,7 +3754,8 @@
           "value": "卖给想要更高 agent 可靠性的团队;切口是 对抗式 agent 验证,作为付费层。",
           "risk": "小众范式;agent 框架能原生加自我批评,而 两个 agent 翻倍成本。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "yb2460/harness-anything",
@@ -3470,7 +3795,8 @@
           "value": "按席位/用量卖给自动化跨应用流程的知识工作者和团队;切口是可靠 app 控制的广度。",
           "risk": "应用一变就要维护的面极大;实验室和操作系统厂商的 computer-use 直接竞争。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "tigicion/dao-code",
@@ -3511,7 +3837,8 @@
           "value": "给标准化用 DeepSeek 的团队做团队/托管版:卖可靠性 + 共享配置。",
           "risk": "又一个单模型终端 agent;很挤,而且 DeepSeek 可能出自家一方 agent。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Remux – an open-source tmux workspace designed for iPhone",
@@ -3545,7 +3872,15 @@
           "value": "专业 app:付费档(同步、云主机、密钥管理)卖给移动重度开发者;走 App Store 分发。",
           "risk": "移动开发细分很小;Apple 对后台/终端 app 的限制和现有 SSH 客户端压住天花板。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…o support servers that only present an RSA host key. SSH security is not my specialty, so I can't take a firm stance on the security of this change, but it's my understanding that using RSA here just for host validation when th…",
+          "url": "https://github.com/h3nock/remux/pull/9",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Albert-Weasker/niubi_guard",
@@ -3584,7 +3919,8 @@
           "value": "卖给需要信任仓库信号的 GitHub 组织、投资人和注册表:API + 报告。",
           "risk": "较窄;GitHub 自己也在治理滥用,而检测是场军备竞赛,直接买家有限。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "tddworks/baguette",
@@ -3624,7 +3960,8 @@
           "value": "卖给移动团队和测试平台做模拟器农场/CI 后端:按量 + 企业版。",
           "risk": "细分、依赖 Apple 工具链,Apple 可能改模拟器内部;买家小但真实。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "atomicstrata/llm-wiki-compiler",
@@ -3665,7 +4002,8 @@
           "value": "向团队卖托管编译 + 私有知识库;切口是规模化自动结构化的质量。",
           "risk": "和其它 LLM-wiki 工具同一条拥挤赛道;光自动互链不是持久护城河。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "afar1/fieldtheory-cli",
@@ -3704,7 +4042,15 @@
           "value": "买家不清晰;可做专业/同步档,但范围太散,暂时难收费。",
           "risk": "范围发散、没有清晰切口;更像个人效率脚本而非公司。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "Yeah, I can't merge my own PR because I'm not a maintainer and I didn't have an approval anyways. From his comment on this issue, I thought And…",
+          "url": "https://github.com/afar1/fieldtheory-cli/issues/53#issuecomment-4269816997",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Helvesec/rmux",
@@ -3744,7 +4090,15 @@
           "value": "卖给 agent/自动化开发者做可靠的终端控制层:按量 + 企业支持。",
           "risk": "底层基础设施,受众窄(但真实);agent/框架可能原生内置终端控制。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…. ## Compromises 1. We can't have split screens when using passthrough mode - or at least I can't think how that might work so splitting windows is disabled, only full window switching of Ctrl-b-n works. If someone can suggest…",
+          "url": "https://github.com/Helvesec/rmux/pull/26",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "TestSprite/testsprite-cli",
@@ -3784,7 +4138,8 @@
           "value": "TestSprite 已在卖(按量/席位);对创始人它是竞品/标杆,不是口子。",
           "risk": "背靠一家已有公司;机会在差异化细分,不是复制 TestSprite。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "code-yeongyu/lazycodex",
@@ -3824,7 +4179,8 @@
           "value": "给在大 monorepo 上跑 agent 的团队做团队/企业版:在真实代码库上卖可靠性 + 验证。",
           "risk": "harness 范式正被 Claude Code/Cursor 吸收;需证明它在难仓库上确实明显更强。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "ifixai-ai/iFixAi",
@@ -3864,7 +4220,8 @@
           "value": "向部署 agent 的企业卖审计/背书(合规、信任);随着 agent 治理收紧,这是一笔预算。",
           "risk": "早期且模糊;审计 agent 需要具体标准和买家,而平台可能自建原生审计日志。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "GaoSSR/best-claude-hud",
@@ -3907,7 +4264,8 @@
           "hook": "给 Claude Code 的漂亮 Rust 状态栏——好看,但 Anthropic 随时能自己出。"
         }
       },
-      "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day."
+      "hook": "A slick Rust statusline for Claude Code — lovely, but a feature Anthropic could ship any day.",
+      "voices": []
     },
     {
       "title": "crafter-station/petdex",
@@ -3950,7 +4308,8 @@
           "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。"
         }
       },
-      "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat."
+      "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
+      "voices": []
     },
     {
       "title": "KnockOutEZ/wigolo",
@@ -3993,7 +4352,15 @@
           "hook": "给编码 agent 的本地优先网页搜索与爬取——无 key、无云、$0。"
         }
       },
-      "hook": "Local-first web search and crawl for coding agents — no keys, no cloud, $0."
+      "hook": "Local-first web search and crawl for coding agents — no keys, no cloud, $0.",
+      "voices": [
+        {
+          "quote": "…response schema isn't documented in English, so the parser's field paths would be guesses I can't verify against a live call. Worth a follow-up from someone with a key. ## Test plan - [x] `npx vitest run tests/unit/search/engin…",
+          "url": "https://github.com/KnockOutEZ/wigolo/pull/235",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Open-Legal-Products/mike",
@@ -4030,7 +4397,8 @@
           "value": "向律所和法务卖托管 + 合规 + 事务所定制;法律预算大且黏。",
           "risk": "法律 AI 要准确性和责任担保;现有玩家(Harvey、CoCounsel)有钱且被信任。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "teamchong/pxpipe",
@@ -4064,7 +4432,27 @@
           "value": "若成立,做付费优化器/代理,团队为削减 agent 花费买单;切口是可验证的省钱。",
           "risk": "依赖视觉 token 的经济性持续划算;模型厂商改定价就能废掉这个技巧。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "> Thanks, but I can't reproduce this on my side my events.jsonl (54,809 events) has zero occurrences of `total_tokens`, and my cache read/create ratio…",
+          "url": "https://github.com/teamchong/pxpipe/pull/144#issuecomment-5082370834",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Thanks, but I can't reproduce this on my side my events.jsonl (54,809 events) has zero occurrences of `total_tokens`, and my cache read/create ratio…",
+          "url": "https://github.com/teamchong/pxpipe/pull/144#issuecomment-5081359165",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "Honest answer: I don't run Windows anywhere, so I can't test or maintain a Windows-specific path. it'd rot the first time something shifts and I couldn't tell. So I don't want it in cor…",
+          "url": "https://github.com/teamchong/pxpipe/issues/88#issuecomment-4951675714",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "emdash-cms/emdash",
@@ -4104,7 +4492,8 @@
           "value": "托管 + 主题 + 代理商/企业授权,在现代技术栈上复刻 WordPress 经济的经典打法。",
           "risk": "WordPress 的护城河是插件/主题生态和存量;继承者的口号很常见,极少能撼动它。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "fathah/hermes-desktop",
@@ -4144,7 +4533,21 @@
           "value": "独立价值很小;它是配件,不是有自己买家的产品。",
           "risk": "是功能不是公司:随 Hermes 生死,没有独立护城河。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…dont find in settings where we can setup the ollama, to use the ollama models there! how i cant load it?",
+          "url": "https://github.com/fathah/hermes-desktop/issues/362",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…p - get 'error: invalid API key' — Hi I have downloaded the desktop app successfully, but every time I try to chat I get 'error: invalid API key'. I have inserted my Anthropic API key both under credentials pool and LLM providers. h…",
+          "url": "https://github.com/fathah/hermes-desktop/issues/41",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "0xGF/boneyard",
@@ -4180,7 +4583,15 @@
           "hook": "从你的 UI 自动生成骨架屏——确实省时,虽然范围窄。"
         }
       },
-      "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one."
+      "hook": "Auto-generates skeleton loaders straight from your UI — a real time-saver, if a narrow one.",
+      "voices": [
+        {
+          "quote": "…changes...\". There doesn't appear to be any other debug output which is not very useful. I can't figure out where it is stuck, what it is waiting on etc. More debug logging would be very useful.",
+          "url": "https://github.com/0xGF/boneyard/issues/75",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "CoreBunch/Instatic",
@@ -4222,7 +4633,8 @@
           "hook": "一个 agent 搭建、可自托管的 Webflow——输出干净静态站的可视化 CMS。"
         }
       },
-      "hook": "An agent-built, self-hosted Webflow — a visual CMS that outputs clean static sites."
+      "hook": "An agent-built, self-hosted Webflow — a visual CMS that outputs clean static sites.",
+      "voices": []
     },
     {
       "title": "OpenCoworkAI/open-codesign",
@@ -4263,7 +4675,8 @@
           "hook": "自带 Codex/Claude key,把提示词变成原型和幻灯片。"
         }
       },
-      "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides."
+      "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides.",
+      "voices": []
     },
     {
       "title": "getagentseal/codeburn",
@@ -4306,7 +4719,15 @@
           "hook": "看清你的 AI 编码到底花了多少——本地统计 31 种 agent 的 token 花费。"
         }
       },
-      "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally."
+      "hook": "See exactly what your AI coding costs — token spend tracked across 31 agents, locally.",
+      "voices": [
+        {
+          "quote": "## Follow-on work after #847 — five decisions I can't make alone #847 is the first of three changes I've prepared against `feat/core-extraction`. It's build/release/CI only, no `src/`…",
+          "url": "https://github.com/getagentseal/codeburn/issues/809#issuecomment-5097385166",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "crynta/terax-ai",
@@ -4348,7 +4769,15 @@
           "hook": "一个 7MB 的终端 AI 工作区,给想要快、本地、不想要笨重 IDE 的开发者。"
         }
       },
-      "hook": "A 7MB terminal AI workspace for devs who want fast and local, not a heavy IDE."
+      "hook": "A 7MB terminal AI workspace for devs who want fast and local, not a heavy IDE.",
+      "voices": [
+        {
+          "quote": "Strange. I can't test again in the next hours Maybe there is a difference if you installed scoop or the app from inside terax?",
+          "url": "https://github.com/crynta/terax-ai/issues/1049#issuecomment-5089669407",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "simplifaisoul/osiris",
@@ -4384,7 +4813,8 @@
           "hook": "一个开源 Palantir 替代——给买不起正品的团队的实时 OSINT。"
         }
       },
-      "hook": "An open-source Palantir alternative — real-time OSINT for teams priced out of the real thing."
+      "hook": "An open-source Palantir alternative — real-time OSINT for teams priced out of the real thing.",
+      "voices": []
     },
     {
       "title": "EKKOLearnAI/hermes-studio",
@@ -4426,7 +4856,8 @@
           "hook": "跨聊天平台跑 AI agent 的控制室——会话、定时任务、用量分析。"
         }
       },
-      "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics."
+      "hook": "The control room for running an AI agent across chat platforms — sessions, jobs, analytics.",
+      "voices": []
     },
     {
       "title": "open-multi-agent/open-multi-agent",
@@ -4468,7 +4899,8 @@
           "hook": "描述目标,而非画图——一个自动规划多 agent 工作流的 TS 框架。"
         }
       },
-      "hook": "Describe the goal, not the graph — a TS framework that auto-plans multi-agent workflows."
+      "hook": "Describe the goal, not the graph — a TS framework that auto-plans multi-agent workflows.",
+      "voices": []
     },
     {
       "title": "nashsu/llm_wiki",
@@ -4504,7 +4936,15 @@
           "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
         }
       },
-      "hook": "Turns your document pile into an auto-linked knowledge base — private and offline."
+      "hook": "Turns your document pile into an auto-linked knowledge base — private and offline.",
+      "voices": [
+        {
+          "quote": "…stall from npm i -g @anthropic-ai/claude-code then re-check. And verified everything, and I can't use Claude on both laptops I have. I spent a lot of time with Claude and ChatGPT solving that issue, and it seems that Claude is…",
+          "url": "https://github.com/nashsu/llm_wiki/issues/186",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "NanmiCoder/cc-haha",
@@ -4540,7 +4980,8 @@
           "hook": "给 Claude Code 的完整「agent 驾驶舱」——多 agent、worktree、computer-use、IM 桥接。"
         }
       },
-      "hook": "A full 'agent cockpit' for Claude Code — multi-agent, worktrees, computer-use, IM bridges."
+      "hook": "A full 'agent cockpit' for Claude Code — multi-agent, worktrees, computer-use, IM bridges.",
+      "voices": []
     },
     {
       "title": "nexu-io/open-design",
@@ -4636,7 +5077,8 @@
           "value": "给想要 agent 造 app、又不想自己搭隔离/基础设施的开发者卖托管沙箱 + 团队版。",
           "risk": "Vercel/Replit/E2B 都在抢 agent 沙箱;自托管对部分人有吸引力,但托管巨头跑得快。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "cosmtrek/mindwalk",
@@ -4670,7 +5112,8 @@
           "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
           "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "nethical6/conversation-steganography",
@@ -4707,7 +5150,8 @@
           "value": "没有正当生意;用途(隐蔽信道)多为滥用或规避。",
           "risk": "灰色地带(规避/隐蔽通信);技术有意思,但不可投资且易被滥用。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "YTwsy/OpenSurge-for-Mac",
@@ -4747,7 +5191,15 @@
           "value": "给发烧友和 homelab 用户卖一次性/专业授权,像 Surge 那样变现。",
           "risk": "发烧友网络细分;Surge/Clash 生态已在,而且它依赖灰色地带的代理工具。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…的话，工具名称【OpenSurge】没有必要跟【Surge】扯上关系，况且 Surge 名声并没有那么好，一个**翻墙工具且开发者被喝过茶人还在国内明确被国安收编的工具**，肯定会劝退很多人。 ---- 下面是我让 AI 想的工具名称，供参考： 为你整理了几组不同风格的英文命名方案，你可以根据这个工具的具体定位（例如：侧重**设备管理**、**网络安全**，还是**智能路由**）来选择最合适的一个： ### 1. 科技极客风 (Sleek…",
+          "url": "https://github.com/YTwsy/OpenSurge-for-Mac/issues/2",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Gitlawb/zero",
@@ -4787,7 +5239,15 @@
           "value": "还没有清晰的付费切口;主权编码 agent 需要一个团队愿意迁移并付费的具体理由。",
           "risk": "在饱和的编码 agent 里没差异;目前更像宣言而非产品。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…on route rather than a darwin shell regression, for a reason I want to be straight about: I can't run or verify a seatbelt test from this host, and a test I can't execute is worse than an honest comment. The comment on `protect…",
+          "url": "https://github.com/Gitlawb/zero/pull/685#issuecomment-5109387976",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "devenjarvis/lathe",
@@ -4821,7 +5281,8 @@
           "value": "卖给 devrel 团队、课程平台等需要可规模化动手教程的人;订阅或按课程。",
           "risk": "AI 生成教程有质量/准确性风险,而通用模型 + 教育平台能补上这个缺口。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Kianmhz/GooseRelayVPN",
@@ -4860,7 +5321,8 @@
           "value": "没有正当生意;它依赖滥用一个会封杀它的免费 Google 服务。",
           "risk": "违反 ToS 且脆弱;Google 会封掉这个通道,而且它是 hack 不是公司。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "maaslalani/sheets",
@@ -4894,7 +5356,8 @@
           "value": "很难收费;一个受喜爱的免费 TUI,顶多给终端重度用户做专业/云同步档。",
           "risk": "细分极小、付费意愿低;终端里的电子表格是发烧友的乐趣,不是市场。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "chattocorp/chatto",
@@ -4934,7 +5397,15 @@
           "value": "给注重隐私/数据主权的团队卖托管 + 企业版(SSO、合规、支持),Mattermost/Rocket.Chat 的打法。",
           "risk": "Slack/Teams 掌握分发,Mattermost/Rocket.Chat 已占开源自托管;很难把团队撬过来。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "Permissions UI is too hard to understand — Even after configuring everything how I would like it, I am not able to accomplish one simple task of showing a room…",
+          "url": "https://github.com/chattocorp/chatto/issues/1611",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "kunchenguid/no-mistakes",
@@ -4968,7 +5439,8 @@
           "value": "没有变现;它是个便利脚本。",
           "risk": "范围极小、零护城河;是个 gist,不是公司。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "esengine/DeepSeek-Reasonix",
@@ -5010,7 +5482,15 @@
           "hook": "一个 DeepSeek 原生、针对前缀缓存稳定性调优的终端编码器——可以长驻。"
         }
       },
-      "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running."
+      "hook": "A DeepSeek-native terminal coder tuned for prefix-cache stability — just leave it running.",
+      "voices": [
+        {
+          "quote": "> +1, 本地Windows 远程Linux 也是这个问题 > > @zixuan-chen 你是咋配的，能贴下配置不，谢谢。我配置折腾几天了，连接都连不上。powershell 指定rsa密钥都能正常免密登录过去了，但是客户端就是不行。",
+          "url": "https://github.com/esengine/DeepSeek-Reasonix/issues/6747#issuecomment-5077381501",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Jacquard, a programming language for AI-written, human-reviewed code",
@@ -5042,7 +5522,8 @@
           "value": "语言靠围绕它的工具/云变现;很遥远,且需真被采用。",
           "risk": "新语言几乎从不被采用;AI 可审 必须相对现有语言的 lint 展示具体优势。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "nubjs/nub",
@@ -5082,7 +5563,8 @@
           "value": "运行时/工具包靠间接变现(云/企业);切口是速度 + 统一的开发体验。",
           "risk": "Bun 已占 快速一体化 JS;后来者需要压倒性优势才有意义。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Open-Less/openless",
@@ -5122,7 +5604,8 @@
           "value": "专业订阅(像 Wispr Flow / Superwhisper);开源 + 本地是隐私切口。",
           "risk": "Wispr Flow、Superwhisper 和系统原生听写都在;要靠质量 + 延迟取胜,语音 UI 很挤。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Achilng/floral-notepaper",
@@ -5162,7 +5645,27 @@
           "value": "很难收费;顶多做专业/同步档,和免费系统便签、Notion 竞争。",
           "risk": "范围极小、免费替代一堆;是个可爱的工具,不是持久生意。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…orator，你提bug没有花一分钱，不是么， 你真有意思哥们，Collaborator 让我尝试一下 .exe，我试了不行，我说回去用旧版本，因为构建对我来说有点麻烦，我不想自己折腾，我也不麻烦他，这句话寒心在哪？另外，我提 bug 没有花一分钱，什么意思，我给开源项目提 bug 还得花钱？还是说我给商业项目提 bug 得花钱。这跟 PR 被拒绝有什么关系？",
+          "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4739956574",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…过修复 [#279](https://github.com/Achilng/floral-notepaper/issues/279) ，并清楚地说明了当前问题难以修复的原因，你愿意折腾就自己动手修复、提交pr，甚至fork一份藏着自用都没人管你，为什么要跑到这儿来甩锅给维护者呢？ 被拒绝的 issue和PR一点都不少，这本就是开源项目常见的情况，不可能谁的意见都全部采纳。如果你非要咬定是我们损害了你的利益导致你文件丢失，建议你现在就去把本项…",
+          "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4738043332",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…别人做了嫁衣，我自己的问题没人解决了？ 我们是一个开源免费的项目，不是你的私人定制软件，更不是付费售后。我们已经尝试过修复 #279 ，并清楚地说明了当前问题难以修复的原因，你愿意折腾就自己动手修复、提交pr，甚至fork一份藏着自用都没人管你，为什么要跑到这儿来甩锅给维护者呢？ 被拒绝的 issue和PR一点都不少，这本就是开源项目常见的情况，不可能谁的意见都全部采纳。如果你非要咬定是我们损害了你的利益导致你文件丢失，建议你现在就去把本项…",
+          "url": "https://github.com/Achilng/floral-notepaper/issues/290#issuecomment-4737516057",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "withcoral/coral",
@@ -5198,7 +5701,8 @@
           "hook": "用一个 SQL 接口统管 API、文件与实时源——为 agent 打造的可靠数据访问。"
         }
       },
-      "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents."
+      "hook": "One SQL interface over APIs, files and live sources — reliable data access, built for agents.",
+      "voices": []
     },
     {
       "title": "AprilNEA/OpenLogi",
@@ -5240,7 +5744,8 @@
           "hook": "一个快、本地的 Rust 版,替代人人嫌弃的 Logitech Options+——重映射按键、DPI、SmartShift。"
         }
       },
-      "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift."
+      "hook": "A fast, local Rust replacement for Logitech's hated Options+ — remap buttons, DPI, SmartShift.",
+      "voices": []
     },
     {
       "title": "h4ckf0r0day/obscura",
@@ -5282,7 +5787,21 @@
           "hook": "一个为 AI agent 打造的无头浏览器——可靠、隐蔽、能扛住反爬的网页访问。"
         }
       },
-      "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection."
+      "hook": "A headless browser built for AI agents — reliable, stealthy web access that beats bot-detection.",
+      "voices": [
+        {
+          "quote": "…and the supported platforms beyond x86_64-linux but since that's the only machine I have, I can't verify builds on Darwin or aarch64 myself. Would you or anyone on the project be able to help test those targets? Thoughts?",
+          "url": "https://github.com/h4ckf0r0day/obscura/issues/42#issuecomment-5014568647",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…e.com requests don't (the `.catch` branch's `_fireEvent` calls are silently dropped). But I can't confirm without instrumenting `_fireEvent` itself. Happy to run further probes if useful — e.g. logging the resolve/reject taken…",
+          "url": "https://github.com/h4ckf0r0day/obscura/issues/251#issuecomment-4637855952",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "BigPizzaV3/CodexPlusPlus",
@@ -5316,7 +5835,15 @@
           "hook": "让 CodexApp 更好用——方便,但是个 Codex 一夜就能吸收的插件。"
         }
       },
-      "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight."
+      "hook": "Makes CodexApp nicer to use — handy, but an add-on Codex itself could absorb overnight.",
+      "voices": [
+        {
+          "quote": "[Feature]: product design 插件找不到 — ### 你遇到的使用场景或痛点 在codex 插件例表中，找不到product design， ### 希望增加什么 希望更新一下插件：product design ### 功能范围 供应商管理 ### 你目前的替代做法 _No response_ ### 提交前确认 - [ ] 我确认这…",
+          "url": "https://github.com/BigPizzaV3/CodexPlusPlus/issues/749",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Kuberwastaken/claurst",
@@ -5357,7 +5884,27 @@
           "hook": "又一个「给 Builder 的智能体编码」CLI——口号响,但很难说差在哪。"
         }
       },
-      "hook": "Another 'agentic coding for builders' CLI — big slogan, hard to say what's different."
+      "hook": "Another 'agentic coding for builders' CLI — big slogan, hard to say what's different.",
+      "voices": [
+        {
+          "quote": "…ptions are hard coded (low to xhigh) instead of provider specific, and with z.ai provider i can't select any option, it''s not submitting. 8. `/managed-agents` not working 9. shift special character combinations not working (se…",
+          "url": "https://github.com/Kuberwastaken/claurst/issues/149#issuecomment-4466251903",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…... I fell into the oldest trap of SW development. I started refactoring after I realised I cant easily add the feature. I think I have diverged a little ^^ I will create a draft pull request just to see how behind I am. Hopef…",
+          "url": "https://github.com/Kuberwastaken/claurst/issues/103#issuecomment-4459862055",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…only shows a v where its asking me to paste it, anyone have any ideas that I should try? I cant be the only one to have this issue.",
+          "url": "https://github.com/Kuberwastaken/claurst/issues/76",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Mail Memories – A desktop app to rescue photos from Gmail",
@@ -5389,7 +5936,8 @@
           "value": "便宜的付费桌面工具或免费增值(批量导出、去重、相册);人们愿为找回回忆付费。",
           "risk": "窄的一次性任务;Google Photos/Takeout 部分解决了,而且易被抄。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Q3Edit – Edit and play Quake 3 maps in the browser",
@@ -5421,7 +5969,8 @@
           "value": "爱好者/怀旧项目;除了社区/捐赠很难变现。",
           "risk": "基于老 IP(id/Quake)的粉丝项目;法律灰色 + 市场极小——爱之作,不是公司。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "A graph paper generator that renders vector PDFs in the browser",
@@ -5453,7 +6002,8 @@
           "value": "顶多免费增值/按需打印;好用,但方格纸是白送的大路货。",
           "risk": "极易被抄、付费意愿极低;免费模板一堆——好工具,不是生意。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "I RL-trained an agent that trains models with RL (for ~$1.3k)",
@@ -5485,7 +6035,8 @@
           "value": "机会在便宜的自动化 RL 训练即服务;演示暗示了产品,但还不是。",
           "risk": "惊艳的实验,不是产品化生意;RL 基础设施重算力,实验室跑得快。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "OneCLI – OSS credential gateway that keeps secrets out of AI agents",
@@ -5517,7 +6068,8 @@
           "value": "给让 agent 接触真实凭证的组织卖团队/企业版(审计、轮换、策略)。",
           "risk": "密钥管理很挤(Vault、Infisical、Doppler);为 agent 的角度必须变成独立、被信任的产品。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "A self-running space economy SIM in Rust and Bevy",
@@ -5549,7 +6101,8 @@
           "value": "没有明显生意;模拟要么变成游戏(得先成游戏),要么做小众建模工具。",
           "risk": "是技术演示/业余项目;自运行模拟很迷人,但还不是有人付费的产品。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "KiCad in the Browser",
@@ -5581,7 +6134,8 @@
           "value": "浏览器 EDA 免费增值 + 云/协作/制造档;硬件团队为协作和打样集成付费。",
           "risk": "KiCad 免费且桌面根基深;浏览器 EDA(EasyEDA、Flux)已在——要靠协作/打样接口才有意义。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "QR code renderer in a TrueType font",
@@ -5613,7 +6167,8 @@
           "value": "没有生意;它是个巧妙技巧,人们会分享而不是购买。",
           "risk": "新奇/hack;零变现,技巧一旦公开就易被复刻。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "HBAI-Ltd/Toonflow-app",
@@ -5655,7 +6210,8 @@
       },
       "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom.",
       "pick": false,
-      "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions."
+      "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions.",
+      "voices": []
     },
     {
       "title": "xbtlin/ai-berkshire",
@@ -5697,7 +6253,27 @@
       },
       "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
       "pick": true,
-      "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market."
+      "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market.",
+      "voices": [
+        {
+          "quote": "> 请问用的啥模型，这个报告用了多少钱的token 我用的 deepseek v4, 跑一个股票差不多 2-3 元一次",
+          "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829672988",
+          "src": "github",
+          "kind": "pay"
+        },
+        {
+          "quote": "请问用的啥模型，这个报告用了多少钱的token",
+          "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829624364",
+          "src": "github",
+          "kind": "pay"
+        },
+        {
+          "quote": "…rect errorlevel handling) and merge-tested locally against latest main with no conflicts. I can't execute Windows scripts on macOS, so relying on your posted verification for runtime behavior — if any Windows user hits an issue…",
+          "url": "https://github.com/xbtlin/ai-berkshire/pull/46#issuecomment-4881098896",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "ogulcancelik/herdr",
@@ -5740,7 +6316,15 @@
       },
       "hook": "A tmux-for-agents: run and juggle many coding agents in a single terminal.",
       "pick": false,
-      "pick_reason": "While it addresses a real need for developers, it appears to be a thin utility without a clear monetization strategy."
+      "pick_reason": "While it addresses a real need for developers, it appears to be a thin utility without a clear monetization strategy.",
+      "voices": [
+        {
+          "quote": "…will be independently rewritten and you keep full credit in the history. Same for anyone I can't reach within a couple of weeks. The license doesn't change until every remaining contribution is either consented or rewritten. P…",
+          "url": "https://github.com/herdrdev/herdr/issues/1340",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "iOfficeAI/OfficeCLI",
@@ -5782,7 +6366,8 @@
       },
       "hook": "Gives AI agents hands for Office — read, edit and automate Word, Excel and PowerPoint.",
       "pick": false,
-      "pick_reason": "The project appears to be a wrapper around existing office software without a unique value proposition."
+      "pick_reason": "The project appears to be a wrapper around existing office software without a unique value proposition.",
+      "voices": []
     },
     {
       "title": "MadsLorentzen/ai-job-search",
@@ -5824,7 +6409,27 @@
       },
       "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application.",
       "pick": true,
-      "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization."
+      "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization.",
+      "voices": [
+        {
+          "quote": "…2.5.1 and it renders identical to current `master`, two pages, no clash. **The one thing I can't check from here is whether `\\namefont` exists in 2.3.1.** It's been part of moderncv's style architecture for a long time so I'd…",
+          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083767204",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…lysis neither reproduces: `lualatex cv/main_example.tex` exits 0 with no option clash. So I can't confirm the 2.3.1 failures directly, but both mechanisms check out on inspection. `moderncv.cls` really does load hyperref itself…",
+          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083313655",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…the model is \"read this one folder, then copy it in\", so the user reviews what they run. I can't offer the same standing endorsement for a whole application whose code can change after I've linked it, and I don't want to keep…",
+          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/234#issuecomment-5070008472",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Gitlawb/openclaude",
@@ -5866,7 +6471,8 @@
       },
       "hook": "'Runs anywhere, uses anything' — a bold slogan still waiting for the product behind it.",
       "pick": false,
-      "pick_reason": "The project lacks a clear product and is too vague to assess as a viable startup."
+      "pick_reason": "The project lacks a clear product and is too vague to assess as a viable startup.",
+      "voices": []
     },
     {
       "title": "calesthio/OpenMontage",
@@ -5908,7 +6514,15 @@
       },
       "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious.",
       "pick": false,
-      "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product."
+      "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product.",
+      "voices": [
+        {
+          "quote": "I can't get Hermes to use this, despite Gemini help with prompting and chasing errors, and model refusal.",
+          "url": "https://github.com/calesthio/OpenMontage/issues/165#issuecomment-4881341213",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "MemPalace/mempalace",
@@ -5950,7 +6564,15 @@
       },
       "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
       "pick": false,
-      "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model."
+      "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model.",
+      "voices": [
+        {
+          "quote": "…fident enough to try to fix this myself. I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write (`-32001 Peer MCP writer active`), and I have to keep reconnectin…",
+          "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "santifer/career-ops",
@@ -5992,7 +6614,8 @@
       },
       "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching.",
       "pick": false,
-      "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition."
+      "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition.",
+      "voices": []
     },
     {
       "title": "Speechius",
@@ -6027,7 +6650,8 @@
           "value": "给创作者、高管、教育者卖专业订阅;跟读滚动是人们愿付费的具体升级。",
           "risk": "细分小、易被抄;现有提词器 app 能加语音跟踪。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Capsomnia",
@@ -6063,7 +6687,8 @@
           "value": "便宜的一次性 Mac 工具;细分,而 Caps Lock 的花招就是全部差异化。",
           "risk": "Amphetamine/Caffeine 占据这块;单招工具易被复刻,Apple 也可能改电源 API。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Aymo AI",
@@ -6098,7 +6723,8 @@
           "value": "团队订阅,但价值主张发散;很难说清团队为何要从 ChatGPT Team/Claude 迁过来。",
           "risk": "没差异的 AI 平台——拥挤、通用,被模型厂商自家的团队产品压制。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Robynn AI",
@@ -6133,7 +6759,8 @@
           "value": "作为自动 CRO(转化优化)卖给营销/中小企业;定价挂钩可衡量的提升。",
           "risk": "自愈口气大、需要证据;A/B 和 CRO 工具很挤,信任/归因也难。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "SF Apartment Finder",
@@ -6169,7 +6796,8 @@
           "value": "租房很好变现(导流、中介费、付费提醒);高价市场里的高意图用户会付费。",
           "risk": "超本地(仅 SF)、房源抓取是法律/ToS 之争(Zillow/Craigslist),且必须扩出单一城市。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Webhound",
@@ -6203,7 +6831,8 @@
           "value": "给需要结构化调研/引用的 agent 开发者做按量 API:按查询或席位。",
           "risk": "Perplexity、Exa 和各实验室自家的研究模式在竞争;要靠更深/更可靠或价格取胜。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Artifacts by Databox",
@@ -6238,7 +6867,8 @@
           "value": "Databox 已在卖分析;这是一家成熟 BI 公司里的功能/加售,不是创始人的口子。",
           "risk": "背靠 Databox,且正处拥挤的 BI(Tableau、Metabase、各家 AI-BI);不是蓝海。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "A zoomable timeline of 4M Wikipedia events",
@@ -6270,7 +6900,8 @@
           "value": "很难直接变现;或许教育授权或高级嵌入,但更像展示而非产品。",
           "risk": "漂亮但是个可视化/展示;维基数据免费,受众很少为浏览历史付费。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "I implemented a neural network in SQL",
@@ -6302,7 +6933,15 @@
           "value": "没有生意;它是教学/猎奇之作,价值在内容而非软件。",
           "risk": "是特技/演示;迷人但没东西可卖,也没有有持续需求的用户。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "Is this PR still relevant? Forgive me, I can't remember, but I recall that we got rid of the unique call in the first place.",
+          "url": "https://github.com/xqlsystems/xarray-sql/issues/170#issuecomment-4770951393",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "CheapSecurity – Lightweight, Self-Hosted CCTV for Linux SBCs",
@@ -6334,7 +6973,8 @@
           "value": "开源核心:自托管免费,云/备份/告警/移动端收费;一个被验证的模式(Frigate、Home Assistant)。",
           "risk": "Frigate 和自托管摄像头生态很强;硬件碎片化和可靠性是苦活。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Clx – Compile Lua to Native Executables Through C++20",
@@ -6366,7 +7006,8 @@
           "value": "这类开发工具通常免费/开源;除非锚定一个商业运行时,否则变现薄。",
           "risk": "小众编译工具;受众小,围绕语言转译器很难做成生意。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Bramble – Local-first password manager",
@@ -6398,7 +7039,15 @@
           "value": "免费增值/一次性 + 付费同步/家庭/团队档;密码管理器有被验证的付费意愿。",
           "risk": "这个品类里信任就是一切;要撼动 1Password/Bitwarden 需要新玩家大多没有的安全履历。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…ething that can't be done without compromising the security of your vault. Unfortunately, I can't ship such a feature as this would leave everyone vulnerable. Here's the situation: When Bramble is unlocked, a Vault Encryption K…",
+          "url": "https://github.com/flythenimbus/bramble/issues/6#issuecomment-5013892244",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "DOM-docx – HTML to native, editable Word docs (MIT)",
@@ -6430,7 +7079,8 @@
           "value": "一个库,可锚定为规模化生成 Word 文档的应用做付费 API/服务;按量。",
           "risk": "docx 生成很挤(库很多);要赢靠最佳保真 + 支持,而核心是开源/免费。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "misa77 - a codec that decodes 2x faster than LZ4 (at better ratios)",
@@ -6462,7 +7112,8 @@
           "value": "压缩能卖进数据库、存储和 CDN,那里真实的速度/比率优势值得授权/集成。",
           "risk": "大胆的跑分需独立验证;LZ4/Zstd 根基深、久经沙场。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
@@ -6494,7 +7145,8 @@
           "value": "校准/不确定性可作为安全层卖给需要可信模型输出的企业;API 或微调。",
           "risk": "前沿实验室在直接攻校准;小团队要证明一个持久、可迁移的方法,而非单个模型。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "ReadKinetic – a free, local-first speed reader for your own books",
@@ -6526,7 +7178,15 @@
           "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
           "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "…hen use the tool for the prose. It’s not really fixable at the format level too, there is no good way of showing a person a graph word by word. I suppose what I really should add is some kind of flag to say there was a figure here…",
+          "url": "https://news.ycombinator.com/item?id=49002857",
+          "src": "hn",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "YouTube Guitar Tab Parser",
@@ -6558,7 +7218,8 @@
           "value": "给音乐人做免费增值:付费的精准转谱、曲库、导出;Ultimate Guitar 证明有人为谱付费。",
           "risk": "音乐内容的版权/授权很棘手,自动扒谱的准确度也难;付费意愿偏细分。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Claude-thermos keeps your Claude session warm for you",
@@ -6590,7 +7251,8 @@
           "value": "很薄;顶多做付费专业/团队小工具,否则就是免费便利。",
           "risk": "一个厂商改进冷启动就能作废的薄封装;是功能不是公司。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Adrafinil – keep a lid-closed Mac awake only while agents work",
@@ -6622,7 +7284,8 @@
           "value": "给跑长 agent 任务的人卖个便宜的 Mac 小工具;细分但清晰。",
           "risk": "极小工具(Amphetamine/Caffeine 的地盘);易被抄,Apple 也可能改电源 API。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
@@ -6654,7 +7317,8 @@
           "value": "给需要规模化审阅/审计 agent 工作的工程组织卖团队版;agent 写的代码越多,可观测性越是真实预算。",
           "risk": "3D 可视化可能只是花架子;要证明它在真实审阅流程里胜过普通 diff/日志。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Homegames. An open-source game platform I've been making for 8 years",
@@ -6686,7 +7350,15 @@
           "value": "游戏/平台靠爆款或市场变现;做了 8 年仍牵引平平,是对这个模式的警示。",
           "risk": "长跑却没到逃逸速度;客厅多人平台难变现且靠爆款驱动。"
         }
-      }
+      },
+      "voices": [
+        {
+          "quote": "Everytime I try and use one of those Complex 3D web games, all 8 cores of my computer go to 100% and my computer becomes unresponsive until I…",
+          "url": "https://news.ycombinator.com/item?id=48803077",
+          "src": "hn",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Getting GLM 5.2 running on my slow computer",
@@ -6722,7 +7394,27 @@
       },
       "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates.",
       "pick": false,
-      "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering."
+      "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering.",
+      "voices": [
+        {
+          "quote": "…t cause entirely** and `TC_W4A16` is a coincidence — his config differs from mine in ways I can't test here: 4×A100, `CUDA_EXPERT_GB=auto`, `PIN_GB=all` (full residency, so the `:1575` resident path rather than my streaming one…",
+          "url": "https://github.com/JustVugg/colibri/issues/685#issuecomment-5121251282",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…llows it (projected peak 456.6 GB; set CAP_RAISE=0 to disable) ### Reproduction steps Hi, I can't get colibri answering correctly with cuda enabled and 4 H100 40G cards I only get random tokens as response Am I missing somethin…",
+          "url": "https://github.com/JustVugg/colibri/issues/685",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…ault. The comment justifying it cites a **speed** measurement (+14%, expert-matmul −16%); I can't find a quality number anywhere. On real ARM decode the loss is probably **larger** than what I measured, because at S=1 the exper…",
+          "url": "https://github.com/JustVugg/colibri/issues/153",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Openbase",
@@ -6758,7 +7450,8 @@
           "value": "给管很多 agent 的操作者卖专业/团队订阅;切口是语音 + 远程控制 agent 舰队。",
           "risk": "早期且宽泛;语音控 agent 的体验未验证,而 agent 平台可能加原生远程控制。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "OpenComputer",
@@ -6793,7 +7486,8 @@
           "value": "按量的托管 agent 主机(agent 版 Vercel 赛道);团队为不用自己跑 agent 基础设施 付费。",
           "risk": "托管 agent 主机很挤(E2B、Modal、各实验室);要赢得靠可靠性 + 体验 + 规模化价格。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Adomate",
@@ -6828,7 +7522,8 @@
           "value": "向中小企业/代理商广告主收订阅 + 用量;广告预算巨大,凡是能提升 ROAS 的团队都愿付费。",
           "risk": "AI 广告很挤(AdCreative、Meta 自家工具);创意质量 + 可衡量的提升是必须过的门槛。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Second Brain for Mac and Windows",
@@ -6864,7 +7559,8 @@
           "value": "向知识工作者收专业订阅;切口是在你做的一切之间无缝捕捉 + 回忆。",
           "risk": "Rewind/Limitless 和操作系统厂商(Recall)都在;隐私担忧和平台原生记忆是威胁。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "FluentDB",
@@ -6899,7 +7595,8 @@
           "value": "像 TablePlus + AI 那样收专业/团队订阅;开发者本就为好用的 DB 客户端付费。",
           "risk": "TablePlus、DataGrip 和每个 DB 工具都在加 AI;AI 层要明显更好才值得迁移。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "TouchGrass",
@@ -6934,7 +7631,8 @@
           "value": "提醒类 app 的消费订阅很难卖;更适合便宜的一次性或做 B2B 健康福利。",
           "risk": "健康/休息类 app 是留存的坟场;系统级屏幕时间和免费工具在竞争。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Heard",
@@ -6974,7 +7672,8 @@
       },
       "hook": "Give Claude Code and Codex a voice — hands-free coding, if the latency holds.",
       "pick": true,
-      "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption."
+      "pick_reason": "Heard offers a unique voice interface for coding that enhances productivity, but its success depends on execution and market adoption.",
+      "voices": []
     },
     {
       "title": "Athena by Shoplazza",
@@ -7013,7 +7712,8 @@
       },
       "hook": "One orchestrator agent to run a merchant's entire commerce stack.",
       "pick": true,
-      "pick_reason": "Athena addresses a significant pain point in e-commerce by integrating multiple tools, showing strong market potential."
+      "pick_reason": "Athena addresses a significant pain point in e-commerce by integrating multiple tools, showing strong market potential.",
+      "voices": []
     },
     {
       "title": "MaximeRivest/riddle",
@@ -7051,7 +7751,8 @@
           "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
           "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "HUANGCHIHHUNGLeo/claude-real-video",
@@ -7089,7 +7790,8 @@
           "value": "给要把视频理解做进 agent/app 的人做按量 API/SDK:按分钟处理。",
           "risk": "多模态实验室(Gemini、GPT)原生吃视频且进步快;预处理层必须持续更便宜/更好。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "DavidHDev/canvas-ui",
@@ -7127,7 +7829,8 @@
           "value": "开源核心:免费组件 + 付费专业包/模板,shadcn/Tailwind-UI 的变现路径。",
           "risk": "组件库很难变现(多为免费),而炫酷效果是个窄用例。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Jia-Ethan/codex-keysmith",
@@ -7165,7 +7868,8 @@
           "value": "给规模化管理 agent 配置的组织做团队版:卖 agent 配置的安全 + 可复现。",
           "risk": "单一厂商 agent 的配置管理;偏薄,而 Codex 可能原生内置版本化配置。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "nyblnet/bento",
@@ -7203,7 +7907,8 @@
           "value": "免费增值:单文件套件免费,协作/托管/企业收费;可移植性相对云套件是真实切口。",
           "risk": "Google/微软掌控文档;装进一个文件 很妙,但要赢真实工作流,不能只靠新奇。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "oso95/scroll-world",
@@ -7235,7 +7940,8 @@
           "value": "可作为服务卖给想要 3D 落地体验的代理商/品牌;项目制,非经常性收入。",
           "risk": "是技能/效果、易被抄;3D 品牌站是精品细分,不是可规模化产品。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "img2threejs/img2threejs",
@@ -7273,7 +7979,8 @@
           "value": "给 把图变成可编辑场景 的设计/3D 工具和代理商做按量 API:按生成计费。",
           "risk": "图生 3D 是热门且难的研究区;质量/一致性要胜过快速迭代的 3D 生成模型。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Ant – A JavaScript runtime and ecosystem",
@@ -7309,7 +8016,8 @@
       },
       "hook": "A new JavaScript runtime taking on Node/Bun/Deno — 330 HN points on day one.",
       "pick": false,
-      "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition."
+      "pick_reason": "The project is too similar to existing JavaScript runtimes like Bun and Deno without a clear unique value proposition.",
+      "voices": []
     },
     {
       "title": "Clawk – Give coding agents a disposable Linux VM, not your laptop",
@@ -7343,7 +8051,15 @@
         }
       },
       "pick": true,
-      "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees."
+      "pick_reason": "Clawk addresses a clear need for secure coding environments, with potential for monetization through subscriptions or usage fees.",
+      "voices": [
+        {
+          "quote": "…issue to be opened. The output might be helpful, but I haven't reviewed it myself and so I can't co-sign it's veracity.",
+          "url": "https://github.com/clawkwork/clawk/issues/1#issuecomment-4982910781",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "Juggler – an open-source GUI coding agent, by the creator of JUCE",
@@ -7443,7 +8159,8 @@
           "value": "桌面免费增值 + 给创作者的专业/云渲染档;视频工具有被验证的付费意愿。",
           "risk": "带 AI 的 CapCut/Descript/Premiere 根基深;开源编辑器要把 AI 剪辑体验做到位才有意义。"
         }
-      }
+      },
+      "voices": []
     },
     {
       "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
@@ -7479,7 +8196,8 @@
       },
       "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud.",
       "pick": true,
-      "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential."
+      "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential.",
+      "voices": []
     },
     {
       "title": "antirez/ds4",
@@ -7515,7 +8233,21 @@
       },
       "hook": "From Redis's creator: a lean local inference engine for DeepSeek-4 across Metal/CUDA/ROCm.",
       "pick": false,
-      "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model."
+      "pick_reason": "The project appears to be a technical tool without a clear monetizable product or business model.",
+      "voices": [
+        {
+          "quote": "…6bca9bb983adbb78f43273dfa722f0) I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
+          "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5084696090",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…b6bca9bb983adbb78f43273dfa722f0 I haven't had time to test it myself—the AI did it all—so I can't tell you if it was bluffing, but the branch in question loads glm-5.2 with strixhalo+cuda, and according to the AI, it scores 72…",
+          "url": "https://github.com/antirez/ds4/issues/16#issuecomment-5073730737",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "simonlin1212/a-stock-data",
@@ -7557,7 +8289,27 @@
       },
       "hook": "A full-stack China A-share data toolkit — quotes, fund flows, filings, sentiment, with fallbacks.",
       "pick": false,
-      "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product."
+      "pick_reason": "The project appears to be a collection of data sources without a clear monetizable product.",
+      "voices": [
+        {
+          "quote": "…持单文件自包含形态，不走目录化拆分**（完整理由见 #21：单文件的可携性 / 拷走即用 / 分发形态是核心产品卖点，且单人维护下双形态漂移风险大于 token 收益；token 痛点已用 v3.3.1 的 description 收窄 + 按需局部读取建议缓解）。所以这个 PR 不会合入，现予关闭——这是形态路线的选择，不是对实现质量的否定。 两点补充： 1. **v3.3.1 的 CHANGELOG 里已署名致谢你**这份完整实现； 2…",
+          "url": "https://github.com/simonlin1212/a-stock-data/pull/22#issuecomment-4936976619",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…载 50K token，这条是你这份建议里性价比最高的一条，谢谢 🙏 📐 **结构拆分部分**：最终决定见 #21 的完整说明——单文件自包含是有意产品决策，长期保持。token 痛点用「收窄触发 + 按需局部读取」缓解（README FAQ 已写）。 📋 **统一脚本输出 JSON**（symbol/source/timestamp/status/data/errors）：这条作为端点代码风格的参考记下了，未来新增端点时会向这个规范靠。…",
+          "url": "https://github.com/simonlin1212/a-stock-data/issues/29#issuecomment-4936975318",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…view，抓到了真 bug。 剩下的「重构 / 工程化拆分」部分，最终决定见 #21 的完整说明：**单文件自包含是本项目的有意产品决策，长期保持，不做目录化拆分**。token 痛点通过 v3.3.1 的 description 收窄（防误触发）+ 按需局部读取的用法建议来缓解。感谢你的推动 🙏",
+          "url": "https://github.com/simonlin1212/a-stock-data/issues/27#issuecomment-4936972354",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "t8y2/dbx",
@@ -7605,7 +8357,27 @@
       "edge": "The built-in AI assistant allows users to generate SQL queries directly from natural language descriptions, eliminating the need for copy-pasting between tools.",
       "why_use": "Choose DBX for its zero runtime bloat and ability to run on any platform without additional dependencies, unlike competitors that require Java or are OS-specific.",
       "pick": true,
-      "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need."
+      "pick_reason": "The project offers a unique cross-platform database client with AI capabilities, addressing a clear market need.",
+      "voices": [
+        {
+          "quote": "[Feature] 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了 — ### 数据库类型和版本 通用 ### 当前痛点 建议允许用户设置排序规则，现在每次都要点击至少两次，太折磨人了。要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要每次都要选。这个功能的本质就是快，要快不要墨迹 ### 期望方案 要么设置成“数据库升序排序”，要么设置成“当前页升序排序”，不要…",
+          "url": "https://github.com/t8y2/dbx/issues/2337",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "…es，确认没有重复建议。 - [x] 这个建议与 DBX 的数据库管理、查询、浏览、导出或桌面体验有关。 ### 建议类型 连接管理 ### 相关数据库 SQLite ### 当前痛点 目前只支持连接本地磁盘的 SQLIte，无法通过 \\\\wsl.localhost\\WSL\\home\\xxx\\data.db 连接，每次管理 WSL 里的 SQLite 都需要复制到宿主机 ### 期望方案 SQLite 文件路径能支持 \\\\wsl.local…",
+          "url": "https://github.com/t8y2/dbx/issues/67",
+          "src": "github",
+          "kind": "pain"
+        },
+        {
+          "quote": "[💡 Feature] 希望能够支持针对kerberos权限校验的支持 — ### 当前痛点 目前很多hive数据库使用的是通过kerberos进行鉴权，否则无法链接。 ### 期望方案 能够通过配置数据源的kerberos认证文件然后连接到数据源 ### 补充信息 _No response_",
+          "url": "https://github.com/t8y2/dbx/issues/937",
+          "src": "github",
+          "kind": "pain"
+        }
+      ]
     },
     {
       "title": "JustVugg/colibri",

@@ -37,5 +37,6 @@
   "pick_reason": "The project offers a unique product that leverages AI to create 3D models from images, addressing a clear market need in the consumer AI space.",
   "id": "286-neilsonnn-image-blaster",
   "agent": "gh-scout",
-  "posted_at": "2026-07-29T06:41:05Z"
+  "posted_at": "2026-07-29T06:41:05Z",
+  "voices": []
 }

@@ -30,5 +30,6 @@
     }
   },
   "pick": true,
-  "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market."
+  "pick_reason": "The project addresses a specific need for a lightweight SSH client, showing potential for a niche market.",
+  "voices": []
 }

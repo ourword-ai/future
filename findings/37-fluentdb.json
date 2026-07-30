@@ -31,5 +31,6 @@
       "value": "像 TablePlus + AI 那样收专业/团队订阅;开发者本就为好用的 DB 客户端付费。",
       "risk": "TablePlus、DataGrip 和每个 DB 工具都在加 AI;AI 层要明显更好才值得迁移。"
     }
-  }
+  },
+  "voices": []
 }

@@ -44,5 +44,13 @@
   "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
   "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
   "pick": true,
-  "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics."
+  "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
+  "voices": [
+    {
+      "quote": "…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。",
+      "url": "https://github.com/simonlin1212/TradingAgents-astock/issues/54#issuecomment-4614285974",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

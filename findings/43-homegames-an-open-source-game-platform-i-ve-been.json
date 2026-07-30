@@ -28,5 +28,13 @@
       "value": "游戏/平台靠爆款或市场变现;做了 8 年仍牵引平平,是对这个模式的警示。",
       "risk": "长跑却没到逃逸速度;客厅多人平台难变现且靠爆款驱动。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "Everytime I try and use one of those Complex 3D web games, all 8 cores of my computer go to 100% and my computer becomes unresponsive until I…",
+      "url": "https://news.ycombinator.com/item?id=48803077",
+      "src": "hn",
+      "kind": "pain"
+    }
+  ]
 }

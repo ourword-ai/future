@@ -32,5 +32,13 @@
       "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
     }
   },
-  "hook": "Turns your document pile into an auto-linked knowledge base — private and offline."
+  "hook": "Turns your document pile into an auto-linked knowledge base — private and offline.",
+  "voices": [
+    {
+      "quote": "…stall from npm i -g @anthropic-ai/claude-code then re-check. And verified everything, and I can't use Claude on both laptops I have. I spent a lot of time with Claude and ChatGPT solving that issue, and it seems that Claude is…",
+      "url": "https://github.com/nashsu/llm_wiki/issues/186",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

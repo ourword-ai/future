@@ -41,5 +41,19 @@
   },
   "does": "A local-first, model-agnostic AI research workbench (Tauri + MCP + agent skills) that runs the whole loop — exploration, literature survey, hypothesis, experiment code, analysis, figures, write-up — in one auditable, reproducible desktop session; it can even drive your own Chrome and be read from your phone.",
   "edge": "It ranks #1 on ResearchClawBench (a Pass@1 end-to-end benchmark for autonomous science agents) while keeping data local and vendor-agnostic — a rare mix of measured capability and privacy.",
-  "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research."
+  "why_use": "For labs, biotech and research teams that want agentic help without uploading unpublished data or locking into one model — reproducible, on-prem AI research.",
+  "voices": [
+    {
+      "quote": "…sts) but the wire-protocol details still need a real `codex app-server` to confirm, which I can't do from here. Happy to iterate once someone can run it against the real binary. #36 is ready for review whenever you have a momen…",
+      "url": "https://github.com/ai4s-research/open-science/pull/28#issuecomment-5018561692",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "I can't wait for the release 😊",
+      "url": "https://github.com/ai4s-research/open-science/issues/1#issuecomment-4892088644",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

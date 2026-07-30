@@ -38,5 +38,13 @@
   },
   "hook": "An all-in-one, agent-driven video studio — 12 pipelines, 100+ tools, wildly ambitious.",
   "pick": false,
-  "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product."
+  "pick_reason": "The project appears to be a collection of tools and pipelines without a clear monetizable product.",
+  "voices": [
+    {
+      "quote": "I can't get Hermes to use this, despite Gemini help with prompting and chasing errors, and model refusal.",
+      "url": "https://github.com/calesthio/OpenMontage/issues/165#issuecomment-4881341213",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

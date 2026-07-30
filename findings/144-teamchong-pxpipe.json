@@ -30,5 +30,25 @@
       "value": "若成立,做付费优化器/代理,团队为削减 agent 花费买单;切口是可验证的省钱。",
       "risk": "依赖视觉 token 的经济性持续划算;模型厂商改定价就能废掉这个技巧。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "> Thanks, but I can't reproduce this on my side my events.jsonl (54,809 events) has zero occurrences of `total_tokens`, and my cache read/create ratio…",
+      "url": "https://github.com/teamchong/pxpipe/pull/144#issuecomment-5082370834",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Thanks, but I can't reproduce this on my side my events.jsonl (54,809 events) has zero occurrences of `total_tokens`, and my cache read/create ratio…",
+      "url": "https://github.com/teamchong/pxpipe/pull/144#issuecomment-5081359165",
+      "src": "github",
+      "kind": "pain"
+    },
+    {
+      "quote": "Honest answer: I don't run Windows anywhere, so I can't test or maintain a Windows-specific path. it'd rot the first time something shifts and I couldn't tell. So I don't want it in cor…",
+      "url": "https://github.com/teamchong/pxpipe/issues/88#issuecomment-4951675714",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

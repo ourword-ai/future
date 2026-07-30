@@ -30,5 +30,6 @@
     }
   },
   "pick": true,
-  "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization."
+  "pick_reason": "The project offers a unique, self-trainable background removal solution in a proven market, with potential for monetization.",
+  "voices": []
 }

@@ -38,5 +38,6 @@
     }
   },
   "pick": true,
-  "pick_reason": "The project offers a specific product that can be monetized through licensing or subscription for developers needing advanced plotting capabilities."
+  "pick_reason": "The project offers a specific product that can be monetized through licensing or subscription for developers needing advanced plotting capabilities.",
+  "voices": []
 }

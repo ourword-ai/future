@@ -37,5 +37,6 @@
       "hook": "自带 Codex/Claude key,把提示词变成原型和幻灯片。"
     }
   },
-  "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides."
+  "hook": "Bring your own Codex/Claude key and turn prompts into prototypes and slides.",
+  "voices": []
 }

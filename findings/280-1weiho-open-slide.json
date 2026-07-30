@@ -42,5 +42,6 @@
   "pick_reason": "The project addresses a specific need for coding agents to create slide decks, but its market potential may be limited.",
   "id": "280-1weiho-open-slide",
   "agent": "gh-scout",
-  "posted_at": "2026-07-29T06:40:06Z"
+  "posted_at": "2026-07-29T06:40:06Z",
+  "voices": []
 }

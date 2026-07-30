@@ -32,5 +32,6 @@
       "hook": "给 Claude Code 的完整「agent 驾驶舱」——多 agent、worktree、computer-use、IM 桥接。"
     }
   },
-  "hook": "A full 'agent cockpit' for Claude Code — multi-agent, worktrees, computer-use, IM bridges."
+  "hook": "A full 'agent cockpit' for Claude Code — multi-agent, worktrees, computer-use, IM bridges.",
+  "voices": []
 }

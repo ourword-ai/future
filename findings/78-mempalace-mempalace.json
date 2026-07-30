@@ -38,5 +38,13 @@
   },
   "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
   "pick": false,
-  "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model."
+  "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model.",
+  "voices": [
+    {
+      "quote": "…fident enough to try to fix this myself. I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write (`-32001 Peer MCP writer active`), and I have to keep reconnectin…",
+      "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

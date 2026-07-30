@@ -38,5 +38,13 @@
       "hook": "一个元 harness,把 Claude Code、Codex、Cursor 统一编排。"
     }
   },
-  "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together."
+  "hook": "One meta-harness to orchestrate Claude Code, Codex and Cursor together.",
+  "voices": [
+    {
+      "quote": "…send a message) and it wakes up. Before, the app slammed up a red \"something broke!\" sign every time it dozed off. Now it tiptoes out quietly, and the sign only appears when the runner actually falls over. ## Test Plan Ran the affec…",
+      "url": "https://github.com/omnigent-ai/omnigent/pull/3060",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

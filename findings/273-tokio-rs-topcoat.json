@@ -36,5 +36,13 @@
       "risk": "Topcoat 可能会面临像 React 或 Django 这样的成熟框架的竞争，这些框架拥有更大的生态系统和社区支持，可能限制其采用。",
       "why_good": "Topcoat 是一个全栈 Rust 框架，允许开发人员构建 Web 应用程序，具有服务器渲染的组件和无缝的客户端交互。它通过允许组件直接查询数据库，消除了单独 API 层的需要。"
     }
-  }
+  },
+  "voices": [
+    {
+      "quote": "I would definitely love to see it, although I can't promise we'll merge it",
+      "url": "https://github.com/tokio-rs/topcoat/issues/202#issuecomment-5082868721",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -42,5 +42,13 @@
   "does": "PenguinHarness automates the creation of agent applications by allowing users to type a single sentence, which generates a complete application with scaffolding, code, and run instructions. It connects to over 1,000 models and optimizes itself for improved performance over time.",
   "edge": "Its standout capability is self-evolution, where agents not only build applications but also evaluate and optimize themselves after each use.",
   "why_use": "Choose PenguinHarness for its unmatched cost-effectiveness, delivering the best accuracy in data analysis at a fraction of the cost compared to competitors like Claude Code.",
-  "hook": "Build agent applications 100× faster with PenguinHarness!"
+  "hook": "Build agent applications 100× faster with PenguinHarness!",
+  "voices": [
+    {
+      "quote": "…ses `role=\"status\"`, which makes it an ARIA live region — screen readers will announce it every time it appears, and it re-appears on re-render of the collapsed header. Since the amber pill above it (`sm:inline`) is the same informa…",
+      "url": "https://github.com/Prism-Shadow/penguin-harness/pull/76#issuecomment-5089595058",
+      "src": "github",
+      "kind": "pain"
+    }
+  ]
 }

@@ -38,5 +38,6 @@
   },
   "hook": "An agent IDE that makes autonomous coding prove its work — local-first and zero-trust.",
   "pick": false,
-  "pick_reason": "The project is too vague and lacks a clear business model or product offering."
+  "pick_reason": "The project is too vague and lacks a clear business model or product offering.",
+  "voices": []
 }
