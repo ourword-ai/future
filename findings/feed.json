@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T03:58:55Z",
+  "generated_at": "2026-07-30T04:13:21Z",
   "findings": [
     {
       "claim": "SSD-streamed expert weights collapsed the intelligence ceiling of home-local AI this week: turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series MacBook (Show HN front page, 651 pts / 225 comments; 5-6 tok/s even on an 8GB M2 Air), and deltafin streams 2.8T-parameter Kimi K3 experts on demand onto a single Apple Silicon machine. Ordinary-person side gap: private-archive Q&A (health reports, diaries, chat exports) no longer has to trade privacy for intelligence — but both projects are CLI-only, and no product yet wraps \"your family's genuinely smart offline archive\" for non-technical users. Workload: 2w for a wrapped single-purpose MVP on top of turbo-fieldfare.",
@@ -23,7 +23,46 @@
       "reused": 0,
       "first": true,
       "tags": [],
-      "voices": []
+      "voices": [
+        {
+          "kind": "pain",
+          "quote": "I've run local video generation models on an 8GB graphics card and know firsthand that nothing runs smoothly when memory is insufficient. So seeing 14GB of weights crammed into 2GB of RAM is impressive.",
+          "url": "https://news.ycombinator.com/item?id=49098510",
+          "user": "hsienchuc",
+          "src": "hn"
+        },
+        {
+          "kind": "pain",
+          "quote": "Hope you can do it for Windows users also (and small graphics cards).",
+          "url": "https://news.ycombinator.com/item?id=49098510",
+          "user": "h2aichat",
+          "src": "hn"
+        }
+      ],
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "does": "turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series MacBook by streaming expert weights from SSD on demand; deltafin applies the same trick to stream the 2.8T-parameter Kimi K3 onto a single Apple Silicon machine.",
+      "edge": "Frontier-class models fit ordinary consumer Macs for the first time — 5-6 tok/s even on an 8GB M2 Air.",
+      "why_use": "Run a genuinely smart AI over your most private files (health reports, diaries, chat exports) with zero cloud dependency.",
+      "gap": "Only geeks can use it: both projects are CLI-only — no product wraps 'your family's genuinely smart offline archive' for non-technical users, and the Chinese-market side is empty.",
+      "counter": "Apple and Google will eventually ship OS-level local AI; llama.cpp with mmap already serves hobbyists; 5-6 tok/s on older Macs may feel slow to ordinary users.",
+      "differentiator": "Wrap it as a one-click private-archive Q&A app — sell privacy x intelligence, not infrastructure. Cold start: EN — an '8GB Air runs 26B + family-archive demo' post in r/LocalLLaMA; CN — Xiaohongshu '本地部署大模型' help-post comment sections + Jike AI探索站.",
+      "value": "Privacy-conscious buyers already pay for far weaker local tools; family health/document archives are the beachhead, the home 'private brain' appliance is the long game.",
+      "risk": "OS vendors absorbing local AI is the main threat; wrapper differentiation must come from the archive workflow, not the engine.",
+      "workload": "2w",
+      "i18n": {
+        "zh": {
+          "claim": "SSD 流式专家权重本周击穿了家用本地 AI 的智商天花板：turbo-fieldfare 在任意 M 系 MacBook 上用约 2GB 内存跑 Gemma 4 26B（Show HN 头版 651 分/225 评论），deltafin 在单台 Apple Silicon 上流式跑 2.8T 参数的 Kimi K3。",
+          "does": "turbo-fieldfare 把专家权重按需从 SSD 流进内存，任意 M 系 Mac 用约 2GB 内存跑 Gemma 4 26B；deltafin 用同一思路在单台 Apple Silicon 上跑 2.8T 参数的 Kimi K3。",
+          "why_good": "turbo-fieldfare 把专家权重按需从 SSD 流进内存，任意 M 系 Mac 用约 2GB 内存跑 Gemma 4 26B；deltafin 用同一思路在单台 Apple Silicon 上跑 2.8T 参数的 Kimi K3。",
+          "why_use": "家里最私密的档案（体检报告、日记、聊天记录）第一次可以交给一个真聪明、又一个字不出门的 AI。",
+          "gap": "只有极客能用：两个项目都是纯命令行——没有人给非技术用户包一个'全家的离线聪明档案馆'，中文场景更是空白。",
+          "counter": "苹果/谷歌迟早把本地 AI 做进系统；llama.cpp 的 mmap 已服务动手党；老 Mac 上 5-6 token/s 对普通用户可能偏慢。",
+          "differentiator": "包成一键安装的私密档案问答应用——卖'隐私×智商'，不卖基建。冷启动：英文在 r/LocalLLaMA 发'8G Air 跑 26B+家庭档案问答 demo'帖；中文蹲小红书'本地部署大模型'求助帖评论区＋即刻'AI探索站'。",
+          "value": "隐私敏感用户已经在为弱得多的本地工具付费；家庭健康/文档档案是滩头阵地，长线是家用'私人大脑'。",
+          "risk": "最大威胁是系统厂商吸收本地 AI；差异化必须落在档案工作流上，而不是引擎本身。",
+          "hook": "你那台 8G 内存的旧 MacBook Air，现在能离线跑 260 亿参数大模型。"
+        }
+      }
     },
     {
       "claim": "Demand for self-owned, local AI memory has spilled beyond geeks. In the Show HN thread for Echologue (a privacy-first AI voice journal), one commenter reports: \"I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.\" Another user's first request is BYOK so they control where inference happens. First-hand demand evidence for the \"your context lives with you, locally\" lane; the nameable gap is that every current option still assumes a technical user willing to self-host.",
@@ -44,7 +83,44 @@
       "reused": 0,
       "first": true,
       "tags": [],
-      "voices": []
+      "voices": [
+        {
+          "kind": "pain",
+          "quote": "I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.",
+          "url": "https://news.ycombinator.com/item?id=49096901",
+          "user": "dthcst",
+          "src": "hn"
+        },
+        {
+          "kind": "pain",
+          "quote": "I just tried the android application, really like the privacy first approach. Would you consider adding BYOK so that a user could have complete control over where inference happens?",
+          "url": "https://news.ycombinator.com/item?id=49096767",
+          "user": "parthmule28",
+          "src": "hn"
+        }
+      ],
+      "does": "A demand signal rather than a repo: in the Show HN thread for Echologue (privacy-first AI voice journal), a self-described non-developer reports building his own local memory tool out of privacy frustration, and another user's first request is BYOK control over where inference happens.",
+      "why_use": "First-hand proof that 'my AI context should live with me, locally' has escaped the geek bubble.",
+      "gap": "Every self-owned-memory option still assumes a technical user willing to self-host; the people now asking are explicitly not developers.",
+      "counter": "Platform memory (ChatGPT/Claude/Google) is free, default-on and zero-effort; teaching ordinary users to own their memory store is an uphill education fight.",
+      "differentiator": "Ship a no-server, no-account personal memory vault as a consumer app, importing chat exports and voice notes; privacy is the entire pitch. Cold start: EN — the Echologue HN thread and r/PrivacyGuides; CN — 小红书'AI 日记 隐私'笔记评论区.",
+      "value": "The context-lock-in fight (flagged by a16z) makes user-owned memory a real category; journal/voice memory for privacy buyers is the wedge.",
+      "risk": "Category education cost is high and platforms can bundle 'export+local mode' any time.",
+      "workload": "2m",
+      "i18n": {
+        "zh": {
+          "claim": "自持本地 AI 记忆的需求已经外溢出极客圈：Echologue 的 Show HN 帖里，一位自称非开发者的用户因为受不了数据放在别人服务器上，自己动手搭了本地记忆工具。",
+          "does": "这是需求信号而非项目：Echologue（隐私优先的 AI 语音日记）的 Show HN 帖里，非开发者自述动手搭了自己的本地记忆工具；另一位用户的第一个要求就是 BYOK、自己决定推理在哪跑。",
+          "why_good": "这是需求信号而非项目：Echologue（隐私优先的 AI 语音日记）的 Show HN 帖里，非开发者自述动手搭了自己的本地记忆工具；另一位用户的第一个要求就是 BYOK、自己决定推理在哪跑。",
+          "why_use": "'我的 AI 上下文应该跟着我、放在本地'这件事第一次有了圈外普通人的一手证据。",
+          "gap": "现有的自持记忆方案全部默认你是愿意自托管的技术用户，而正在开口要的人明说自己不是开发者。",
+          "counter": "平台记忆（ChatGPT/Claude/Google）免费、默认开启、零成本；教育普通用户自己管记忆库是场硬仗。",
+          "differentiator": "做一个无服务器、无账号的个人记忆保险箱消费级应用，导入聊天记录和语音笔记，隐私就是全部卖点。冷启动：英文蹲 Echologue 帖和 r/PrivacyGuides；中文蹲小红书'AI 日记 隐私'笔记评论区。",
+          "value": "a16z 点名的'上下文锁定'之争让用户自持记忆成为真品类；隐私买家的日记/语音记忆是切口。",
+          "risk": "品类教育成本高，且平台随时可以捆绑'导出+本地模式'。",
+          "hook": "'我根本不是开发者，就是犟'——非开发者已经开始自己搭本地记忆库了。"
+        }
+      }
     },
     {
       "title": "MemoryCustodian",
