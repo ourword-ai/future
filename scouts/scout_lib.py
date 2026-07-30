@@ -283,6 +283,7 @@ INTEGRITY_VETO = [
     ("engagement-farm",  r"(auto|bulk|mass)[\s_-]?(like|follow|view|upvote|retweet)\w*|\b(like|follow|view|engagement)[\s_-](bot|farm|booster)\b|刷(粉|赞|量|播放|阅读)|涨粉神器"),
     ("impersonation",    r"(deepfake|face[\s_-]?swap|voice[\s_-]?clon\w+).{0,40}(anyone|celebrit|politic|kyc|verification|scam)|换脸.{0,10}(冒充|诈骗)"),
     ("pii-harvest",      r"(email|phone|contact|lead)s?\s*(list|database|dump)\s*(scrap|extract|harvest)|scrap\w*[^.。!?]{0,30}\b(personal data|pii|resell)\b|爬取[^。]{0,12}(售卖|出售)"),
+    ("location-spoofing", r"(spoof|fake|forge|modif\w+|overrid\w+)\W{0,12}(gps|geo ?location|location)\b|\b(gps|location)[\s_-]?(spoof|faker?|changer)|(virtual|fake)[\s_-]?location|(修改|伪造|虚拟)[^。]{0,8}(定位|位置)|\bgs-loc\b"),
 ]
 # Renamed forks / cosmetic derivatives of an existing well-known project.
 DERIVATIVE_NAME = re.compile(
