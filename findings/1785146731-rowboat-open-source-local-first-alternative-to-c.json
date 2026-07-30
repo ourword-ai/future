@@ -1,37 +1,71 @@
 {
-  "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
-  "claim": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
-  "score": 9,
-  "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 points.",
-  "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the open community.",
-  "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to nail.",
-  "evidence": [
-    "https://github.com/rowboatlabs/rowboat",
-    "https://news.ycombinator.com/item?id=48819808",
-    "219 HN points",
-    "99 comments"
-  ],
-  "method": "hn show_hn (last 30d) + startup-worthiness score",
-  "domain": "edge-ai",
-  "model": "future-scout/hn",
-  "operator": "@ourword-ai",
-  "tags": [
-    "show-hn"
-  ],
-  "id": "1785146731-rowboat-open-source-local-first-alternative-to-c",
-  "agent": "hn-scout",
-  "posted_at": "2026-07-27T10:05:31Z",
-  "i18n": {
-    "zh": {
-      "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
-      "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
-      "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
-      "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。",
-      "hook": "一个本地优先、开源的 Claude Desktop——在大家对云降温时,数据归你。"
+ "title": "Rowboat – Open-source, local-first alternative to Claude Desktop",
+ "claim": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+ "score": 5,
+ "why_good": "A local-first, open-source alternative to Claude Desktop — own-your-data desktop AI as people get wary of the cloud. 219 points.",
+ "value": "Local-first desktop AI sells to privacy/compliance buyers as a pro/enterprise tier; distribution via the open community.",
+ "risk": "'Alternative to Claude Desktop' rides Anthropic's roadmap; local-first UX + model management are hard to nail.",
+ "evidence": [
+  "https://github.com/rowboatlabs/rowboat",
+  "https://news.ycombinator.com/item?id=48819808",
+  "219 HN points",
+  "99 comments"
+ ],
+ "method": "hn show_hn (last 30d) + startup-worthiness score",
+ "domain": "edge-ai",
+ "model": "future-scout/hn",
+ "operator": "@ourword-ai",
+ "tags": [
+  "show-hn"
+ ],
+ "id": "1785146731-rowboat-open-source-local-first-alternative-to-c",
+ "agent": "hn-scout",
+ "posted_at": "2026-07-27T10:05:31Z",
+ "i18n": {
+  "zh": {
+   "claim": "Show HN: Rowboat —— 开源、本地优先的 Claude Desktop 替代。",
+   "why_good": "一个本地优先、开源的 Claude Desktop 替代——在大家对云生疑时,主打数据归你的桌面 AI。219 分。",
+   "value": "本地优先桌面 AI 卖给隐私/合规买家做专业/企业版;靠开源社区分发。",
+   "risk": "Claude Desktop 替代跟着 Anthropic 的路线跑;本地优先体验 + 模型管理很难做好。",
+   "hook": "想要一个真记得自己工作的 AI 的知识工作者——Rowboat（YC S24）赌他们愿意用云端便利换一个带知识图谱和内置工作台的本地优先同事。",
+   "does": "开源桌面「AI 同事」（17k star）：把你的工作索引成持续生长的本地知识图谱，并通过内置界面执行——邮件客户端、笔记、浏览器、代码模式、会议记录。",
+   "gap": "对个人开发者这里没有缺口：Rowboat 的融资团队自己在做普通人侧的包装。剩下的缺口是基于国产模型的中文本地优先同事——这批产品都没做。",
+   "counter": "它踩着 Claude Desktop 的路线图走，各平台又都在原生吸收「记忆」；有社区分发的 YC 团队跑得比任何单人克隆快；用户已在抱怨技能重叠混乱——连他们自己都没解好这个 UX。",
+   "differentiator": "别克隆它——把它当「自有 AI 记忆」同族里最硬的证据盯着（见 303 号条目）。若有缺口，是中文市场的本地优先同事。工量 no。",
+   "consumer_angle": "一个记得你项目和邮箱的自有 AI，存在你机器上，而不是别人的云里。",
+   "verdict": "archive",
+   "workload": "no",
+   "pain_verified": false,
+   "voices": [
+    {
+     "quote": "the biggest rub for me is… do my existing skills become contradictory or overlapping with what rowboat is doing",
+     "url": "https://news.ycombinator.com/item?id=48819808",
+     "src": "hn",
+     "kind": "pain"
     }
-  },
-  "hook": "A local-first, open-source Claude Desktop — own your data as people cool on the cloud.",
-  "pick": true,
-  "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential.",
-  "voices": []
+   ],
+   "score": 5,
+   "family": "local-ai-memory"
+  }
+ },
+ "hook": "Knowledge workers who want an AI that actually remembers their work — Rowboat (YC S24) bets they'll trade cloud convenience for a local-first coworker with a knowledge graph and built-in work surfaces.",
+ "pick": true,
+ "pick_reason": "Rowboat addresses a growing demand for local-first AI solutions, providing a clear product with monetization potential.",
+ "voices": [
+  {
+   "quote": "the biggest rub for me is… do my existing skills become contradictory or overlapping with what rowboat is doing",
+   "url": "https://news.ycombinator.com/item?id=48819808",
+   "src": "hn",
+   "kind": "pain"
+  }
+ ],
+ "verdict": "archive",
+ "workload": "no",
+ "pain_verified": false,
+ "family": "local-ai-memory",
+ "does": "An open-source desktop 'AI coworker' (17k stars) that indexes your work into a living local knowledge graph and acts on it through built-in surfaces: email client, notes, browser, code mode, meeting note-taker.",
+ "gap": "For a solo founder, none here: Rowboat's funded team is already packaging the non-technical side themselves. The residual gap is a Chinese-market local-first coworker on domestic models — which none of these ship.",
+ "counter": "It rides Claude Desktop's roadmap while every platform absorbs 'memory' natively; a YC team with community distribution outruns any solo clone; and users already report skill-overlap confusion — the UX is unsolved even for them.",
+ "differentiator": "Don't clone it — track it as the strongest evidence in the self-owned-AI-memory family (see finding 303). If a wedge opens it's the CN-market local-first coworker. Workload: no.",
+ "consumer_angle": "Your own AI that remembers your projects and inbox, stored on your machine, not in someone's cloud."
 }
