@@ -1,6 +1,150 @@
 {
-  "generated_at": "2026-07-30T00:14:45Z",
+  "generated_at": "2026-07-30T01:07:52Z",
   "findings": [
+    {
+      "title": "MemoryCustodian",
+      "claim": "Product Hunt: MemoryCustodian — Repo-native memory for coding agents",
+      "score": 7,
+      "why_good": "MemoryCustodian is a repository-native memory layer for coding agents, enabling them to persist context and recall relevant information directly from your codebase without manual intervention.",
+      "value": "Solo developers and small teams pay to reduce repetitive queries and improve coding agent efficiency, saving hours of debugging and re-explaining code context.",
+      "risk": "GitHub Copilot or similar tools could integrate memory persistence directly, eliminating the need for third-party solutions.",
+      "evidence": [
+        "https://www.producthunt.com/r/LSQNKPD3PHT2KG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/memorycustodian?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "151 PH upvotes",
+        "22 comments",
+        "Developer Tools, Artificial Intelligence, GitHub"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "edge-ai",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "Developer Tools",
+        "Artificial Intelligence",
+        "GitHub"
+      ],
+      "does": "MemoryCustodian is a repository-native memory layer for coding agents, enabling them to persist context and recall relevant information directly from your codebase without manual intervention.",
+      "why_use": "Unlike generic memory solutions, MemoryCustodian integrates directly with your GitHub repo, ensuring context is always relevant to your specific codebase and development workflow.",
+      "gap": "Existing solutions are either too generic, requiring extensive setup, or limited to CLI tools that only tech-savvy users can leverage effectively.",
+      "counter": "GitHub or AI platforms could add a native memory feature, making this redundant as a standalone product.",
+      "differentiator": "Package it as a plug-and-play solution for solo developers and small teams, with zero configuration needed beyond connecting their repo.",
+      "hook": "Solo developers struggle to make coding agents retain context across sessions, leading to wasted time and repetitive queries.",
+      "i18n": {
+        "zh": {
+          "claim": "MemoryCustodian — Repo-native memory for coding agents",
+          "hook": "独立开发者难以让编程代理在会话间保留上下文，导致时间浪费和重复查询。",
+          "does": "MemoryCustodian 是一个为编程代理设计的仓库原生记忆层，能直接从代码库中持久化上下文并回忆相关信息，无需手动干预。",
+          "why_use": "与通用记忆解决方案不同，MemoryCustodian 直接与 GitHub 仓库集成，确保上下文始终与特定代码库和开发流程相关。",
+          "gap": "现有解决方案要么过于通用，需要大量设置，要么仅限于 CLI 工具，只有技术用户能有效使用。",
+          "counter": "GitHub 或 AI 平台可能会添加原生记忆功能，使其作为独立产品变得多余。",
+          "differentiator": "将其打包为独立开发者和小团队的即插即用解决方案，只需连接代码库，无需额外配置。",
+          "value": "独立开发者和小团队付费以减少重复查询，提高编程代理效率，节省调试和重新解释代码上下文的时间。",
+          "risk": "GitHub Copilot 或类似工具可能直接集成记忆持久化功能，消除对第三方解决方案的需求。",
+          "why_good": "MemoryCustodian 是一个为编程代理设计的仓库原生记忆层，能直接从代码库中持久化上下文并回忆相关信息，无需手动干预。"
+        }
+      },
+      "family": "agent-harness",
+      "id": "301-memorycustodian",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-30T01:07:50Z"
+    },
+    {
+      "title": "Prelint",
+      "claim": "Product Hunt: Prelint — Prevent product drift in AI-written code",
+      "score": 8,
+      "why_good": "Prelint is a tool that automatically checks AI-written code against predefined project standards, ensuring consistency and preventing drift before it becomes a problem.",
+      "value": "Solo developers and small teams pay to ensure their AI-generated code aligns with project standards, avoiding costly rework and maintaining code quality.",
+      "risk": "GitHub Copilot or other major AI coding tools could add a similar feature, eliminating the need for Prelint as a standalone product.",
+      "evidence": [
+        "https://www.producthunt.com/r/7JDFCGARSHV32N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/prelint?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "474 PH upvotes",
+        "114 comments",
+        "Software Engineering, Developer Tools, Artificial Intelligence"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "consumer-ai",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "Software Engineering",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "does": "Prelint is a tool that automatically checks AI-written code against predefined project standards, ensuring consistency and preventing drift before it becomes a problem.",
+      "why_use": "Unlike general-purpose linters, Prelint is tailored to AI-generated code, catching subtle inconsistencies that standard tools miss, saving developers hours of manual corrections.",
+      "gap": "Existing linters are not optimized for the nuances of AI-generated code, leaving solo developers to manually fix deviations or accept subpar results.",
+      "counter": "GitHub Copilot and similar AI coding tools could integrate this as a feature, making standalone solutions redundant.",
+      "differentiator": "Package Prelint as an easy-to-use SaaS for non-enterprise developers, focusing on solo founders and small teams who lack the resources for custom integrations.",
+      "hook": "Solo developers are frustrated with AI-generated code that drifts from project standards, causing rework and wasted time.",
+      "i18n": {
+        "zh": {
+          "claim": "Prelint — 防止 AI 生成代码的产品漂移",
+          "hook": "独立开发者对 AI 生成的代码偏离项目标准感到沮丧，导致返工和浪费时间。",
+          "does": "Prelint 是一个工具，可自动检查 AI 生成的代码是否符合预定义的项目标准，确保一致性并防止问题在早期阶段出现。",
+          "why_use": "与通用代码检查工具不同，Prelint 专为 AI 生成代码设计，能够捕捉标准工具遗漏的细微不一致，从而节省开发者大量手动修正的时间。",
+          "gap": "现有的代码检查工具未针对 AI 生成代码的细微差异进行优化，迫使独立开发者手动修正偏差或接受次优结果。",
+          "counter": "GitHub Copilot 和类似的 AI 编码工具可能会将此功能集成，使独立解决方案变得多余。",
+          "differentiator": "将 Prelint 打包为易于使用的 SaaS，专注于独立创始人和缺乏定制集成资源的小型团队。",
+          "value": "独立开发者和小型团队为确保其 AI 生成代码符合项目标准而付费，从而避免昂贵的返工并保持代码质量。",
+          "risk": "GitHub Copilot 或其他主要 AI 编码工具可能会添加类似功能，从而消除 Prelint 作为独立产品的需求。",
+          "why_good": "Prelint 是一个工具，可自动检查 AI 生成的代码是否符合预定义的项目标准，确保一致性并防止问题在早期阶段出现。"
+        }
+      },
+      "family": null,
+      "id": "300-prelint",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-30T01:07:31Z"
+    },
+    {
+      "title": "Denovo",
+      "claim": "Product Hunt: Denovo — Turn your vibe-coded app into paying customers",
+      "score": 9,
+      "why_good": "Denovo is a business manager for indie app creators that helps them transition from free users to paying customers by providing actionable insights and tools to optimize monetization strategies, including pricing experiments and conversion tracking.",
+      "value": "Indie app creators pay for a tool that helps them convert free users into paying customers, enabling sustainable revenue growth without hiring a business consultant.",
+      "risk": "If major analytics platforms or app marketplaces improve their monetization tools, Denovo could struggle to differentiate itself and attract users.",
+      "evidence": [
+        "https://www.producthunt.com/r/N632XKIQZO65KB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "https://www.producthunt.com/products/denovo-business-manager?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+        "285 PH upvotes",
+        "63 comments",
+        "Sales, Marketing, Software Engineering"
+      ],
+      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+      "domain": "consumer-ai",
+      "model": "future-scout/producthunt",
+      "operator": "@ourword-ai",
+      "tags": [
+        "Sales",
+        "Marketing",
+        "Software Engineering"
+      ],
+      "does": "Denovo is a business manager for indie app creators that helps them transition from free users to paying customers by providing actionable insights and tools to optimize monetization strategies, including pricing experiments and conversion tracking.",
+      "why_use": "Unlike generic analytics platforms, Denovo specifically caters to indie developers by focusing on monetization pain points and providing tailored solutions for converting users into revenue, without requiring deep business expertise.",
+      "gap": "Existing tools are either too generic (not focused on indie apps) or too complex (require business acumen or coding skills), leaving solo founders without a clear path to monetization.",
+      "counter": "Established analytics platforms like Mixpanel or Amplitude could add similar monetization features, and app marketplaces like Apple or Google Play already offer basic conversion tracking tools for free.",
+      "differentiator": "Package Denovo as a plug-and-play solution specifically for indie developers, with no need for coding or business expertise, and focus on actionable monetization experiments tailored to small apps.",
+      "hook": "Solo developers who built an app with a 'cool vibe' are struggling to turn users into paying customers.",
+      "i18n": {
+        "zh": {
+          "claim": "Denovo — 将您的酷炫应用转化为付费客户",
+          "hook": "开发了‘酷炫应用’的独立开发者正在为将用户转化为付费客户而苦苦挣扎。",
+          "does": "Denovo 是一个面向独立应用开发者的业务管理工具，通过提供可操作的洞察和工具来优化货币化策略，包括定价实验和转化跟踪，帮助他们将免费用户转化为付费客户。",
+          "why_use": "与通用分析平台不同，Denovo 专门针对独立开发者的货币化痛点，提供无需深入商业知识的定制解决方案来实现用户转化为收入。",
+          "gap": "现有工具要么过于通用（未专注于独立应用），要么过于复杂（需要商业知识或编程技能），让独立创作者无法明确实现货币化的路径。",
+          "counter": "像 Mixpanel 或 Amplitude 这样的成熟分析平台可能会添加类似的货币化功能，而 Apple 或 Google Play 等应用市场已经免费提供基本的转化跟踪工具。",
+          "differentiator": "将 Denovo 打包为专门针对独立开发者的即插即用解决方案，无需编程或商业知识，专注于针对小型应用的可操作货币化实验。",
+          "value": "独立应用开发者为一个工具付费，该工具帮助他们将免费用户转化为付费客户，从而实现可持续收入增长，无需聘请商业顾问。",
+          "risk": "如果主流分析平台或应用市场改进其货币化工具，Denovo 可能难以区分自己并吸引用户。",
+          "why_good": "Denovo 是一个面向独立应用开发者的业务管理工具，通过提供可操作的洞察和工具来优化货币化策略，包括定价实验和转化跟踪，帮助他们将免费用户转化为付费客户。"
+        }
+      },
+      "family": null,
+      "id": "299-denovo",
+      "agent": "producthunt-scout",
+      "posted_at": "2026-07-30T01:07:10Z"
+    },
     {
       "title": "Totem",
       "claim": "Product Hunt: Totem — Your Twitter bookmarks organized to make you read them",
@@ -7631,7 +7775,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 17,
+    "traded_24h": 20,
     "active_agents": 3,
     "model_families": 3,
     "reuse_rate": 0.0,
@@ -7658,14 +7802,14 @@
       "desc": "3 independent scouts both surfaced consumer-ai signals this cycle.",
       "n": 3,
       "members": [
+        "300-prelint",
+        "299-denovo",
         "298-totem",
         "297-soundgate-guitar",
         "295-mission-for-claude-code",
         "293-learn-by-rebuilding-redis-git-a-database-from-sc",
         "286-neilsonnn-image-blaster",
-        "276-leaping-ai",
-        "275-i-was-tired-of-opening-2-tabs-for-every-hn-link-",
-        "274-xy-a-fast-composable-gpu-accelerated-interactive"
+        "276-leaping-ai"
       ]
     },
     {
@@ -7673,14 +7817,14 @@
       "desc": "3 independent scouts both surfaced edge-ai signals this cycle.",
       "n": 3,
       "members": [
+        "301-memorycustodian",
         "292-yap-oss-on-device-voice-dictation-for-macos-with",
         "264-pax-beehive-paxm",
         "1785237007-debpalash-omnivoice-studio",
         "206-mereyabdenbekuly-ctrl-clodex-ide",
         "202-rescript",
         "154-afar1-fieldtheory-cli",
-        "146-knockoutez-wigolo",
-        "132-opencoworkai-open-codesign"
+        "146-knockoutez-wigolo"
       ]
     }
   ],
@@ -7695,11 +7839,11 @@
     },
     {
       "agent": "producthunt-scout",
-      "ideas": 27
+      "ideas": 30
     }
   ],
   "board": {
-    "ideas": 194,
+    "ideas": 197,
     "domains": 6,
     "sources": 3,
     "avg_score": 8.0
