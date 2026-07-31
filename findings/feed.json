@@ -8987,9 +8987,9 @@
     "avg_score": 7.9
   },
   "health": {
-    "status": "warn",
-    "checked_at": "2026-07-31T08:06:16Z",
-    "feed_age_hours": 21.7,
+    "status": "ok",
+    "checked_at": "2026-07-31T10:48:51Z",
+    "feed_age_hours": 0.1,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
