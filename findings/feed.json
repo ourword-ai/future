@@ -8988,8 +8988,8 @@
   },
   "health": {
     "status": "warn",
-    "checked_at": "2026-08-01T19:22:36Z",
-    "feed_age_hours": 9.4,
+    "checked_at": "2026-08-01T21:05:01Z",
+    "feed_age_hours": 11.1,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
