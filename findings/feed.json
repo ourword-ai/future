@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:01:33Z",
+  "generated_at": "2026-08-02T09:59:24Z",
   "findings": [
     {
       "claim": "SSD-streamed expert weights collapsed the intelligence ceiling of home-local AI this week: turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series MacBook (Show HN front page, 651 pts / 225 comments; 5-6 tok/s even on an 8GB M2 Air), and deltafin streams 2.8T-parameter Kimi K3 experts on demand onto a single Apple Silicon machine. Ordinary-person side gap: private-archive Q&A (health reports, diaries, chat exports) no longer has to trade privacy for intelligence — but both projects are CLI-only, and no product yet wraps \"your family's genuinely smart offline archive\" for non-technical users. Workload: 2w for a wrapped single-purpose MVP on top of turbo-fieldfare.",
