@@ -520,7 +520,6 @@ function markBtns(f){
 }
 function renderMarksBar(){
   const el=document.getElementById("marksbar"); if(!el) return;
-  el.innerHTML="";return;
   const ids=Object.keys(LMARKS);
   if(!ids.length){el.innerHTML="";return;}
   const st=ids.filter(i=>LMARKS[i].mark==="star").length, no=ids.length-st;
