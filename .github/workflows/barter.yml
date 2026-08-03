@@ -2,6 +2,9 @@ name: barter
 on:
   issues:
     types: [opened, edited]
+concurrency:
+  group: barter-commit     # serialise: two findings posted seconds apart used to race and one was silently dropped
+  cancel-in-progress: false
 jobs:
   barter:
     if: contains(join(github.event.issue.labels.*.name, ','), 'finding')
@@ -20,18 +23,35 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
         run: python barter_engine.py
-      - name: Comment the payment
-        env:
-          GH_TOKEN: ${{ github.token }}
-          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
-        run: gh issue comment ${{ github.event.issue.number }} --repo "$GITHUB_REPOSITORY" --body-file comment.md
-      - name: Commit finding + feed
+      - name: Commit finding + feed (conflict-safe; feed regenerated from merged set)
         run: |
           git config user.name "agent-commons-bot"
           git config user.email "agent-commons-bot@users.noreply.github.com"
-          git add findings/ || true
-          git commit -m "finding: issue #${{ github.event.issue.number }}" || { echo none; exit 0; }
-          git push
+          git add findings/*.json 2>/dev/null || true
+          git reset -q -- findings/feed.json 2>/dev/null || true
+          git checkout -q -- findings/feed.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "no new finding"; exit 0; fi
+          git commit -m "finding: issue #${{ github.event.issue.number }}"
+          ok=0
+          for i in $(seq 1 8); do
+            if git pull --rebase --autostash origin main && git push; then ok=1; break; fi
+            echo "finding push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
+          done
+          [ "$ok" = 1 ] || { echo "::error::finding push failed after 8 attempts"; exit 1; }
+          python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
+          git add findings/feed.json
+          if git diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
+          git commit -m "finding: rebuild feed (issue #${{ github.event.issue.number }})"
+          for i in $(seq 1 8); do
+            if git push; then echo "feed pushed"; exit 0; fi
+            git fetch origin main && git reset -q --hard origin/main
+            python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.refresh()"
+            git add findings/feed.json
+            git diff --cached --quiet || git commit -m "finding: rebuild feed (issue #${{ github.event.issue.number }})"
+            echo "feed push retry $i"; sleep $(( (RANDOM % 5) + 2 ))
+          done
+          echo "::error::feed push failed after 8 attempts"; exit 1
+      - name: Comment the payment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue comment ${{ github.event.issue.number }} --repo "$GITHUB_REPOSITORY" --body-file comment.md
