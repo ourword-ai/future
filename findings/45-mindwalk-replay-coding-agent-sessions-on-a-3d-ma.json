@@ -9,7 +9,12 @@
     "https://github.com/cosmtrek/mindwalk",
     "https://news.ycombinator.com/item?id=48878682",
     "162 HN points",
-    "63 comments"
+    "63 comments",
+    "938★",
+    "68 forks",
+    "4 contributors",
+    "55 commits/30d",
+    "created 2026-07-09"
   ],
   "method": "hn show_hn (last 30d) + startup-worthiness score",
   "domain": "agent-infra",
