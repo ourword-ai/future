@@ -3,8 +3,8 @@
   "claim": "MemPalace/mempalace — The best-benchmarked open-source AI memory system. And it's free.",
   "score": 9,
   "why_good": "Positions as the best-benchmarked open-source memory layer for agents — memory is a real, unsolved need every agent product hits.",
-  "value": "Sell a hosted/managed memory API + enterprise (retention, multi-tenant) to agent builders who don't want to run it.",
-  "risk": "Crowded (Mem0, Zep, Letta) and memory may get absorbed into the agent frameworks; 'best benchmark' needs independent proof.",
+  "value": "People with years of assistant history who change models often — a paid local app, plus a team tier for firms whose transcripts cannot leave the building.",
+  "risk": "If Anthropic or OpenAI ship durable cross-session memory by default, the whole category collapses into a one-off migration tool.",
   "evidence": [
     "https://github.com/MemPalace/mempalace",
     "57,793★",
@@ -31,20 +31,47 @@
     "zh": {
       "claim": "MemPalace/mempalace —— 跑分最好的开源 AI 记忆系统,而且免费。",
       "why_good": "定位为 agent 的跑分最好开源记忆层——记忆是每个 agent 产品都会撞上、且尚未解决的真实需求。",
-      "value": "给不想自建的 agent 开发者卖托管记忆 API + 企业版(留存、多租户)。",
-      "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。",
-      "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
+      "value": "拥有多年助手历史、又经常换模型的人——付费本地应用，加上一个面向「记录不能出楼」的公司团队版。",
+      "risk": "Anthropic / OpenAI 一旦默认提供跨会话持久记忆，整个品类就塌缩成一次性迁移工具。",
+      "hook": "那些把工作生活都接到助手上、又被 30 天过期一次清空的开发者——有人宁可让 miner 以 100% CPU 跑上 38 小时，也不肯放弃那份档案。",
+      "does": "本地优先的 AI 助手记忆层：对话原文逐字保存（不摘要、不改写），用语义检索在结构化索引上取回——人和项目是 wing，话题是 room，原文放在 drawer——检索后端可插拔（默认 ChromaDB）。宣称在 LongMemEval 上 R@5 达 96.6%，且零 API 调用。",
+      "gap": "只有极客用得了：uv/pipx 安装、命令行、还要手工接 Claude Code hooks——而普通人真正想要的那句话（「我的助手记得我，而且记忆留在我自己机器上」）外面根本没有产品。",
+      "counter": "记忆是 agent 基建里争夺最凶的一层：Mem0、Zep、Letta 都拿了钱在发版，而 OpenAI 与 Anthropic 正把持久记忆变成平台原语——一旦如此，所有第三方记忆库都从产品退化成迁移工具。README 要专门警告仿冒站点分发恶意软件，也说明这个名字本身几乎没有护城河。",
+      "differentiator": "不做又一个记忆库，做消费级「可携带记忆」应用：一次性导入 ChatGPT、Claude、Copilot 的历史，全部留在本地，然后把相关的一小段交给用户今天正在用的那个助手。锁定来自用户自己的档案，而不是厂商。",
+      "consumer_angle": "普通人正在因为过期和换模型丢掉好几年的助手历史；产品是跟着人走的本地档案，不是 SDK。"
     }
   },
-  "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
+  "hook": "Developers who have wired their working life into an assistant and lost it to a 30-day expiry — one ran the miner for 38 hours at 100% CPU rather than give the archive up.",
   "pick": false,
   "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model.",
   "voices": [
     {
-      "quote": "…fident enough to try to fix this myself. I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write (`-32001 Peer MCP writer active`), and I have to keep reconnectin…",
-      "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885",
-      "src": "github",
-      "kind": "pain"
+      "kind": "pain",
+      "src": "GitHub issue",
+      "quote": "I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write",
+      "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885"
+    },
+    {
+      "kind": "pain",
+      "src": "GitHub issue",
+      "quote": "A background `mempalace mine --mode projects` run spun for 38 hours at 100% of one core",
+      "url": "https://github.com/MemPalace/mempalace/issues/2132"
+    },
+    {
+      "kind": "pain",
+      "src": "GitHub issue",
+      "quote": "Mine dedup is keyed by `source_file + mtime` globally, not per-wing. Once a transcript is mined into any wing, it cannot be re-mined into a different one",
+      "url": "https://github.com/MemPalace/mempalace/issues/2119"
     }
-  ]
+  ],
+  "does": "Local-first memory for AI assistants: conversations are stored verbatim (never summarised or paraphrased) and retrieved by semantic search over a structured index — wings for people and projects, rooms for topics, drawers for the raw text — on a pluggable vector backend (ChromaDB by default). Claims 96.6% R@5 on LongMemEval with zero API calls.",
+  "pain_verified": true,
+  "gap": "Only geeks can use it: uv/pipx install, a CLI, and hand-wired Claude Code hooks — while the thing ordinary people actually want ('my assistant remembers me, and the memory stays on my machine') has no product wrapped around it.",
+  "counter": "Memory is the most contested layer in agent infra: Mem0, Zep and Letta are funded and shipping, and OpenAI and Anthropic are turning durable memory into a platform primitive — the moment they do, every third-party store becomes a migration chore rather than a product. That the README has to warn users about impostor domains distributing malware tells you how little moat the name itself carries.",
+  "differentiator": "Not another store — a consumer portable-memory app: import ChatGPT, Claude and Copilot history once, keep it local, and hand the relevant slice to whichever assistant the user is in today. The lock-in is the user's own archive, not a vendor's.",
+  "consumer_angle": "Ordinary people are already losing years of assistant history to expiry and model-switching; the product is a local archive that follows them between assistants, not an SDK.",
+  "workload": "2m",
+  "verdict": "watch",
+  "family": "personal-context",
+  "image": "https://opengraph.githubassets.com/1/MemPalace/mempalace"
 }
