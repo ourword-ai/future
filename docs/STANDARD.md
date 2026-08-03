@@ -57,6 +57,44 @@ version) · `2m` (about two months) · `no` (out of reach alone).
   adversarial/complaint tooling, proxying for elders, group coordination, government-subsidy
   errands, creator business-ops).
 
+## 1a. The end-user gate (added 2026-08-03, from a 129-entry operator pass)
+
+**Before anything else, name the person.** An entry only qualifies if you can write, in one
+sentence: *who uses this — as a non-developer identity — and what finished thing they walk away
+with.* If the only honest answer is "a developer" or "an AI agent", it does not go on the board,
+no matter the star count.
+
+The operator marked the whole board on 2026-08-03: **27 ✅ / 102 ❌**. The ❌ pile is almost
+entirely one shape — tools whose user is a programmer or a coding agent:
+
+- terminal / CLI / TUI utilities (multiplexers, note apps, spreadsheets, markdown previewers)
+- coding-agent surroundings: harnesses, agent memory, statuslines, token counters, IDE plugins,
+  model switchers, "agent factories"
+- infrastructure *for agents to consume* ("built for agents", "a slide framework for agents")
+- developer infrastructure: databases, compilers, languages, object stores, K8s tooling
+- "the open-source alternative to <SaaS>" clones with no rework of the ordinary-person side
+
+The ✅ pile is the opposite shape — every one of them has a nameable civilian:
+a dental clinic front desk, someone learning guitar, a small-business owner whose phone rings
+after hours, a Chinese retail stock investor, a person who wants to know what is in their closet,
+someone making an audiobook, someone writing a novel.
+
+**The one allowed exception**: developer-facing tools where the AI produces *a finished artefact a
+human uses* — a design, a deck, a whole requirement→delivery chain. A deliverable, not a part.
+
+**Corollary for sourcing.** Star rate by source in that same pass:
+
+| source | ✅ | ❌ | hit rate |
+|---|---|---|---|
+| operator's own radar findings | 4 | 1 | **80%** |
+| Product Hunt | 8 | 7 | **53%** |
+| Hacker News | 2 | 7 | 22% |
+| GitHub trending / new repos | 13 | 87 | **13%** |
+
+GitHub supplied 100 of 129 entries at a 13% hit rate: it is structurally a developer-tool
+firehose and must not be the default intake. Weight Product Hunt and consumer-pain sources up,
+GitHub down, and go looking where ordinary people describe their own problems in their own words.
+
 ## 2. Integrity red line (checked before anything else)
 
 Popularity is never a defence — a 10k-star repo is still cut. Out: mass/automated account
@@ -186,6 +224,40 @@ issue 区也会把真话埋掉。所以**行为算较弱的一手证据**：fork
   机会是什么"；否则留在档案层，作为"某件事现在能做了"的证据。
 - **口味与私人痛点雷达统一**（生活流资产化、人生转型包、创作者产出流水线、锚点级文档翻译；硬排除：对抗维权、
   代际代劳、群体协调、政务补贴、创作者经营侧）。
+
+## 1a. 终端用户闸门（2026-08-03 新增，来自 129 条全量标记）
+
+**先说得出人，再谈别的。** 一条候选要成立，你必须能用一句话写清：*谁在用它——一个非开发者的身份——
+以及他因此拿到什么成品。* 如果诚实的答案只能是"开发者"或"某个 AI agent"，那它不上板，星数再高也不上。
+
+用户在 2026-08-03 对全板做了一次通标：**✅27 / ❌102**。❌ 那一堆几乎是同一个形状——
+使用者是程序员或 coding agent 的工具：
+
+- 终端 / CLI / TUI 工具（多路复用器、便签、表格、Markdown 预览）
+- coding agent 周边：harness、agent 记忆、状态栏、token 计数、IDE 插件、模型切换器、"agent 工厂"
+- **给 agent 用**的基础设施（"built for agents"、"给 agent 的幻灯片框架"）
+- 开发基础设施：数据库、编译器、语言、对象存储、K8s
+- "某某 SaaS 的开源替代"这类克隆，且没有对普通人那一侧做实质改造
+
+✅ 那一堆恰好相反，每一条都指得出一个具体的普通人：
+牙科诊所的前台、在学吉他的人、下班后电话没人接的小生意主、炒 A 股的散户、
+想知道自己衣柜里到底有什么的人、在做有声书的人、在写小说的人。
+
+**唯一允许的例外**：面向开发者但 AI 直接产出*人能拿去用的成品*——设计稿、幻灯片、
+一整条从需求到交付的链。是成品，不是零件。
+
+**由此推出的采集原则。** 同一次通标里按来源统计的命中率：
+
+| 来源 | ✅ | ❌ | 命中率 |
+|---|---|---|---|
+| 雷达自己挖的方向 | 4 | 1 | **80%** |
+| Product Hunt | 8 | 7 | **53%** |
+| Hacker News | 2 | 7 | 22% |
+| GitHub 趋势/新仓 | 13 | 87 | **13%** |
+
+GitHub 一家贡献了 129 条里的 100 条，命中率只有 13%：它在结构上就是一根开发者工具的消防水管，
+**不能再当默认进料口**。Product Hunt 与"普通人吐槽"类源加权，GitHub 降权，
+并且要主动去普通人用自己的话描述自己问题的地方找。
 
 ## 2. 完整性红线（先于一切判断）
 
