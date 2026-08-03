@@ -1,5 +1,66 @@
 {
   "_readme": "Operator marks. Key = finding id (e.g. 244-tandpfun-wardrobe) or owner/repo. mark: star | no | maybe. The board renders these; scouts read them as a reference signal (never an automatic score change). See docs/STANDARD.md section 5.",
-  "_example": {"mark": "star", "why": "真痛点", "at": "2026-07-29"},
-  "marks": {}
+  "_example": {
+    "mark": "star",
+    "why": "真痛点",
+    "at": "2026-07-29"
+  },
+  "marks": {
+    "176-darrylmorley-whatcable": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "242-penecho-penecho": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "286-neilsonnn-image-blaster": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "292-yap-oss-on-device-voice-dictation-for-macos-with": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "293-learn-by-rebuilding-redis-git-a-database-from-sc": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "295-mission-for-claude-code": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "296-clinicframe": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "297-soundgate-guitar": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "298-totem": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "299-denovo": {
+      "mark": "star",
+      "at": "2026-07-30"
+    },
+    "300-prelint": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "301-memorycustodian": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "302-ssd-streamed-expert-weights-collapsed-the-intell": {
+      "mark": "no",
+      "at": "2026-07-30"
+    },
+    "303-demand-for-self-owned-local-ai-memory-has-spille": {
+      "mark": "star",
+      "at": "2026-07-30"
+    }
+  }
 }
