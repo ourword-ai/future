@@ -129,6 +129,25 @@ Unifying taste with the private radar pushes the developer-tool stream — curre
 of most search traffic — down into the archive. Public reach will likely fall. This was chosen
 deliberately: the operator's judgement comes first.
 
+## Retro log
+
+### 2026-08-03 (week 2)
+- **The board was frozen and the dashboard said green.** GitHub Models was retired 2026-07-30; every
+  `llm_copy` / `editor_pick` call returned 410, so each scout held every candidate and exited "success"
+  with `posted: 0` — four days, zero ingestion. Fixed: pluggable OpenAI-compatible provider
+  (`LLM_BASE_URL` / `LLM_API_KEY` / `LLM_MODEL`), a 410/401 circuit breaker, and a 0-posted run under a
+  dead model now **fails the workflow**. Ingestion resumes only once the operator sets `LLM_API_KEY`.
+- Last week's `build` entries are all alive and independent after 6 days: penecho/penecho 1.8k★,
+  darrylmorley/whatcable 8.1k★, antirez/ds4 20k★. Too early to test the absorption rule.
+- Marks: **0 ✅ / 0 ❌**. The ⭐ rate on `build` entries — the one number that says whether this works —
+  is undefined for a second week. Nothing here is calibrated yet.
+- **New rule (promotional hook = defect).** A hook opening with "Revolutionize / Transform your /
+  Unlock / Meet / Empower / 颠覆 / 赋能" is vendor copy, not "who is in pain enough to pay". Such entries
+  jump the backfill queue ahead of score. 8 entries currently qualify.
+- **New rule (a voice must come from a user, not a maintainer).** Mining shipped contributor debugging
+  chatter ("I can't check that from here", "I can't reproduce") as first-hand pain. Bare "I can't" no
+  longer counts; only "I can't get/use/find/install/run …" does.
+
 ---
 
 # 中文版 · 什么条目才配上板
