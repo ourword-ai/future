@@ -22,6 +22,10 @@ jobs:
       - name: Run hn-scout
         env:
           GH_TOKEN: ${{ github.token }}
+          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: python scouts/hn_scout.py
       - name: Commit (conflict-safe; feed regenerated from merged set)
         run: |
