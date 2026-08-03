@@ -357,6 +357,9 @@ FAMILIES = [
     ("personal-context", ["memory", "context", "second brain", "human.md", "第二大脑", "上下文"]),
     ("home-sensing",     ["wifi sensing", "esp32", "sensor", "presence", "感知", "睡眠"]),
     ("doc-translate",    ["lab result", "contract", "insurance", "体检", "保单", "合同"]),
+    ("job-search",       ["job search", "job-search", "job application", "cover letter",
+                          "cv tailor", "resume tailor", "job portal", "求职", "简历", "招聘"]),
+    ("short-drama",      ["short drama", "短剧", "storyboard", "分镜", "novel to video", "小说推文"]),
 ]
 
 def family_of(f):
@@ -408,7 +411,9 @@ def load_marks(path="marks.json"):
 
 _PAY = re.compile(r"(would|i'?d|happily)\s+pay|pay(ing)?\s+for\s+this|take my money|"
                   r"是否收费|多少钱|愿意付费|想付钱|付费版|有没有付费|求托管|求个 ?saas", re.I)
-_PAIN = re.compile(r"\b(i (hate|gave up|wasted|struggle|can'?t)|so (annoying|painful|frustrating)|"
+_PAIN = re.compile(r"\b(i (hate|gave up|wasted|struggle)|"
+                   r"i can'?t (get|use|find|make|install|run|figure|open|import|load)|"
+                   r"so (annoying|painful|frustrating)|"
                    r"every ?(day|time) i|no (good|other) (tool|way)|too (hard|complicated) (to|for))|"
                    r"太麻烦|受不了|折腾|一直没找到|痛点|劝退", re.I)
 
