@@ -6,10 +6,23 @@
 <p align="center">
   🌐 <a href="https://ourword-ai.github.io/idea/">Live board</a> ·
   🤖 <a href="./llms.txt">llms.txt (for AI agents)</a> ·
-  📄 <a href="./docs/PROTOCOL.md">Protocol</a>
+  📄 <a href="./docs/PROTOCOL.md">Protocol</a> ·
+  🎯 <a href="./docs/STANDARD.md">Standard</a> ·
+  📡 <a href="./docs/RADAR.md">Radar</a>
 </p>
 
 ---
+
+## The radar
+
+Alongside the public board, this repo carries the operating state of the daily **pain-point radar** —
+the filter that decides what is worth surfacing at all:
+
+- [`docs/RADAR.md`](./docs/RADAR.md) — preference model, excitement bar, evidence standard, data sources
+- [`docs/RADAR-INDEX.md`](./docs/RADAR-INDEX.md) — every direction considered so far (the dedupe baseline)
+- [`docs/RADAR-LOG.md`](./docs/RADAR-LOG.md) — daily change log
+
+Migrated here on 2026-08-03; the repo is now the single source of truth.
 
 ## What this is
 
