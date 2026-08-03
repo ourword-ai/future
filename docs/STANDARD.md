@@ -95,6 +95,32 @@ GitHub supplied 100 of 129 entries at a 13% hit rate: it is structurally a devel
 firehose and must not be the default intake. Weight Product Hunt and consumer-pain sources up,
 GitHub down, and go looking where ordinary people describe their own problems in their own words.
 
+## 1b. One card shape, no exceptions (added 2026-08-03)
+
+Every entry ships the same fields regardless of which source it came from — Reddit, Xiaohongshu,
+X, Product Hunt, Hacker News, GitHub or the operator's own radar. A scout that cannot fill them
+does not get to post a thinner card; the writer fills them or the entry waits.
+
+**Required, or the entry is not front-page eligible:**
+
+| field | what it must answer |
+|---|---|
+| `hook` | who is in pain, and in pain enough to pay — concrete people, concrete pain |
+| `does` | what it concretely is + its standout capability, 1-2 sentences |
+| `gap` | why it is not solved well yet, in one sentence |
+| `counter` | the case against building it, and it must sting |
+| `differentiator` | your wedge — **and one cold-start entry point in Chinese and one in English** |
+| `value` | who exactly pays, for what outcome |
+| `risk` | the single concrete reason it fails |
+| `workload` | `2w` / `2m` / `no` |
+| `voices` | verbatim first-hand quotes with links, or `[]` — **never invented, never paraphrased** |
+| `i18n.zh` | faithful 中文 for claim / does / gap / counter / differentiator |
+
+`consumer_angle` is additionally required for anything developer-facing, per 1a.
+
+An entry missing any of these is **held, not published thin**. The daily run backfills 8 per
+pass, **starred entries first** — the operator's own picks are the ones that must be complete.
+
 ## 2. Integrity red line (checked before anything else)
 
 Popularity is never a defence — a 10k-star repo is still cut. Out: mass/automated account
@@ -258,6 +284,31 @@ issue 区也会把真话埋掉。所以**行为算较弱的一手证据**：fork
 GitHub 一家贡献了 129 条里的 100 条，命中率只有 13%：它在结构上就是一根开发者工具的消防水管，
 **不能再当默认进料口**。Product Hunt 与"普通人吐槽"类源加权，GitHub 降权，
 并且要主动去普通人用自己的话描述自己问题的地方找。
+
+## 1b. 一种卡片格式，没有例外（2026-08-03 新增）
+
+不管来自哪个源——Reddit、小红书、X、Product Hunt、Hacker News、GitHub，还是雷达自己挖的——
+每条上板内容都交同一套字段。scout 填不满就不许发一张更薄的卡；要么写满，要么让它等着。
+
+**缺任何一项就不具备上前台的资格：**
+
+| 字段 | 必须回答什么 |
+|---|---|
+| `hook` | 谁在痛，且痛到愿意付钱——具体的人、具体的痛 |
+| `does` | 它具体是什么 + 最突出的能力，1-2 句 |
+| `gap` | 为什么至今没被解好，一句话 |
+| `counter` | 反对做它的理由，而且要扎人 |
+| `differentiator` | 你的切入打法——**并且内含中英各一个冷启动入口** |
+| `value` | 谁确切地付钱，为什么结果付钱 |
+| `risk` | 它失败的那一个具体原因 |
+| `workload` | `2w` / `2m` / `no` |
+| `voices` | 带链接的逐字一手原话，或 `[]`——**绝不编造、绝不改写** |
+| `i18n.zh` | claim / does / gap / counter / differentiator 的忠实中文 |
+
+按 1a，任何面向开发者的条目还必须额外有 `consumer_angle`。
+
+缺字段的条目**扣住不发，而不是发一张薄卡**。每日一轮回填 8 条，**⭐ 的优先**——
+用户自己挑出来的那些，才是最该完整的。
 
 ## 2. 完整性红线（先于一切判断）
 
