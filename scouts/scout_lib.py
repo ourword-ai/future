@@ -10,7 +10,7 @@ the engine pay it back + record it. Fault-tolerant by design: any single failure
 skipped, never aborts the run.
 """
 from __future__ import annotations
-import os, sys, time, json, re, subprocess as sp, urllib.request, urllib.parse
+import os, sys, time, json, re, subprocess as sp, urllib.request, urllib.parse, urllib.error
 
 # import the barter engine from repo root
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
@@ -196,12 +196,59 @@ def _fetch_readme(f):
             continue
     return ""
 
+# ---------------------------------------------------------------------------
+# LLM transport. GitHub Models (models.github.ai) was FULLY RETIRED 2026-07-30, so
+# the provider is configurable: point LLM_BASE_URL / LLM_API_KEY / LLM_MODEL at any
+# OpenAI-compatible endpoint. Without a working provider every card call fails and the
+# scouts hold every candidate — a silent 0-posted run. That failure is made loud below.
+# ---------------------------------------------------------------------------
+LLM_BASE_URL = (os.environ.get("LLM_BASE_URL") or "https://models.github.ai/inference").rstrip("/")
+LLM_DEAD = ""        # reason string once the provider says retired/unauthorised; stops retrying
+
+def _llm_key():
+    return (os.environ.get("LLM_API_KEY") or os.environ.get("GITHUB_TOKEN")
+            or os.environ.get("GH_TOKEN") or "")
+
+def _llm_model(default="openai/gpt-4o-mini"):
+    return os.environ.get("LLM_MODEL") or os.environ.get("GH_MODELS_MODEL") or default
+
+def _llm_chat(prompt, model=None, max_tokens=800, temperature=0.0, timeout=45):
+    """One OpenAI-compatible chat completion. Returns the text, or None when the provider
+    is unusable. A 401/403/404/410 trips a process-wide breaker, so a retired endpoint
+    costs one call per run instead of three per candidate."""
+    global LLM_DEAD
+    if LLM_DEAD:
+        return None
+    key = _llm_key()
+    if not key:
+        LLM_DEAD = "no API key (set LLM_API_KEY)"
+        return None
+    body = json.dumps({"model": model or _llm_model(), "temperature": temperature,
+                       "max_tokens": max_tokens,
+                       "messages": [{"role": "user", "content": prompt}]}).encode()
+    req = urllib.request.Request(LLM_BASE_URL + "/chat/completions", data=body,
+          headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+                   "User-Agent": "future-scout"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())["choices"][0]["message"]["content"]
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403, 404, 410):
+            LLM_DEAD = f"HTTP {e.code} from {LLM_BASE_URL} — provider gone or key rejected"
+            print(f"  [llm] provider unusable: {LLM_DEAD}", file=sys.stderr)
+        raise
+
+def llm_down_note():
+    """One actionable line for the run log when nothing could be written."""
+    return (f"0 cards written — LLM provider unusable ({LLM_DEAD}). GitHub Models was retired "
+            "2026-07-30; set repo secret LLM_API_KEY and vars LLM_BASE_URL / LLM_MODEL to any "
+            "OpenAI-compatible endpoint.")
+
 def llm_copy(f):
     """Product-first, BILINGUAL, README-grounded card copy in ONE GitHub Models call. Returns
     does/edge/why_use/value/risk (+hook) plus f['i18n']['zh']; None on failure (keep heuristic)."""
-    tok=os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not tok: return None
-    model=os.environ.get("GH_MODELS_MODEL","openai/gpt-4o-mini")
+    if not _llm_key(): return None
+    model=_llm_model()
     ev=", ".join(f.get("evidence", []) or [])
     readme=_fetch_readme(f)
     voices_txt = "\n".join(f"- [{v.get('kind')}] {v.get('quote','')[:200]} ({v.get('url','')})"
@@ -236,15 +283,14 @@ def llm_copy(f):
         f"Project: {f.get('title','')} - {f.get('claim','')}\n"
         f"Signals: {ev}\nDomain: {f.get('domain','')}\n\n"
         f"README (for grounding):\n{readme}\n\nJSON only.")
-    fallback=os.environ.get("GH_MODELS_FALLBACK","openai/gpt-4o")
+    fallback=os.environ.get("LLM_MODEL_FALLBACK") or os.environ.get("GH_MODELS_FALLBACK","openai/gpt-4o")
     for _i, _mdl in enumerate((model, model, fallback)):   # retry, then a stronger fallback model
-        body=json.dumps({"model":_mdl,"temperature":0.4,"max_tokens":1100,
-                         "messages":[{"role":"user","content":prompt}]}).encode()
+        if LLM_DEAD:
+            break
         try:
-            req=urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-                headers={"Authorization":f"Bearer {tok}","Content-Type":"application/json","User-Agent":"future-scout"})
-            with urllib.request.urlopen(req, timeout=45) as r:
-                txt=json.loads(r.read())["choices"][0]["message"]["content"]
+            txt=_llm_chat(prompt, model=_mdl, max_tokens=1100, temperature=0.4)
+            if txt is None:
+                break
             obj=json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
             if all(obj.get(k) for k in ("does","value","risk")):
                 out={k:str(obj[k]).strip()[:500] for k in ("does","value","risk")}
@@ -508,10 +554,9 @@ def editor_pick(f, voices=None):
     Returns (pick, reason, score, extra) with extra carrying verdict/workload/gap/
     consumer_angle; (None, None, None, {}) if the model is unavailable -> the caller holds the
     candidate for the next run rather than shipping it unvetted."""
-    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not tok:
+    if not _llm_key():
         return None, None, None, {}
-    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
+    model = _llm_model()
     ev = ", ".join(f.get("evidence", []) or [])
     vq = "\n".join(f"- [{v.get('kind')}] {v.get('quote','')[:180]}" for v in (voices or [])) or "(none found)"
     bh = behaviour_signal(f)
@@ -563,14 +608,10 @@ def editor_pick(f, voices=None):
         "\"gap\":\"one sentence: why it is not solved well yet\", "
         "\"consumer_angle\":\"the ordinary-person opportunity, or empty if it already is one\", "
         "\"reason\":\"one short sentence\"}")
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 320,
-                       "messages": [{"role": "user", "content": prompt}]}).encode()
     try:
-        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
-                       "User-Agent": "future-scout"})
-        with urllib.request.urlopen(req, timeout=40) as r:
-            txt = json.loads(r.read())["choices"][0]["message"]["content"]
+        txt = _llm_chat(prompt, model=model, max_tokens=320, temperature=0, timeout=40)
+        if txt is None:
+            return None, None, None, {}
         obj = json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
         verdict = str(obj.get("verdict") or "").strip().lower()
         if verdict not in ("build", "watch", "archive", "drop"):
@@ -679,6 +720,14 @@ def post_ideas(cands, scout, cap=6):
         except Exception as e:
             print(f"  [skip one] {e!r}", file=sys.stderr)
             continue
+    # A 0-posted run with a dead model is an OUTAGE, not a dry spell — fail loudly so it
+    # cannot hide behind a green check for days (docs/STANDARD.md 0: missing an item is cheap,
+    # a frozen board is not). SCOUT_STRICT=0 downgrades this to an annotation.
+    if LLM_DEAD and not posted:
+        note = llm_down_note()
+        print(f"::error::{note}", file=sys.stderr)
+        if os.environ.get("SCOUT_STRICT", "1") == "1" and not DRY:
+            raise SystemExit(78)
     return posted
 
 def post_predictions(cands, scout, cap=3):
@@ -778,27 +827,22 @@ def translate_zh(f, fields=("claim", "hook", "why_good", "value", "risk")):
     """Translate the given English card fields to Simplified Chinese via GitHub Models.
     PRESERVES the English (adds a translation, never rewrites). Returns {field: zh}
     for the requested fields, {} if nothing to do, or None on model failure/quota."""
-    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not tok:
+    if not _llm_key():
         return None
     src = {k: f.get(k) for k in fields if f.get(k)}
     if not src:
         return {}
-    model = os.environ.get("GH_MODELS_MODEL", "openai/gpt-4o-mini")
+    model = _llm_model()
     prompt = (
         "Translate each value below into fluent, natural Simplified Chinese for a Chinese "
         "startup/developer audience. Keep product, repo, company and tech names in Latin "
         "script (e.g. GitHub, Figma, Claude Code, Codex). Be faithful but idiomatic, not "
         "word-for-word. Reply with ONLY a JSON object using the SAME keys.\n\n"
         + json.dumps(src, ensure_ascii=False))
-    body = json.dumps({"model": model, "temperature": 0.3, "max_tokens": 900,
-                       "messages": [{"role": "user", "content": prompt}]}).encode()
     try:
-        req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body,
-              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
-                       "User-Agent": "future-scout"})
-        with urllib.request.urlopen(req, timeout=45) as r:
-            txt = json.loads(r.read())["choices"][0]["message"]["content"]
+        txt = _llm_chat(prompt, model=model, max_tokens=900, temperature=0.3)
+        if txt is None:
+            return None
         m = re.search(r"\{.*\}", txt, re.S)
         obj = json.loads(m.group(0))
         return {k: str(obj[k]).strip()[:400] for k in src if obj.get(k)}
