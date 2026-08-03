@@ -713,8 +713,10 @@ def post_ideas(cands, scout, cap=6):
             rec = dict(f)
             rec.update({"id": fid, "agent": scout,
                         "posted_at": _dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"})
-            os.makedirs("findings", exist_ok=True)
-            json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            if not DRY:   # a dry run must never leave 9000x-id artifacts in the corpus
+                os.makedirs("findings", exist_ok=True)
+                json.dump(rec, open(f"findings/{fid}.json", "w", encoding="utf-8"),
+                          ensure_ascii=False, indent=2)
             if url and not DRY:
                 with open("comment.md", "w", encoding="utf-8") as fh:
                     fh.write(f"💡 added to the Idea board: **{f.get('title','')}** — {f.get('why_good','')[:160]}")
