@@ -23,6 +23,10 @@ jobs:
       - name: Comment the payment
         env:
           GH_TOKEN: ${{ github.token }}
+          # GitHub Models retired 2026-07-30 — point these at any OpenAI-compatible endpoint
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: gh issue comment ${{ github.event.issue.number }} --repo "$GITHUB_REPOSITORY" --body-file comment.md
       - name: Commit finding + feed
         run: |
