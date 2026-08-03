@@ -6267,8 +6267,8 @@
       "claim": "HBAI-Ltd/Toonflow-app — Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source A",
       "score": 9,
       "why_good": "Turns novels/scripts into animated short dramas with AI (writing, storyboard, character + video gen) — riding China's booming short-drama economy where volume and cost matter.",
-      "value": "Sell to creators/agencies/edu on a hosted tier + credits for AI video gen; the short-drama market pays for cheap batch output.",
-      "risk": "AI video is capital-heavy and moves fast; big platforms and model labs can ship the same pipeline and outspend an indie.",
+      "value": "短剧工作室 and 小说 IP holders who already pay per generated second — they pay for the step that stops wasting those seconds: a shot list that survives to the last panel.",
+      "risk": "剪映 or 可灵 bundling storyboard generation natively; nine contributors carrying a 13k-star repo.",
       "evidence": [
         "https://github.com/HBAI-Ltd/Toonflow-app",
         "12,801★",
@@ -6295,15 +6295,49 @@
         "zh": {
           "claim": "HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧本快速转成动画短剧(AI 编剧、智能分镜、角色与视频生成),跨平台桌面轻量部署。",
           "why_good": "用 AI 把小说/剧本变成动画短剧(编剧、分镜、角色+视频生成)——踩在中国爆火的短剧经济上,量和成本正是关键。",
-          "value": "按托管版 + AI 视频生成点数,卖给创作者/机构/教育;短剧市场愿为便宜的批量产出付费。",
-          "risk": "AI 视频重资本、变化快;大平台和模型厂商能做出同样流水线并烧过独立团队。",
-          "hook": "用 AI 把小说或剧本变成动画短剧——踩在中国短剧的风口上。"
+          "value": "已经在按秒为生成付费的短剧工作室与小说 IP 方——他们愿意为「不再浪费这些秒」的那一步买单：一张能撑到最后一格的分镜表。",
+          "risk": "剪映或可灵原生集成分镜生成；1.3 万星的仓库只靠 9 位贡献者撑着。",
+          "hook": "中文短剧团队真的在拿它出片，然后卡在最要命的一步：分镜表生成到一半被截断、分镜图 prompt 是空的、docker 部署卡到没法用——他们已经在为生成付费，只是这一步一直不成。",
+          "does": "开源桌面应用，把小说或剧本一路带到动画短剧：AI 编剧 → 分镜表与分镜图 → 角色与图像生成 → 视频合成，全程用你自己的模型 key。跨平台、部署轻量，几周内 1.3 万星。",
+          "gap": "它击中了真痛点但解得不完美，而且恰恰断在最关键的一环：剧本 → 分镜表 → 提示词会被截断，还会「成功写入」却一条都看不到，创作者只能盯着 token 上限反复重跑。此外它实际只服务中文用户——一个英文用户连登录弹窗都过不去。",
+          "counter": "这是板上最吃资本的一条：每一秒成片都在烧模型钱，而可灵 / 即梦 / 海螺 同时握着模型和分发——字节把整条流水线塞进剪映，一夜之间就能把独立开发者挤出价格。1.3 万星背后只有 9 位贡献者，bus factor 是 1。整条流水线正是标准里排除的「烧钱抢速度」赛道，对你开放的只有其中很窄、纯文本的一刀。",
+          "differentiator": "别做流水线。做那个一直坏、又几乎不花钱的环节：一个绝不截断的「小说 → 分镜表」转换器（分块、可续跑、结构校验），并把每个镜头的干净提示词导出到可灵 / 即梦 / Runway——按剧本卖给那些本来就在别处为生成付费的短剧工作室。",
+          "consumer_angle": "它本来就是创作者产品：买家是小型短剧工作室，不是开发者。"
         }
       },
-      "hook": "Turns a novel or script into an animated short drama with AI — riding China's short-drama boom.",
+      "hook": "中文短剧团队真的在拿它出片，然后卡在最要命的一步：分镜表生成到一半被截断、分镜图 prompt 是空的、docker 部署卡到没法用——他们已经在为生成付费，只是这一步一直不成。",
       "pick": false,
       "pick_reason": "The project is an open-source tool that lacks a clear monetization strategy and is too similar to existing solutions.",
-      "voices": []
+      "voices": [
+        {
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro",
+          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/232"
+        },
+        {
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "对话框显示《分镜面板已成功写入12条数据》 但是一个都没看到。导致生成不了",
+          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/237"
+        },
+        {
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "docker部署后，浏览器打开页面，非常卡",
+          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/234"
+        }
+      ],
+      "does": "An open-source desktop app that carries a novel or script all the way to an animated short drama: AI screenwriting → shot list and storyboard → character and image generation → video assembly, driven by your own model keys. Cross-platform, light deploy, 13k stars in weeks.",
+      "pain_verified": true,
+      "gap": "It hits a real pain but solves it imperfectly, and it breaks at exactly the step that matters: script → shot list → prompts truncates and silently writes empty panels, so the operator babysits token limits and re-runs. There is also no version for anyone outside 中文 — an English user could not get past the login dialog.",
+      "counter": "This is the most capital-exposed entry on the board: every second of output costs model money, and 可灵 / 即梦 / 海螺 own both the model and the distribution — ByteDance can fold the whole pipeline into 剪映 and price an indie out overnight. 13k stars sit on nine contributors, so the bus factor is one. The full pipeline is precisely the burn-money-for-speed race the standard excludes; only a narrow, text-only slice of it is open to you.",
+      "differentiator": "Do not build the pipeline. Build the one step that keeps breaking and costs almost nothing to run: a 小说 → 分镜表 converter that never truncates (chunked, resumable, schema-validated) and exports clean, per-shot prompts into 可灵 / 即梦 / Runway — sold per script to the 短剧工作室 who are already paying for generation somewhere else.",
+      "consumer_angle": "Already a creator product: the buyer is the small 短剧 studio, not a developer.",
+      "workload": "2w",
+      "verdict": "build",
+      "family": "short-drama",
+      "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app"
     },
     {
       "title": "xbtlin/ai-berkshire",
@@ -6466,8 +6500,8 @@
       "claim": "MadsLorentzen/ai-job-search — The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor C",
       "score": 9,
       "why_good": "A local, on-your-machine AI job-search framework (evaluate postings, tailor applications) — privacy-first appeal for a painful, high-volume task.",
-      "value": "Charge job seekers a subscription for automation + tailored applications; the pain and urgency are real.",
-      "risk": "Saturated job-search space; LinkedIn/Indeed and general agents can automate applications, and retention dies after a hire.",
+      "value": "Mid-career switchers in a single national market paying for a structured month of search; the interview-rehearsal half is the only part that survives the hire.",
+      "risk": "A first-party 'job search' skill from the model vendor reduces this to prompts; churn-on-success caps lifetime value.",
       "evidence": [
         "https://github.com/MadsLorentzen/ai-job-search",
         "27,556★",
@@ -6494,34 +6528,30 @@
         "zh": {
           "claim": "MadsLorentzen/ai-job-search —— 跑在你自己机器上的 AI 求职框架(基于 Claude Code):评估岗位、定制申请。",
           "why_good": "一个本地、在你机器上跑的 AI 求职框架(评估岗位、定制申请)——对一个痛苦、高频的任务主打隐私优先。",
-          "value": "给求职者卖订阅:自动化 + 定制申请;痛点和紧迫感都真实。",
-          "risk": "求职赛道饱和,LinkedIn/Indeed 加通用 agent 都能自动投递;拿到 offer 后很难留存。",
-          "hook": "一个跑在你自己机器上的 AI 求职——评估岗位、为每份申请定制。"
+          "value": "单一市场里的中期转行者，为「一个月有章法的求职」付费；面试演练是唯一能活过入职那天的部分。",
+          "risk": "模型厂商自己出一个「求职」skill，它就退化成 prompt；「一成功就流失」封死终身价值。",
+          "hook": "一位被裁的地球物理学家拿它跑了自己的求职——69 份定制申请、20 场初面、1 份签下的合同——之后 9,800 人 fork 了它，相当于 star 数的三分之一。",
+          "does": "一套把 fork 变成求职流水线的 Claude Code 工作流：`/setup` 建立个人档案，`/scrape` 抓岗位，`/apply` 用「起草—评审」双角色循环产出简历与求职信，`/interview` 陪你演练。核心流程与国家无关，但自带的招聘平台技能是丹麦的（Jobindex、Jobnet、Akademikernes Jobbank）。",
+          "gap": "本土市场是空的，打包方式又只面向开发者：流程本身通用，平台技能却是丹麦专用；而且要用它就得 fork 仓库、在终端里驱动 Claude Code。",
+          "counter": "把脚手架拆掉，它本质是一叠 prompt——Anthropic 上线一个求职 skill，这个仓库就只剩 README。它还继承了整个品类的致命形状：最好的客户因为成功而流失，LinkedIn 手握岗位、关系图和免费的匹配分，而作者的战绩只是 n=1 的样本。",
+          "differentiator": "只取不骚扰雇主的那一半——匹配评分与面试演练——为一个非英语市场做成托管版，按「一次求职周期」而不是按投递份数收费。",
+          "consumer_angle": "这本来就是普通人的事；缺的是一个被裁的非开发者不用 fork 任何东西就能打开的版本。"
         }
       },
-      "hook": "An AI job hunt that runs on your own machine — evaluates postings and tailors every application.",
+      "hook": "A geophysicist whose position was cut ran this on his own search — 69 tailored applications, 20 first interviews, one signed contract — and 9,800 people have forked it since, a third of everyone who starred it.",
       "pick": true,
       "pick_reason": "The project addresses a significant pain point in job searching with a privacy-first approach, showing strong community interest and potential for monetization.",
-      "voices": [
-        {
-          "quote": "…2.5.1 and it renders identical to current `master`, two pages, no clash. **The one thing I can't check from here is whether `\\namefont` exists in 2.3.1.** It's been part of moderncv's style architecture for a long time so I'd…",
-          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083767204",
-          "src": "github",
-          "kind": "pain"
-        },
-        {
-          "quote": "…lysis neither reproduces: `lualatex cv/main_example.tex` exits 0 with no option clash. So I can't confirm the 2.3.1 failures directly, but both mechanisms check out on inspection. `moderncv.cls` really does load hyperref itself…",
-          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/242#issuecomment-5083313655",
-          "src": "github",
-          "kind": "pain"
-        },
-        {
-          "quote": "…the model is \"read this one folder, then copy it in\", so the user reviews what they run. I can't offer the same standing endorsement for a whole application whose code can change after I've linked it, and I don't want to keep…",
-          "url": "https://github.com/MadsLorentzen/ai-job-search/issues/234#issuecomment-5070008472",
-          "src": "github",
-          "kind": "pain"
-        }
-      ]
+      "voices": [],
+      "does": "A Claude Code workflow that turns a fork into a job-application pipeline: `/setup` builds your profile, `/scrape` pulls postings, `/apply` runs a drafter–reviewer loop over CV and cover letter, `/interview` rehearses you. The core workflow is country-agnostic; the shipped portal skills target Denmark (Jobindex, Jobnet, Akademikernes Jobbank).",
+      "pain_verified": true,
+      "gap": "The local-market case is empty and the packaging is developer-only: the workflow is generic but the portal skills are Danish, and using it at all means forking a repo and driving Claude Code from a terminal.",
+      "counter": "Strip the scaffolding and this is a folder of prompts — Anthropic ships one job-search skill and the repo becomes a README. It also inherits the category's fatal shape: your best customers churn by succeeding, LinkedIn owns the postings, the graph and a free match score, and the author's own results are a sample of one.",
+      "differentiator": "Take the half that does not spam employers — fit scoring and interview rehearsal — host it for one non-English market, and charge per active search rather than per application.",
+      "consumer_angle": "Already a consumer job: what is missing is the version a laid-off non-developer can open without forking anything.",
+      "workload": "2m",
+      "verdict": "watch",
+      "family": "job-search",
+      "image": "https://opengraph.githubassets.com/1/MadsLorentzen/ai-job-search"
     },
     {
       "title": "Gitlawb/openclaude",
@@ -6621,8 +6651,8 @@
       "claim": "MemPalace/mempalace — The best-benchmarked open-source AI memory system. And it's free.",
       "score": 9,
       "why_good": "Positions as the best-benchmarked open-source memory layer for agents — memory is a real, unsolved need every agent product hits.",
-      "value": "Sell a hosted/managed memory API + enterprise (retention, multi-tenant) to agent builders who don't want to run it.",
-      "risk": "Crowded (Mem0, Zep, Letta) and memory may get absorbed into the agent frameworks; 'best benchmark' needs independent proof.",
+      "value": "People with years of assistant history who change models often — a paid local app, plus a team tier for firms whose transcripts cannot leave the building.",
+      "risk": "If Anthropic or OpenAI ship durable cross-session memory by default, the whole category collapses into a one-off migration tool.",
       "evidence": [
         "https://github.com/MemPalace/mempalace",
         "57,793★",
@@ -6649,30 +6679,57 @@
         "zh": {
           "claim": "MemPalace/mempalace —— 跑分最好的开源 AI 记忆系统,而且免费。",
           "why_good": "定位为 agent 的跑分最好开源记忆层——记忆是每个 agent 产品都会撞上、且尚未解决的真实需求。",
-          "value": "给不想自建的 agent 开发者卖托管记忆 API + 企业版(留存、多租户)。",
-          "risk": "很挤(Mem0、Zep、Letta),记忆还可能被 agent 框架吸收;最佳跑分需要独立验证。",
-          "hook": "跑分最好的开源 agent 记忆——免费,而且需求是真的。"
+          "value": "拥有多年助手历史、又经常换模型的人——付费本地应用，加上一个面向「记录不能出楼」的公司团队版。",
+          "risk": "Anthropic / OpenAI 一旦默认提供跨会话持久记忆，整个品类就塌缩成一次性迁移工具。",
+          "hook": "那些把工作生活都接到助手上、又被 30 天过期一次清空的开发者——有人宁可让 miner 以 100% CPU 跑上 38 小时，也不肯放弃那份档案。",
+          "does": "本地优先的 AI 助手记忆层：对话原文逐字保存（不摘要、不改写），用语义检索在结构化索引上取回——人和项目是 wing，话题是 room，原文放在 drawer——检索后端可插拔（默认 ChromaDB）。宣称在 LongMemEval 上 R@5 达 96.6%，且零 API 调用。",
+          "gap": "只有极客用得了：uv/pipx 安装、命令行、还要手工接 Claude Code hooks——而普通人真正想要的那句话（「我的助手记得我，而且记忆留在我自己机器上」）外面根本没有产品。",
+          "counter": "记忆是 agent 基建里争夺最凶的一层：Mem0、Zep、Letta 都拿了钱在发版，而 OpenAI 与 Anthropic 正把持久记忆变成平台原语——一旦如此，所有第三方记忆库都从产品退化成迁移工具。README 要专门警告仿冒站点分发恶意软件，也说明这个名字本身几乎没有护城河。",
+          "differentiator": "不做又一个记忆库，做消费级「可携带记忆」应用：一次性导入 ChatGPT、Claude、Copilot 的历史，全部留在本地，然后把相关的一小段交给用户今天正在用的那个助手。锁定来自用户自己的档案，而不是厂商。",
+          "consumer_angle": "普通人正在因为过期和换模型丢掉好几年的助手历史；产品是跟着人走的本地档案，不是 SDK。"
         }
       },
-      "hook": "The best-benchmarked open-source memory for agents — free, and the need is very real.",
+      "hook": "Developers who have wired their working life into an assistant and lost it to a 30-day expiry — one ran the miner for 38 hours at 100% CPU rather than give the archive up.",
       "pick": false,
       "pick_reason": "The project appears to be a collection of existing concepts without a clear, unique value proposition or business model.",
       "voices": [
         {
-          "quote": "…fident enough to try to fix this myself. I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write (`-32001 Peer MCP writer active`), and I have to keep reconnectin…",
-          "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885",
-          "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "I love the tool, but I'm seeing this pretty much every time I complete a task for my work: sessions lose the ability to write",
+          "url": "https://github.com/MemPalace/mempalace/issues/1963#issuecomment-4997664885"
+        },
+        {
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "A background `mempalace mine --mode projects` run spun for 38 hours at 100% of one core",
+          "url": "https://github.com/MemPalace/mempalace/issues/2132"
+        },
+        {
+          "kind": "pain",
+          "src": "GitHub issue",
+          "quote": "Mine dedup is keyed by `source_file + mtime` globally, not per-wing. Once a transcript is mined into any wing, it cannot be re-mined into a different one",
+          "url": "https://github.com/MemPalace/mempalace/issues/2119"
         }
-      ]
+      ],
+      "does": "Local-first memory for AI assistants: conversations are stored verbatim (never summarised or paraphrased) and retrieved by semantic search over a structured index — wings for people and projects, rooms for topics, drawers for the raw text — on a pluggable vector backend (ChromaDB by default). Claims 96.6% R@5 on LongMemEval with zero API calls.",
+      "pain_verified": true,
+      "gap": "Only geeks can use it: uv/pipx install, a CLI, and hand-wired Claude Code hooks — while the thing ordinary people actually want ('my assistant remembers me, and the memory stays on my machine') has no product wrapped around it.",
+      "counter": "Memory is the most contested layer in agent infra: Mem0, Zep and Letta are funded and shipping, and OpenAI and Anthropic are turning durable memory into a platform primitive — the moment they do, every third-party store becomes a migration chore rather than a product. That the README has to warn users about impostor domains distributing malware tells you how little moat the name itself carries.",
+      "differentiator": "Not another store — a consumer portable-memory app: import ChatGPT, Claude and Copilot history once, keep it local, and hand the relevant slice to whichever assistant the user is in today. The lock-in is the user's own archive, not a vendor's.",
+      "consumer_angle": "Ordinary people are already losing years of assistant history to expiry and model-switching; the product is a local archive that follows them between assistants, not an SDK.",
+      "workload": "2m",
+      "verdict": "watch",
+      "family": "personal-context",
+      "image": "https://opengraph.githubassets.com/1/MemPalace/mempalace"
     },
     {
       "title": "santifer/career-ops",
       "claim": "santifer/career-ops — Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor",
       "score": 9,
       "why_good": "Turns job hunting into a structured A–F rubric score per listing — more rigorous than keyword matching, for a painful high-volume task.",
-      "value": "Subscription for job seekers (auto-scan + score + tailored apply); the urgency and pain are real.",
-      "risk": "Same saturated space as every AI job tool; LinkedIn/Indeed can add scoring, and retention ends at the hire.",
+      "value": "Job seekers in one national market paying for a month of clarity — which 30 of 900 postings deserve their evening — rather than for volume.",
+      "risk": "LinkedIn ships a free fit score; churn-on-success caps lifetime value no matter how good the product is.",
       "evidence": [
         "https://github.com/santifer/career-ops",
         "61,813★",
@@ -6699,15 +6756,30 @@
         "zh": {
           "claim": "santifer/career-ops —— 开源 AI 求职:扫招聘网站,用结构化 A–F 评分体系把岗位打成 1.0–5.0 分。",
           "why_good": "把找工作变成对每个岗位的结构化 A–F 打分——比关键词匹配更严谨,面向一个痛苦、高频的任务。",
-          "value": "给求职者卖订阅(自动扫+打分+定制投递);紧迫感和痛点都真实。",
-          "risk": "和每个 AI 求职工具一样饱和;LinkedIn/Indeed 能加打分,拿到 offer 后就没留存。",
-          "hook": "用 A–F 评分体系给每个岗位打分——一个严谨的 AI 求职,而非关键词匹配。"
+          "value": "单一市场的求职者，为「一个月的清醒」付费——900 个岗位里哪 30 个值得投——而不是为投递量付费。",
+          "risk": "LinkedIn 免费上线匹配分；「一成功就流失」封死了客户终身价值。",
+          "hook": "把简历一份份投进 ATS 黑洞的人——已经有 12,300 人 fork 回去跑自己的版本、197 人在给它提交代码——依然分不清今晚这 900 个岗位里哪一个值得花一小时。",
+          "does": "开源求职系统：扫描各招聘平台，用结构化 A–F 评分体系把每个岗位折算成 1.0–5.0 的匹配分，再定制简历与求职信并跟踪投递漏斗。Node/CLI，自带模型 key，README 有 17 种语言。",
+          "gap": "只有极客用得了：要 clone 仓库、配置、在终端里用自己的 API key 驱动——而最需要它的人上周刚被裁，从没打开过终端。",
+          "counter": "客户一成功就消失——求职是消费软件里留存最差的品类；LinkedIn 和 Indeed 免费给匹配分，还带着你买不到的分发；Simplify、Teal 和一堆自动投递工具早就在卖付费版。更糟的是，ATS 厂商正在专门识别这类批量定制文本，你的招牌功能站在军备竞赛输的一侧。",
+          "differentiator": "卖判断，不卖广撒网：面向单一本土市场做一个不用终端的托管版「我到底该不该投、为什么不该」评分器（中文：BOSS直聘 / 猎聘，这里根本没有诚实的匹配分），按「一次求职周期」收费——这样也不会被 ATS 反垃圾系统盯上。",
+          "consumer_angle": "它本来就是面向普通人的，缺口全在于它以开发者仓库的形态交付，而不是产品。"
         }
       },
-      "hook": "Scores every job posting on an A–F rubric — a rigorous AI job hunt, not keyword matching.",
+      "hook": "People grinding out applications into ATS black holes — 12,300 of them have forked this to run their own copy, and 197 are patching it — still cannot tell which of tonight's 900 postings is worth an hour.",
       "pick": false,
       "pick_reason": "The project is a tool for job searching but lacks a clear monetizable product and is essentially a collection of features without a unique value proposition.",
-      "voices": []
+      "voices": [],
+      "does": "An open-source job-search system: it scans job portals, grades every listing against a structured A–F rubric into a 1.0–5.0 fit score, then tailors the CV and cover letter and tracks the funnel. Node/CLI, bring your own model key, READMEs in 17 languages.",
+      "pain_verified": true,
+      "gap": "Only geeks can use it: it is a repo you clone, configure and drive from a terminal with your own API key — and the person who needs it most was laid off last week and has never opened one.",
+      "counter": "The customer disappears by succeeding — job search has the worst retention curve in consumer software — while LinkedIn and Indeed give away a match score with distribution you cannot buy, and Simplify, Teal and a dozen auto-appliers already sell the paid version. Worse, ATS vendors are building detectors for exactly this kind of mass-tailored output, so the headline feature is on the losing side of an arms race.",
+      "differentiator": "Sell the decision, not the spray: a hosted, no-terminal 'should I even apply, and why not' scorer for one national market (中文: BOSS直聘 / 猎聘, where an honest fit score does not exist), priced per active search — which keeps you off the ATS spam filter's target list.",
+      "consumer_angle": "It is already aimed at ordinary people; the whole gap is that it ships as a developer repo instead of a product.",
+      "workload": "2m",
+      "verdict": "watch",
+      "family": "job-search",
+      "image": "https://opengraph.githubassets.com/1/santifer/career-ops"
     },
     {
       "title": "Speechius",
@@ -7457,8 +7529,8 @@
       "claim": "Show HN: Getting GLM 5.2 running on my slow computer",
       "score": 9,
       "why_good": "A Show HN write-up on squeezing GLM-5.2 onto a slow machine — great signal that 'run big models on weak hardware' resonates, but it's a post, not a product.",
-      "value": "The opportunity is the tooling that makes this one-click; the post itself isn't a business.",
-      "risk": "A demonstration/blog, not a company; the real value goes to whoever productizes the technique (see colibri/ds4).",
+      "value": "Privacy-bound professionals (lawyers, clinicians, defence-adjacent) and the uncensored-model crowd, who already buy hardware to avoid the cloud; the sale is a paid desktop app, not tokens.",
+      "risk": "Free incumbents (Ollama, LM Studio, llama.cpp) can absorb tiered offload at any time, and the speed ceiling keeps the audience small.",
       "evidence": [
         "https://github.com/JustVugg/colibri",
         "https://news.ycombinator.com/item?id=48842459",
@@ -7479,34 +7551,49 @@
         "zh": {
           "claim": "Show HN: 在我的慢电脑上把 GLM 5.2 跑起来。",
           "why_good": "一篇把 GLM-5.2 塞进慢机器的 Show HN 记录——很好地证明弱硬件跑大模型有共鸣,但它是帖子不是产品。",
-          "value": "机会在把这件事变成一键的工具;帖子本身不是生意。",
-          "risk": "是演示/博客不是公司;真正价值属于把这个技巧产品化的人(见 colibri/ds4)。",
-          "hook": "把 GLM-5.2 塞进慢电脑——证明「弱硬件跑大模型」很有共鸣。"
+          "value": "受合规约束的专业人士（律师、医生、涉密相关）与无审查模型用户，他们本来就在为「不上云」买硬件；卖的是付费桌面应用，不是 token。",
+          "risk": "免费在位者（Ollama、LM Studio、llama.cpp）随时能补上分层卸载，而速度天花板决定了受众规模有限。",
+          "hook": "那些不肯把自己的东西传到别人服务器上、又没法为一台 768GB 内存的云主机买单的人，只能在 7B 玩具和永远交不完的 API 账单之间二选一。",
+          "does": "纯 C、零引擎依赖的推理引擎，把 SSD、内存、显存当作一整套内存层级来调度，于是 744B–2.8T 的 MoE 模型（GLM-5.2、Inkling、Kimi K3）能跑在消费级和混合硬件上。每个模型家族一个 C 文件，共用 `coli chat / serve / web`，仪表盘能看到 19,456 个专家分别驻留在哪一层。",
+          "gap": "只有极客用得了：这是一套要你自己编译、摆放、调参的 C 引擎，而一台普通 32GB 笔记本的主人根本无从知道自己到底能跑哪个前沿模型、几 tok/s、要付出多少 SSD 寿命。",
+          "counter": "1–5 tok/s 是演示不是工作流——HN 帖子里读者自己就在问「5 tok/s 能干什么」。Ollama 和 LM Studio 占着「本地模型 + 好看的窗口」这个位置，一个小版本就能加上分层卸载，llama.cpp 已经有 MoE offload；API 价格每便宜一个月，把 744B 留在家里的理由就薄一分。而且你要卖的产品，诚实的免责声明是「会磨损用户的 SSD」。",
+          "differentiator": "别再写引擎。在别人的引擎上做诚实的能力层：读一遍机器就告诉你「GLM-5.2 int4，约 3 tok/s，每小时约写入 40GB」，然后默认带磨损上限地一键装好——卖给那批已经明说「愿意用速度换掌控」的隐私与无审查用户。",
+          "consumer_angle": "普通人那侧的产品是「我这台电脑到底能跑多大的模型、代价是什么」——一个把速度和 SSD 磨损如实写在前面的一键本地运行器，而不是又一个引擎。"
         }
       },
-      "hook": "Getting GLM-5.2 onto a slow machine — proof that 'big models on weak hardware' resonates.",
+      "hook": "People who refuse to send their work to someone else's server — and cannot justify renting a 768 GB cloud box — are stuck choosing between a 7B toy and a permanent API bill.",
       "pick": false,
       "pick_reason": "The project is a post rather than a product, lacking a clear monetizable offering.",
       "voices": [
         {
-          "quote": "…t cause entirely** and `TC_W4A16` is a coincidence — his config differs from mine in ways I can't test here: 4×A100, `CUDA_EXPERT_GB=auto`, `PIN_GB=all` (full residency, so the `:1575` resident path rather than my streaming one…",
-          "url": "https://github.com/JustVugg/colibri/issues/685#issuecomment-5121251282",
-          "src": "github",
-          "kind": "pain"
+          "kind": "pay",
+          "src": "Hacker News",
+          "quote": "doing the math on what it costs to rent a 768GB+ RAM AWS system with 40+ high performance CPU cores makes it very unappealing to pay for 12, 24, 36 months of it",
+          "url": "https://news.ycombinator.com/item?id=48858151"
         },
         {
-          "quote": "…llows it (projected peak 456.6 GB; set CAP_RAISE=0 to disable) ### Reproduction steps Hi, I can't get colibri answering correctly with cuda enabled and 4 H100 40G cards I only get random tokens as response Am I missing somethin…",
-          "url": "https://github.com/JustVugg/colibri/issues/685",
-          "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "src": "Hacker News",
+          "quote": "…[people who will not] submit everything they do to an off site service, or let their content be used for unknown training purposes, and will tolerate slowness at 1 to 10 tok/s as a tradeoff.",
+          "url": "https://news.ycombinator.com/item?id=48855745"
         },
         {
-          "quote": "…ault. The comment justifying it cites a **speed** measurement (+14%, expert-matmul −16%); I can't find a quality number anywhere. On real ARM decode the loss is probably **larger** than what I measured, because at S=1 the exper…",
-          "url": "https://github.com/JustVugg/colibri/issues/153",
-          "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "src": "Hacker News",
+          "quote": "The page has an SSD wear warning. I use desktop PCs that I build from components so I can replace the SSD, but what do users with soldered SSD do? Just avoid these applications or forge ahead disregarding the possible early burnout of their storage?",
+          "url": "https://news.ycombinator.com/item?id=48853358"
         }
-      ]
+      ],
+      "does": "A pure-C inference engine with zero engine dependencies that treats SSD, RAM and VRAM as one managed memory hierarchy, so 744B–2.8T MoE models (GLM-5.2, Inkling, Kimi K3) run on consumer and mixed hardware. One C file per model family behind the same `coli chat / serve / web` front end, with a dashboard showing which of the 19,456 experts are resident on which tier.",
+      "pain_verified": true,
+      "gap": "Only geeks can use it: it is a C engine you build, place and tune, and nothing tells the owner of an ordinary 32 GB laptop which frontier model their machine can actually hold, at what tok/s, or how much SSD life it will cost them.",
+      "counter": "At 1–5 tok/s this is a demonstration, not a workflow — the thread's own readers ask what 5 tok/s is even good for. Ollama and LM Studio own the 'local model with a window' slot and can add tiered offload in a point release, llama.cpp already ships MoE offload, and each month of cheaper API tokens thins the reason to keep a 744B model at home. You would also be shipping a product whose honest disclaimer is that it wears out the customer's SSD.",
+      "differentiator": "Do not write another engine. Ship the honest capability layer on top of one: a profiler that reads the machine and says 'GLM-5.2 int4, ~3 tok/s, ~40 GB of SSD writes per hour', then one-click installs it with wear limits on by default — aimed at the privacy-and-uncensored crowd who have already said they will trade speed for control.",
+      "consumer_angle": "The ordinary-person product is 'which big model can MY computer run, and what does it cost my hardware' — a one-click local runner with honest speed and SSD-wear numbers, not another engine.",
+      "workload": "2w",
+      "verdict": "watch",
+      "family": "local-llm",
+      "image": "https://opengraph.githubassets.com/1/JustVugg/colibri"
     },
     {
       "title": "Openbase",
