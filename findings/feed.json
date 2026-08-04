@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T04:33:47Z",
+  "generated_at": "2026-08-04T04:36:54Z",
   "findings": [
     {
       "claim": "petdex has 3,686 stars and a live submission queue of hand-drawn sprite pets — including a steady stream of Chinese submissions and an IP-holder takedown request — but every one of those pets can only be seen inside a coding-agent terminal. The 桌宠 audience it borrows from has had nothing new since Shimeji.",
@@ -827,7 +827,10 @@
           "why_use": "想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。",
           "value": "坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
           "risk": "苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。",
-          "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。"
+          "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
+          "gap": "痛点击中了但解得不完美，而且隐私承诺有个洞：Intel Mac 上会回落到苹果服务器，README 那句「什么都不出本机」并没有讲清楚。另外只能用系统语言口述——这是 issue 区呼声最高的一条——等于把所有双语用户默默排除在外。",
+          "counter": "这是一家拿过融资的公司（Frigade）的副产品仓，窗口是他们自己的；而 macOS 自带听写就在设置里一个开关之外。对苹果 API 的薄封装，一个周末就能复刻，没有会累积的资产。",
+          "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。"
         }
       },
       "pick": true,
@@ -835,7 +838,36 @@
       "id": "292-yap-oss-on-device-voice-dictation-for-macos-with",
       "agent": "hn-scout",
       "posted_at": "2026-07-29T09:47:50Z",
-      "voices": []
+      "voices": [
+        {
+          "kind": "demand",
+          "quote": "First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.",
+          "url": "https://github.com/FrigadeHQ/yap/issues/7",
+          "user": "kballenegger",
+          "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "I'd love to be able to dictate in 2 langu[ages]",
+          "url": "https://github.com/FrigadeHQ/yap/issues/15",
+          "user": "iamchrishckns",
+          "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
+          "url": "https://github.com/FrigadeHQ/yap/issues/16",
+          "user": "lissy93",
+          "src": "github-issue"
+        }
+      ],
+      "gap": "It hits a real pain but solves it imperfectly, and the privacy promise has a hole: on Intel Macs it falls back to Apple's servers, which the README's 'nothing leaves your machine' framing does not make obvious. There is also no way to dictate in a language other than the system locale — the single most-requested thing in the tracker — which quietly excludes every bilingual user.",
+      "counter": "This is a funded startup's side repo (Frigade), so the opening is theirs to close, and macOS ships dictation for free one settings toggle away. A thin wrapper over an Apple API is a weekend to clone and has no asset that compounds.",
+      "differentiator": "The wedge is not transcription, it is the bilingual person Apple ignores: one hotkey per language, mixed Chinese-English in a single sentence without switching anything, and cleanup that knows which words are proper nouns in the other language. Ship on-device only and say so honestly — no silent server fallback. Cold start (Chinese): 小红书 and V2EX threads on 「语音输入法 中英混说」, where bilingual users complain that every dictation tool forces one language; Cold start (English): the Yap tracker itself (issues #2 and #15 are the request), plus r/macapps.",
+      "workload": "2w",
+      "consumer_angle": "Non-developer user: anyone who writes more than they type comfortably — a bilingual professional, someone with RSI, a person drafting messages while walking. Finished thing: text already in the app they were using, no cloud round-trip.",
+      "pain_verified": true,
+      "verdict": "watch"
     },
     {
       "title": "Renhuai123/ziwei-doushu",
@@ -875,7 +907,10 @@
           "why_use": "做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。",
           "value": "中文命理是被验证过的付费市场（测算 App、知识付费、直播看盘）。最优路径不是做 C 端，而是当排盘 API / 授权后端卖给 AI 测算和陪伴类产品。",
           "risk": "只有 2 个贡献者，且品类政策脆弱：国内应用商店和支付渠道对命理变现多有限制，大厂测算 App 也能从同样的公开古籍重新推导算法。",
-          "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。"
+          "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。",
+          "gap": "痛点击中了，但在离人一层的地方停住了：3317 星、736 fork——fork 超过星的五分之一，在这块板上算行为证据——说明有人在自己搭；但现在存在的是排盘引擎，不是一个人能开口问的东西。用人话讲出来的那份解读，还是缺的。",
+          "counter": "这个品类在会付钱的那个市场里政策脆弱：国内应用商店和支付渠道对测算变现有限制，所以分发就是全部问题，而算法来自公开古籍，任何在位者都能重新推一遍。两位贡献者，对一个必须准确的知识库来说也太薄。这里还得自限——这是民俗文本不是建议，一旦滑向替人决定要不要接那份工作，就是责任。",
+          "differentiator": "别再做一个测算 app，做那层诚实的翻译。盘进去，人话出来，每一句都脚注到它出自哪一段古籍原文，并且明写这是文化文本、不是建议。别人没有的资产是结构化的原文——就靠出处站住，而这恰好是免费 app 拿不出来的东西。冷启动（中文）：小红书与豆瓣的紫微斗数小组，人们贴一张盘的截图问这是什么意思；冷启动（英文）：r/ChineseAstrology 与 r/asianastrology，同样的盘贴出来，英文世界根本没有解读。"
         }
       },
       "pick": true,
@@ -883,7 +918,14 @@
       "id": "284-renhuai123-ziwei-doushu",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T06:40:46Z",
-      "voices": []
+      "voices": [],
+      "gap": "It hits a real pain but stops one layer short of the person: 3.3k stars and 736 forks — a fork-to-star ratio above a fifth, which on this board counts as behaviour evidence — say builders are standing up their own copies, but what exists is a charting engine, not something a person asks a question of. The reading, in plain language, is still missing.",
+      "counter": "The category is policy-fragile in the market that pays for it: Chinese app stores and payment channels restrict 测算 monetisation, so distribution is the whole problem and the algorithms are public classics any incumbent can re-derive. Two contributors is also thin for a knowledge base that has to be right. And there is a self-limit here — this is folklore, not advice; the moment it drifts into telling someone whether to take the job, it is a liability.",
+      "differentiator": "Do not build another 测算 app; build the honest translation layer. Chart in, plain-language reading out, every claim footnoted to the classical passage it came from, and an explicit line that this is a cultural text and not advice. The asset nobody else has is the structured original text — lean on provenance, which is exactly what the free apps cannot show. Cold start (Chinese): 小红书 and 豆瓣 紫微斗数 groups, where people post a chart screenshot and ask what it means; Cold start (English): r/ChineseAstrology and r/asianastrology, where the same charts are posted with no reading available in English at all.",
+      "workload": "2w",
+      "consumer_angle": "Non-developer user: a person curious about their own chart who cannot read classical Chinese. Finished thing: a readable page about their chart with the source passage beside each line.",
+      "pain_verified": false,
+      "verdict": "watch"
     },
     {
       "title": "KunAgent/Kun",
@@ -955,17 +997,20 @@
       "does": "A React slide framework aimed at coding agents: describe a deck in natural language, the agent emits components, and open-slide handles canvas, scaling, layout and export.",
       "edge": "Agents got good at writing decks and had nowhere to render them — PowerPoint XML is hostile to generate and hand-rolled HTML slides break on scaling. 6k stars for plumbing rather than an end-user app says builders want a slide target they can emit into.",
       "why_use": "Gives an agent a deck format it can actually write, with the layout and scaling problems already solved.",
-      "hook": "Transform agent-generated content into stunning presentations with open-slide.",
+      "hook": "6k stars for slide plumbing means the decks are already being generated — and nobody has built the place an ordinary person opens them.",
       "i18n": {
         "zh": {
           "claim": "将代理生成的内容转化为令人惊叹的演示文稿，使用 open-slide。",
-          "hook": "使用 open-slide，将代理生成的内容转化为令人惊叹的演示文稿。",
+          "hook": "给幻灯片管道 6000 星，说明片子早就在被生成了——只是没人做出普通人打开它的那个地方。",
           "does": "面向编码 Agent 的 React 幻灯片框架：用自然语言描述一份 deck，Agent 生成组件，open-slide 负责画布、缩放、排版和导出。",
           "edge": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。",
           "why_use": "给 Agent 一种它真能写出来的幻灯片格式，排版和缩放问题已经替你解决。",
           "value": "框架是切入点，不是产品。钱在上一层：托管渲染、团队品牌与模板锁定、带浏览分析的分享链接，以及把 PPTX/PDF 导出做成付费 API——很多 Agent 产品都需要“导出成 deck”，但都不会自己做。Gamma 已经证明幻灯片工具撑得起订阅定价。",
           "risk": "它更像一个功能而不是一家公司。Gamma、Canva、微软都在加 Agent 生成 deck 的能力，而掌握助手入口的一方随时可以内置幻灯片输出，让框架变得多余。MIT 协议的管道层很容易被吸收，真正有护城河的托管层目前还不存在。",
-          "why_good": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。"
+          "why_good": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。",
+          "gap": "只有极客用得了：它是个 React 框架，交付物停在源码。真正需要一份 PPT 的是老师、销售、学生——他们要的是站在会议室里能打开的文件，而且上面得是公司规定的字体。",
+          "counter": "这是个功能不是公司。Gamma、Canva、微软都在发 agent 写片子，模板库和渠道本来就在他们手上；一个 MIT 框架一个版本就被吸收掉。真正会累积的资产属于握着助手的那一方，不属于握着渲染器的这一方。",
+          "differentiator": "跳过框架，去做没有框架肯做的最后一公里：品牌锁定。拿公司现成的 PPTX 模板，学会它的母版，让 AI 生成的每一份片子一出来就已经长在里面——字体解析好、logo 放好、导出成同事能直接改的 PPTX。只干一件事：「我的片子看上去就是我们公司的片子」。冷启动（中文）：小红书、知乎上「PPT 模板 公司规范」的帖子与秋叶PPT 评论区，打工人在那里讲自己手动套版套到几点；冷启动（英文）：r/powerpoint 与 r/consulting 搜 brand template deck reformat。"
         }
       },
       "pick": true,
@@ -973,15 +1018,22 @@
       "id": "280-1weiho-open-slide",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T06:40:06Z",
-      "voices": []
+      "voices": [],
+      "gap": "Only geeks can use it: it is a React framework, so the deliverable stops at source code. The person who needs a deck is a teacher, a salesperson, a student — they need a file that opens in the room they are standing in, with their employer's fonts on it.",
+      "counter": "This is a feature, not a company. Gamma, Canva and Microsoft are all shipping agent-authored decks with the template library and the distribution already in place, and an MIT framework is absorbed in one release. The durable asset here belongs to whoever owns the assistant, not to whoever owns the renderer.",
+      "differentiator": "Skip the framework and sell the last mile that no framework does: brand lock-in. Take a company's existing PPTX template, learn its masters, and make every AI-generated deck come out already inside it — fonts resolved, logo placed, exportable to PPTX that a colleague can edit. One job: 'my deck already looks like our deck'. Cold start (Chinese): 小红书 and 知乎 threads on 「PPT 模板 公司规范」and 秋叶PPT's comment sections, where office workers describe re-formatting decks by hand; Cold start (English): r/powerpoint and r/consulting, search 'brand template deck reformat'.",
+      "workload": "2m",
+      "consumer_angle": "Non-developer user: an office worker who has to present tomorrow. Finished thing: a PPTX in the company template, already formatted, that a colleague can open and edit.",
+      "pain_verified": false,
+      "verdict": "watch"
     },
     {
       "title": "Leaping AI",
       "claim": "Product Hunt: Leaping AI — AI agents that call and text in multi-day campaigns",
       "score": 7,
       "why_good": "Leaping AI automates phone calls and text messages over extended campaigns, allowing businesses to engage with prospects efficiently. It supports personalized interactions, making it easier to follow up and nurture leads.",
-      "value": "Sales teams in small to medium-sized businesses pay for Leaping AI to enhance their lead engagement and conversion rates.",
-      "risk": "The reliance on traditional CRM systems and their established communication methods may hinder adoption.",
+      "value": "A one-to-five-person service business, priced against a single recovered job per month.",
+      "risk": "Regulation, not competition: automated outbound calling is where this category dies, and the pivot inward gives up the thing that makes it sound exciting.",
       "evidence": [
         "https://www.producthunt.com/r/ZTOYWVYEMJZG4Y?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/leaping-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -1000,31 +1052,49 @@
       "id": "276-leaping-ai",
       "agent": "producthunt-scout",
       "posted_at": "2026-07-29T04:53:40Z",
-      "does": "Leaping AI automates phone calls and text messages over extended campaigns, allowing businesses to engage with prospects efficiently. It supports personalized interactions, making it easier to follow up and nurture leads.",
+      "does": "Voice agents that run an outbound sequence over days rather than a single call: they phone and text a prospect, remember the last conversation, and keep going until the person books or says no.",
       "edge": "Leaping AI uniquely combines voice and text communication in a single platform, enabling seamless multi-day engagement.",
       "why_use": "Choose Leaping AI for its ability to maintain personalized communication over longer periods, which traditional CRM tools lack.",
-      "hook": "Transform your outreach with Leaping AI's multi-day calling and texting agents.",
+      "hook": "A clinic or a trades outfit that loses the job because nobody chased the lead on day three — the follow-up nobody has time to make.",
       "i18n": {
         "zh": {
           "claim": "通过Leaping AI的多日拨打和发送短信代理，转变您的外展方式。",
-          "hook": "通过Leaping AI的多日拨打和发送短信代理，转变您的外展方式。",
-          "does": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
+          "hook": "一家诊所、一个修车行，活丢在第三天没人跟进的那一下——谁都没空打的那通回访。",
+          "does": "能跨天跑的语音 agent：不是打一通就完，而是连着几天给潜在客户打电话、发短信，记得上一次聊到哪，直到对方约上或者明确说不。",
           "edge": "Leaping AI独特地将语音和文本通信结合在一个平台中，实现无缝的多日互动。",
           "why_use": "选择Leaping AI，因为它能够保持个性化的沟通，持续时间更长，而传统的CRM工具则缺乏这一点。",
-          "value": "中小型企业的销售团队为Leaping AI支付，以增强他们的潜在客户互动和转化率。",
-          "risk": "对传统CRM系统及其既定沟通方式的依赖可能会阻碍采用。",
-          "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。"
+          "value": "一到五个人的服务型小生意，对标「一个月捞回一单」。",
+          "risk": "要命的是监管不是竞争：自动外呼正是这个品类死掉的地方，而掉头朝内又恰好放弃了它听起来最带劲的那部分。",
+          "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
+          "gap": "它是为有 CRM 的销售团队做的。真正因为没跟进而丢钱的，是两个人一本本子的小店，而这个品类的每个产品开场第一句都是「你用哪个 CRM」。",
+          "counter": "外呼 AI 是整个语音 agent 市场里最挤的一条道，而且两头都在收紧——欧美的同意规则，中国这边营销外呼对小经营者基本已经关死。诚实的风险不是竞争，是在那个能跑通的价格上它根本不合法。",
+          "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。"
         }
       },
-      "voices": []
+      "voices": [
+        {
+          "kind": "pain",
+          "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
+          "url": "https://old.reddit.com/r/smallbusiness/",
+          "user": "burgerknapper",
+          "src": "reddit"
+        }
+      ],
+      "gap": "It is built for a sales team with a CRM. The person who actually loses money to unmade follow-ups is a two-person shop with a notebook, and every product in this category starts by asking which CRM you use.",
+      "counter": "Outbound AI calling is the most crowded lane in the whole voice-agent market and it is being regulated in both directions — consent rules in the US and EU, and in China outbound marketing calls are effectively closed to a small operator. The honest risk is not competition, it is that the product is illegal to run at the price point that makes it interesting.",
+      "differentiator": "Invert it: do not call the customer, call the owner. The same multi-day machinery, pointed inward — it phones the owner once a day with the three follow-ups that are going cold and drafts the message for each, which the owner sends themselves. No consent problem, no CRM, no dialler. Cold start (Chinese): 小红书 and 抖音 comment sections under 单人理发店 / 修车行 daily-life posts; Cold start (English): r/smallbusiness, where owners describe exactly this failure — 'I sometimes am agreeing to appointment times and days. But then I just keep it all in my head'.",
+      "workload": "2m",
+      "consumer_angle": "Non-developer user: the owner-operator of a small service business. Finished thing: the follow-ups that would have been forgotten, actually sent.",
+      "pain_verified": true,
+      "verdict": "watch"
     },
     {
       "title": "Narcooo/inkos",
       "claim": "Agent system for long-form story creation — novels, screenplays, interactive film/games, IP franchises and multilingual translation — shipped as an npm package (@actalk/inkos) under AGPL.",
       "score": 7,
       "why_good": "Long-form consistency (plot state, character continuity) is exactly what chat-based AI writing can't hold, and inkos productizes the full pipeline for it. 1,558 forks with near-daily commits shows real builder adoption, rooted in the Chinese web-novel/IP market that already pays for writing throughput.",
-      "value": "Per-seat tooling for webnovel studios and IP factories, plus AGPL dual-licensing for platforms that embed it. The wedge is owning the production pipeline of AI-native fiction, where output volume converts directly to revenue.",
-      "risk": "With an open AGPL pipeline the differentiation lives in prompts and orchestration that frontier models may absorb natively; and content businesses carry copyright overhang on both training inputs and generated IP.",
+      "value": "A web-novel writer paid by the chapter — the readable-output-per-hour number is literally their wage. Monthly subscription priced against one extra chapter a day.",
+      "risk": "The demand is real but the quality ceiling belongs to the model, not to you; if frontier models close the long-form consistency gap natively, the orchestration layer evaporates.",
       "evidence": [
         "https://github.com/Narcooo/inkos",
         "8,403★",
@@ -1051,11 +1121,47 @@
         "zh": {
           "claim": "面向长篇创作的智能体系统 — 长短篇小说、剧本、互动影游、IP 内容与多语言翻译，以 npm 包（@actalk/inkos）发布，AGPL 协议。",
           "why_good": "长篇一致性（情节状态、人物连续性）正是聊天式 AI 写作守不住的东西，inkos 把整条流水线产品化。1,558 个 fork 加上近乎日更的提交说明有真实的开发者采用，且扎根于本就为写作产能付费的中文网文/IP 市场。",
-          "value": "面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
-          "risk": "AGPL 开放流水线意味着差异化只剩提示词与编排，前沿模型可能原生吸收；内容生意在训练输入与生成 IP 两端都悬着版权风险。"
+          "value": "按章拿钱的网文作者——每小时能出多少可读文字，字面上就是他的工资。月订阅，对标「一天多写一章」。",
+          "risk": "需求是真的，但质量天花板归模型不归你；前沿模型一旦原生解决长篇一致性，中间这层编排就蒸发了。",
+          "hook": "想写完一本网文的人，不是想跑一个 npm 包的人：8685 星、1631 fork 说明胃口是真的，issue 区说明写手卡在第四章。",
+          "does": "一条把长篇故事撑住的 agent 流水线——情节状态、人物连续性、世界规则——从大纲一路推到一章又一章，同一套骨架还能出剧本、互动游戏和翻译。以 npm 包（@actalk/inkos）交付，得自己配模型 key。",
+          "gap": "只有极客用得了，而且出来的东西还是流水账。真正想要它的人是写网文的，不是写 Node 的：要先装 Node 20+、手改 .env、挑模型供应商，才能写下第一句；侥幸装上的那批人报告章节字数失控、开局全都撞在同一个矿洞里。",
+          "counter": "「同质化」不是能打补丁的 bug，那就是让模型连写 300 章的必然结果，所有竞品都会撞上同一堵墙。同时番茄、起点这些平台正在给已经住在那里的写手直接发自家写作助手，后面还连着分发和稿费。让烂小说写得更快的工具，没人买。",
+          "differentiator": "别交付流水线，交付稿子。一键桌面安装、模型 key 预置，产品承诺只收窄到 issue 区证明已经坏掉的那一件事：把 20 万字撑住不崩、每章字数就是作者要的那个数。卖「不一样」而不是卖「量」——写到第一章就提示你又在写那个下矿开局。冷启动（中文）：inkos 自己的 issue 区，加番茄小说作者交流群与龙的天空论坛，写手自己在那里抱怨这几件事；冷启动（英文）：r/WritingWithAI 与 r/HFY 搜 lost the plot chapter。"
         }
       },
-      "voices": []
+      "voices": [
+        {
+          "kind": "pain",
+          "quote": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。",
+          "url": "https://github.com/Narcooo/inkos/issues/166",
+          "user": "Kstd-Con",
+          "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制",
+          "url": "https://github.com/Narcooo/inkos/issues/248",
+          "user": "12sysw",
+          "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。",
+          "url": "https://github.com/Narcooo/inkos/issues/236",
+          "user": "qixidao",
+          "src": "github-issue"
+        }
+      ],
+      "hook": "Someone who wants to finish a web novel, not someone who wants to run an npm package: 8.7k stars and 1.6k forks say the appetite is real, and the issue tracker says the writer is stuck at chapter four.",
+      "does": "An agent pipeline that holds a long story together — plot state, character continuity, four-transformation-style world rules — and drives it from outline to chapter after chapter, with screenplay, interactive-game and translation modes on the same spine. It ships as an npm package (@actalk/inkos) you configure with your own model key.",
+      "gap": "Only geeks can use it, and the output still reads like filler. The person who wants this is a web-novel writer, not a Node developer: they must install Node 20+, hand-edit a .env, and pick a model provider before the first sentence — and the ones who get through report chapters that lose word-count control and plots that converge on the same opening.",
+      "counter": "The sameness complaint is not a bug you can patch — it is what a language model does when you ask it for 300 chapters, and every competitor will hit the same wall. Meanwhile Chinese platforms (番茄/起点) are shipping their own authoring assistants to the writers who already live there, with the distribution and the payout attached. A tool that makes bad novels faster has no buyer.",
+      "differentiator": "Do not ship a pipeline; ship a manuscript. One-click desktop install with a model key pre-wired, and the product's promise is narrowed to the single job the issue tracker proves is broken: keep a 200k-character story consistent and keep each chapter at the length the writer asked for. Sell the divergence, not the volume — a 'sameness check' that flags when chapter one is drifting into the same mine-shaft opening as everyone else's. Cold start (Chinese): the inkos issue tracker itself plus 番茄小说作者交流 and 龙的天空 forums, where writers post exactly these complaints; Cold start (English): r/WritingWithAI and r/HFY, search 'lost the plot chapter'.",
+      "workload": "2m",
+      "consumer_angle": "The ordinary person here is a working web-novel author, and the finished thing they walk away with is a chapter they can publish today — this qualifies under the one allowed exception (AI producing a deliverable a human uses), not as developer infrastructure.",
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "title": "yizhiyanhua-ai/fireworks-tech-graph",
@@ -1403,8 +1509,8 @@
       "claim": "Product Hunt: Forgeon — Create, publish, and experience interactive stories",
       "score": 7,
       "why_good": "A platform to create, publish and play AI interactive stories — rides the interactive-fiction + AI wave with a creator-economy angle.",
-      "value": "Creator platform: subscriptions + a marketplace/rev-share on published stories; AI lowers the authoring bar.",
-      "risk": "Interactive fiction is a passionate but small market; AI Dungeon and character apps already compete for it.",
+      "value": "A parent, once per birthday, for a physical keepsake — not a subscription to a story feed.",
+      "risk": "Personalised children's books is itself a crowded print-on-demand niche; the AI part has to buy something the incumbents cannot, and 'branching' may not be it.",
       "evidence": [
         "https://www.producthunt.com/r/AFVYUCU2FMSEPA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/forgeon-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -1429,19 +1535,33 @@
         "zh": {
           "claim": "Product Hunt: Forgeon —— 创作、发布、体验互动故事。",
           "why_good": "一个创作、发布、玩 AI 互动故事的平台——踩在互动小说 + AI 浪潮上,带创作者经济角度。",
-          "value": "创作者平台:订阅 + 已发布故事的市场/分成;AI 降低创作门槛。",
-          "risk": "互动小说是个热情但小的市场;AI Dungeon 和角色 app 已在争夺。"
+          "value": "一个家长，一年一次生日，为一件实体纪念品付钱——不是订阅一个故事流。",
+          "risk": "个性化童书本身就是拥挤的按需印刷小生意；AI 这部分得买到在位者买不到的东西，而「分支」大概率不是。",
+          "hook": "一个想让今晚的睡前故事里有自家孩子的家长——不是一个想写互动小说的爱好者。",
+          "does": "做、发、玩 AI 互动故事的平台：你描述一个世界，它变成别人能走进去、还能改的东西。",
+          "gap": "它对准的是互动小说爱好者，那是一个小而且早就被服务过的人群——AI Dungeon 和角色扮演类应用几年前就到了。没人把同一套机器对准这样一个人：他不要类型也不要社区，只要一个故事，就今晚，主角是他爱的人。",
+          "counter": "互动小说做了四十年一直是个热情但很小的市场，AI 没有把它做大，只是把供给做到了无限——那正好是市场型产品最不需要的。会付钱的那批受众已经被 Character.ai 一类吃掉，而平台经济需要的创作者飞轮，这个拿不到。",
+          "differentiator": "砍掉平台和市集，只交付一件东西。一本短的、有插图的分支故事，主角叫孩子自己的名字、里面有孩子自己的涂鸦，十分钟做完，能导出 PDF 或者印成书——家长会留着的那个东西，不是他会刷的那个流。冷启动（中文）：小红书搜「睡前故事 定制」和绘本 DIY 帖，家长本来就在为「印上名字的绘本」付钱；冷启动（英文）：r/Parenting 和 r/DnD 的 kids campaign 帖。"
         }
       },
-      "voices": []
+      "voices": [],
+      "hook": "A parent who wants tonight's bedtime story to have their kid in it — not a hobbyist who wants to write interactive fiction.",
+      "does": "A platform for making, publishing and playing AI-driven interactive stories: you describe a world, it becomes something other people can walk through and change.",
+      "gap": "It is aimed at the interactive-fiction hobbyist, which is a small and already-served audience — AI Dungeon and the character-chat apps got there years ago. Nobody has pointed the same machinery at the person who does not want a genre or a community, just one story, tonight, starring someone they love.",
+      "counter": "Interactive fiction has been a passionate, small market for forty years and AI has not enlarged it — it has only made the supply infinite, which is the opposite of what a marketplace needs. Character.ai and its clones already own the audience that would pay, and platform economics need a creator flywheel this will not get.",
+      "differentiator": "Drop the platform and the marketplace; ship one artefact. A short, illustrated, branching story with the child's own name and their own drawings in it, finished in ten minutes and exportable as a PDF or a printed book — the thing a parent keeps, not a feed they browse. Cold start (Chinese): 小红书 搜「睡前故事 定制」and 绘本 DIY threads, where parents already pay for name-personalised picture books; Cold start (English): r/Parenting and r/DnD's 'kids campaign' threads.",
+      "workload": "2m",
+      "consumer_angle": "Non-developer user: a parent. Finished thing: a printed, personalised storybook — a deliverable, which is what this board's one exception requires.",
+      "pain_verified": false,
+      "verdict": "archive"
     },
     {
       "title": "Estera",
       "claim": "Estera — an AI receptionist that answers a business's phone calls and WhatsApp 24/7 (Product Hunt launch, 129 upvotes).",
       "score": 7,
       "why_good": "An AI receptionist that answers a business's phone and WhatsApp 24/7 — a clear ROI for SMBs losing calls after hours.",
-      "value": "Per-seat/per-minute SaaS to SMBs (clinics, salons, trades); missed calls = lost revenue, so they pay readily.",
-      "risk": "Crowded AI-voice-receptionist space; reliability, latency and local-language handling decide the winners.",
+      "value": "A single-chair or single-bay owner, priced against one lost customer a month.",
+      "risk": "In English it is a crowded capital race; in Chinese the honest blocker is platform rules, and pretending otherwise is how this becomes parasitic.",
       "evidence": [
         "https://www.producthunt.com/r/GSPE3HHD2AHU47?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
         "https://www.producthunt.com/products/estera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -1465,11 +1585,25 @@
         "zh": {
           "claim": "Estera —— 一个 7×24 接听企业电话和 WhatsApp 的 AI 前台(Product Hunt,129 分)。",
           "why_good": "一个 7×24 接听企业电话和 WhatsApp 的 AI 前台——对 下班后漏接电话 的中小企业 ROI 清晰。",
-          "value": "按席位/分钟向中小企业(诊所、美容院、装修)收费;漏接=丢收入,他们愿意付。",
-          "risk": "AI 语音前台很挤;可靠性、延迟和本地语言处理决定输赢。"
+          "value": "一张椅子、一个工位的老板，对标「一个月少丢一个客人」。",
+          "risk": "英文侧是烧钱的挤压赛；中文侧诚实的拦路虎是平台规则，装作不是，就是把它做成寄生。",
+          "hook": "卷帘门一拉下来，今晚问过价的那三个人已经走到隔壁去了。",
+          "does": "AI 前台：24 小时接商家的电话和 WhatsApp，答标准问题、把时间约上，第二天早上给老板一份摘要。上线当天 Product Hunt 129 票。",
+          "gap": "切口不在能力，在渠道：这个品类的每个产品都默认有一个电话号码和一套日历 API。中文这边，问询是以微信消息落到个人号上的，所以整条品类原样翻译不过来——而英文那侧本身已经很挤。",
+          "counter": "语音前台是当下应用 AI 里最挤的一条道，各路资金都在投，胜负由延迟和本地语言可靠性决定——那是烧钱比赛，不是切口。中文侧，自动化个人微信号既违反平台规则，也过不了这块板自己的完整性红线。",
+          "differentiator": "别做前台，做「第二天早上」。老板把昨晚没回的消息转发到一个地方，拿回一份排好序的名单——谁问了什么、值多少钱、每人一句拟好的回复——他自己三十秒发出去。不接电话线、不做日历集成、不碰平台自动化。冷启动（中文）：小红书「单人理发店」「宠物店日常」内容的评论区，老板们在那儿数自己丢了几个客人；冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。"
         }
       },
-      "voices": []
+      "voices": [],
+      "hook": "The shutter is down and the three people who asked about a price tonight have already gone next door.",
+      "does": "An AI receptionist that picks up a business's phone and WhatsApp around the clock, answers the standard questions, books the slot, and leaves the owner a summary in the morning. 129 Product Hunt upvotes on launch.",
+      "gap": "The wedge is not the capability, it is the channel: every product in this category assumes a phone number and a calendar API. In the Chinese market the enquiry arrives as a WeChat message to a personal account, so the entire category is untranslatable as-is — and the Western version, meanwhile, is already crowded.",
+      "counter": "Voice receptionists are the single most contested lane in applied AI right now, funded from every direction, and the winners will be decided by latency and local-language reliability — which is a capital race, not a wedge. On the Chinese side, automating a personal WeChat account is against platform rules and this board's own integrity line.",
+      "differentiator": "Do not build a receptionist; build the morning after. The owner forwards the night's unanswered messages into one place and gets back a ranked list — who asked what, what it is worth, one drafted reply each — which they send themselves in thirty seconds. No phone line, no calendar integration, no platform automation. Cold start (Chinese): 小红书 comment sections under 单人理发店 / 宠物店日常 posts where owners count the customers they lost; Cold start (English): r/smallbusiness, search 'missed calls after hours solo owner'.",
+      "workload": "2m",
+      "consumer_angle": "Non-developer user: the owner of a one-person shop. Finished thing: the enquiries that came in after closing, answered before opening.",
+      "pain_verified": false,
+      "verdict": "watch"
     },
     {
       "title": "crafter-station/petdex",
@@ -1509,19 +1643,39 @@
           "why_good": "给编码 agent 终端的一堆可爱动画桌宠——好玩、易传播,但纯属新奇。",
           "value": "除了也许卖点装饰包,没有真正的收入路径;是个讨喜的业余项目,不是公司。",
           "risk": "新奇无护城河、无留存;梗一过就凉,平台也能自己加。",
-          "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。"
+          "hook": "给编码 agent 终端的可爱动画桌宠——纯粹好玩,零护城河。",
+          "does": "一个公开的动画像素宠物画廊，宠物住在 coding agent 的终端里：3686 星、167 fork，还有一个投稿队列，人们把自己手画的小生物传上去——其中源源不断有中文投稿，还有一位版权方来要求下架。",
+          "gap": "宠物被关在终端里，只有程序员看得见。这件事真正更老也更大的受众——桌面宠物、Shimeji 那一脉——待在普通人的电脑和手机上，而他们从 2010 年代起就只能用一批停止维护的免费软件。",
+          "counter": "半衰期很短的新鲜感，且没有护城河：梗会过去，握着终端的那一方会自己发一个，而画廊真正的资产——用户投稿的画——在赚到第一分钱之前就已经引来了 IP 下架请求（issue #651）。桌宠还免费了十五年，为它收费是件没被验证过的事。",
+          "differentiator": "拿走流水线，扔掉终端。真正有意思的是：普通人正在成规模地画并投稿像素小生物。产品是「画一只，就得到一个会对你此刻在干什么做出反应的动画桌宠」——放在 Windows 和 macOS 上，桌宠受众本来就在那里。冷启动（中文）：小红书、B站搜「桌宠 自制」，以及 Shimeji 教程下的评论区，挤满做到一半放弃的人；冷启动（英文）：r/Shimeji 与 r/desktops。"
         }
       },
       "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
-      "voices": []
+      "voices": [
+        {
+          "kind": "demand",
+          "quote": "这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集",
+          "url": "https://github.com/crafter-station/petdex/issues/651",
+          "user": "MisonL",
+          "src": "github-issue"
+        }
+      ],
+      "does": "A public gallery of animated sprite pets that live in a coding-agent terminal: 3.7k stars, 167 forks, and a submission queue where people upload their own hand-drawn creatures — including a steady stream of Chinese submissions and one rights-holder asking for a takedown.",
+      "gap": "The pets are trapped in a terminal, where only programmers see them. The much older and much larger audience for this — the 桌面宠物 tradition, Shimeji, desktop companions — sits on ordinary desktops and phones and has been served by abandoned 2010-era freeware ever since.",
+      "counter": "Novelty with a short half-life and no moat: the joke fades, whoever owns the terminal ships their own, and the gallery's real asset — user-submitted art — is already producing IP takedown requests (issue #651) before it has produced a cent. Desktop pets have also been free for fifteen years; charging for one is an unproven act.",
+      "differentiator": "Take the pipeline, drop the terminal. The interesting part is that ordinary people are drawing and submitting sprite creatures at volume; the product is 'draw one pet, get an animated desktop companion that reacts to what you are actually doing' — on Windows and macOS, where the 桌宠 audience already is. Cold start (Chinese): 小红书 and B站 搜「桌宠 自制」and the Shimeji tutorial comment sections, full of people who gave up mid-way; Cold start (English): r/Shimeji and r/desktops.",
+      "workload": "2w",
+      "consumer_angle": "Non-developer user: someone who wants company on their screen — the audience that kept Shimeji alive for a decade. Finished thing: their own drawing, animated, living on their desktop.",
+      "pain_verified": false,
+      "verdict": "watch"
     },
     {
       "title": "nashsu/llm_wiki",
       "claim": "nashsu/llm_wiki — LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base",
       "score": 9,
       "why_good": "Turns local documents into an auto-interlinked, LLM-organized knowledge base on the desktop — a private, offline take on the Notion/Obsidian-AI wave.",
-      "value": "Freemium desktop: paid team sync, advanced retrieval and collaboration for people who won't put docs in a cloud AI.",
-      "risk": "Obsidian/Notion and every note app are shipping AI; a standalone 'AI wiki' needs a stickier wedge than auto-linking.",
+      "value": "Someone whose documents cannot legally go to a cloud model — a solo lawyer, an accountant, a clinician. One-off desktop licence, priced against an afternoon of hunting through folders.",
+      "risk": "The moat is the setup experience, and setup experiences are exactly what a well-funded incumbent copies in one release.",
       "evidence": [
         "https://github.com/nashsu/llm_wiki",
         "15,408★",
@@ -1544,20 +1698,47 @@
         "zh": {
           "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
           "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
-          "value": "桌面免费增值:给\"不愿把文档放进云 AI\"的人卖付费团队同步、高级检索和协作。",
-          "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。",
-          "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
+          "value": "文档在合规上不能上云的人：单打独斗的律师、会计、医生。桌面买断，对标「一下午在文件夹里翻找」。",
+          "risk": "护城河是安装体验，而安装体验正是有钱的在位者一个版本就抄走的东西。",
+          "hook": "一个人的笔记本里躺着十年的文档，却没有办法向它们提问——四个月 15819 星，219 个未关 issue 里就是这批人卡在配 API key。",
+          "does": "桌面应用：读你指定的一个文件夹，自己把里面的文档织成一部互相链接的 wiki，而不是常见的「检索再回答」——它会写词条、会互相引用，于是你是在翻、在问，不是在搜。全程在本机跑，模型你自己接，云端或局域网 Ollama 都行。",
+          "gap": "痛点是真的，但前五分钟只有极客过得去。真正需要它的是律师、研究生、硬盘里全是 PDF 的研究者——而 issue 区里挤满了这批人：模型配不上、文件夹选不了、局域网 Ollama 连不通，还没看到第一页 wiki 就走了。",
+          "counter": "Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而文档本来就在他们手里。33 位贡献者对 219 个未关 issue，这条线在往坏的方向走；「把我的文件夹变成 wiki」是个演示一次很惊艳、活不过第二周的东西。",
+          "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。"
         }
       },
-      "hook": "Turns your document pile into an auto-linked knowledge base — private and offline.",
+      "hook": "A person with ten years of documents on their own laptop and no way to ask them a question — 15.8k stars in four months, and 219 open issues where those same people are stuck on an API key.",
       "voices": [
         {
-          "quote": "…stall from npm i -g @anthropic-ai/claude-code then re-check. And verified everything, and I can't use Claude on both laptops I have. I spent a lot of time with Claude and ChatGPT solving that issue, and it seems that Claude is…",
-          "url": "https://github.com/nashsu/llm_wiki/issues/186",
-          "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
+          "url": "https://github.com/nashsu/llm_wiki/issues/46",
+          "user": "larashero3-dotcom",
+          "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "By clicking on the create button, nonthing happens. Please advise.",
+          "url": "https://github.com/nashsu/llm_wiki/issues/377",
+          "user": "sirotaku",
+          "src": "github-issue"
+        },
+        {
+          "kind": "demand",
+          "quote": "开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流",
+          "url": "https://github.com/nashsu/llm_wiki/issues/158",
+          "user": "ooof",
+          "src": "github-issue"
         }
-      ]
+      ],
+      "does": "A desktop app that reads a folder of your documents and builds an interlinked wiki out of them by itself, instead of the usual retrieve-then-answer trick: it writes entries and cross-links them, so you browse and ask rather than search. Runs on your machine, points at whatever model you configure — cloud or a local Ollama.",
+      "gap": "It hits a real pain but the first five minutes are geek-only. The person who needs this is a lawyer, a graduate student, a researcher with a hard drive full of PDFs — and the tracker is full of them failing at model configuration, folder selection and LAN Ollama endpoints before they ever see a wiki page.",
+      "counter": "Obsidian, Notion and every note app are shipping the same feature this year, and they already hold the documents. 219 open issues against 33 contributors is a maintenance line going the wrong way, and 'turn my folder into a wiki' is a demo that dazzles once and then has to survive the second week.",
+      "differentiator": "Sell the first five minutes, not the engine. A signed installer with a working model bundled or one paid key on the vendor's account, an opinionated 'point at this folder, get a wiki in ten minutes' path, and a single named profession as the launch wedge (start with case-file review, where the documents are private by obligation and cloud AI is disallowed). Cold start (Chinese): the llm_wiki issue tracker and the self-organised WeChat group its users opened in issue #158 — they are already assembling without the maintainer; Cold start (English): r/ObsidianMD and r/LocalLLaMA, search 'ask my own documents offline'.",
+      "workload": "2m",
+      "consumer_angle": "Non-developer user: a professional with a private document pile. Finished thing: a browsable, askable wiki of their own files that never leaves the laptop.",
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "title": "nexu-io/open-design",
