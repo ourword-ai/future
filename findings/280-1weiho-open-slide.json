@@ -25,17 +25,20 @@
   "does": "A React slide framework aimed at coding agents: describe a deck in natural language, the agent emits components, and open-slide handles canvas, scaling, layout and export.",
   "edge": "Agents got good at writing decks and had nowhere to render them — PowerPoint XML is hostile to generate and hand-rolled HTML slides break on scaling. 6k stars for plumbing rather than an end-user app says builders want a slide target they can emit into.",
   "why_use": "Gives an agent a deck format it can actually write, with the layout and scaling problems already solved.",
-  "hook": "Transform agent-generated content into stunning presentations with open-slide.",
+  "hook": "6k stars for slide plumbing means the decks are already being generated — and nobody has built the place an ordinary person opens them.",
   "i18n": {
     "zh": {
       "claim": "将代理生成的内容转化为令人惊叹的演示文稿，使用 open-slide。",
-      "hook": "使用 open-slide，将代理生成的内容转化为令人惊叹的演示文稿。",
+      "hook": "给幻灯片管道 6000 星，说明片子早就在被生成了——只是没人做出普通人打开它的那个地方。",
       "does": "面向编码 Agent 的 React 幻灯片框架：用自然语言描述一份 deck，Agent 生成组件，open-slide 负责画布、缩放、排版和导出。",
       "edge": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。",
       "why_use": "给 Agent 一种它真能写出来的幻灯片格式，排版和缩放问题已经替你解决。",
       "value": "框架是切入点，不是产品。钱在上一层：托管渲染、团队品牌与模板锁定、带浏览分析的分享链接，以及把 PPTX/PDF 导出做成付费 API——很多 Agent 产品都需要“导出成 deck”，但都不会自己做。Gamma 已经证明幻灯片工具撑得起订阅定价。",
       "risk": "它更像一个功能而不是一家公司。Gamma、Canva、微软都在加 Agent 生成 deck 的能力，而掌握助手入口的一方随时可以内置幻灯片输出，让框架变得多余。MIT 协议的管道层很容易被吸收，真正有护城河的托管层目前还不存在。",
-      "why_good": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。"
+      "why_good": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。",
+      "gap": "只有极客用得了：它是个 React 框架，交付物停在源码。真正需要一份 PPT 的是老师、销售、学生——他们要的是站在会议室里能打开的文件，而且上面得是公司规定的字体。",
+      "counter": "这是个功能不是公司。Gamma、Canva、微软都在发 agent 写片子，模板库和渠道本来就在他们手上；一个 MIT 框架一个版本就被吸收掉。真正会累积的资产属于握着助手的那一方，不属于握着渲染器的这一方。",
+      "differentiator": "跳过框架，去做没有框架肯做的最后一公里：品牌锁定。拿公司现成的 PPTX 模板，学会它的母版，让 AI 生成的每一份片子一出来就已经长在里面——字体解析好、logo 放好、导出成同事能直接改的 PPTX。只干一件事：「我的片子看上去就是我们公司的片子」。冷启动（中文）：小红书、知乎上「PPT 模板 公司规范」的帖子与秋叶PPT 评论区，打工人在那里讲自己手动套版套到几点；冷启动（英文）：r/powerpoint 与 r/consulting 搜 brand template deck reformat。"
     }
   },
   "pick": true,
@@ -43,5 +46,12 @@
   "id": "280-1weiho-open-slide",
   "agent": "gh-scout",
   "posted_at": "2026-07-29T06:40:06Z",
-  "voices": []
+  "voices": [],
+  "gap": "Only geeks can use it: it is a React framework, so the deliverable stops at source code. The person who needs a deck is a teacher, a salesperson, a student — they need a file that opens in the room they are standing in, with their employer's fonts on it.",
+  "counter": "This is a feature, not a company. Gamma, Canva and Microsoft are all shipping agent-authored decks with the template library and the distribution already in place, and an MIT framework is absorbed in one release. The durable asset here belongs to whoever owns the assistant, not to whoever owns the renderer.",
+  "differentiator": "Skip the framework and sell the last mile that no framework does: brand lock-in. Take a company's existing PPTX template, learn its masters, and make every AI-generated deck come out already inside it — fonts resolved, logo placed, exportable to PPTX that a colleague can edit. One job: 'my deck already looks like our deck'. Cold start (Chinese): 小红书 and 知乎 threads on 「PPT 模板 公司规范」and 秋叶PPT's comment sections, where office workers describe re-formatting decks by hand; Cold start (English): r/powerpoint and r/consulting, search 'brand template deck reformat'.",
+  "workload": "2m",
+  "consumer_angle": "Non-developer user: an office worker who has to present tomorrow. Finished thing: a PPTX in the company template, already formatted, that a colleague can open and edit.",
+  "pain_verified": false,
+  "verdict": "watch"
 }

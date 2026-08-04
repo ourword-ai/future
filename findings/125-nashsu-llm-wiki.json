@@ -3,8 +3,8 @@
   "claim": "nashsu/llm_wiki — LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base",
   "score": 9,
   "why_good": "Turns local documents into an auto-interlinked, LLM-organized knowledge base on the desktop — a private, offline take on the Notion/Obsidian-AI wave.",
-  "value": "Freemium desktop: paid team sync, advanced retrieval and collaboration for people who won't put docs in a cloud AI.",
-  "risk": "Obsidian/Notion and every note app are shipping AI; a standalone 'AI wiki' needs a stickier wedge than auto-linking.",
+  "value": "Someone whose documents cannot legally go to a cloud model — a solo lawyer, an accountant, a clinician. One-off desktop licence, priced against an afternoon of hunting through folders.",
+  "risk": "The moat is the setup experience, and setup experiences are exactly what a well-funded incumbent copies in one release.",
   "evidence": [
     "https://github.com/nashsu/llm_wiki",
     "15,408★",
@@ -27,18 +27,45 @@
     "zh": {
       "claim": "nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、互相链接的知识库。",
       "why_good": "在桌面把本地文档自动互链、用 LLM 组织成知识库——Notion/Obsidian-AI 浪潮里一个私密、离线的做法。",
-      "value": "桌面免费增值:给\"不愿把文档放进云 AI\"的人卖付费团队同步、高级检索和协作。",
-      "risk": "Obsidian/Notion 和每个笔记应用都在上 AI;独立\"AI wiki\"需要比自动互链更黏的切口。",
-      "hook": "把你的文档堆变成自动互链的知识库——私密、离线。"
+      "value": "文档在合规上不能上云的人：单打独斗的律师、会计、医生。桌面买断，对标「一下午在文件夹里翻找」。",
+      "risk": "护城河是安装体验，而安装体验正是有钱的在位者一个版本就抄走的东西。",
+      "hook": "一个人的笔记本里躺着十年的文档，却没有办法向它们提问——四个月 15819 星，219 个未关 issue 里就是这批人卡在配 API key。",
+      "does": "桌面应用：读你指定的一个文件夹，自己把里面的文档织成一部互相链接的 wiki，而不是常见的「检索再回答」——它会写词条、会互相引用，于是你是在翻、在问，不是在搜。全程在本机跑，模型你自己接，云端或局域网 Ollama 都行。",
+      "gap": "痛点是真的，但前五分钟只有极客过得去。真正需要它的是律师、研究生、硬盘里全是 PDF 的研究者——而 issue 区里挤满了这批人：模型配不上、文件夹选不了、局域网 Ollama 连不通，还没看到第一页 wiki 就走了。",
+      "counter": "Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而文档本来就在他们手里。33 位贡献者对 219 个未关 issue，这条线在往坏的方向走；「把我的文件夹变成 wiki」是个演示一次很惊艳、活不过第二周的东西。",
+      "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。"
     }
   },
-  "hook": "Turns your document pile into an auto-linked knowledge base — private and offline.",
+  "hook": "A person with ten years of documents on their own laptop and no way to ask them a question — 15.8k stars in four months, and 219 open issues where those same people are stuck on an API key.",
   "voices": [
     {
-      "quote": "…stall from npm i -g @anthropic-ai/claude-code then re-check. And verified everything, and I can't use Claude on both laptops I have. I spent a lot of time with Claude and ChatGPT solving that issue, and it seems that Claude is…",
-      "url": "https://github.com/nashsu/llm_wiki/issues/186",
-      "src": "github",
-      "kind": "pain"
+      "kind": "pain",
+      "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
+      "url": "https://github.com/nashsu/llm_wiki/issues/46",
+      "user": "larashero3-dotcom",
+      "src": "github-issue"
+    },
+    {
+      "kind": "pain",
+      "quote": "By clicking on the create button, nonthing happens. Please advise.",
+      "url": "https://github.com/nashsu/llm_wiki/issues/377",
+      "user": "sirotaku",
+      "src": "github-issue"
+    },
+    {
+      "kind": "demand",
+      "quote": "开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流",
+      "url": "https://github.com/nashsu/llm_wiki/issues/158",
+      "user": "ooof",
+      "src": "github-issue"
     }
-  ]
+  ],
+  "does": "A desktop app that reads a folder of your documents and builds an interlinked wiki out of them by itself, instead of the usual retrieve-then-answer trick: it writes entries and cross-links them, so you browse and ask rather than search. Runs on your machine, points at whatever model you configure — cloud or a local Ollama.",
+  "gap": "It hits a real pain but the first five minutes are geek-only. The person who needs this is a lawyer, a graduate student, a researcher with a hard drive full of PDFs — and the tracker is full of them failing at model configuration, folder selection and LAN Ollama endpoints before they ever see a wiki page.",
+  "counter": "Obsidian, Notion and every note app are shipping the same feature this year, and they already hold the documents. 219 open issues against 33 contributors is a maintenance line going the wrong way, and 'turn my folder into a wiki' is a demo that dazzles once and then has to survive the second week.",
+  "differentiator": "Sell the first five minutes, not the engine. A signed installer with a working model bundled or one paid key on the vendor's account, an opinionated 'point at this folder, get a wiki in ten minutes' path, and a single named profession as the launch wedge (start with case-file review, where the documents are private by obligation and cloud AI is disallowed). Cold start (Chinese): the llm_wiki issue tracker and the self-organised WeChat group its users opened in issue #158 — they are already assembling without the maintainer; Cold start (English): r/ObsidianMD and r/LocalLLaMA, search 'ask my own documents offline'.",
+  "workload": "2m",
+  "consumer_angle": "Non-developer user: a professional with a private document pile. Finished thing: a browsable, askable wiki of their own files that never leaves the laptop.",
+  "pain_verified": true,
+  "verdict": "build"
 }

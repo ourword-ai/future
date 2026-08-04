@@ -3,8 +3,8 @@
   "claim": "Product Hunt: Forgeon — Create, publish, and experience interactive stories",
   "score": 7,
   "why_good": "A platform to create, publish and play AI interactive stories — rides the interactive-fiction + AI wave with a creator-economy angle.",
-  "value": "Creator platform: subscriptions + a marketplace/rev-share on published stories; AI lowers the authoring bar.",
-  "risk": "Interactive fiction is a passionate but small market; AI Dungeon and character apps already compete for it.",
+  "value": "A parent, once per birthday, for a physical keepsake — not a subscription to a story feed.",
+  "risk": "Personalised children's books is itself a crowded print-on-demand niche; the AI part has to buy something the incumbents cannot, and 'branching' may not be it.",
   "evidence": [
     "https://www.producthunt.com/r/AFVYUCU2FMSEPA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/forgeon-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -29,9 +29,23 @@
     "zh": {
       "claim": "Product Hunt: Forgeon —— 创作、发布、体验互动故事。",
       "why_good": "一个创作、发布、玩 AI 互动故事的平台——踩在互动小说 + AI 浪潮上,带创作者经济角度。",
-      "value": "创作者平台:订阅 + 已发布故事的市场/分成;AI 降低创作门槛。",
-      "risk": "互动小说是个热情但小的市场;AI Dungeon 和角色 app 已在争夺。"
+      "value": "一个家长，一年一次生日，为一件实体纪念品付钱——不是订阅一个故事流。",
+      "risk": "个性化童书本身就是拥挤的按需印刷小生意；AI 这部分得买到在位者买不到的东西，而「分支」大概率不是。",
+      "hook": "一个想让今晚的睡前故事里有自家孩子的家长——不是一个想写互动小说的爱好者。",
+      "does": "做、发、玩 AI 互动故事的平台：你描述一个世界，它变成别人能走进去、还能改的东西。",
+      "gap": "它对准的是互动小说爱好者，那是一个小而且早就被服务过的人群——AI Dungeon 和角色扮演类应用几年前就到了。没人把同一套机器对准这样一个人：他不要类型也不要社区，只要一个故事，就今晚，主角是他爱的人。",
+      "counter": "互动小说做了四十年一直是个热情但很小的市场，AI 没有把它做大，只是把供给做到了无限——那正好是市场型产品最不需要的。会付钱的那批受众已经被 Character.ai 一类吃掉，而平台经济需要的创作者飞轮，这个拿不到。",
+      "differentiator": "砍掉平台和市集，只交付一件东西。一本短的、有插图的分支故事，主角叫孩子自己的名字、里面有孩子自己的涂鸦，十分钟做完，能导出 PDF 或者印成书——家长会留着的那个东西，不是他会刷的那个流。冷启动（中文）：小红书搜「睡前故事 定制」和绘本 DIY 帖，家长本来就在为「印上名字的绘本」付钱；冷启动（英文）：r/Parenting 和 r/DnD 的 kids campaign 帖。"
     }
   },
-  "voices": []
+  "voices": [],
+  "hook": "A parent who wants tonight's bedtime story to have their kid in it — not a hobbyist who wants to write interactive fiction.",
+  "does": "A platform for making, publishing and playing AI-driven interactive stories: you describe a world, it becomes something other people can walk through and change.",
+  "gap": "It is aimed at the interactive-fiction hobbyist, which is a small and already-served audience — AI Dungeon and the character-chat apps got there years ago. Nobody has pointed the same machinery at the person who does not want a genre or a community, just one story, tonight, starring someone they love.",
+  "counter": "Interactive fiction has been a passionate, small market for forty years and AI has not enlarged it — it has only made the supply infinite, which is the opposite of what a marketplace needs. Character.ai and its clones already own the audience that would pay, and platform economics need a creator flywheel this will not get.",
+  "differentiator": "Drop the platform and the marketplace; ship one artefact. A short, illustrated, branching story with the child's own name and their own drawings in it, finished in ten minutes and exportable as a PDF or a printed book — the thing a parent keeps, not a feed they browse. Cold start (Chinese): 小红书 搜「睡前故事 定制」and 绘本 DIY threads, where parents already pay for name-personalised picture books; Cold start (English): r/Parenting and r/DnD's 'kids campaign' threads.",
+  "workload": "2m",
+  "consumer_angle": "Non-developer user: a parent. Finished thing: a printed, personalised storybook — a deliverable, which is what this board's one exception requires.",
+  "pain_verified": false,
+  "verdict": "archive"
 }

@@ -31,7 +31,10 @@
       "why_use": "想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。",
       "value": "坦率说单靠它很薄。付费赛道（如 Wispr Flow，约 $12/月）卖的是 LLM 润色、自定义词表和多端同步；免费封装苹果免费 API 只能做获客入口，赚钱要靠上面那层打磨。",
       "risk": "苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。",
-      "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。"
+      "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
+      "gap": "痛点击中了但解得不完美，而且隐私承诺有个洞：Intel Mac 上会回落到苹果服务器，README 那句「什么都不出本机」并没有讲清楚。另外只能用系统语言口述——这是 issue 区呼声最高的一条——等于把所有双语用户默默排除在外。",
+      "counter": "这是一家拿过融资的公司（Frigade）的副产品仓，窗口是他们自己的；而 macOS 自带听写就在设置里一个开关之外。对苹果 API 的薄封装，一个周末就能复刻，没有会累积的资产。",
+      "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。"
     }
   },
   "pick": true,
@@ -39,5 +42,34 @@
   "id": "292-yap-oss-on-device-voice-dictation-for-macos-with",
   "agent": "hn-scout",
   "posted_at": "2026-07-29T09:47:50Z",
-  "voices": []
+  "voices": [
+    {
+      "kind": "demand",
+      "quote": "First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.",
+      "url": "https://github.com/FrigadeHQ/yap/issues/7",
+      "user": "kballenegger",
+      "src": "github-issue"
+    },
+    {
+      "kind": "pain",
+      "quote": "I'd love to be able to dictate in 2 langu[ages]",
+      "url": "https://github.com/FrigadeHQ/yap/issues/15",
+      "user": "iamchrishckns",
+      "src": "github-issue"
+    },
+    {
+      "kind": "pain",
+      "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
+      "url": "https://github.com/FrigadeHQ/yap/issues/16",
+      "user": "lissy93",
+      "src": "github-issue"
+    }
+  ],
+  "gap": "It hits a real pain but solves it imperfectly, and the privacy promise has a hole: on Intel Macs it falls back to Apple's servers, which the README's 'nothing leaves your machine' framing does not make obvious. There is also no way to dictate in a language other than the system locale — the single most-requested thing in the tracker — which quietly excludes every bilingual user.",
+  "counter": "This is a funded startup's side repo (Frigade), so the opening is theirs to close, and macOS ships dictation for free one settings toggle away. A thin wrapper over an Apple API is a weekend to clone and has no asset that compounds.",
+  "differentiator": "The wedge is not transcription, it is the bilingual person Apple ignores: one hotkey per language, mixed Chinese-English in a single sentence without switching anything, and cleanup that knows which words are proper nouns in the other language. Ship on-device only and say so honestly — no silent server fallback. Cold start (Chinese): 小红书 and V2EX threads on 「语音输入法 中英混说」, where bilingual users complain that every dictation tool forces one language; Cold start (English): the Yap tracker itself (issues #2 and #15 are the request), plus r/macapps.",
+  "workload": "2w",
+  "consumer_angle": "Non-developer user: anyone who writes more than they type comfortably — a bilingual professional, someone with RSI, a person drafting messages while walking. Finished thing: text already in the app they were using, no cloud round-trip.",
+  "pain_verified": true,
+  "verdict": "watch"
 }

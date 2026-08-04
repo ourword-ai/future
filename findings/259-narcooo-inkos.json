@@ -3,8 +3,8 @@
   "claim": "Agent system for long-form story creation — novels, screenplays, interactive film/games, IP franchises and multilingual translation — shipped as an npm package (@actalk/inkos) under AGPL.",
   "score": 7,
   "why_good": "Long-form consistency (plot state, character continuity) is exactly what chat-based AI writing can't hold, and inkos productizes the full pipeline for it. 1,558 forks with near-daily commits shows real builder adoption, rooted in the Chinese web-novel/IP market that already pays for writing throughput.",
-  "value": "Per-seat tooling for webnovel studios and IP factories, plus AGPL dual-licensing for platforms that embed it. The wedge is owning the production pipeline of AI-native fiction, where output volume converts directly to revenue.",
-  "risk": "With an open AGPL pipeline the differentiation lives in prompts and orchestration that frontier models may absorb natively; and content businesses carry copyright overhang on both training inputs and generated IP.",
+  "value": "A web-novel writer paid by the chapter — the readable-output-per-hour number is literally their wage. Monthly subscription priced against one extra chapter a day.",
+  "risk": "The demand is real but the quality ceiling belongs to the model, not to you; if frontier models close the long-form consistency gap natively, the orchestration layer evaporates.",
   "evidence": [
     "https://github.com/Narcooo/inkos",
     "8,403★",
@@ -31,9 +31,45 @@
     "zh": {
       "claim": "面向长篇创作的智能体系统 — 长短篇小说、剧本、互动影游、IP 内容与多语言翻译，以 npm 包（@actalk/inkos）发布，AGPL 协议。",
       "why_good": "长篇一致性（情节状态、人物连续性）正是聊天式 AI 写作守不住的东西，inkos 把整条流水线产品化。1,558 个 fork 加上近乎日更的提交说明有真实的开发者采用，且扎根于本就为写作产能付费的中文网文/IP 市场。",
-      "value": "面向网文工作室与 IP 工厂的按席位工具，叠加 AGPL 双重授权供平台内嵌。楔子在于占住 AI 原生小说的生产流水线 — 一个产量直接兑换成收入的市场。",
-      "risk": "AGPL 开放流水线意味着差异化只剩提示词与编排，前沿模型可能原生吸收；内容生意在训练输入与生成 IP 两端都悬着版权风险。"
+      "value": "按章拿钱的网文作者——每小时能出多少可读文字，字面上就是他的工资。月订阅，对标「一天多写一章」。",
+      "risk": "需求是真的，但质量天花板归模型不归你；前沿模型一旦原生解决长篇一致性，中间这层编排就蒸发了。",
+      "hook": "想写完一本网文的人，不是想跑一个 npm 包的人：8685 星、1631 fork 说明胃口是真的，issue 区说明写手卡在第四章。",
+      "does": "一条把长篇故事撑住的 agent 流水线——情节状态、人物连续性、世界规则——从大纲一路推到一章又一章，同一套骨架还能出剧本、互动游戏和翻译。以 npm 包（@actalk/inkos）交付，得自己配模型 key。",
+      "gap": "只有极客用得了，而且出来的东西还是流水账。真正想要它的人是写网文的，不是写 Node 的：要先装 Node 20+、手改 .env、挑模型供应商，才能写下第一句；侥幸装上的那批人报告章节字数失控、开局全都撞在同一个矿洞里。",
+      "counter": "「同质化」不是能打补丁的 bug，那就是让模型连写 300 章的必然结果，所有竞品都会撞上同一堵墙。同时番茄、起点这些平台正在给已经住在那里的写手直接发自家写作助手，后面还连着分发和稿费。让烂小说写得更快的工具，没人买。",
+      "differentiator": "别交付流水线，交付稿子。一键桌面安装、模型 key 预置，产品承诺只收窄到 issue 区证明已经坏掉的那一件事：把 20 万字撑住不崩、每章字数就是作者要的那个数。卖「不一样」而不是卖「量」——写到第一章就提示你又在写那个下矿开局。冷启动（中文）：inkos 自己的 issue 区，加番茄小说作者交流群与龙的天空论坛，写手自己在那里抱怨这几件事；冷启动（英文）：r/WritingWithAI 与 r/HFY 搜 lost the plot chapter。"
     }
   },
-  "voices": []
+  "voices": [
+    {
+      "kind": "pain",
+      "quote": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。",
+      "url": "https://github.com/Narcooo/inkos/issues/166",
+      "user": "Kstd-Con",
+      "src": "github-issue"
+    },
+    {
+      "kind": "pain",
+      "quote": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制",
+      "url": "https://github.com/Narcooo/inkos/issues/248",
+      "user": "12sysw",
+      "src": "github-issue"
+    },
+    {
+      "kind": "pain",
+      "quote": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。",
+      "url": "https://github.com/Narcooo/inkos/issues/236",
+      "user": "qixidao",
+      "src": "github-issue"
+    }
+  ],
+  "hook": "Someone who wants to finish a web novel, not someone who wants to run an npm package: 8.7k stars and 1.6k forks say the appetite is real, and the issue tracker says the writer is stuck at chapter four.",
+  "does": "An agent pipeline that holds a long story together — plot state, character continuity, four-transformation-style world rules — and drives it from outline to chapter after chapter, with screenplay, interactive-game and translation modes on the same spine. It ships as an npm package (@actalk/inkos) you configure with your own model key.",
+  "gap": "Only geeks can use it, and the output still reads like filler. The person who wants this is a web-novel writer, not a Node developer: they must install Node 20+, hand-edit a .env, and pick a model provider before the first sentence — and the ones who get through report chapters that lose word-count control and plots that converge on the same opening.",
+  "counter": "The sameness complaint is not a bug you can patch — it is what a language model does when you ask it for 300 chapters, and every competitor will hit the same wall. Meanwhile Chinese platforms (番茄/起点) are shipping their own authoring assistants to the writers who already live there, with the distribution and the payout attached. A tool that makes bad novels faster has no buyer.",
+  "differentiator": "Do not ship a pipeline; ship a manuscript. One-click desktop install with a model key pre-wired, and the product's promise is narrowed to the single job the issue tracker proves is broken: keep a 200k-character story consistent and keep each chapter at the length the writer asked for. Sell the divergence, not the volume — a 'sameness check' that flags when chapter one is drifting into the same mine-shaft opening as everyone else's. Cold start (Chinese): the inkos issue tracker itself plus 番茄小说作者交流 and 龙的天空 forums, where writers post exactly these complaints; Cold start (English): r/WritingWithAI and r/HFY, search 'lost the plot chapter'.",
+  "workload": "2m",
+  "consumer_angle": "The ordinary person here is a working web-novel author, and the finished thing they walk away with is a chapter they can publish today — this qualifies under the one allowed exception (AI producing a deliverable a human uses), not as developer infrastructure.",
+  "pain_verified": true,
+  "verdict": "build"
 }

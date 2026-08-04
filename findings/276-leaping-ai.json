@@ -3,8 +3,8 @@
   "claim": "Product Hunt: Leaping AI — AI agents that call and text in multi-day campaigns",
   "score": 7,
   "why_good": "Leaping AI automates phone calls and text messages over extended campaigns, allowing businesses to engage with prospects efficiently. It supports personalized interactions, making it easier to follow up and nurture leads.",
-  "value": "Sales teams in small to medium-sized businesses pay for Leaping AI to enhance their lead engagement and conversion rates.",
-  "risk": "The reliance on traditional CRM systems and their established communication methods may hinder adoption.",
+  "value": "A one-to-five-person service business, priced against a single recovered job per month.",
+  "risk": "Regulation, not competition: automated outbound calling is where this category dies, and the pivot inward gives up the thing that makes it sound exciting.",
   "evidence": [
     "https://www.producthunt.com/r/ZTOYWVYEMJZG4Y?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
     "https://www.producthunt.com/products/leaping-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
@@ -23,21 +23,39 @@
   "id": "276-leaping-ai",
   "agent": "producthunt-scout",
   "posted_at": "2026-07-29T04:53:40Z",
-  "does": "Leaping AI automates phone calls and text messages over extended campaigns, allowing businesses to engage with prospects efficiently. It supports personalized interactions, making it easier to follow up and nurture leads.",
+  "does": "Voice agents that run an outbound sequence over days rather than a single call: they phone and text a prospect, remember the last conversation, and keep going until the person books or says no.",
   "edge": "Leaping AI uniquely combines voice and text communication in a single platform, enabling seamless multi-day engagement.",
   "why_use": "Choose Leaping AI for its ability to maintain personalized communication over longer periods, which traditional CRM tools lack.",
-  "hook": "Transform your outreach with Leaping AI's multi-day calling and texting agents.",
+  "hook": "A clinic or a trades outfit that loses the job because nobody chased the lead on day three — the follow-up nobody has time to make.",
   "i18n": {
     "zh": {
       "claim": "通过Leaping AI的多日拨打和发送短信代理，转变您的外展方式。",
-      "hook": "通过Leaping AI的多日拨打和发送短信代理，转变您的外展方式。",
-      "does": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
+      "hook": "一家诊所、一个修车行，活丢在第三天没人跟进的那一下——谁都没空打的那通回访。",
+      "does": "能跨天跑的语音 agent：不是打一通就完，而是连着几天给潜在客户打电话、发短信，记得上一次聊到哪，直到对方约上或者明确说不。",
       "edge": "Leaping AI独特地将语音和文本通信结合在一个平台中，实现无缝的多日互动。",
       "why_use": "选择Leaping AI，因为它能够保持个性化的沟通，持续时间更长，而传统的CRM工具则缺乏这一点。",
-      "value": "中小型企业的销售团队为Leaping AI支付，以增强他们的潜在客户互动和转化率。",
-      "risk": "对传统CRM系统及其既定沟通方式的依赖可能会阻碍采用。",
-      "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。"
+      "value": "一到五个人的服务型小生意，对标「一个月捞回一单」。",
+      "risk": "要命的是监管不是竞争：自动外呼正是这个品类死掉的地方，而掉头朝内又恰好放弃了它听起来最带劲的那部分。",
+      "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
+      "gap": "它是为有 CRM 的销售团队做的。真正因为没跟进而丢钱的，是两个人一本本子的小店，而这个品类的每个产品开场第一句都是「你用哪个 CRM」。",
+      "counter": "外呼 AI 是整个语音 agent 市场里最挤的一条道，而且两头都在收紧——欧美的同意规则，中国这边营销外呼对小经营者基本已经关死。诚实的风险不是竞争，是在那个能跑通的价格上它根本不合法。",
+      "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。"
     }
   },
-  "voices": []
+  "voices": [
+    {
+      "kind": "pain",
+      "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
+      "url": "https://old.reddit.com/r/smallbusiness/",
+      "user": "burgerknapper",
+      "src": "reddit"
+    }
+  ],
+  "gap": "It is built for a sales team with a CRM. The person who actually loses money to unmade follow-ups is a two-person shop with a notebook, and every product in this category starts by asking which CRM you use.",
+  "counter": "Outbound AI calling is the most crowded lane in the whole voice-agent market and it is being regulated in both directions — consent rules in the US and EU, and in China outbound marketing calls are effectively closed to a small operator. The honest risk is not competition, it is that the product is illegal to run at the price point that makes it interesting.",
+  "differentiator": "Invert it: do not call the customer, call the owner. The same multi-day machinery, pointed inward — it phones the owner once a day with the three follow-ups that are going cold and drafts the message for each, which the owner sends themselves. No consent problem, no CRM, no dialler. Cold start (Chinese): 小红书 and 抖音 comment sections under 单人理发店 / 修车行 daily-life posts; Cold start (English): r/smallbusiness, where owners describe exactly this failure — 'I sometimes am agreeing to appointment times and days. But then I just keep it all in my head'.",
+  "workload": "2m",
+  "consumer_angle": "Non-developer user: the owner-operator of a small service business. Finished thing: the follow-ups that would have been forgotten, actually sent.",
+  "pain_verified": true,
+  "verdict": "watch"
 }
