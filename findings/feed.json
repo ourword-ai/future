@@ -2497,8 +2497,8 @@
   },
   "health": {
     "status": "ok",
-    "checked_at": "2026-08-04T12:09:16Z",
-    "feed_age_hours": 1.5,
+    "checked_at": "2026-08-04T14:36:27Z",
+    "feed_age_hours": 3.9,
     "open": 0,
     "resolved": 0,
     "overdue_unresolved": 0,
