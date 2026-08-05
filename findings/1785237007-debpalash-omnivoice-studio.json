@@ -1,7 +1,7 @@
 {
   "title": "debpalash/OmniVoice-Studio",
   "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-  "hook": "Hand it a 3-second clip and it clones that voice in 646 languages — then dubs a whole video end-to-end, fully on your machine.",
+  "hook": "The person with a shelf of writing nobody will ever record, or a video nobody will ever dub — who is not going to pay a studio and is not going to learn one.",
   "why_good": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
   "value": "Buyer: dubbing shops and creators in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. Money: a supported team edition + priced engine/model packs — the value is the workflow (batch, project files, invisible watermarking), not any single model.",
   "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's in active beta — reliability across 14 engines and three OSes is the hard part. Watch: does a real 30-min video dub cleanly in one click without hand-fixing timing.",
@@ -30,17 +30,21 @@
   "i18n": {
     "zh": {
       "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-      "hook": "丢给它一段 3 秒音频,它就能用 646 种语言克隆这把嗓子——再把整段视频从头到尾配好音,全程只在你本机跑。",
+      "hook": "有一柜子没人会去录的文字、或者一段没人会去配音的视频的人——他既不会花钱进棚，也不会去学一套工具。",
       "why_good": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
       "value": "买家:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。变现:带支持的团队版 + 付费引擎/模型包——价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
       "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修。",
-      "does": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
+      "does": "本地声音克隆、视频配音、听写、有声书制作，装在一个开源桌面应用里——整条链跑在自己机器上。",
       "edge": "全本地的端到端配音,底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢——按语言/延迟挑最优模型,不被单一模型锁死;≤8G 显存自动降级、纯 CPU 也能跑。",
-      "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。"
+      "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。",
+      "gap": "所有商业对手都是要你把自己的声音传上去的云订阅，而声音恰恰是人们最不愿意交出去的那件东西——这也是大量潜在用户从来没开始过的原因。",
+      "counter": "声音克隆是这个目录里最容易被滥用的一项能力；如果不对参考音源做硬性授权门槛，最积极的早期用户会是错的那批人。",
+      "differentiator": "只挑那个既明确是成品、又明确属于用户自己的输出：我自己的书，用我自己的声音读出来，存成我自己的文件。直接拒绝第三方参考音。冷启动：中文＝豆瓣/小红书「有声书 自制」与独立作者群；英文＝r/selfpublish 里长年不断的有声书成本吐槽（ACX 报价）。",
+      "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。"
     }
   },
   "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
-  "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
+  "does": "Local voice cloning, video dubbing, dictation and audiobook production in one open-source desktop app — the whole chain runs on your own machine.",
   "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
   "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
   "voices": [
@@ -56,5 +60,12 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "verdict": "build",
+  "workload": "2m",
+  "pain_verified": false,
+  "gap": "Every commercial equivalent is a cloud subscription that requires uploading your voice, which is exactly the asset people are least willing to hand over — and the reason a huge fraction of would-be users never start.",
+  "counter": "Voice cloning is the single most abuse-prone capability in this catalogue; without hard consent gating on the reference voice, the product's most enthusiastic early users will be the wrong ones.",
+  "differentiator": "Pick the one output that is unambiguously a finished artifact and unambiguously the user's own: my own book, read in my own voice, as a file I keep. Refuse third-party reference voices outright. Cold start CN = 豆瓣/小红书「有声书 自制」与独立作者群; EN = r/selfpublish audiobook-cost threads (ACX pricing complaints are a standing genre).",
+  "consumer_angle": "Strong, and it is the sanctioned exception — the output is a finished thing an ordinary person can hand to someone: an audiobook, a dubbed video."
 }
