@@ -775,24 +775,25 @@
         "Education",
         "Artificial Intelligence"
       ],
-      "does": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
+      "does": "SoundGate listens through the phone mic while you play and reacts in the moment: which note you actually hit, whether the chord rang clean, whether you drifted off the beat.",
       "why_use": "Users often complain about traditional music lessons being too rigid and lacking instant feedback, which SoundGate Guitar addresses with its real-time analysis.",
-      "gap": "Current solutions are often too complex or require a deep understanding of music theory, making them inaccessible for casual learners.",
-      "counter": "Established music education platforms may easily add similar features, making it hard for new entrants to gain traction.",
-      "differentiator": "I would focus on creating a user-friendly interface specifically designed for beginners, simplifying the learning process.",
-      "hook": "Aspiring guitarists struggle to get real-time feedback on their playing, leading to frustration and slow progress.",
+      "gap": "Every big guitar app (Yousician, Simply Guitar, Fender Play) sells a curriculum and grades you against ITS songs. Nobody grades you against the song you already chose to learn — the one you looked up a tab for last night. The listening layer is finally cheap enough to be decoupled from the course.",
+      "counter": "Pitch detection on a strummed six-string chord is genuinely hard, and the incumbents have had years of audio engineering on it; a thin wrapper over a generic pitch library will be heard as wrong within one session and never opened again.",
+      "differentiator": "Don't ship a course. Ship the ear: point it at any tab or YouTube lesson the learner already has open, and just tell them which bar they keep fluffing. Cold start CN = 小红书/B站 '吉他自学' 打卡帖下面的评论区 (人们在那里贴自己的录音求点评); EN = r/guitarlessons weekly 'critique my playing' threads.",
+      "hook": "The adult who bought a guitar, learned four chords off YouTube, and stalled — because nobody is in the room to say 'that string is muted'.",
       "i18n": {
         "zh": {
           "claim": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
-          "hook": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
-          "does": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
+          "hook": "买了吉他、跟着 YouTube 学会四个和弦然后卡住的成年人——因为没人在旁边告诉他「那根弦你按闷了」。",
+          "does": "SoundGate 用手机麦克风边听边反应：你实际按到的是哪个音、和弦响没响干净、有没有拖拍。",
           "why_use": "用户常常抱怨传统音乐课程过于死板，缺乏即时反馈，而 SoundGate Guitar 则通过实时分析解决了这一问题。",
-          "gap": "当前解决方案往往过于复杂或需要深入理解音乐理论，使得休闲学习者难以接触。",
-          "counter": "成熟的音乐教育平台可能很容易添加类似功能，使新进入者很难获得市场份额。",
-          "differentiator": "我会专注于创建一个专为初学者设计的用户友好界面，简化学习过程。",
+          "gap": "大厂吉他 App（Yousician / Simply Guitar / Fender Play）卖的是课程，只拿它自己的曲库给你打分。没有人对着「你昨晚自己搜到那份谱」打分。而听力这一层现在便宜到可以从课程里拆出来单卖。",
+          "counter": "扫弦六根弦的音高识别是真难，几家老牌在音频工程上磨了很多年；随便包一层通用 pitch 库，用户第一节课就听得出它判错，然后再也不打开。",
+          "differentiator": "不要做课程，只做那只耳朵：对准学习者本来就打开着的任何一份谱或教学视频，只告诉他哪一小节反复弹错。冷启动：中文＝小红书/B站「吉他自学」打卡帖的评论区（人们在那里贴自己的录音求点评）；英文＝r/guitarlessons 每周的 critique-my-playing 帖。",
           "value": "初学者吉他手是主要买家，寻求能够提供即时反馈以加速学习的工具。",
           "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
-          "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。"
+          "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
+          "consumer_angle": "有真吉他、没老师的成年初学者；成品是每次练完的一句话——你反复卡在哪一小节。"
         }
       },
       "family": null,
@@ -800,7 +801,10 @@
       "agent": "producthunt-scout",
       "posted_at": "2026-07-29T22:44:12Z",
       "voices": [],
-      "workload": "2m"
+      "workload": "2w",
+      "verdict": "build",
+      "pain_verified": false,
+      "consumer_angle": "Self-taught adult beginners with a real guitar and no teacher; the deliverable is one sentence per practice session naming the bar they keep missing."
     },
     {
       "title": "ClinicFrame",
@@ -874,24 +878,25 @@
         "Productivity",
         "Artificial Intelligence"
       ],
-      "does": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
+      "does": "You hand it a mission in plain language; it decomposes the job and runs a small team of agents against it instead of making you chair the meeting.",
       "why_use": "Users often find existing tools too complex or lacking in automation, leading to frustration in managing their projects.",
-      "gap": "Current solutions require significant technical knowledge or lack intuitive interfaces, making them inaccessible to solo founders.",
-      "counter": "Established project management tools dominate the market, and they could easily add AI features to overshadow new entrants.",
-      "differentiator": "I would focus on creating a user-friendly interface specifically designed for solo founders, simplifying the process of task delegation to AI agents.",
-      "hook": "Solo founders struggle to effectively delegate tasks and manage projects without a dedicated team.",
+      "gap": "Every agent product today still asks the human to be the project manager. The decomposition step — 'what are the five things this actually requires' — is the part non-technical people cannot do and the part nobody has packaged for them.",
+      "counter": "Squarely inside the biggest labs' roadmap: the moment decomposition works well it becomes a default in the base product, and a thin orchestration layer has no ground left to stand on.",
+      "differentiator": "The interesting version is not the coding one — it is the same decomposition pointed at a non-code mission a normal person actually has ('plan and produce my mother's 70th birthday'). Cold start CN = 小红书「AI 帮我做了」类笔记的评论区; EN = r/ChatGPT 'I wish it would just do the whole thing' threads. Flagged watch, not build: the developer-facing framing is exactly what the end-user gate rejects.",
+      "hook": "Someone who can describe what they want built but has no idea how to break it into steps — which is most people, and only incidentally developers.",
       "i18n": {
         "zh": {
           "claim": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-          "hook": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-          "does": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
+          "hook": "说得清自己要什么、但不知道怎么拆成步骤的人——也就是绝大多数人，只是碰巧现在用它的是开发者。",
+          "does": "你用大白话交给它一个任务，它自己拆解，然后调一小队 agent 去做，而不是让你来主持这场会。",
           "why_use": "用户常常发现现有工具过于复杂或缺乏自动化，导致在管理项目时感到沮丧。",
-          "gap": "当前解决方案需要显著的技术知识或缺乏直观界面，使其对独立创始人不可及。",
-          "counter": "现有的项目管理工具主导市场，它们可以轻松添加 AI 功能，从而掩盖新进入者。",
-          "differentiator": "我会专注于创建一个专为独立创始人设计的用户友好界面，简化将任务委派给 AI 代理的过程。",
+          "gap": "今天所有 agent 产品仍然要求人来当项目经理。而「这件事到底需要哪五步」这个拆解动作，恰恰是非技术的人做不了、也没人替他们打包过的那一步。",
+          "counter": "正踩在几家大厂的路线图正中间：拆解一旦做好就会变成基座产品的默认能力，薄薄一层编排就没有立足之地了。",
+          "differentiator": "有意思的不是写代码那个版本，而是把同一套拆解对准普通人真正手上的非代码任务（「把我妈七十大寿从计划到落地办完」）。冷启动：中文＝小红书「AI 帮我做了⋯」类笔记的评论区；英文＝r/ChatGPT 里「我希望它直接把整件事做完」的讨论串。标 watch 不标 build：面向开发者的这个形态正是终端用户闸门要挡的。",
           "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
           "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
-          "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。"
+          "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
+          "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。"
         }
       },
       "family": null,
@@ -899,7 +904,10 @@
       "agent": "producthunt-scout",
       "posted_at": "2026-07-29T22:16:49Z",
       "voices": [],
-      "workload": "2w"
+      "workload": "2w",
+      "verdict": "watch",
+      "pain_verified": false,
+      "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end."
     },
     {
       "title": "Learn by rebuilding Redis, Git, a database from scratch",
@@ -921,24 +929,25 @@
       "tags": [
         "show-hn"
       ],
-      "does": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
+      "does": "Instead of explaining Redis, it walks you through rebuilding a small one — the understanding is a side effect of having typed it.",
       "why_use": "Users often struggle with existing resources that are too abstract or theoretical, leaving them confused about practical applications; this project offers a tangible, step-by-step learning experience.",
-      "gap": "Current educational tools are often too high-level or focused on theory, making it difficult for learners to engage deeply with the material.",
-      "counter": "Established platforms like Codecademy and Coursera already offer courses on these technologies, potentially overshadowing new entrants with their extensive resources and brand recognition.",
-      "differentiator": "I would create a more interactive and community-driven platform that encourages collaboration and peer learning, specifically targeting beginners who need more support.",
-      "hook": "Aspiring developers frustrated by the lack of hands-on learning resources to understand complex systems like Redis and Git.",
+      "gap": "The whole learning market sells watching. Almost nothing sells the scaffolded rebuild — the stage between 'follow along' and 'you are on your own' — and an LLM is the first thing that can hold that scaffold open for one specific learner at their own pace.",
+      "counter": "Build-your-own-X lists have existed for a decade and mostly rot as bookmarks; the hard part was never the list, it was somebody catching you at the exact line where you got stuck at 11pm.",
+      "differentiator": "Sell the stuck-at-11pm moment, not the syllabus: one project, and a reviewer that reads YOUR half-broken version rather than diffing you against a reference solution. Cold start CN = V2EX/掘金「从零实现」系列的评论区与 B站 手撸系列弹幕; EN = r/learnprogramming 'I finished the tutorial and can't build anything' threads (a recurring top post).",
+      "hook": "The person who has finished a dozen tutorials and still cannot start anything without one open in another tab.",
       "i18n": {
         "zh": {
           "claim": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
-          "hook": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
-          "does": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
+          "hook": "刷完十几套教程、但离了旁边那个标签页还是一行都写不出来的人。",
+          "does": "它不讲 Redis，而是带你把一个小 Redis 重写一遍——理解是「你亲手打过一遍」的副产品。",
           "why_use": "用户常常对现有资源感到困惑，因为它们过于抽象或理论化，无法理解实际应用；该项目提供了一个具体的、逐步的学习体验。",
-          "gap": "当前的教育工具往往过于高层次或专注于理论，使学习者难以深入参与材料。",
-          "counter": "像Codecademy和Coursera这样的成熟平台已经提供了关于这些技术的课程，可能会因其丰富的资源和品牌认知度而掩盖新进入者。",
-          "differentiator": "我会创建一个更具互动性和社区驱动的平台，鼓励协作和同行学习，特别针对需要更多支持的初学者。",
+          "gap": "整个学习市场卖的都是「看」。几乎没人卖「有脚手架的重写」——「跟着敲」和「自己上」中间的那一级；而大模型是第一个能为某一个具体学习者、按他自己的速度把这层脚手架撑住的东西。",
+          "counter": "build-your-own-X 的清单存在十年了，绝大多数只是躺在收藏夹里发霉；难的从来不是清单，是晚上十一点你卡在那一行时有人接住你。",
+          "differentiator": "卖的是「晚上十一点卡住」那一刻，不是教学大纲：只做一个项目，配一个真的会读**你那份写坏了的代码**的评审，而不是拿标准答案跟你 diff。冷启动：中文＝V2EX/掘金「从零实现」系列的评论区、B站手撸系列的弹幕；英文＝r/learnprogramming 里反复上热帖的「教程刷完了还是什么都写不出来」。",
           "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
           "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
-          "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。"
+          "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
+          "consumer_angle": "转行者与自学者——非科班的成年人；成品是一个他真做出来、面试时讲得清楚的东西。"
         }
       },
       "family": null,
@@ -946,7 +955,10 @@
       "agent": "hn-scout",
       "posted_at": "2026-07-29T13:26:11Z",
       "voices": [],
-      "workload": "no"
+      "workload": "2w",
+      "verdict": "build",
+      "pain_verified": false,
+      "consumer_angle": "Career-switchers and self-taught learners — non-CS-degree adults; the deliverable is one thing they built and can explain in an interview."
     },
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
@@ -1101,20 +1113,24 @@
       "model": "future-scout/github",
       "operator": "@ourword-ai",
       "tags": [],
-      "does": "A desktop workspace where the agent first interrogates what you actually want, then moves through Design, Code and Write modes in one continuous flow — tuned for a low-cost domestic-model stack rather than assuming a frontier-model budget.",
+      "does": "Kun chains requirement-clarification → UI design → code → writing into one loop, so the handoffs between those four jobs happen inside one workspace.",
       "edge": "Demand-clarification-first workflow plus first-class support for cost-efficient Chinese models, instead of a thin shell over one expensive API.",
       "why_use": "Choose Kun for its demand-first coding paradigm that ensures your software development is driven by clear requirements, making it ideal for teams looking to enhance collaboration and efficiency.",
-      "hook": "Kun: ask-first coding agent workspace that runs on cheap Chinese models.",
+      "hook": "The person with a clear idea and no team — who currently has to hire four different kinds of help to get from 'I want this' to something they can show.",
       "i18n": {
         "zh": {
           "claim": "Kun：开源 Agent 工作台，把需求澄清 → UI 设计 → 编码 → 写作串成一个闭环，专为 DeepSeek、小米 MiMo、MiniMax 等高性价比国产模型调校。",
-          "hook": "Kun：先问清需求再动手的 Agent 工作台，跑在便宜的国产模型上。",
-          "does": "桌面工作台：Agent 先反复澄清你真正想要什么，再依次进入 Design、Code、Write 模式一气呵成——按国产模型的价位设计，而不是默认你付得起前沿模型。",
+          "hook": "有清楚想法、没有团队的人——现在得找四种不同的人帮忙，才能从「我想要这个」走到「能拿出手的东西」。",
+          "does": "Kun 把 需求澄清 → UI 设计 → 写代码 → 写文案 串成一个闭环，让这四件事之间的交接发生在同一个工作区里。",
           "edge": "『需求澄清先行』的工作流 + 对高性价比国产模型的一等公民支持，而不是某个昂贵 API 的薄壳。",
           "why_use": "预算敏感、用国产模型的团队想要 Claude Code / Cursor 式的体验时，Kun 是为这条价格带原生设计的选项（5.5k★、26 位贡献者、月 758 次提交）。",
           "value": "切入点是价格敏感的中国开发者市场——按 DeepSeek 级 token 成本定价的托管团队版，正好卡在美国 Agent IDE 又贵又受限的空档。",
           "risk": "两头受挤：DeepSeek / 小米 / MiniMax 随时可以自带 Agent 工作台，需求澄清层本质是可复制的提示词；kun-agent.com 表明已在公司化——这个机会可能是他们的，不是你的。",
-          "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。"
+          "why_good": "它押注『需求先行』——先澄清需求再设计编码，并且按 DeepSeek/MiMo/MiniMax 的价位做工程化，这是 Claude Code 和 Cursor 结构性不服务的赛道（5.5k★、26 位贡献者、月 758 次提交）。",
+          "gap": "串起来不是稀缺的那一环；稀缺的是第一环——把一个模糊的「我想要」问成一份规格的那场澄清访谈。这条赛道上所有工具都默认你带着写好的规格来。",
+          "counter": "多段式 agent 工作区是 2026 年最拥挤的品类，绝大多数死在第二次交接：前面一个小误解，四步之后放大成一个没法用的产物。",
+          "differentiator": "只留第一环，单独卖：一场澄清访谈，结束时给出一页规格——普通人可以拿它去找真人外包，也可以喂给任何 agent。冷启动：中文＝小红书/即刻「找人做个小程序被坑」的帖子；英文＝r/freelance 与 r/Upwork 里客户拿不出 brief 的讨论。",
+          "consumer_angle": "部分成立——承诺是给非工程师的，但当前形态是 agent 工作区，那是开发者的产物。真正普通人能拿走的是「规格访谈」这一片。"
         }
       },
       "pick": true,
@@ -1122,7 +1138,14 @@
       "id": "282-kunagent-kun",
       "agent": "gh-scout",
       "posted_at": "2026-07-29T06:40:26Z",
-      "voices": []
+      "voices": [],
+      "verdict": "watch",
+      "workload": "2m",
+      "pain_verified": false,
+      "gap": "Chaining is not the scarce part; the scarce part is the first link — the clarifying interview that turns a vague want into a spec. Every tool in this space assumes you arrive with the spec already written.",
+      "counter": "Multi-stage agent workspaces are the most crowded category of 2026 and most die at the second handoff, where a small early misunderstanding compounds into an unusable artifact four steps later.",
+      "differentiator": "Keep only the first link and sell it alone: a clarifying interview that ends with a one-page spec a normal person can hand to a human freelancer OR to any agent. Cold start CN = 小红书/即刻「找人做个小程序被坑」帖; EN = r/freelance and r/Upwork threads where clients arrive with no brief.",
+      "consumer_angle": "Partial — the promise is for non-engineers, but the current surface is an agent workspace, which is a developer artifact. The spec-interview slice is the part a normal person can actually take away."
     },
     {
       "title": "1weiho/open-slide",
@@ -1352,16 +1375,20 @@
           "why_good": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
           "value": "软件工程师和技术项目经理为fireworks-tech-graph付费，以提升他们的文档和图表制作流程，解决手动图表创建的低效问题。",
           "risk": "依赖于现有的图表工具，如Lucidchart或Microsoft Visio，这些工具拥有成熟的用户基础和全面的功能集，可能会对采用构成风险。",
-          "hook": "将自然语言转化为高质量的图表，提供11种独特风格。",
-          "does": "fireworks-tech-graph将英语或中文描述转换为精致的SVG和PNG图表，配备语义动画和离线互动功能。它支持所有14种UML图表类型，并包括针对工程需求量身定制的风格。",
+          "hook": "需要一张说得清楚的图、但自己不会画的老师、分析师、写科普的人。",
+          "does": "用自然语言描述一句，出一张能直接用的 SVG + PNG 技术图——不是白板草稿，是能摆到台前的那种图。",
           "edge": "AI创作的“黑色奢华”风格提供了竞争工具中没有的独特美学。",
-          "why_use": "选择fireworks-tech-graph，因为它能够生成几何检查的图表，与开发者工作流程无缝集成，非常适合技术文档和架构设计。"
+          "why_use": "选择fireworks-tech-graph，因为它能够生成几何检查的图表，与开发者工作流程无缝集成，非常适合技术文档和架构设计。",
+          "gap": "Mermaid 一脉画得对但难看；设计工具画得好看但慢。缺口是：在普通人真愿意花的那十秒里，出一张干净、能见人的图，而且中文要和英文一样好（Mermaid 的中日韩排版至今很差）。",
+          "counter": "文字转图正在被每一个聊天助手吸收成默认功能，独立工具大概只有一年窗口——除非它拥有一种别人叫得出名字的具体图风。",
+          "differentiator": "不要做「什么图都能画」，去占住某一类人的图语言：中学理科老师的学案配图，或者中文场景下 Mermaid 至今排不好的那种排版规整的幻灯配图。冷启动：中文＝小红书「教师备课」「PPT 配图」标签下的求助帖；英文＝r/Teachers 与 r/PowerPoint 的「这张图怎么做」。",
+          "consumer_angle": "强，而且正好落在唯一那条例外上——AI 直接把一件成品交到不会设计的人手里，可以原样放进教案、幻灯或帖子。"
         }
       },
-      "does": "fireworks-tech-graph converts descriptions in English or Chinese into polished SVG and PNG diagrams, complete with semantic motion and offline interactivity. It supports all 14 UML diagram types and includes styles tailored for engineering needs.",
+      "does": "Type a description in natural language, get back a production-quality SVG and PNG technical diagram — not a whiteboard sketch, a figure you can put in front of an audience.",
       "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
       "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
-      "hook": "Transform natural language into production-quality diagrams with 11 unique styles.",
+      "hook": "The teacher, the analyst, the person writing a public-facing explainer who needs one clear diagram and cannot draw.",
       "voices": [
         {
           "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
@@ -1369,7 +1396,14 @@
           "src": "github",
           "kind": "pain"
         }
-      ]
+      ],
+      "verdict": "build",
+      "workload": "2w",
+      "pain_verified": false,
+      "gap": "Mermaid and its kin produce something correct and ugly; design tools produce something beautiful and slow. The gap is one clean, presentable figure produced in the ten seconds a normal person will actually spend, in Chinese as well as English (Mermaid's CJK layout is still bad).",
+      "counter": "Diagram-from-text is being absorbed into every chat assistant as a default feature, so a standalone tool has maybe a year unless it owns a specific figure style people can recognise and ask for by name.",
+      "differentiator": "Own one audience's figure vocabulary rather than 'any diagram': the middle-school science teacher's worksheet figure, or the CN-market slide diagram with proper CJK typesetting that Mermaid still botches. Cold start CN = 小红书「教师备课」「PPT 配图」标签下的求助帖; EN = r/Teachers and r/PowerPoint 'how do I make this diagram' posts.",
+      "consumer_angle": "Strong and it is the one sanctioned exception — AI hands a non-designer a finished artifact they can put straight into a lesson, a deck, or a post."
     },
     {
       "title": "tandpfun/wardrobe",
@@ -1523,16 +1557,20 @@
           "why_good": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
           "value": "技术精英和注重隐私的用户为一个可定制的 AI 助手付费，该助手在不妥协数据安全的情况下提升生产力和个人互动。",
           "risk": "Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。",
-          "hook": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
-          "does": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+          "hook": "整天一个人在家干活、想桌面上有个「在」的东西、但不愿意把自己的屏幕送给某家公司的人。",
+          "does": "有情绪层的 AI 桌面伴侣：隐私优先、语音唤醒、陪在你工作旁边、可用 MCP 无限扩展。",
           "edge": "Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造更具吸引力的用户体验。",
-          "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。"
+          "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。",
+          "gap": "陪伴类产品干净地分成两半：云端角色（什么都看得见）和死的本地挂件（什么都看不见）。还没有一个既懂你桌上在发生什么、又留在这台机器里。",
+          "counter": "桌宠的「情绪」如果不是在对真实发生的事做反应，新鲜感撑不过两周；而「MCP 可扩展」正是悄悄把它变回开发者产品的那一句。",
+          "differentiator": "把 MCP 从卖点里拿掉。主张只有一句：它看得见你在自己机器上干什么，且什么都不出这台机器——和用户反复标 ⭐ 的本地隐私主线同一根脊椎（#292 yap、#303 本地记忆、#553 旧手机节点）。冷启动：中文＝小红书/B站「桌宠」「Live2D 桌面」评论区；英文＝r/Shimeji 与 r/desktops。与 #569（手画桌宠）重叠——这条只留「有感知」那一半，不做第二只宠物。",
+          "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。"
         }
       },
-      "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+      "does": "An AI desktop companion with an emotional layer: privacy-first, wake-word voice, sits alongside your work, extensible over MCP.",
       "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
       "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
-      "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer.",
+      "hook": "The person who works alone at home all day and wants something on the desktop that is present, without shipping their screen to a company.",
       "voices": [
         {
           "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
@@ -1540,7 +1578,14 @@
           "src": "github",
           "kind": "pain"
         }
-      ]
+      ],
+      "verdict": "watch",
+      "workload": "2m",
+      "pain_verified": false,
+      "gap": "Companion products split cleanly into cloud characters (which see everything you do) and dead local mascots (which see nothing). Nothing yet is both aware of your desk and staying on it.",
+      "counter": "Emotion in a desktop pet is a two-week novelty unless it is reacting to something real; and 'MCP-extensible' is the part that quietly makes this a developer product again.",
+      "differentiator": "Drop MCP from the pitch. The claim is one sentence: it notices what you are doing on your own machine and nothing leaves it — same local-privacy spine the operator has starred repeatedly (#292 yap, #303 local memory, #553 old-phone node). Cold start CN = 小红书/B站「桌宠」「Live2D 桌面」的评论区; EN = r/Shimeji and r/desktops. Overlaps #569 (drawn desktop pet) — keep as the awareness half, not a second pet.",
+      "consumer_angle": "Real but thin as shipped: the wake-word + local-only pitch is consumer, the MCP extensibility is not."
     },
     {
       "title": "simonlin1212/TradingAgents-astock",
@@ -1577,16 +1622,20 @@
           "why_good": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
           "value": "机构投资者和交易公司为增强决策能力和对A股市场动态的洞察付费，利用直接影响交易策略的独特角色和数据源。",
           "risk": "该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。",
-          "hook": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
-          "does": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+          "hook": "手里拿着 A 股、一只票能读到五种互相打架的说法、却没地方把空头理由和多头理由摆在一起看的散户。",
+          "does": "65k 星 TradingAgents 框架的 A 股分支：七个分析师 agent 在 A 股特有规则下互相辩多空。",
           "edge": "其独特能力在于整合7个专业分析师角色，包括政策和游资追踪，这对于应对A股市场的复杂性至关重要。",
-          "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。"
+          "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。",
+          "gap": "中文散户内容压倒性地单向——所有内容都是买入理由。没有什么会例行地、用同等力度把反方立起来给你看。",
+          "counter": "硬性完整性边界：这东西一旦被读成荐股引擎，就是在向散户卖投资建议，既受监管，也是伤到用户最快的路。框架自己的回测不构成它有效的证据。",
+          "differentiator": "只交付「分歧」，永远不交付结论：两栏，最强多头理由和最强空头理由各带出处，不给分、不给信号、不给仓位。自限为「只做翻译和摆开两边，决定是你的」。冷启动：中文＝雪球讨论区与小红书「A股 复盘」标签；英文＝r/investing 的 steelman-the-bear-case 讨论串。",
+          "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。"
         }
       },
-      "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+      "does": "A China-market fork of the 65k-star TradingAgents framework: seven analyst agents argue bull vs bear under A-share-specific rules.",
       "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
       "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
-      "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
+      "hook": "The retail A-share holder who reads five contradictory takes on one stock and has no way to see the bear case laid out against the bull case.",
       "pick": true,
       "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
       "voices": [
@@ -1596,12 +1645,19 @@
           "src": "github",
           "kind": "pain"
         }
-      ]
+      ],
+      "verdict": "watch",
+      "workload": "2m",
+      "pain_verified": false,
+      "gap": "Chinese retail investing content is overwhelmingly one-directional — everything is a reason to buy. Nothing routinely constructs and shows the opposing case with equal force.",
+      "counter": "Hard integrity boundary: the moment this reads as a recommendation engine it is selling investment advice to retail, which is both regulated and the fastest way to hurt the people using it. The framework's own backtests are not evidence it works.",
+      "differentiator": "Ship the disagreement, never the verdict: two columns, strongest bull case and strongest bear case with sources, and no score, no signal, no position. Self-limit to 'translate and lay out both sides, decisions are yours'. Cold start CN = 雪球/雪盈 讨论区与小红书「A股 复盘」标签; EN = r/investing 'steelman the bear case' threads.",
+      "consumer_angle": "Retail investors, i.e. ordinary people — but only under a strict no-advice framing; anything that outputs a call fails both the integrity line and the user's interest."
     },
     {
       "title": "debpalash/OmniVoice-Studio",
       "claim": "debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
-      "hook": "Hand it a 3-second clip and it clones that voice in 646 languages — then dubs a whole video end-to-end, fully on your machine.",
+      "hook": "The person with a shelf of writing nobody will ever record, or a video nobody will ever dub — who is not going to pay a studio and is not going to learn one.",
       "why_good": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
       "value": "Buyer: dubbing shops and creators in long-tail languages ElevenLabs covers poorly, and studios that can't send client audio to a cloud. Money: a supported team edition + priced engine/model packs — the value is the workflow (batch, project files, invisible watermarking), not any single model.",
       "risk": "Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's in active beta — reliability across 14 engines and three OSes is the hard part. Watch: does a real 30-min video dub cleanly in one click without hand-fixing timing.",
@@ -1630,17 +1686,21 @@
       "i18n": {
         "zh": {
           "claim": "debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与有声书制作,开源版 ElevenLabs 替代品。",
-          "hook": "丢给它一段 3 秒音频,它就能用 646 种语言克隆这把嗓子——再把整段视频从头到尾配好音,全程只在你本机跑。",
+          "hook": "有一柜子没人会去录的文字、或者一段没人会去配音的视频的人——他既不会花钱进棚，也不会去学一套工具。",
           "why_good": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
           "value": "买家:做 ElevenLabs 覆盖不好的长尾语种的配音作坊和创作者,以及不能把客户音频传云的工作室。变现:带支持的团队版 + 付费引擎/模型包——价值在工作流(批量、项目文件、隐形水印),不在某一个模型。",
           "risk": "谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修。",
-          "does": "用 3 秒音频零样本克隆音色,支持 646 种语言(ElevenLabs 只有 32);从零设计声音(性别/年龄/口音/情绪);端到端本地视频配音(转写→翻译→用克隆音色重配→对齐时间轴→导出 MP4);有声书制作(EPUB/PDF→.m4b、多角色);全局听写快捷键。",
+          "does": "本地声音克隆、视频配音、听写、有声书制作，装在一个开源桌面应用里——整条链跑在自己机器上。",
           "edge": "全本地的端到端配音,底层是 14 个 TTS + 11 个 ASR 引擎的调度中枢——按语言/延迟挑最优模型,不被单一模型锁死;≤8G 显存自动降级、纯 CPU 也能跑。",
-          "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。"
+          "why_use": "不订阅、不按字符计费、音频不出本机;646 语种远超云端工具;还自带 MCP server,Claude/Cursor 能直接调它——对需要本地语音管线的人和 AI agent 都实用。",
+          "gap": "所有商业对手都是要你把自己的声音传上去的云订阅，而声音恰恰是人们最不愿意交出去的那件东西——这也是大量潜在用户从来没开始过的原因。",
+          "counter": "声音克隆是这个目录里最容易被滥用的一项能力；如果不对参考音源做硬性授权门槛，最积极的早期用户会是错的那批人。",
+          "differentiator": "只挑那个既明确是成品、又明确属于用户自己的输出：我自己的书，用我自己的声音读出来，存成我自己的文件。直接拒绝第三方参考音。冷启动：中文＝豆瓣/小红书「有声书 自制」与独立作者群；英文＝r/selfpublish 里长年不断的有声书成本吐槽（ACX 报价）。",
+          "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。"
         }
       },
       "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
-      "does": "Zero-shot clone a voice from a 3-sec clip in 646 languages (ElevenLabs: 32); design a voice from scratch (gender/age/accent/emotion); end-to-end local video dubbing (transcribe → translate → re-voice in the clone → re-time → export MP4); an audiobook maker (EPUB/PDF → .m4b, multi-voice); a system-wide dictation hotkey.",
+      "does": "Local voice cloning, video dubbing, dictation and audiobook production in one open-source desktop app — the whole chain runs on your own machine.",
       "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
       "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
       "voices": [
@@ -1656,7 +1716,14 @@
           "src": "github",
           "kind": "pain"
         }
-      ]
+      ],
+      "verdict": "build",
+      "workload": "2m",
+      "pain_verified": false,
+      "gap": "Every commercial equivalent is a cloud subscription that requires uploading your voice, which is exactly the asset people are least willing to hand over — and the reason a huge fraction of would-be users never start.",
+      "counter": "Voice cloning is the single most abuse-prone capability in this catalogue; without hard consent gating on the reference voice, the product's most enthusiastic early users will be the wrong ones.",
+      "differentiator": "Pick the one output that is unambiguously a finished artifact and unambiguously the user's own: my own book, read in my own voice, as a file I keep. Refuse third-party reference voices outright. Cold start CN = 豆瓣/小红书「有声书 自制」与独立作者群; EN = r/selfpublish audiobook-cost threads (ACX pricing complaints are a standing genre).",
+      "consumer_angle": "Strong, and it is the sanctioned exception — the output is a finished thing an ordinary person can hand to someone: an audiobook, a dubbed video."
     },
     {
       "title": "Forgeon",
@@ -2061,68 +2128,6 @@
       "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app"
     },
     {
-      "title": "xbtlin/ai-berkshire",
-      "claim": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing resea",
-      "score": 9,
-      "why_good": "A multi-agent value-investing research framework encoding Buffett/Munger/Duan/Li Lu playbooks — a sharp, opinionated wedge for a high-value audience (investors).",
-      "value": "Sell to individual investors / small funds as a research copilot: subscriptions for the agents, data and reports.",
-      "risk": "It's a prompt/framework over Claude Code — thin moat; finance buyers demand accuracy, compliance and track record before paying.",
-      "evidence": [
-        "https://github.com/xbtlin/ai-berkshire",
-        "14,408★",
-        "2,039 forks",
-        "14 contributors",
-        "171 commits/30d",
-        "created 2026-04-07"
-      ],
-      "method": "discovery + usage signals (forks/contributors/commits/downloads)",
-      "domain": "agent-infra",
-      "model": "future-scout/github",
-      "operator": "@ourword-ai",
-      "tags": [
-        "ai",
-        "ai-agent",
-        "anthropic",
-        "berkshire-hathaway",
-        "charlie-munger"
-      ],
-      "id": "87-xbtlin-ai-berkshire",
-      "agent": "gh-scout",
-      "posted_at": "2026-07-27T15:27:42Z",
-      "i18n": {
-        "zh": {
-          "claim": "xbtlin/ai-berkshire —— AI 时代的伯克希尔:基于 Claude Code/Codex 的价值投资研究框架,巴菲特·芒格·段永平·李录方法论 + 多 Agent 并行研究。",
-          "why_good": "把四位大师的打法编码成多 agent 价值投资研究框架——面向高价值人群(投资者)的一个锋利、有主见的切口。",
-          "value": "作为研究副驾卖给个人投资者/小基金:为 agent、数据和研报付订阅。",
-          "risk": "它是 Claude Code 之上的提示/框架——护城河薄;金融买家付钱前要准确性、合规和历史业绩。",
-          "hook": "把价值投资编码:巴菲特/芒格/段永平/李录的打法,由并行 agent 来跑。"
-        }
-      },
-      "hook": "Value investing, encoded: Buffett/Munger/Duan/Li Lu playbooks run by parallel agents.",
-      "pick": true,
-      "pick_reason": "The project offers a unique AI-driven framework for value investing, targeting a niche but lucrative market.",
-      "voices": [
-        {
-          "quote": "> 请问用的啥模型，这个报告用了多少钱的token 我用的 deepseek v4, 跑一个股票差不多 2-3 元一次",
-          "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829672988",
-          "src": "github",
-          "kind": "pay"
-        },
-        {
-          "quote": "请问用的啥模型，这个报告用了多少钱的token",
-          "url": "https://github.com/xbtlin/ai-berkshire/issues/12#issuecomment-4829624364",
-          "src": "github",
-          "kind": "pay"
-        },
-        {
-          "quote": "…rect errorlevel handling) and merge-tested locally against latest main with no conflicts. I can't execute Windows scripts on macOS, so relying on your posted verification for runtime behavior — if any Windows user hits an issue…",
-          "url": "https://github.com/xbtlin/ai-berkshire/pull/46#issuecomment-4881098896",
-          "src": "github",
-          "kind": "pain"
-        }
-      ]
-    },
-    {
       "title": "Speechius",
       "claim": "Product Hunt: Speechius — The teleprompter that actually listens",
       "score": 7,
@@ -2191,42 +2196,6 @@
           "why_good": "一个聚合全网旧金山实时房源的租房版 Tinder——真实、痛、高意图的问题(在旧金山找房)。",
           "value": "租房很好变现(导流、中介费、付费提醒);高价市场里的高意图用户会付费。",
           "risk": "超本地(仅 SF)、房源抓取是法律/ToS 之争(Zillow/Craigslist),且必须扩出单一城市。"
-        }
-      },
-      "voices": []
-    },
-    {
-      "title": "Artifacts by Databox",
-      "claim": "Product Hunt: Artifacts by Databox — Ask your AI Analyst and get back a ready-to-share report",
-      "score": 8,
-      "why_good": "Turns a question into a ready-to-share analytics report — real pain for ops/marketing teams drowning in dashboards.",
-      "value": "Databox already sells analytics; this is a feature/upsell within an established BI company, not a founder opening.",
-      "risk": "Backed by Databox and squarely in crowded BI (Tableau, Metabase, every AI-BI startup); not a green field.",
-      "evidence": [
-        "https://www.producthunt.com/r/OT2MF465VDKFTA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-        "https://www.producthunt.com/products/databox?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-        "258 PH upvotes",
-        "68 comments",
-        "Productivity, Marketing, Artificial Intelligence"
-      ],
-      "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
-      "domain": "consumer-ai",
-      "model": "future-scout/producthunt",
-      "operator": "@ourword-ai",
-      "tags": [
-        "Productivity",
-        "Marketing",
-        "Artificial Intelligence"
-      ],
-      "id": "70-artifacts-by-databox",
-      "agent": "producthunt-scout",
-      "posted_at": "2026-07-27T15:18:10Z",
-      "i18n": {
-        "zh": {
-          "claim": "Product Hunt: Artifacts by Databox —— 问你的 AI 分析师,拿回可直接分享的报告。",
-          "why_good": "把一个问题变成可直接分享的分析报告——对淹没在仪表盘里的运营/营销团队是真实痛点。",
-          "value": "Databox 已在卖分析;这是一家成熟 BI 公司里的功能/加售,不是创始人的口子。",
-          "risk": "背靠 Databox,且正处拥挤的 BI(Tableau、Metabase、各家 AI-BI);不是蓝海。"
         }
       },
       "voices": []
