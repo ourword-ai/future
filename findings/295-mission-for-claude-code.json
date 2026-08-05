@@ -1,49 +1,53 @@
 {
- "title": "/mission for Claude Code",
- "claim": "Product Hunt: /mission for Claude Code — Give Claude Code missions to spawn a team of agents",
- "score": 8,
- "why_good": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
- "value": "Solo founders pay for streamlined project management and task automation that saves them time and effort.",
- "risk": "The risk lies in established competitors quickly integrating similar AI capabilities into their existing platforms.",
- "evidence": [
-  "https://www.producthunt.com/r/P3XBZI4J2DWVBF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/spine-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "249 PH upvotes",
-  "30 comments",
-  "Productivity, Artificial Intelligence"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Productivity",
-  "Artificial Intelligence"
- ],
- "does": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
- "why_use": "Users often find existing tools too complex or lacking in automation, leading to frustration in managing their projects.",
- "gap": "Current solutions require significant technical knowledge or lack intuitive interfaces, making them inaccessible to solo founders.",
- "counter": "Established project management tools dominate the market, and they could easily add AI features to overshadow new entrants.",
- "differentiator": "I would focus on creating a user-friendly interface specifically designed for solo founders, simplifying the process of task delegation to AI agents.",
- "hook": "Solo founders struggle to effectively delegate tasks and manage projects without a dedicated team.",
- "i18n": {
-  "zh": {
-   "claim": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-   "hook": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
-   "does": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
-   "why_use": "用户常常发现现有工具过于复杂或缺乏自动化，导致在管理项目时感到沮丧。",
-   "gap": "当前解决方案需要显著的技术知识或缺乏直观界面，使其对独立创始人不可及。",
-   "counter": "现有的项目管理工具主导市场，它们可以轻松添加 AI 功能，从而掩盖新进入者。",
-   "differentiator": "我会专注于创建一个专为独立创始人设计的用户友好界面，简化将任务委派给 AI 代理的过程。",
-   "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
-   "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
-   "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。"
-  }
- },
- "family": null,
- "id": "295-mission-for-claude-code",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-29T22:16:49Z",
- "voices": [],
- "workload": "2w"
+  "title": "/mission for Claude Code",
+  "claim": "Product Hunt: /mission for Claude Code — Give Claude Code missions to spawn a team of agents",
+  "score": 8,
+  "why_good": "Claude Code is an AI-powered tool that allows users to create missions for AI agents, enabling them to automate tasks and manage projects efficiently.",
+  "value": "Solo founders pay for streamlined project management and task automation that saves them time and effort.",
+  "risk": "The risk lies in established competitors quickly integrating similar AI capabilities into their existing platforms.",
+  "evidence": [
+    "https://www.producthunt.com/r/P3XBZI4J2DWVBF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/spine-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "249 PH upvotes",
+    "30 comments",
+    "Productivity, Artificial Intelligence"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Productivity",
+    "Artificial Intelligence"
+  ],
+  "does": "You hand it a mission in plain language; it decomposes the job and runs a small team of agents against it instead of making you chair the meeting.",
+  "why_use": "Users often find existing tools too complex or lacking in automation, leading to frustration in managing their projects.",
+  "gap": "Every agent product today still asks the human to be the project manager. The decomposition step — 'what are the five things this actually requires' — is the part non-technical people cannot do and the part nobody has packaged for them.",
+  "counter": "Squarely inside the biggest labs' roadmap: the moment decomposition works well it becomes a default in the base product, and a thin orchestration layer has no ground left to stand on.",
+  "differentiator": "The interesting version is not the coding one — it is the same decomposition pointed at a non-code mission a normal person actually has ('plan and produce my mother's 70th birthday'). Cold start CN = 小红书「AI 帮我做了」类笔记的评论区; EN = r/ChatGPT 'I wish it would just do the whole thing' threads. Flagged watch, not build: the developer-facing framing is exactly what the end-user gate rejects.",
+  "hook": "Someone who can describe what they want built but has no idea how to break it into steps — which is most people, and only incidentally developers.",
+  "i18n": {
+    "zh": {
+      "claim": "独立创始人在没有专门团队的情况下，难以有效委派任务和管理项目。",
+      "hook": "说得清自己要什么、但不知道怎么拆成步骤的人——也就是绝大多数人，只是碰巧现在用它的是开发者。",
+      "does": "你用大白话交给它一个任务，它自己拆解，然后调一小队 agent 去做，而不是让你来主持这场会。",
+      "why_use": "用户常常发现现有工具过于复杂或缺乏自动化，导致在管理项目时感到沮丧。",
+      "gap": "今天所有 agent 产品仍然要求人来当项目经理。而「这件事到底需要哪五步」这个拆解动作，恰恰是非技术的人做不了、也没人替他们打包过的那一步。",
+      "counter": "正踩在几家大厂的路线图正中间：拆解一旦做好就会变成基座产品的默认能力，薄薄一层编排就没有立足之地了。",
+      "differentiator": "有意思的不是写代码那个版本，而是把同一套拆解对准普通人真正手上的非代码任务（「把我妈七十大寿从计划到落地办完」）。冷启动：中文＝小红书「AI 帮我做了⋯」类笔记的评论区；英文＝r/ChatGPT 里「我希望它直接把整件事做完」的讨论串。标 watch 不标 build：面向开发者的这个形态正是终端用户闸门要挡的。",
+      "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
+      "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
+      "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
+      "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。"
+    }
+  },
+  "family": null,
+  "id": "295-mission-for-claude-code",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-29T22:16:49Z",
+  "voices": [],
+  "workload": "2w",
+  "verdict": "watch",
+  "pain_verified": false,
+  "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end."
 }
