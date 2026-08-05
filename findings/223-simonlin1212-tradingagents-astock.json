@@ -33,16 +33,20 @@
       "why_good": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
       "value": "机构投资者和交易公司为增强决策能力和对A股市场动态的洞察付费，利用直接影响交易策略的独特角色和数据源。",
       "risk": "该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。",
-      "hook": "利用7位AI分析师实时辩论市场动态，提升您的A股交易能力！",
-      "does": "TradingAgents-Astock是一个专门针对A股交易的框架，结合7个不同的AI分析师，利用本土A股数据源辩论市场状况。它提供了针对中国独特交易规则和市场特征的全面分析。",
+      "hook": "手里拿着 A 股、一只票能读到五种互相打架的说法、却没地方把空头理由和多头理由摆在一起看的散户。",
+      "does": "65k 星 TradingAgents 框架的 A 股分支：七个分析师 agent 在 A 股特有规则下互相辩多空。",
       "edge": "其独特能力在于整合7个专业分析师角色，包括政策和游资追踪，这对于应对A股市场的复杂性至关重要。",
-      "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。"
+      "why_use": "选择TradingAgents-Astock，因为它在A股交易中的深度专业化，利用本地数据源和量身定制的分析角色，提供其他框架无法提供的洞察。",
+      "gap": "中文散户内容压倒性地单向——所有内容都是买入理由。没有什么会例行地、用同等力度把反方立起来给你看。",
+      "counter": "硬性完整性边界：这东西一旦被读成荐股引擎，就是在向散户卖投资建议，既受监管，也是伤到用户最快的路。框架自己的回测不构成它有效的证据。",
+      "differentiator": "只交付「分歧」，永远不交付结论：两栏，最强多头理由和最强空头理由各带出处，不给分、不给信号、不给仓位。自限为「只做翻译和摆开两边，决定是你的」。冷启动：中文＝雪球讨论区与小红书「A股 复盘」标签；英文＝r/investing 的 steelman-the-bear-case 讨论串。",
+      "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。"
     }
   },
-  "does": "TradingAgents-Astock is a specialized framework for A-share trading that incorporates 7 distinct AI analysts to debate market conditions using native A-share data sources. It offers a comprehensive analysis tailored to China's unique trading rules and market characteristics.",
+  "does": "A China-market fork of the 65k-star TradingAgents framework: seven analyst agents argue bull vs bear under A-share-specific rules.",
   "edge": "The standout capability lies in its integration of 7 specialized analyst roles, including policy and hot money tracking, which are crucial for navigating the intricacies of the A-share market.",
   "why_use": "Choose TradingAgents-Astock for its deep specialization in A-share trading, utilizing local data sources and tailored analysis roles that provide insights no other framework can offer.",
-  "hook": "Empower Your A-Share Trading with 7 AI Analysts Debating Real-Time Market Dynamics!",
+  "hook": "The retail A-share holder who reads five contradictory takes on one stock and has no way to see the bear case laid out against the bull case.",
   "pick": true,
   "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
   "voices": [
@@ -52,5 +56,12 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "verdict": "watch",
+  "workload": "2m",
+  "pain_verified": false,
+  "gap": "Chinese retail investing content is overwhelmingly one-directional — everything is a reason to buy. Nothing routinely constructs and shows the opposing case with equal force.",
+  "counter": "Hard integrity boundary: the moment this reads as a recommendation engine it is selling investment advice to retail, which is both regulated and the fastest way to hurt the people using it. The framework's own backtests are not evidence it works.",
+  "differentiator": "Ship the disagreement, never the verdict: two columns, strongest bull case and strongest bear case with sources, and no score, no signal, no position. Self-limit to 'translate and lay out both sides, decisions are yours'. Cold start CN = 雪球/雪盈 讨论区与小红书「A股 复盘」标签; EN = r/investing 'steelman the bear case' threads.",
+  "consumer_angle": "Retail investors, i.e. ordinary people — but only under a strict no-advice framing; anything that outputs a call fails both the integrity line and the user's interest."
 }
