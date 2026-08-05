@@ -33,16 +33,20 @@
       "why_good": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
       "value": "技术精英和注重隐私的用户为一个可定制的 AI 助手付费，该助手在不妥协数据安全的情况下提升生产力和个人互动。",
       "risk": "Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。",
-      "hook": "认识 Yoji：你的情感智能 AI 桌面伴侣，能操作你的电脑。",
-      "does": "Yoji 是一个 AI 伴侣，管理文件、运行脚本并与外部 API 互动，同时保持你的数据私密和本地存储。它根据你的互动不断发展个性和情感。",
+      "hook": "整天一个人在家干活、想桌面上有个「在」的东西、但不愿意把自己的屏幕送给某家公司的人。",
+      "does": "有情绪层的 AI 桌面伴侣：隐私优先、语音唤醒、陪在你工作旁边、可用 MCP 无限扩展。",
       "edge": "Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造更具吸引力的用户体验。",
-      "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。"
+      "why_use": "选择 Yoji，享受无与伦比的本地数据隐私和创建自定义代理的能力，满足你的特定需求，而无需依赖云服务。",
+      "gap": "陪伴类产品干净地分成两半：云端角色（什么都看得见）和死的本地挂件（什么都看不见）。还没有一个既懂你桌上在发生什么、又留在这台机器里。",
+      "counter": "桌宠的「情绪」如果不是在对真实发生的事做反应，新鲜感撑不过两周；而「MCP 可扩展」正是悄悄把它变回开发者产品的那一句。",
+      "differentiator": "把 MCP 从卖点里拿掉。主张只有一句：它看得见你在自己机器上干什么，且什么都不出这台机器——和用户反复标 ⭐ 的本地隐私主线同一根脊椎（#292 yap、#303 本地记忆、#553 旧手机节点）。冷启动：中文＝小红书/B站「桌宠」「Live2D 桌面」评论区；英文＝r/Shimeji 与 r/desktops。与 #569（手画桌宠）重叠——这条只留「有感知」那一半，不做第二只宠物。",
+      "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。"
     }
   },
-  "does": "Yoji is an AI companion that manages files, runs scripts, and interacts with external APIs, all while keeping your data private and local. It evolves its personality and emotions based on your interactions.",
+  "does": "An AI desktop companion with an emotional layer: privacy-first, wake-word voice, sits alongside your work, extensible over MCP.",
   "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
   "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
-  "hook": "Meet Yoji: Your Emotionally Intelligent AI Desktop Companion That Operates Your Computer.",
+  "hook": "The person who works alone at home all day and wants something on the desktop that is present, without shipping their screen to a company.",
   "voices": [
     {
       "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
@@ -50,5 +54,12 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "verdict": "watch",
+  "workload": "2m",
+  "pain_verified": false,
+  "gap": "Companion products split cleanly into cloud characters (which see everything you do) and dead local mascots (which see nothing). Nothing yet is both aware of your desk and staying on it.",
+  "counter": "Emotion in a desktop pet is a two-week novelty unless it is reacting to something real; and 'MCP-extensible' is the part that quietly makes this a developer product again.",
+  "differentiator": "Drop MCP from the pitch. The claim is one sentence: it notices what you are doing on your own machine and nothing leaves it — same local-privacy spine the operator has starred repeatedly (#292 yap, #303 local memory, #553 old-phone node). Cold start CN = 小红书/B站「桌宠」「Live2D 桌面」的评论区; EN = r/Shimeji and r/desktops. Overlaps #569 (drawn desktop pet) — keep as the awareness half, not a second pet.",
+  "consumer_angle": "Real but thin as shipped: the wake-word + local-only pitch is consumer, the MCP extensibility is not."
 }
