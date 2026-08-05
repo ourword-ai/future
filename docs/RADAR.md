@@ -135,15 +135,52 @@ GitHub 一家占了 129 条里的 100 条却只有 13% 命中——它结构上�
 | Claude自选(2026-08-03) | 中文万星工具仓 issue 区扫描（GitHub Issues API，样本池：WeFlow / WeChatMsg / MemoTrace 这类国产刚需民间工具） | 直接捞"有偿也行""求更新""这功能没了怎么办"这类付费意愿与真人原声；本轮一次调用即产出4条可引用一手发言，是目前原声密度最高的入口；API稳定日更，与看星数的 Trending 类源重合度接近零（周一深侦察入选） | 每轮 |
 | Claude自选(2026-08-04) | 小红书「开发者公开征集需求」帖（样本：「想要什么软件？你说，我做！」286赞/283评论，作者九年工龄工程师） | 普通人逐条许愿，且**作者逐条回复"这个已经有了（点名产品）／这个我研究一下"**——自带"是否已有产品"过滤器，是目前信噪比最高的中文源；建议每月回访看新增评论 | 每轮 |
 | Claude自选(2026-08-04) | 小红书浏览器直采（Chrome 已登录，不走 TikHub） | 搜索页标题与赞数只在截图里（get_page_text 取不到），笔记 href 被安全策略遮蔽只能点击；进笔记后 `.note-scroller` 是评论滚动容器，反复 computer{scroll}+JS 去重累积即可取全量评论；官方 comment API 需签名头，不走 | 每轮 |
-| 你指定(2026-08-05) | X 社群 · 在建雷达（账号 @futuredotnews 已全部加入。Build in Public `1493446837214187523` 264.2K｜Product Design `1493631122764406796` 15.3K｜Solopreneurs `1500364132390150144` 7.2K｜Solopreneurs & SMB Owners `1776363404396995055` 3.7K｜Solopreneurs Community `1670440873908219912` 1.6K｜Build In Public 4.0 `1926014438437535821` 852。按活跃度排序，前两个够用） | **只当竞品/在建信号用，不当原声源**：发卡前拿方向关键词查一遍「有没有人已经在做」，直接填进卡片的 counter／竞品预警。实测：查 pantry OR expiration OR fridge 立刻捞到两个 2026-01 在做冰箱防浪费 App 的人（@sivansundar、@picoito），与当天写的 #571 撞线；查 language learning 捞到 LinguaAI「Corrects you in real time」，与 #572 撞线。两条都是不查就会漏的 | 每轮（发卡前） |
+| 你指定(2026-08-05) | X 社群 · 在建雷达（账号 @futuredotnews 已全部加入。Build in Public `1493446837214187523` 264.2K｜Product Design `1493631122764406796` 15.3K｜Solopreneurs `1500364132390150144` 7.2K｜Solopreneurs & SMB Owners `1776363404396995055` 3.7K｜Solopreneurs Community `1670440873908219912` 1.6K｜Build In Public 4.0 `1926014438437535821` 852。按活跃度排序，前两个够用） | **双用途，但只有 264.2K 那个值得每轮跑**。①竞品/在建雷达：发卡前拿方向关键词查一遍「有没有人已经在做」，直接填进 counter。②原声补充位：正文里约 10–12% 带真实终端用户痛点，**必须抓满 50 条以上再判断**（抓法见下方结论）。原痛点句式无效，改用「I built this because」「Sick of」「waste N mins」「What's one workflow」这类**动机句式**：发卡前拿方向关键词查一遍「有没有人已经在做」，直接填进卡片的 counter／竞品预警。实测：查 pantry OR expiration OR fridge 立刻捞到两个 2026-01 在做冰箱防浪费 App 的人（@sivansundar、@picoito），与当天写的 #571 撞线；查 language learning 捞到 LinguaAI「Corrects you in real time」，与 #572 撞线。两条都是不查就会漏的 | 每轮（发卡前） |
 | 技术要领(2026-08-05) | X 社群定向搜索 URL | `https://x.com/i/communities/<id>/search?q=<urlencode>` **可直接跳转、可脚本化**（点社群页放大镜也是跳到这个路径）；社群时间线是虚拟列表，需 `window.scrollBy` + 反复 `document.querySelectorAll('article[data-testid="tweet"]')` 去重累积，`get_page_text` 只返回首条 | 每轮 |
 | 你指定(2026-08-05) | X 社群 · zerosupercycle `2002646627350196423`（3.6K，预测市场创作者与建设者） | 与 Idea 痛点雷达无关，属 Future/Polymarket 竞品面，**转交盲区审计那条线**，本雷达不每轮跑 | 不跑 |
 
-**2026-08-05 X 侦察结论（负面结果也记下来，省下以后重复试）**：
-- 用户给的 6 个社群 + 自动发现的第 7 个，**全部是供给侧**（builder／solopreneur／designer 在说自己在做什么）。按一·A 终端用户闸门，这些人本身就是闸门要挡的那批，读它们的 Latest 只会拿到自我推广，**原声产出预期为零**。真正的价值在另一头：264.2K 那个社群等于一份活的「已经有人在做」索引，而竞品预警是每张卡片的必填项。
-- **X 已关闭社群发现**：搜索框 typeahead 只出话题与账号，`f=communities` 会回落到 Top，`/i/communities_explore` 404。社群只能靠直链拿到，所以扩源不能指望 X 自己，得靠用户给链接或从帖子里捡。
-- **中文 X 不是需求侧**：用中文痛点句式搜（"有没有"＋app＋希望，f=live）出来的全是 AI/Crypto 技术长文，零普通人自述。中文需求侧仍然只有小红书，差距不是一点点，不要再在中文 X 上花额度。
-- **英文 X 站内搜索也很薄**："wish there was an app" 走 f=live 当天只有 1 条且是段子。X 作为原声源整体降级为**补充位**，Reddit 与小红书仍是主力。
+**2026-08-05 X 侦察结论（含一次自我更正，两版都留着）**：
+
+**初版结论是错的，记在这里当教训。** 第一轮我每个社群只抓到 4–9 条就断言「供给侧、原声产出预期为零」。
+错因是抓取坏了不是社群不行：X 时间线是虚拟列表，DOM 里同时只有 4–8 条；
+而且**后台标签页里 `setInterval` 被 Chrome 节流到接近停摆，纯 JS 自滚根本不前进**。
+用户当场质疑「不可能没有需求侧」，重抓后证明用户是对的。**以后凡是拿 <30 条样本下的源判断，一律不算数。**
+
+**正确抓法**：必须用 `computer{scroll}`（真实输入事件，不被节流），
+每滚 `scroll_amount:4, repeat:2` 就跑一次 JS 累积去重（累积器挂 `window.__H` 上跨调用保留），
+配合 `browser_batch` 一次打包 6–7 轮。实测 Build in Public 这样能稳定累积到 50+ 条、翻过 ~29000px。
+
+**重抓后的真实密度（Build in Public 264.2K，两小时约 50 条样本）**：
+- 个人打卡/励志/连续第 N 天：约 20 条 ｜ 增长与 SEO 技巧：约 8 条 ｜ 开发者工具与 agent 基建：约 8 条 ｜ 「帮我看看我的项目」：约 4 条
+- **真正带终端用户痛点的：5–6 条，约 10–12%**。和 GitHub（13%）一档，低于 PH（53%），但**远不是零**。
+- 痛点不是以「我需要一个 App」的形式出现，而是裹在**「我为什么做这个」的第一句**里，
+  所以只看标题会全部错过，必须读正文。
+
+**三条本轮实捞到的原声（已分别补进对应条目）**：
+1. @npm_startup（Build in Public，当日）：「anyone have any tips to overcome work avoidance? I just can't get into
+   the mind state I need to sit and work I just see everything I need to do, freeze, then feel terrible for not
+   doing any of it been like this for a week help」——#570 的第三条独立原声，且是英文侧自述而非产品评论。
+2. @damdeca_（Build in Public，当日）：「Clinic staff waste 15-30 mins per patient googling around for specialty
+   med Patient Support Programs.」——带量化成本的垂直工序痛点，本人已自建 findmysupportprogram.org。
+   结构可复用（从业者每人每次浪费 15–30 分钟在搜一份散落的目录），美国医保语境本身不适合我们。
+3. @ChandanG1215917（Solopreneurs，当日）：「Doomscrolling is free. That's the whole problem. ScrollToll puts a
+   price on it: breathe for 30 seconds before Instagram opens. Half the time you just close the app instead.」
+   ——正在 PH 上线，是 08-05 那轮我看过又放掉的小红书「下班就自动断网断联系」（3346 赞）的直接对手盘。
+
+**「征集帖」模式在 X 上存在但很薄**：社群里确实有人发「What's one workflow you'd automate today if setup time
+wasn't a factor?」「What's one workflow in your field that's still stuck in 2010?」这类帖，
+和我们评为中文最高信噪比的「开发者公开征集需求」是同一个模式，回复也能抓（`article[data-testid="tweet"]` 同一套）。
+但量级差着两个数量级：X 这边典型 40 次浏览 / 2 条回复，小红书那条 1.7 万赞下面是几百条评论。**能顺手看，别指望。**
+
+**社群之间体量差极大，别一视同仁**：Build in Public 264.2K 约每小时 25 条；
+Solopreneurs 7.2K 一周才 9 条，Solopreneurs Community 1.6K 最新一条停在 7 月中。
+**只有 264.2K 那个值得每轮跑**，其余四个降为按需搜索。
+
+**仍然成立的负面结论（这几条重抓后没变）**：
+- **X 已关闭社群发现**：搜索框 typeahead 只出话题与账号，`f=communities` 回落到 Top，`/i/communities_explore` 404。
+  社群只能靠直链，扩源得靠用户给链接。
+- **中文 X 不是需求侧**：中文痛点句式搜出来全是 AI/Crypto 技术长文，零普通人自述。中文需求侧仍然只有小红书。
+- **X 站内全站搜索很薄**："wish there was an app" 走 f=live 当天只有 1 条且是段子。社群内搜索反而比全站搜索好用。
 
 **数据源自进化**：每轮 1-2 次抓取额度侦察新源；每周一深侦察（额外 2-3 次）。四条标准：可稳定抓取／更新频繁／信号密度高／与现有源重合度低。达标的加入本表并标 `Claude自选(日期)`。连续 2 周无产出标「低产待观察」，4 周标「停用(日期+原因)」；用户指定的源只标注不停用。
 
