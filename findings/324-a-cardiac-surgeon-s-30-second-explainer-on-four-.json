@@ -4,7 +4,7 @@
     "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7",
     "https://www.xiaohongshu.com/search_result?keyword=%E4%BD%93%E6%A3%80%E6%8A%A5%E5%91%8A%20%E7%9C%8B%E4%B8%8D%E6%87%82"
   ],
-  "method": "Xiaohongshu search on 「体检报告 看不懂」 (logged-in browser; the result list and like counts are only visible in a screenshot, not in page text). Opened the highest-engagement note and scrolled the comment panel, reading comments off screenshots. Quotes verbatim in the original Chinese with province and relative date as displayed 2026-08-06.",
+  "method": "Xiaohongshu search on 「体检报告 看不懂」 (logged-in browser; the result list and like counts are only visible in a screenshot, not in page text). Opened the highest-engagement note and scrolled the comment panel, reading comments off screenshots. Quotes verbatim in the original Chinese with province and relative date as displayed 2026-08-06. Updated 2026-08-06: the third voice had been carried over as a paraphrase from an earlier sweep; it has now been replaced with the verbatim comment text (author + like count) read out of the note's own page state, and two further verbatim comments from the same 763-like/214-comment note were added.",
   "domain": "pain-points",
   "confidence": 0.74,
   "model": "claude-fable-5",
@@ -35,10 +35,24 @@
     },
     {
       "kind": "demand",
-      "quote": "记录饮食后分析维生素、微量元素、热量，最好还能接入体检报告",
-      "user": "(xiaohongshu commenter)",
-      "src": "xiaohongshu — carried over from an earlier sweep of the same vein",
-      "url": "https://www.xiaohongshu.com/search_result?keyword=%E4%BD%93%E6%A3%80%E6%8A%A5%E5%91%8A%20%E7%9C%8B%E4%B8%8D%E6%87%82"
+      "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
+      "user": "唯雨",
+      "src": "xiaohongshu comment, 8 likes — 「有没有哪种APP，真的很需要但没人做？」763赞/214评论",
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+    },
+    {
+      "kind": "demand",
+      "quote": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议",
+      "user": "小红薯5F34CD94",
+      "src": "xiaohongshu comment (05-09 江苏), same note",
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+    },
+    {
+      "kind": "demand",
+      "quote": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。",
+      "user": "子茵",
+      "src": "xiaohongshu comment, 32 likes — 自建失败＋愿付费，同一条笔记",
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
     }
   ],
   "i18n": {
