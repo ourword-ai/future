@@ -33,7 +33,9 @@
       "does": "桌面应用：读你指定的一个文件夹，自己把里面的文档织成一部互相链接的 wiki，而不是常见的「检索再回答」——它会写词条、会互相引用，于是你是在翻、在问，不是在搜。全程在本机跑，模型你自己接，云端或局域网 Ollama 都行。",
       "gap": "痛点是真的，但前五分钟只有极客过得去。真正需要它的是律师、研究生、硬盘里全是 PDF 的研究者——而 issue 区里挤满了这批人：模型配不上、文件夹选不了、局域网 Ollama 连不通，还没看到第一页 wiki 就走了。",
       "counter": "Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而文档本来就在他们手里。33 位贡献者对 219 个未关 issue，这条线在往坏的方向走；「把我的文件夹变成 wiki」是个演示一次很惊艳、活不过第二周的东西。",
-      "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。"
+      "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。",
+      "why_use": "硬盘里塞满 PDF、却再也找不到任何东西的人：研究生、单干的律师、接手了一堆公司文件的人。他拿到的是一本能翻的 wiki，不是一个还得他自己会问的聊天框。",
+      "edge": "检索增强一次只回答一个问题，语料本身仍然是一团。把整本 wiki 先写出来——词条、互链、一张能逛的地图——是长上下文便宜到可以把每份文档读两遍之后才谈得上的事。"
     }
   },
   "hook": "A person with ten years of documents on their own laptop and no way to ask them a question — 15.8k stars in four months, and 219 open issues where those same people are stuck on an API key.",
@@ -67,5 +69,7 @@
   "workload": "2m",
   "consumer_angle": "Non-developer user: a professional with a private document pile. Finished thing: a browsable, askable wiki of their own files that never leaves the laptop.",
   "pain_verified": true,
-  "verdict": "build"
+  "verdict": "build",
+  "why_use": "Someone with a hard drive of PDFs they can no longer find anything in — a graduate student, a solo lawyer, a person who inherited a company's paperwork. What they walk away with is a wiki they can browse, not a chatbot they have to interrogate.",
+  "edge": "Retrieval-augmented search answers one question at a time and leaves the corpus shapeless. Writing the whole wiki up front — entries, cross-links, a map you can wander — only became affordable when long-context reading got cheap enough to pass over every document twice."
 }
