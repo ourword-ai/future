@@ -33,7 +33,9 @@
       "gap": "只有极客能用——npm、.env、API key、参考照——而'穿在我身上看看'恰恰是现有衣橱应用（Whering、Acloset、Indyx）还没做好的那一件事。",
       "counter": "衣橱类是消费级产品的坟场：留存低、老玩家已占住非技术用户，按图生成的成本会吃掉微薄的订阅毛利；仓库只有 1 个贡献者，上线当天后再无提交。",
       "differentiator": "跳过衣橱管理的红海，只卖那一个魔法时刻——传 20 张衣服照片，得到一本自己试穿的穿搭册——做成付费移动端流程。",
-      "consumer_angle": "纯消费产品：一个在购买或打包前就能看到衣服穿在自己身上的衣橱。"
+      "consumer_angle": "纯消费产品：一个在购买或打包前就能看到衣服穿在自己身上的衣橱。",
+      "why_use": "衣服多到早上七点想不起来自己有什么的人。她拿到的是一本自己穿着现有衣服的搭配册——不用买，也不用拍。",
+      "edge": "「穿在我身上看看」过去需要体型建模和一整条试衣流水线。单张参考照生成今年把它变成了一次 prompt，而这恰恰是现有衣橱应用（Whering、Acloset、Indyx）至今没有的那一件。"
     }
   },
   "pick": true,
@@ -53,5 +55,7 @@
   "differentiator": "Skip the closet-manager race; sell the one magic moment — upload 20 photos of your clothes, get a modeled lookbook of yourself — as a paid mobile flow.",
   "workload": "2m",
   "consumer_angle": "Pure consumer product: a closet that shows outfits on your own body before you buy or pack.",
-  "verdict": "archive"
+  "verdict": "archive",
+  "why_use": "A person who owns more clothes than they can picture at seven in the morning. What they walk away with is a lookbook of themselves in outfits they already own — no shopping, no shoot.",
+  "edge": "'See it on me' used to need a body model and a fitting pipeline. Single-reference-photo generation turned it into one prompt this year, and it is precisely the feature the existing closet apps (Whering, Acloset, Indyx) still do not have."
 }
