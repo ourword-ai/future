@@ -37,7 +37,9 @@
       "does": "一条把长篇故事撑住的 agent 流水线——情节状态、人物连续性、世界规则——从大纲一路推到一章又一章，同一套骨架还能出剧本、互动游戏和翻译。以 npm 包（@actalk/inkos）交付，得自己配模型 key。",
       "gap": "只有极客用得了，而且出来的东西还是流水账。真正想要它的人是写网文的，不是写 Node 的：要先装 Node 20+、手改 .env、挑模型供应商，才能写下第一句；侥幸装上的那批人报告章节字数失控、开局全都撞在同一个矿洞里。",
       "counter": "「同质化」不是能打补丁的 bug，那就是让模型连写 300 章的必然结果，所有竞品都会撞上同一堵墙。同时番茄、起点这些平台正在给已经住在那里的写手直接发自家写作助手，后面还连着分发和稿费。让烂小说写得更快的工具，没人买。",
-      "differentiator": "别交付流水线，交付稿子。一键桌面安装、模型 key 预置，产品承诺只收窄到 issue 区证明已经坏掉的那一件事：把 20 万字撑住不崩、每章字数就是作者要的那个数。卖「不一样」而不是卖「量」——写到第一章就提示你又在写那个下矿开局。冷启动（中文）：inkos 自己的 issue 区，加番茄小说作者交流群与龙的天空论坛，写手自己在那里抱怨这几件事；冷启动（英文）：r/WritingWithAI 与 r/HFY 搜 lost the plot chapter。"
+      "differentiator": "别交付流水线，交付稿子。一键桌面安装、模型 key 预置，产品承诺只收窄到 issue 区证明已经坏掉的那一件事：把 20 万字撑住不崩、每章字数就是作者要的那个数。卖「不一样」而不是卖「量」——写到第一章就提示你又在写那个下矿开局。冷启动（中文）：inkos 自己的 issue 区，加番茄小说作者交流群与龙的天空论坛，写手自己在那里抱怨这几件事；冷启动（英文）：r/WritingWithAI 与 r/HFY 搜 lost the plot chapter。",
+      "why_use": "按章拿钱、又不是 Node 开发者的网文写手。他拿到的是一份稿子——章节长度是他要的那个数，二十万字之后那个人物还认得出是同一个人。",
+      "edge": "上下文短的时候，跨几百章守住剧情状态与人物连续性根本谈不上。「agent＋外置状态」叠上便宜的长上下文阅读，才让一次 300 章的连跑变成一件你可以试着去接住的事。"
     }
   },
   "voices": [
@@ -71,5 +73,7 @@
   "workload": "2m",
   "consumer_angle": "The ordinary person here is a working web-novel author, and the finished thing they walk away with is a chapter they can publish today — this qualifies under the one allowed exception (AI producing a deliverable a human uses), not as developer infrastructure.",
   "pain_verified": true,
-  "verdict": "build"
+  "verdict": "build",
+  "why_use": "A web-novel writer paid by the chapter, who is not a Node developer. What they walk away with is a manuscript — chapters at the length they asked for, with the same character still recognisably the same character 200,000 words later.",
+  "edge": "Keeping plot state and character continuity across hundreds of chapters was not attemptable while context windows were short. The agent-plus-external-state pattern on top of cheap long-context reading is what makes a 300-chapter run something you can even try to hold together."
 }
