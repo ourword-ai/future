@@ -40,7 +40,9 @@
       "does": "一个公开的动画像素宠物画廊，宠物住在 coding agent 的终端里：3686 星、167 fork，还有一个投稿队列，人们把自己手画的小生物传上去——其中源源不断有中文投稿，还有一位版权方来要求下架。",
       "gap": "宠物被关在终端里，只有程序员看得见。这件事真正更老也更大的受众——桌面宠物、Shimeji 那一脉——待在普通人的电脑和手机上，而他们从 2010 年代起就只能用一批停止维护的免费软件。",
       "counter": "半衰期很短的新鲜感，且没有护城河：梗会过去，握着终端的那一方会自己发一个，而画廊真正的资产——用户投稿的画——在赚到第一分钱之前就已经引来了 IP 下架请求（issue #651）。桌宠还免费了十五年，为它收费是件没被验证过的事。",
-      "differentiator": "拿走流水线，扔掉终端。真正有意思的是：普通人正在成规模地画并投稿像素小生物。产品是「画一只，就得到一个会对你此刻在干什么做出反应的动画桌宠」——放在 Windows 和 macOS 上，桌宠受众本来就在那里。冷启动（中文）：小红书、B站搜「桌宠 自制」，以及 Shimeji 教程下的评论区，挤满做到一半放弃的人；冷启动（英文）：r/Shimeji 与 r/desktops。"
+      "differentiator": "拿走流水线，扔掉终端。真正有意思的是：普通人正在成规模地画并投稿像素小生物。产品是「画一只，就得到一个会对你此刻在干什么做出反应的动画桌宠」——放在 Windows 和 macOS 上，桌宠受众本来就在那里。冷启动（中文）：小红书、B站搜「桌宠 自制」，以及 Shimeji 教程下的评论区，挤满做到一半放弃的人；冷启动（英文）：r/Shimeji 与 r/desktops。",
+      "why_use": "想让屏幕上住一只小东西的人：桌宠受众是中学生和上班族，不是程序员。他拿到的是一只自己画出来、会动的伙伴。",
+      "edge": "把一张手画角色变成干净的循环精灵图，过去是画师一下午的活。图生精灵把它压成一次上传——这也是一个公开投稿队列能以这个速度被业余画作塞满的唯一原因。"
     }
   },
   "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
@@ -60,5 +62,7 @@
   "workload": "2w",
   "consumer_angle": "Non-developer user: someone who wants company on their screen — the audience that kept Shimeji alive for a decade. Finished thing: their own drawing, animated, living on their desktop.",
   "pain_verified": false,
-  "verdict": "watch"
+  "verdict": "watch",
+  "why_use": "Someone who wants a small creature living on their screen: the 桌宠 audience, which is teenagers and office workers, not programmers. What they walk away with is an animated companion drawn in their own hand.",
+  "edge": "Turning one hand-drawn character into a clean looping sprite sheet used to be an artist's afternoon. Image-to-sprite generation collapsed it to a single upload — which is the only reason a public submission queue is filling with amateur art at this rate at all."
 }
