@@ -35,7 +35,9 @@
       "does": "做、发、玩 AI 互动故事的平台：你描述一个世界，它变成别人能走进去、还能改的东西。",
       "gap": "它对准的是互动小说爱好者，那是一个小而且早就被服务过的人群——AI Dungeon 和角色扮演类应用几年前就到了。没人把同一套机器对准这样一个人：他不要类型也不要社区，只要一个故事，就今晚，主角是他爱的人。",
       "counter": "互动小说做了四十年一直是个热情但很小的市场，AI 没有把它做大，只是把供给做到了无限——那正好是市场型产品最不需要的。会付钱的那批受众已经被 Character.ai 一类吃掉，而平台经济需要的创作者飞轮，这个拿不到。",
-      "differentiator": "砍掉平台和市集，只交付一件东西。一本短的、有插图的分支故事，主角叫孩子自己的名字、里面有孩子自己的涂鸦，十分钟做完，能导出 PDF 或者印成书——家长会留着的那个东西，不是他会刷的那个流。冷启动（中文）：小红书搜「睡前故事 定制」和绘本 DIY 帖，家长本来就在为「印上名字的绘本」付钱；冷启动（英文）：r/Parenting 和 r/DnD 的 kids campaign 帖。"
+      "differentiator": "砍掉平台和市集，只交付一件东西。一本短的、有插图的分支故事，主角叫孩子自己的名字、里面有孩子自己的涂鸦，十分钟做完，能导出 PDF 或者印成书——家长会留着的那个东西，不是他会刷的那个流。冷启动（中文）：小红书搜「睡前故事 定制」和绘本 DIY 帖，家长本来就在为「印上名字的绘本」付钱；冷启动（英文）：r/Parenting 和 r/DnD 的 kids campaign 帖。",
+      "why_use": "睡前想给孩子讲一个「今晚这一个、主角是他」的故事的家长。他拿到的是一本插图完整、能打印的书——一个能放上书架的东西，不是一个要订阅的内容流。",
+      "edge": "卡住的是角色一致性：第 18 页那张脸得还是同一个孩子。参考图条件化在今年把这堵墙拆了，这才把「AI 生成故事」从一次性玩具变成家长愿意付钱去印出来的东西。"
     }
   },
   "voices": [],
@@ -47,5 +49,7 @@
   "workload": "2m",
   "consumer_angle": "Non-developer user: a parent. Finished thing: a printed, personalised storybook — a deliverable, which is what this board's one exception requires.",
   "pain_verified": false,
-  "verdict": "archive"
+  "verdict": "archive",
+  "why_use": "A parent at bedtime who wants one story tonight with their own child in it. What they walk away with is an illustrated, printable book — an object that goes on a shelf, not a subscription to a feed.",
+  "edge": "The wall was character consistency: the child's face has to be the same face on page eighteen. Reference-image conditioning cleared that this year, which is what moves 'AI story generator' from a novelty demo to something a parent would pay to have printed."
 }
