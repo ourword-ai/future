@@ -36,7 +36,11 @@
       "hook": "体验 PaperTodo 的极简桌面便签，享受无杂乱工作空间——已有 1,282 个星标！",
       "does": "PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面上直接创建独立的便签和待办事项，而无需管理界面。它支持 Markdown，增强了记笔记的体验。",
       "edge": "每张便签作为独立窗口操作，使用户能够快速访问和互动，而无需多余的点击或干扰。",
-      "why_use": "选择 PaperTodo，因其简单性和对即时可用性的关注，与其他需要复杂设置和账号管理的记事应用不同。"
+      "why_use": "选择 PaperTodo，因其简单性和对即时可用性的关注，与其他需要复杂设置和账号管理的记事应用不同。",
+      "gap": "缺口不是「只有极客能用」，恰恰相反：它已经足够简单，而它自己的 issue 区里是一群双屏普通用户，抱怨没法把便签挪到另一块屏上。是主流笔记应用集体走去了另一边——账号、同步、工作区——把桌面本身空了出来。",
+      "counter": "这是一个免费小工具，而这个品类三十年来是免费赢：Windows 自带便笺，没有人为一张便利贴付过钱。issue 区的诉求也是没有边界的打磨（分屏摆放、右键菜单、胶囊行为），小工具就是这样悄悄长成大软件、却始终没长成生意。",
+      "differentiator": "不卖那张纸，卖纸后来去哪了。桌面便签三十年没做过的一件事是「记得」——三个月前写在一块你已经不用的显示器上的那张，就这么没了。同样安静的纸，加上「这台机器上我写过的所有东西，能搜，永不上传」。冷启动第一步：中文＝小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区；英文＝r/Windows 与 r/productivity 里求「不要账号的便签」的帖子。",
+      "workload": "2w"
     }
   },
   "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
@@ -56,5 +60,9 @@
       "src": "github",
       "kind": "pain"
     }
-  ]
+  ],
+  "gap": "The gap is not that only geeks can use it — the opposite. It is already simple, and its tracker is full of ordinary two-monitor users who cannot move a note to the other screen. Every mainstream note app walked the other way, into accounts, sync and workspaces, and left the desk itself empty.",
+  "counter": "This is a free utility in a category where free has won for thirty years: Windows ships Sticky Notes, and nobody has ever paid for a sticky note. The tracker's request list is also unbounded polish — per-monitor placement, right-click menus, capsule behaviour — which is how a small tool quietly becomes a large one without ever becoming a business.",
+  "differentiator": "Do not sell the note; sell what happens to it afterwards. The one thing desktop stickies have never done is remember — a note you scribbled three months ago on a monitor you no longer own is simply gone. Ship the same silent paper plus 'everything I ever scribbled on this machine, searchable, never uploaded'. Cold start (Chinese): 小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区; (English): r/Windows and r/productivity threads asking for a sticky-note app with no account.",
+  "workload": "2w"
 }
