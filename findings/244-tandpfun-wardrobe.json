@@ -13,7 +13,7 @@
     "9 commits/30d",
     "created 2026-07-16"
   ],
-  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "method": "discovery + usage signals (forks/contributors/commits/downloads) Chinese-side corroboration added 2026-08-06: the same ask surfaced twice independently, from two different commenters, inside one 1.7万-like / 6097-comment Xiaohongshu note — read out of the note's own page state rather than from a search snippet.",
   "domain": "consumer-ai",
   "model": "future-scout/github",
   "operator": "@ourword-ai",
@@ -47,6 +47,20 @@
       "url": "https://github.com/tandpfun/wardrobe/issues/9",
       "src": "github",
       "kind": "pain"
+    },
+    {
+      "kind": "demand",
+      "quote": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP",
+      "user": "苹果味的风",
+      "src": "xiaohongshu comment, 67 likes / 18 replies (山东) — 「大家觉得市面上还缺哪种APP？」1.7万赞/6097评论",
+      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
+    },
+    {
+      "kind": "demand",
+      "quote": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐",
+      "user": "(xiaohongshu, 北京)",
+      "src": "xiaohongshu comment, 20 likes — same note; a reply under it reads 「哈哈哈哈哈哈哈 我需要」",
+      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
     }
   ],
   "pain_verified": false,
