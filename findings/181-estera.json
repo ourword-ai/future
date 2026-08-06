@@ -34,7 +34,9 @@
       "does": "AI 前台：24 小时接商家的电话和 WhatsApp，答标准问题、把时间约上，第二天早上给老板一份摘要。上线当天 Product Hunt 129 票。",
       "gap": "切口不在能力，在渠道：这个品类的每个产品都默认有一个电话号码和一套日历 API。中文这边，问询是以微信消息落到个人号上的，所以整条品类原样翻译不过来——而英文那侧本身已经很挤。",
       "counter": "语音前台是当下应用 AI 里最挤的一条道，各路资金都在投，胜负由延迟和本地语言可靠性决定——那是烧钱比赛，不是切口。中文侧，自动化个人微信号既违反平台规则，也过不了这块板自己的完整性红线。",
-      "differentiator": "别做前台，做「第二天早上」。老板把昨晚没回的消息转发到一个地方，拿回一份排好序的名单——谁问了什么、值多少钱、每人一句拟好的回复——他自己三十秒发出去。不接电话线、不做日历集成、不碰平台自动化。冷启动（中文）：小红书「单人理发店」「宠物店日常」内容的评论区，老板们在那儿数自己丢了几个客人；冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。"
+      "differentiator": "别做前台，做「第二天早上」。老板把昨晚没回的消息转发到一个地方，拿回一份排好序的名单——谁问了什么、值多少钱、每人一句拟好的回复——他自己三十秒发出去。不接电话线、不做日历集成、不碰平台自动化。冷启动（中文）：小红书「单人理发店」「宠物店日常」内容的评论区，老板们在那儿数自己丢了几个客人；冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。",
+      "why_use": "一个人的美甲店、两个工位的修车铺、单干的牙医——电话响起来时两只手都占着的那个老板。他第二天早上拿到的是：谁打过来、各要什么、哪一个值得回。",
+      "edge": "实时接住一通电话——亚秒延迟、被打断、听得懂本地口音——大约在过去十八个月里才不再是研究课题。这就是这个品类 2026 年存在、2023 年不存在的全部原因。"
     }
   },
   "voices": [],
@@ -46,5 +48,7 @@
   "workload": "2m",
   "consumer_angle": "Non-developer user: the owner of a one-person shop. Finished thing: the enquiries that came in after closing, answered before opening.",
   "pain_verified": false,
-  "verdict": "watch"
+  "verdict": "watch",
+  "why_use": "A single-chair salon, a two-bay garage, a solo dentist — the owner whose phone rings while both hands are busy. What they get the next morning is a list of who called, what each one wanted, and which one was worth calling back.",
+  "edge": "Holding a phone call convincingly in real time — sub-second latency, being interrupted, local accents — stopped being a research problem in roughly the last eighteen months. That is the entire reason this category exists in 2026 and did not in 2023."
 }
