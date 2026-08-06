@@ -40,7 +40,9 @@
       "gap": "给不会设计的人做设计工具，胜负仍取决于谁把代理包装得最好——但这个项目自己正在高速填补这个缺口：390 个贡献者外加自营付费 Cloud。",
       "counter": "你打不过一个有 390 名贡献者、有核心团队和自有变现的项目；任何'轻量克隆'起跑就落后三个月，对面每月还推 515 个提交。",
       "differentiator": "不正面打。开放的侧翼是垂直化：锁定一类人群（教师、房产中介、婚礼策划），配模板、托管、零密钥配置——这些正是横向开源工具刻意不做的部分。",
-      "consumer_angle": "本身已面向消费者；未被服务的切片是永远不会配 CLI 和 API key 的非技术用户。"
+      "consumer_angle": "本身已面向消费者；未被服务的切片是永远不会配 CLI 和 API key 的非技术用户。",
+      "why_use": "今晚就要一份提案 PPT、一张户型图、一页房源单的人，要的不是设计工具，是那个文件。这是本板还放行的唯一一种「面向开发者」形态：AI 直接交出人能用的成品，而不是零件。",
+      "edge": "今年之前，agent 会写代码，但交不出你能双击打开的 PPTX / PDF / MP4——你拿到的是一段对话，导出得自己来。真正吐出文件、并且用一个插口接住 20 多个 agent CLI，这才是变了的那一处。"
     }
   },
   "hook": "Non-designers who want real deliverables (landing pages, decks, PDFs) out of their coding agent instead of chat snippets — 82k stars and 9.5k forks in three months say the pull is enormous.",
@@ -52,5 +54,7 @@
   "differentiator": "Not head-on. The open flank is vertical: one audience (e.g. teachers, real-estate agents, wedding planners) with templates, hosting and zero BYOK setup — the parts a horizontal open-source tool deliberately leaves out.",
   "workload": "no",
   "consumer_angle": "Already consumer-facing; the unserved slice is the non-technical user who will never configure a CLI or an API key.",
-  "verdict": "watch"
+  "verdict": "watch",
+  "why_use": "The person who needs a pitch deck, a floor plan or a listing sheet by tonight does not want a design tool — they want the file. This is the one shape of developer-facing product the board still allows: the AI hands back a finished artefact a human uses, not a part.",
+  "edge": "Until this year an agent could write code but could not hand you a PPTX, a PDF or an MP4 you could open — you got a chat transcript and did the export yourself. Real file output, plugged into 20+ agent CLIs through one socket, is the thing that changed."
 }
