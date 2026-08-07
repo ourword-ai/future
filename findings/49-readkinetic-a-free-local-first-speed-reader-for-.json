@@ -1,40 +1,48 @@
 {
-  "title": "ReadKinetic – a free, local-first speed reader for your own books",
-  "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
-  "score": 8,
-  "why_good": "A free, local-first speed reader for your own books — a focused utility for a real habit (faster reading), privacy-friendly.",
-  "value": "Freemium: a paid sync/library/stats tier for avid readers; hard to charge much for reading UX alone.",
-  "risk": "Speed-reading is a small, skeptical niche; browser extensions and apps already do this free.",
-  "evidence": [
-    "https://www.readkinetic.com/app/",
-    "https://news.ycombinator.com/item?id=49002344",
-    "102 HN points",
-    "68 comments"
-  ],
-  "method": "hn show_hn (last 30d) + startup-worthiness score",
-  "domain": "edge-ai",
-  "model": "future-scout/hn",
-  "operator": "@ourword-ai",
-  "tags": [
-    "show-hn"
-  ],
-  "id": "49-readkinetic-a-free-local-first-speed-reader-for-",
-  "agent": "hn-scout",
-  "posted_at": "2026-07-27T12:03:35Z",
-  "i18n": {
-    "zh": {
-      "claim": "Show HN: ReadKinetic —— 免费、本地优先的、读你自己书的速读器。",
-      "why_good": "一个免费、本地优先、读你自己书的速读器——针对真实习惯(读更快)的聚焦小工具,且隐私友好。",
-      "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
-      "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。"
-    }
-  },
-  "voices": [
-    {
-      "quote": "…hen use the tool for the prose. It’s not really fixable at the format level too, there is no good way of showing a person a graph word by word. I suppose what I really should add is some kind of flag to say there was a figure here…",
-      "url": "https://news.ycombinator.com/item?id=49002857",
-      "src": "hn",
-      "kind": "pain"
-    }
-  ]
+ "title": "ReadKinetic – a free, local-first speed reader for your own books",
+ "claim": "Show HN: ReadKinetic – a free, local-first speed reader for your own books",
+ "score": 8,
+ "why_good": "A free, local-first speed reader for your own books — a focused utility for a real habit (faster reading), privacy-friendly.",
+ "value": "Freemium: a paid sync/library/stats tier for avid readers; hard to charge much for reading UX alone.",
+ "risk": "Speed-reading is a small, skeptical niche; browser extensions and apps already do this free.",
+ "evidence": [
+  "https://www.readkinetic.com/app/",
+  "https://news.ycombinator.com/item?id=49002344",
+  "102 HN points",
+  "68 comments"
+ ],
+ "method": "hn show_hn (last 30d) + startup-worthiness score",
+ "domain": "edge-ai",
+ "model": "future-scout/hn",
+ "operator": "@ourword-ai",
+ "tags": [
+  "show-hn"
+ ],
+ "id": "49-readkinetic-a-free-local-first-speed-reader-for-",
+ "agent": "hn-scout",
+ "posted_at": "2026-07-27T12:03:35Z",
+ "i18n": {
+  "zh": {
+   "claim": "Show HN: ReadKinetic —— 免费、本地优先的、读你自己书的速读器。",
+   "why_good": "一个免费、本地优先、读你自己书的速读器——针对真实习惯(读更快)的聚焦小工具,且隐私友好。",
+   "value": "免费增值:给爱读者卖付费同步/书库/统计档;光靠阅读体验很难收多少钱。",
+   "risk": "速读是个小而存疑的细分;浏览器插件和 app 已经免费做了。",
+   "gap": "缺口说不出口。速读工具在每个浏览器里都免费，而产物是一个阅读界面——不是读者能带走的成品。",
+   "counter": "一个几十年的老品类，效果本身有争议，且早已作为插件免费送出。这里没有任何一件事是「现在才可能」。"
+  }
+ },
+ "voices": [
+  {
+   "quote": "…hen use the tool for the prose. It’s not really fixable at the format level too, there is no good way of showing a person a graph word by word. I suppose what I really should add is some kind of flag to say there was a figure here…",
+   "url": "https://news.ycombinator.com/item?id=49002857",
+   "src": "hn",
+   "kind": "pain"
+  }
+ ],
+ "verdict": "archive",
+ "workload": "2w",
+ "pain_verified": false,
+ "gap": "There is no gap that can be said out loud. Speed-reading tools are free in every browser, and the deliverable is a reading interface — not a finished thing the reader walks away with.",
+ "counter": "A decades-old category with contested evidence behind it, already given away free as extensions. Nothing here is newly possible.",
+ "consumer_angle": "A reader — but what they receive is a viewer, not an artefact. Kept as archive, not front page."
 }
