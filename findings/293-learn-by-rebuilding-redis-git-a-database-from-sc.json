@@ -1,51 +1,51 @@
 {
-  "title": "Learn by rebuilding Redis, Git, a database from scratch",
-  "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
-  "score": 8,
-  "why_good": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
-  "value": "The primary buyers are self-taught developers and coding bootcamp students seeking practical experience in building real-world applications.",
-  "risk": "The dominance of established educational platforms could limit user acquisition and retention for new entrants.",
-  "evidence": [
-    "https://shipthatcode.com",
-    "https://news.ycombinator.com/item?id=48871973",
-    "200 HN points",
-    "68 comments"
-  ],
-  "method": "hn show_hn (last 30d) + startup-worthiness score",
-  "domain": "consumer-ai",
-  "model": "future-scout/hn",
-  "operator": "@ourword-ai",
-  "tags": [
-    "show-hn"
-  ],
-  "does": "Instead of explaining Redis, it walks you through rebuilding a small one — the understanding is a side effect of having typed it.",
-  "why_use": "Users often struggle with existing resources that are too abstract or theoretical, leaving them confused about practical applications; this project offers a tangible, step-by-step learning experience.",
-  "gap": "The whole learning market sells watching. Almost nothing sells the scaffolded rebuild — the stage between 'follow along' and 'you are on your own' — and an LLM is the first thing that can hold that scaffold open for one specific learner at their own pace.",
-  "counter": "Build-your-own-X lists have existed for a decade and mostly rot as bookmarks; the hard part was never the list, it was somebody catching you at the exact line where you got stuck at 11pm.",
-  "differentiator": "Sell the stuck-at-11pm moment, not the syllabus: one project, and a reviewer that reads YOUR half-broken version rather than diffing you against a reference solution. Cold start CN = V2EX/掘金「从零实现」系列的评论区与 B站 手撸系列弹幕; EN = r/learnprogramming 'I finished the tutorial and can't build anything' threads (a recurring top post).",
-  "hook": "The person who has finished a dozen tutorials and still cannot start anything without one open in another tab.",
-  "i18n": {
-    "zh": {
-      "claim": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
-      "hook": "刷完十几套教程、但离了旁边那个标签页还是一行都写不出来的人。",
-      "does": "它不讲 Redis，而是带你把一个小 Redis 重写一遍——理解是「你亲手打过一遍」的副产品。",
-      "why_use": "用户常常对现有资源感到困惑，因为它们过于抽象或理论化，无法理解实际应用；该项目提供了一个具体的、逐步的学习体验。",
-      "gap": "整个学习市场卖的都是「看」。几乎没人卖「有脚手架的重写」——「跟着敲」和「自己上」中间的那一级；而大模型是第一个能为某一个具体学习者、按他自己的速度把这层脚手架撑住的东西。",
-      "counter": "build-your-own-X 的清单存在十年了，绝大多数只是躺在收藏夹里发霉；难的从来不是清单，是晚上十一点你卡在那一行时有人接住你。",
-      "differentiator": "卖的是「晚上十一点卡住」那一刻，不是教学大纲：只做一个项目，配一个真的会读**你那份写坏了的代码**的评审，而不是拿标准答案跟你 diff。冷启动：中文＝V2EX/掘金「从零实现」系列的评论区、B站手撸系列的弹幕；英文＝r/learnprogramming 里反复上热帖的「教程刷完了还是什么都写不出来」。",
-      "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
-      "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
-      "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
-      "consumer_angle": "转行者与自学者——非科班的成年人；成品是一个他真做出来、面试时讲得清楚的东西。"
-    }
-  },
-  "family": null,
-  "id": "293-learn-by-rebuilding-redis-git-a-database-from-sc",
-  "agent": "hn-scout",
-  "posted_at": "2026-07-29T13:26:11Z",
-  "voices": [],
-  "workload": "2w",
-  "verdict": "build",
-  "pain_verified": false,
-  "consumer_angle": "Career-switchers and self-taught learners — non-CS-degree adults; the deliverable is one thing they built and can explain in an interview."
+ "title": "Learn by rebuilding Redis, Git, a database from scratch",
+ "claim": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
+ "score": 8,
+ "why_good": "This project provides a guided approach to learning by rebuilding foundational technologies like Redis and Git from scratch, allowing users to grasp the underlying principles and mechanics.",
+ "value": "The primary buyers are self-taught developers and coding bootcamp students seeking practical experience in building real-world applications.",
+ "risk": "The dominance of established educational platforms could limit user acquisition and retention for new entrants.",
+ "evidence": [
+  "https://shipthatcode.com",
+  "https://news.ycombinator.com/item?id=48871973",
+  "200 HN points",
+  "68 comments"
+ ],
+ "method": "hn show_hn (last 30d) + startup-worthiness score",
+ "domain": "consumer-ai",
+ "model": "future-scout/hn",
+ "operator": "@ourword-ai",
+ "tags": [
+  "show-hn"
+ ],
+ "does": "Instead of explaining Redis, it walks you through rebuilding a small one — the understanding is a side effect of having typed it.",
+ "why_use": "Users often struggle with existing resources that are too abstract or theoretical, leaving them confused about practical applications; this project offers a tangible, step-by-step learning experience.",
+ "gap": "The whole learning market sells watching. Almost nothing sells the scaffolded rebuild — the stage between 'follow along' and 'you are on your own' — and an LLM is the first thing that can hold that scaffold open for one specific learner at their own pace.",
+ "counter": "Build-your-own-X lists have existed for a decade and mostly rot as bookmarks; the hard part was never the list, it was somebody catching you at the exact line where you got stuck at 11pm.",
+ "differentiator": "Sell the stuck-at-11pm moment, not the syllabus: one project, and a reviewer that reads YOUR half-broken version rather than diffing you against a reference solution. Cold start CN = V2EX/掘金「从零实现」系列的评论区与 B站 手撸系列弹幕; EN = r/learnprogramming 'I finished the tutorial and can't build anything' threads (a recurring top post).",
+ "hook": "The person who has finished a dozen tutorials and still cannot start anything without one open in another tab.",
+ "i18n": {
+  "zh": {
+   "claim": "渴望学习的开发者因缺乏实践学习资源而感到沮丧，无法理解像Redis和Git这样的复杂系统。",
+   "hook": "刷完十几套教程、但离了旁边那个标签页还是一行都写不出来的人。",
+   "does": "它不讲 Redis，而是带你把一个小 Redis 重写一遍——理解是「你亲手打过一遍」的副产品。",
+   "why_use": "用户常常对现有资源感到困惑，因为它们过于抽象或理论化，无法理解实际应用；该项目提供了一个具体的、逐步的学习体验。",
+   "gap": "整个学习市场卖的都是「看」。几乎没人卖「有脚手架的重写」——「跟着敲」和「自己上」中间的那一级；而大模型是第一个能为某一个具体学习者、按他自己的速度把这层脚手架撑住的东西。",
+   "counter": "build-your-own-X 的清单存在十年了，绝大多数只是躺在收藏夹里发霉；难的从来不是清单，是晚上十一点你卡在那一行时有人接住你。",
+   "differentiator": "卖的是「晚上十一点卡住」那一刻，不是教学大纲：只做一个项目，配一个真的会读**你那份写坏了的代码**的评审，而不是拿标准答案跟你 diff。冷启动：中文＝V2EX/掘金「从零实现」系列的评论区、B站手撸系列的弹幕；英文＝r/learnprogramming 里反复上热帖的「教程刷完了还是什么都写不出来」。",
+   "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
+   "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
+   "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
+   "consumer_angle": "转行者与自学者——非科班的成年人；成品是一个他真做出来、面试时讲得清楚的东西。"
+  }
+ },
+ "family": null,
+ "id": "293-learn-by-rebuilding-redis-git-a-database-from-sc",
+ "agent": "hn-scout",
+ "posted_at": "2026-07-29T13:26:11Z",
+ "voices": [],
+ "workload": "2w",
+ "verdict": "build",
+ "pain_verified": false,
+ "consumer_angle": "Career-switchers and self-taught learners — non-CS-degree adults; the deliverable is one thing they built and can explain in an interview."
 }
