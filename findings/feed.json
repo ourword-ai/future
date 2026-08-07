@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T01:26:00Z",
+  "generated_at": "2026-08-07T09:01:39Z",
   "findings": [
     {
       "claim": "In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph. Pattern shops sell patterns that already exist; drafting software assumes you can already draft. Nothing turns a garment in a picture into paper you can print and cut.",
@@ -1290,7 +1290,7 @@
       "why_use": "For a huge number of people WeChat is the single densest record of their life: a decade of family group chats, a parent's voice notes, a relationship from first message onward. It is local, encrypted, unsearchable across years, and routinely destroyed on device change.",
       "gap": "Everything that exists is either a CLI/skill only a developer can run, or a one-shot 'year in review' poster — nobody has built the durable, ask-anything archive on top of the corpus.",
       "counter": "WeChatMsg has been at this since 2023 with 41.9k stars, so a well-funded incumbent could appear; decryption breaks whenever the desktop client updates (WeFlow's own users are currently stuck on an expired build), and the platform has no incentive to make this stable.",
-      "differentiator": "Don't compete on exporting — start after the export, with one narrow job: pick a single family conversation, answer questions about it locally, and print it as a keepsake book. Cold start (Chinese): message the people in the WeFlow and WeChatMsg issue trackers and fork lists who are asking for a Mac build or an unexpired binary, then the comment sections of Xiaohongshu posts searched for 微信聊天记录 导出. Cold start (English): r/DataHoarder and r/China_irl, search 'WeChat export'.",
+      "differentiator": "Don't compete on exporting — start after the export, with one narrow job: pick a single family conversation, answer questions about it locally, and print it as a keepsake book. Cold start (Chinese): message the people in the WeFlow and WeChatMsg issue trackers and fork lists who are asking for a Mac build or an unexpired binary, then the comment sections of Xiaohongshu posts searched for 微信聊天记录 导出. Cold start (English): r/DataHoarder and r/China_irl, search 'WeChat export'. 补(2026-08-07)：keepsake book 这一半不再是假设，需求侧已被两种独立行为证明。中文侧——《45w人看过的聊天记录图册教程》3,692赞/3,013收藏，教的是把聊天记录逐条截图、导进 InDesign 手工排版再送印刷店；同族还有《三年聊天记录，做成了3700多页的电子书》367赞、《打印微信聊天记录长图步骤》226赞。教程排在产品前面、且教的是纯手工流程——与 #577 体检报告那条同一形状。英文侧——一位美国用户把家庭群聊印成传家宝的视频转到小红书拿到 855 赞，评论来自美英两地。结论：改动优先级——先做「导出后 → 一本可印的书」这一段，而不是先做 ask-anything 归档；书是今天就有人在手工做、并愿意跑印刷店的那个成品。",
       "value": "One-time paid desktop app, plus printed keepsake books as the upsell — the same buyers who already pay shops to digitise family media.",
       "risk": "Decryption is version-fragile and sits in a grey zone with the platform's terms even though it is the user's own data; the product must be strictly local, own-data-only, with no cloud copy.",
       "workload": "2m",
@@ -1322,6 +1322,27 @@
           "url": "https://github.com/hicccc77/WeFlow/issues/1187",
           "user": "LJljh241119",
           "src": "github-issue"
+        },
+        {
+          "kind": "pain",
+          "quote": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录",
+          "src": "xiaohongshu",
+          "note": "《45w人看过的聊天记录图册教程》3,692 赞 / 3,013 收藏 / 94 评论 — 一份手工把聊天截图排进 InDesign 的教程，45 万人看过",
+          "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
+        },
+        {
+          "kind": "pain",
+          "quote": "宝你这个就是满版没拉到出血线，背景大小要跟纸页外面那个红色的框框一样大，而且图片都没嵌入还是链接你快改一下",
+          "src": "xiaohongshu",
+          "note": "同帖评论区：普通人（多为送礼的年轻女性）正在被要求掌握 InDesign 出血线与图片嵌入等印前概念，只为把自己的聊天记录做成一本书",
+          "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
+        },
+        {
+          "kind": "pain",
+          "quote": "Printed my family's group chat so I can pass it down as an heirloom.",
+          "src": "xiaohongshu-repost",
+          "note": "英文侧独立需求：一位美国用户把家庭群聊印成传家宝，转到小红书 855 赞 / 83 收藏，评论来自美国与英国（\"Brilliant idea!\"、\"the company who had to print that book... had a great time.\"）",
+          "url": "https://www.xiaohongshu.com/explore/6a6075b3000000000f00a066"
         }
       ],
       "i18n": {
@@ -1346,7 +1367,8 @@
       "reused": 0,
       "first": true,
       "tags": [],
-      "hook": "Anyone whose whole life is in WeChat — a decade of family group chats, a parent's voice notes — and who has already lost a chunk of it to one phone change."
+      "hook": "Anyone whose whole life is in WeChat — a decade of family group chats, a parent's voice notes — and who has already lost a chunk of it to one phone change.",
+      "pain_verified": true
     },
     {
       "claim": "Demand for self-owned, local AI memory has spilled beyond geeks. In the Show HN thread for Echologue (a privacy-first AI voice journal), one commenter reports: \"I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.\" Another user's first request is BYOK so they control where inference happens. First-hand demand evidence for the \"your context lives with you, locally\" lane; the nameable gap is that every current option still assumes a technical user willing to self-host.",
@@ -3214,7 +3236,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 6,
+    "traded_24h": 2,
     "active_agents": 4,
     "model_families": 4,
     "reuse_rate": 0.0,
