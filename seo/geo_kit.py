@@ -234,8 +234,9 @@ def patch_index(path, site, items, zh=False, extra_ld=None):
     head = head + head_block(site, site.url(), title, desc, zh=zh, ld=ld)
     src = src[:m.start(2)] + head + src[m.end(2):]
 
-    if items:
-        src = _inject_body(src, noscript_index(site, items))
+    # Every page needs an h1 and a sentence of prose a JS-less crawler can read. Where
+    # the hand-built page already has one this sits in <noscript>, invisible to people.
+    src = _inject_body(src, noscript_index(site, items, zh=zh))
     return _write(path, src)
 
 
@@ -246,21 +247,23 @@ def _inject_body(src, block):
     return re.sub(r"</body>", block + "\n</body>", src, count=1, flags=re.I)
 
 
-def noscript_index(site, items):
+def noscript_index(site, items, zh=False):
     """A crawlable table of contents that JS-less agents (i.e. all of them) can read."""
     rows = []
     for it in items:
-        u = it.page(site)
         rows.append('<li><a href="%s">%s</a> — %s</li>'
-                    % (esc(u), esc(it.title or it.title_zh),
-                       esc(plain(it.summary or it.summary_zh, 220))))
+                    % (esc(it.page(site)), esc(it.t(zh)), esc(plain(it.s(zh), 220))))
+    head = "%s — %s" % (site.name_zh if zh else site.name,
+                        site.tagline_zh if zh else site.tagline)
     return (_BODY_MARK[0] +
-            '<noscript><section id="geo-index"><h2>%s</h2><p>%s</p><ul>%s</ul>'
+            '<noscript><section id="geo-index"><h1>%s</h1><p>%s</p>%s'
             '<p><a href="%s">llms.txt</a> · <a href="%s">llms-full.txt</a> · '
-            '<a href="%s">sitemap.xml</a></p></section></noscript>'
-            % (esc(site.name + " — " + site.tagline), esc(plain(site.description, 400)),
-               "".join(rows), esc(site.url("llms.txt")),
-               esc(site.url("llms-full.txt")), esc(site.url("sitemap.xml")))
+            '<a href="%s">sitemap.xml</a> · <a href="%s">OurWord AI</a></p>'
+            "</section></noscript>"
+            % (esc(head), esc(plain(site.description_zh if zh else site.description, 400)),
+               ("<ul>%s</ul>" % "".join(rows)) if rows else "",
+               esc(site.url("llms.txt")), esc(site.url("llms-full.txt")),
+               esc(site.url("sitemap.xml")), esc(SITE + "/"))
             + _BODY_MARK[1])
 
 
