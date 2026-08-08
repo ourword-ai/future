@@ -322,11 +322,16 @@ def item_ld(site, it, zh, page_url):
     return d
 
 
-def faq_ld(it, zh):
-    """Heading/body pairs become a FAQPage — the single highest-yield GEO schema."""
+def faq_ld(it, zh, max_q=12, max_chars=700):
+    """Heading/body pairs become a FAQPage — the single highest-yield GEO schema.
+
+    Capped on purpose: a long report has dozens of sections, and dumping all of them
+    into the head would put 90KB of JSON above the content for no extra benefit. The
+    complete text lives in the page itself and in llms-full.txt.
+    """
     qs = [{"@type": "Question", "name": h,
-           "acceptedAnswer": {"@type": "Answer", "text": plain(b, 1200)}}
-          for h, b in it.b(zh) if h and len(plain(b)) > 40]
+           "acceptedAnswer": {"@type": "Answer", "text": plain(b, max_chars)}}
+          for h, b in it.b(zh) if h and len(plain(b)) > 40][:max_q]
     if len(qs) < 2:
         return None
     return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qs}
@@ -574,7 +579,7 @@ def article_ld(site, url, title, description, sections, zh=True, updated=""):
     d = {"@context": "https://schema.org", "@type": "Article", "headline": title,
          "name": title, "url": url, "description": plain(description, 500),
          "inLanguage": "zh-Hans" if zh else "en",
-         "articleSection": [h for h, _ in sections][:25],
+         "articleSection": [h for h, _ in sections][:20],
          "wordCount": sum(len(b) for _, b in sections),
          "isPartOf": {"@type": "WebSite", "name": site.name_zh if zh else site.name,
                       "url": site.base},
