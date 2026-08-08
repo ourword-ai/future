@@ -93,6 +93,35 @@ def _voices(f, zh):
     return lead + "\n" + "\n".join(out)
 
 
+SOURCE_TAGS = [
+    ("reddit.com", "Reddit"), ("xiaohongshu.com", "小红书"), ("news.ycombinator.com", "Hacker News"),
+    ("producthunt.com", "Product Hunt"), ("github.com", "GitHub"), ("x.com", "X"),
+    ("twitter.com", "X"),
+]
+VERDICT_TAGS = {"build": "Worth building", "watch": "Watching", "archive": "Archived"}
+WORKLOAD_TAGS = {"2w": "Two weeks of work", "2m": "Two months of work"}
+
+
+def tags_for(f, ev):
+    """Tags exist to build topic hubs, so they have to be shared between entries —
+    a tag that only ever applies to one entry is just a dead end."""
+    out = []
+    urls = " ".join(ev) + " " + (f.get("url") or "")
+    for host, label in SOURCE_TAGS:
+        if host in urls and label not in out:
+            out.append(label)
+    if f.get("verdict") in VERDICT_TAGS:
+        out.append(VERDICT_TAGS[f["verdict"]])
+    if f.get("workload") in WORKLOAD_TAGS:
+        out.append(WORKLOAD_TAGS[f["workload"]])
+    if f.get("voices"):
+        out.append("Has verbatim voices")
+    for t in (f.get("tags") or [])[:4]:
+        if t not in out:
+            out.append(t)
+    return out[:8]
+
+
 def load_items():
     items = []
     for p in sorted(glob.glob("findings/*.json")):
@@ -137,7 +166,7 @@ def load_items():
             summary_zh=claim_zh, blocks=blocks, blocks_zh=blocks_zh,
             source_url=f.get("url") or (ev[0] if ev else ""),
             updated=(f.get("posted_at") or "")[:10],
-            tags=(f.get("tags") or [])[:8],
+            tags=tags_for(f, ev),
         ))
     items.sort(key=lambda i: (i.updated or ""), reverse=True)
     return items

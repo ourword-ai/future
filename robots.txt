@@ -1,4 +1,6 @@
 # Idea — we want to be crawled, indexed, and cited by search and AI answer engines.
+# robots.txt is per-origin: the authoritative one for this domain is
+# https://ourword.ai/robots.txt — this copy is here for completeness.
 
 User-agent: *
 Allow: /
@@ -33,6 +35,9 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
@@ -64,6 +69,27 @@ User-agent: DuckAssistBot
 Allow: /
 
 User-agent: MistralAI-User
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: YisouSpider
 Allow: /
 
 Sitemap: https://ourword.ai/idea/sitemap.xml

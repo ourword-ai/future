@@ -10,10 +10,31 @@ Idea is a hand-operated board of things worth building. Every entry starts from 
 ## Read it
 
 - Site: https://ourword.ai/idea/
-- Every idea has its own static page: https://ourword.ai/idea/i/<slug>/ (English) and https://ourword.ai/idea/zh/i/<slug>/ (中文)
+- Everything on one page: https://ourword.ai/idea/all/
+- Every idea has its own static page: https://ourword.ai/idea/i/<slug>/ — plus https://ourword.ai/idea/zh/i/<slug>/ where there is Chinese copy
 - Full text of everything, one file: https://ourword.ai/idea/llms-full.txt
 - All URLs: https://ourword.ai/idea/sitemap.xml
-- Part of OurWord AI: https://ourword.ai/
+- RSS: https://ourword.ai/idea/feed.xml
+
+## Topics
+
+- [Has verbatim voices](https://ourword.ai/idea/t/has-verbatim-voices/) — 35
+- [Two months of work](https://ourword.ai/idea/t/two-months-of-work/) — 27
+- [GitHub](https://ourword.ai/idea/t/github/) — 24
+- [Two weeks of work](https://ourword.ai/idea/t/two-weeks-of-work/) — 21
+- [Watching](https://ourword.ai/idea/t/watching/) — 17
+- [Reddit](https://ourword.ai/idea/t/reddit/) — 15
+- [Worth building](https://ourword.ai/idea/t/worth-building/) — 12
+- [Product Hunt](https://ourword.ai/idea/t/product-hunt/) — 10
+- [小红书](https://ourword.ai/idea/t/小红书/) — 8
+- [Artificial Intelligence](https://ourword.ai/idea/t/artificial-intelligence/) — 5
+- [Hacker News](https://ourword.ai/idea/t/hacker-news/) — 5
+- [consumer](https://ourword.ai/idea/t/consumer/) — 4
+- [show-hn](https://ourword.ai/idea/t/show-hn/) — 4
+- [ai](https://ourword.ai/idea/t/ai/) — 3
+- [Archived](https://ourword.ai/idea/t/archived/) — 3
+- [Productivity](https://ourword.ai/idea/t/productivity/) — 3
+- [xiaohongshu](https://ourword.ai/idea/t/xiaohongshu/) — 3
 
 ## How it is built
 
@@ -23,32 +44,42 @@ Operated by hand every day, not generated. Voices are collected first-hand from 
 
 Cite the individual idea page, which is stable and dated. Quotes inside an entry are verbatim from the linked source and should be attributed to that source, not to Idea. Attribute the analysis to "Idea (OurWord AI)".
 
+## The rest of OurWord AI
+
+- [OurWord AI / OurWord AI](https://ourword.ai/)
+- [Skill Store / Skill 商店](https://ourword.ai/skill-store/)
+- [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai-bubble-detector/)
+- [The Restructuring of Work / 工作的重构](https://ourword.ai/ai-jobs-20yr-report/)
+- [Human World / 人类世界生存法则](https://ourword.ai/HumanWorld/)
+- [Zouni / 走你](https://ourword.ai/zouni/)
+- [Market Watch / 投资观察仪表盘](https://ourword.ai/portfolio-tracker/)
+
 ## Index (50 ideas)
 
-- [On Xiaohongshu, slowed-down dance tutorials are a whole content…](https://ourword.ai/idea/i/328-on-xiaohongshu-slowed-down-dance-tutorials-are-a/): On Xiaohongshu, slowed-down dance tutorials are a whole content category — 6,909 likes, 4,667, 2,979, 2,727 — and every single one exists only because a teacher was willing to re-dance that song by ha
-- [Five unrelated r/AskVet threads in twelve months do the same thing](https://ourword.ai/idea/i/329-five-unrelated-r-askvet-threads-in-twelve-months/): Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese
-- [A man spent six and a half months hand-reverse-engineering his…](https://ourword.ai/idea/i/326-a-man-spent-six-and-a-half-months-hand-reverse-e/): A man spent six and a half months hand-reverse-engineering his grandfather's Aran jumper into a pattern he could wear, and 2,499 people upvoted it. Cross-stitch has had photo-to-chart tools for twenty
-- [In r/sewing the same request arrives every day from a different life](https://ourword.ai/idea/i/327-in-r-sewing-the-same-request-arrives-every-day-f/): In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph. Patte
-- [Seven unrelated r/singing threads in twelve months ask the same…](https://ourword.ai/idea/i/322-seven-unrelated-r-singing-threads-in-twelve-mont/): Seven unrelated r/singing threads in twelve months ask the same question — how do you learn a harmony line when there is no teacher — and every answer is 'practise more'. The askers are a mother of fo
-- [Five separate r/singing threads in a year ask for the same missing…](https://ourword.ai/idea/i/323-five-separate-r-singing-threads-in-a-year-ask-fo/): Five separate r/singing threads in a year ask for the same missing tool — show me in real time how far off the note I am, against the actual song — and two of the askers are parents of ten-year-olds.
-- [A cardiac surgeon's 30-second explainer on four blood-test numbers…](https://ourword.ai/idea/i/324-a-cardiac-surgeon-s-30-second-explainer-on-four/): A cardiac surgeon's 30-second explainer on four blood-test numbers has 16k likes, 35k saves and 194 comments on Xiaohongshu — and the comments are not thanks. They are ordinary people pasting their ow
-- [Four r/languagelearning threads in a year ask for the same thing in…](https://ourword.ai/idea/i/325-four-r-languagelearning-threads-in-a-year-ask-fo/): Four r/languagelearning threads in a year ask for the same thing in different words: let me keep my own word list and generate sentences that use only words I already know. One says outright they woul
+- [On Xiaohongshu, slowed-down dance tutorials are a whole content…](https://ourword.ai/idea/i/328-on-xiaohongshu-slowed-down-dance-tutorials-are-a/): On Xiaohongshu, slowed-down dance tutorials are a whole content category — 6,909 likes, 4,667, 2,979, 2,727 — and every single one exists only because a teacher was willing to re-dance that song by…
+- [Five unrelated r/AskVet threads in twelve months do the same thing](https://ourword.ai/idea/i/329-five-unrelated-r-askvet-threads-in-twelve-months/): Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese…
+- [A man spent six and a half months hand-reverse-engineering his…](https://ourword.ai/idea/i/326-a-man-spent-six-and-a-half-months-hand-reverse-e/): A man spent six and a half months hand-reverse-engineering his grandfather's Aran jumper into a pattern he could wear, and 2,499 people upvoted it. Cross-stitch has had photo-to-chart tools for…
+- [In r/sewing the same request arrives every day from a different life](https://ourword.ai/idea/i/327-in-r-sewing-the-same-request-arrives-every-day-f/): In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph.…
+- [Seven unrelated r/singing threads in twelve months ask the same…](https://ourword.ai/idea/i/322-seven-unrelated-r-singing-threads-in-twelve-mont/): Seven unrelated r/singing threads in twelve months ask the same question — how do you learn a harmony line when there is no teacher — and every answer is 'practise more'. The askers are a mother of…
+- [Five separate r/singing threads in a year ask for the same missing…](https://ourword.ai/idea/i/323-five-separate-r-singing-threads-in-a-year-ask-fo/): Five separate r/singing threads in a year ask for the same missing tool — show me in real time how far off the note I am, against the actual song — and two of the askers are parents of ten-year-olds.…
+- [A cardiac surgeon's 30-second explainer on four blood-test numbers…](https://ourword.ai/idea/i/324-a-cardiac-surgeon-s-30-second-explainer-on-four/): A cardiac surgeon's 30-second explainer on four blood-test numbers has 16k likes, 35k saves and 194 comments on Xiaohongshu — and the comments are not thanks. They are ordinary people pasting their…
+- [Four r/languagelearning threads in a year ask for the same thing in…](https://ourword.ai/idea/i/325-four-r-languagelearning-threads-in-a-year-ask-fo/): Four r/languagelearning threads in a year ask for the same thing in different words: let me keep my own word list and generate sentences that use only words I already know. One says outright they…
 - [Both language sides asked for the same pantry app on the same day](https://ourword.ai/idea/i/317-both-language-sides-asked-for-the-same-pantry-ap/): Both language sides asked for the same pantry app on the same day — and neither was asking for the reminder. They were refusing the data entry that comes before it.
-- [A non-native speaker who works in English every day wrote the spec…](https://ourword.ai/idea/i/318-a-non-native-speaker-who-works-in-english-every/): A non-native speaker who works in English every day wrote the spec himself four years ago — 'like Grammarly but for voice' — and the category still splits into scoring apps and chat partners, with nob
-- [A woman with dementia might still recognise the tune her father…](https://ourword.ai/idea/i/319-a-woman-with-dementia-might-still-recognise-the/): A woman with dementia might still recognise the tune her father wrote. Her great-grandchild has photos of the handwritten score, cannot read music, and reports the scanning apps simply fail on it — 93
-- [About 80% of women pianists have hands smaller than the keyboard…](https://ourword.ai/idea/i/320-about-80-of-women-pianists-have-hands-smaller-th/): About 80% of women pianists have hands smaller than the keyboard was designed for. The subreddit's answer, at 502 points, is a campaign to get Yamaha to build narrower pianos. Nobody has pointed out t
-- [Guitar and ukulele players have had free](https://ourword.ai/idea/i/321-guitar-and-ukulele-players-have-had-free-communi/): Guitar and ukulele players have had free, community-made tabs for two decades. Singers — the largest group of amateur musicians there is — still hit a paywall at roughly five dollars a song, and two s
-- [Under a Xiaohongshu thread asking which app nobody has built (761…](https://ourword.ai/idea/i/313-under-a-xiaohongshu-thread-asking-which-app-nobo/): Under a Xiaohongshu thread asking which app nobody has built (761 likes, 1,130 saves, 214 comments), the most specific repeated request is not calorie counting — it is food logging read against your o
-- [petdex has 3,686 stars and a live submission queue of hand-drawn…](https://ourword.ai/idea/i/314-petdex-has-3-686-stars-and-a-live-submission-que/): petdex has 3,686 stars and a live submission queue of hand-drawn sprite pets — including a steady stream of Chinese submissions and an IP-holder takedown request — but every one of those pets can only
-- [The highest-scoring post in r/ADHD on this subject (2,411 points](https://ourword.ai/idea/i/315-the-highest-scoring-post-in-r-adhd-on-this-subje/): The highest-scoring post in r/ADHD on this subject (2,411 points, 205 comments) is not asking for a better reminder app — it says every reminder app already failed for the same reason, that the push n
-- [Both language sides asked for the same missing thing this year](https://ourword.ai/idea/i/316-both-language-sides-asked-for-the-same-missing-t/): Both language sides asked for the same missing thing this year: a recipe delivered as a hands-free, timed, step-by-step run rather than a block of text. In English a subreddit built it themselves (Par
-- [Two generations of WeChat chat-history exporters have ~55k combined…](https://ourword.ai/idea/i/306-two-generations-of-wechat-chat-history-exporters/): Two generations of WeChat chat-history exporters have ~55k combined stars and issue trackers full of people offering to pay — yet every one of them stops at 'export + a one-off yearly report'; nobody
-- [Turning your handwriting into a real font went to one photo and…](https://ourword.ai/idea/i/309-turning-your-handwriting-into-a-real-font-went-t/): Turning your handwriting into a real font went to one photo and zero upload for Latin scripts (draw-your-font, 535 stars in 5 days) — but a Chinese font still needs ~6,763 hand-written glyphs, and few
+- [A non-native speaker who works in English every day wrote the spec…](https://ourword.ai/idea/i/318-a-non-native-speaker-who-works-in-english-every/): A non-native speaker who works in English every day wrote the spec himself four years ago — 'like Grammarly but for voice' — and the category still splits into scoring apps and chat partners, with…
+- [A woman with dementia might still recognise the tune her father…](https://ourword.ai/idea/i/319-a-woman-with-dementia-might-still-recognise-the/): A woman with dementia might still recognise the tune her father wrote. Her great-grandchild has photos of the handwritten score, cannot read music, and reports the scanning apps simply fail on it…
+- [About 80% of women pianists have hands smaller than the keyboard…](https://ourword.ai/idea/i/320-about-80-of-women-pianists-have-hands-smaller-th/): About 80% of women pianists have hands smaller than the keyboard was designed for. The subreddit's answer, at 502 points, is a campaign to get Yamaha to build narrower pianos. Nobody has pointed out…
+- [Guitar and ukulele players have had free](https://ourword.ai/idea/i/321-guitar-and-ukulele-players-have-had-free-communi/): Guitar and ukulele players have had free, community-made tabs for two decades. Singers — the largest group of amateur musicians there is — still hit a paywall at roughly five dollars a song, and two…
+- [Under a Xiaohongshu thread asking which app nobody has built (761…](https://ourword.ai/idea/i/313-under-a-xiaohongshu-thread-asking-which-app-nobo/): Under a Xiaohongshu thread asking which app nobody has built (761 likes, 1,130 saves, 214 comments), the most specific repeated request is not calorie counting — it is food logging read against your…
+- [petdex has 3,686 stars and a live submission queue of hand-drawn…](https://ourword.ai/idea/i/314-petdex-has-3-686-stars-and-a-live-submission-que/): petdex has 3,686 stars and a live submission queue of hand-drawn sprite pets — including a steady stream of Chinese submissions and an IP-holder takedown request — but every one of those pets can…
+- [The highest-scoring post in r/ADHD on this subject (2,411 points](https://ourword.ai/idea/i/315-the-highest-scoring-post-in-r-adhd-on-this-subje/): The highest-scoring post in r/ADHD on this subject (2,411 points, 205 comments) is not asking for a better reminder app — it says every reminder app already failed for the same reason, that the push…
+- [Both language sides asked for the same missing thing this year](https://ourword.ai/idea/i/316-both-language-sides-asked-for-the-same-missing-t/): Both language sides asked for the same missing thing this year: a recipe delivered as a hands-free, timed, step-by-step run rather than a block of text. In English a subreddit built it themselves…
+- [Two generations of WeChat chat-history exporters have ~55k combined…](https://ourword.ai/idea/i/306-two-generations-of-wechat-chat-history-exporters/): Two generations of WeChat chat-history exporters have ~55k combined stars and issue trackers full of people offering to pay — yet every one of them stops at 'export + a one-off yearly report'; nobody…
+- [Turning your handwriting into a real font went to one photo and…](https://ourword.ai/idea/i/309-turning-your-handwriting-into-a-real-font-went-t/): Turning your handwriting into a real font went to one photo and zero upload for Latin scripts (draw-your-font, 535 stars in 5 days) — but a Chinese font still needs ~6,763 hand-written glyphs, and…
 - [Microsoft shipped an experimental desktop app that watches you…](https://ourword.ai/idea/i/310-microsoft-shipped-an-experimental-desktop-app-th/): Microsoft shipped an experimental desktop app that watches you perform a task once on screen and reconstructs it into a reusable agent skill — 835 stars and 90 forks in four days.
-- [An AI receptionist that answers a solo business's phone after hours…](https://ourword.ai/idea/i/312-an-ai-receptionist-that-answers-a-solo-business/): An AI receptionist that answers a solo business's phone after hours just cleared 129 upvotes on Product Hunt in English. The Chinese single-shop equivalent cannot be a translation, because the custome
+- [An AI receptionist that answers a solo business's phone after hours…](https://ourword.ai/idea/i/312-an-ai-receptionist-that-answers-a-solo-business/): An AI receptionist that answers a solo business's phone after hours just cleared 129 upvotes on Product Hunt in English. The Chinese single-shop equivalent cannot be a translation, because the…
 - [Totem](https://ourword.ai/idea/i/298-totem/): Product Hunt: Totem — Your Twitter bookmarks organized to make you read them
 - [Denovo](https://ourword.ai/idea/i/299-denovo/): Product Hunt: Denovo — Turn your vibe-coded app into paying customers
-- [Demand for self-owned, local AI memory has spilled beyond geeks](https://ourword.ai/idea/i/303-demand-for-self-owned-local-ai-memory-has-spille/): Demand for self-owned, local AI memory has spilled beyond geeks. In the Show HN thread for Echologue (a privacy-first AI voice journal), one commenter reports: "I got tired of my stuff living on someo
+- [Demand for self-owned, local AI memory has spilled beyond geeks](https://ourword.ai/idea/i/303-demand-for-self-owned-local-ai-memory-has-spille/): Demand for self-owned, local AI memory has spilled beyond geeks. In the Show HN thread for Echologue (a privacy-first AI voice journal), one commenter reports: "I got tired of my stuff living on…
 - [Leaping AI](https://ourword.ai/idea/i/276-leaping-ai/): Product Hunt: Leaping AI — AI agents that call and text in multi-day campaigns
 - [1weiho/open-slide](https://ourword.ai/idea/i/280-1weiho-open-slide/): 1weiho/open-slide — A slide framework built for agents.
 - [KunAgent/Kun](https://ourword.ai/idea/i/282-kunagent-kun/): Kun — an open agent workspace that chains requirement-clarification → UI design → code → writing into one loop, built to run well on cheap Chinese models (DeepSeek, Xiaomi MiMo, MiniMax).
@@ -61,7 +92,7 @@ Cite the individual idea page, which is stable and dated. Quotes inside an entry
 - [debpalash/OmniVoice-Studio](https://ourword.ai/idea/i/1785237007-debpalash-omnivoice-studio/): debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.
 - [Estera](https://ourword.ai/idea/i/181-estera/): Estera — an AI receptionist that answers a business's phone calls and WhatsApp 24/7 (Product Hunt launch, 129 upvotes).
 - [Forgeon](https://ourword.ai/idea/i/182-forgeon/): Product Hunt: Forgeon — Create, publish, and experience interactive stories
-- [simonlin1212/TradingAgents-astock](https://ourword.ai/idea/i/223-simonlin1212-tradingagents-astock/): Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external servi
+- [simonlin1212/TradingAgents-astock](https://ourword.ai/idea/i/223-simonlin1212-tradingagents-astock/): Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external…
 - [wangxijie001/yoji](https://ourword.ai/idea/i/228-wangxijie001-yoji/): wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 协助办公 · MCP 无限扩展 | An AI desktop companion with emotions — privacy-first, voice wake, office
 - [snownico0722/PaperTodo](https://ourword.ai/idea/i/231-snownico0722-papertodo/): snownico0722/PaperTodo — 极简 Windows 桌面便签工具。让桌面上有几张安静、可用、不会打扰人的纸。WPF 原生，支持待办与 Markdown。——A minimalist Windows desktop sticky note tool. It puts a
 - [tandpfun/wardrobe](https://ourword.ai/idea/i/244-tandpfun-wardrobe/): tandpfun/wardrobe — Your clothes, extracted and organized with gpt-image.
