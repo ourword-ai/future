@@ -213,6 +213,59 @@ def canonicalise_host(src):
     return LEGACY_HOST.sub(SITE + "/", src)
 
 
+CONFLICT = re.compile(r"^(?:<{7}|={7}|>{7})[^\n]*\n?", re.M)
+
+
+def heal(src):
+    """Repair a source file before patching it.
+
+    Three things go wrong in practice and all three are silent:
+      * a `git pull --rebase --autostash` conflict gets committed, leaving
+        `<<<<<<< / ======= / >>>>>>>` markers *inside the HTML* — visible to visitors
+        and to crawlers, and duplicating the whole head block;
+      * that duplication leaves two `</head>` tags, so the page ends up with two
+        canonicals contradicting each other;
+      * an older generated block survives somewhere outside the head.
+
+    When both sides of a conflict are identical (which they are, when the only
+    difference was a regenerated block) keeping either one is lossless.
+    """
+    m = re.search(r"^<{7}[^\n]*\n(.*?)^={7}[^\n]*\n(.*?)^>{7}[^\n]*\n?", src,
+                  flags=re.S | re.M)
+    while m:
+        a, b = m.group(1), m.group(2)
+        keep = a if a == b or len(a) >= len(b) else b
+        src = src[:m.start()] + keep + src[m.end():]
+        m = re.search(r"^<{7}[^\n]*\n(.*?)^={7}[^\n]*\n(.*?)^>{7}[^\n]*\n?", src,
+                      flags=re.S | re.M)
+    src = CONFLICT.sub("", src)
+    # every generated block, wherever it ended up
+    src = re.sub(re.escape(_HEAD_MARK[0]) + r".*?" + re.escape(_HEAD_MARK[1]), "",
+                 src, flags=re.S)
+    src = re.sub(r"<!--SEO:START-->.*?<!--SEO:END-->", "", src, flags=re.S)
+    # collapse duplicated </head> before <body>
+    bi = src.lower().find("<body")
+    if bi > 0:
+        headzone = src[:bi]
+        if headzone.lower().count("</head>") > 1:
+            first = headzone.lower().index("</head>") + len("</head>")
+            rest = re.sub(r"</head\s*>", "", headzone[first:], flags=re.I)
+            src = headzone[:first] + rest + src[bi:]
+    return src
+
+
+def _assert_sane(path, src):
+    """Never publish a page with conflict markers or contradictory canonicals."""
+    if CONFLICT.search(src):
+        raise SystemExit("%s still contains merge-conflict markers — refusing to write"
+                         % path)
+    n = len(re.findall(r'<link rel="canonical"', src))
+    if n > 1:
+        raise SystemExit("%s ended up with %d canonical tags — refusing to write"
+                         % (path, n))
+    return src
+
+
 def _strip_legacy(head):
     """Remove the tags we are about to own, so we never emit duplicates."""
     pats = [
@@ -277,8 +330,7 @@ def patch_index(path, site, items, zh=False, extra_ld=None, hubs=None):
     """Rewrite an existing hand-built index.html's head, and give it an h1 + lede."""
     if not os.path.exists(path):
         return False
-    src = canonicalise_host(open(path, encoding="utf-8").read())
-    src = re.sub(r"<!--SEO:START-->.*?<!--SEO:END-->", "", src, flags=re.S)
+    src = heal(canonicalise_host(open(path, encoding="utf-8").read()))
     m = re.search(r"(<head[^>]*>)(.*?)(</head>)", src, flags=re.S | re.I)
     if not m:
         return False
@@ -295,7 +347,7 @@ def patch_index(path, site, items, zh=False, extra_ld=None, hubs=None):
     head = head + head_block(site, site.url(), title, desc, zh=zh, ld=ld)
     src = src[:m.start(2)] + head + src[m.end(2):]
     src = _inject_body(src, noscript_index(site, items, zh=zh, hubs=hubs))
-    return _write(path, src)
+    return _write(path, _assert_sane(path, src))
 
 
 def patch_page(path, site, rel, title, desc, zh=None, ld=None, h1=""):
@@ -305,8 +357,7 @@ def patch_page(path, site, rel, title, desc, zh=None, ld=None, h1=""):
     if not os.path.exists(path):
         return False
     zh = site.zh() if zh is None else zh
-    src = canonicalise_host(open(path, encoding="utf-8").read())
-    src = re.sub(r"<!--SEO:START-->.*?<!--SEO:END-->", "", src, flags=re.S)
+    src = heal(canonicalise_host(open(path, encoding="utf-8").read()))
     m = re.search(r"(<head[^>]*>)(.*?)(</head>)", src, flags=re.S | re.I)
     if not m:
         return False
@@ -322,7 +373,7 @@ def patch_page(path, site, rel, title, desc, zh=None, ld=None, h1=""):
                            % (esc(h1 or title), esc(clip(desc, 400)), esc(site.base),
                               esc(site.name_zh if zh else site.name),
                               sibling_links(site, zh)) + _BODY_MARK[1])
-    return _write(path, src)
+    return _write(path, _assert_sane(path, src))
 
 
 def _inject_body(src, block):
