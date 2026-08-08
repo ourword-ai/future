@@ -1,0 +1,39 @@
+name: seo
+# Keeps the crawlable layer in step with the site: canonical/OG/JSON-LD, the static
+# item pages, sitemap.xml, robots.txt, llms.txt and llms-full.txt. The generator only
+# writes files whose bytes actually changed, so a no-op run makes no commit.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch:
+concurrency:
+  group: seo-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build SEO/GEO artefacts
+        run: python seo/build_seo.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "ourword-ai"
+          git config user.email "ops@ourword.ai"
+          git add -A
+          if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
+          git commit -m "seo: refresh crawlable layer"
+          for i in $(seq 1 6); do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push; then
+              echo pushed; exit 0
+            fi
+            echo "retry $i"; sleep $(( (RANDOM % 5) + 3 ))
+          done
+          echo "::error::seo push failed"; exit 1
