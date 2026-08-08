@@ -24,14 +24,16 @@
       "quote": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals).",
       "url": "https://old.reddit.com/r/singing/",
       "user": "cesar_fernandes, r/singing (0 pts / 3 comments)",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals)."
     },
     {
       "kind": "pain",
       "quote": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?",
       "url": "https://old.reddit.com/r/singing/",
       "user": "SakuOtaku, r/singing (3 pts / 13 comments) — independent second post",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?"
     }
   ],
   "i18n": {
@@ -45,7 +47,18 @@
       "differentiator": "照抄吉他谱站做对的那几件事：用户可纠错、粗糙、一眼能读、免费。中文侧这个缝更宽而且记谱更友好——人声用**简谱**，恰恰是业余歌者本来就在读的格式，而现有曲谱站要么收费要么错。冷启动：中文＝小红书/B站「简谱 求」「翻唱 找谱」的评论区，以及合唱团、教会诗班群；英文＝r/singing 与 r/karaoke，这个请求在那里低声反复出现。",
       "value": "先免费、轻广告把语料攒起来，走吉他谱站走过的路；后面在练习功能上变现，而不是在「看到音符」上收钱。",
       "risk": "受版权保护歌曲的旋律线是有争议的地带——要预先设计好吉他谱站赖以生存的那套下架应对，并且永远不托管录音本身。",
-      "workload": "2m"
+      "workload": "2m",
+      "voices": [
+        {
+          "quote": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals).",
+          "zh": "真希望有个 App 或者网站，我选一首歌，它就把要唱的音和音高连着歌词给我——像一份简化的乐谱，就像吉他谱那样。"
+        },
+        {
+          "quote": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?",
+          "zh": "为什么唱歌的人没有一个像吉他谱、尤克里里和弦那样的谱库？"
+        }
+      ],
+      "consumer_angle": "一个会唱歌但不识谱的人，看着同一首歌吉他手能免费拿到谱。他拿到的是自己那条人声旋律，写下来的。"
     }
   },
   "id": "321-guitar-and-ukulele-players-have-had-free-communi",
@@ -55,5 +68,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone who sings and cannot read music, looking at the same song a guitarist can get for free. What they get is the vocal line, written down.",
+  "verdict": "build"
 }

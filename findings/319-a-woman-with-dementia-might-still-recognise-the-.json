@@ -23,28 +23,32 @@
       "quote": "I have pictures of the music but the scan apps just don't work.",
       "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
       "user": "Excellent_Finding830, r/piano (936 pts / 108 comments)",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "I have pictures of the music but the scan apps just don't work."
     },
     {
       "kind": "pain",
       "quote": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged",
       "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
       "user": "Excellent_Finding830 (OP, naming the failure mode)",
-      "src": "reddit-comment"
+      "src": "reddit-comment",
+      "text": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged"
     },
     {
       "kind": "spec",
       "quote": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF.",
       "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
       "user": "viberat, pro/gig musician — correcting what the OP asked for",
-      "src": "reddit-comment"
+      "src": "reddit-comment",
+      "text": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF."
     },
     {
       "kind": "workaround",
       "quote": "In reality the whole thing took me a total of about 2 hours",
       "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
       "user": "Gwaur, the stranger who did it by hand (652 pts)",
-      "src": "reddit-comment"
+      "src": "reddit-comment",
+      "text": "In reality the whole thing took me a total of about 2 hours"
     }
   ],
   "i18n": {
@@ -57,7 +61,27 @@
       "edge": "乐谱识别存在二十年了，在干净印刷谱上一直能用。而**发皱、有污渍、手工刻写**的那种页面——也就是从家里传下来的谱子实际长的样子——是多模态模型出现后才勉强可读的部分，发帖人撞的正是这堵墙。",
       "value": "按一叠纸一次性收费，价位对齐人们已经在付的老照片、老胶片数字化；印出来的干净谱本身是顺理成章的实体加购。",
       "risk": "已出版乐谱有版权——产品必须限定在用户自己拥有的纸和私人播放，不能变成一条白嫖现行曲谱的路。",
-      "workload": "2m"
+      "workload": "2m",
+      "voices": [
+        {
+          "quote": "I have pictures of the music but the scan apps just don't work.",
+          "zh": "那份谱子我拍了照，可扫谱 App 就是识别不了。"
+        },
+        {
+          "quote": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged",
+          "zh": "对，我就是这么试的，可它根本识别不出来——我猜是因为纸太皱、字迹又花了。"
+        },
+        {
+          "quote": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF.",
+          "zh": "如果你身边没有会弹的人，你真正需要的是有人把它录进制谱软件（生成一个 XML 文件），再导出成音频，而不是导出成 PDF。"
+        },
+        {
+          "quote": "In reality the whole thing took me a total of about 2 hours",
+          "zh": "实际上这件事我总共花了大约两个小时。"
+        }
+      ],
+      "consumer_angle": "一个成年子女，手里是一张皱了的手写谱的照片，全家没人弹得出来。他拿到的是这首曲子的一段录音。",
+      "differentiator": "不要追求完整制谱。只盯一件事——让这首曲子响起来——并且接受那些扫描认不出的音由人工顺一遍。"
     }
   },
   "id": "319-a-woman-with-dementia-might-still-recognise-the-",
@@ -67,5 +91,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "An adult child holding a photo of a creased, handwritten score nobody in the family can play. What they get is an audio file of that tune.",
+  "verdict": "build"
 }

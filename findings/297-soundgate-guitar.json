@@ -40,7 +40,21 @@
       "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
       "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
       "consumer_angle": "有真吉他、没老师的成年初学者；成品是每次练完的一句话——你反复卡在哪一小节。",
-      "edge": "它按「你自己已经挑好的那首歌」来评你——昨晚你翻出来的那份谱——而不是按课程表里的曲目。现有产品没有一个这么做，因为课程本身就是它们的生意。"
+      "edge": "它按「你自己已经挑好的那首歌」来评你——昨晚你翻出来的那份谱——而不是按课程表里的曲目。现有产品没有一个这么做，因为课程本身就是它们的生意。",
+      "voices": [
+        {
+          "quote": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
+          "zh": "我真希望能有个老师。Rocksmith 能教一些东西，但它看不见我的指尖，也没法教我别弹得那么难听。"
+        },
+        {
+          "quote": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
+          "zh": "我发现只有 G 弦声音不干净，别的弦都没问题。G 弦一定要发音干净吗？我该改一下手的位置，还是就这么练下去？"
+        },
+        {
+          "quote": "Palm muting. Am I doing this right? Maybe not great amp settings?",
+          "zh": "闷音（palm muting）。我这么弹对吗？也许是音箱设置不对？"
+        }
+      ]
     }
   },
   "family": null,
@@ -51,17 +65,20 @@
     {
       "text": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
       "source": "r/guitarlessons — 'Newbie, not sure if I'm setting myself up for success.'",
-      "url": "https://old.reddit.com/r/guitarlessons/"
+      "url": "https://old.reddit.com/r/guitarlessons/",
+      "quote": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking."
     },
     {
       "text": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
       "source": "r/Guitar — barre-chord question, 5 comments",
-      "url": "https://old.reddit.com/r/Guitar/"
+      "url": "https://old.reddit.com/r/Guitar/",
+      "quote": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher."
     },
     {
       "text": "Palm muting. Am I doing this right? Maybe not great amp settings?",
       "source": "r/guitarlessons — 'Does it chug?', 16 comments",
-      "url": "https://old.reddit.com/r/guitarlessons/"
+      "url": "https://old.reddit.com/r/guitarlessons/",
+      "quote": "Palm muting. Am I doing this right? Maybe not great amp settings?"
     }
   ],
   "workload": "2w",

@@ -34,7 +34,18 @@
       "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
       "gap": "痛点击中了但解得不完美，而且隐私承诺有个洞：Intel Mac 上会回落到苹果服务器，README 那句「什么都不出本机」并没有讲清楚。另外只能用系统语言口述——这是 issue 区呼声最高的一条——等于把所有双语用户默默排除在外。",
       "counter": "这是一家拿过融资的公司（Frigade）的副产品仓，窗口是他们自己的；而 macOS 自带听写就在设置里一个开关之外。对苹果 API 的薄封装，一个周末就能复刻，没有会累积的资产。",
-      "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。"
+      "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。",
+      "voices": [
+        {
+          "quote": "I'd love to be able to dictate in 2 langu[ages]",
+          "zh": "我很希望能用两种语言口述。"
+        },
+        {
+          "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
+          "zh": "是的，（在 Intel 芯片的 Mac 上）它会把所有音频数据发到苹果的服务器。"
+        }
+      ],
+      "consumer_angle": "用的人是打字慢、或者手不方便的普通 Mac 用户。他拿到的是自己说的话直接落进任何一个输入框，而且一个字节不出本机。"
     }
   },
   "pick": true,
@@ -44,25 +55,20 @@
   "posted_at": "2026-07-29T09:47:50Z",
   "voices": [
     {
-      "kind": "demand",
-      "quote": "First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.",
-      "url": "https://github.com/FrigadeHQ/yap/issues/7",
-      "user": "kballenegger",
-      "src": "github-issue"
-    },
-    {
       "kind": "pain",
       "quote": "I'd love to be able to dictate in 2 langu[ages]",
       "url": "https://github.com/FrigadeHQ/yap/issues/15",
       "user": "iamchrishckns",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "I'd love to be able to dictate in 2 langu[ages]"
     },
     {
       "kind": "pain",
       "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
       "url": "https://github.com/FrigadeHQ/yap/issues/16",
       "user": "lissy93",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "Yep sends all audio data to Apple servers (on Intel Macs)"
     }
   ],
   "gap": "It hits a real pain but solves it imperfectly, and the privacy promise has a hole: on Intel Macs it falls back to Apple's servers, which the README's 'nothing leaves your machine' framing does not make obvious. There is also no way to dictate in a language other than the system locale — the single most-requested thing in the tracker — which quietly excludes every bilingual user.",

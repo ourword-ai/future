@@ -35,7 +35,14 @@
       "counter": "Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而文档本来就在他们手里。33 位贡献者对 219 个未关 issue，这条线在往坏的方向走；「把我的文件夹变成 wiki」是个演示一次很惊艳、活不过第二周的东西。",
       "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。",
       "why_use": "硬盘里塞满 PDF、却再也找不到任何东西的人：研究生、单干的律师、接手了一堆公司文件的人。他拿到的是一本能翻的 wiki，不是一个还得他自己会问的聊天框。",
-      "edge": "检索增强一次只回答一个问题，语料本身仍然是一团。把整本 wiki 先写出来——词条、互链、一张能逛的地图——是长上下文便宜到可以把每份文档读两遍之后才谈得上的事。"
+      "edge": "检索增强一次只回答一个问题，语料本身仍然是一团。把整本 wiki 先写出来——词条、互链、一张能逛的地图——是长上下文便宜到可以把每份文档读两遍之后才谈得上的事。",
+      "voices": [
+        {
+          "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
+          "zh": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行"
+        }
+      ],
+      "consumer_angle": "用的人是自己电脑里堆了几百份文档的普通人：合同、说明书、课件、聊天导出。他拿到的是一本能翻、能问、能引用的本地维基，而不是一个搜索框。"
     }
   },
   "hook": "A person with ten years of documents on their own laptop and no way to ask them a question — 15.8k stars in four months, and 219 open issues where those same people are stuck on an API key.",
@@ -45,21 +52,8 @@
       "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
       "url": "https://github.com/nashsu/llm_wiki/issues/46",
       "user": "larashero3-dotcom",
-      "src": "github-issue"
-    },
-    {
-      "kind": "pain",
-      "quote": "By clicking on the create button, nonthing happens. Please advise.",
-      "url": "https://github.com/nashsu/llm_wiki/issues/377",
-      "user": "sirotaku",
-      "src": "github-issue"
-    },
-    {
-      "kind": "demand",
-      "quote": "开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流",
-      "url": "https://github.com/nashsu/llm_wiki/issues/158",
-      "user": "ooof",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行"
     }
   ],
   "does": "A desktop app that reads a folder of your documents and builds an interlinked wiki out of them by itself, instead of the usual retrieve-then-answer trick: it writes entries and cross-links them, so you browse and ask rather than search. Runs on your machine, points at whatever model you configure — cloud or a local Ollama.",

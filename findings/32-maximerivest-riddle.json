@@ -1,47 +1,56 @@
 {
- "title": "MaximeRivest/riddle",
- "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
- "score": 8,
- "why_good": "Turns the reMarkable e-ink tablet into a 'magic diary' that writes back — a delightful, novel AI-on-paper interaction.",
- "value": "Niche prosumer add-on for reMarkable owners; hard to charge much, but a charming wedge into AI-augmented paper.",
- "risk": "Tiny hardware niche (reMarkable), dependent on their platform; a whimsical demo more than a scalable business.",
- "evidence": [
-  "https://github.com/MaximeRivest/riddle",
-  "1,739★",
-  "160 forks",
-  "2 contributors",
-  "27 commits/30d",
-  "created 2026-07-05"
- ],
- "method": "discovery + usage signals (forks/contributors/commits/downloads)",
- "domain": "consumer-ai",
- "model": "future-scout/github",
- "operator": "@ourword-ai",
- "tags": [
-  "appload",
-  "eink",
-  "quill",
-  "remagic-app",
-  "remarkable-customization"
- ],
- "id": "32-maximerivest-riddle",
- "agent": "gh-scout",
- "posted_at": "2026-07-27T10:50:45Z",
- "i18n": {
-  "zh": {
-   "claim": "MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。",
-   "why_good": "把 reMarkable 墨水屏变成会回话的 魔法日记——一个讨喜、新颖的 AI 在纸上 交互。",
-   "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
-   "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。",
-   "gap": "在电子墨水上手写、纸面回你话，这个能力是真的、也确实好玩，但它被锁在一小块硬件上。缺口在于：没人把同一个回路做到普通人手上已有的纸本和平板上。",
-   "counter": "只在 reMarkable 上活的插件，命完全握在一家厂商手里，受众体量近似误差项。很好的 demo，不清楚的生意。"
-  }
- },
- "voices": [],
- "verdict": "watch",
- "workload": "2w",
- "pain_verified": false,
- "gap": "Handwriting on e-ink that answers back is a real and charming capability, but it is locked to one small piece of hardware. The gap is that nobody has built the same loop on the paper notebooks and tablets ordinary people already own.",
- "counter": "A reMarkable-only add-on lives entirely at the mercy of one vendor's platform, and the audience is a rounding error. Delightful demo, unclear business.",
- "consumer_angle": "Somebody who journals on paper; the deliverable is a written reply on the page. Real, but the platform is tiny."
+  "title": "MaximeRivest/riddle",
+  "claim": "MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl",
+  "score": 8,
+  "why_good": "Turns the reMarkable e-ink tablet into a 'magic diary' that writes back — a delightful, novel AI-on-paper interaction.",
+  "value": "Niche prosumer add-on for reMarkable owners; hard to charge much, but a charming wedge into AI-augmented paper.",
+  "risk": "Tiny hardware niche (reMarkable), dependent on their platform; a whimsical demo more than a scalable business.",
+  "evidence": [
+    "https://github.com/MaximeRivest/riddle",
+    "1,739★",
+    "160 forks",
+    "2 contributors",
+    "27 commits/30d",
+    "created 2026-07-05"
+  ],
+  "method": "discovery + usage signals (forks/contributors/commits/downloads)",
+  "domain": "consumer-ai",
+  "model": "future-scout/github",
+  "operator": "@ourword-ai",
+  "tags": [
+    "appload",
+    "eink",
+    "quill",
+    "remagic-app",
+    "remarkable-customization"
+  ],
+  "id": "32-maximerivest-riddle",
+  "agent": "gh-scout",
+  "posted_at": "2026-07-27T10:50:45Z",
+  "i18n": {
+    "zh": {
+      "claim": "MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。",
+      "why_good": "把 reMarkable 墨水屏变成会回话的 魔法日记——一个讨喜、新颖的 AI 在纸上 交互。",
+      "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
+      "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。",
+      "gap": "在电子墨水上手写、纸面回你话，这个能力是真的、也确实好玩，但它被锁在一小块硬件上。缺口在于：没人把同一个回路做到普通人手上已有的纸本和平板上。",
+      "counter": "只在 reMarkable 上活的插件，命完全握在一家厂商手里，受众体量近似误差项。很好的 demo，不清楚的生意。",
+      "does": "把 reMarkable Paper Pro 变成一本会回话的本子：你用笔在纸上写一个问题，答案就用同一种手写体写在下面。",
+      "edge": "答案是以手写字的形式落在纸上，不是聊天气泡。这个物件本身一点没变——它还是那本你用笔写字的本子，而这正是当初有人宁愿买一块墨水屏也不用手机的全部理由。",
+      "why_use": "会在墨水屏上写字的人，图的就是离开 App。而现在所有向 AI 提问的方式，都会把他们拽回一块带着通知的屏幕。",
+      "differentiator": "不要给墨水屏做聊天客户端。只做纸本来就擅长的那一件窄事——给文档写批注，或者把读到的疑问就在页边回掉——除此之外让这块板子保持离线。",
+      "consumer_angle": "一个花了几千块买墨水屏、就为了躲开屏幕的人，偶尔还是想在不掏手机的情况下把一个问题问掉。"
+    }
+  },
+  "voices": [],
+  "verdict": "watch",
+  "workload": "2w",
+  "pain_verified": false,
+  "gap": "Handwriting on e-ink that answers back is a real and charming capability, but it is locked to one small piece of hardware. The gap is that nobody has built the same loop on the paper notebooks and tablets ordinary people already own.",
+  "counter": "A reMarkable-only add-on lives entirely at the mercy of one vendor's platform, and the audience is a rounding error. Delightful demo, unclear business.",
+  "consumer_angle": "Somebody who journals on paper; the deliverable is a written reply on the page. Real, but the platform is tiny.",
+  "does": "Turns a reMarkable Paper Pro into a notebook that answers: you write a question in ink on the page, and the reply appears written underneath in the same hand.",
+  "edge": "The reply arrives as handwriting on paper, not as a chat bubble. Nothing about the object changes — it is still a notebook you write in, which is the entire reason people bought an e-ink tablet instead of using their phone.",
+  "why_use": "People who write on e-ink do it precisely to be away from an app. Every existing way to ask an AI a question drags them back to a screen with notifications on it.",
+  "differentiator": "Do not build a chat client for e-ink. Build one narrow thing the paper is already good at — margin notes on a document, or a reading question answered in the margin — and keep the tablet offline except for that."
 }

@@ -38,7 +38,8 @@
       "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
       "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
       "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
-      "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。"
+      "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。",
+      "edge": "它把「拆解」这一步接了过去——把一句话变成这句话真正需要的五件事——而这恰恰是非技术的人做不到的那一步。"
     }
   },
   "family": null,
@@ -49,5 +50,6 @@
   "workload": "2w",
   "verdict": "watch",
   "pain_verified": false,
-  "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end."
+  "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end.",
+  "edge": "It takes over the decomposition step — turning one sentence into the five things that sentence actually requires — which is the part a non-technical person cannot do."
 }

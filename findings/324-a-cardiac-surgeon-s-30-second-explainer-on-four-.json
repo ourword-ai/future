@@ -24,35 +24,40 @@
       "quote": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01",
       "user": "大包子",
       "src": "xiaohongshu comment (7 days ago, 浙江)",
-      "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7"
+      "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7",
+      "text": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01"
     },
     {
       "kind": "pain",
       "quote": "请问高密度低怎么办？我0.86",
       "user": "纳澜",
       "src": "xiaohongshu comment",
-      "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7"
+      "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7",
+      "text": "请问高密度低怎么办？我0.86"
     },
     {
       "kind": "demand",
       "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
       "user": "唯雨",
       "src": "xiaohongshu comment, 8 likes — 「有没有哪种APP，真的很需要但没人做？」763赞/214评论",
-      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+      "text": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
     },
     {
       "kind": "demand",
       "quote": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议",
       "user": "小红薯5F34CD94",
       "src": "xiaohongshu comment (05-09 江苏), same note",
-      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+      "text": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议"
     },
     {
       "kind": "demand",
       "quote": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。",
       "user": "子茵",
       "src": "xiaohongshu comment, 32 likes — 自建失败＋愿付费，同一条笔记",
-      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+      "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+      "text": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。"
     }
   ],
   "i18n": {
@@ -66,7 +71,30 @@
       "differentiator": "别做一个健康 App。从一份文件里做出一件成品：血脂四项＋空腹血糖进去，一周买菜清单和「每天只换一样」的替换表出来，末尾固定写着「这不是诊断，异常值请找医生」。不接可穿戴、不做长期追踪、不碰用药。冷启动第一步：中文＝那条笔记下的 194 条评论本身就是一份已经举手的名单，再加「体检报告 看不懂」「怎么让AI解读体检报告」两个词；英文＝r/Biohackers 与 r/nutrition 里贴 bloodwork 问「那我该改吃什么」的帖子。",
       "value": "刚做完公司年度体检、单子上有三处飘红的成年人——一份报告付一次费，价格对标一顿外卖，卖的是他一年里唯一在意这件事的那一刻。",
       "risk": "医疗边界的蔓延是主要失败模式；体检机构先拿到报告；饮食记录有一个至今没被 AI 抬起来的留存地板。",
-      "workload": "2w"
+      "workload": "2w",
+      "voices": [
+        {
+          "quote": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01",
+          "zh": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01"
+        },
+        {
+          "quote": "请问高密度低怎么办？我0.86",
+          "zh": "请问高密度低怎么办？我0.86"
+        },
+        {
+          "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
+          "zh": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
+        },
+        {
+          "quote": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议",
+          "zh": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议"
+        },
+        {
+          "quote": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。",
+          "zh": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。"
+        }
+      ],
+      "consumer_angle": "一个手里拿着体检报告、上面三个数字飘红的人。他拿到的是这周的一张买菜清单，和每天替掉的那一样东西。"
     }
   },
   "id": "324-a-cardiac-surgeon-s-30-second-explainer-on-four-",
@@ -76,5 +104,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone holding a check-up report with three numbers in red. What they get is this week's shopping list and the one thing to swap out each day.",
+  "verdict": "build"
 }

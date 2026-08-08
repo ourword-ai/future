@@ -24,21 +24,24 @@
       "quote": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury.",
       "url": "https://old.reddit.com/r/piano/",
       "user": "Yogrimbo, r/piano (502 pts / 275 comments)",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury."
     },
     {
       "kind": "pain",
       "quote": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension.",
       "url": "https://old.reddit.com/r/piano/",
       "user": "kingfishy11, r/piano (21 pts) — independent second post",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension."
     },
     {
       "kind": "pain",
       "quote": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky.",
       "url": "https://old.reddit.com/r/piano/",
       "user": "Yogrimbo, r/piano — the cost of the current workaround",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky."
     }
   ],
   "i18n": {
@@ -51,7 +54,23 @@
       "edge": "在不毁掉音乐的前提下重新排布，是在结构化记谱上做符号处理——恰好是现在的模型刚变得称职的那件事。此前这是一份逐曲手工编辑的技术活，所以没人会为业余爱好者做。",
       "value": "按曲计费或小额订阅，和这批学习者本来就在花的买谱钱并列。",
       "risk": "绝不能包装成防伤或治疗——只能说某份谱适配某个跨度，不能说它能让你不受伤；已经在痛的人应当指向老师或医生。",
-      "workload": "2m"
+      "workload": "2m",
+      "voices": [
+        {
+          "quote": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury.",
+          "zh": "有很多曲子，我要是想弹，就得把大部分和弦拆成琶音，或者某些段落只能极少量地练，免得受伤。"
+        },
+        {
+          "quote": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension.",
+          "zh": "再怎么练我也弹不好八度，因为我的手在琴键上张开时必然带着紧张，这是身体条件决定的。"
+        },
+        {
+          "quote": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky.",
+          "zh": "我在圣三一八级考试上弹了一首格什温，结果把左手小指弹成了屈指肌腱炎。"
+        }
+      ],
+      "consumer_angle": "一个手小的成年钢琴学习者，已经因为硬撑着伸手弄伤过手指。他拿到的是同一首曲子，按他自己这双手重写过的版本。",
+      "differentiator": "改谱，不是改琴。那个圈子自己给出的答案是联署请雅马哈造窄键钢琴——没有人想到要动的是那张纸。"
     }
   },
   "id": "320-about-80-of-women-pianists-have-hands-smaller-th",
@@ -61,5 +80,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "An adult piano learner with small hands who has already hurt a finger reaching. What they get is that same piece, rewritten for the hand they have.",
+  "verdict": "build"
 }

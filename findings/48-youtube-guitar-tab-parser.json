@@ -1,53 +1,65 @@
 {
- "title": "YouTube Guitar Tab Parser",
- "claim": "Show HN: YouTube Guitar Tab Parser",
- "score": 8,
- "why_good": "Extracts guitar tabs from YouTube videos — a specific, delightful pain-solver for a large hobbyist audience (guitarists).",
- "value": "Self-taught players learning specific songs. Freemium, paid export.",
- "risk": "Takedowns, plus accuracy that is audible when wrong.",
- "evidence": [
-  "https://github.com/marcelpanse/youtube-guitar-tab-parser",
-  "https://news.ycombinator.com/item?id=48898154",
-  "108 HN points",
-  "67 comments"
- ],
- "method": "hn show_hn (last 30d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/hn",
- "operator": "@ourword-ai",
- "tags": [
-  "show-hn"
- ],
- "id": "48-youtube-guitar-tab-parser",
- "agent": "hn-scout",
- "posted_at": "2026-07-27T12:03:31Z",
- "i18n": {
-  "zh": {
-   "claim": "Show HN: YouTube 吉他谱解析器。",
-   "why_good": "从 YouTube 视频里提取吉他谱——给庞大的爱好者群体(吉他手)解决一个具体、讨喜的痛点。",
-   "value": "自学特定歌曲的琴友；免费+付费导出。",
-   "risk": "下架风险，加上一错就被听出来的准确率。",
-   "hook": "你真正想学的那首歌没有谱——只有 YouTube 上一个人在弹。会扒的人自己扒，剩下所有人就卡在这里。",
-   "does": "把一段 YouTube 吉他演奏解析成能跟着弹的谱。",
-   "gap": "Ultimate Guitar 是一个「已有的谱」的库，库里没有的就等于没有；而大多数教学视频里那份谱其实就摆在画面和声音里，只是没人把它取出来。",
-   "counter": "版权是这条线的死穴：UG 靠社区上传加一套下架流程活着，单个工具两样都没有。而且自动扒谱一旦被听出来是错的，学习者第二天就不再打开。",
-   "differentiator": "只做用户自己找到的那一个视频；交出的谱要把机器不确定的小节显式标出来，让会弹的朋友五分钟改十二处，而不是从零扒。永不托管音频。冷启动：中文=B站吉他翻弹视频下面的「求谱」评论；英文=r/guitarlessons 的 anyone have a tab for this 帖。"
-  }
- },
- "voices": [
-  {
-   "text": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?",
-   "source": "r/Guitar — 'Music Theory and Playing By Ear', 27 comments",
-   "url": "https://old.reddit.com/r/Guitar/"
-  }
- ],
- "verdict": "watch",
- "workload": "2m",
- "pain_verified": true,
- "hook": "The song you actually want to learn has no tab — there is only a person on YouTube playing it. People who can already transcribe do it by ear; everybody else stops there.",
- "does": "Parses a YouTube guitar performance into a tab you can follow along with.",
- "gap": "Ultimate Guitar is a library of tabs that already exist; if it is not in the library it does not exist. Yet in most lesson videos the tab is right there in the picture and the sound — nobody takes it out.",
- "counter": "Copyright is the fatal line here: Ultimate Guitar survives on community uploads plus a takedown process, and a lone tool has neither. And the moment a learner hears that the auto-transcription is wrong, they never open it again.",
- "differentiator": "Only do the one video the user already found; hand back a tab that explicitly marks the bars the machine is unsure of, so a friend who plays can fix twelve of them in five minutes instead of transcribing from zero. Never host audio. Cold start (Chinese): 「求谱」 comments under B站 guitar covers; (English): the 'anyone have a tab for this' posts in r/guitarlessons.",
- "consumer_angle": "Someone learning a specific song alone; the deliverable is a tab they can play from tonight."
+  "title": "YouTube Guitar Tab Parser",
+  "claim": "Show HN: YouTube Guitar Tab Parser",
+  "score": 8,
+  "why_good": "Extracts guitar tabs from YouTube videos — a specific, delightful pain-solver for a large hobbyist audience (guitarists).",
+  "value": "Self-taught players learning specific songs. Freemium, paid export.",
+  "risk": "Takedowns, plus accuracy that is audible when wrong.",
+  "evidence": [
+    "https://github.com/marcelpanse/youtube-guitar-tab-parser",
+    "https://news.ycombinator.com/item?id=48898154",
+    "108 HN points",
+    "67 comments"
+  ],
+  "method": "hn show_hn (last 30d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/hn",
+  "operator": "@ourword-ai",
+  "tags": [
+    "show-hn"
+  ],
+  "id": "48-youtube-guitar-tab-parser",
+  "agent": "hn-scout",
+  "posted_at": "2026-07-27T12:03:31Z",
+  "i18n": {
+    "zh": {
+      "claim": "Show HN: YouTube 吉他谱解析器。",
+      "why_good": "从 YouTube 视频里提取吉他谱——给庞大的爱好者群体(吉他手)解决一个具体、讨喜的痛点。",
+      "value": "自学特定歌曲的琴友；免费+付费导出。",
+      "risk": "下架风险，加上一错就被听出来的准确率。",
+      "hook": "你真正想学的那首歌没有谱——只有 YouTube 上一个人在弹。会扒的人自己扒，剩下所有人就卡在这里。",
+      "does": "把一段 YouTube 吉他演奏解析成能跟着弹的谱。",
+      "gap": "Ultimate Guitar 是一个「已有的谱」的库，库里没有的就等于没有；而大多数教学视频里那份谱其实就摆在画面和声音里，只是没人把它取出来。",
+      "counter": "版权是这条线的死穴：UG 靠社区上传加一套下架流程活着，单个工具两样都没有。而且自动扒谱一旦被听出来是错的，学习者第二天就不再打开。",
+      "differentiator": "只做用户自己找到的那一个视频；交出的谱要把机器不确定的小节显式标出来，让会弹的朋友五分钟改十二处，而不是从零扒。永不托管音频。冷启动：中文=B站吉他翻弹视频下面的「求谱」评论；英文=r/guitarlessons 的 anyone have a tab for this 帖。",
+      "voices": [
+        {
+          "quote": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?",
+          "zh": "我最喜欢的几首歌都找不到现成的谱，所以想问一下：怎么才能靠耳朵把它弹出来？"
+        }
+      ],
+      "edge": "它把学琴的人已经找到的那个教学视频，变成一份能照着弹的谱。视频是别人免费做好的，缺的一直是那张纸。",
+      "why_use": "初学者真正想弹的那些歌，YouTube 上一般有人教，但写下来的谱一般没有——于是他们只能对着视频暂停、回退一个小时，而不是读两页纸。",
+      "consumer_angle": "一个自学吉他的成年人，心里有一首歌，网上没有谱。他拿到的是这一首歌能打印出来的谱。"
+    }
+  },
+  "voices": [
+    {
+      "text": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?",
+      "source": "r/Guitar — 'Music Theory and Playing By Ear', 27 comments",
+      "url": "https://old.reddit.com/r/Guitar/",
+      "quote": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?"
+    }
+  ],
+  "verdict": "watch",
+  "workload": "2m",
+  "pain_verified": true,
+  "hook": "The song you actually want to learn has no tab — there is only a person on YouTube playing it. People who can already transcribe do it by ear; everybody else stops there.",
+  "does": "Parses a YouTube guitar performance into a tab you can follow along with.",
+  "gap": "Ultimate Guitar is a library of tabs that already exist; if it is not in the library it does not exist. Yet in most lesson videos the tab is right there in the picture and the sound — nobody takes it out.",
+  "counter": "Copyright is the fatal line here: Ultimate Guitar survives on community uploads plus a takedown process, and a lone tool has neither. And the moment a learner hears that the auto-transcription is wrong, they never open it again.",
+  "differentiator": "Only do the one video the user already found; hand back a tab that explicitly marks the bars the machine is unsure of, so a friend who plays can fix twelve of them in five minutes instead of transcribing from zero. Never host audio. Cold start (Chinese): 「求谱」 comments under B站 guitar covers; (English): the 'anyone have a tab for this' posts in r/guitarlessons.",
+  "consumer_angle": "Someone learning a specific song alone; the deliverable is a tab they can play from tonight.",
+  "edge": "It takes the lesson video the learner already found and hands back the tab for it. The source is a video someone made for free; the missing artefact is the paper.",
+  "why_use": "For the songs a beginner actually wants, a YouTube lesson usually exists and a written tab usually does not — so they end up pausing and rewinding a video for an hour instead of reading two pages."
 }

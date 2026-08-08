@@ -41,7 +41,13 @@
       "counter": "这是一个免费小工具，而这个品类三十年来是免费赢：Windows 自带便笺，没有人为一张便利贴付过钱。issue 区的诉求也是没有边界的打磨（分屏摆放、右键菜单、胶囊行为），小工具就是这样悄悄长成大软件、却始终没长成生意。",
       "differentiator": "不卖那张纸，卖纸后来去哪了。桌面便签三十年没做过的一件事是「记得」——三个月前写在一块你已经不用的显示器上的那张，就这么没了。同样安静的纸，加上「这台机器上我写过的所有东西，能搜，永不上传」。冷启动第一步：中文＝小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区；英文＝r/Windows 与 r/productivity 里求「不要账号的便签」的帖子。",
       "workload": "2w",
-      "consumer_angle": "用的人是那种把便利贴粘在显示器边框上的 Windows 用户。他拿到的就是同一张便利贴，只不过在屏幕上——安静、一直在、不用注册、不同步、没有连续打卡、什么都不催他。它 issue 区里提需求的是双屏办公的普通人（想把便签拖到另一块屏上），不是开发者在提 feature request。"
+      "consumer_angle": "用的人是那种把便利贴粘在显示器边框上的 Windows 用户。他拿到的就是同一张便利贴，只不过在屏幕上——安静、一直在、不用注册、不同步、没有连续打卡、什么都不催他。它 issue 区里提需求的是双屏办公的普通人（想把便签拖到另一块屏上），不是开发者在提 feature request。",
+      "voices": [
+        {
+          "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
+          "zh": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。"
+        }
+      ]
     }
   },
   "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
@@ -50,16 +56,11 @@
   "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!",
   "voices": [
     {
-      "quote": "…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…",
-      "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5060997604",
-      "src": "github",
-      "kind": "pain"
-    },
-    {
       "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
       "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5058072660",
       "src": "github",
-      "kind": "pain"
+      "kind": "pain",
+      "text": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。"
     }
   ],
   "gap": "The gap is not that only geeks can use it — the opposite. It is already simple, and its tracker is full of ordinary two-monitor users who cannot move a note to the other screen. Every mainstream note app walked the other way, into accounts, sync and workspaces, and left the desk itself empty.",
@@ -67,5 +68,6 @@
   "differentiator": "Do not sell the note; sell what happens to it afterwards. The one thing desktop stickies have never done is remember — a note you scribbled three months ago on a monitor you no longer own is simply gone. Ship the same silent paper plus 'everything I ever scribbled on this machine, searchable, never uploaded'. Cold start (Chinese): 小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区; (English): r/Windows and r/productivity threads asking for a sticky-note app with no account.",
   "workload": "2w",
   "consumer_angle": "A Windows user who keeps a paper sticky note stuck to the monitor bezel. What they get is that same note on the screen — quiet, always visible, no account, no sync, no streak, nothing that nags. The tracker's own users are ordinary two-monitor office people asking to drag a note to the other screen, not developers filing feature requests.",
-  "verdict": "build"
+  "verdict": "build",
+  "pain_verified": true
 }

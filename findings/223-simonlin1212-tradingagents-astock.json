@@ -40,7 +40,8 @@
       "gap": "中文散户内容压倒性地单向——所有内容都是买入理由。没有什么会例行地、用同等力度把反方立起来给你看。",
       "counter": "硬性完整性边界：这东西一旦被读成荐股引擎，就是在向散户卖投资建议，既受监管，也是伤到用户最快的路。框架自己的回测不构成它有效的证据。",
       "differentiator": "只交付「分歧」，永远不交付结论：两栏，最强多头理由和最强空头理由各带出处，不给分、不给信号、不给仓位。自限为「只做翻译和摆开两边，决定是你的」。冷启动：中文＝雪球讨论区与小红书「A股 复盘」标签；英文＝r/investing 的 steelman-the-bear-case 讨论串。",
-      "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。"
+      "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。",
+      "voices": []
     }
   },
   "does": "A China-market fork of the 65k-star TradingAgents framework: seven analyst agents argue bull vs bear under A-share-specific rules.",
@@ -49,14 +50,7 @@
   "hook": "The retail A-share holder who reads five contradictory takes on one stock and has no way to see the bear case laid out against the bull case.",
   "pick": true,
   "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
-  "voices": [
-    {
-      "quote": "…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。",
-      "url": "https://github.com/simonlin1212/TradingAgents-astock/issues/54#issuecomment-4614285974",
-      "src": "github",
-      "kind": "pain"
-    }
-  ],
+  "voices": [],
   "verdict": "watch",
   "workload": "2m",
   "pain_verified": false,

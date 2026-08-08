@@ -38,7 +38,15 @@
       "gap": "它击中了真痛点但解得不完美，而且恰恰断在最关键的一环：剧本 → 分镜表 → 提示词会被截断，还会「成功写入」却一条都看不到，创作者只能盯着 token 上限反复重跑。此外它实际只服务中文用户——一个英文用户连登录弹窗都过不去。",
       "counter": "这是板上最吃资本的一条：每一秒成片都在烧模型钱，而可灵 / 即梦 / 海螺 同时握着模型和分发——字节把整条流水线塞进剪映，一夜之间就能把独立开发者挤出价格。1.3 万星背后只有 9 位贡献者，bus factor 是 1。整条流水线正是标准里排除的「烧钱抢速度」赛道，对你开放的只有其中很窄、纯文本的一刀。",
       "differentiator": "别做流水线。做那个一直坏、又几乎不花钱的环节：一个绝不截断的「小说 → 分镜表」转换器（分块、可续跑、结构校验），并把每个镜头的干净提示词导出到可灵 / 即梦 / Runway——按剧本卖给那些本来就在别处为生成付费的短剧工作室。",
-      "consumer_angle": "它本来就是创作者产品：买家是小型短剧工作室，不是开发者。"
+      "consumer_angle": "它本来就是创作者产品：买家是小型短剧工作室，不是开发者。",
+      "voices": [
+        {
+          "quote": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro",
+          "zh": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro"
+        }
+      ],
+      "edge": "它的终点是一集能播的成片，而不是一堆素材——剧本、分镜、角色、视频，在桌面上一次走完。",
+      "why_use": "写网文的人不是剪辑师。从写完一章到做出一集能看的片子，中间横着一条他们根本没办法自己走的生产线。"
     }
   },
   "hook": "中文短剧团队真的在拿它出片，然后卡在最要命的一步：分镜表生成到一半被截断、分镜图 prompt 是空的、docker 部署卡到没法用——他们已经在为生成付费，只是这一步一直不成。",
@@ -49,19 +57,8 @@
       "kind": "pain",
       "src": "GitHub issue",
       "quote": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/232"
-    },
-    {
-      "kind": "pain",
-      "src": "GitHub issue",
-      "quote": "对话框显示《分镜面板已成功写入12条数据》 但是一个都没看到。导致生成不了",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/237"
-    },
-    {
-      "kind": "pain",
-      "src": "GitHub issue",
-      "quote": "docker部署后，浏览器打开页面，非常卡",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/234"
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/232",
+      "text": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro"
     }
   ],
   "does": "An open-source desktop app that carries a novel or script all the way to an animated short drama: AI screenwriting → shot list and storyboard → character and image generation → video assembly, driven by your own model keys. Cross-platform, light deploy, 13k stars in weeks.",
@@ -73,5 +70,7 @@
   "workload": "2w",
   "verdict": "build",
   "family": "short-drama",
-  "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app"
+  "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app",
+  "edge": "It ends at a finished animated episode, not at a pile of assets — script, storyboard, characters and video in one pass on the desktop.",
+  "why_use": "The people writing web novels are not video editors. Between a finished chapter and a watchable episode sits a production pipeline they have no way to run."
 }

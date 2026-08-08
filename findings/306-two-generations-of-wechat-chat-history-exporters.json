@@ -26,49 +26,40 @@
       "quote": "xdm，来份源码发我邮箱行吗，有偿也行的",
       "url": "https://github.com/hicccc77/WeFlow/issues/1177",
       "user": "HYSWZW",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "xdm，来份源码发我邮箱行吗，有偿也行的"
     },
     {
       "kind": "pain",
       "quote": "我的聊天记录不是我自己的",
       "url": "https://github.com/hicccc77/WeFlow/issues/1179",
       "user": "nyyjshcz",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "我的聊天记录不是我自己的"
     },
     {
       "kind": "pain",
       "quote": "我的隐私不是我的",
       "url": "https://github.com/hicccc77/WeFlow/issues/1181",
       "user": "pang222033",
-      "src": "github-issue"
-    },
-    {
-      "kind": "pain",
-      "quote": "6.1.0版本的exe怎么expire了。希望大佬速速更新。",
-      "url": "https://github.com/hicccc77/WeFlow/issues/1187",
-      "user": "LJljh241119",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "我的隐私不是我的"
     },
     {
       "kind": "pain",
       "quote": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录",
       "src": "xiaohongshu",
       "note": "《45w人看过的聊天记录图册教程》3,692 赞 / 3,013 收藏 / 94 评论 — 一份手工把聊天截图排进 InDesign 的教程，45 万人看过",
-      "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
-    },
-    {
-      "kind": "pain",
-      "quote": "宝你这个就是满版没拉到出血线，背景大小要跟纸页外面那个红色的框框一样大，而且图片都没嵌入还是链接你快改一下",
-      "src": "xiaohongshu",
-      "note": "同帖评论区：普通人（多为送礼的年轻女性）正在被要求掌握 InDesign 出血线与图片嵌入等印前概念，只为把自己的聊天记录做成一本书",
-      "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
+      "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8",
+      "text": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录"
     },
     {
       "kind": "pain",
       "quote": "Printed my family's group chat so I can pass it down as an heirloom.",
       "src": "xiaohongshu-repost",
       "note": "英文侧独立需求：一位美国用户把家庭群聊印成传家宝，转到小红书 855 赞 / 83 收藏，评论来自美国与英国（\"Brilliant idea!\"、\"the company who had to print that book... had a great time.\"）",
-      "url": "https://www.xiaohongshu.com/explore/6a6075b3000000000f00a066"
+      "url": "https://www.xiaohongshu.com/explore/6a6075b3000000000f00a066",
+      "text": "Printed my family's group chat so I can pass it down as an heirloom."
     }
   ],
   "i18n": {
@@ -83,7 +74,30 @@
       "value": "一次性买断的桌面应用，纪念册打印作为增值——买家和已经花钱找店家数字化家庭影像的是同一批人。",
       "risk": "解密随客户端版本失效，且虽然是用户自己的数据，仍处在平台条款的灰色地带；产品必须严格本地、只处理本人数据、不留云端副本。",
       "hook": "把整段人生放在微信里的人：十年家庭群、爸妈的语音——而且已经因为换过一次手机丢掉过一部分。",
-      "consumer_angle": "用的人是一个成年子女，自己的笔记本里躺着十年的家庭群聊和父母的语音条，全是加密的。他拿到的是：把其中一段对话印成一本可以放在书架上的册子，以及可以对着这段对话问一句「妈那年到底是哪天住的院」——而且全过程一个字节都不出这台电脑。导出只是管道，那本册子才是产品。"
+      "consumer_angle": "用的人是一个成年子女，自己的笔记本里躺着十年的家庭群聊和父母的语音条，全是加密的。他拿到的是：把其中一段对话印成一本可以放在书架上的册子，以及可以对着这段对话问一句「妈那年到底是哪天住的院」——而且全过程一个字节都不出这台电脑。导出只是管道，那本册子才是产品。",
+      "voices": [
+        {
+          "quote": "xdm，来份源码发我邮箱行吗，有偿也行的",
+          "zh": "xdm，来份源码发我邮箱行吗，有偿也行的"
+        },
+        {
+          "quote": "我的聊天记录不是我自己的",
+          "zh": "我的聊天记录不是我自己的"
+        },
+        {
+          "quote": "我的隐私不是我的",
+          "zh": "我的隐私不是我的"
+        },
+        {
+          "quote": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录",
+          "zh": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录"
+        },
+        {
+          "quote": "Printed my family's group chat so I can pass it down as an heirloom.",
+          "zh": "我把家里的群聊印出来了，好当传家的东西留给下一代。"
+        }
+      ],
+      "edge": "导出这一步过去是个能耗掉半天的脆弱仪式，现在一条命令走完，而且结束时语料已经接进一个你可以直接对话的东西里。"
     }
   },
   "id": "306-two-generations-of-wechat-chat-history-exporters",

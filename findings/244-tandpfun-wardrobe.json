@@ -35,7 +35,21 @@
       "differentiator": "跳过衣橱管理的红海，只卖那一个魔法时刻——传 20 张衣服照片，得到一本自己试穿的穿搭册——做成付费移动端流程。",
       "consumer_angle": "纯消费产品：一个在购买或打包前就能看到衣服穿在自己身上的衣橱。",
       "why_use": "衣服多到早上七点想不起来自己有什么的人。她拿到的是一本自己穿着现有衣服的搭配册——不用买，也不用拍。",
-      "edge": "「穿在我身上看看」过去需要体型建模和一整条试衣流水线。单张参考照生成今年把它变成了一次 prompt，而这恰恰是现有衣橱应用（Whering、Acloset、Indyx）至今没有的那一件。"
+      "edge": "「穿在我身上看看」过去需要体型建模和一整条试衣流水线。单张参考照生成今年把它变成了一次 prompt，而这恰恰是现有衣橱应用（Whering、Acloset、Indyx）至今没有的那一件。",
+      "voices": [
+        {
+          "quote": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing.",
+          "zh": "很多同类 App 都有「推荐搭配」的功能……要是还能把这套搭配生成穿在模特身上的图，那就太棒了。"
+        },
+        {
+          "quote": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP",
+          "zh": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP"
+        },
+        {
+          "quote": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐",
+          "zh": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐"
+        }
+      ]
     }
   },
   "pick": true,
@@ -46,24 +60,27 @@
       "quote": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing.",
       "url": "https://github.com/tandpfun/wardrobe/issues/9",
       "src": "github",
-      "kind": "pain"
+      "kind": "pain",
+      "text": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing."
     },
     {
       "kind": "demand",
       "quote": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP",
       "user": "苹果味的风",
       "src": "xiaohongshu comment, 67 likes / 18 replies (山东) — 「大家觉得市面上还缺哪种APP？」1.7万赞/6097评论",
-      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
+      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
+      "text": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP"
     },
     {
       "kind": "demand",
       "quote": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐",
       "user": "(xiaohongshu, 北京)",
       "src": "xiaohongshu comment, 20 likes — same note; a reply under it reads 「哈哈哈哈哈哈哈 我需要」",
-      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
+      "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
+      "text": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐"
     }
   ],
-  "pain_verified": false,
+  "pain_verified": true,
   "gap": "Only geeks can use it — npm, .env, API key, reference photo — while the 'see it on me' generation feature is exactly what existing closet apps (Whering, Acloset, Indyx) don't do well yet.",
   "counter": "Closet apps are a graveyard of low-retention consumer products, incumbents already own the non-technical audience, and per-image generation costs eat thin subscription margins; 1 contributor, no commits since launch day.",
   "differentiator": "Skip the closet-manager race; sell the one magic moment — upload 20 photos of your clothes, get a modeled lookbook of yourself — as a paid mobile flow.",

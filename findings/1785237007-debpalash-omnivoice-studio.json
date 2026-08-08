@@ -40,27 +40,15 @@
       "gap": "所有商业对手都是要你把自己的声音传上去的云订阅，而声音恰恰是人们最不愿意交出去的那件东西——这也是大量潜在用户从来没开始过的原因。",
       "counter": "声音克隆是这个目录里最容易被滥用的一项能力；如果不对参考音源做硬性授权门槛，最积极的早期用户会是错的那批人。",
       "differentiator": "只挑那个既明确是成品、又明确属于用户自己的输出：我自己的书，用我自己的声音读出来，存成我自己的文件。直接拒绝第三方参考音。冷启动：中文＝豆瓣/小红书「有声书 自制」与独立作者群；英文＝r/selfpublish 里长年不断的有声书成本吐槽（ACX 报价）。",
-      "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。"
+      "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。",
+      "voices": []
     }
   },
   "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
   "does": "Local voice cloning, video dubbing, dictation and audiobook production in one open-source desktop app — the whole chain runs on your own machine.",
   "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
   "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
-  "voices": [
-    {
-      "quote": "…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…",
-      "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1306#issuecomment-5124023003",
-      "src": "github",
-      "kind": "pain"
-    },
-    {
-      "quote": "Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…",
-      "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1274#issuecomment-5124008189",
-      "src": "github",
-      "kind": "pain"
-    }
-  ],
+  "voices": [],
   "verdict": "build",
   "workload": "2m",
   "pain_verified": false,

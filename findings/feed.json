@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T09:40:53Z",
+  "generated_at": "2026-08-08T17:05:17Z",
   "findings": [
     {
       "claim": "Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese owners do it too, with a photo. Human lab-report readers are crowded; the pet side has never been built.",
@@ -27,27 +27,32 @@
         {
           "text": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine.",
           "source": "r/AskVet — 'Normal vet said we likely need to put our cat down, ICU vet said he's probably fine. What is actually going on?' (98 points, 29 comments)",
-          "url": "https://old.reddit.com/r/AskVet/"
+          "url": "https://old.reddit.com/r/AskVet/",
+          "quote": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine."
         },
         {
           "text": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you.",
           "source": "r/AskVet — 'Help with interpreting feline bloodwork', posted with a dozen values typed out by hand",
-          "url": "https://old.reddit.com/r/AskVet/"
+          "url": "https://old.reddit.com/r/AskVet/",
+          "quote": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you."
         },
         {
           "text": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?",
           "source": "r/AskVet — 'Help me interpret please'",
-          "url": "https://old.reddit.com/r/AskVet/"
+          "url": "https://old.reddit.com/r/AskVet/",
+          "quote": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?"
         },
         {
           "text": "后面的复检，现在还在有点尿血，不怎么吃喝",
           "source": "小红书《有没有看得懂猫咪检验报告的？》26赞/54评论 — 发帖人本人在评论区补的一句",
-          "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB"
+          "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB",
+          "quote": "后面的复检，现在还在有点尿血，不怎么吃喝"
         },
         {
           "text": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。",
           "source": "小红书《有没有看得懂猫咪检验报告的？》评论区 — 另一位主人复述自己那次",
-          "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB"
+          "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB",
+          "quote": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。"
         }
       ],
       "i18n": {
@@ -61,7 +66,29 @@
           "differentiator": "坚决不诊断。把别人没有的「认机器、按机器参考区间读」这一层做出来，让输出变成主人能拿去跟自己兽医对话的东西。英文冷启动＝去 r/AskVet 每天都有的「help me interpret」帖下面，免费回一份解读加三个问题；中文冷启动＝小红书那几条几百赞「一分钟教你看懂宠物血常规」教程的评论区，那里全是贴自己报告照片的人。",
           "value": "养猫养狗的人按份付费，一份的价格是一杯咖啡，而对面那次门诊是它的上百倍。报告会攒成这只动物的一份小病历，那才是他下次还回来的原因。",
           "risk": "把危急值读错。「只翻译、只列该问什么、只说什么情况立刻回医院，绝不诊断绝不给剂量」这条自限不是法律遮羞布，它就是这个产品的形状。",
-          "consumer_angle": "晚上十一点站在厨房里的一个猫主人，手里是诊所打的一张单子，到早上之前找不到任何一个兽医。她拿到的是：每一个飘红的数字都被讲成人话，外加明天要问医生的三个问题——不是诊断，也不是一张账单。"
+          "consumer_angle": "晚上十一点站在厨房里的一个猫主人，手里是诊所打的一张单子，到早上之前找不到任何一个兽医。她拿到的是：每一个飘红的数字都被讲成人话，外加明天要问医生的三个问题——不是诊断，也不是一张账单。",
+          "voices": [
+            {
+              "quote": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine.",
+              "zh": "我们只是完全懵了。平时那家医院已经在给我们做安乐死的心理准备，说是随时可能不行；而大城市那家 ICU（我以为医生水平更高）却乐观得多，一副它没什么事的样子。"
+            },
+            {
+              "quote": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you.",
+              "zh": "求各位帮我解读一下这些结果，给个可能的诊断。我会永远感激你们。"
+            },
+            {
+              "quote": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?",
+              "zh": "有没有人能帮我判断一下，按下面这份放射科意见，现在这个方案是对的吗？还是我该去看第二个医生？"
+            },
+            {
+              "quote": "后面的复检，现在还在有点尿血，不怎么吃喝",
+              "zh": "后面的复检，现在还在有点尿血，不怎么吃喝"
+            },
+            {
+              "quote": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。",
+              "zh": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。"
+            }
+          ]
         }
       },
       "id": "329-five-unrelated-r-askvet-threads-in-twelve-months",
@@ -71,7 +98,9 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "claim": "On Xiaohongshu, slowed-down dance tutorials are a whole content category — 6,909 likes, 4,667, 2,979, 2,727 — and every single one exists only because a teacher was willing to re-dance that song by hand. The commenters say exactly why: at that speed, they believe they can learn it. There is a Chinese word for the labour behind this (扒舞) and one of the platform's own search suggestions is 扒舞好累啊 — 'reverse-engineering choreography is exhausting'.",
@@ -99,32 +128,38 @@
         {
           "text": "这个速度 一看见就想跟着学 感觉自己一定会学会",
           "source": "小红书《和「法拉利」教授学习拉丁分解动作》评论区（2,727赞 / 4,155收藏 / 105评论）",
-          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+          "quote": "这个速度 一看见就想跟着学 感觉自己一定会学会"
         },
         {
           "text": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈",
           "source": "同上笔记评论区",
-          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+          "quote": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈"
         },
         {
           "text": "他真的试图教会你",
           "source": "同上笔记评论区，49赞",
-          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+          "quote": "他真的试图教会你"
         },
         {
           "text": "能把这舞这么慢表演出来，这真厉害",
           "source": "同上笔记评论区，92赞",
-          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+          "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+          "quote": "能把这舞这么慢表演出来，这真厉害"
         },
         {
           "text": "自己扒舞速度特别慢，怎么快速提高？",
           "source": "小红书《舞蹈干货5｜高效扒舞极致还原的10个秘诀》封面文案（454赞 / 303收藏）",
-          "url": "https://www.xiaohongshu.com/explore/68bc0b30000000001c03262e"
+          "url": "https://www.xiaohongshu.com/explore/68bc0b30000000001c03262e",
+          "quote": "自己扒舞速度特别慢，怎么快速提高？"
         },
         {
           "text": "扒舞好累啊",
           "source": "小红书搜索联想词（平台按真实搜索量生成）",
-          "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%89%92%E8%88%9E%20%E5%A4%AA%E9%9A%BE%E4%BA%86"
+          "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%89%92%E8%88%9E%20%E5%A4%AA%E9%9A%BE%E4%BA%86",
+          "quote": "扒舞好累啊"
         }
       ],
       "consumer_angle": "Someone learning a dance alone from a phone, with no teacher and no studio; the deliverable is that specific dance cut into eight-counts, slowed, and narrated one count at a time.",
@@ -138,7 +173,34 @@
           "counter": "抖音和快手同时握着视频和姿态模型，把变速＋分段做成播放器功能随时可以。真正的风险在口令：说反一次左右就比不给还糟，因为这批人靠肌肉记忆，错动作练进去要花更久改回来。而单目视频合成背面视角仍属研究阶段，所以第一版绝不能承诺它。",
           "differentiator": "别再做播放器，做老师手工在做的那件事：切到八拍、放慢、把每一拍身体在干什么说出来；每条口令都能点回它自己那一帧，机器不确定就留空而不是硬猜。只在本机处理用户自己找到的视频，永不托管、永不再分发。冷启动（中文）：那几条慢速教程本身的评论区（6909／4667／2979／2727赞）挤满了在求某一支歌慢速版的人，再加「扒舞好累啊」「什么app比较适合扒舞」两个搜索词落地的笔记；冷启动（英文）：YouTube dance tutorial 底下常年的 mirrored version please，以及 r/kpophelp。",
           "value": "对着手机一个人学舞的人——从女团翻跳到婚礼舞到广场舞。按「拆解一支舞」付费，一个月学一支之后转小额订阅。现在手工做慢速版的老师是第二个市场：把一天的活压成几分钟。",
-          "risk": "口令的准确度。说反一次左右，比什么都不说更糟。"
+          "risk": "口令的准确度。说反一次左右，比什么都不说更糟。",
+          "voices": [
+            {
+              "quote": "这个速度 一看见就想跟着学 感觉自己一定会学会",
+              "zh": "这个速度 一看见就想跟着学 感觉自己一定会学会"
+            },
+            {
+              "quote": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈",
+              "zh": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈"
+            },
+            {
+              "quote": "他真的试图教会你",
+              "zh": "他真的试图教会你"
+            },
+            {
+              "quote": "能把这舞这么慢表演出来，这真厉害",
+              "zh": "能把这舞这么慢表演出来，这真厉害"
+            },
+            {
+              "quote": "自己扒舞速度特别慢，怎么快速提高？",
+              "zh": "自己扒舞速度特别慢，怎么快速提高？"
+            },
+            {
+              "quote": "扒舞好累啊",
+              "zh": "扒舞好累啊"
+            }
+          ],
+          "consumer_angle": "用的人是刷到一支舞、想学但跟不上的人。他拿到的是同一支舞按八拍切好、放慢、每一拍一句人话口令的版本。"
         }
       },
       "id": "328-on-xiaohongshu-slowed-down-dance-tutorials-are-a",
@@ -148,7 +210,9 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "claim": "In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph. Pattern shops sell patterns that already exist; drafting software assumes you can already draft. Nothing turns a garment in a picture into paper you can print and cut.",
@@ -174,17 +238,20 @@
         {
           "text": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!",
           "source": "r/sewing — 'Trying to replicate this dress of my grandmother's from the 1950s', Pattern Search",
-          "url": "https://old.reddit.com/r/sewing/"
+          "url": "https://old.reddit.com/r/sewing/",
+          "quote": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!"
         },
         {
           "text": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me",
           "source": "r/sewing — 'Advice appreciated', Pattern Search",
-          "url": "https://old.reddit.com/r/sewing/"
+          "url": "https://old.reddit.com/r/sewing/",
+          "quote": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me"
         },
         {
           "text": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows.",
           "source": "r/sewing — 'Saw a cute dress on pinterest, so I made it', 1,498 points / 24 comments",
-          "url": "https://old.reddit.com/r/sewing/"
+          "url": "https://old.reddit.com/r/sewing/",
+          "quote": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows."
         }
       ],
       "consumer_angle": "A home sewist holding one photograph of a garment nobody sells a pattern for; the deliverable is printable paper they cut fabric with.",
@@ -198,7 +265,22 @@
           "counter": "展平误差直接变成穿不上身，而这批人只原谅一次。垂坠款根本没有诚实的平面解。加上那个免费替代路径——买一份几十块的基础版型自己改——对很多款式其实够用，这直接压住了定价。",
           "differentiator": "窄到能做对为止：只做一个廓形（直筒/A 字连衣裙）、只给一句诚实的判断、并把便宜布试样做成强制步骤而不是可选项。机器猜的地方要标出来而不是藏起来。只做用户自己拥有或自己拍到的衣服，绝不批量复刻当季成衣。冷启动（中文）：小红书与B站「自制衣服」「无版型 裁剪」标签，以及「求同款版型」评论区；冷启动（英文）：r/sewing 的 Pattern Search 分区——那本身就是一条每天有人贴照片求版型的常驻队列。",
           "value": "本来就在买版型和布料的家庭缝纫者。按救回一件付费；带感情的那些（外婆的裙子、伴侣的夹克）付费意愿远高于爱好平均线。",
-          "risk": "合身。一份穿不上的纸样比没有纸样更糟，一次失败就结束关系。"
+          "risk": "合身。一份穿不上的纸样比没有纸样更糟，一次失败就结束关系。",
+          "voices": [
+            {
+              "quote": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!",
+              "zh": "我特别想复刻我奶奶穿过的这条黑白裙子……可惜我完全不知道是什么料子。要是有人知道这种裙型该怎么描述，也想请教一下。"
+            },
+            {
+              "quote": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me",
+              "zh": "我一直想复刻一件夹克，来纪念我已故的妻子 Clare……我手上只有这一张照片。有谁能给我一两个方向，告诉我怎么从照片上打出纸样？"
+            },
+            {
+              "quote": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows.",
+              "zh": "第一张是我做完的裙子，第二张是我的参考图。不是完全复刻，但我太满意了……我用了一个基础包身裙纸样，改了领口，加了开叉、蕾丝和蝴蝶结。"
+            }
+          ],
+          "consumer_angle": "用的人是手里只有一张照片、想复刻那件衣服的人。他拿到的是一张能打印铺开来裁的纸样，按自己的尺寸。"
         }
       },
       "id": "327-in-r-sewing-the-same-request-arrives-every-day-f",
@@ -208,7 +290,9 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "claim": "A man spent six and a half months hand-reverse-engineering his grandfather's Aran jumper into a pattern he could wear, and 2,499 people upvoted it. Cross-stitch has had photo-to-chart tools for twenty years; knitting and crochet never got one, because the job there is not pixels — it is stitch structure.",
@@ -235,17 +319,20 @@
         {
           "text": "It took me 6 and a half months from start to finish, which included lots of ripping out and redoing",
           "source": "r/knitting — 'Reverse engineered my Granddads Aran jumper', 2,499 points / 47 comments",
-          "url": "https://old.reddit.com/r/knitting/"
+          "url": "https://old.reddit.com/r/knitting/",
+          "quote": "It took me 6 and a half months from start to finish, which included lots of ripping out and redoing"
         },
         {
           "text": "I took photos of the original and recreated the pattern myself... I spent a few hours seeing if I could find a name for it online but couldn't",
           "source": "r/crochet — 'I'm remaking my aunt's throw she gave my mom 30 years ago. Does anyone recognize this stitch?', 717 points / 45 comments",
-          "url": "https://old.reddit.com/r/crochet/"
+          "url": "https://old.reddit.com/r/crochet/",
+          "quote": "I took photos of the original and recreated the pattern myself... I spent a few hours seeing if I could find a name for it online but couldn't"
         },
         {
           "text": "Re-watching Basic Instinct and I love this sweater. Tried searching for it, no luck. I've had this problem in the past with other items, too.",
           "source": "r/knitting — 'I wish there was a repository for patterns from TV and movies', 76 points",
-          "url": "https://old.reddit.com/r/knitting/"
+          "url": "https://old.reddit.com/r/knitting/",
+          "quote": "Re-watching Basic Instinct and I love this sweater. Tried searching for it, no luck. I've had this problem in the past with other items, too."
         }
       ],
       "consumer_angle": "A hobby knitter or crocheter with an object they love and no instructions; the deliverable is a chart they can sit down and knit from.",
@@ -259,7 +346,22 @@
           "counter": "在真实的、穿旧的、光线又差的布上做针法识别，准确率可能根本不够，而这批人一眼就看得出图解是错的——错一次就不再回来。Ravelry 也随时能加视觉搜索，把容易的那一半盖掉。加上手工圈的付费意愿是爱好级别，撑不起一次很贵的视觉推理。",
           "differentiator": "别做「图解生成器」，做一个诚实的读取器：确定的说确定，不确定的标出来，让会织的朋友五分钟改十二格，而不是从零扒。只处理用户自己拥有或自己拍的实物，绝不再分发商业花样。冷启动（中文）：小红书「编织」「钩针」标签下的求图解／求同款教程评论区——那里排在最前面的是教程不是产品（免费英文图解+翻译教程 6985赞、百万份图解免费用 5401赞、还有人做「用deepseek实现外文编织图解自由」系列），人已经自己拿大模型在干这件事；冷启动（英文）：r/knitting 与 r/crochet 每周都会再冒一次的 does anyone recognize this stitch 帖。",
           "value": "手工编织爱好者——绝大多数不是技术人群、绝大多数是女性，本来就在为毛线和付费图解花钱。按「救回一件」付费，攒到三件之后转小额订阅。",
-          "risk": "在穿旧的、手工的、光线不均的布上的识别准确率。图解一错，这批人一行就听出来了。"
+          "risk": "在穿旧的、手工的、光线不均的布上的识别准确率。图解一错，这批人一行就听出来了。",
+          "voices": [
+            {
+              "quote": "It took me 6 and a half months from start to finish, which included lots of ripping out and redoing",
+              "zh": "从开始到完成花了我六个半月，中间还拆掉重做了很多次。"
+            },
+            {
+              "quote": "I took photos of the original and recreated the pattern myself... I spent a few hours seeing if I could find a name for it online but couldn't",
+              "zh": "我把原件拍了照，自己把图解反推了出来……我又花了好几个小时想在网上找出这个针法叫什么，没找到。"
+            },
+            {
+              "quote": "Re-watching Basic Instinct and I love this sweater. Tried searching for it, no luck. I've had this problem in the past with other items, too.",
+              "zh": "重看《本能》，太喜欢这件毛衣了。想搜同款，没找到。以前找别的东西也遇到过同样的问题。"
+            }
+          ],
+          "consumer_angle": "用的人是手里有一件旧毛衣、想再织一件的人。他拿到的是一份能照着织的图解，而不是六个半月的反复拆改。"
         }
       },
       "id": "326-a-man-spent-six-and-a-half-months-hand-reverse-e",
@@ -269,7 +371,9 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "verdict": "build"
     },
     {
       "claim": "Four r/languagelearning threads in a year ask for the same thing in different words: let me keep my own word list and generate sentences that use only words I already know. One says outright they would pay 'any price'. In the same window Rosetta Stone withdrew its lifetime licence and the top thread is someone saying they cannot afford four subscriptions.",
@@ -296,28 +400,32 @@
           "quote": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?",
           "user": "sjdehajak",
           "src": "reddit r/languagelearning (7 pts / 16 comments)",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?"
         },
         {
           "kind": "demand",
           "quote": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price.",
           "user": "ComfortablePost3664",
           "src": "reddit r/languagelearning (8 comments)",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price."
         },
         {
           "kind": "pain",
           "quote": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?",
           "user": "AffectionateTeam8043",
           "src": "reddit r/languagelearning (16 pts / 35 comments, 2 days old)",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?"
         },
         {
           "kind": "demand",
           "quote": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?",
           "user": "PawnshopGhost",
           "src": "reddit r/languagelearning",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?"
         }
       ],
       "i18n": {
@@ -331,7 +439,26 @@
           "differentiator": "别做一个语言学习 App。做那条「边界」：从 Anki 或一张笔记本照片导入你的词表，每天早上产出一段 150 词的短故事，里面零个越界词，外加「你最接近能读懂的下五个词」。冷启动第一步：中文＝小红书「背单词 记不住」「原版书 生词」标签与考研/雅思词汇打卡群；英文＝r/languagelearning 那几个帖子，以及 Anki 版块里以「求插件」形态出现的同一个诉求。",
           "value": "已经在付一份订阅、又不愿付四份的自学者——按一份的价格卖，解决的是阅读材料问题而不是刷题问题。",
           "risk": "极易被抄；离 Anki 的一次更新或 Duolingo 的一个功能只有一步；最强的形态可能本来就是插件，而不是生意。",
-          "workload": "2w"
+          "workload": "2w",
+          "voices": [
+            {
+              "quote": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?",
+              "zh": "有没有 App 或者网站，能把我自己的生词存成一个词库，然后用这些词造句子？"
+            },
+            {
+              "quote": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price.",
+              "zh": "我真的需要这个，我觉得只要有这样的东西，我的词汇量会立刻涨一大截。免费、便宜、多贵都行。"
+            },
+            {
+              "quote": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?",
+              "zh": "我没钱同时订好几个服务，有没有哪个 App 或网站能做到 Rosetta Stone 以前做的那件事？"
+            },
+            {
+              "quote": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?",
+              "zh": "有没有一个 App，能和 iPhone 上的 Safari 打通，或者自带浏览器，让我圈出任何一个词就直接做成一张记忆卡？"
+            }
+          ],
+          "consumer_angle": "一个手上有自己那份生词表、而任何课程都不覆盖它的学习者。他拿到的是用他这份表造出来的句子，而不是课程大纲里的句子。"
         }
       },
       "id": "325-four-r-languagelearning-threads-in-a-year-ask-fo",
@@ -341,7 +468,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "A learner with their own list of words nobody else's course covers. What they get is sentences built from that list, not from a syllabus.",
+      "verdict": "build"
     },
     {
       "claim": "A cardiac surgeon's 30-second explainer on four blood-test numbers has 16k likes, 35k saves and 194 comments on Xiaohongshu — and the comments are not thanks. They are ordinary people pasting their own values and asking a stranger to read them. Under the same query what ranks is a how-to for getting an LLM to read your report, not a product.",
@@ -369,35 +499,40 @@
           "quote": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01",
           "user": "大包子",
           "src": "xiaohongshu comment (7 days ago, 浙江)",
-          "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7"
+          "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7",
+          "text": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01"
         },
         {
           "kind": "pain",
           "quote": "请问高密度低怎么办？我0.86",
           "user": "纳澜",
           "src": "xiaohongshu comment",
-          "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7"
+          "url": "https://www.xiaohongshu.com/explore/6a685e3700000000050393a7",
+          "text": "请问高密度低怎么办？我0.86"
         },
         {
           "kind": "demand",
           "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
           "user": "唯雨",
           "src": "xiaohongshu comment, 8 likes — 「有没有哪种APP，真的很需要但没人做？」763赞/214评论",
-          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+          "text": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
         },
         {
           "kind": "demand",
           "quote": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议",
           "user": "小红薯5F34CD94",
           "src": "xiaohongshu comment (05-09 江苏), same note",
-          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+          "text": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议"
         },
         {
           "kind": "demand",
           "quote": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。",
           "user": "子茵",
           "src": "xiaohongshu comment, 32 likes — 自建失败＋愿付费，同一条笔记",
-          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66"
+          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
+          "text": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。"
         }
       ],
       "i18n": {
@@ -411,7 +546,30 @@
           "differentiator": "别做一个健康 App。从一份文件里做出一件成品：血脂四项＋空腹血糖进去，一周买菜清单和「每天只换一样」的替换表出来，末尾固定写着「这不是诊断，异常值请找医生」。不接可穿戴、不做长期追踪、不碰用药。冷启动第一步：中文＝那条笔记下的 194 条评论本身就是一份已经举手的名单，再加「体检报告 看不懂」「怎么让AI解读体检报告」两个词；英文＝r/Biohackers 与 r/nutrition 里贴 bloodwork 问「那我该改吃什么」的帖子。",
           "value": "刚做完公司年度体检、单子上有三处飘红的成年人——一份报告付一次费，价格对标一顿外卖，卖的是他一年里唯一在意这件事的那一刻。",
           "risk": "医疗边界的蔓延是主要失败模式；体检机构先拿到报告；饮食记录有一个至今没被 AI 抬起来的留存地板。",
-          "workload": "2w"
+          "workload": "2w",
+          "voices": [
+            {
+              "quote": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01",
+              "zh": "请教，为什么总胆固醇和低密度不用看？我分别是5.91和3.21，甘油三酯0.74，高密度2.01"
+            },
+            {
+              "quote": "请问高密度低怎么办？我0.86",
+              "zh": "请问高密度低怎么办？我0.86"
+            },
+            {
+              "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
+              "zh": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
+            },
+            {
+              "quote": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议",
+              "zh": "我想要一个软件，叫健康助手，可以自动同步智能手环数据（比如心跳，运动睡眠）并且输入 DeepSeek 分析，还可以结合用户上传的饮食给出建议"
+            },
+            {
+              "quote": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。",
+              "zh": "我就非常想要那种养生的app…我用灵光搓了一个害怕系统不稳定，还是觉得有人做就最好了。"
+            }
+          ],
+          "consumer_angle": "一个手里拿着体检报告、上面三个数字飘红的人。他拿到的是这周的一张买菜清单，和每天替掉的那一样东西。"
         }
       },
       "id": "324-a-cardiac-surgeon-s-30-second-explainer-on-four-",
@@ -421,7 +579,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone holding a check-up report with three numbers in red. What they get is this week's shopping list and the one thing to swap out each day.",
+      "verdict": "build"
     },
     {
       "claim": "Five separate r/singing threads in a year ask for the same missing tool — show me in real time how far off the note I am, against the actual song — and two of the askers are parents of ten-year-olds. One states the puzzle outright: it looks like there should be dozens of these, and they cannot find one good one.",
@@ -449,35 +610,40 @@
           "quote": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note",
           "user": "Klutzy-Peach5949",
           "src": "reddit r/singing (7 pts / 21 comments, 16 days old)",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note"
         },
         {
           "kind": "pain",
           "quote": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one",
           "user": "Thinkofacard",
           "src": "reddit r/singing — parent of a 10-year-old",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one"
         },
         {
           "kind": "pain",
           "quote": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end",
           "user": "FoxyStand",
           "src": "reddit r/singing — parent, musical-theatre troupe",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end"
         },
         {
           "kind": "demand",
           "quote": "Is there some type of app or other platform that can check how on pitch you are against a backing track?",
           "user": "music_in_my_soul265",
           "src": "reddit r/singing (18 comments)",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "Is there some type of app or other platform that can check how on pitch you are against a backing track?"
         },
         {
           "kind": "pain",
           "quote": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune.",
           "user": "onesoldierone",
           "src": "reddit r/singing — 59-year-old drummer",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune."
         }
       ],
       "i18n": {
@@ -491,7 +657,30 @@
           "differentiator": "别再做一个调音器。做那个「比对」：一首歌、两条音高线、一条时间轴，外加一张「你每一遍都唱错的那三小节」清单。冷启动第一步：中文＝小红书「唱歌 跑调 怎么练」「音准 练习」标签与琴行、声乐老师的学员群；英文＝r/singing 上反复出现的音准帖，尤其是家长发的那几个——音乐剧团和学校合唱团里坐着愿意付钱的成年人。",
           "value": "原本每周付私教课、后来停掉的家长；定价远低于一节课，卖的是两节课之间的那一周练习。",
           "risk": "货架上已经堆满免费调音 App；更实在的风险是把歌手优化到那个好测量的指标上，而不是真正要紧的那件事。",
-          "workload": "2w"
+          "workload": "2w",
+          "voices": [
+            {
+              "quote": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note",
+              "zh": "我有 Melodyne，但我想实时看到自己的声音，不用先导出——不知怎么回事，我完全听不出自己离那个音差多少。"
+            },
+            {
+              "quote": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one",
+              "zh": "这看着就是那种应该满地都是的工具，可我一个好用的都找不到。"
+            },
+            {
+              "quote": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end",
+              "zh": "我下了几个来试，但试用期结束后我实在判断不出哪个值得付钱。"
+            },
+            {
+              "quote": "Is there some type of app or other platform that can check how on pitch you are against a backing track?",
+              "zh": "有没有什么 App 或者平台，能对着伴奏检查我唱得准不准？"
+            },
+            {
+              "quote": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune.",
+              "zh": "我唱不准，也唱不出旋律里正确的音程。但别人唱跑了我听得出来。"
+            }
+          ],
+          "consumer_angle": "一个听不出自己离那个音差多少的人。他拿到的是这个距离，在他还在唱的时候就显示在屏幕上。"
         }
       },
       "id": "323-five-separate-r-singing-threads-in-a-year-ask-fo",
@@ -501,7 +690,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone who cannot hear how far off the note they are. What they get is that distance, on screen, while they are still singing.",
+      "verdict": "build"
     },
     {
       "claim": "Seven unrelated r/singing threads in twelve months ask the same question — how do you learn a harmony line when there is no teacher — and every answer is 'practise more'. The askers are a mother of four, a community-theatre director and a band's backing singer, and they describe the identical failure in the same words: they drift back onto the melody.",
@@ -529,42 +721,48 @@
           "quote": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP).",
           "user": "Only_Cover6761",
           "src": "reddit r/singing (18 pts / 23 comments)",
-          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+          "text": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP)."
         },
         {
           "kind": "pain",
           "quote": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it",
           "user": "wh1msy-pr1nc3ss",
           "src": "reddit r/singing (23 comments)",
-          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+          "text": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it"
         },
         {
           "kind": "demand",
           "quote": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?",
           "user": "Entire_Spite6208",
           "src": "reddit r/singing — mother of four",
-          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+          "text": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?"
         },
         {
           "kind": "pain",
           "quote": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!",
           "user": "SweetGuava81",
           "src": "reddit r/singing — theatre director (13 pts / 15 comments)",
-          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+          "text": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!"
         },
         {
           "kind": "pain",
           "quote": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?",
           "user": "Ok-Cryptographer9963",
           "src": "reddit r/singing",
-          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+          "text": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?"
         },
         {
           "kind": "pain",
           "quote": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious.",
           "user": "OkCardiologist740",
           "src": "reddit r/singing (8 pts / 9 comments)",
-          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+          "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+          "text": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious."
         }
       ],
       "i18n": {
@@ -578,7 +776,34 @@
           "differentiator": "别做一个唱歌 App。做一首歌的一条线：20 首公版与常见合唱曲、只做三度上方、一条单独的引导音轨、外加你跑掉那几秒上的一道红线。冷启动第一步：中文＝小红书/B站「和声怎么唱」「合唱 声部 跑调」标签下的评论区与合唱团家长群；英文＝r/singing 那七个求助帖本身就是一份已经举了手的名单，再加社区音乐剧团与教会诗班。",
           "value": "已经在为孩子的合唱团付钱的家长，或者已经在按月上声乐课的成年业余爱好者——定价对标一节课。",
           "risk": "生成声部的音乐质量就是产品本身，错的一条比没有更糟；商用录音的权利会把真正好用的那版推到用户自己的设备上。",
-          "workload": "2m"
+          "workload": "2m",
+          "voices": [
+            {
+              "quote": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP).",
+              "zh": "大多数时候前两三个音还行，然后我就滑回主旋律去了，或者卡在中间某个地方——听起来和唱起来都很难受。"
+            },
+            {
+              "quote": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it",
+              "zh": "感觉不管怎么试都学不会，看过的教程一个都没帮上，我跟着歌找和声找了差不多一年，还是找不到。"
+            },
+            {
+              "quote": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?",
+              "zh": "没有人指导的话，学一首新歌的和声根本没有简单办法。没有老师的时候你们都是怎么学和声的？有没有这样的 App？"
+            },
+            {
+              "quote": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!",
+              "zh": "我们剧组有个演员（一位很好的女中音），和别人一起唱时稳不住和声，跑来问我要点资料或方法。问题是，我也不知道答案。"
+            },
+            {
+              "quote": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?",
+              "zh": "我们乐队非常需要我能唱和声，可我就是唱不了。我到底该怎么办？"
+            },
+            {
+              "quote": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious.",
+              "zh": "听到一段旋律时我能在上面唱出和声。但同一首歌里已经有主唱的声音时，我常常就唱跑了。"
+            }
+          ],
+          "consumer_angle": "一个已经用耳朵找了一年和声的人。他拿到的是那条声部单独唱给他听，以及在他滑回主旋律的那一秒被拦一下。"
         }
       },
       "id": "322-seven-unrelated-r-singing-threads-in-twelve-mont",
@@ -588,7 +813,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone who has been trying to find the harmony line by ear for a year. What they get is that line, sung alone, and a nudge the moment they slide back onto the melody.",
+      "verdict": "build"
     },
     {
       "claim": "Guitar and ukulele players have had free, community-made tabs for two decades. Singers — the largest group of amateur musicians there is — still hit a paywall at roughly five dollars a song, and two separate r/singing posts ask why with no answer.",
@@ -616,14 +844,16 @@
           "quote": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals).",
           "url": "https://old.reddit.com/r/singing/",
           "user": "cesar_fernandes, r/singing (0 pts / 3 comments)",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals)."
         },
         {
           "kind": "pain",
           "quote": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?",
           "url": "https://old.reddit.com/r/singing/",
           "user": "SakuOtaku, r/singing (3 pts / 13 comments) — independent second post",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?"
         }
       ],
       "i18n": {
@@ -637,7 +867,18 @@
           "differentiator": "照抄吉他谱站做对的那几件事：用户可纠错、粗糙、一眼能读、免费。中文侧这个缝更宽而且记谱更友好——人声用**简谱**，恰恰是业余歌者本来就在读的格式，而现有曲谱站要么收费要么错。冷启动：中文＝小红书/B站「简谱 求」「翻唱 找谱」的评论区，以及合唱团、教会诗班群；英文＝r/singing 与 r/karaoke，这个请求在那里低声反复出现。",
           "value": "先免费、轻广告把语料攒起来，走吉他谱站走过的路；后面在练习功能上变现，而不是在「看到音符」上收钱。",
           "risk": "受版权保护歌曲的旋律线是有争议的地带——要预先设计好吉他谱站赖以生存的那套下架应对，并且永远不托管录音本身。",
-          "workload": "2m"
+          "workload": "2m",
+          "voices": [
+            {
+              "quote": "I wish there was an app or some sort of resource/website I could select a song and it would give me the notes/octaves being sang, along with the lyrics. Like a simplified music sheet, like guitar tabs (but for vocals).",
+              "zh": "真希望有个 App 或者网站，我选一首歌，它就把要唱的音和音高连着歌词给我——像一份简化的乐谱，就像吉他谱那样。"
+            },
+            {
+              "quote": "Why is there no collection of vocalist sheet music like there is for guitar tabs or ukulele chords?",
+              "zh": "为什么唱歌的人没有一个像吉他谱、尤克里里和弦那样的谱库？"
+            }
+          ],
+          "consumer_angle": "一个会唱歌但不识谱的人，看着同一首歌吉他手能免费拿到谱。他拿到的是自己那条人声旋律，写下来的。"
         }
       },
       "id": "321-guitar-and-ukulele-players-have-had-free-communi",
@@ -647,7 +888,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone who sings and cannot read music, looking at the same song a guitarist can get for free. What they get is the vocal line, written down.",
+      "verdict": "build"
     },
     {
       "claim": "About 80% of women pianists have hands smaller than the keyboard was designed for. The subreddit's answer, at 502 points, is a campaign to get Yamaha to build narrower pianos. Nobody has pointed out that the score is the cheap thing to change, not the instrument.",
@@ -675,21 +919,24 @@
           "quote": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury.",
           "url": "https://old.reddit.com/r/piano/",
           "user": "Yogrimbo, r/piano (502 pts / 275 comments)",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury."
         },
         {
           "kind": "pain",
           "quote": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension.",
           "url": "https://old.reddit.com/r/piano/",
           "user": "kingfishy11, r/piano (21 pts) — independent second post",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension."
         },
         {
           "kind": "pain",
           "quote": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky.",
           "url": "https://old.reddit.com/r/piano/",
           "user": "Yogrimbo, r/piano — the cost of the current workaround",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky."
         }
       ],
       "i18n": {
@@ -702,7 +949,23 @@
           "edge": "在不毁掉音乐的前提下重新排布，是在结构化记谱上做符号处理——恰好是现在的模型刚变得称职的那件事。此前这是一份逐曲手工编辑的技术活，所以没人会为业余爱好者做。",
           "value": "按曲计费或小额订阅，和这批学习者本来就在花的买谱钱并列。",
           "risk": "绝不能包装成防伤或治疗——只能说某份谱适配某个跨度，不能说它能让你不受伤；已经在痛的人应当指向老师或医生。",
-          "workload": "2m"
+          "workload": "2m",
+          "voices": [
+            {
+              "quote": "There's a lot of repertoire that, if I wanted to play them, I'd have to roll most of the chords or practice certain passages very minimally so as to avoid injury.",
+              "zh": "有很多曲子，我要是想弹，就得把大部分和弦拆成琶音，或者某些段落只能极少量地练，免得受伤。"
+            },
+            {
+              "quote": "No amount of practice can make me play octaves well enough since I physically can't play octaves over the keys without tension.",
+              "zh": "再怎么练我也弹不好八度，因为我的手在琴键上张开时必然带着紧张，这是身体条件决定的。"
+            },
+            {
+              "quote": "I played a Gershwin piece for the Trinity Grade 8 Exam and gave myself digit minim tendinopathy in my left pinky.",
+              "zh": "我在圣三一八级考试上弹了一首格什温，结果把左手小指弹成了屈指肌腱炎。"
+            }
+          ],
+          "consumer_angle": "一个手小的成年钢琴学习者，已经因为硬撑着伸手弄伤过手指。他拿到的是同一首曲子，按他自己这双手重写过的版本。",
+          "differentiator": "改谱，不是改琴。那个圈子自己给出的答案是联署请雅马哈造窄键钢琴——没有人想到要动的是那张纸。"
         }
       },
       "id": "320-about-80-of-women-pianists-have-hands-smaller-th",
@@ -712,7 +975,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "An adult piano learner with small hands who has already hurt a finger reaching. What they get is that same piece, rewritten for the hand they have.",
+      "verdict": "build"
     },
     {
       "claim": "A woman with dementia might still recognise the tune her father wrote. Her great-grandchild has photos of the handwritten score, cannot read music, and reports the scanning apps simply fail on it — 936 points and 108 comments later, the thing that worked was a stranger spending two hours by hand.",
@@ -739,28 +1005,32 @@
           "quote": "I have pictures of the music but the scan apps just don't work.",
           "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
           "user": "Excellent_Finding830, r/piano (936 pts / 108 comments)",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "I have pictures of the music but the scan apps just don't work."
         },
         {
           "kind": "pain",
           "quote": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged",
           "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
           "user": "Excellent_Finding830 (OP, naming the failure mode)",
-          "src": "reddit-comment"
+          "src": "reddit-comment",
+          "text": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged"
         },
         {
           "kind": "spec",
           "quote": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF.",
           "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
           "user": "viberat, pro/gig musician — correcting what the OP asked for",
-          "src": "reddit-comment"
+          "src": "reddit-comment",
+          "text": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF."
         },
         {
           "kind": "workaround",
           "quote": "In reality the whole thing took me a total of about 2 hours",
           "url": "https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/",
           "user": "Gwaur, the stranger who did it by hand (652 pts)",
-          "src": "reddit-comment"
+          "src": "reddit-comment",
+          "text": "In reality the whole thing took me a total of about 2 hours"
         }
       ],
       "i18n": {
@@ -773,7 +1043,27 @@
           "edge": "乐谱识别存在二十年了，在干净印刷谱上一直能用。而**发皱、有污渍、手工刻写**的那种页面——也就是从家里传下来的谱子实际长的样子——是多模态模型出现后才勉强可读的部分，发帖人撞的正是这堵墙。",
           "value": "按一叠纸一次性收费，价位对齐人们已经在付的老照片、老胶片数字化；印出来的干净谱本身是顺理成章的实体加购。",
           "risk": "已出版乐谱有版权——产品必须限定在用户自己拥有的纸和私人播放，不能变成一条白嫖现行曲谱的路。",
-          "workload": "2m"
+          "workload": "2m",
+          "voices": [
+            {
+              "quote": "I have pictures of the music but the scan apps just don't work.",
+              "zh": "那份谱子我拍了照，可扫谱 App 就是识别不了。"
+            },
+            {
+              "quote": "Yeah that's what I tried but it simply didn't work, I think it's cause the paper is so wrinkled and smudged",
+              "zh": "对，我就是这么试的，可它根本识别不出来——我猜是因为纸太皱、字迹又花了。"
+            },
+            {
+              "quote": "If you don't have someone who can play, what you actually need is someone to input it into notation software (creating an XML file) and then export it as an audio file, not a PDF.",
+              "zh": "如果你身边没有会弹的人，你真正需要的是有人把它录进制谱软件（生成一个 XML 文件），再导出成音频，而不是导出成 PDF。"
+            },
+            {
+              "quote": "In reality the whole thing took me a total of about 2 hours",
+              "zh": "实际上这件事我总共花了大约两个小时。"
+            }
+          ],
+          "consumer_angle": "一个成年子女，手里是一张皱了的手写谱的照片，全家没人弹得出来。他拿到的是这首曲子的一段录音。",
+          "differentiator": "不要追求完整制谱。只盯一件事——让这首曲子响起来——并且接受那些扫描认不出的音由人工顺一遍。"
         }
       },
       "id": "319-a-woman-with-dementia-might-still-recognise-the-",
@@ -783,7 +1073,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "An adult child holding a photo of a creased, handwritten score nobody in the family can play. What they get is an audio file of that tune.",
+      "verdict": "build"
     },
     {
       "claim": "A non-native speaker who works in English every day wrote the spec himself four years ago — 'like Grammarly but for voice' — and the category still splits into scoring apps and chat partners, with nobody occupying the sentence he actually said.",
@@ -810,14 +1103,16 @@
           "quote": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly.",
           "url": "https://old.reddit.com/r/languagelearning/",
           "user": "georgysavva, r/languagelearning",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly."
         },
         {
           "kind": "spec",
           "quote": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them.",
           "url": "https://old.reddit.com/r/languagelearning/",
           "user": "georgysavva, r/languagelearning",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them."
         }
       ],
       "i18n": {
@@ -831,7 +1126,18 @@
           "edge": "把带口音的连续语流转写到足以支撑逐句改写，是最近的事。2022 年他发帖时，转写本身就已经糊到没法在上面做纠错。",
           "value": "落在人们本来就付的语言类订阅价位带；自然的加购是那张越攒越准的个人错题卡，不是更多时长。",
           "risk": "硬性自限：只纠语法和用词，绝不评口音，绝不发能力等级。一个让人觉得自己的声音是错的工具会被卸载，也该被卸载。",
-          "workload": "2w"
+          "workload": "2w",
+          "voices": [
+            {
+              "quote": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly.",
+              "zh": "我写东西一直用 Grammarly。它不只是替我改，我还能看到自己错在哪、从修改里学到东西……但学一门语言最难的那部分，当然是说。"
+            },
+            {
+              "quote": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them.",
+              "zh": "为什么没有一个 AI 程序，听你说话、分析你的错误，然后给你一份报告，列出你最常犯的那几个错以及该怎么改？"
+            }
+          ],
+          "consumer_angle": "一个整天用英语工作、却总听见自己犯同样三个错的人。他拿到的就是这三个错，被点出名字，并附上怎么改。"
         }
       },
       "id": "318-a-non-native-speaker-who-works-in-english-every-",
@@ -841,7 +1147,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone who works in English all day and still hears themselves make the same three mistakes. What they get is those three, named, with the fix.",
+      "verdict": "build"
     },
     {
       "claim": "Both language sides asked for the same pantry app on the same day — and neither was asking for the reminder. They were refusing the data entry that comes before it.",
@@ -870,21 +1179,24 @@
           "quote": "缺一个可以记录有保质期的东西的APP，要过期了提醒我",
           "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
           "user": "小红书评论（465赞）",
-          "src": "xiaohongshu-comment"
+          "src": "xiaohongshu-comment",
+          "text": "缺一个可以记录有保质期的东西的APP，要过期了提醒我"
         },
         {
           "kind": "pain",
           "quote": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up.",
           "url": "https://old.reddit.com/r/Cooking/",
           "user": "Carrot-sprint, r/Cooking (17 pts / 67 comments)",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up."
         },
         {
           "kind": "workaround",
           "quote": "It takes a couple of hours to do",
           "url": "https://old.reddit.com/r/EatCheapAndHealthy/",
           "user": "Pixel-1606, r/EatCheapAndHealthy (890 pts)",
-          "src": "reddit-post"
+          "src": "reddit-post",
+          "text": "It takes a couple of hours to do"
         }
       ],
       "i18n": {
@@ -898,7 +1210,22 @@
           "edge": "读一整格乱七八糟的包装——斜的、反光的、被挡住一半的、每个盒子日期格式都不一样——恰恰是最近才可靠起来的那部分。手输从来不是一个待优化的交互问题，它是能力缺失。",
           "value": "一次性付费的手机应用；「药箱」这个说法本身也能当成给父母家买的礼物。",
           "risk": "只要碰到药品日期就必须严格停在誊抄层面——只转录印着的日期，绝不判断还能不能吃，并且把这句话写在产品里。",
-          "workload": "2w"
+          "workload": "2w",
+          "voices": [
+            {
+              "quote": "缺一个可以记录有保质期的东西的APP，要过期了提醒我",
+              "zh": "缺一个可以记录有保质期的东西的APP，要过期了提醒我"
+            },
+            {
+              "quote": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up.",
+              "zh": "我看到现在有一堆记库存的 App，但我真的不想坐下来把每一样小东西都登记一遍，因为我知道自己坚持不了。"
+            },
+            {
+              "quote": "It takes a couple of hours to do",
+              "zh": "光录入就得花好几个小时。"
+            }
+          ],
+          "consumer_angle": "一个每周都在扔东西、而且已经明确拒绝手动录入的人。他要做的只是拍一下货架，拿回一张「先吃哪几样」的清单——一个字都不用输。"
         }
       },
       "id": "317-both-language-sides-asked-for-the-same-pantry-ap",
@@ -908,7 +1235,10 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "pain_verified": true,
+      "consumer_angle": "Someone who throws food out every week and has already refused to type an inventory. What they get is one photo of the shelf and a list of what to eat first — no data entry.",
+      "verdict": "build"
     },
     {
       "claim": "Both language sides asked for the same missing thing this year: a recipe delivered as a hands-free, timed, step-by-step run rather than a block of text. In English a subreddit built it themselves (Parsnip, 139 points in r/cookingforbeginners) and another thread asks for recipes formatted like IKEA manuals; in Chinese the request appears under a developer's open 'you ask, I build' thread, and the developer's reply is that he has no product to point at.",
@@ -941,21 +1271,16 @@
           "quote": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。",
           "url": "https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb",
           "user": "小红书评论区",
-          "src": "xiaohongshu"
+          "src": "xiaohongshu",
+          "text": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。"
         },
         {
           "kind": "pain",
           "quote": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.",
           "url": "https://old.reddit.com/r/cookingforbeginners/",
           "user": "thinkstohimself",
-          "src": "reddit"
-        },
-        {
-          "kind": "demand",
-          "quote": "哈哈哈，很实用的功能，我研究一下",
-          "url": "https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb",
-          "user": "忆诉检APP（作者，九年工龄开发者）",
-          "src": "xiaohongshu"
+          "src": "reddit",
+          "text": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format."
         }
       ],
       "pain_verified": true,
@@ -970,7 +1295,18 @@
           "value": "正在学做饭的人，或者要给孩子做特定饮食的人——买断或小额订阅，对标「少毁一顿饭」。",
           "risk": "最需要它的人会毕业；留存就是全部生意，而这个形状目前对留存没有答案。",
           "why_use": "失败点很具体，而且在两种语言里重复出现：手是脏的、屏幕会锁、时间信息藏在句子里，于是人开始自由发挥，然后毁掉这道菜。",
-          "edge": "菜谱是按参考资料写的，却是被当作现场指令用的。没有人修过这个错配，只是加了更多图。"
+          "edge": "菜谱是按参考资料写的，却是被当作现场指令用的。没有人修过这个错配，只是加了更多图。",
+          "voices": [
+            {
+              "quote": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。",
+              "zh": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。"
+            },
+            {
+              "quote": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.",
+              "zh": "菜谱永远是密密麻麻一大段文字，我一直很吃力，一直希望有个 App 能把它变成看得见的步骤。"
+            }
+          ],
+          "consumer_angle": "用的人是站在灶前、两只手都是油的人。他拿到的是一句一句念给他听的步骤，和一个替他盯着火的计时器。"
         }
       },
       "tags": [
@@ -985,7 +1321,8 @@
       "novelty": 0.79,
       "corroborations": 0,
       "reused": 0,
-      "first": true
+      "first": true,
+      "verdict": "build"
     },
     {
       "claim": "The highest-scoring post in r/ADHD on this subject (2,411 points, 205 comments) is not asking for a better reminder app — it says every reminder app already failed for the same reason, that the push notification gets ignored, and asks for something that phones you like a personal assistant would. The Chinese side says the same thing from the other direction: a Tiimo review at 7,327 likes whose commenters point out the tool needs exactly the executive function they do not have.",
@@ -1017,21 +1354,24 @@
           "quote": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??",
           "url": "https://old.reddit.com/r/ADHD/",
           "user": "MajorDescription8675",
-          "src": "reddit"
+          "src": "reddit",
+          "text": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??"
         },
         {
           "kind": "pain",
           "quote": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天",
           "url": "https://www.xiaohongshu.com/explore/6a4cf22a000000001603e42b",
           "user": "小红书评论区",
-          "src": "xiaohongshu"
+          "src": "xiaohongshu",
+          "text": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天"
         },
         {
           "kind": "pain",
           "quote": "但是整体上对中文的支持，以及国内优化做的一般",
           "url": "https://www.xiaohongshu.com/explore/6a4cf22a000000001603e42b",
           "user": "马古",
-          "src": "xiaohongshu"
+          "src": "xiaohongshu",
+          "text": "但是整体上对中文的支持，以及国内优化做的一般"
         }
       ],
       "pain_verified": true,
@@ -1046,7 +1386,22 @@
           "value": "一个今年已经在三个日程工具上花过钱的人。月订阅，对标「少错过一次预约」。",
           "risk": "让它有意思的那一件事——它会打电话给你——同时也是第三周最可能被关掉的那一件事。",
           "why_use": "说这话的人用他自己的话讲，试过「a billion」个 App。那不是一个在找功能的人，那是一个已经为整个品类付过钱、并且被全部辜负了的人。",
-          "edge": "这个品类的每个产品都在比谁的任务录入和整理做得好。而摆在桌上的抱怨是：录入和整理不是它坏掉的地方，投递才是。"
+          "edge": "这个品类的每个产品都在比谁的任务录入和整理做得好。而摆在桌上的抱怨是：录入和整理不是它坏掉的地方，投递才是。",
+          "voices": [
+            {
+              "quote": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??",
+              "zh": "提醒和待办类 App 我试过一万个，每一条推送通知我都会直接无视。有钱人根本不用记这些事，他们身边有真人助理帮着记……什么时候才有人做这个东西？"
+            },
+            {
+              "quote": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天",
+              "zh": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天"
+            },
+            {
+              "quote": "但是整体上对中文的支持，以及国内优化做的一般",
+              "zh": "但是整体上对中文的支持，以及国内优化做的一般"
+            }
+          ],
+          "consumer_angle": "用的人是那种试过一万个待办 App、每一条推送都会无视的人。他拿到的是每天早上一通两分钟的电话，把今天真要做的三件事念给他听。"
         }
       },
       "tags": [
@@ -1062,7 +1417,8 @@
       "novelty": 0.8,
       "corroborations": 0,
       "reused": 0,
-      "first": true
+      "first": true,
+      "verdict": "build"
     },
     {
       "claim": "petdex has 3,686 stars and a live submission queue of hand-drawn sprite pets — including a steady stream of Chinese submissions and an IP-holder takedown request — but every one of those pets can only be seen inside a coding-agent terminal. The 桌宠 audience it borrows from has had nothing new since Shimeji.",
@@ -1088,15 +1444,7 @@
       "risk": "There is no verified first-hand complaint here yet, only behaviour: people submitting art. If the desktop-pet audience turns out to be nostalgic rather than paying, the whole thing is a charming zero.",
       "workload": "2w",
       "consumer_angle": "Non-developer user: a parent, or the Shimeji audience that has been on abandonware for a decade. Finished thing: their own drawing, animated, living on their desktop and exportable as stickers.",
-      "voices": [
-        {
-          "kind": "behaviour",
-          "quote": "这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集",
-          "url": "https://github.com/crafter-station/petdex/issues/651",
-          "user": "MisonL",
-          "src": "github-issue"
-        }
-      ],
+      "voices": [],
       "pain_verified": false,
       "i18n": {
         "zh": {
@@ -1109,7 +1457,9 @@
           "value": "一个家长，或者任何想让屏幕上有个伴的人——按只买断，定价像买一张画，不是订阅。",
           "risk": "这里还没有一条经过验证的一手抱怨，只有行为：人们在投稿。如果桌宠受众只是怀旧而不掏钱，整件事就是一个可爱的零。",
           "why_use": "桌面伴侣这一脉（Shimeji、桌宠）靠着一批停止维护的免费软件，养住了十年的非技术受众。没人做过一个现代的，而现在，孩子的一张画就能变成那只精灵。",
-          "edge": "「画 → 会动的伴儿」这条流水线，已经被一群陌生人免费替你验证过了——缺的只是它该住进去的那扇窗。"
+          "edge": "「画 → 会动的伴儿」这条流水线，已经被一群陌生人免费替你验证过了——缺的只是它该住进去的那扇窗。",
+          "voices": [],
+          "consumer_angle": "用的人是画了一只小怪兽的普通人。他拿到的是这只小怪兽住在自己屏幕上，而不是只能住在终端里。"
         }
       },
       "tags": [
@@ -1124,7 +1474,8 @@
       "novelty": 0.87,
       "corroborations": 0,
       "reused": 0,
-      "first": true
+      "first": true,
+      "verdict": "watch"
     },
     {
       "claim": "Under a Xiaohongshu thread asking which app nobody has built (761 likes, 1,130 saves, 214 comments), the most specific repeated request is not calorie counting — it is food logging read against your own medical check-up report, and commenters say the existing apps cover too little and nobody has the standing to build it.",
@@ -1154,21 +1505,16 @@
           "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
           "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
           "user": "小红书评论区",
-          "src": "xiaohongshu"
+          "src": "xiaohongshu",
+          "text": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
         },
         {
           "kind": "pain",
           "quote": "有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的",
           "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
           "user": "小红书评论区",
-          "src": "xiaohongshu"
-        },
-        {
-          "kind": "pain",
-          "quote": "非ai的薄荷其实大模型应该直接可以，还有一个火了的caloris",
-          "url": "https://www.xiaohongshu.com/explore/69781bb7000000000903ae66",
-          "user": "小红书评论区",
-          "src": "xiaohongshu"
+          "src": "xiaohongshu",
+          "text": "有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的"
         }
       ],
       "pain_verified": true,
@@ -1183,7 +1529,18 @@
           "value": "刚拿到飘红报告的那个人——意图最强的一刻。一次性解锁或按年，跟着年度体检走，不做饮食日记的月订阅。",
           "risk": "那条自己划下的天花板（只翻译只比对、绝不建议），同时也是它可能薄到没人愿意付钱的原因。",
           "why_use": "报告写「甘油三酯偏高」，货架写「植物油、麦芽糖浆、每100克含糖12克」。没人在这两句话之间做翻译，于是报告什么也没改变。",
-          "edge": "把一份一年领一次、领完就归档的文件，变成一周要做四十次的决定。"
+          "edge": "把一份一年领一次、领完就归档的文件，变成一周要做四十次的决定。",
+          "voices": [
+            {
+              "quote": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。",
+              "zh": "要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。"
+            },
+            {
+              "quote": "有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的",
+              "zh": "有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的"
+            }
+          ],
+          "consumer_angle": "用的人是那条 761 赞帖子底下留言的普通人。他拿到的是自己那条需求被整理成一句能判断的话：这东西到底已经有了，还是真没人做。"
         }
       },
       "tags": [
@@ -1198,7 +1555,8 @@
       "novelty": 0.86,
       "corroborations": 0,
       "reused": 0,
-      "first": true
+      "first": true,
+      "verdict": "build"
     },
     {
       "claim": "An AI receptionist that answers a solo business's phone after hours just cleared 129 upvotes on Product Hunt in English. The Chinese single-shop equivalent cannot be a translation, because the customer arrives on WeChat, not a phone line.",
@@ -1227,7 +1585,8 @@
           "quote": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了",
           "url": "https://github.com/pppscn/SmsForwarder/issues/720",
           "user": "coder-liyang",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了"
         }
       ],
       "i18n": {
@@ -1242,7 +1601,14 @@
           "value": "单店老板的月订阅，定价对标「一个月少丢一个客人」。",
           "risk": "一旦滑向自动化微信号本身，就成了寄生平台——平台会封，这里也会否。",
           "hook": "卷帘门一拉下来，今晚问价的那几个人就都跑到隔壁去了。",
-          "consumer_angle": "用的人是一个人开一家店的老板娘——理发椅、修车位、宠物美容、一张牙椅——微信是她自己回的。她拿到的不是看板，是早上三分钟能清空的一张单子：昨晚打烊后进来的咨询，按「谁最可能今天就上门」排好，每条下面已经写好一句她自己点发送就行的话。"
+          "consumer_angle": "用的人是一个人开一家店的老板娘——理发椅、修车位、宠物美容、一张牙椅——微信是她自己回的。她拿到的不是看板，是早上三分钟能清空的一张单子：昨晚打烊后进来的咨询，按「谁最可能今天就上门」排好，每条下面已经写好一句她自己点发送就行的话。",
+          "voices": [
+            {
+              "quote": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了",
+              "zh": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了"
+            }
+          ],
+          "edge": "它把一家单人小店最贵的那种失败——两只手都占着的时候电话响了——变成一个已经排好的预约，而且不用多养一个人。"
         }
       },
       "id": "312-an-ai-receptionist-that-answers-a-solo-business-",
@@ -1254,7 +1620,8 @@
       "first": false,
       "tags": [],
       "consumer_angle": "One person who owns one shop and answers her own WeChat — a hair-salon chair, a car-repair bay, a pet groomer, a single dental chair. What she gets is not a dashboard: it is a three-minute morning list of the enquiries that arrived after she pulled the shutter down, ranked by who is most likely to come in today, each with one sentence already drafted that she can send herself.",
-      "verdict": "build"
+      "verdict": "build",
+      "pain_verified": true
     },
     {
       "claim": "Microsoft shipped an experimental desktop app that watches you perform a task once on screen and reconstructs it into a reusable agent skill — 835 stars and 90 forks in four days.",
@@ -1290,7 +1657,8 @@
           "value": "就它现在这个形态不是生意；普通人版本会是一次性买断的本地桌面应用。",
           "risk": "屏幕录像是最敏感的一类采集，不做到全程本地就卖不出去。",
           "hook": "每个月都要把同一套繁琐操作点一遍的人——写不出脚本，也说不清楚到让 AI 接手。",
-          "consumer_angle": "现在还没有人——这正是本条的价值。它要服务的人，是每个月都要在电脑上做一次十分钟琐事的普通人：下载对账单、改个名、放进对应文件夹；把同一张表再填一遍；把同样三个附件归档。这些事他既写不出脚本，也说不清楚到底怎么做——但他永远能亲手做一遍。他拿到的是：下个月这件事已经做完了，而那段录屏一步也没离开过他的电脑。"
+          "consumer_angle": "现在还没有人——这正是本条的价值。它要服务的人，是每个月都要在电脑上做一次十分钟琐事的普通人：下载对账单、改个名、放进对应文件夹；把同一张表再填一遍；把同样三个附件归档。这些事他既写不出脚本，也说不清楚到底怎么做——但他永远能亲手做一遍。他拿到的是：下个月这件事已经做完了，而那段录屏一步也没离开过他的电脑。",
+          "edge": "它把「怎么教电脑做一件杂事」这件事整个反过来了：你不用描述、也不用写脚本，你当着它做一遍就行。团队还在做本机识别与遮掉录屏里的敏感内容。"
         }
       },
       "id": "310-microsoft-shipped-an-experimental-desktop-app-th",
@@ -1334,14 +1702,16 @@
           "quote": "I tried using this code to generate a table for my language (Ukrainian), but I ended up with the same English table.",
           "url": "https://github.com/danilo-znamerovszkij/draw-your-font/issues/5",
           "user": "STest6905",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "I tried using this code to generate a table for my language (Ukrainian), but I ended up with the same English table."
         },
         {
           "kind": "pain",
           "quote": "Unfortunately it doesn't seem to support cursive, which is how I and most people I know write.",
           "url": "https://news.ycombinator.com/item?id=47306655",
           "user": "Thomashuet",
-          "src": "hn-comment"
+          "src": "hn-comment",
+          "text": "Unfortunately it doesn't seem to support cursive, which is how I and most people I know write."
         }
       ],
       "i18n": {
@@ -1356,7 +1726,18 @@
           "value": "按字体收费，春联、纪念册、卡片这类印品做复购。",
           "risk": "生成汉字的质量就是产品本身；笔画一歪，情绪价值直接反转。",
           "hook": "想把还在世的长辈的笔迹印在明年春联上的人——手写几千个字，写到一半放弃了。",
-          "consumer_angle": "用的人是手里攥着一封父母或者爷爷奶奶亲笔信的普通人。他要的不是一个字体文件，是一件印出来的东西：今年的春联，或者一套贺卡、一封用那只手写出来的信。字体只是机器，他真正拿走的是纸。"
+          "consumer_angle": "用的人是手里攥着一封父母或者爷爷奶奶亲笔信的普通人。他要的不是一个字体文件，是一件印出来的东西：今年的春联，或者一套贺卡、一封用那只手写出来的信。字体只是机器，他真正拿走的是纸。",
+          "voices": [
+            {
+              "quote": "I tried using this code to generate a table for my language (Ukrainian), but I ended up with the same English table.",
+              "zh": "我用这份代码想给我自己的语言（乌克兰语）生成字表，结果出来的还是那张英文表。"
+            },
+            {
+              "quote": "Unfortunately it doesn't seem to support cursive, which is how I and most people I know write.",
+              "zh": "可惜它好像不支持连笔手写体，而我和我认识的大多数人写字都是连笔的。"
+            }
+          ],
+          "edge": "不注册、不联网、不上传：一个人身上最私密的东西留在自己机器上，回来的时候是一个属于他自己的文件。"
         }
       },
       "id": "309-turning-your-handwriting-into-a-real-font-went-t",
@@ -1369,7 +1750,8 @@
       "tags": [],
       "hook": "Anyone with a living grandparent whose handwriting they want on next year's spring couplets, who gave up halfway through writing out thousands of characters by hand.",
       "consumer_angle": "Someone holding a letter written in a parent's or grandparent's hand. What they get is not a font file — it is a printed object: this year's spring couplet, or a set of cards and a keepsake letter, set in that hand. The font is the machinery; the thing they take away is paper.",
-      "verdict": "build"
+      "verdict": "build",
+      "pain_verified": true
     },
     {
       "claim": "Two generations of WeChat chat-history exporters have ~55k combined stars and issue trackers full of people offering to pay — yet every one of them stops at 'export + a one-off yearly report'; nobody has built the archive you can keep asking questions of.",
@@ -1399,49 +1781,40 @@
           "quote": "xdm，来份源码发我邮箱行吗，有偿也行的",
           "url": "https://github.com/hicccc77/WeFlow/issues/1177",
           "user": "HYSWZW",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "xdm，来份源码发我邮箱行吗，有偿也行的"
         },
         {
           "kind": "pain",
           "quote": "我的聊天记录不是我自己的",
           "url": "https://github.com/hicccc77/WeFlow/issues/1179",
           "user": "nyyjshcz",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "我的聊天记录不是我自己的"
         },
         {
           "kind": "pain",
           "quote": "我的隐私不是我的",
           "url": "https://github.com/hicccc77/WeFlow/issues/1181",
           "user": "pang222033",
-          "src": "github-issue"
-        },
-        {
-          "kind": "pain",
-          "quote": "6.1.0版本的exe怎么expire了。希望大佬速速更新。",
-          "url": "https://github.com/hicccc77/WeFlow/issues/1187",
-          "user": "LJljh241119",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "我的隐私不是我的"
         },
         {
           "kind": "pain",
           "quote": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录",
           "src": "xiaohongshu",
           "note": "《45w人看过的聊天记录图册教程》3,692 赞 / 3,013 收藏 / 94 评论 — 一份手工把聊天截图排进 InDesign 的教程，45 万人看过",
-          "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
-        },
-        {
-          "kind": "pain",
-          "quote": "宝你这个就是满版没拉到出血线，背景大小要跟纸页外面那个红色的框框一样大，而且图片都没嵌入还是链接你快改一下",
-          "src": "xiaohongshu",
-          "note": "同帖评论区：普通人（多为送礼的年轻女性）正在被要求掌握 InDesign 出血线与图片嵌入等印前概念，只为把自己的聊天记录做成一本书",
-          "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8"
+          "url": "https://www.xiaohongshu.com/explore/68106205000000002100d7a8",
+          "text": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录"
         },
         {
           "kind": "pain",
           "quote": "Printed my family's group chat so I can pass it down as an heirloom.",
           "src": "xiaohongshu-repost",
           "note": "英文侧独立需求：一位美国用户把家庭群聊印成传家宝，转到小红书 855 赞 / 83 收藏，评论来自美国与英国（\"Brilliant idea!\"、\"the company who had to print that book... had a great time.\"）",
-          "url": "https://www.xiaohongshu.com/explore/6a6075b3000000000f00a066"
+          "url": "https://www.xiaohongshu.com/explore/6a6075b3000000000f00a066",
+          "text": "Printed my family's group chat so I can pass it down as an heirloom."
         }
       ],
       "i18n": {
@@ -1456,7 +1829,30 @@
           "value": "一次性买断的桌面应用，纪念册打印作为增值——买家和已经花钱找店家数字化家庭影像的是同一批人。",
           "risk": "解密随客户端版本失效，且虽然是用户自己的数据，仍处在平台条款的灰色地带；产品必须严格本地、只处理本人数据、不留云端副本。",
           "hook": "把整段人生放在微信里的人：十年家庭群、爸妈的语音——而且已经因为换过一次手机丢掉过一部分。",
-          "consumer_angle": "用的人是一个成年子女，自己的笔记本里躺着十年的家庭群聊和父母的语音条，全是加密的。他拿到的是：把其中一段对话印成一本可以放在书架上的册子，以及可以对着这段对话问一句「妈那年到底是哪天住的院」——而且全过程一个字节都不出这台电脑。导出只是管道，那本册子才是产品。"
+          "consumer_angle": "用的人是一个成年子女，自己的笔记本里躺着十年的家庭群聊和父母的语音条，全是加密的。他拿到的是：把其中一段对话印成一本可以放在书架上的册子，以及可以对着这段对话问一句「妈那年到底是哪天住的院」——而且全过程一个字节都不出这台电脑。导出只是管道，那本册子才是产品。",
+          "voices": [
+            {
+              "quote": "xdm，来份源码发我邮箱行吗，有偿也行的",
+              "zh": "xdm，来份源码发我邮箱行吗，有偿也行的"
+            },
+            {
+              "quote": "我的聊天记录不是我自己的",
+              "zh": "我的聊天记录不是我自己的"
+            },
+            {
+              "quote": "我的隐私不是我的",
+              "zh": "我的隐私不是我的"
+            },
+            {
+              "quote": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录",
+              "zh": "速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录"
+            },
+            {
+              "quote": "Printed my family's group chat so I can pass it down as an heirloom.",
+              "zh": "我把家里的群聊印出来了，好当传家的东西留给下一代。"
+            }
+          ],
+          "edge": "导出这一步过去是个能耗掉半天的脆弱仪式，现在一条命令走完，而且结束时语料已经接进一个你可以直接对话的东西里。"
         }
       },
       "id": "306-two-generations-of-wechat-chat-history-exporters",
@@ -1497,14 +1893,16 @@
           "quote": "I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.",
           "url": "https://news.ycombinator.com/item?id=49096901",
           "user": "dthcst",
-          "src": "hn"
+          "src": "hn",
+          "text": "I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn."
         },
         {
           "kind": "pain",
           "quote": "I just tried the android application, really like the privacy first approach. Would you consider adding BYOK so that a user could have complete control over where inference happens?",
           "url": "https://news.ycombinator.com/item?id=49096767",
           "user": "parthmule28",
-          "src": "hn"
+          "src": "hn",
+          "text": "I just tried the android application, really like the privacy first approach. Would you consider adding BYOK so that a user could have complete control over where inference happens?"
         }
       ],
       "does": "A demand signal rather than a repo: in the Show HN thread for Echologue (privacy-first AI voice journal), a self-described non-developer reports building his own local memory tool out of privacy frustration, and another user's first request is BYOK control over where inference happens.",
@@ -1528,13 +1926,24 @@
           "risk": "品类教育成本高，且平台随时可以捆绑'导出+本地模式'。",
           "hook": "受够了数据放在别人服务器上的非开发者——宁可自己粗糙地搭一个，也不愿不搭。",
           "edge": "信号的价值在于「谁说的」而不是「说了什么」：「AI 记住我的那部分应该待在我自己的机器上」过去是极客的立场，而这次说这句话的人主动声明自己根本不是开发者，只是「倔」——而且他没有等，自己动手做了一个。",
-          "consumer_angle": "用的人是一个跟助手聊了一年、突然想明白「最懂我的那个东西存在别人服务器上」的普通人。他拿到的是自己硬盘上的一个文件：能从聊天记录导出和语音条里灌进去，明年换一个助手照样读得懂。"
+          "consumer_angle": "用的人是一个跟助手聊了一年、突然想明白「最懂我的那个东西存在别人服务器上」的普通人。他拿到的是自己硬盘上的一个文件：能从聊天记录导出和语音条里灌进去，明年换一个助手照样读得懂。",
+          "voices": [
+            {
+              "quote": "I got tired of my stuff living on someone else's server, so I ended up building my own local memory thing. Not a developer at all, just stubborn.",
+              "zh": "我受够了自己的东西存在别人的服务器上，最后干脆自己做了一个本地的记忆工具。我根本不是开发者，就是死犟。"
+            },
+            {
+              "quote": "I just tried the android application, really like the privacy first approach. Would you consider adding BYOK so that a user could have complete control over where inference happens?",
+              "zh": "我刚试了安卓版，非常喜欢这种隐私优先的做法。能不能考虑加上自带密钥（BYOK），让用户完全掌握推理在哪里发生？"
+            }
+          ]
         }
       },
       "hook": "Non-developers who are fed up enough with their data living on someone else's server that they are building their own memory tools badly rather than not at all.",
       "edge": "The signal is who said it, not what was said: 'my AI's memory should live on my machine' used to be a geek position, and here it is stated by someone who volunteers that he is not a developer at all, just stubborn — and who went and built one anyway rather than wait.",
       "consumer_angle": "Someone who has been talking to an assistant for a year and has worked out that the thing which knows them best lives on somebody else's server. What they get is one file on their own disk, importable from their chat exports and voice notes, that any assistant they use next year can read.",
-      "verdict": "build"
+      "verdict": "build",
+      "pain_verified": true
     },
     {
       "title": "Denovo",
@@ -1577,7 +1986,8 @@
           "value": "独立应用开发者为一个工具付费，该工具帮助他们将免费用户转化为付费客户，从而实现可持续收入增长，无需聘请商业顾问。",
           "risk": "如果主流分析平台或应用市场改进其货币化工具，Denovo 可能难以区分自己并吸引用户。",
           "why_good": "Denovo 是一个面向独立应用开发者的业务管理工具，通过提供可操作的洞察和工具来优化货币化策略，包括定价实验和转化跟踪，帮助他们将免费用户转化为付费客户。",
-          "consumer_angle": "独立开发者在这里就是消费者——他们像买课一样买它，而不是像买 SaaS。"
+          "consumer_angle": "独立开发者在这里就是消费者——他们像买课一样买它，而不是像买 SaaS。",
+          "edge": "它站在「钱怎么决定」这一侧，而不是「代码怎么写」这一侧：定价、转化、下一步该改什么。"
         }
       },
       "family": null,
@@ -1588,7 +1998,8 @@
       "pain_verified": false,
       "workload": "2m",
       "consumer_angle": "Indie creators are consumers here — they buy it like a course, not like SaaS.",
-      "verdict": "archive"
+      "verdict": "archive",
+      "edge": "It sits where the money is decided rather than where the code is written: pricing, conversion and what to change next."
     },
     {
       "title": "Totem",
@@ -1631,7 +2042,9 @@
           "differentiator": "我会专注于创建一个视觉上吸引人、用户友好的界面，专门为非技术用户设计，使其对每个人都可访问。",
           "value": "寻找高效管理和阅读保存推文方式的普通Twitter用户。",
           "risk": "Twitter有可能直接在其平台上整合类似功能，这对该工具的可行性构成了重大风险。",
-          "why_good": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。"
+          "why_good": "Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。",
+          "edge": "把收藏夹从坟场变成阅读队列：存下来的帖子被归好组、再端到眼前，于是它们真的会被读掉。",
+          "consumer_angle": "一个存了两千条帖子、一条都没再打开过的人。他拿到的是今天三条，以一种他真的会读下去的样子。"
         }
       },
       "family": null,
@@ -1639,7 +2052,10 @@
       "agent": "producthunt-scout",
       "posted_at": "2026-07-30T00:14:43Z",
       "voices": [],
-      "workload": "2w"
+      "workload": "2w",
+      "edge": "Bookmarks become a reading queue instead of a graveyard: saved posts are grouped and resurfaced so they get read.",
+      "consumer_angle": "Someone with two thousand saved posts they have never reopened. What they get is three of them, today, in a form they will actually read.",
+      "verdict": "archive"
     },
     {
       "title": "SoundGate Guitar",
@@ -1683,7 +2099,21 @@
           "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
           "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
           "consumer_angle": "有真吉他、没老师的成年初学者；成品是每次练完的一句话——你反复卡在哪一小节。",
-          "edge": "它按「你自己已经挑好的那首歌」来评你——昨晚你翻出来的那份谱——而不是按课程表里的曲目。现有产品没有一个这么做，因为课程本身就是它们的生意。"
+          "edge": "它按「你自己已经挑好的那首歌」来评你——昨晚你翻出来的那份谱——而不是按课程表里的曲目。现有产品没有一个这么做，因为课程本身就是它们的生意。",
+          "voices": [
+            {
+              "quote": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
+              "zh": "我真希望能有个老师。Rocksmith 能教一些东西，但它看不见我的指尖，也没法教我别弹得那么难听。"
+            },
+            {
+              "quote": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
+              "zh": "我发现只有 G 弦声音不干净，别的弦都没问题。G 弦一定要发音干净吗？我该改一下手的位置，还是就这么练下去？"
+            },
+            {
+              "quote": "Palm muting. Am I doing this right? Maybe not great amp settings?",
+              "zh": "闷音（palm muting）。我这么弹对吗？也许是音箱设置不对？"
+            }
+          ]
         }
       },
       "family": null,
@@ -1694,17 +2124,20 @@
         {
           "text": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
           "source": "r/guitarlessons — 'Newbie, not sure if I'm setting myself up for success.'",
-          "url": "https://old.reddit.com/r/guitarlessons/"
+          "url": "https://old.reddit.com/r/guitarlessons/",
+          "quote": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking."
         },
         {
           "text": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
           "source": "r/Guitar — barre-chord question, 5 comments",
-          "url": "https://old.reddit.com/r/Guitar/"
+          "url": "https://old.reddit.com/r/Guitar/",
+          "quote": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher."
         },
         {
           "text": "Palm muting. Am I doing this right? Maybe not great amp settings?",
           "source": "r/guitarlessons — 'Does it chug?', 16 comments",
-          "url": "https://old.reddit.com/r/guitarlessons/"
+          "url": "https://old.reddit.com/r/guitarlessons/",
+          "quote": "Palm muting. Am I doing this right? Maybe not great amp settings?"
         }
       ],
       "workload": "2w",
@@ -1809,7 +2242,8 @@
           "value": "独立创始人为简化项目管理和任务自动化支付费用，从而节省时间和精力。",
           "risk": "风险在于现有竞争者迅速将类似的 AI 能力整合到他们的现有平台中。",
           "why_good": "Claude Code 是一个 AI 驱动的工具，允许用户为 AI 代理创建任务，从而高效地自动化任务和管理项目。",
-          "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。"
+          "consumer_angle": "按现状很弱——今天的用户就是开发者。只有当任务换成普通人自己从头管到尾的非代码差事时才过闸。",
+          "edge": "它把「拆解」这一步接了过去——把一句话变成这句话真正需要的五件事——而这恰恰是非技术的人做不到的那一步。"
         }
       },
       "family": null,
@@ -1820,7 +2254,8 @@
       "workload": "2w",
       "verdict": "watch",
       "pain_verified": false,
-      "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end."
+      "consumer_angle": "Weak as shipped — today's users are developers. Only clears the gate if the mission is a non-code errand a normal person owns end to end.",
+      "edge": "It takes over the decomposition step — turning one sentence into the five things that sentence actually requires — which is the part a non-technical person cannot do."
     },
     {
       "title": "Learn by rebuilding Redis, Git, a database from scratch",
@@ -1860,7 +2295,8 @@
           "value": "主要买家是寻求实际经验的自学开发者和编码训练营学生。",
           "risk": "成熟教育平台的主导地位可能会限制新进入者的用户获取和留存。",
           "why_good": "该项目提供了一种通过从零开始重建Redis和Git等基础技术的引导方法，使用户能够掌握基本原理和机制。",
-          "consumer_angle": "转行者与自学者——非科班的成年人；成品是一个他真做出来、面试时讲得清楚的东西。"
+          "consumer_angle": "转行者与自学者——非科班的成年人；成品是一个他真做出来、面试时讲得清楚的东西。",
+          "edge": "靠重造来学，而不是靠读来学：作业就是做出一个真能跑的 Redis、Git 或数据库，懂没懂由它跑不跑得起来说话。"
         }
       },
       "family": null,
@@ -1871,7 +2307,8 @@
       "workload": "2w",
       "verdict": "build",
       "pain_verified": false,
-      "consumer_angle": "Career-switchers and self-taught learners — non-CS-degree adults; the deliverable is one thing they built and can explain in an interview."
+      "consumer_angle": "Career-switchers and self-taught learners — non-CS-degree adults; the deliverable is one thing they built and can explain in an interview.",
+      "edge": "Learning by rebuilding the thing, not by reading about it: the exercise is to make a working Redis, Git or database, so understanding is proven by it running."
     },
     {
       "title": "Yap – OSS on-device voice dictation for macOS with no model to download",
@@ -1909,7 +2346,18 @@
           "why_good": "按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。",
           "gap": "痛点击中了但解得不完美，而且隐私承诺有个洞：Intel Mac 上会回落到苹果服务器，README 那句「什么都不出本机」并没有讲清楚。另外只能用系统语言口述——这是 issue 区呼声最高的一条——等于把所有双语用户默默排除在外。",
           "counter": "这是一家拿过融资的公司（Frigade）的副产品仓，窗口是他们自己的；而 macOS 自带听写就在设置里一个开关之外。对苹果 API 的薄封装，一个周末就能复刻，没有会累积的资产。",
-          "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。"
+          "differentiator": "切口不是转写，是被苹果忽略的双语者：一种语言一个热键，一句话里中英混说不用切换任何东西，清理时知道哪些词是另一种语言里的专名。只做端上，并且明说——不要有静默的服务器回落。冷启动（中文）：小红书与 V2EX 上「语音输入法 中英混说」的帖子，双语用户在那里抱怨每个听写工具都逼你二选一；冷启动（英文）：Yap 自己的 issue 区（#2 与 #15 就是这个请求），加 r/macapps。",
+          "voices": [
+            {
+              "quote": "I'd love to be able to dictate in 2 langu[ages]",
+              "zh": "我很希望能用两种语言口述。"
+            },
+            {
+              "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
+              "zh": "是的，（在 Intel 芯片的 Mac 上）它会把所有音频数据发到苹果的服务器。"
+            }
+          ],
+          "consumer_angle": "用的人是打字慢、或者手不方便的普通 Mac 用户。他拿到的是自己说的话直接落进任何一个输入框，而且一个字节不出本机。"
         }
       },
       "pick": true,
@@ -1919,25 +2367,20 @@
       "posted_at": "2026-07-29T09:47:50Z",
       "voices": [
         {
-          "kind": "demand",
-          "quote": "First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.",
-          "url": "https://github.com/FrigadeHQ/yap/issues/7",
-          "user": "kballenegger",
-          "src": "github-issue"
-        },
-        {
           "kind": "pain",
           "quote": "I'd love to be able to dictate in 2 langu[ages]",
           "url": "https://github.com/FrigadeHQ/yap/issues/15",
           "user": "iamchrishckns",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "I'd love to be able to dictate in 2 langu[ages]"
         },
         {
           "kind": "pain",
           "quote": "Yep sends all audio data to Apple servers (on Intel Macs)",
           "url": "https://github.com/FrigadeHQ/yap/issues/16",
           "user": "lissy93",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "Yep sends all audio data to Apple servers (on Intel Macs)"
         }
       ],
       "gap": "It hits a real pain but solves it imperfectly, and the privacy promise has a hole: on Intel Macs it falls back to Apple's servers, which the README's 'nothing leaves your machine' framing does not make obvious. There is also no way to dictate in a language other than the system locale — the single most-requested thing in the tracker — which quietly excludes every bilingual user.",
@@ -1989,7 +2432,8 @@
           "why_good": "把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据——正是当前『AI 算命』产品普遍手搓且做得很差的底层。",
           "gap": "痛点击中了，但在离人一层的地方停住了：3317 星、736 fork——fork 超过星的五分之一，在这块板上算行为证据——说明有人在自己搭；但现在存在的是排盘引擎，不是一个人能开口问的东西。用人话讲出来的那份解读，还是缺的。",
           "counter": "这个品类在会付钱的那个市场里政策脆弱：国内应用商店和支付渠道对测算变现有限制，所以分发就是全部问题，而算法来自公开古籍，任何在位者都能重新推一遍。两位贡献者，对一个必须准确的知识库来说也太薄。这里还得自限——这是民俗文本不是建议，一旦滑向替人决定要不要接那份工作，就是责任。",
-          "differentiator": "别再做一个测算 app，做那层诚实的翻译。盘进去，人话出来，每一句都脚注到它出自哪一段古籍原文，并且明写这是文化文本、不是建议。别人没有的资产是结构化的原文——就靠出处站住，而这恰好是免费 app 拿不出来的东西。冷启动（中文）：小红书与豆瓣的紫微斗数小组，人们贴一张盘的截图问这是什么意思；冷启动（英文）：r/ChineseAstrology 与 r/asianastrology，同样的盘贴出来，英文世界根本没有解读。"
+          "differentiator": "别再做一个测算 app，做那层诚实的翻译。盘进去，人话出来，每一句都脚注到它出自哪一段古籍原文，并且明写这是文化文本、不是建议。别人没有的资产是结构化的原文——就靠出处站住，而这恰好是免费 app 拿不出来的东西。冷启动（中文）：小红书与豆瓣的紫微斗数小组，人们贴一张盘的截图问这是什么意思；冷启动（英文）：r/ChineseAstrology 与 r/asianastrology，同样的盘贴出来，英文世界根本没有解读。",
+          "consumer_angle": "用的人是自己对紫微斗数好奇、但看不懂排盘的人。他拿到的是一张排好的盘，外加每一个格局在讲什么的人话解释。"
         }
       },
       "pick": true,
@@ -2100,7 +2544,8 @@
           "why_good": "Agent 已经会写 deck，却没有地方渲染——PowerPoint XML 极难生成，手写 HTML 幻灯片一缩放就崩。6k star 给的是底层管道而不是终端产品，说明开发者要的是一个可以直接输出到的幻灯片目标格式。",
           "gap": "只有极客用得了：它是个 React 框架，交付物停在源码。真正需要一份 PPT 的是老师、销售、学生——他们要的是站在会议室里能打开的文件，而且上面得是公司规定的字体。",
           "counter": "这是个功能不是公司。Gamma、Canva、微软都在发 agent 写片子，模板库和渠道本来就在他们手上；一个 MIT 框架一个版本就被吸收掉。真正会累积的资产属于握着助手的那一方，不属于握着渲染器的这一方。",
-          "differentiator": "跳过框架，去做没有框架肯做的最后一公里：品牌锁定。拿公司现成的 PPTX 模板，学会它的母版，让 AI 生成的每一份片子一出来就已经长在里面——字体解析好、logo 放好、导出成同事能直接改的 PPTX。只干一件事：「我的片子看上去就是我们公司的片子」。冷启动（中文）：小红书、知乎上「PPT 模板 公司规范」的帖子与秋叶PPT 评论区，打工人在那里讲自己手动套版套到几点；冷启动（英文）：r/powerpoint 与 r/consulting 搜 brand template deck reformat。"
+          "differentiator": "跳过框架，去做没有框架肯做的最后一公里：品牌锁定。拿公司现成的 PPTX 模板，学会它的母版，让 AI 生成的每一份片子一出来就已经长在里面——字体解析好、logo 放好、导出成同事能直接改的 PPTX。只干一件事：「我的片子看上去就是我们公司的片子」。冷启动（中文）：小红书、知乎上「PPT 模板 公司规范」的帖子与秋叶PPT 评论区，打工人在那里讲自己手动套版套到几点；冷启动（英文）：r/powerpoint 与 r/consulting 搜 brand template deck reformat。",
+          "consumer_angle": "用的人是要在明早讲一版东西的普通人。他拿到的是一份能直接投出去的幻灯片。"
         }
       },
       "pick": true,
@@ -2158,7 +2603,14 @@
           "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
           "gap": "它是为有 CRM 的销售团队做的。真正因为没跟进而丢钱的，是两个人一本本子的小店，而这个品类的每个产品开场第一句都是「你用哪个 CRM」。",
           "counter": "外呼 AI 是整个语音 agent 市场里最挤的一条道，而且两头都在收紧——欧美的同意规则，中国这边营销外呼对小经营者基本已经关死。诚实的风险不是竞争，是在那个能跑通的价格上它根本不合法。",
-          "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。"
+          "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。",
+          "voices": [
+            {
+              "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
+              "zh": "我经常一边干活一边就把上门时间答应下来了，然后全靠脑子记……因为我手上正拿着工具在现场，根本没地方记这个预约。"
+            }
+          ],
+          "consumer_angle": "用的人是手上拿着工具、在现场答应了上门时间的师傅。他拿到的是那个预约被记下来了，不用他自己记。"
         }
       },
       "voices": [
@@ -2167,7 +2619,8 @@
           "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
           "url": "https://old.reddit.com/r/smallbusiness/",
           "user": "burgerknapper",
-          "src": "reddit"
+          "src": "reddit",
+          "text": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info"
         }
       ],
       "gap": "It is built for a sales team with a CRM. The person who actually loses money to unmade follow-ups is a two-person shop with a notebook, and every product in this category starts by asking which CRM you use.",
@@ -2219,7 +2672,22 @@
           "counter": "「同质化」不是能打补丁的 bug，那就是让模型连写 300 章的必然结果，所有竞品都会撞上同一堵墙。同时番茄、起点这些平台正在给已经住在那里的写手直接发自家写作助手，后面还连着分发和稿费。让烂小说写得更快的工具，没人买。",
           "differentiator": "别交付流水线，交付稿子。一键桌面安装、模型 key 预置，产品承诺只收窄到 issue 区证明已经坏掉的那一件事：把 20 万字撑住不崩、每章字数就是作者要的那个数。卖「不一样」而不是卖「量」——写到第一章就提示你又在写那个下矿开局。冷启动（中文）：inkos 自己的 issue 区，加番茄小说作者交流群与龙的天空论坛，写手自己在那里抱怨这几件事；冷启动（英文）：r/WritingWithAI 与 r/HFY 搜 lost the plot chapter。",
           "why_use": "按章拿钱、又不是 Node 开发者的网文写手。他拿到的是一份稿子——章节长度是他要的那个数，二十万字之后那个人物还认得出是同一个人。",
-          "edge": "上下文短的时候，跨几百章守住剧情状态与人物连续性根本谈不上。「agent＋外置状态」叠上便宜的长上下文阅读，才让一次 300 章的连跑变成一件你可以试着去接住的事。"
+          "edge": "上下文短的时候，跨几百章守住剧情状态与人物连续性根本谈不上。「agent＋外置状态」叠上便宜的长上下文阅读，才让一次 300 章的连跑变成一件你可以试着去接住的事。",
+          "voices": [
+            {
+              "quote": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。",
+              "zh": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。"
+            },
+            {
+              "quote": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制",
+              "zh": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制"
+            },
+            {
+              "quote": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。",
+              "zh": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。"
+            }
+          ],
+          "consumer_angle": "用的人是写长篇的人：写到第三十章开始记不住自己埋过什么线。他拿到的是一份自己往前对得上、往后接得住的稿子。"
         }
       },
       "voices": [
@@ -2228,21 +2696,24 @@
           "quote": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。",
           "url": "https://github.com/Narcooo/inkos/issues/166",
           "user": "Kstd-Con",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "大家没有发现这个问题吗？多开几本同类型的小说，比如：玄幻，你会发现主角开局要么下坑要么下矿要么捡垃圾，接着有个对他怀恨在心的npc张虎或者其他，再来一个对他好的老头吧啦吧啦，说实话去除人名，这些故事几乎一样。发散性严重不足。"
         },
         {
           "kind": "pain",
           "quote": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制",
           "url": "https://github.com/Narcooo/inkos/issues/248",
           "user": "12sysw",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "AI味道还是有点，感觉写出来就像流水账，小说第一章字数正常，后面的字数无法控制"
         },
         {
           "kind": "pain",
           "quote": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。",
           "url": "https://github.com/Narcooo/inkos/issues/236",
           "user": "qixidao",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "一开始我用很详细的和它说建立书， 他要啥给啥，然后总是建立失败， 说参数不对，引号问题，但是他又解决不了，就一直卡在这里。"
         }
       ],
       "hook": "Someone who wants to finish a web novel, not someone who wants to run an npm package: 8.7k stars and 1.6k forks say the appetite is real, and the issue tracker says the writer is stuck at chapter four.",
@@ -2299,21 +2770,15 @@
           "gap": "Mermaid 一脉画得对但难看；设计工具画得好看但慢。缺口是：在普通人真愿意花的那十秒里，出一张干净、能见人的图，而且中文要和英文一样好（Mermaid 的中日韩排版至今很差）。",
           "counter": "文字转图正在被每一个聊天助手吸收成默认功能，独立工具大概只有一年窗口——除非它拥有一种别人叫得出名字的具体图风。",
           "differentiator": "不要做「什么图都能画」，去占住某一类人的图语言：中学理科老师的学案配图，或者中文场景下 Mermaid 至今排不好的那种排版规整的幻灯配图。冷启动：中文＝小红书「教师备课」「PPT 配图」标签下的求助帖；英文＝r/Teachers 与 r/PowerPoint 的「这张图怎么做」。",
-          "consumer_angle": "强，而且正好落在唯一那条例外上——AI 直接把一件成品交到不会设计的人手里，可以原样放进教案、幻灯或帖子。"
+          "consumer_angle": "强，而且正好落在唯一那条例外上——AI 直接把一件成品交到不会设计的人手里，可以原样放进教案、幻灯或帖子。",
+          "voices": []
         }
       },
       "does": "Type a description in natural language, get back a production-quality SVG and PNG technical diagram — not a whiteboard sketch, a figure you can put in front of an audience.",
       "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
       "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
       "hook": "The teacher, the analyst, the person writing a public-facing explainer who needs one clear diagram and cannot draw.",
-      "voices": [
-        {
-          "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
-          "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph/issues/6",
-          "src": "github",
-          "kind": "pain"
-        }
-      ],
+      "voices": [],
       "verdict": "build",
       "workload": "2w",
       "pain_verified": false,
@@ -2359,7 +2824,21 @@
           "differentiator": "跳过衣橱管理的红海，只卖那一个魔法时刻——传 20 张衣服照片，得到一本自己试穿的穿搭册——做成付费移动端流程。",
           "consumer_angle": "纯消费产品：一个在购买或打包前就能看到衣服穿在自己身上的衣橱。",
           "why_use": "衣服多到早上七点想不起来自己有什么的人。她拿到的是一本自己穿着现有衣服的搭配册——不用买，也不用拍。",
-          "edge": "「穿在我身上看看」过去需要体型建模和一整条试衣流水线。单张参考照生成今年把它变成了一次 prompt，而这恰恰是现有衣橱应用（Whering、Acloset、Indyx）至今没有的那一件。"
+          "edge": "「穿在我身上看看」过去需要体型建模和一整条试衣流水线。单张参考照生成今年把它变成了一次 prompt，而这恰恰是现有衣橱应用（Whering、Acloset、Indyx）至今没有的那一件。",
+          "voices": [
+            {
+              "quote": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing.",
+              "zh": "很多同类 App 都有「推荐搭配」的功能……要是还能把这套搭配生成穿在模特身上的图，那就太棒了。"
+            },
+            {
+              "quote": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP",
+              "zh": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP"
+            },
+            {
+              "quote": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐",
+              "zh": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐"
+            }
+          ]
         }
       },
       "pick": true,
@@ -2370,24 +2849,27 @@
           "quote": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing.",
           "url": "https://github.com/tandpfun/wardrobe/issues/9",
           "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "text": "Many other similar apps have a 'recommendations' or 'combinations' feature… combined with generated images of the combination of items on the model would be amazing."
         },
         {
           "kind": "demand",
           "quote": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP",
           "user": "苹果味的风",
           "src": "xiaohongshu comment, 67 likes / 18 replies (山东) — 「大家觉得市面上还缺哪种APP？」1.7万赞/6097评论",
-          "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
+          "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
+          "text": "服装搭配的APP，把自己的衣服全都录入，ai生成穿搭照片的APP"
         },
         {
           "kind": "demand",
           "quote": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐",
           "user": "(xiaohongshu, 北京)",
           "src": "xiaohongshu comment, 20 likes — same note; a reply under it reads 「哈哈哈哈哈哈哈 我需要」",
-          "url": "https://www.xiaohongshu.com/explore/665351440000000015011534"
+          "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
+          "text": "我觉得可以给女生出一个记录衣服的app，记录我现在有多少件白衬衫，白T，牛仔裤，并且可以一键穿衣推荐"
         }
       ],
-      "pain_verified": false,
+      "pain_verified": true,
       "gap": "Only geeks can use it — npm, .env, API key, reference photo — while the 'see it on me' generation feature is exactly what existing closet apps (Whering, Acloset, Indyx) don't do well yet.",
       "counter": "Closet apps are a graveyard of low-retention consumer products, incumbents already own the non-technical audience, and per-image generation costs eat thin subscription margins; 1 contributor, no commits since launch day.",
       "differentiator": "Skip the closet-manager race; sell the one magic moment — upload 20 photos of your clothes, get a modeled lookbook of yourself — as a paid mobile flow.",
@@ -2440,7 +2922,13 @@
           "counter": "这是一个免费小工具，而这个品类三十年来是免费赢：Windows 自带便笺，没有人为一张便利贴付过钱。issue 区的诉求也是没有边界的打磨（分屏摆放、右键菜单、胶囊行为），小工具就是这样悄悄长成大软件、却始终没长成生意。",
           "differentiator": "不卖那张纸，卖纸后来去哪了。桌面便签三十年没做过的一件事是「记得」——三个月前写在一块你已经不用的显示器上的那张，就这么没了。同样安静的纸，加上「这台机器上我写过的所有东西，能搜，永不上传」。冷启动第一步：中文＝小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区；英文＝r/Windows 与 r/productivity 里求「不要账号的便签」的帖子。",
           "workload": "2w",
-          "consumer_angle": "用的人是那种把便利贴粘在显示器边框上的 Windows 用户。他拿到的就是同一张便利贴，只不过在屏幕上——安静、一直在、不用注册、不同步、没有连续打卡、什么都不催他。它 issue 区里提需求的是双屏办公的普通人（想把便签拖到另一块屏上），不是开发者在提 feature request。"
+          "consumer_angle": "用的人是那种把便利贴粘在显示器边框上的 Windows 用户。他拿到的就是同一张便利贴，只不过在屏幕上——安静、一直在、不用注册、不同步、没有连续打卡、什么都不催他。它 issue 区里提需求的是双屏办公的普通人（想把便签拖到另一块屏上），不是开发者在提 feature request。",
+          "voices": [
+            {
+              "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
+              "zh": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。"
+            }
+          ]
         }
       },
       "does": "PaperTodo is a minimalist Windows desktop sticky note tool that allows users to create independent notes and to-do lists directly on their desktop without any management interface. It supports Markdown for enhanced note-taking.",
@@ -2449,16 +2937,11 @@
       "hook": "Experience a clutter-free workspace with PaperTodo's minimalist sticky notes—1,282 stars strong!",
       "voices": [
         {
-          "quote": "…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…",
-          "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5060997604",
-          "src": "github",
-          "kind": "pain"
-        },
-        {
           "quote": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。",
           "url": "https://github.com/snownico0722/PaperTodo/issues/13#issuecomment-5058072660",
           "src": "github",
-          "kind": "pain"
+          "kind": "pain",
+          "text": "…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。"
         }
       ],
       "gap": "The gap is not that only geeks can use it — the opposite. It is already simple, and its tracker is full of ordinary two-monitor users who cannot move a note to the other screen. Every mainstream note app walked the other way, into accounts, sync and workspaces, and left the desk itself empty.",
@@ -2466,7 +2949,8 @@
       "differentiator": "Do not sell the note; sell what happens to it afterwards. The one thing desktop stickies have never done is remember — a note you scribbled three months ago on a monitor you no longer own is simply gone. Ship the same silent paper plus 'everything I ever scribbled on this machine, searchable, never uploaded'. Cold start (Chinese): 小红书「桌面便签 推荐」「电脑便签 不打扰」标签下的评论区; (English): r/Windows and r/productivity threads asking for a sticky-note app with no account.",
       "workload": "2w",
       "consumer_angle": "A Windows user who keeps a paper sticky note stuck to the monitor bezel. What they get is that same note on the screen — quiet, always visible, no account, no sync, no streak, nothing that nags. The tracker's own users are ordinary two-monitor office people asking to drag a note to the other screen, not developers filing feature requests.",
-      "verdict": "build"
+      "verdict": "build",
+      "pain_verified": true
     },
     {
       "title": "wangxijie001/yoji",
@@ -2510,21 +2994,15 @@
           "gap": "陪伴类产品干净地分成两半：云端角色（什么都看得见）和死的本地挂件（什么都看不见）。还没有一个既懂你桌上在发生什么、又留在这台机器里。",
           "counter": "桌宠的「情绪」如果不是在对真实发生的事做反应，新鲜感撑不过两周；而「MCP 可扩展」正是悄悄把它变回开发者产品的那一句。",
           "differentiator": "把 MCP 从卖点里拿掉。主张只有一句：它看得见你在自己机器上干什么，且什么都不出这台机器——和用户反复标 ⭐ 的本地隐私主线同一根脊椎（#292 yap、#303 本地记忆、#553 旧手机节点）。冷启动：中文＝小红书/B站「桌宠」「Live2D 桌面」评论区；英文＝r/Shimeji 与 r/desktops。与 #569（手画桌宠）重叠——这条只留「有感知」那一半，不做第二只宠物。",
-          "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。"
+          "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。",
+          "voices": []
         }
       },
       "does": "An AI desktop companion with an emotional layer: privacy-first, wake-word voice, sits alongside your work, extensible over MCP.",
       "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
       "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
       "hook": "The person who works alone at home all day and wants something on the desktop that is present, without shipping their screen to a company.",
-      "voices": [
-        {
-          "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
-          "url": "https://github.com/wangxijie001/yoji/issues/3",
-          "src": "github",
-          "kind": "pain"
-        }
-      ],
+      "voices": [],
       "verdict": "watch",
       "workload": "2m",
       "pain_verified": false,
@@ -2575,7 +3053,8 @@
           "gap": "中文散户内容压倒性地单向——所有内容都是买入理由。没有什么会例行地、用同等力度把反方立起来给你看。",
           "counter": "硬性完整性边界：这东西一旦被读成荐股引擎，就是在向散户卖投资建议，既受监管，也是伤到用户最快的路。框架自己的回测不构成它有效的证据。",
           "differentiator": "只交付「分歧」，永远不交付结论：两栏，最强多头理由和最强空头理由各带出处，不给分、不给信号、不给仓位。自限为「只做翻译和摆开两边，决定是你的」。冷启动：中文＝雪球讨论区与小红书「A股 复盘」标签；英文＝r/investing 的 steelman-the-bear-case 讨论串。",
-          "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。"
+          "consumer_angle": "散户就是普通人——但只在严格「不给建议」的框架下成立；任何给出结论的形态同时踩红线和伤用户。",
+          "voices": []
         }
       },
       "does": "A China-market fork of the 65k-star TradingAgents framework: seven analyst agents argue bull vs bear under A-share-specific rules.",
@@ -2584,14 +3063,7 @@
       "hook": "The retail A-share holder who reads five contradictory takes on one stock and has no way to see the bear case laid out against the bull case.",
       "pick": true,
       "pick_reason": "The project offers a unique and specialized framework for A-share trading with potential for monetization through tailored analytics.",
-      "voices": [
-        {
-          "quote": "…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。",
-          "url": "https://github.com/simonlin1212/TradingAgents-astock/issues/54#issuecomment-4614285974",
-          "src": "github",
-          "kind": "pain"
-        }
-      ],
+      "voices": [],
       "verdict": "watch",
       "workload": "2m",
       "pain_verified": false,
@@ -2642,27 +3114,15 @@
           "gap": "所有商业对手都是要你把自己的声音传上去的云订阅，而声音恰恰是人们最不愿意交出去的那件东西——这也是大量潜在用户从来没开始过的原因。",
           "counter": "声音克隆是这个目录里最容易被滥用的一项能力；如果不对参考音源做硬性授权门槛，最积极的早期用户会是错的那批人。",
           "differentiator": "只挑那个既明确是成品、又明确属于用户自己的输出：我自己的书，用我自己的声音读出来，存成我自己的文件。直接拒绝第三方参考音。冷启动：中文＝豆瓣/小红书「有声书 自制」与独立作者群；英文＝r/selfpublish 里长年不断的有声书成本吐槽（ACX 报价）。",
-          "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。"
+          "consumer_angle": "强，且属于那条例外——产出是一件普通人可以递给别人的成品：一本有声书、一段配好音的视频。",
+          "voices": []
         }
       },
       "pick_reason": "Genuinely differentiated local product — 646-language zero-shot cloning and end-to-end offline dubbing over a 14-engine hub, and MCP-drivable.",
       "does": "Local voice cloning, video dubbing, dictation and audiobook production in one open-source desktop app — the whole chain runs on your own machine.",
       "edge": "Fully local, end-to-end dubbing on a hub of 14 TTS + 11 ASR engines — pick the best model per language/latency instead of being locked to one; auto-offloads on ≤8 GB VRAM and runs on pure CPU.",
       "why_use": "No subscription, no per-character meter, audio never leaves your machine; 646 languages dwarf cloud tools; and it ships an MCP server, so Claude or Cursor can drive it directly — useful to humans and AI agents that need a local voice pipeline.",
-      "voices": [
-        {
-          "quote": "…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…",
-          "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1306#issuecomment-5124023003",
-          "src": "github",
-          "kind": "pain"
-        },
-        {
-          "quote": "Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…",
-          "url": "https://github.com/debpalash/OmniVoice-Studio/issues/1274#issuecomment-5124008189",
-          "src": "github",
-          "kind": "pain"
-        }
-      ],
+      "voices": [],
       "verdict": "build",
       "workload": "2m",
       "pain_verified": false,
@@ -2710,7 +3170,8 @@
           "counter": "互动小说做了四十年一直是个热情但很小的市场，AI 没有把它做大，只是把供给做到了无限——那正好是市场型产品最不需要的。会付钱的那批受众已经被 Character.ai 一类吃掉，而平台经济需要的创作者飞轮，这个拿不到。",
           "differentiator": "砍掉平台和市集，只交付一件东西。一本短的、有插图的分支故事，主角叫孩子自己的名字、里面有孩子自己的涂鸦，十分钟做完，能导出 PDF 或者印成书——家长会留着的那个东西，不是他会刷的那个流。冷启动（中文）：小红书搜「睡前故事 定制」和绘本 DIY 帖，家长本来就在为「印上名字的绘本」付钱；冷启动（英文）：r/Parenting 和 r/DnD 的 kids campaign 帖。",
           "why_use": "睡前想给孩子讲一个「今晚这一个、主角是他」的故事的家长。他拿到的是一本插图完整、能打印的书——一个能放上书架的东西，不是一个要订阅的内容流。",
-          "edge": "卡住的是角色一致性：第 18 页那张脸得还是同一个孩子。参考图条件化在今年把这堵墙拆了，这才把「AI 生成故事」从一次性玩具变成家长愿意付钱去印出来的东西。"
+          "edge": "卡住的是角色一致性：第 18 页那张脸得还是同一个孩子。参考图条件化在今年把这堵墙拆了，这才把「AI 生成故事」从一次性玩具变成家长愿意付钱去印出来的东西。",
+          "consumer_angle": "用的人是想把一个故事做成能玩的东西、但不会写代码的普通人。他拿到的是一份别人点开就能玩的互动故事。"
         }
       },
       "voices": [],
@@ -2764,7 +3225,8 @@
           "counter": "语音前台是当下应用 AI 里最挤的一条道，各路资金都在投，胜负由延迟和本地语言可靠性决定——那是烧钱比赛，不是切口。中文侧，自动化个人微信号既违反平台规则，也过不了这块板自己的完整性红线。",
           "differentiator": "别做前台，做「第二天早上」。老板把昨晚没回的消息转发到一个地方，拿回一份排好序的名单——谁问了什么、值多少钱、每人一句拟好的回复——他自己三十秒发出去。不接电话线、不做日历集成、不碰平台自动化。冷启动（中文）：小红书「单人理发店」「宠物店日常」内容的评论区，老板们在那儿数自己丢了几个客人；冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。",
           "why_use": "一个人的美甲店、两个工位的修车铺、单干的牙医——电话响起来时两只手都占着的那个老板。他第二天早上拿到的是：谁打过来、各要什么、哪一个值得回。",
-          "edge": "实时接住一通电话——亚秒延迟、被打断、听得懂本地口音——大约在过去十八个月里才不再是研究课题。这就是这个品类 2026 年存在、2023 年不存在的全部原因。"
+          "edge": "实时接住一通电话——亚秒延迟、被打断、听得懂本地口音——大约在过去十八个月里才不再是研究课题。这就是这个品类 2026 年存在、2023 年不存在的全部原因。",
+          "consumer_angle": "用的人是一个人开一家店的老板：电话响的时候两只手都在忙。他拿到的是一通被接起来的电话和一个已经排进日历的预约。"
         }
       },
       "voices": [],
@@ -2824,19 +3286,13 @@
           "counter": "半衰期很短的新鲜感，且没有护城河：梗会过去，握着终端的那一方会自己发一个，而画廊真正的资产——用户投稿的画——在赚到第一分钱之前就已经引来了 IP 下架请求（issue #651）。桌宠还免费了十五年，为它收费是件没被验证过的事。",
           "differentiator": "拿走流水线，扔掉终端。真正有意思的是：普通人正在成规模地画并投稿像素小生物。产品是「画一只，就得到一个会对你此刻在干什么做出反应的动画桌宠」——放在 Windows 和 macOS 上，桌宠受众本来就在那里。冷启动（中文）：小红书、B站搜「桌宠 自制」，以及 Shimeji 教程下的评论区，挤满做到一半放弃的人；冷启动（英文）：r/Shimeji 与 r/desktops。",
           "why_use": "想让屏幕上住一只小东西的人：桌宠受众是中学生和上班族，不是程序员。他拿到的是一只自己画出来、会动的伙伴。",
-          "edge": "把一张手画角色变成干净的循环精灵图，过去是画师一下午的活。图生精灵把它压成一次上传——这也是一个公开投稿队列能以这个速度被业余画作塞满的唯一原因。"
+          "edge": "把一张手画角色变成干净的循环精灵图，过去是画师一下午的活。图生精灵把它压成一次上传——这也是一个公开投稿队列能以这个速度被业余画作塞满的唯一原因。",
+          "voices": [],
+          "consumer_angle": "用的人是自己画了一只像素小宠物的普通人。他拿到的是这只小家伙真的住在屏幕上，还能被别人看见。"
         }
       },
       "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
-      "voices": [
-        {
-          "kind": "demand",
-          "quote": "这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集",
-          "url": "https://github.com/crafter-station/petdex/issues/651",
-          "user": "MisonL",
-          "src": "github-issue"
-        }
-      ],
+      "voices": [],
       "does": "A public gallery of animated sprite pets that live in a coding-agent terminal: 3.7k stars, 167 forks, and a submission queue where people upload their own hand-drawn creatures — including a steady stream of Chinese submissions and one rights-holder asking for a takedown.",
       "gap": "The pets are trapped in a terminal, where only programmers see them. The much older and much larger audience for this — the 桌面宠物 tradition, Shimeji, desktop companions — sits on ordinary desktops and phones and has been served by abandoned 2010-era freeware ever since.",
       "counter": "Novelty with a short half-life and no moat: the joke fades, whoever owns the terminal ships their own, and the gallery's real asset — user-submitted art — is already producing IP takedown requests (issue #651) before it has produced a cent. Desktop pets have also been free for fifteen years; charging for one is an unproven act.",
@@ -2885,7 +3341,14 @@
           "counter": "Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而文档本来就在他们手里。33 位贡献者对 219 个未关 issue，这条线在往坏的方向走；「把我的文件夹变成 wiki」是个演示一次很惊艳、活不过第二周的东西。",
           "differentiator": "卖前五分钟，不卖引擎。签名安装包＋自带能用的模型（或厂商替你出一把 key），一条「指一个文件夹，十分钟后拿到 wiki」的固定路径，并挑一个具体职业做首发切口——从卷宗审阅开始，那批文档在制度上就不许上云。冷启动（中文）：llm_wiki 的 issue 区，以及 #158 里用户自己拉起来的微信群——他们已经在自组织了；冷启动（英文）：r/ObsidianMD 与 r/LocalLLaMA 搜 ask my own documents offline。",
           "why_use": "硬盘里塞满 PDF、却再也找不到任何东西的人：研究生、单干的律师、接手了一堆公司文件的人。他拿到的是一本能翻的 wiki，不是一个还得他自己会问的聊天框。",
-          "edge": "检索增强一次只回答一个问题，语料本身仍然是一团。把整本 wiki 先写出来——词条、互链、一张能逛的地图——是长上下文便宜到可以把每份文档读两遍之后才谈得上的事。"
+          "edge": "检索增强一次只回答一个问题，语料本身仍然是一团。把整本 wiki 先写出来——词条、互链、一张能逛的地图——是长上下文便宜到可以把每份文档读两遍之后才谈得上的事。",
+          "voices": [
+            {
+              "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
+              "zh": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行"
+            }
+          ],
+          "consumer_angle": "用的人是自己电脑里堆了几百份文档的普通人：合同、说明书、课件、聊天导出。他拿到的是一本能翻、能问、能引用的本地维基，而不是一个搜索框。"
         }
       },
       "hook": "A person with ten years of documents on their own laptop and no way to ask them a question — 15.8k stars in four months, and 219 open issues where those same people are stuck on an API key.",
@@ -2895,21 +3358,8 @@
           "quote": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行",
           "url": "https://github.com/nashsu/llm_wiki/issues/46",
           "user": "larashero3-dotcom",
-          "src": "github-issue"
-        },
-        {
-          "kind": "pain",
-          "quote": "By clicking on the create button, nonthing happens. Please advise.",
-          "url": "https://github.com/nashsu/llm_wiki/issues/377",
-          "user": "sirotaku",
-          "src": "github-issue"
-        },
-        {
-          "kind": "demand",
-          "quote": "开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流",
-          "url": "https://github.com/nashsu/llm_wiki/issues/158",
-          "user": "ooof",
-          "src": "github-issue"
+          "src": "github-issue",
+          "text": "接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行"
         }
       ],
       "does": "A desktop app that reads a folder of your documents and builds an interlinked wiki out of them by itself, instead of the usual retrieve-then-answer trick: it writes entries and cross-links them, so you browse and ask rather than search. Runs on your machine, points at whatever model you configure — cloud or a local Ollama.",
@@ -3016,7 +3466,10 @@
           "does": "一个本地桌面程序，扫过整个邮箱，把附件里的照片抽出来、去重，按日期排成普通的相册文件夹。全程不上传。",
           "gap": "Takeout 交付的是归档格式不是相册；Google Photos 只认你主动上传过的，认不出你 2011 年发给自己的那张扫描件。缺的是最后一公里的解包，不是导出。",
           "counter": "这是一次性的活，打开一次就不再打开；而 Google 只要在 Takeout 后面加一个「照片文件夹」勾选框就能一夜抹掉它。它还天然要拿邮箱权限——普通人对这件事最敏感。",
-          "differentiator": "把「只在本机」做成产品本身而不是脚注：只读、不联网，产物是一个能直接拖进手机相册的文件夹，外加一页「这些照片里出现最多的十张脸」。冷启动：中文=小红书/豆瓣「邮箱 老照片 找回」「换手机 照片丢了」；英文=r/DataHoarder 与 r/gmail 每隔几个月复现的 how do I get ten years of attachments out 帖。"
+          "differentiator": "把「只在本机」做成产品本身而不是脚注：只读、不联网，产物是一个能直接拖进手机相册的文件夹，外加一页「这些照片里出现最多的十张脸」。冷启动：中文=小红书/豆瓣「邮箱 老照片 找回」「换手机 照片丢了」；英文=r/DataHoarder 与 r/gmail 每隔几个月复现的 how do I get ten years of attachments out 帖。",
+          "edge": "它把邮箱当相册读，而不是当邮件读：十几年里大家互相寄来寄去的照片，被挖出来、按时间排好，全部在本机完成，不上传。",
+          "why_use": "对那些在手机相册自动同步之前就上网的人来说，一张家庭照片唯一还活着的副本，往往就是一封谁也再找不到的邮件附件。",
+          "consumer_angle": "一个有十五年历史邮箱的人，完全不知道哪一封信里躺着爸妈那张照片的唯一副本。"
         }
       },
       "voices": [],
@@ -3028,7 +3481,9 @@
       "gap": "Takeout delivers an archive format, not an album; Google Photos only knows what you deliberately uploaded, and cannot see the scan you emailed yourself in 2011. The missing piece is the last-mile unpacking, not the export.",
       "counter": "It is a one-time job — opened once, never again — and Google closes it forever by adding a single 'photos folder' checkbox to Takeout. It also has to ask for mailbox access, which is the permission ordinary people are most reluctant to grant.",
       "differentiator": "Make local-only the product, not a footnote: read-only, no network, and the deliverable is a folder you can drag straight into a phone gallery plus a contact sheet of the ten faces that appear most. Cold start (Chinese): 小红书/豆瓣 「邮箱 老照片 找回」「换手机 照片丢了」; (English): the 'how do I get ten years of attachments out of Gmail' thread that recurs in r/DataHoarder and r/gmail.",
-      "consumer_angle": "A non-technical person with a decade-old mailbox; the deliverable is an album folder they can actually open."
+      "consumer_angle": "A non-technical person with a decade-old mailbox; the deliverable is an album folder they can actually open.",
+      "edge": "It reads the mailbox as a photo archive rather than as mail: a decade of pictures people mailed each other, pulled out and dated, on the machine, with no upload.",
+      "why_use": "For anyone who was online before phone galleries synced, the only surviving copy of a family photo is often an email attachment nobody can find any more."
     },
     {
       "title": "HBAI-Ltd/Toonflow-app",
@@ -3070,7 +3525,15 @@
           "gap": "它击中了真痛点但解得不完美，而且恰恰断在最关键的一环：剧本 → 分镜表 → 提示词会被截断，还会「成功写入」却一条都看不到，创作者只能盯着 token 上限反复重跑。此外它实际只服务中文用户——一个英文用户连登录弹窗都过不去。",
           "counter": "这是板上最吃资本的一条：每一秒成片都在烧模型钱，而可灵 / 即梦 / 海螺 同时握着模型和分发——字节把整条流水线塞进剪映，一夜之间就能把独立开发者挤出价格。1.3 万星背后只有 9 位贡献者，bus factor 是 1。整条流水线正是标准里排除的「烧钱抢速度」赛道，对你开放的只有其中很窄、纯文本的一刀。",
           "differentiator": "别做流水线。做那个一直坏、又几乎不花钱的环节：一个绝不截断的「小说 → 分镜表」转换器（分块、可续跑、结构校验），并把每个镜头的干净提示词导出到可灵 / 即梦 / Runway——按剧本卖给那些本来就在别处为生成付费的短剧工作室。",
-          "consumer_angle": "它本来就是创作者产品：买家是小型短剧工作室，不是开发者。"
+          "consumer_angle": "它本来就是创作者产品：买家是小型短剧工作室，不是开发者。",
+          "voices": [
+            {
+              "quote": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro",
+              "zh": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro"
+            }
+          ],
+          "edge": "它的终点是一集能播的成片，而不是一堆素材——剧本、分镜、角色、视频，在桌面上一次走完。",
+          "why_use": "写网文的人不是剪辑师。从写完一章到做出一集能看的片子，中间横着一条他们根本没办法自己走的生产线。"
         }
       },
       "hook": "中文短剧团队真的在拿它出片，然后卡在最要命的一步：分镜表生成到一半被截断、分镜图 prompt 是空的、docker 部署卡到没法用——他们已经在为生成付费，只是这一步一直不成。",
@@ -3081,19 +3544,8 @@
           "kind": "pain",
           "src": "GitHub issue",
           "quote": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro",
-          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/232"
-        },
-        {
-          "kind": "pain",
-          "src": "GitHub issue",
-          "quote": "对话框显示《分镜面板已成功写入12条数据》 但是一个都没看到。导致生成不了",
-          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/237"
-        },
-        {
-          "kind": "pain",
-          "src": "GitHub issue",
-          "quote": "docker部署后，浏览器打开页面，非常卡",
-          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/234"
+          "url": "https://github.com/HBAI-Ltd/Toonflow-app/issues/232",
+          "text": "每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro"
         }
       ],
       "does": "An open-source desktop app that carries a novel or script all the way to an animated short drama: AI screenwriting → shot list and storyboard → character and image generation → video assembly, driven by your own model keys. Cross-platform, light deploy, 13k stars in weeks.",
@@ -3105,7 +3557,9 @@
       "workload": "2w",
       "verdict": "build",
       "family": "short-drama",
-      "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app"
+      "image": "https://opengraph.githubassets.com/1/HBAI-Ltd/Toonflow-app",
+      "edge": "It ends at a finished animated episode, not at a pile of assets — script, storyboard, characters and video in one pass on the desktop.",
+      "why_use": "The people writing web novels are not video editors. Between a finished chapter and a watchable episode sits a production pipeline they have no way to run."
     },
     {
       "title": "Speechius",
@@ -3143,7 +3597,10 @@
           "does": "提词器跟着你的声音走：你念到哪它滚到哪，你停它也停，你跳一句它跟着跳。",
           "gap": "市面上的提词器要么定速滚动，要么要一只手按遥控。真正跟住一个活人说话，要的是带口音的实时语音对齐——今年才便宜到可以白送。",
           "counter": "这是一个功能不是一家公司：BIGVU、PromptSmart 已经有语音跟随，手机厂商或剪辑软件补上也就一个版本的事。",
-          "differentiator": "别卖提词器，卖「这条能不能用」：一停止录制就标出你念漏的句子和吃字的那几秒，并给一句留不留的判断。冷启动：中文=小红书「口播 提词器」「录课 卡壳」标签；英文=r/NewTubers 的 I re-record every take 帖。"
+          "differentiator": "别卖提词器，卖「这条能不能用」：一停止录制就标出你念漏的句子和吃字的那几秒，并给一句留不留的判断。冷启动：中文=小红书「口播 提词器」「录课 卡壳」标签；英文=r/NewTubers 的 I re-record every take 帖。",
+          "edge": "一个跟着说话的人走、而不是跟着秒表走的提词器：它一直在听，知道你念到哪一行，你真的念到了它才往下滚。",
+          "why_use": "固定速度的滚动，只要讲话的人一停顿、一临场加话、一被问一句，就全乱了——然后他就在镜头前念错行。",
+          "consumer_angle": "一个人给自己的小生意或者自媒体录视频，身边没有第二个人替他操作提词器。"
         }
       },
       "voices": [],
@@ -3155,7 +3612,9 @@
       "gap": "Every teleprompter on the market either scrolls at a fixed rate or needs a hand on a remote. Following a real speaker in real time needs accented streaming speech alignment, which only became cheap enough to give away this year.",
       "counter": "This is a feature, not a company — BIGVU and PromptSmart already have voice tracking, and a phone maker or an editing suite absorbs it in one release.",
       "differentiator": "Stop selling the prompter and sell 'is this take usable': the moment you stop recording, mark the sentences you dropped and the seconds you swallowed words, and say whether to keep it. Cold start (Chinese): 小红书 「口播 提词器」「录课 卡壳」 tags; (English): the 'I re-record every take' threads in r/NewTubers.",
-      "consumer_angle": "Anyone filming themselves alone with no crew; the deliverable is a take they do not have to shoot again."
+      "consumer_angle": "Anyone filming themselves alone with no crew; the deliverable is a take they do not have to shoot again.",
+      "edge": "A teleprompter that follows the speaker instead of the clock: it listens, tracks which line you are on, and only scrolls when you actually get there.",
+      "why_use": "Fixed-speed scrolling breaks the moment a speaker pauses, ad-libs or answers a question — and then they are reading the wrong line on camera."
     },
     {
       "title": "YouTube Guitar Tab Parser",
@@ -3190,14 +3649,24 @@
           "does": "把一段 YouTube 吉他演奏解析成能跟着弹的谱。",
           "gap": "Ultimate Guitar 是一个「已有的谱」的库，库里没有的就等于没有；而大多数教学视频里那份谱其实就摆在画面和声音里，只是没人把它取出来。",
           "counter": "版权是这条线的死穴：UG 靠社区上传加一套下架流程活着，单个工具两样都没有。而且自动扒谱一旦被听出来是错的，学习者第二天就不再打开。",
-          "differentiator": "只做用户自己找到的那一个视频；交出的谱要把机器不确定的小节显式标出来，让会弹的朋友五分钟改十二处，而不是从零扒。永不托管音频。冷启动：中文=B站吉他翻弹视频下面的「求谱」评论；英文=r/guitarlessons 的 anyone have a tab for this 帖。"
+          "differentiator": "只做用户自己找到的那一个视频；交出的谱要把机器不确定的小节显式标出来，让会弹的朋友五分钟改十二处，而不是从零扒。永不托管音频。冷启动：中文=B站吉他翻弹视频下面的「求谱」评论；英文=r/guitarlessons 的 anyone have a tab for this 帖。",
+          "voices": [
+            {
+              "quote": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?",
+              "zh": "我最喜欢的几首歌都找不到现成的谱，所以想问一下：怎么才能靠耳朵把它弹出来？"
+            }
+          ],
+          "edge": "它把学琴的人已经找到的那个教学视频，变成一份能照着弹的谱。视频是别人免费做好的，缺的一直是那张纸。",
+          "why_use": "初学者真正想弹的那些歌，YouTube 上一般有人教，但写下来的谱一般没有——于是他们只能对着视频暂停、回退一个小时，而不是读两页纸。",
+          "consumer_angle": "一个自学吉他的成年人，心里有一首歌，网上没有谱。他拿到的是这一首歌能打印出来的谱。"
         }
       },
       "voices": [
         {
           "text": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?",
           "source": "r/Guitar — 'Music Theory and Playing By Ear', 27 comments",
-          "url": "https://old.reddit.com/r/Guitar/"
+          "url": "https://old.reddit.com/r/Guitar/",
+          "quote": "Some of my favorite songs don't have readily available tabs and I thought to ask, how does one play by ear?"
         }
       ],
       "verdict": "watch",
@@ -3208,7 +3677,9 @@
       "gap": "Ultimate Guitar is a library of tabs that already exist; if it is not in the library it does not exist. Yet in most lesson videos the tab is right there in the picture and the sound — nobody takes it out.",
       "counter": "Copyright is the fatal line here: Ultimate Guitar survives on community uploads plus a takedown process, and a lone tool has neither. And the moment a learner hears that the auto-transcription is wrong, they never open it again.",
       "differentiator": "Only do the one video the user already found; hand back a tab that explicitly marks the bars the machine is unsure of, so a friend who plays can fix twelve of them in five minutes instead of transcribing from zero. Never host audio. Cold start (Chinese): 「求谱」 comments under B站 guitar covers; (English): the 'anyone have a tab for this' posts in r/guitarlessons.",
-      "consumer_angle": "Someone learning a specific song alone; the deliverable is a tab they can play from tonight."
+      "consumer_angle": "Someone learning a specific song alone; the deliverable is a tab they can play from tonight.",
+      "edge": "It takes the lesson video the learner already found and hands back the tab for it. The source is a video someone made for free; the missing artefact is the paper.",
+      "why_use": "For the songs a beginner actually wants, a YouTube lesson usually exists and a written tab usually does not — so they end up pausing and rewinding a video for an hour instead of reading two pages."
     },
     {
       "title": "MaximeRivest/riddle",
@@ -3246,7 +3717,12 @@
           "value": "给 reMarkable 用户的小众专业插件;很难收多少钱,但是切入 AI 增强纸张 的迷人切口。",
           "risk": "极小的硬件细分(reMarkable)、依赖其平台;更像奇思演示而非可规模化生意。",
           "gap": "在电子墨水上手写、纸面回你话，这个能力是真的、也确实好玩，但它被锁在一小块硬件上。缺口在于：没人把同一个回路做到普通人手上已有的纸本和平板上。",
-          "counter": "只在 reMarkable 上活的插件，命完全握在一家厂商手里，受众体量近似误差项。很好的 demo，不清楚的生意。"
+          "counter": "只在 reMarkable 上活的插件，命完全握在一家厂商手里，受众体量近似误差项。很好的 demo，不清楚的生意。",
+          "does": "把 reMarkable Paper Pro 变成一本会回话的本子：你用笔在纸上写一个问题，答案就用同一种手写体写在下面。",
+          "edge": "答案是以手写字的形式落在纸上，不是聊天气泡。这个物件本身一点没变——它还是那本你用笔写字的本子，而这正是当初有人宁愿买一块墨水屏也不用手机的全部理由。",
+          "why_use": "会在墨水屏上写字的人，图的就是离开 App。而现在所有向 AI 提问的方式，都会把他们拽回一块带着通知的屏幕。",
+          "differentiator": "不要给墨水屏做聊天客户端。只做纸本来就擅长的那一件窄事——给文档写批注，或者把读到的疑问就在页边回掉——除此之外让这块板子保持离线。",
+          "consumer_angle": "一个花了几千块买墨水屏、就为了躲开屏幕的人，偶尔还是想在不掏手机的情况下把一个问题问掉。"
         }
       },
       "voices": [],
@@ -3255,7 +3731,11 @@
       "pain_verified": false,
       "gap": "Handwriting on e-ink that answers back is a real and charming capability, but it is locked to one small piece of hardware. The gap is that nobody has built the same loop on the paper notebooks and tablets ordinary people already own.",
       "counter": "A reMarkable-only add-on lives entirely at the mercy of one vendor's platform, and the audience is a rounding error. Delightful demo, unclear business.",
-      "consumer_angle": "Somebody who journals on paper; the deliverable is a written reply on the page. Real, but the platform is tiny."
+      "consumer_angle": "Somebody who journals on paper; the deliverable is a written reply on the page. Real, but the platform is tiny.",
+      "does": "Turns a reMarkable Paper Pro into a notebook that answers: you write a question in ink on the page, and the reply appears written underneath in the same hand.",
+      "edge": "The reply arrives as handwriting on paper, not as a chat bubble. Nothing about the object changes — it is still a notebook you write in, which is the entire reason people bought an e-ink tablet instead of using their phone.",
+      "why_use": "People who write on e-ink do it precisely to be away from an app. Every existing way to ask an AI a question drags them back to a screen with notifications on it.",
+      "differentiator": "Do not build a chat client for e-ink. Build one narrow thing the paper is already good at — margin notes on a document, or a reading question answered in the margin — and keep the tablet offline except for that."
     }
   ],
   "stats": {

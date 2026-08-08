@@ -40,21 +40,15 @@
       "gap": "Mermaid 一脉画得对但难看；设计工具画得好看但慢。缺口是：在普通人真愿意花的那十秒里，出一张干净、能见人的图，而且中文要和英文一样好（Mermaid 的中日韩排版至今很差）。",
       "counter": "文字转图正在被每一个聊天助手吸收成默认功能，独立工具大概只有一年窗口——除非它拥有一种别人叫得出名字的具体图风。",
       "differentiator": "不要做「什么图都能画」，去占住某一类人的图语言：中学理科老师的学案配图，或者中文场景下 Mermaid 至今排不好的那种排版规整的幻灯配图。冷启动：中文＝小红书「教师备课」「PPT 配图」标签下的求助帖；英文＝r/Teachers 与 r/PowerPoint 的「这张图怎么做」。",
-      "consumer_angle": "强，而且正好落在唯一那条例外上——AI 直接把一件成品交到不会设计的人手里，可以原样放进教案、幻灯或帖子。"
+      "consumer_angle": "强，而且正好落在唯一那条例外上——AI 直接把一件成品交到不会设计的人手里，可以原样放进教案、幻灯或帖子。",
+      "voices": []
     }
   },
   "does": "Type a description in natural language, get back a production-quality SVG and PNG technical diagram — not a whiteboard sketch, a figure you can put in front of an audience.",
   "edge": "The AI-authored 'Dark Luxury' style offers a unique aesthetic that is not available in competing tools.",
   "why_use": "Choose fireworks-tech-graph for its ability to generate geometry-checked diagrams that integrate seamlessly with developer workflows, making it ideal for technical documentation and architecture design.",
   "hook": "The teacher, the analyst, the person writing a public-facing explainer who needs one clear diagram and cannot draw.",
-  "voices": [
-    {
-      "quote": "Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god",
-      "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph/issues/6",
-      "src": "github",
-      "kind": "pain"
-    }
-  ],
+  "voices": [],
   "verdict": "build",
   "workload": "2w",
   "pain_verified": false,

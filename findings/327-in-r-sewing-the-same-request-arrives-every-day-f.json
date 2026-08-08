@@ -22,17 +22,20 @@
     {
       "text": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!",
       "source": "r/sewing — 'Trying to replicate this dress of my grandmother's from the 1950s', Pattern Search",
-      "url": "https://old.reddit.com/r/sewing/"
+      "url": "https://old.reddit.com/r/sewing/",
+      "quote": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!"
     },
     {
       "text": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me",
       "source": "r/sewing — 'Advice appreciated', Pattern Search",
-      "url": "https://old.reddit.com/r/sewing/"
+      "url": "https://old.reddit.com/r/sewing/",
+      "quote": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me"
     },
     {
       "text": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows.",
       "source": "r/sewing — 'Saw a cute dress on pinterest, so I made it', 1,498 points / 24 comments",
-      "url": "https://old.reddit.com/r/sewing/"
+      "url": "https://old.reddit.com/r/sewing/",
+      "quote": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows."
     }
   ],
   "consumer_angle": "A home sewist holding one photograph of a garment nobody sells a pattern for; the deliverable is printable paper they cut fabric with.",
@@ -46,7 +49,22 @@
       "counter": "展平误差直接变成穿不上身，而这批人只原谅一次。垂坠款根本没有诚实的平面解。加上那个免费替代路径——买一份几十块的基础版型自己改——对很多款式其实够用，这直接压住了定价。",
       "differentiator": "窄到能做对为止：只做一个廓形（直筒/A 字连衣裙）、只给一句诚实的判断、并把便宜布试样做成强制步骤而不是可选项。机器猜的地方要标出来而不是藏起来。只做用户自己拥有或自己拍到的衣服，绝不批量复刻当季成衣。冷启动（中文）：小红书与B站「自制衣服」「无版型 裁剪」标签，以及「求同款版型」评论区；冷启动（英文）：r/sewing 的 Pattern Search 分区——那本身就是一条每天有人贴照片求版型的常驻队列。",
       "value": "本来就在买版型和布料的家庭缝纫者。按救回一件付费；带感情的那些（外婆的裙子、伴侣的夹克）付费意愿远高于爱好平均线。",
-      "risk": "合身。一份穿不上的纸样比没有纸样更糟，一次失败就结束关系。"
+      "risk": "合身。一份穿不上的纸样比没有纸样更糟，一次失败就结束关系。",
+      "voices": [
+        {
+          "quote": "I would love to recreate this black and white dress that my grandmother wore... Unfortunately I have no clue on the type of fabric. Also if anyone knows how to describe this type of dress, that would be fun to know too!",
+          "zh": "我特别想复刻我奶奶穿过的这条黑白裙子……可惜我完全不知道是什么料子。要是有人知道这种裙型该怎么描述，也想请教一下。"
+        },
+        {
+          "quote": "I've been wanting to recreate a jacket to honor the memory of my late wife Clare... all i have is this photo. Does anyone have a pointer/resource or two on how i might go about drafting a pattern off of this limited information? It would mean a lot to me",
+          "zh": "我一直想复刻一件夹克，来纪念我已故的妻子 Clare……我手上只有这一张照片。有谁能给我一两个方向，告诉我怎么从照片上打出纸样？"
+        },
+        {
+          "quote": "First photo is my finished dress, second is my inspo. Not an exact recreation but I am SO happy with it... I used a basic bodycon dress pattern, modified the neckline and added the slit, lace, and bows.",
+          "zh": "第一张是我做完的裙子，第二张是我的参考图。不是完全复刻，但我太满意了……我用了一个基础包身裙纸样，改了领口，加了开叉、蕾丝和蝴蝶结。"
+        }
+      ],
+      "consumer_angle": "用的人是手里只有一张照片、想复刻那件衣服的人。他拿到的是一张能打印铺开来裁的纸样，按自己的尺寸。"
     }
   },
   "id": "327-in-r-sewing-the-same-request-arrives-every-day-f",
@@ -56,5 +74,7 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "verdict": "build"
 }

@@ -42,19 +42,13 @@
       "counter": "半衰期很短的新鲜感，且没有护城河：梗会过去，握着终端的那一方会自己发一个，而画廊真正的资产——用户投稿的画——在赚到第一分钱之前就已经引来了 IP 下架请求（issue #651）。桌宠还免费了十五年，为它收费是件没被验证过的事。",
       "differentiator": "拿走流水线，扔掉终端。真正有意思的是：普通人正在成规模地画并投稿像素小生物。产品是「画一只，就得到一个会对你此刻在干什么做出反应的动画桌宠」——放在 Windows 和 macOS 上，桌宠受众本来就在那里。冷启动（中文）：小红书、B站搜「桌宠 自制」，以及 Shimeji 教程下的评论区，挤满做到一半放弃的人；冷启动（英文）：r/Shimeji 与 r/desktops。",
       "why_use": "想让屏幕上住一只小东西的人：桌宠受众是中学生和上班族，不是程序员。他拿到的是一只自己画出来、会动的伙伴。",
-      "edge": "把一张手画角色变成干净的循环精灵图，过去是画师一下午的活。图生精灵把它压成一次上传——这也是一个公开投稿队列能以这个速度被业余画作塞满的唯一原因。"
+      "edge": "把一张手画角色变成干净的循环精灵图，过去是画师一下午的活。图生精灵把它压成一次上传——这也是一个公开投稿队列能以这个速度被业余画作塞满的唯一原因。",
+      "voices": [],
+      "consumer_angle": "用的人是自己画了一只像素小宠物的普通人。他拿到的是这只小家伙真的住在屏幕上，还能被别人看见。"
     }
   },
   "hook": "Cute animated pets for your coding-agent terminal — pure delight, zero moat.",
-  "voices": [
-    {
-      "kind": "demand",
-      "quote": "这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集",
-      "url": "https://github.com/crafter-station/petdex/issues/651",
-      "user": "MisonL",
-      "src": "github-issue"
-    }
-  ],
+  "voices": [],
   "does": "A public gallery of animated sprite pets that live in a coding-agent terminal: 3.7k stars, 167 forks, and a submission queue where people upload their own hand-drawn creatures — including a steady stream of Chinese submissions and one rights-holder asking for a takedown.",
   "gap": "The pets are trapped in a terminal, where only programmers see them. The much older and much larger audience for this — the 桌面宠物 tradition, Shimeji, desktop companions — sits on ordinary desktops and phones and has been served by abandoned 2010-era freeware ever since.",
   "counter": "Novelty with a short half-life and no moat: the joke fades, whoever owns the terminal ships their own, and the gallery's real asset — user-submitted art — is already producing IP takedown requests (issue #651) before it has produced a cent. Desktop pets have also been free for fifteen years; charging for one is an unproven act.",

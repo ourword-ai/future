@@ -18,21 +18,21 @@ Idea is a hand-operated board of things worth building. Every entry starts from 
 
 ## Topics
 
-- [Has verbatim voices](https://ourword.ai/idea/t/has-verbatim-voices/) — 35
+- [Has verbatim voices](https://ourword.ai/idea/t/has-verbatim-voices/) — 29
+- [Worth building](https://ourword.ai/idea/t/worth-building/) — 28
 - [Two months of work](https://ourword.ai/idea/t/two-months-of-work/) — 27
 - [GitHub](https://ourword.ai/idea/t/github/) — 24
 - [Two weeks of work](https://ourword.ai/idea/t/two-weeks-of-work/) — 21
-- [Watching](https://ourword.ai/idea/t/watching/) — 17
+- [Watching](https://ourword.ai/idea/t/watching/) — 18
 - [Reddit](https://ourword.ai/idea/t/reddit/) — 15
-- [Worth building](https://ourword.ai/idea/t/worth-building/) — 12
 - [Product Hunt](https://ourword.ai/idea/t/product-hunt/) — 10
 - [小红书](https://ourword.ai/idea/t/小红书/) — 8
 - [Artificial Intelligence](https://ourword.ai/idea/t/artificial-intelligence/) — 5
 - [Hacker News](https://ourword.ai/idea/t/hacker-news/) — 5
+- [Archived](https://ourword.ai/idea/t/archived/) — 4
 - [consumer](https://ourword.ai/idea/t/consumer/) — 4
 - [show-hn](https://ourword.ai/idea/t/show-hn/) — 4
 - [ai](https://ourword.ai/idea/t/ai/) — 3
-- [Archived](https://ourword.ai/idea/t/archived/) — 3
 - [Productivity](https://ourword.ai/idea/t/productivity/) — 3
 - [xiaohongshu](https://ourword.ai/idea/t/xiaohongshu/) — 3
 

@@ -40,21 +40,15 @@
       "gap": "陪伴类产品干净地分成两半：云端角色（什么都看得见）和死的本地挂件（什么都看不见）。还没有一个既懂你桌上在发生什么、又留在这台机器里。",
       "counter": "桌宠的「情绪」如果不是在对真实发生的事做反应，新鲜感撑不过两周；而「MCP 可扩展」正是悄悄把它变回开发者产品的那一句。",
       "differentiator": "把 MCP 从卖点里拿掉。主张只有一句：它看得见你在自己机器上干什么，且什么都不出这台机器——和用户反复标 ⭐ 的本地隐私主线同一根脊椎（#292 yap、#303 本地记忆、#553 旧手机节点）。冷启动：中文＝小红书/B站「桌宠」「Live2D 桌面」评论区；英文＝r/Shimeji 与 r/desktops。与 #569（手画桌宠）重叠——这条只留「有感知」那一半，不做第二只宠物。",
-      "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。"
+      "consumer_angle": "真实但按现状偏薄：语音唤醒＋纯本地是消费者向的，MCP 可扩展不是。",
+      "voices": []
     }
   },
   "does": "An AI desktop companion with an emotional layer: privacy-first, wake-word voice, sits alongside your work, extensible over MCP.",
   "edge": "Yoji's unique emotional engine simulates real emotions, affecting its responses and behavior, creating a more engaging user experience.",
   "why_use": "Choose Yoji for its unparalleled local data privacy and the ability to create custom agents that adapt to your specific needs without relying on cloud services.",
   "hook": "The person who works alone at home all day and wants something on the desktop that is present, without shipping their screen to a company.",
-  "voices": [
-    {
-      "quote": "…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…",
-      "url": "https://github.com/wangxijie001/yoji/issues/3",
-      "src": "github",
-      "kind": "pain"
-    }
-  ],
+  "voices": [],
   "verdict": "watch",
   "workload": "2m",
   "pain_verified": false,

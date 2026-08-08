@@ -25,7 +25,8 @@
       "quote": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了",
       "url": "https://github.com/pppscn/SmsForwarder/issues/720",
       "user": "coder-liyang",
-      "src": "github-issue"
+      "src": "github-issue",
+      "text": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了"
     }
   ],
   "i18n": {
@@ -40,7 +41,14 @@
       "value": "单店老板的月订阅，定价对标「一个月少丢一个客人」。",
       "risk": "一旦滑向自动化微信号本身，就成了寄生平台——平台会封，这里也会否。",
       "hook": "卷帘门一拉下来，今晚问价的那几个人就都跑到隔壁去了。",
-      "consumer_angle": "用的人是一个人开一家店的老板娘——理发椅、修车位、宠物美容、一张牙椅——微信是她自己回的。她拿到的不是看板，是早上三分钟能清空的一张单子：昨晚打烊后进来的咨询，按「谁最可能今天就上门」排好，每条下面已经写好一句她自己点发送就行的话。"
+      "consumer_angle": "用的人是一个人开一家店的老板娘——理发椅、修车位、宠物美容、一张牙椅——微信是她自己回的。她拿到的不是看板，是早上三分钟能清空的一张单子：昨晚打烊后进来的咨询，按「谁最可能今天就上门」排好，每条下面已经写好一句她自己点发送就行的话。",
+      "voices": [
+        {
+          "quote": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了",
+          "zh": "现在QQ和微信都原生支持机器人了,支持一下吧,这样方便很多,不需要为了通知专门装一个企业微信了"
+        }
+      ],
+      "edge": "它把一家单人小店最贵的那种失败——两只手都占着的时候电话响了——变成一个已经排好的预约，而且不用多养一个人。"
     }
   },
   "id": "312-an-ai-receptionist-that-answers-a-solo-business-",
@@ -52,5 +60,6 @@
   "first": false,
   "tags": [],
   "consumer_angle": "One person who owns one shop and answers her own WeChat — a hair-salon chair, a car-repair bay, a pet groomer, a single dental chair. What she gets is not a dashboard: it is a three-minute morning list of the enquiries that arrived after she pulled the shutter down, ranked by who is most likely to come in today, each with one sentence already drafted that she can send herself.",
-  "verdict": "build"
+  "verdict": "build",
+  "pain_verified": true
 }

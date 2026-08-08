@@ -29,21 +29,16 @@
       "quote": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。",
       "url": "https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb",
       "user": "小红书评论区",
-      "src": "xiaohongshu"
+      "src": "xiaohongshu",
+      "text": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。"
     },
     {
       "kind": "pain",
       "quote": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.",
       "url": "https://old.reddit.com/r/cookingforbeginners/",
       "user": "thinkstohimself",
-      "src": "reddit"
-    },
-    {
-      "kind": "demand",
-      "quote": "哈哈哈，很实用的功能，我研究一下",
-      "url": "https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb",
-      "user": "忆诉检APP（作者，九年工龄开发者）",
-      "src": "xiaohongshu"
+      "src": "reddit",
+      "text": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format."
     }
   ],
   "pain_verified": true,
@@ -58,7 +53,18 @@
       "value": "正在学做饭的人，或者要给孩子做特定饮食的人——买断或小额订阅，对标「少毁一顿饭」。",
       "risk": "最需要它的人会毕业；留存就是全部生意，而这个形状目前对留存没有答案。",
       "why_use": "失败点很具体，而且在两种语言里重复出现：手是脏的、屏幕会锁、时间信息藏在句子里，于是人开始自由发挥，然后毁掉这道菜。",
-      "edge": "菜谱是按参考资料写的，却是被当作现场指令用的。没有人修过这个错配，只是加了更多图。"
+      "edge": "菜谱是按参考资料写的，却是被当作现场指令用的。没有人修过这个错配，只是加了更多图。",
+      "voices": [
+        {
+          "quote": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。",
+          "zh": "我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。"
+        },
+        {
+          "quote": "I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.",
+          "zh": "菜谱永远是密密麻麻一大段文字，我一直很吃力，一直希望有个 App 能把它变成看得见的步骤。"
+        }
+      ],
+      "consumer_angle": "用的人是站在灶前、两只手都是油的人。他拿到的是一句一句念给他听的步骤，和一个替他盯着火的计时器。"
     }
   },
   "tags": [
@@ -73,5 +79,6 @@
   "novelty": 0.79,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "build"
 }

@@ -22,15 +22,7 @@
   "risk": "There is no verified first-hand complaint here yet, only behaviour: people submitting art. If the desktop-pet audience turns out to be nostalgic rather than paying, the whole thing is a charming zero.",
   "workload": "2w",
   "consumer_angle": "Non-developer user: a parent, or the Shimeji audience that has been on abandonware for a decade. Finished thing: their own drawing, animated, living on their desktop and exportable as stickers.",
-  "voices": [
-    {
-      "kind": "behaviour",
-      "quote": "这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集",
-      "url": "https://github.com/crafter-station/petdex/issues/651",
-      "user": "MisonL",
-      "src": "github-issue"
-    }
-  ],
+  "voices": [],
   "pain_verified": false,
   "i18n": {
     "zh": {
@@ -43,7 +35,9 @@
       "value": "一个家长，或者任何想让屏幕上有个伴的人——按只买断，定价像买一张画，不是订阅。",
       "risk": "这里还没有一条经过验证的一手抱怨，只有行为：人们在投稿。如果桌宠受众只是怀旧而不掏钱，整件事就是一个可爱的零。",
       "why_use": "桌面伴侣这一脉（Shimeji、桌宠）靠着一批停止维护的免费软件，养住了十年的非技术受众。没人做过一个现代的，而现在，孩子的一张画就能变成那只精灵。",
-      "edge": "「画 → 会动的伴儿」这条流水线，已经被一群陌生人免费替你验证过了——缺的只是它该住进去的那扇窗。"
+      "edge": "「画 → 会动的伴儿」这条流水线，已经被一群陌生人免费替你验证过了——缺的只是它该住进去的那扇窗。",
+      "voices": [],
+      "consumer_angle": "用的人是画了一只小怪兽的普通人。他拿到的是这只小怪兽住在自己屏幕上，而不是只能住在终端里。"
     }
   },
   "tags": [
@@ -58,5 +52,6 @@
   "novelty": 0.87,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "watch"
 }

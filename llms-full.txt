@@ -10,7 +10,7 @@ URL: https://ourword.ai/idea/i/328-on-xiaohongshu-slowed-down-dance-tutorials-ar
 URL (中文): https://ourword.ai/idea/zh/i/328-on-xiaohongshu-slowed-down-dance-tutorials-are-a/
 Source: https://www.xiaohongshu.com/explore/69fc99d50000000038034a67
 Updated: 2026-08-08
-Tags: 小红书, Two months of work, Has verbatim voices
+Tags: 小红书, Worth building, Two months of work, Has verbatim voices
 
 On Xiaohongshu, slowed-down dance tutorials are a whole content category — 6,909 likes, 4,667, 2,979, 2,727 — and every single one exists only because a teacher was willing to re-dance that song by hand. The commenters say exactly why: at that speed, they believe they can learn it. There is a Chinese word for the labour behind this (扒舞) and one of the platform's own search suggestions is 扒舞好累啊 — 'reverse-engineering choreography is exhausting'.
 
@@ -56,6 +56,9 @@ https://www.xiaohongshu.com/search_result?keyword=%E6%B1%82%E5%88%86%E8%A7%A3%20
 ### Q：这条到底是什么？
 丢进一条你自己找到的舞蹈视频，30 秒后拿到能真正跟着练的那个版本：按音乐切成八拍、每段 0.5 倍速、每一拍一句人话口令（「左手抬到胸口、右脚前点」），外加一份可打印的动作清单。第二版打开摄像头，告诉你第几个八拍跳错了。
 
+### Q：谁在用？他拿到什么成品？
+用的人是刷到一支舞、想学但跟不上的人。他拿到的是同一支舞按八拍切好、放慢、每一拍一句人话口令的版本。
+
 ### Q：他为什么非要用不可？
 因为一个普通人学不学得会一支舞，是被速度和分段决定的；而今天这两样存不存在，完全取决于有没有哪位老师刚好为这支歌手工做过慢速版。没有，你就停在那儿。
 
@@ -93,7 +96,7 @@ URL: https://ourword.ai/idea/i/329-five-unrelated-r-askvet-threads-in-twelve-mon
 URL (中文): https://ourword.ai/idea/zh/i/329-five-unrelated-r-askvet-threads-in-twelve-months/
 Source: https://old.reddit.com/r/AskVet/
 Updated: 2026-08-08
-Tags: Reddit, 小红书, Two months of work, Has verbatim voices
+Tags: Reddit, 小红书, Worth building, Two months of work, Has verbatim voices
 
 Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese owners do it too, with a photo. Human lab-report readers are crowded; the pet side has never been built.
 
@@ -179,7 +182,7 @@ URL: https://ourword.ai/idea/i/326-a-man-spent-six-and-a-half-months-hand-revers
 URL (中文): https://ourword.ai/idea/zh/i/326-a-man-spent-six-and-a-half-months-hand-reverse-e/
 Source: https://old.reddit.com/r/knitting/
 Updated: 2026-08-07
-Tags: Reddit, 小红书, Two months of work, Has verbatim voices
+Tags: Reddit, 小红书, Worth building, Two months of work, Has verbatim voices
 
 A man spent six and a half months hand-reverse-engineering his grandfather's Aran jumper into a pattern he could wear, and 2,499 people upvoted it. Cross-stitch has had photo-to-chart tools for twenty years; knitting and crochet never got one, because the job there is not pixels — it is stitch structure.
 
@@ -225,6 +228,9 @@ https://old.reddit.com/r/knitting/ https://old.reddit.com/r/crochet/ https://www
 ### Q：这条到底是什么？
 对着一块 10cm 见方的针织或钩织面料拍一张，直接得到针法本身：一张符号图解，加一句「这是 X 针，Y 行一个循环」，机器不确定的格子标黄而不是猜。
 
+### Q：谁在用？他拿到什么成品？
+用的人是手里有一件旧毛衣、想再织一件的人。他拿到的是一份能照着织的图解，而不是六个半月的反复拆改。
+
 ### Q：他为什么非要用不可？
 因为人手里真正有的是一件东西，不是一份图解：爷爷那件穿不下的毛衣、姑妈三十年前那条快烂了的毯子、屏幕上那件从来没配过教程的针织衫。今天只有两条路——自己试错半年，或者拍张照发到评论区等陌生人。
 
@@ -262,7 +268,7 @@ URL: https://ourword.ai/idea/i/327-in-r-sewing-the-same-request-arrives-every-da
 URL (中文): https://ourword.ai/idea/zh/i/327-in-r-sewing-the-same-request-arrives-every-day-f/
 Source: https://old.reddit.com/r/sewing/
 Updated: 2026-08-07
-Tags: Reddit, Two months of work, Has verbatim voices
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
 
 In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph. Pattern shops sell patterns that already exist; drafting software assumes you can already draft. Nothing turns a garment in a picture into paper you can print and cut.
 
@@ -308,6 +314,9 @@ r/sewing 里同一个请求每天换一副身份出现：外婆 1950 年代那�
 ### Q：这条到底是什么？
 正背两张照片加三个尺寸，返回一份按你身材出的 A4 分页可打印纸样，外加一句老实话：它是从哪个基础版型起的，哪些地方是猜的。
 
+### Q：谁在用？他拿到什么成品？
+用的人是手里只有一张照片、想复刻那件衣服的人。他拿到的是一张能打印铺开来裁的纸样，按自己的尺寸。
+
 ### Q：他为什么非要用不可？
 因为人想要的那件衣服几乎从来买不到版型：它是继承来的、是停产的、是走秀上的、是一个已经过世的人穿过的。现在的答案是买一份粗糙的基础版型，凭眼睛改，然后祈祷。
 
@@ -345,12 +354,15 @@ URL: https://ourword.ai/idea/i/322-seven-unrelated-r-singing-threads-in-twelve-m
 URL (中文): https://ourword.ai/idea/zh/i/322-seven-unrelated-r-singing-threads-in-twelve-mont/
 Source: https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year
 Updated: 2026-08-06
-Tags: Reddit, Two months of work, Has verbatim voices
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
 
 Seven unrelated r/singing threads in twelve months ask the same question — how do you learn a harmony line when there is no teacher — and every answer is 'practise more'. The askers are a mother of four, a community-theatre director and a band's backing singer, and they describe the identical failure in the same words: they drift back onto the melody.
 
 ### What is the idea?
 Pick the song you actually want to sing. Get your own harmony line back as an isolated guide track you can loop — and a practice mirror that marks the exact seconds where your voice collapses back onto the melody.
+
+### Who would use it, and what do they get?
+Someone who has been trying to find the harmony line by ear for a year. What they get is that line, sung alone, and a nudge the moment they slide back onto the melody.
 
 ### Why would anyone bother?
 The people asking are not musicians shopping for a tool. They are a mum whose four kids harmonise at home and get stuck the moment they leave choir, a theatre director whose alto cannot hold her part, a drummer whose band needs him on backing vocals. What they walk away with is their line — hearable on its own, and correctable.
@@ -387,6 +399,9 @@ https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wi
 
 ### Q：这条到底是什么？
 选你真正想唱的那首歌。拿回属于你的那条声部——一条可以单曲循环的引导音轨，外加一面练习镜子，把你嗓子塌回主旋律的那几秒标出来。
+
+### Q：谁在用？他拿到什么成品？
+一个已经用耳朵找了一年和声的人。他拿到的是那条声部单独唱给他听，以及在他滑回主旋律的那一秒被拦一下。
 
 ### Q：他为什么非要用不可？
 提问的人不是在挑工具的音乐人。是四个孩子在家想合唱、一离开合唱团就卡住的妈妈；是手下女中音守不住声部的剧团导演；是乐队需要他唱和声的鼓手。他拿到的是自己的那条线——单独听得见，也改得动。
@@ -425,12 +440,15 @@ URL: https://ourword.ai/idea/i/323-five-separate-r-singing-threads-in-a-year-ask
 URL (中文): https://ourword.ai/idea/zh/i/323-five-separate-r-singing-threads-in-a-year-ask-fo/
 Source: https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year
 Updated: 2026-08-06
-Tags: Reddit, Two weeks of work, Has verbatim voices
+Tags: Reddit, Worth building, Two weeks of work, Has verbatim voices
 
 Five separate r/singing threads in a year ask for the same missing tool — show me in real time how far off the note I am, against the actual song — and two of the askers are parents of ten-year-olds. One states the puzzle outright: it looks like there should be dozens of these, and they cannot find one good one.
 
 ### What is the idea?
 Sing along to the song you are actually learning and watch your own pitch line against the original vocal's, live — with the flat and sharp stretches marked so you know which bar to go back to.
+
+### Who would use it, and what do they get?
+Someone who cannot hear how far off the note they are. What they get is that distance, on screen, while they are still singing.
 
 ### Why would anyone bother?
 A 59-year-old drummer who wants to sing lead on a few songs. A 10-year-old in a musical-theatre troupe whose parent can no longer afford private lessons. A high-school chorister who is scared to audition. What they walk away with is a picture of the bar they keep missing.
@@ -467,6 +485,9 @@ https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/s
 
 ### Q：这条到底是什么？
 跟着你正在学的那首歌唱，实时看自己的音高曲线压在原唱那条上——偏低偏高的那几段被标出来，你知道该回去重练哪一小节。
+
+### Q：谁在用？他拿到什么成品？
+一个听不出自己离那个音差多少的人。他拿到的是这个距离，在他还在唱的时候就显示在屏幕上。
 
 ### Q：他为什么非要用不可？
 一个 59 岁、想在几首歌里唱主音的鼓手。一个在音乐剧团、家里已经付不起私教课的十岁孩子。一个不敢去合唱团面试的高中生。他拿到的是一张图：那一小节，他每次都唱不准。
@@ -505,12 +526,15 @@ URL: https://ourword.ai/idea/i/324-a-cardiac-surgeon-s-30-second-explainer-on-fo
 URL (中文): https://ourword.ai/idea/zh/i/324-a-cardiac-surgeon-s-30-second-explainer-on-four/
 Source: https://www.xiaohongshu.com/explore/6a685e3700000000050393a7
 Updated: 2026-08-06
-Tags: 小红书, Two weeks of work, Has verbatim voices
+Tags: 小红书, Worth building, Two weeks of work, Has verbatim voices
 
 A cardiac surgeon's 30-second explainer on four blood-test numbers has 16k likes, 35k saves and 194 comments on Xiaohongshu — and the comments are not thanks. They are ordinary people pasting their own values and asking a stranger to read them. Under the same query what ranks is a how-to for getting an LLM to read your report, not a product.
 
 ### What is the idea?
 Photograph your check-up report. Get back one thing — this week's grocery list, plus a swap-one-item-a-day table — instead of another explanation of what LDL means.
+
+### Who would use it, and what do they get?
+Someone holding a check-up report with three numbers in red. What they get is this week's shopping list and the one thing to swap out each day.
 
 ### Why would anyone bother?
 A person holding a printout with three numbers in red, who does not have a doctor to ask and will not book an appointment over a borderline lipid panel. What they walk away with is a shopping list they can use tonight — not a paragraph of explanation they will close and forget.
@@ -547,6 +571,9 @@ https://www.xiaohongshu.com/explore/6a685e3700000000050393a7 https://www.xiaohon
 
 ### Q：这条到底是什么？
 把体检报告拍下来。只拿回一样东西——这周的买菜清单，加一张「每天只换掉一样」的替换表——而不是又一段解释低密度脂蛋白是什么。
+
+### Q：谁在用？他拿到什么成品？
+一个手里拿着体检报告、上面三个数字飘红的人。他拿到的是这周的一张买菜清单，和每天替掉的那一样东西。
 
 ### Q：他为什么非要用不可？
 一个手里拿着三处飘红的单子、身边没有医生可问、也不会为一个临界血脂去挂号的人。他拿到的是今晚就能用的一张购物清单，而不是一段看完就关掉的解释。
@@ -585,12 +612,15 @@ URL: https://ourword.ai/idea/i/325-four-r-languagelearning-threads-in-a-year-ask
 URL (中文): https://ourword.ai/idea/zh/i/325-four-r-languagelearning-threads-in-a-year-ask-fo/
 Source: https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year
 Updated: 2026-08-06
-Tags: Reddit, Two weeks of work, Has verbatim voices
+Tags: Reddit, Worth building, Two weeks of work, Has verbatim voices
 
 Four r/languagelearning threads in a year ask for the same thing in different words: let me keep my own word list and generate sentences that use only words I already know. One says outright they would pay 'any price'. In the same window Rosetta Stone withdrew its lifetime licence and the top thread is someone saying they cannot afford four subscriptions.
 
 ### What is the idea?
 Keep the words you personally collected — from a novel, a Wikipedia page, a conversation — and get back sentences, short readings and quizzes built only from words you already have, so nothing you read contains a word you cannot decode.
+
+### Who would use it, and what do they get?
+A learner with their own list of words nobody else's course covers. What they get is sentences built from that list, not from a syllabus.
 
 ### Why would anyone bother?
 Someone learning Turkish from novels, someone who reads Wikipedia in their target language, a person who says their vocabulary would jump if only they could keep it in one place. What they get back is reading material at exactly their level, which is the thing every learner is told to find and nobody can.
@@ -627,6 +657,9 @@ https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/s
 
 ### Q：这条到底是什么？
 留住你自己攒的词——从一本小说、一个维基页面、一次聊天里捡来的——然后拿回只用这些词写成的句子、短文和小测，你读到的东西里不会出现一个你解不出来的词。
+
+### Q：谁在用？他拿到什么成品？
+一个手上有自己那份生词表、而任何课程都不覆盖它的学习者。他拿到的是用他这份表造出来的句子，而不是课程大纲里的句子。
 
 ### Q：他为什么非要用不可？
 一个从小说里学土耳其语的人，一个用目标语读维基的人，一个说「只要能把词攒在一个地方，我的词汇量会立刻涨一大截」的人。他拿到的是恰好在自己水平上的阅读材料——所有人都被告知要去找、又谁都找不到的那样东西。
@@ -665,12 +698,15 @@ URL: https://ourword.ai/idea/i/317-both-language-sides-asked-for-the-same-pantry
 URL (中文): https://ourword.ai/idea/zh/i/317-both-language-sides-asked-for-the-same-pantry-ap/
 Source: https://www.xiaohongshu.com/explore/665351440000000015011534
 Updated: 2026-08-05
-Tags: Reddit, 小红书, Two weeks of work, Has verbatim voices
+Tags: Reddit, 小红书, Worth building, Two weeks of work, Has verbatim voices
 
 Both language sides asked for the same pantry app on the same day — and neither was asking for the reminder. They were refusing the data entry that comes before it.
 
 ### What is the idea?
 Point a phone at a cupboard shelf, a spice drawer or the family medicine box; a multimodal model reads a dozen products and their printed dates in one shot and lays them out as one dated list — what has to be eaten or used this week.
+
+### Who would use it, and what do they get?
+Someone who throws food out every week and has already refused to type an inventory. What they get is one photo of the shelf and a list of what to eat first — no data entry.
 
 ### Why would anyone bother?
 People who stock up — special diets, bulk buyers, anyone with a medicine box nobody has opened in two years — currently pay for this in thrown-out food and in the small guilt of finding a bottle six months past date. They have already tried the apps.
@@ -707,6 +743,9 @@ https://www.xiaohongshu.com/explore/665351440000000015011534 https://old.reddit.
 
 ### Q：这条到底是什么？
 对着橱柜、调料格或家里那个药箱拍一张，多模态模型一次读出十几样东西的名字和印在包装上的日期，直接排成一张带日期的表：这周得吃掉／用掉什么。
+
+### Q：谁在用？他拿到什么成品？
+一个每周都在扔东西、而且已经明确拒绝手动录入的人。他要做的只是拍一下货架，拿回一张「先吃哪几样」的清单——一个字都不用输。
 
 ### Q：他为什么非要用不可？
 囤货的人——特殊饮食、大量采购、家里有个两年没打开过的药箱的人——现在是用扔掉的食物和「翻出一瓶过期半年的东西」那点愧疚在付这笔账。而且他们已经试过那些 App 了。
@@ -745,12 +784,15 @@ URL: https://ourword.ai/idea/i/318-a-non-native-speaker-who-works-in-english-eve
 URL (中文): https://ourword.ai/idea/zh/i/318-a-non-native-speaker-who-works-in-english-every/
 Source: https://old.reddit.com/r/languagelearning/
 Updated: 2026-08-05
-Tags: Reddit, Two weeks of work, Has verbatim voices
+Tags: Reddit, Worth building, Two weeks of work, Has verbatim voices
 
 A non-native speaker who works in English every day wrote the spec himself four years ago — 'like Grammarly but for voice' — and the category still splits into scoring apps and chat partners, with nobody occupying the sentence he actually said.
 
 ### What is the idea?
 You record yourself for a minute — the standup you are about to give, the answer you keep fumbling in interviews — and get back three things: the grammar you got wrong, the collocations that read as non-native, and how someone would actually say it. A week of those becomes your own error card.
+
+### Who would use it, and what do they get?
+Someone who works in English all day and still hears themselves make the same three mistakes. What they get is those three, named, with the fix.
 
 ### Why would anyone bother?
 The writer's own framing: Grammarly made his writing improve fast because it showed him the mistake, not just the fix. Nothing does that for speech, so he repeats the same errors indefinitely — and he speaks English at work every day.
@@ -787,6 +829,9 @@ https://old.reddit.com/r/languagelearning/search?q=%22Why+is+there+no+AI+program
 
 ### Q：这条到底是什么？
 你自己按一下录六十秒——今天要讲的工作汇报、面试里总说不顺的那段自述——拿回三样东西：说错的语法、不地道的搭配、母语者会怎么说。攒一周就是你自己的高频错题卡。
+
+### Q：谁在用？他拿到什么成品？
+一个整天用英语工作、却总听见自己犯同样三个错的人。他拿到的就是这三个错，被点出名字，并附上怎么改。
 
 ### Q：他为什么非要用不可？
 原帖作者自己的说法：Grammarly 让他的写作进步很快，是因为它让他看见错误本身，而不只是给个改好的版本。说话这一侧没有任何东西这么做，于是他无限期地重复同样的错——而他每天都在用英语工作。
@@ -825,12 +870,15 @@ URL: https://ourword.ai/idea/i/319-a-woman-with-dementia-might-still-recognise-t
 URL (中文): https://ourword.ai/idea/zh/i/319-a-woman-with-dementia-might-still-recognise-the/
 Source: https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathers_music/
 Updated: 2026-08-05
-Tags: Reddit, Two months of work, Has verbatim voices
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
 
 A woman with dementia might still recognise the tune her father wrote. Her great-grandchild has photos of the handwritten score, cannot read music, and reports the scanning apps simply fail on it — 936 points and 108 comments later, the thing that worked was a stranger spending two hours by hand.
 
 ### What is the idea?
 Photograph the pages of an old, creased, handwritten or badly printed score; get back the piece as something you can press play on — plus a clean readable copy if you want one.
+
+### Who would use it, and what do they get?
+An adult child holding a photo of a creased, handwritten score nobody in the family can play. What they get is an audio file of that tune.
 
 ### Why would anyone bother?
 The people holding these pages are not musicians. They are descendants with a folder of paper and no way to hear what is on it, usually while someone who would recognise it is still alive. The window closes.
@@ -868,11 +916,17 @@ https://old.reddit.com/r/piano/comments/1v0tdqs/help_grandma_listen_to_her_fathe
 ### Q：这条到底是什么？
 把那几页发皱的、手写的、印得很糟的旧谱拍下来，拿回一个能按播放的东西；想要的话再给你一份干净可读的谱。
 
+### Q：谁在用？他拿到什么成品？
+一个成年子女，手里是一张皱了的手写谱的照片，全家没人弹得出来。他拿到的是这首曲子的一段录音。
+
 ### Q：他为什么非要用不可？
 手上攥着这几页纸的人不是乐手，是后代——有一叠纸，没有任何办法听见上面是什么，而且通常是趁着某个还认得这首曲子的人在世。窗口会关。
 
 ### Q：今天缺的到底是什么？
 现有工具全部止步于 PDF 或 MusicXML——那是只有懂音乐的人才用得了的产物。帖子里一位职业乐手不得不专门告诉发帖人：你真正要的是导出音频，不是你开口要的那份 PDF。没有人做过「直接给不识谱的人出声音」的那个版本。
+
+### Q：这一刀切在哪里？
+不要追求完整制谱。只盯一件事——让这首曲子响起来——并且接受那些扫描认不出的音由人工顺一遍。
 
 ### Q：它最锋利的地方在哪？
 乐谱识别存在二十年了，在干净印刷谱上一直能用。而**发皱、有污渍、手工刻写**的那种页面——也就是从家里传下来的谱子实际长的样子——是多模态模型出现后才勉强可读的部分，发帖人撞的正是这堵墙。
@@ -902,12 +956,15 @@ URL: https://ourword.ai/idea/i/320-about-80-of-women-pianists-have-hands-smaller
 URL (中文): https://ourword.ai/idea/zh/i/320-about-80-of-women-pianists-have-hands-smaller-th/
 Source: https://old.reddit.com/r/piano/
 Updated: 2026-08-05
-Tags: Reddit, Two months of work, Has verbatim voices
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
 
 About 80% of women pianists have hands smaller than the keyboard was designed for. The subreddit's answer, at 502 points, is a campaign to get Yamaha to build narrower pianos. Nobody has pointed out that the score is the cheap thing to change, not the instrument.
 
 ### What is the idea?
 Give it a piece and your actual hand span; it hands back a version arranged for your hands — chords respaced, unreachable stretches redistributed between the hands or voiced down — with the melody and harmony intact.
+
+### Who would use it, and what do they get?
+An adult piano learner with small hands who has already hurt a finger reaching. What they get is that same piece, rewritten for the hand they have.
 
 ### Why would anyone bother?
 The people affected are adult learners who are being told, in effect, to get bigger hands. The thread is full of them describing injuries from playing repertoire that does not fit — one poster gave themselves tendinopathy in a graded exam piece.
@@ -945,11 +1002,17 @@ https://old.reddit.com/r/piano/search?q=%22Why+is+there+no+push+for+major+compan
 ### Q：这条到底是什么？
 给它一份谱和你真实的手跨度，它给回一份**照你的手改编过的版本**——和弦重新排布、够不着的音在两手之间重新分配或换个位置——旋律与和声不动。
 
+### Q：谁在用？他拿到什么成品？
+一个手小的成年钢琴学习者，已经因为硬撑着伸手弄伤过手指。他拿到的是同一首曲子，按他自己这双手重写过的版本。
+
 ### Q：他为什么非要用不可？
 受影响的是成年学习者，而他们得到的建议实际上等于「你去长一双大手」。帖子里全是因为弹了不合手的曲目而受伤的人，其中一位在考级曲目上把左手小指弹出了肌腱病。
 
 ### Q：今天缺的到底是什么？
 这个圈子自己提的解法是一台四五千美元的窄键琴，几乎没人会买；而通行建议是「把和弦琶开」——每个琴者各自重新发明一遍的临时凑合。谱恰恰是那个改起来最不费劲、却没人去改的东西。
+
+### Q：这一刀切在哪里？
+改谱，不是改琴。那个圈子自己给出的答案是联署请雅马哈造窄键钢琴——没有人想到要动的是那张纸。
 
 ### Q：它最锋利的地方在哪？
 在不毁掉音乐的前提下重新排布，是在结构化记谱上做符号处理——恰好是现在的模型刚变得称职的那件事。此前这是一份逐曲手工编辑的技术活，所以没人会为业余爱好者做。
@@ -979,12 +1042,15 @@ URL: https://ourword.ai/idea/i/321-guitar-and-ukulele-players-have-had-free-comm
 URL (中文): https://ourword.ai/idea/zh/i/321-guitar-and-ukulele-players-have-had-free-communi/
 Source: https://old.reddit.com/r/singing/
 Updated: 2026-08-05
-Tags: Reddit, Two months of work, Has verbatim voices
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
 
 Guitar and ukulele players have had free, community-made tabs for two decades. Singers — the largest group of amateur musicians there is — still hit a paywall at roughly five dollars a song, and two separate r/singing posts ask why with no answer.
 
 ### What is the idea?
 Point it at a recording; it separates the lead vocal, tracks the melody, and lays the notes out against the lyrics — the vocal equivalent of a guitar tab, not a full engraved score.
+
+### Who would use it, and what do they get?
+Someone who sings and cannot read music, looking at the same song a guitarist can get for free. What they get is the vocal line, written down.
 
 ### Why would anyone bother?
 The people asking are beginners who correctly worked out that seeing the notes would fix their pitch, then found the material for their instrument is the one kind that costs money.
@@ -1021,6 +1087,9 @@ https://old.reddit.com/r/singing/search?q=%22Why+are+there+free+chords%22&restri
 
 ### Q：这条到底是什么？
 把一首录音丢进去，它分离出主唱、跟踪旋律，把音高对着歌词排出来——是唱歌版的吉他谱，不是一份完整的刻印乐谱。
+
+### Q：谁在用？他拿到什么成品？
+一个会唱歌但不识谱的人，看着同一首歌吉他手能免费拿到谱。他拿到的是自己那条人声旋律，写下来的。
 
 ### Q：他为什么非要用不可？
 在问的人是初学者，他们自己想明白了「看见音高能治音准」，然后发现偏偏自己这门乐器的材料是要花钱的那种。
@@ -1059,7 +1128,7 @@ URL: https://ourword.ai/idea/i/313-under-a-xiaohongshu-thread-asking-which-app-n
 URL (中文): https://ourword.ai/idea/zh/i/313-under-a-xiaohongshu-thread-asking-which-app-nobo/
 Source: https://www.xiaohongshu.com/explore/69781bb7000000000903ae66
 Updated: 2026-08-04
-Tags: 小红书, Two weeks of work, Has verbatim voices, xiaohongshu, health, consumer, radar-568
+Tags: 小红书, Worth building, Two weeks of work, Has verbatim voices, xiaohongshu, health, consumer, radar-568
 
 Under a Xiaohongshu thread asking which app nobody has built (761 likes, 1,130 saves, 214 comments), the most specific repeated request is not calorie counting — it is food logging read against your own medical check-up report, and commenters say the existing apps cover too little and nobody has the standing to build it.
 
@@ -1091,7 +1160,7 @@ Someone who just got a report with red lines on it — the highest-intent moment
 The self-imposed ceiling (translate and compare, never advise) is also the reason it may feel too thin to pay for.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。” — xiaohongshu “有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的” — xiaohongshu “非ai的薄荷其实大模型应该直接可以，还有一个火了的caloris” — xiaohongshu
+Verbatim from the public sources linked above, not paraphrased: “要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。” — xiaohongshu “有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的” — xiaohongshu
 
 ### How much work is it?
 about two weeks of work
@@ -1104,6 +1173,9 @@ https://www.xiaohongshu.com/explore/69781bb7000000000903ae66 https://www.xiaohon
 
 ### Q：这条到底是什么？
 目前还什么都没有——这是那个洞的形状。人们要的是：手机对着配料表拍一下，得到一句知道自己血脂什么样的判断。不是饮食日记，是「买 / 别买 / 换这个」，依据是他已经花钱做过的那份报告。
+
+### Q：谁在用？他拿到什么成品？
+用的人是那条 761 赞帖子底下留言的普通人。他拿到的是自己那条需求被整理成一句能判断的话：这东西到底已经有了，还是真没人做。
 
 ### Q：他为什么非要用不可？
 报告写「甘油三酯偏高」，货架写「植物油、麦芽糖浆、每100克含糖12克」。没人在这两句话之间做翻译，于是报告什么也没改变。
@@ -1127,7 +1199,7 @@ https://www.xiaohongshu.com/explore/69781bb7000000000903ae66 https://www.xiaohon
 那条自己划下的天花板（只翻译只比对、绝不建议），同时也是它可能薄到没人愿意付钱的原因。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。” — xiaohongshu “有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的” — xiaohongshu “非ai的薄荷其实大模型应该直接可以，还有一个火了的caloris” — xiaohongshu
+以下原声逐字摘自公开来源，未经改写： “要输入自己吃的食物、习惯分析缺许多维生素、各类营养物质和热量的，还可以接入体检报告，fit那个功能太有限了。这种软件需要专业的医院和医生以及大量数据来做，可惜没人做。” — xiaohongshu “有没有可以拍照食品营养成分表，自动文字识别录入信息，进行汇总和比对的” — xiaohongshu
 
 ### Q：要做多久？
 两周左右的工作量
@@ -1142,7 +1214,7 @@ URL: https://ourword.ai/idea/i/314-petdex-has-3-686-stars-and-a-live-submission-
 URL (中文): https://ourword.ai/idea/zh/i/314-petdex-has-3-686-stars-and-a-live-submission-que/
 Source: https://github.com/crafter-station/petdex
 Updated: 2026-08-04
-Tags: GitHub, Two weeks of work, Has verbatim voices, github, consumer, desktop-pet, radar-569
+Tags: GitHub, Watching, Two weeks of work, github, consumer, desktop-pet, radar-569
 
 petdex has 3,686 stars and a live submission queue of hand-drawn sprite pets — including a steady stream of Chinese submissions and an IP-holder takedown request — but every one of those pets can only be seen inside a coding-agent terminal. The 桌宠 audience it borrows from has had nothing new since Shimeji.
 
@@ -1173,9 +1245,6 @@ A parent, or anyone who wants company on the screen — a one-off purchase per c
 ### What is the main risk?
 There is no verified first-hand complaint here yet, only behaviour: people submitting art. If the desktop-pet audience turns out to be nostalgic rather than paying, the whole thing is a charming zero.
 
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集” — github-issue
-
 ### How much work is it?
 about two weeks of work
 
@@ -1187,6 +1256,9 @@ petdex 3686 星，还有一个活着的投稿队列，里面全是手画的像�
 
 ### Q：这条到底是什么？
 petdex 是给 Codex / Claude Code / OpenCode / Gemini CLI 用的公开动画像素宠物画廊：传一张精灵表，它就变成住在开发者终端里的一只小生物。投稿流水线、审核队列、版权纠纷，全都是真的在跑的。
+
+### Q：谁在用？他拿到什么成品？
+用的人是画了一只小怪兽的普通人。他拿到的是这只小怪兽住在自己屏幕上，而不是只能住在终端里。
 
 ### Q：他为什么非要用不可？
 桌面伴侣这一脉（Shimeji、桌宠）靠着一批停止维护的免费软件，养住了十年的非技术受众。没人做过一个现代的，而现在，孩子的一张画就能变成那只精灵。
@@ -1209,9 +1281,6 @@ petdex 是给 Codex / Claude Code / OpenCode / Gemini CLI 用的公开动画像�
 ### Q：最大的风险是什么？
 这里还没有一条经过验证的一手抱怨，只有行为：人们在投稿。如果桌宠受众只是怀旧而不掏钱，整件事就是一个可爱的零。
 
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集” — github-issue
-
 ### Q：要做多久？
 两周左右的工作量
 
@@ -1225,7 +1294,7 @@ URL: https://ourword.ai/idea/i/315-the-highest-scoring-post-in-r-adhd-on-this-su
 URL (中文): https://ourword.ai/idea/zh/i/315-the-highest-scoring-post-in-r-adhd-on-this-subje/
 Source: https://old.reddit.com/r/ADHD/
 Updated: 2026-08-04
-Tags: Reddit, 小红书, Two months of work, Has verbatim voices, reddit, xiaohongshu, consumer, radar-570
+Tags: Reddit, 小红书, Worth building, Two months of work, Has verbatim voices, reddit, xiaohongshu, consumer
 
 The highest-scoring post in r/ADHD on this subject (2,411 points, 205 comments) is not asking for a better reminder app — it says every reminder app already failed for the same reason, that the push notification gets ignored, and asks for something that phones you like a personal assistant would. The Chinese side says the same thing from the other direction: a Tiimo review at 7,327 likes whose commenters point out the tool needs exactly the executive function they do not have.
 
@@ -1271,6 +1340,9 @@ r/ADHD 上这个题目下分数最高的一帖（2411 分/205 评论）要的不
 ### Q：这条到底是什么？
 目前还什么都没有。两种语言里被要求的都是换一个通道，而不是一份更好的清单：在固定时间主动找上来、开口说话，像一个真人助理那样，而不是在主屏上再加一个不出声的红点。
 
+### Q：谁在用？他拿到什么成品？
+用的人是那种试过一万个待办 App、每一条推送都会无视的人。他拿到的是每天早上一通两分钟的电话，把今天真要做的三件事念给他听。
+
 ### Q：他为什么非要用不可？
 说这话的人用他自己的话讲，试过「a billion」个 App。那不是一个在找功能的人，那是一个已经为整个品类付过钱、并且被全部辜负了的人。
 
@@ -1308,7 +1380,7 @@ URL: https://ourword.ai/idea/i/316-both-language-sides-asked-for-the-same-missin
 URL (中文): https://ourword.ai/idea/zh/i/316-both-language-sides-asked-for-the-same-missing-t/
 Source: https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb
 Updated: 2026-08-04
-Tags: Reddit, 小红书, Two weeks of work, Has verbatim voices, xiaohongshu, reddit, consumer, radar-375-evidence
+Tags: Reddit, 小红书, Worth building, Two weeks of work, Has verbatim voices, xiaohongshu, reddit, consumer
 
 Both language sides asked for the same missing thing this year: a recipe delivered as a hands-free, timed, step-by-step run rather than a block of text. In English a subreddit built it themselves (Parsnip, 139 points in r/cookingforbeginners) and another thread asks for recipes formatted like IKEA manuals; in Chinese the request appears under a developer's open 'you ask, I build' thread, and the developer's reply is that he has no product to point at.
 
@@ -1340,7 +1412,7 @@ Someone learning to cook, or cooking for a child with a specific diet — a one-
 The people who need it most graduate out of needing it; retention is the whole business and this shape has no answer to it yet.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。” — xiaohongshu “I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.” — reddit “哈哈哈，很实用的功能，我研究一下” — xiaohongshu
+Verbatim from the public sources linked above, not paraphrased: “我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。” — xiaohongshu “I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.” — reddit
 
 ### How much work is it?
 about two weeks of work
@@ -1353,6 +1425,9 @@ https://www.xiaohongshu.com/explore/67ab4967000000002802a6eb https://old.reddit.
 
 ### Q：这条到底是什么？
 目前还没有完整的东西。被要的是：拿一份菜谱，把它跑起来——每一步念出来、计时替你按下、下一步用嘴说、含糊的地方（火候、熟没熟、多少量）变成能对照的判断。
+
+### Q：谁在用？他拿到什么成品？
+用的人是站在灶前、两只手都是油的人。他拿到的是一句一句念给他听的步骤，和一个替他盯着火的计时器。
 
 ### Q：他为什么非要用不可？
 失败点很具体，而且在两种语言里重复出现：手是脏的、屏幕会锁、时间信息藏在句子里，于是人开始自由发挥，然后毁掉这道菜。
@@ -1376,7 +1451,7 @@ Parsnip 已经把这个形状在英文侧做出来了，450 关，还带着社�
 最需要它的人会毕业；留存就是全部生意，而这个形状目前对留存没有答案。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。” — xiaohongshu “I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.” — reddit “哈哈哈，很实用的功能，我研究一下” — xiaohongshu
+以下原声逐字摘自公开来源，未经改写： “我想要一个菜谱app，上面有每道菜每一个步骤的计时器，全程跟做，提醒火候和量。时刻监督我不要灵机一动和差不多的了。” — xiaohongshu “I've always struggled with how recipes are always dense blocks of text, and I wished there was an app that converted them into a visual format.” — reddit
 
 ### Q：要做多久？
 两周左右的工作量
@@ -1423,7 +1498,7 @@ One-time paid desktop app, plus printed keepsake books as the upsell — the sam
 Decryption is version-fragile and sits in a grey zone with the platform's terms even though it is the user's own data; the product must be strictly local, own-data-only, with no cloud copy.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “xdm，来份源码发我邮箱行吗，有偿也行的” — github-issue “我的聊天记录不是我自己的” — github-issue “我的隐私不是我的” — github-issue “6.1.0版本的exe怎么expire了。希望大佬速速更新。” — github-issue “速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录” — xiaohongshu “宝你这个就是满版没拉到出血线，背景大小要跟纸页外面那个红色的框框一样大，而且图片都没嵌入还是链接你快改一下” — xiaohongshu “Printed my family's group chat so I can pass it down as an heirloom.” — xiaohongshu-repost
+Verbatim from the public sources linked above, not paraphrased: “xdm，来份源码发我邮箱行吗，有偿也行的” — github-issue “我的聊天记录不是我自己的” — github-issue “我的隐私不是我的” — github-issue “速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录” — xiaohongshu “Printed my family's group chat so I can pass it down as an heirloom.” — xiaohongshu-repost
 
 ### How much work is it?
 about two months of work
@@ -1449,6 +1524,9 @@ WeFlow、WeChatMsg 把用户自己电脑上的微信数据库解密导出；robb
 ### Q：这一刀切在哪里？
 不要在导出上竞争，从导出之后切进去，只做一件窄事：挑一段家人的对话，本地问答＋印成一本纪念册。冷启动（中文）：去 WeFlow / WeChatMsg 的 issue 区和 fork 名单，私信那些在喊求 Mac 版、求没过期的安装包的人，再去小红书搜「微信聊天记录 导出」的求助帖评论区。冷启动（英文）：r/DataHoarder 与 r/China_irl 搜 WeChat export。
 
+### Q：它最锋利的地方在哪？
+导出这一步过去是个能耗掉半天的脆弱仪式，现在一条命令走完，而且结束时语料已经接进一个你可以直接对话的东西里。
+
 ### Q：什么会杀死它？
 WeChatMsg 从 2023 年做到今天 41.9k 星，随时可能有人正规化补位；客户端一更新解密就失效（WeFlow 用户此刻就卡在过期版本上），平台也没有让它稳定的动机。
 
@@ -1459,7 +1537,7 @@ WeChatMsg 从 2023 年做到今天 41.9k 星，随时可能有人正规化补位
 解密随客户端版本失效，且虽然是用户自己的数据，仍处在平台条款的灰色地带；产品必须严格本地、只处理本人数据、不留云端副本。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “xdm，来份源码发我邮箱行吗，有偿也行的” — github-issue “我的聊天记录不是我自己的” — github-issue “我的隐私不是我的” — github-issue “6.1.0版本的exe怎么expire了。希望大佬速速更新。” — github-issue “速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录” — xiaohongshu “宝你这个就是满版没拉到出血线，背景大小要跟纸页外面那个红色的框框一样大，而且图片都没嵌入还是链接你快改一下” — xiaohongshu “Printed my family's group chat so I can pass it down as an heirloom.” — xiaohongshu-repost
+以下原声逐字摘自公开来源，未经改写： “xdm，来份源码发我邮箱行吗，有偿也行的” — github-issue “我的聊天记录不是我自己的” — github-issue “我的隐私不是我的” — github-issue “速搓傻瓜版教程，按图片一步步做就可以啦。需要的材料：电脑、截好图的聊天记录” — xiaohongshu “Printed my family's group chat so I can pass it down as an heirloom.” — xiaohongshu-repost
 
 ### Q：要做多久？
 两个月左右的工作量
@@ -1531,6 +1609,9 @@ https://github.com/danilo-znamerovszkij/draw-your-font https://github.com/danilo
 
 ### Q：这一刀切在哪里？
 打的是补字这道坎，不是字体导出：手写 300 字、补出常用 1000 字，交付的不是字体文件而是一件情绪成品——一副用奶奶笔迹排好的春联，或一封家书。冷启动（中文）：小红书、B 站「手写字体制作」教程下的评论区，那里全是写到一半放弃的人；再加知乎「如何制作一款自己的中文字体」回答区的追问。冷启动（英文）：r/fonts 与 r/typography 搜 handwriting font。
+
+### Q：它最锋利的地方在哪？
+不注册、不联网、不上传：一个人身上最私密的东西留在自己机器上，回来的时候是一个属于他自己的文件。
 
 ### Q：什么会杀死它？
 字库公司早就在卖手写风格的中文字体，管线现成；少样本补字要做到能看是真的技术风险，一笔生成得别扭，母语读者一眼就出戏。
@@ -1612,6 +1693,9 @@ https://github.com/microsoft/skill-recorder https://github.com/microsoft/skill-r
 ### Q：这一刀切在哪里？
 这里只当能力信号，不当生意：机会在普通人那一侧——挑一件家里每月重复的窄活，用示范教会它，全程本地跑，屏幕录像一帧都不出这台机器。冷启动（中文）：小红书、B 站「办公自动化」「重复劳动」教程下的评论区，那里的人会把自己最烦的那套月度流程一条条说出来。冷启动（英文）：r/Automate 与 r/productivity 搜 automate this thing I do every month。
 
+### Q：它最锋利的地方在哪？
+它把「怎么教电脑做一件杂事」这件事整个反过来了：你不用描述、也不用写脚本，你当着它做一遍就行。团队还在做本机识别与遮掉录屏里的敏感内容。
+
 ### Q：什么会杀死它？
 微软亲自占着这个位置，分发能力摆在那；而且演示本身是一份有损的说明书，维护者自己的 issue 里就写了：录漏一步，生成的技能就是坏的。fork 只有星数的 11%，目前还是开发者好奇，不算被验证的需求。
 
@@ -1692,6 +1776,9 @@ https://www.producthunt.com/ https://github.com/pppscn/SmsForwarder/issues/720 h
 ### Q：这一刀切在哪里？
 别去自动化微信号，那是陷阱，这块板子自己的完整性红线也会否掉。站在它旁边做：老板把下班后的问询转发或截图丢进一个地方，第二天早上拿到一份按轻重排好的名单，每人配一句拟好的回复，由他自己发出去。只干一件事，不碰平台规则，不做日历集成。冷启动（中文）：小红书、抖音上「单人理发店」「宠物店 日常」内容的评论区，老板们自己在讲怎么漏掉客人；再加 SmsForwarder issue 区那批已经在要微信/QQ 原生渠道的用户。冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。
 
+### Q：它最锋利的地方在哪？
+它把一家单人小店最贵的那种失败——两只手都占着的时候电话响了——变成一个已经排好的预约，而且不用多养一个人。
+
 ### Q：什么会杀死它？
 微信规则对自动化个人号极不友好，这很可能正是至今没人做出来的原因——它可能是个披着产品外衣的规则问题。而且最大的几个垂类，美团点评已经把预约占住了。
 
@@ -1717,12 +1804,15 @@ URL: https://ourword.ai/idea/i/298-totem/
 URL (中文): https://ourword.ai/idea/zh/i/298-totem/
 Source: https://www.producthunt.com/r/XYVSXCXMI3M4QN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29
 Updated: 2026-07-30
-Tags: Product Hunt, Two weeks of work, Chrome Extensions, Open Source, Twitter, GitHub
+Tags: Product Hunt, Archived, Two weeks of work, Chrome Extensions, Open Source, Twitter, GitHub
 
 Product Hunt: Totem — Your Twitter bookmarks organized to make you read them
 
 ### What is the idea?
 Totem organizes your Twitter bookmarks into a streamlined reading experience, allowing users to categorize and access saved tweets easily.
+
+### Who would use it, and what do they get?
+Someone with two thousand saved posts they have never reopened. What they get is three of them, today, in a form they will actually read.
 
 ### Why would anyone bother?
 Users complain about the clutter of bookmarks and the difficulty in retrieving specific tweets; Totem addresses this by providing a clear organizational structure.
@@ -1732,6 +1822,9 @@ Current solutions are either too technical for average users or lack a user-frie
 
 ### What makes this one different?
 I would focus on creating a visually appealing, user-friendly interface specifically designed for non-technical users, making it accessible for everyone.
+
+### What is the sharpest thing about it?
+Bookmarks become a reading queue instead of a graveyard: saved posts are grouped and resurfaced so they get read.
 
 ### What could kill it?
 Twitter itself could easily implement a bookmarking feature that renders this tool redundant, as it already controls the user experience.
@@ -1754,6 +1847,9 @@ Twitter用户被他们的书签淹没，难以高效地找到和阅读保存的�
 ### Q：这条到底是什么？
 Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能够轻松分类和访问保存的推文。
 
+### Q：谁在用？他拿到什么成品？
+一个存了两千条帖子、一条都没再打开过的人。他拿到的是今天三条，以一种他真的会读下去的样子。
+
 ### Q：他为什么非要用不可？
 用户抱怨书签的杂乱和检索特定推文的困难；Totem通过提供清晰的组织结构来解决这个问题。
 
@@ -1762,6 +1858,9 @@ Totem将您的Twitter书签组织成一个流畅的阅读体验，让用户能�
 
 ### Q：这一刀切在哪里？
 我会专注于创建一个视觉上吸引人、用户友好的界面，专门为非技术用户设计，使其对每个人都可访问。
+
+### Q：它最锋利的地方在哪？
+把收藏夹从坟场变成阅读队列：存下来的帖子被归好组、再端到眼前，于是它们真的会被读掉。
 
 ### Q：什么会杀死它？
 Twitter本身可能很容易实现一个书签功能，使这个工具变得多余，因为它已经控制了用户体验。
@@ -1804,6 +1903,9 @@ Vibe-coding produced a wave of builders with zero business skills, and tooling f
 ### What makes this one different?
 If evidence appears: the Chinese indie / 小程序 developer side is even more underserved than the English one.
 
+### What is the sharpest thing about it?
+It sits where the money is decided rather than where the code is written: pricing, conversion and what to change next.
+
 ### What could kill it?
 App stores, Stripe and analytics platforms all sit closer to the money; 'insights' products die the moment the advice doesn't visibly move revenue.
 
@@ -1836,6 +1938,9 @@ vibe-coding 造出了一大批毫无商业技能的开发者，『让我的小 a
 
 ### Q：这一刀切在哪里？
 若证据出现：中文独立开发者/小程序侧比英文侧更空。
+
+### Q：它最锋利的地方在哪？
+它站在「钱怎么决定」这一侧，而不是「代码怎么写」这一侧：定价、转化、下一步该改什么。
 
 ### Q：什么会杀死它？
 应用商店、Stripe、各分析平台都比它离钱更近；『洞察』类产品在建议无法直接抬收入的那一刻就死了。
@@ -1984,6 +2089,9 @@ https://www.producthunt.com/r/ZTOYWVYEMJZG4Y?utm_campaign=producthunt-api&utm_me
 ### Q：这条到底是什么？
 能跨天跑的语音 agent：不是打一通就完，而是连着几天给潜在客户打电话、发短信，记得上一次聊到哪，直到对方约上或者明确说不。
 
+### Q：谁在用？他拿到什么成品？
+用的人是手上拿着工具、在现场答应了上门时间的师傅。他拿到的是那个预约被记下来了，不用他自己记。
+
 ### Q：他为什么非要用不可？
 选择Leaping AI，因为它能够保持个性化的沟通，持续时间更长，而传统的CRM工具则缺乏这一点。
 
@@ -2063,6 +2171,9 @@ https://github.com/1weiho/open-slide
 
 ### Q：这条到底是什么？
 面向编码 Agent 的 React 幻灯片框架：用自然语言描述一份 deck，Agent 生成组件，open-slide 负责画布、缩放、排版和导出。
+
+### Q：谁在用？他拿到什么成品？
+用的人是要在明早讲一版东西的普通人。他拿到的是一份能直接投出去的幻灯片。
 
 ### Q：他为什么非要用不可？
 给 Agent 一种它真能写出来的幻灯片格式，排版和缩放问题已经替你解决。
@@ -2221,6 +2332,9 @@ https://github.com/Renhuai123/ziwei-doushu
 ### Q：这条到底是什么？
 把玄学领域变成机器可读的基础设施：完整排盘算法、四化系统、格局知识库和古籍原文数据，AI 产品可以直接查询调用。
 
+### Q：谁在用？他拿到什么成品？
+用的人是自己对紫微斗数好奇、但看不懂排盘的人。他拿到的是一张排好的盘，外加每一个格局在讲什么的人话解释。
+
 ### Q：他为什么非要用不可？
 做 AI 测算 / 陪伴类产品时，不必自己啃古籍手搓排盘逻辑，直接接一个算法和数据都齐的引擎。
 
@@ -2287,7 +2401,7 @@ Honest read: thin on its own. The paid lane (Wispr Flow, ~$12/mo) is LLM cleanup
 Apple's built-in dictation is one settings toggle away and improves every OS release — and Yap is a side project of a funded startup (Frigade), so the repo is marketing, not an opening someone else can own.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.” — github-issue “I'd love to be able to dictate in 2 langu[ages]” — github-issue “Yep sends all audio data to Apple servers (on Intel Macs)” — github-issue
+Verbatim from the public sources linked above, not paraphrased: “I'd love to be able to dictate in 2 langu[ages]” — github-issue “Yep sends all audio data to Apple servers (on Intel Macs)” — github-issue
 
 ### How much work is it?
 about two weeks of work
@@ -2300,6 +2414,9 @@ Yap：开源 macOS 菜单栏听写工具，按住即说、松开即输入到任�
 
 ### Q：这条到底是什么？
 按住快捷键说话，文字直接输入到当前聚焦的应用。它复用苹果内置语音栈，启动即用、离线可用，整个工具只是一层轻薄可改的 Swift 封装（HN 101 分、41 条评论）。
+
+### Q：谁在用？他拿到什么成品？
+用的人是打字慢、或者手不方便的普通 Mac 用户。他拿到的是自己说的话直接落进任何一个输入框，而且一个字节不出本机。
 
 ### Q：他为什么非要用不可？
 想要轻快、私密、免费的系统级听写，又不想为云服务或大模型下载付出延迟和隐私成本时，Yap 是最省事的选择。
@@ -2323,7 +2440,7 @@ Yap：开源 macOS 菜单栏听写工具，按住即说、松开即输入到任�
 苹果自带听写只隔一个设置开关，且每个系统版本都在变强；Yap 又是已融资公司 Frigade 的副产品——这个仓库是它的营销，不是别人能占的空位。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “First off, thanks for Yap — the on-device approach with no model download is exactly what I was looking for.” — github-issue “I'd love to be able to dictate in 2 langu[ages]” — github-issue “Yep sends all audio data to Apple servers (on Intel Macs)” — github-issue
+以下原声逐字摘自公开来源，未经改写： “I'd love to be able to dictate in 2 langu[ages]” — github-issue “Yep sends all audio data to Apple servers (on Intel Macs)” — github-issue
 
 ### Q：要做多久？
 两周左右的工作量
@@ -2357,6 +2474,9 @@ The whole learning market sells watching. Almost nothing sells the scaffolded re
 ### What makes this one different?
 Sell the stuck-at-11pm moment, not the syllabus: one project, and a reviewer that reads YOUR half-broken version rather than diffing you against a reference solution. Cold start CN = V2EX/掘金「从零实现」系列的评论区与 B站 手撸系列弹幕; EN = r/learnprogramming 'I finished the tutorial and can't build anything' threads (a recurring top post).
 
+### What is the sharpest thing about it?
+Learning by rebuilding the thing, not by reading about it: the exercise is to make a working Redis, Git or database, so understanding is proven by it running.
+
 ### What could kill it?
 Build-your-own-X lists have existed for a decade and mostly rot as bookmarks; the hard part was never the list, it was somebody catching you at the exact line where you got stuck at 11pm.
 
@@ -2389,6 +2509,9 @@ https://shipthatcode.com https://news.ycombinator.com/item?id=48871973
 
 ### Q：这一刀切在哪里？
 卖的是「晚上十一点卡住」那一刻，不是教学大纲：只做一个项目，配一个真的会读**你那份写坏了的代码**的评审，而不是拿标准答案跟你 diff。冷启动：中文＝V2EX/掘金「从零实现」系列的评论区、B站手撸系列的弹幕；英文＝r/learnprogramming 里反复上热帖的「教程刷完了还是什么都写不出来」。
+
+### Q：它最锋利的地方在哪？
+靠重造来学，而不是靠读来学：作业就是做出一个真能跑的 Redis、Git 或数据库，懂没懂由它跑不跑得起来说话。
 
 ### Q：什么会杀死它？
 build-your-own-X 的清单存在十年了，绝大多数只是躺在收藏夹里发霉；难的从来不是清单，是晚上十一点你卡在那一行时有人接住你。
@@ -2431,6 +2554,9 @@ Every agent product today still asks the human to be the project manager. The de
 ### What makes this one different?
 The interesting version is not the coding one — it is the same decomposition pointed at a non-code mission a normal person actually has ('plan and produce my mother's 70th birthday'). Cold start CN = 小红书「AI 帮我做了」类笔记的评论区; EN = r/ChatGPT 'I wish it would just do the whole thing' threads. Flagged watch, not build: the developer-facing framing is exactly what the end-user gate rejects.
 
+### What is the sharpest thing about it?
+It takes over the decomposition step — turning one sentence into the five things that sentence actually requires — which is the part a non-technical person cannot do.
+
 ### What could kill it?
 Squarely inside the biggest labs' roadmap: the moment decomposition works well it becomes a default in the base product, and a thin orchestration layer has no ground left to stand on.
 
@@ -2463,6 +2589,9 @@ https://www.producthunt.com/r/P3XBZI4J2DWVBF?utm_campaign=producthunt-api&utm_me
 
 ### Q：这一刀切在哪里？
 有意思的不是写代码那个版本，而是把同一套拆解对准普通人真正手上的非代码任务（「把我妈七十大寿从计划到落地办完」）。冷启动：中文＝小红书「AI 帮我做了⋯」类笔记的评论区；英文＝r/ChatGPT 里「我希望它直接把整件事做完」的讨论串。标 watch 不标 build：面向开发者的这个形态正是终端用户闸门要挡的。
+
+### Q：它最锋利的地方在哪？
+它把「拆解」这一步接了过去——把一句话变成这句话真正需要的五件事——而这恰恰是非技术的人做不到的那一步。
 
 ### Q：什么会杀死它？
 正踩在几家大厂的路线图正中间：拆解一旦做好就会变成基座产品的默认能力，薄薄一层编排就没有立足之地了。
@@ -2651,7 +2780,7 @@ URL: https://ourword.ai/idea/i/1785237007-debpalash-omnivoice-studio/
 URL (中文): https://ourword.ai/idea/zh/i/1785237007-debpalash-omnivoice-studio/
 Source: https://github.com/debpalash/OmniVoice-Studio
 Updated: 2026-07-28
-Tags: GitHub, Worth building, Two months of work, Has verbatim voices, voice-cloning, dubbing, tts, local-ai
+Tags: GitHub, Worth building, Two months of work, voice-cloning, dubbing, tts, local-ai
 
 debpalash/OmniVoice-Studio — Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.
 
@@ -2681,9 +2810,6 @@ Buyer: dubbing shops and creators in long-tail languages ElevenLabs covers poorl
 
 ### What is the main risk?
 Who kills it: ElevenLabs or Descript ship a solid offline tier, or one open model gets good enough that the 14-engine hub stops mattering. It's in active beta — reliability across 14 engines and three OSes is the hard part. Watch: does a real 30-min video dub cleanly in one click without hand-fixing timing.
-
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…” — github “Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…” — github
 
 ### How much work is it?
 about two months of work
@@ -2720,9 +2846,6 @@ debpalash/OmniVoice-Studio —— 本地音色克隆、视频配音、听写与�
 
 ### Q：最大的风险是什么？
 谁会杀死它:ElevenLabs 或 Descript 出一个靠谱的离线档,或某个开源模型强到让『14 引擎调度』失去意义。它还是活跃 beta——14 引擎、跨三系统的稳定性才是真难点。看指标:一段真实 30 分钟视频能否一键配好、时间轴不用手工返修。
-
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “…d the repo terms both. This is the condition that most often ends a proposal, and the one I can't resolve for you. 2. **A `SubprocessBackend` sidecar.** Your instinct is right, and it's now a well-worn shape. `docs/engines/omni…” — github “Being straight with you: **nobody on the project has a Strix Halo / gfx1151 machine**, so I can't verify a fix for this — and shipping an unverified ROCm change risks breaking the AMD users who currently work. Here's what the c…” — github
 
 ### Q：要做多久？
 两个月左右的工作量
@@ -2779,6 +2902,9 @@ Estera —— 一个 7×24 接听企业电话和 WhatsApp 的 AI 前台(Product 
 
 ### Q：这条到底是什么？
 AI 前台：24 小时接商家的电话和 WhatsApp，答标准问题、把时间约上，第二天早上给老板一份摘要。上线当天 Product Hunt 129 票。
+
+### Q：谁在用？他拿到什么成品？
+用的人是一个人开一家店的老板：电话响的时候两只手都在忙。他拿到的是一通被接起来的电话和一个已经排进日历的预约。
 
 ### Q：他为什么非要用不可？
 一个人的美甲店、两个工位的修车铺、单干的牙医——电话响起来时两只手都占着的那个老板。他第二天早上拿到的是：谁打过来、各要什么、哪一个值得回。
@@ -2857,6 +2983,9 @@ Product Hunt: Forgeon —— 创作、发布、体验互动故事。
 ### Q：这条到底是什么？
 做、发、玩 AI 互动故事的平台：你描述一个世界，它变成别人能走进去、还能改的东西。
 
+### Q：谁在用？他拿到什么成品？
+用的人是想把一个故事做成能玩的东西、但不会写代码的普通人。他拿到的是一份别人点开就能玩的互动故事。
+
 ### Q：他为什么非要用不可？
 睡前想给孩子讲一个「今晚这一个、主角是他」的故事的家长。他拿到的是一本插图完整、能打印的书——一个能放上书架的东西，不是一个要订阅的内容流。
 
@@ -2891,7 +3020,7 @@ URL: https://ourword.ai/idea/i/223-simonlin1212-tradingagents-astock/
 URL (中文): https://ourword.ai/idea/zh/i/223-simonlin1212-tradingagents-astock/
 Source: https://github.com/simonlin1212/TradingAgents-astock
 Updated: 2026-07-28
-Tags: GitHub, Watching, Two months of work, Has verbatim voices, a-share, ai-agent, china-stocks, claude
+Tags: GitHub, Watching, Two months of work, a-share, ai-agent, china-stocks, claude
 
 Deep A-share fork of the 65k★ TradingAgents paper framework: 7 AI analysts debate bull/bear under China-market rules with A-share-native data (龙虎榜/游资/解禁) — Apache-2.0, pip-install, zero external services.
 
@@ -2921,9 +3050,6 @@ Institutional investors and trading firms pay for enhanced decision-making capab
 
 ### What is the main risk?
 The project may struggle against established trading platforms that already offer comprehensive analytics and data integration, potentially limiting its adoption among traditional investors.
-
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。” — github
 
 ### How much work is it?
 about two months of work
@@ -2961,9 +3087,6 @@ https://github.com/simonlin1212/TradingAgents-astock
 ### Q：最大的风险是什么？
 该项目可能面临与已经提供全面分析和数据整合的成熟交易平台竞争的挑战，这可能限制其在传统投资者中的采用。
 
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “…解决**： v0.2.12 起，导出前会自动检测 fpdf 版本，若是旧库会直接给出上面这条提示，不再让 PDF 渲染到一半抛晦涩的 UnicodeEncodeError。实在不想折腾也可以改用「下载 Markdown」（零依赖，永远可用）。 详见 [Release v0.2.12](https://github.com/simonlin1212/TradingAgents-astock/releases/tag/v0.2.12)。” — github
-
 ### Q：要做多久？
 两个月左右的工作量
 
@@ -2977,7 +3100,7 @@ URL: https://ourword.ai/idea/i/228-wangxijie001-yoji/
 URL (中文): https://ourword.ai/idea/zh/i/228-wangxijie001-yoji/
 Source: https://github.com/wangxijie001/yoji
 Updated: 2026-07-28
-Tags: GitHub, Watching, Two months of work, Has verbatim voices, ai-companion, ai-personality, anthropomorphic-ai, document-processing
+Tags: GitHub, Watching, Two months of work, ai-companion, ai-personality, anthropomorphic-ai, document-processing
 
 wangxijie001/yoji — 有情绪的 AI 桌面伴侣 | 隐私优先 · 语音唤醒 · 协助办公 · MCP 无限扩展 | An AI desktop companion with emotions — privacy-first, voice wake, office
 
@@ -3007,9 +3130,6 @@ Tech-savvy professionals and privacy-conscious users pay for a customizable AI a
 
 ### What is the main risk?
 Yoji may struggle against established AI assistants like Siri or Google Assistant, which have extensive ecosystems and user bases.
-
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…” — github
 
 ### How much work is it?
 about two months of work
@@ -3046,9 +3166,6 @@ Yoji 独特的情感引擎模拟真实情感，影响其回应和行为，创造
 
 ### Q：最大的风险是什么？
 Yoji 可能会面临 Siri 或 Google Assistant 等成熟 AI 助手的挑战，它们拥有广泛的生态系统和用户基础。
-
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “…ponse. Is it thinking? Calling a tool? Or is it stuck? 2. **Did the tool calls succeed?** I can't see which tools were invoked, what parameters were passed, or what results came back. 3. **What's the AI's reasoning process?** I…” — github
 
 ### Q：要做多久？
 两个月左右的工作量
@@ -3095,7 +3212,7 @@ Individual users seeking a distraction-free note-taking experience pay for the a
 Established productivity tools like Microsoft OneNote or Evernote dominate the market, posing a challenge for user adoption due to their extensive feature sets.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…” — github “…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。” — github
+Verbatim from the public sources linked above, not paraphrased: “…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。” — github
 
 ### How much work is it?
 about two weeks of work
@@ -3134,7 +3251,7 @@ PaperTodo 是一款极简的 Windows 桌面便签工具，允许用户在桌面�
 微软 OneNote 或 Evernote 等成熟的生产力工具主导市场，因其丰富的功能集，用户采用面临挑战。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “…右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， > > 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。 右键主胶囊的任务列表可以考虑一下 正常如果需要在某个屏幕新建，直接用快捷键在鼠标下创建就好了吧，会自动创建在对应屏幕。 进行移动的话，直接拖拽比右键在快捷键选择某个屏幕的左侧、右侧，要快很…” — github “…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。” — github
+以下原声逐字摘自公开来源，未经改写： “…希望添加右键主胶囊能够有像右键任务托盘中软件图标一样的功能列表， 希望右键胶囊能够添加一个发送到其他屏幕的功能，可以选择发送到不同的显示屏，我有两个屏幕，如果要设置到另一个屏幕有点太麻烦了，希望能便捷一些。，如果不行的话是否能在设置里设置胶囊显示的主屏幕。” — github
 
 ### Q：要做多久？
 两周左右的工作量
@@ -3235,7 +3352,7 @@ URL: https://ourword.ai/idea/i/252-yizhiyanhua-ai-fireworks-tech-graph/
 URL (中文): https://ourword.ai/idea/zh/i/252-yizhiyanhua-ai-fireworks-tech-graph/
 Source: https://github.com/yizhiyanhua-ai/fireworks-tech-graph
 Updated: 2026-07-28
-Tags: GitHub, Worth building, Two weeks of work, Has verbatim voices, agent-workflows, ai, claude-code, developer-tools
+Tags: GitHub, Worth building, Two weeks of work, agent-workflows, ai, claude-code, developer-tools
 
 yizhiyanhua-ai/fireworks-tech-graph — Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workfl
 
@@ -3265,9 +3382,6 @@ Software engineers and technical project managers pay for fireworks-tech-graph t
 
 ### What is the main risk?
 The reliance on existing diagramming tools like Lucidchart or Microsoft Visio, which have established user bases and comprehensive feature sets, poses a risk to adoption.
-
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god” — github
 
 ### How much work is it?
 about two weeks of work
@@ -3304,9 +3418,6 @@ AI创作的“黑色奢华”风格提供了竞争工具中没有的独特美学
 
 ### Q：最大的风险是什么？
 依赖于现有的图表工具，如Lucidchart或Microsoft Visio，这些工具拥有成熟的用户基础和全面的功能集，可能会对采用构成风险。
-
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “Hi — I would like to colloaborate with you. where can I cantact you? x.com/akratos_god” — github
 
 ### Q：要做多久？
 两周左右的工作量
@@ -3366,6 +3477,9 @@ https://github.com/Narcooo/inkos
 
 ### Q：这条到底是什么？
 一条把长篇故事撑住的 agent 流水线——情节状态、人物连续性、世界规则——从大纲一路推到一章又一章，同一套骨架还能出剧本、互动游戏和翻译。以 npm 包（@actalk/inkos）交付，得自己配模型 key。
+
+### Q：谁在用？他拿到什么成品？
+用的人是写长篇的人：写到第三十章开始记不住自己埋过什么线。他拿到的是一份自己往前对得上、往后接得住的稿子。
 
 ### Q：他为什么非要用不可？
 按章拿钱、又不是 Node 开发者的网文写手。他拿到的是一份稿子——章节长度是他要的那个数，二十万字之后那个人物还认得出是同一个人。
@@ -3515,7 +3629,7 @@ Someone whose documents cannot legally go to a cloud model — a solo lawyer, an
 The moat is the setup experience, and setup experiences are exactly what a well-funded incumbent copies in one release.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行” — github-issue “By clicking on the create button, nonthing happens. Please advise.” — github-issue “开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流” — github-issue
+Verbatim from the public sources linked above, not paraphrased: “接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行” — github-issue
 
 ### How much work is it?
 about two months of work
@@ -3528,6 +3642,9 @@ nashsu/llm_wiki —— 跨平台桌面应用,把你的文档变成有组织、�
 
 ### Q：这条到底是什么？
 桌面应用：读你指定的一个文件夹，自己把里面的文档织成一部互相链接的 wiki，而不是常见的「检索再回答」——它会写词条、会互相引用，于是你是在翻、在问，不是在搜。全程在本机跑，模型你自己接，云端或局域网 Ollama 都行。
+
+### Q：谁在用？他拿到什么成品？
+用的人是自己电脑里堆了几百份文档的普通人：合同、说明书、课件、聊天导出。他拿到的是一本能翻、能问、能引用的本地维基，而不是一个搜索框。
 
 ### Q：他为什么非要用不可？
 硬盘里塞满 PDF、却再也找不到任何东西的人：研究生、单干的律师、接手了一堆公司文件的人。他拿到的是一本能翻的 wiki，不是一个还得他自己会问的聊天框。
@@ -3551,7 +3668,7 @@ Obsidian、Notion 和每一个笔记应用今年都在发同一个功能，而�
 护城河是安装体验，而安装体验正是有钱的在位者一个版本就抄走的东西。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行” — github-issue “By clicking on the create button, nonthing happens. Please advise.” — github-issue “开发者好像没有建立一个微信群，试建个微信群欢迎感兴趣者加入交流” — github-issue
+以下原声逐字摘自公开来源，未经改写： “接 openai、kimi、minimax 的模型，全部都 analysis failed。实在是没招了，每个 api 都不行” — github-issue
 
 ### Q：要做多久？
 两个月左右的工作量
@@ -3565,7 +3682,7 @@ URL: https://ourword.ai/idea/i/147-crafter-station-petdex/
 URL (中文): https://ourword.ai/idea/zh/i/147-crafter-station-petdex/
 Source: https://github.com/crafter-station/petdex
 Updated: 2026-07-27
-Tags: GitHub, Watching, Two weeks of work, Has verbatim voices, claude-code, clerk, cli, codex
+Tags: GitHub, Watching, Two weeks of work, claude-code, clerk, cli, codex
 
 crafter-station/petdex — The public gallery of animated pet for Codex, Claude Code, OpenCode y Gemini CLI
 
@@ -3596,9 +3713,6 @@ No real revenue path beyond maybe cosmetic packs; a delightful side-project, not
 ### What is the main risk?
 Novelty with no moat or retention; the joke fades and platforms can add their own.
 
-### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集” — github-issue
-
 ### How much work is it?
 about two weeks of work
 
@@ -3610,6 +3724,9 @@ crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI �
 
 ### Q：这条到底是什么？
 一个公开的动画像素宠物画廊，宠物住在 coding agent 的终端里：3686 星、167 fork，还有一个投稿队列，人们把自己手画的小生物传上去——其中源源不断有中文投稿，还有一位版权方来要求下架。
+
+### Q：谁在用？他拿到什么成品？
+用的人是自己画了一只像素小宠物的普通人。他拿到的是这只小家伙真的住在屏幕上，还能被别人看见。
 
 ### Q：他为什么非要用不可？
 想让屏幕上住一只小东西的人：桌宠受众是中学生和上班族，不是程序员。他拿到的是一只自己画出来、会动的伙伴。
@@ -3632,9 +3749,6 @@ crafter-station/petdex —— 给 Codex、Claude Code、OpenCode、Gemini CLI �
 ### Q：最大的风险是什么？
 新奇无护城河、无留存;梗一过就凉,平台也能自己加。
 
-### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “这两个条目属于同一公开品牌 IP 的历史提交，当前不再属于授权发布集” — github-issue
-
 ### Q：要做多久？
 两周左右的工作量
 
@@ -3651,11 +3765,23 @@ Tags: GitHub, Watching, Two weeks of work, appload, eink, quill, remagic-app
 
 MaximeRivest/riddle — The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a fl
 
+### What is the idea?
+Turns a reMarkable Paper Pro into a notebook that answers: you write a question in ink on the page, and the reply appears written underneath in the same hand.
+
 ### Who would use it, and what do they get?
 Somebody who journals on paper; the deliverable is a written reply on the page. Real, but the platform is tiny.
 
+### Why would anyone bother?
+People who write on e-ink do it precisely to be away from an app. Every existing way to ask an AI a question drags them back to a screen with notifications on it.
+
 ### What is missing today?
 Handwriting on e-ink that answers back is a real and charming capability, but it is locked to one small piece of hardware. The gap is that nobody has built the same loop on the paper notebooks and tablets ordinary people already own.
+
+### What makes this one different?
+Do not build a chat client for e-ink. Build one narrow thing the paper is already good at — margin notes on a document, or a reading question answered in the margin — and keep the tablet offline except for that.
+
+### What is the sharpest thing about it?
+The reply arrives as handwriting on paper, not as a chat bubble. Nothing about the object changes — it is still a notebook you write in, which is the entire reason people bought an e-ink tablet instead of using their phone.
 
 ### What could kill it?
 A reMarkable-only add-on lives entirely at the mercy of one vendor's platform, and the audience is a rounding error. Delightful demo, unclear business.
@@ -3675,8 +3801,23 @@ https://github.com/MaximeRivest/riddle
 --- 中文 ---
 MaximeRivest/riddle —— reMarkable Paper Pro 上的 汤姆·里德尔的日记:用笔写,书页会回应。
 
+### Q：这条到底是什么？
+把 reMarkable Paper Pro 变成一本会回话的本子：你用笔在纸上写一个问题，答案就用同一种手写体写在下面。
+
+### Q：谁在用？他拿到什么成品？
+一个花了几千块买墨水屏、就为了躲开屏幕的人，偶尔还是想在不掏手机的情况下把一个问题问掉。
+
+### Q：他为什么非要用不可？
+会在墨水屏上写字的人，图的就是离开 App。而现在所有向 AI 提问的方式，都会把他们拽回一块带着通知的屏幕。
+
 ### Q：今天缺的到底是什么？
 在电子墨水上手写、纸面回你话，这个能力是真的、也确实好玩，但它被锁在一小块硬件上。缺口在于：没人把同一个回路做到普通人手上已有的纸本和平板上。
+
+### Q：这一刀切在哪里？
+不要给墨水屏做聊天客户端。只做纸本来就擅长的那一件窄事——给文档写批注，或者把读到的疑问就在页边回掉——除此之外让这块板子保持离线。
+
+### Q：它最锋利的地方在哪？
+答案是以手写字的形式落在纸上，不是聊天气泡。这个物件本身一点没变——它还是那本你用笔写字的本子，而这正是当初有人宁愿买一块墨水屏也不用手机的全部理由。
 
 ### Q：什么会杀死它？
 只在 reMarkable 上活的插件，命完全握在一家厂商手里，受众体量近似误差项。很好的 demo，不清楚的生意。
@@ -3710,11 +3851,17 @@ Parses a YouTube guitar performance into a tab you can follow along with.
 ### Who would use it, and what do they get?
 Someone learning a specific song alone; the deliverable is a tab they can play from tonight.
 
+### Why would anyone bother?
+For the songs a beginner actually wants, a YouTube lesson usually exists and a written tab usually does not — so they end up pausing and rewinding a video for an hour instead of reading two pages.
+
 ### What is missing today?
 Ultimate Guitar is a library of tabs that already exist; if it is not in the library it does not exist. Yet in most lesson videos the tab is right there in the picture and the sound — nobody takes it out.
 
 ### What makes this one different?
 Only do the one video the user already found; hand back a tab that explicitly marks the bars the machine is unsure of, so a friend who plays can fix twelve of them in five minutes instead of transcribing from zero. Never host audio. Cold start (Chinese): 「求谱」 comments under B站 guitar covers; (English): the 'anyone have a tab for this' posts in r/guitarlessons.
+
+### What is the sharpest thing about it?
+It takes the lesson video the learner already found and hands back the tab for it. The source is a video someone made for free; the missing artefact is the paper.
 
 ### What could kill it?
 Copyright is the fatal line here: Ultimate Guitar survives on community uploads plus a takedown process, and a lone tool has neither. And the moment a learner hears that the auto-transcription is wrong, they never open it again.
@@ -3740,11 +3887,20 @@ Show HN: YouTube 吉他谱解析器。
 ### Q：这条到底是什么？
 把一段 YouTube 吉他演奏解析成能跟着弹的谱。
 
+### Q：谁在用？他拿到什么成品？
+一个自学吉他的成年人，心里有一首歌，网上没有谱。他拿到的是这一首歌能打印出来的谱。
+
+### Q：他为什么非要用不可？
+初学者真正想弹的那些歌，YouTube 上一般有人教，但写下来的谱一般没有——于是他们只能对着视频暂停、回退一个小时，而不是读两页纸。
+
 ### Q：今天缺的到底是什么？
 Ultimate Guitar 是一个「已有的谱」的库，库里没有的就等于没有；而大多数教学视频里那份谱其实就摆在画面和声音里，只是没人把它取出来。
 
 ### Q：这一刀切在哪里？
 只做用户自己找到的那一个视频；交出的谱要把机器不确定的小节显式标出来，让会弹的朋友五分钟改十二处，而不是从零扒。永不托管音频。冷启动：中文=B站吉他翻弹视频下面的「求谱」评论；英文=r/guitarlessons 的 anyone have a tab for this 帖。
+
+### Q：它最锋利的地方在哪？
+它把学琴的人已经找到的那个教学视频，变成一份能照着弹的谱。视频是别人免费做好的，缺的一直是那张纸。
 
 ### Q：什么会杀死它？
 版权是这条线的死穴：UG 靠社区上传加一套下架流程活着，单个工具两样都没有。而且自动扒谱一旦被听出来是错的，学习者第二天就不再打开。
@@ -3781,11 +3937,17 @@ A teleprompter that follows your voice instead of a clock: it scrolls to where y
 ### Who would use it, and what do they get?
 Anyone filming themselves alone with no crew; the deliverable is a take they do not have to shoot again.
 
+### Why would anyone bother?
+Fixed-speed scrolling breaks the moment a speaker pauses, ad-libs or answers a question — and then they are reading the wrong line on camera.
+
 ### What is missing today?
 Every teleprompter on the market either scrolls at a fixed rate or needs a hand on a remote. Following a real speaker in real time needs accented streaming speech alignment, which only became cheap enough to give away this year.
 
 ### What makes this one different?
 Stop selling the prompter and sell 'is this take usable': the moment you stop recording, mark the sentences you dropped and the seconds you swallowed words, and say whether to keep it. Cold start (Chinese): 小红书 「口播 提词器」「录课 卡壳」 tags; (English): the 'I re-record every take' threads in r/NewTubers.
+
+### What is the sharpest thing about it?
+A teleprompter that follows the speaker instead of the clock: it listens, tracks which line you are on, and only scrolls when you actually get there.
 
 ### What could kill it?
 This is a feature, not a company — BIGVU and PromptSmart already have voice tracking, and a phone maker or an editing suite absorbs it in one release.
@@ -3808,11 +3970,20 @@ Product Hunt: Speechius —— 真正会听的提词器。
 ### Q：这条到底是什么？
 提词器跟着你的声音走：你念到哪它滚到哪，你停它也停，你跳一句它跟着跳。
 
+### Q：谁在用？他拿到什么成品？
+一个人给自己的小生意或者自媒体录视频，身边没有第二个人替他操作提词器。
+
+### Q：他为什么非要用不可？
+固定速度的滚动，只要讲话的人一停顿、一临场加话、一被问一句，就全乱了——然后他就在镜头前念错行。
+
 ### Q：今天缺的到底是什么？
 市面上的提词器要么定速滚动，要么要一只手按遥控。真正跟住一个活人说话，要的是带口音的实时语音对齐——今年才便宜到可以白送。
 
 ### Q：这一刀切在哪里？
 别卖提词器，卖「这条能不能用」：一停止录制就标出你念漏的句子和吃字的那几秒，并给一句留不留的判断。冷启动：中文=小红书「口播 提词器」「录课 卡壳」标签；英文=r/NewTubers 的 I re-record every take 帖。
+
+### Q：它最锋利的地方在哪？
+一个跟着说话的人走、而不是跟着秒表走的提词器：它一直在听，知道你念到哪一行，你真的念到了它才往下滚。
 
 ### Q：什么会杀死它？
 这是一个功能不是一家公司：BIGVU、PromptSmart 已经有语音跟随，手机厂商或剪辑软件补上也就一个版本的事。
@@ -3845,11 +4016,17 @@ An open-source desktop app that carries a novel or script all the way to an anim
 ### Who would use it, and what do they get?
 Already a creator product: the buyer is the small 短剧 studio, not a developer.
 
+### Why would anyone bother?
+The people writing web novels are not video editors. Between a finished chapter and a watchable episode sits a production pipeline they have no way to run.
+
 ### What is missing today?
 It hits a real pain but solves it imperfectly, and it breaks at exactly the step that matters: script → shot list → prompts truncates and silently writes empty panels, so the operator babysits token limits and re-runs. There is also no version for anyone outside 中文 — an English user could not get past the login dialog.
 
 ### What makes this one different?
 Do not build the pipeline. Build the one step that keeps breaking and costs almost nothing to run: a 小说 → 分镜表 converter that never truncates (chunked, resumable, schema-validated) and exports clean, per-shot prompts into 可灵 / 即梦 / Runway — sold per script to the 短剧工作室 who are already paying for generation somewhere else.
+
+### What is the sharpest thing about it?
+It ends at a finished animated episode, not at a pile of assets — script, storyboard, characters and video in one pass on the desktop.
 
 ### What could kill it?
 This is the most capital-exposed entry on the board: every second of output costs model money, and 可灵 / 即梦 / 海螺 own both the model and the distribution — ByteDance can fold the whole pipeline into 剪映 and price an indie out overnight. 13k stars sit on nine contributors, so the bus factor is one. The full pipeline is precisely the burn-money-for-speed race the standard excludes; only a narrow, text-only slice of it is open to you.
@@ -3861,7 +4038,7 @@ This is the most capital-exposed entry on the board: every second of output cost
 剪映 or 可灵 bundling storyboard generation natively; nine contributors carrying a 13k-star repo.
 
 ### What did real people actually say?
-Verbatim from the public sources linked above, not paraphrased: “每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro” — GitHub issue “对话框显示《分镜面板已成功写入12条数据》 但是一个都没看到。导致生成不了” — GitHub issue “docker部署后，浏览器打开页面，非常卡” — GitHub issue
+Verbatim from the public sources linked above, not paraphrased: “每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro” — GitHub issue
 
 ### How much work is it?
 about two weeks of work
@@ -3878,11 +4055,17 @@ HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧
 ### Q：谁在用？他拿到什么成品？
 它本来就是创作者产品：买家是小型短剧工作室，不是开发者。
 
+### Q：他为什么非要用不可？
+写网文的人不是剪辑师。从写完一章到做出一集能看的片子，中间横着一条他们根本没办法自己走的生产线。
+
 ### Q：今天缺的到底是什么？
 它击中了真痛点但解得不完美，而且恰恰断在最关键的一环：剧本 → 分镜表 → 提示词会被截断，还会「成功写入」却一条都看不到，创作者只能盯着 token 上限反复重跑。此外它实际只服务中文用户——一个英文用户连登录弹窗都过不去。
 
 ### Q：这一刀切在哪里？
 别做流水线。做那个一直坏、又几乎不花钱的环节：一个绝不截断的「小说 → 分镜表」转换器（分块、可续跑、结构校验），并把每个镜头的干净提示词导出到可灵 / 即梦 / Runway——按剧本卖给那些本来就在别处为生成付费的短剧工作室。
+
+### Q：它最锋利的地方在哪？
+它的终点是一集能播的成片，而不是一堆素材——剧本、分镜、角色、视频，在桌面上一次走完。
 
 ### Q：什么会杀死它？
 这是板上最吃资本的一条：每一秒成片都在烧模型钱，而可灵 / 即梦 / 海螺 同时握着模型和分发——字节把整条流水线塞进剪映，一夜之间就能把独立开发者挤出价格。1.3 万星背后只有 9 位贡献者，bus factor 是 1。整条流水线正是标准里排除的「烧钱抢速度」赛道，对你开放的只有其中很窄、纯文本的一刀。
@@ -3894,7 +4077,7 @@ HBAI-Ltd/Toonflow-app —— 开源一站式 AI 短剧创作工具,把小说/剧
 剪映或可灵原生集成分镜生成；1.3 万星的仓库只靠 9 位贡献者撑着。
 
 ### Q：真人原话是怎么说的？
-以下原声逐字摘自公开来源，未经改写： “每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro” — GitHub issue “对话框显示《分镜面板已成功写入12条数据》 但是一个都没看到。导致生成不了” — GitHub issue “docker部署后，浏览器打开页面，非常卡” — GitHub issue
+以下原声逐字摘自公开来源，未经改写： “每次生成分镜表时，一直被截断，重新生成又被截断，使用的是DeepSeek V4 Pro” — GitHub issue
 
 ### Q：要做多久？
 两周左右的工作量
@@ -3919,11 +4102,17 @@ A local desktop app that walks the whole mailbox, pulls the photos out of attach
 ### Who would use it, and what do they get?
 A non-technical person with a decade-old mailbox; the deliverable is an album folder they can actually open.
 
+### Why would anyone bother?
+For anyone who was online before phone galleries synced, the only surviving copy of a family photo is often an email attachment nobody can find any more.
+
 ### What is missing today?
 Takeout delivers an archive format, not an album; Google Photos only knows what you deliberately uploaded, and cannot see the scan you emailed yourself in 2011. The missing piece is the last-mile unpacking, not the export.
 
 ### What makes this one different?
 Make local-only the product, not a footnote: read-only, no network, and the deliverable is a folder you can drag straight into a phone gallery plus a contact sheet of the ten faces that appear most. Cold start (Chinese): 小红书/豆瓣 「邮箱 老照片 找回」「换手机 照片丢了」; (English): the 'how do I get ten years of attachments out of Gmail' thread that recurs in r/DataHoarder and r/gmail.
+
+### What is the sharpest thing about it?
+It reads the mailbox as a photo archive rather than as mail: a decade of pictures people mailed each other, pulled out and dated, on the machine, with no upload.
 
 ### What could kill it?
 It is a one-time job — opened once, never again — and Google closes it forever by adding a single 'photos folder' checkbox to Takeout. It also has to ask for mailbox access, which is the permission ordinary people are most reluctant to grant.
@@ -3946,11 +4135,20 @@ Show HN: Mail Memories —— 从 Gmail 里抢救照片的桌面 app。
 ### Q：这条到底是什么？
 一个本地桌面程序，扫过整个邮箱，把附件里的照片抽出来、去重，按日期排成普通的相册文件夹。全程不上传。
 
+### Q：谁在用？他拿到什么成品？
+一个有十五年历史邮箱的人，完全不知道哪一封信里躺着爸妈那张照片的唯一副本。
+
+### Q：他为什么非要用不可？
+对那些在手机相册自动同步之前就上网的人来说，一张家庭照片唯一还活着的副本，往往就是一封谁也再找不到的邮件附件。
+
 ### Q：今天缺的到底是什么？
 Takeout 交付的是归档格式不是相册；Google Photos 只认你主动上传过的，认不出你 2011 年发给自己的那张扫描件。缺的是最后一公里的解包，不是导出。
 
 ### Q：这一刀切在哪里？
 把「只在本机」做成产品本身而不是脚注：只读、不联网，产物是一个能直接拖进手机相册的文件夹，外加一页「这些照片里出现最多的十张脸」。冷启动：中文=小红书/豆瓣「邮箱 老照片 找回」「换手机 照片丢了」；英文=r/DataHoarder 与 r/gmail 每隔几个月复现的 how do I get ten years of attachments out 帖。
+
+### Q：它最锋利的地方在哪？
+它把邮箱当相册读，而不是当邮件读：十几年里大家互相寄来寄去的照片，被挖出来、按时间排好，全部在本机完成，不上传。
 
 ### Q：什么会杀死它？
 这是一次性的活，打开一次就不再打开；而 Google 只要在 Takeout 后面加一个「照片文件夹」勾选框就能一夜抹掉它。它还天然要拿邮箱权限——普通人对这件事最敏感。

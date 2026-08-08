@@ -24,35 +24,40 @@
       "quote": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note",
       "user": "Klutzy-Peach5949",
       "src": "reddit r/singing (7 pts / 21 comments, 16 days old)",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note"
     },
     {
       "kind": "pain",
       "quote": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one",
       "user": "Thinkofacard",
       "src": "reddit r/singing — parent of a 10-year-old",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one"
     },
     {
       "kind": "pain",
       "quote": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end",
       "user": "FoxyStand",
       "src": "reddit r/singing — parent, musical-theatre troupe",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end"
     },
     {
       "kind": "demand",
       "quote": "Is there some type of app or other platform that can check how on pitch you are against a backing track?",
       "user": "music_in_my_soul265",
       "src": "reddit r/singing (18 comments)",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "Is there some type of app or other platform that can check how on pitch you are against a backing track?"
     },
     {
       "kind": "pain",
       "quote": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune.",
       "user": "onesoldierone",
       "src": "reddit r/singing — 59-year-old drummer",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune."
     }
   ],
   "i18n": {
@@ -66,7 +71,30 @@
       "differentiator": "别再做一个调音器。做那个「比对」：一首歌、两条音高线、一条时间轴，外加一张「你每一遍都唱错的那三小节」清单。冷启动第一步：中文＝小红书「唱歌 跑调 怎么练」「音准 练习」标签与琴行、声乐老师的学员群；英文＝r/singing 上反复出现的音准帖，尤其是家长发的那几个——音乐剧团和学校合唱团里坐着愿意付钱的成年人。",
       "value": "原本每周付私教课、后来停掉的家长；定价远低于一节课，卖的是两节课之间的那一周练习。",
       "risk": "货架上已经堆满免费调音 App；更实在的风险是把歌手优化到那个好测量的指标上，而不是真正要紧的那件事。",
-      "workload": "2w"
+      "workload": "2w",
+      "voices": [
+        {
+          "quote": "I have melodyne but I want to see my vocal real time without transfer as for some reason I seem to be real tone deaf to how far I am from hitting a note",
+          "zh": "我有 Melodyne，但我想实时看到自己的声音，不用先导出——不知怎么回事，我完全听不出自己离那个音差多少。"
+        },
+        {
+          "quote": "Seems like an obvious tool that there'd be tons of, but I can't find a single good one",
+          "zh": "这看着就是那种应该满地都是的工具，可我一个好用的都找不到。"
+        },
+        {
+          "quote": "I've tried downloading a few but I can't really tell which would be worth paying for after the free trials end",
+          "zh": "我下了几个来试，但试用期结束后我实在判断不出哪个值得付钱。"
+        },
+        {
+          "quote": "Is there some type of app or other platform that can check how on pitch you are against a backing track?",
+          "zh": "有没有什么 App 或者平台，能对着伴奏检查我唱得准不准？"
+        },
+        {
+          "quote": "I cant sing in tune or sing with correct intervals between the various notes in a melody. I can however hear if others sing out of tune.",
+          "zh": "我唱不准，也唱不出旋律里正确的音程。但别人唱跑了我听得出来。"
+        }
+      ],
+      "consumer_angle": "一个听不出自己离那个音差多少的人。他拿到的是这个距离，在他还在唱的时候就显示在屏幕上。"
     }
   },
   "id": "323-five-separate-r-singing-threads-in-a-year-ask-fo",
@@ -76,5 +104,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone who cannot hear how far off the note they are. What they get is that distance, on screen, while they are still singing.",
+  "verdict": "build"
 }

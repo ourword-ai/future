@@ -39,7 +39,14 @@
       "why_good": "Leaping AI自动化电话和短信在扩展活动中，使企业能够高效地与潜在客户互动。它支持个性化互动，使跟进和培养潜在客户变得更容易。",
       "gap": "它是为有 CRM 的销售团队做的。真正因为没跟进而丢钱的，是两个人一本本子的小店，而这个品类的每个产品开场第一句都是「你用哪个 CRM」。",
       "counter": "外呼 AI 是整个语音 agent 市场里最挤的一条道，而且两头都在收紧——欧美的同意规则，中国这边营销外呼对小经营者基本已经关死。诚实的风险不是竞争，是在那个能跑通的价格上它根本不合法。",
-      "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。"
+      "differentiator": "反过来做：别打给客户，打给老板。同一套跨天机制，掉个头朝内——每天给老板打一通，把三条快凉的跟进念出来，每条配一句拟好的话，由老板自己发出去。不涉同意问题、不要 CRM、不用外呼系统。冷启动（中文）：小红书、抖音上「单人理发店」「修车行日常」内容的评论区；冷启动（英文）：r/smallbusiness，老板们原话就是这个失败——「我在现场手上拿着工具，答应了时间就只能记在脑子里，没地方写」。",
+      "voices": [
+        {
+          "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
+          "zh": "我经常一边干活一边就把上门时间答应下来了，然后全靠脑子记……因为我手上正拿着工具在现场，根本没地方记这个预约。"
+        }
+      ],
+      "consumer_angle": "用的人是手上拿着工具、在现场答应了上门时间的师傅。他拿到的是那个预约被记下来了，不用他自己记。"
     }
   },
   "voices": [
@@ -48,7 +55,8 @@
       "quote": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info",
       "url": "https://old.reddit.com/r/smallbusiness/",
       "user": "burgerknapper",
-      "src": "reddit"
+      "src": "reddit",
+      "text": "I sometimes am agreeing to appointment times and days. But then I just keep it all in my head … cause I'm in the field with tools in my hands… I got nowhere to put down this appointment info"
     }
   ],
   "gap": "It is built for a sales team with a CRM. The person who actually loses money to unmade follow-ups is a two-person shop with a notebook, and every product in this category starts by asking which CRM you use.",

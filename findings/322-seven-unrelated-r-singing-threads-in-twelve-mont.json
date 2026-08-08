@@ -24,42 +24,48 @@
       "quote": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP).",
       "user": "Only_Cover6761",
       "src": "reddit r/singing (18 pts / 23 comments)",
-      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+      "text": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP)."
     },
     {
       "kind": "pain",
       "quote": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it",
       "user": "wh1msy-pr1nc3ss",
       "src": "reddit r/singing (23 comments)",
-      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+      "text": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it"
     },
     {
       "kind": "demand",
       "quote": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?",
       "user": "Entire_Spite6208",
       "src": "reddit r/singing — mother of four",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?"
     },
     {
       "kind": "pain",
       "quote": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!",
       "user": "SweetGuava81",
       "src": "reddit r/singing — theatre director (13 pts / 15 comments)",
-      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+      "text": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!"
     },
     {
       "kind": "pain",
       "quote": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?",
       "user": "Ok-Cryptographer9963",
       "src": "reddit r/singing",
-      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+      "text": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?"
     },
     {
       "kind": "pain",
       "quote": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious.",
       "user": "OkCardiologist740",
       "src": "reddit r/singing (8 pts / 9 comments)",
-      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/singing/search?q=harmony+%22is+there+an+app%22+OR+%22wish+there+was%22&restrict_sr=on&sort=top&t=year",
+      "text": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious."
     }
   ],
   "i18n": {
@@ -73,7 +79,34 @@
       "differentiator": "别做一个唱歌 App。做一首歌的一条线：20 首公版与常见合唱曲、只做三度上方、一条单独的引导音轨、外加你跑掉那几秒上的一道红线。冷启动第一步：中文＝小红书/B站「和声怎么唱」「合唱 声部 跑调」标签下的评论区与合唱团家长群；英文＝r/singing 那七个求助帖本身就是一份已经举了手的名单，再加社区音乐剧团与教会诗班。",
       "value": "已经在为孩子的合唱团付钱的家长，或者已经在按月上声乐课的成年业余爱好者——定价对标一节课。",
       "risk": "生成声部的音乐质量就是产品本身，错的一条比没有更糟；商用录音的权利会把真正好用的那版推到用户自己的设备上。",
-      "workload": "2m"
+      "workload": "2m",
+      "voices": [
+        {
+          "quote": "Most of the time when I try to it's okay for the first couple notes before I end up drifting to the main melody line or ending up somewhere in the middle (and it sounds and feels awful xP).",
+          "zh": "大多数时候前两三个音还行，然后我就滑回主旋律去了，或者卡在中间某个地方——听起来和唱起来都很难受。"
+        },
+        {
+          "quote": "feels like no matter what i try i can't pick it up, no tutorials so far have helped and i spent basically a year trying to find the harmony when i was singing along to music and just couldn't get it",
+          "zh": "感觉不管怎么试都学不会，看过的教程一个都没帮上，我跟着歌找和声找了差不多一年，还是找不到。"
+        },
+        {
+          "quote": "there's no easy way to learn harmonies to new songs without that guidance. How do you currently learn harmonies when there's no teacher around? Is there an app for this?",
+          "zh": "没有人指导的话，学一首新歌的和声根本没有简单办法。没有老师的时候你们都是怎么学和声的？有没有这样的 App？"
+        },
+        {
+          "quote": "I have a cast member (a beautiful alto) who is struggling to hold harmonies when singing with others, and has asked for some resources/tips/etc. Problem is, I don't have the answers!",
+          "zh": "我们剧组有个演员（一位很好的女中音），和别人一起唱时稳不住和声，跑来问我要点资料或方法。问题是，我也不知道答案。"
+        },
+        {
+          "quote": "My band NEEDS me to be able to sing for harmonies, but I just cant. What do I even do?",
+          "zh": "我们乐队非常需要我能唱和声，可我就是唱不了。我到底该怎么办？"
+        },
+        {
+          "quote": "When I hear a melody I can sing harmonic over that one. But when I do the same over a song that already has a singers voice in it I, often sing disharmonious.",
+          "zh": "听到一段旋律时我能在上面唱出和声。但同一首歌里已经有主唱的声音时，我常常就唱跑了。"
+        }
+      ],
+      "consumer_angle": "一个已经用耳朵找了一年和声的人。他拿到的是那条声部单独唱给他听，以及在他滑回主旋律的那一秒被拦一下。"
     }
   },
   "id": "322-seven-unrelated-r-singing-threads-in-twelve-mont",
@@ -83,5 +116,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone who has been trying to find the harmony line by ear for a year. What they get is that line, sung alone, and a nudge the moment they slide back onto the melody.",
+  "verdict": "build"
 }

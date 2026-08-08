@@ -23,14 +23,16 @@
       "quote": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly.",
       "url": "https://old.reddit.com/r/languagelearning/",
       "user": "georgysavva, r/languagelearning",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly."
     },
     {
       "kind": "spec",
       "quote": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them.",
       "url": "https://old.reddit.com/r/languagelearning/",
       "user": "georgysavva, r/languagelearning",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them."
     }
   ],
   "i18n": {
@@ -44,7 +46,18 @@
       "edge": "把带口音的连续语流转写到足以支撑逐句改写，是最近的事。2022 年他发帖时，转写本身就已经糊到没法在上面做纠错。",
       "value": "落在人们本来就付的语言类订阅价位带；自然的加购是那张越攒越准的个人错题卡，不是更多时长。",
       "risk": "硬性自限：只纠语法和用词，绝不评口音，绝不发能力等级。一个让人觉得自己的声音是错的工具会被卸载，也该被卸载。",
-      "workload": "2w"
+      "workload": "2w",
+      "voices": [
+        {
+          "quote": "I always use Grammarly when I write. Not only does it correct my texts, but I also see my mistakes and learn from the corrections… But the most challenging thing in mastering the language is, of course, speaking… no one corrects me and doesn't indicate the mistakes. So I end up repeating them and improving slowly.",
+          "zh": "我写东西一直用 Grammarly。它不只是替我改，我还能看到自己错在哪、从修改里学到东西……但学一门语言最难的那部分，当然是说。"
+        },
+        {
+          "quote": "why is there no AI program that listens to your speech and analyzes your mistakes. Then, it would build a report with the most common ones and how to correct them.",
+          "zh": "为什么没有一个 AI 程序，听你说话、分析你的错误，然后给你一份报告，列出你最常犯的那几个错以及该怎么改？"
+        }
+      ],
+      "consumer_angle": "一个整天用英语工作、却总听见自己犯同样三个错的人。他拿到的就是这三个错，被点出名字，并附上怎么改。"
     }
   },
   "id": "318-a-non-native-speaker-who-works-in-english-every-",
@@ -54,5 +67,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone who works in English all day and still hears themselves make the same three mistakes. What they get is those three, named, with the fix.",
+  "verdict": "build"
 }

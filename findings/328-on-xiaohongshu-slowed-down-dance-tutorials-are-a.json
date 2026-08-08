@@ -24,32 +24,38 @@
     {
       "text": "这个速度 一看见就想跟着学 感觉自己一定会学会",
       "source": "小红书《和「法拉利」教授学习拉丁分解动作》评论区（2,727赞 / 4,155收藏 / 105评论）",
-      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+      "quote": "这个速度 一看见就想跟着学 感觉自己一定会学会"
     },
     {
       "text": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈",
       "source": "同上笔记评论区",
-      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+      "quote": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈"
     },
     {
       "text": "他真的试图教会你",
       "source": "同上笔记评论区，49赞",
-      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+      "quote": "他真的试图教会你"
     },
     {
       "text": "能把这舞这么慢表演出来，这真厉害",
       "source": "同上笔记评论区，92赞",
-      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67"
+      "url": "https://www.xiaohongshu.com/explore/69fc99d50000000038034a67",
+      "quote": "能把这舞这么慢表演出来，这真厉害"
     },
     {
       "text": "自己扒舞速度特别慢，怎么快速提高？",
       "source": "小红书《舞蹈干货5｜高效扒舞极致还原的10个秘诀》封面文案（454赞 / 303收藏）",
-      "url": "https://www.xiaohongshu.com/explore/68bc0b30000000001c03262e"
+      "url": "https://www.xiaohongshu.com/explore/68bc0b30000000001c03262e",
+      "quote": "自己扒舞速度特别慢，怎么快速提高？"
     },
     {
       "text": "扒舞好累啊",
       "source": "小红书搜索联想词（平台按真实搜索量生成）",
-      "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%89%92%E8%88%9E%20%E5%A4%AA%E9%9A%BE%E4%BA%86"
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%89%92%E8%88%9E%20%E5%A4%AA%E9%9A%BE%E4%BA%86",
+      "quote": "扒舞好累啊"
     }
   ],
   "consumer_angle": "Someone learning a dance alone from a phone, with no teacher and no studio; the deliverable is that specific dance cut into eight-counts, slowed, and narrated one count at a time.",
@@ -63,7 +69,34 @@
       "counter": "抖音和快手同时握着视频和姿态模型，把变速＋分段做成播放器功能随时可以。真正的风险在口令：说反一次左右就比不给还糟，因为这批人靠肌肉记忆，错动作练进去要花更久改回来。而单目视频合成背面视角仍属研究阶段，所以第一版绝不能承诺它。",
       "differentiator": "别再做播放器，做老师手工在做的那件事：切到八拍、放慢、把每一拍身体在干什么说出来；每条口令都能点回它自己那一帧，机器不确定就留空而不是硬猜。只在本机处理用户自己找到的视频，永不托管、永不再分发。冷启动（中文）：那几条慢速教程本身的评论区（6909／4667／2979／2727赞）挤满了在求某一支歌慢速版的人，再加「扒舞好累啊」「什么app比较适合扒舞」两个搜索词落地的笔记；冷启动（英文）：YouTube dance tutorial 底下常年的 mirrored version please，以及 r/kpophelp。",
       "value": "对着手机一个人学舞的人——从女团翻跳到婚礼舞到广场舞。按「拆解一支舞」付费，一个月学一支之后转小额订阅。现在手工做慢速版的老师是第二个市场：把一天的活压成几分钟。",
-      "risk": "口令的准确度。说反一次左右，比什么都不说更糟。"
+      "risk": "口令的准确度。说反一次左右，比什么都不说更糟。",
+      "voices": [
+        {
+          "quote": "这个速度 一看见就想跟着学 感觉自己一定会学会",
+          "zh": "这个速度 一看见就想跟着学 感觉自己一定会学会"
+        },
+        {
+          "quote": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈",
+          "zh": "这版本好啊 零基础友好 等明天睡起来练起来哈哈哈哈哈"
+        },
+        {
+          "quote": "他真的试图教会你",
+          "zh": "他真的试图教会你"
+        },
+        {
+          "quote": "能把这舞这么慢表演出来，这真厉害",
+          "zh": "能把这舞这么慢表演出来，这真厉害"
+        },
+        {
+          "quote": "自己扒舞速度特别慢，怎么快速提高？",
+          "zh": "自己扒舞速度特别慢，怎么快速提高？"
+        },
+        {
+          "quote": "扒舞好累啊",
+          "zh": "扒舞好累啊"
+        }
+      ],
+      "consumer_angle": "用的人是刷到一支舞、想学但跟不上的人。他拿到的是同一支舞按八拍切好、放慢、每一拍一句人话口令的版本。"
     }
   },
   "id": "328-on-xiaohongshu-slowed-down-dance-tutorials-are-a",
@@ -73,5 +106,7 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "verdict": "build"
 }

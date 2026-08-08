@@ -23,28 +23,32 @@
       "quote": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?",
       "user": "sjdehajak",
       "src": "reddit r/languagelearning (7 pts / 16 comments)",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?"
     },
     {
       "kind": "demand",
       "quote": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price.",
       "user": "ComfortablePost3664",
       "src": "reddit r/languagelearning (8 comments)",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price."
     },
     {
       "kind": "pain",
       "quote": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?",
       "user": "AffectionateTeam8043",
       "src": "reddit r/languagelearning (16 pts / 35 comments, 2 days old)",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?"
     },
     {
       "kind": "demand",
       "quote": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?",
       "user": "PawnshopGhost",
       "src": "reddit r/languagelearning",
-      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year"
+      "url": "https://old.reddit.com/r/guitarlessons+learnart+languagelearning+piano+singing/search?q=%22is+there+an+app%22&restrict_sr=on&sort=top&t=year",
+      "text": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?"
     }
   ],
   "i18n": {
@@ -58,7 +62,26 @@
       "differentiator": "别做一个语言学习 App。做那条「边界」：从 Anki 或一张笔记本照片导入你的词表，每天早上产出一段 150 词的短故事，里面零个越界词，外加「你最接近能读懂的下五个词」。冷启动第一步：中文＝小红书「背单词 记不住」「原版书 生词」标签与考研/雅思词汇打卡群；英文＝r/languagelearning 那几个帖子，以及 Anki 版块里以「求插件」形态出现的同一个诉求。",
       "value": "已经在付一份订阅、又不愿付四份的自学者——按一份的价格卖，解决的是阅读材料问题而不是刷题问题。",
       "risk": "极易被抄；离 Anki 的一次更新或 Duolingo 的一个功能只有一步；最强的形态可能本来就是插件，而不是生意。",
-      "workload": "2w"
+      "workload": "2w",
+      "voices": [
+        {
+          "quote": "Is there an app or site where you can save your own vocab to a library, and then it creates sentences with them?",
+          "zh": "有没有 App 或者网站，能把我自己的生词存成一个词库，然后用这些词造句子？"
+        },
+        {
+          "quote": "I really need this, I think my vocabulary will shoot up instantly significantly if I have something like this. Free or cheap or any price.",
+          "zh": "我真的需要这个，我觉得只要有这样的东西，我的词汇量会立刻涨一大截。免费、便宜、多贵都行。"
+        },
+        {
+          "quote": "I don't have the money to be paying multiple subscriptions, so, is there an app or site that do what rosetta stone used to?",
+          "zh": "我没钱同时订好几个服务，有没有哪个 App 或网站能做到 Rosetta Stone 以前做的那件事？"
+        },
+        {
+          "quote": "Is there an app which either integrates with Safari on iPhone or has an integrated web-browser where you can mark whatever word you want and create a flashcard for it?",
+          "zh": "有没有一个 App，能和 iPhone 上的 Safari 打通，或者自带浏览器，让我圈出任何一个词就直接做成一张记忆卡？"
+        }
+      ],
+      "consumer_angle": "一个手上有自己那份生词表、而任何课程都不覆盖它的学习者。他拿到的是用他这份表造出来的句子，而不是课程大纲里的句子。"
     }
   },
   "id": "325-four-r-languagelearning-threads-in-a-year-ask-fo",
@@ -68,5 +91,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "A learner with their own list of words nobody else's course covers. What they get is sentences built from that list, not from a syllabus.",
+  "verdict": "build"
 }

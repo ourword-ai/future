@@ -28,21 +28,24 @@
       "quote": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??",
       "url": "https://old.reddit.com/r/ADHD/",
       "user": "MajorDescription8675",
-      "src": "reddit"
+      "src": "reddit",
+      "text": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??"
     },
     {
       "kind": "pain",
       "quote": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天",
       "url": "https://www.xiaohongshu.com/explore/6a4cf22a000000001603e42b",
       "user": "小红书评论区",
-      "src": "xiaohongshu"
+      "src": "xiaohongshu",
+      "text": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天"
     },
     {
       "kind": "pain",
       "quote": "但是整体上对中文的支持，以及国内优化做的一般",
       "url": "https://www.xiaohongshu.com/explore/6a4cf22a000000001603e42b",
       "user": "马古",
-      "src": "xiaohongshu"
+      "src": "xiaohongshu",
+      "text": "但是整体上对中文的支持，以及国内优化做的一般"
     }
   ],
   "pain_verified": true,
@@ -57,7 +60,22 @@
       "value": "一个今年已经在三个日程工具上花过钱的人。月订阅，对标「少错过一次预约」。",
       "risk": "让它有意思的那一件事——它会打电话给你——同时也是第三周最可能被关掉的那一件事。",
       "why_use": "说这话的人用他自己的话讲，试过「a billion」个 App。那不是一个在找功能的人，那是一个已经为整个品类付过钱、并且被全部辜负了的人。",
-      "edge": "这个品类的每个产品都在比谁的任务录入和整理做得好。而摆在桌上的抱怨是：录入和整理不是它坏掉的地方，投递才是。"
+      "edge": "这个品类的每个产品都在比谁的任务录入和整理做得好。而摆在桌上的抱怨是：录入和整理不是它坏掉的地方，投递才是。",
+      "voices": [
+        {
+          "quote": "I've tried a billion reminder and task management apps and literally ignore every push notification. Rich people don't even have to remember everything, they have personal assistants on staff who help them every day all year with remembering. If only there was app that would call me like a personal assistant would and take the mental load of having to remember everything…. When are they gonna build that??",
+          "zh": "提醒和待办类 App 我试过一万个，每一条推送通知我都会直接无视。有钱人根本不用记这些事，他们身边有真人助理帮着记……什么时候才有人做这个东西？"
+        },
+        {
+          "quote": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天",
+          "zh": "主要是整理逻辑 完全不按plan行动但是需要有plan。没有计划我能躺尸一整天"
+        },
+        {
+          "quote": "但是整体上对中文的支持，以及国内优化做的一般",
+          "zh": "但是整体上对中文的支持，以及国内优化做的一般"
+        }
+      ],
+      "consumer_angle": "用的人是那种试过一万个待办 App、每一条推送都会无视的人。他拿到的是每天早上一通两分钟的电话，把今天真要做的三件事念给他听。"
     }
   },
   "tags": [
@@ -73,5 +91,6 @@
   "novelty": 0.8,
   "corroborations": 0,
   "reused": 0,
-  "first": true
+  "first": true,
+  "verdict": "build"
 }

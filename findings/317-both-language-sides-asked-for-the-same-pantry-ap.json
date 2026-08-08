@@ -25,21 +25,24 @@
       "quote": "缺一个可以记录有保质期的东西的APP，要过期了提醒我",
       "url": "https://www.xiaohongshu.com/explore/665351440000000015011534",
       "user": "小红书评论（465赞）",
-      "src": "xiaohongshu-comment"
+      "src": "xiaohongshu-comment",
+      "text": "缺一个可以记录有保质期的东西的APP，要过期了提醒我"
     },
     {
       "kind": "pain",
       "quote": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up.",
       "url": "https://old.reddit.com/r/Cooking/",
       "user": "Carrot-sprint, r/Cooking (17 pts / 67 comments)",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up."
     },
     {
       "kind": "workaround",
       "quote": "It takes a couple of hours to do",
       "url": "https://old.reddit.com/r/EatCheapAndHealthy/",
       "user": "Pixel-1606, r/EatCheapAndHealthy (890 pts)",
-      "src": "reddit-post"
+      "src": "reddit-post",
+      "text": "It takes a couple of hours to do"
     }
   ],
   "i18n": {
@@ -53,7 +56,22 @@
       "edge": "读一整格乱七八糟的包装——斜的、反光的、被挡住一半的、每个盒子日期格式都不一样——恰恰是最近才可靠起来的那部分。手输从来不是一个待优化的交互问题，它是能力缺失。",
       "value": "一次性付费的手机应用；「药箱」这个说法本身也能当成给父母家买的礼物。",
       "risk": "只要碰到药品日期就必须严格停在誊抄层面——只转录印着的日期，绝不判断还能不能吃，并且把这句话写在产品里。",
-      "workload": "2w"
+      "workload": "2w",
+      "voices": [
+        {
+          "quote": "缺一个可以记录有保质期的东西的APP，要过期了提醒我",
+          "zh": "缺一个可以记录有保质期的东西的APP，要过期了提醒我"
+        },
+        {
+          "quote": "I can see there are a bunch of apps now to inventory stuff, but I really don't want to sit and register every single tiny item, because I feel I won't keep it up.",
+          "zh": "我看到现在有一堆记库存的 App，但我真的不想坐下来把每一样小东西都登记一遍，因为我知道自己坚持不了。"
+        },
+        {
+          "quote": "It takes a couple of hours to do",
+          "zh": "光录入就得花好几个小时。"
+        }
+      ],
+      "consumer_angle": "一个每周都在扔东西、而且已经明确拒绝手动录入的人。他要做的只是拍一下货架，拿回一张「先吃哪几样」的清单——一个字都不用输。"
     }
   },
   "id": "317-both-language-sides-asked-for-the-same-pantry-ap",
@@ -63,5 +81,8 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "consumer_angle": "Someone who throws food out every week and has already refused to type an inventory. What they get is one photo of the shelf and a list of what to eat first — no data entry.",
+  "verdict": "build"
 }

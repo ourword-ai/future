@@ -24,27 +24,32 @@
     {
       "text": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine.",
       "source": "r/AskVet — 'Normal vet said we likely need to put our cat down, ICU vet said he's probably fine. What is actually going on?' (98 points, 29 comments)",
-      "url": "https://old.reddit.com/r/AskVet/"
+      "url": "https://old.reddit.com/r/AskVet/",
+      "quote": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine."
     },
     {
       "text": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you.",
       "source": "r/AskVet — 'Help with interpreting feline bloodwork', posted with a dozen values typed out by hand",
-      "url": "https://old.reddit.com/r/AskVet/"
+      "url": "https://old.reddit.com/r/AskVet/",
+      "quote": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you."
     },
     {
       "text": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?",
       "source": "r/AskVet — 'Help me interpret please'",
-      "url": "https://old.reddit.com/r/AskVet/"
+      "url": "https://old.reddit.com/r/AskVet/",
+      "quote": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?"
     },
     {
       "text": "后面的复检，现在还在有点尿血，不怎么吃喝",
       "source": "小红书《有没有看得懂猫咪检验报告的？》26赞/54评论 — 发帖人本人在评论区补的一句",
-      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB"
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB",
+      "quote": "后面的复检，现在还在有点尿血，不怎么吃喝"
     },
     {
       "text": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。",
       "source": "小红书《有没有看得懂猫咪检验报告的？》评论区 — 另一位主人复述自己那次",
-      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB"
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%8C%AB%20%E8%A1%80%E6%A3%80%E6%8A%A5%E5%91%8A%20%E6%B1%82%E8%A7%A3%E8%AF%BB",
+      "quote": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。"
     }
   ],
   "i18n": {
@@ -58,7 +63,29 @@
       "differentiator": "坚决不诊断。把别人没有的「认机器、按机器参考区间读」这一层做出来，让输出变成主人能拿去跟自己兽医对话的东西。英文冷启动＝去 r/AskVet 每天都有的「help me interpret」帖下面，免费回一份解读加三个问题；中文冷启动＝小红书那几条几百赞「一分钟教你看懂宠物血常规」教程的评论区，那里全是贴自己报告照片的人。",
       "value": "养猫养狗的人按份付费，一份的价格是一杯咖啡，而对面那次门诊是它的上百倍。报告会攒成这只动物的一份小病历，那才是他下次还回来的原因。",
       "risk": "把危急值读错。「只翻译、只列该问什么、只说什么情况立刻回医院，绝不诊断绝不给剂量」这条自限不是法律遮羞布，它就是这个产品的形状。",
-      "consumer_angle": "晚上十一点站在厨房里的一个猫主人，手里是诊所打的一张单子，到早上之前找不到任何一个兽医。她拿到的是：每一个飘红的数字都被讲成人话，外加明天要问医生的三个问题——不是诊断，也不是一张账单。"
+      "consumer_angle": "晚上十一点站在厨房里的一个猫主人，手里是诊所打的一张单子，到早上之前找不到任何一个兽医。她拿到的是：每一个飘红的数字都被讲成人话，外加明天要问医生的三个问题——不是诊断，也不是一张账单。",
+      "voices": [
+        {
+          "quote": "We are just confused. His normal vet was preparing us to put him down and it was a minute-by-minute situation. The ICU, which is in a major city and I assume has better vets, seems much more hopeful and is acting like he's totally fine.",
+          "zh": "我们只是完全懵了。平时那家医院已经在给我们做安乐死的心理准备，说是随时可能不行；而大城市那家 ICU（我以为医生水平更高）却乐观得多，一副它没什么事的样子。"
+        },
+        {
+          "quote": "Please help me interprete the findings and give me probable diagnoses. I will be eternally grateful to you.",
+          "zh": "求各位帮我解读一下这些结果，给个可能的诊断。我会永远感激你们。"
+        },
+        {
+          "quote": "Can someone help me interpret if this is the right path forward based on the below radiologist notes or if I should get second opinion?",
+          "zh": "有没有人能帮我判断一下，按下面这份放射科意见，现在这个方案是对的吗？还是我该去看第二个医生？"
+        },
+        {
+          "quote": "后面的复检，现在还在有点尿血，不怎么吃喝",
+          "zh": "后面的复检，现在还在有点尿血，不怎么吃喝"
+        },
+        {
+          "quote": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。",
+          "zh": "因医院没有夜班，我给护士每天晚上300，看护输液，猫咪两天就吃饭了，4天指标正常，5天出院，费用打折后1700元。"
+        }
+      ]
     }
   },
   "id": "329-five-unrelated-r-askvet-threads-in-twelve-months",
@@ -68,5 +95,7 @@
   "corroborations": 0,
   "reused": 0,
   "first": true,
-  "tags": []
+  "tags": [],
+  "pain_verified": true,
+  "verdict": "build"
 }
