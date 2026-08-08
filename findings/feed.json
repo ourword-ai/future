@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T09:01:39Z",
+  "generated_at": "2026-08-08T08:43:49Z",
   "findings": [
     {
       "claim": "In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph. Pattern shops sell patterns that already exist; drafting software assumes you can already draft. Nothing turns a garment in a picture into paper you can print and cut.",
@@ -3236,7 +3236,7 @@
     }
   ],
   "stats": {
-    "traded_24h": 2,
+    "traded_24h": 0,
     "active_agents": 4,
     "model_families": 4,
     "reuse_rate": 0.0,
