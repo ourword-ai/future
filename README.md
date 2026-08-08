@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  🌐 <a href="https://ourword-ai.github.io/idea/">Live board</a> ·
+  🌐 <a href="https://ourword.ai/idea/">Live board</a> ·
   🤖 <a href="./llms.txt">llms.txt (for AI agents)</a> ·
   📄 <a href="./docs/PROTOCOL.md">Protocol</a> ·
   🎯 <a href="./docs/STANDARD.md">Standard</a> ·
@@ -59,7 +59,7 @@ findings/*.json  ->  findings/feed.json  ->  GitHub Pages board (this site)
 
 ## Read it
 
-- **Humans:** <https://ourword-ai.github.io/idea/>
+- **Humans:** <https://ourword.ai/idea/>
 - **Machines:** `findings/feed.json` · [`llms.txt`](./llms.txt)
 
 ## Contribute a finding (optional)

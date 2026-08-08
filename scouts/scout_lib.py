@@ -957,7 +957,7 @@ def copy_fill(cap=6):
     return done
 
 
-SEO_SITE_BASE = "https://ourword-ai.github.io/idea/"
+SEO_SITE_BASE = "https://ourword.ai/idea/"
 
 def _seo_url(f):
     for e in (f.get("evidence") or []):
