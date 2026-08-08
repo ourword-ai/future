@@ -973,60 +973,17 @@ def _seo_esc(x):
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 def build_seo(base=None):
-    """Regenerate crawlable SEO/GEO content — JSON-LD (WebSite + ItemList of every idea)
-    plus a <noscript> text list — between <!--SEO:START--> and <!--SEO:END--> in both
-    index.html files, and (re)write sitemap.xml. Static + deterministic (stable order so
-    unchanged data => byte-identical => no spurious commits); needs no network."""
-    base = base or SEO_SITE_BASE
-    path = "findings/feed.json"
-    if not os.path.exists(path):
+    """Delegate to seo/build_seo.py — the shared ourword.ai SEO/GEO generator.
+
+    It rewrites canonical/OG/JSON-LD in both index.html files, injects a crawlable
+    <noscript> index, and regenerates robots.txt, sitemap.xml, llms.txt,
+    llms-full.txt, feed.xml plus one static page per idea in /i/ and /zh/i/.
+    Kept under this name so the existing translate.yml step keeps working."""
+    import subprocess
+    r = subprocess.run([sys.executable, "seo/build_seo.py"], capture_output=True, text=True)
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stderr.write(r.stderr)
         return 0
-    feed = json.load(open(path, encoding="utf-8"))
-    items = [f for f in (feed.get("findings") or [])
-             if (f.get("title") or f.get("claim")) and f.get("status") != "pending"]
-    items.sort(key=lambda f: ((f.get("score") or 0), f.get("posted_at", "")), reverse=True)
-    items = items[:200]
-    li, arts = [], []
-    for i, f in enumerate(items, 1):
-        title = (f.get("title") or f.get("claim") or "")[:120]
-        desc = (f.get("why_good") or f.get("claim") or "")[:240]
-        url = _seo_url(f)
-        li.append({"@type": "ListItem", "position": i,
-                   "item": {"@type": "SoftwareApplication", "name": title, "description": desc,
-                            "url": url, "applicationCategory": "DeveloperApplication"}})
-        arts.append(f'<article><h3><a href="{_seo_esc(url)}">{_seo_esc(title)}</a></h3>'
-                    f'<p>{_seo_esc(desc)}</p></article>')
-    website = {"@context": "https://schema.org", "@type": "WebSite", "name": "Idea", "url": base,
-               "description": "A live, hourly board of promising open-source projects, AI agents, "
-                              "developer tools and Claude/MCP skills worth building."}
-    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Ideas worth building",
-                "url": base, "numberOfItems": len(li), "itemListElement": li}
-    block = ("<!--SEO:START-->"
-             '<script type="application/ld+json">' + json.dumps(website, ensure_ascii=False) + "</script>"
-             '<script type="application/ld+json">' + json.dumps(itemlist, ensure_ascii=False) + "</script>"
-             '<noscript><section id="ideas-index">'
-             '<h1>Ideas worth building — open-source projects, AI tools and skills</h1>'
-             '<p>An hourly-updated board of promising open-source projects, AI agents, developer '
-             'tools and Claude/MCP skills from GitHub, Show HN and Product Hunt.</p>'
-             + "".join(arts) +
-             "</section></noscript>"
-             "<!--SEO:END-->")
-    n = 0
-    for fp in ("index.html", "site/index.html"):
-        if not os.path.exists(fp):
-            continue
-        s = open(fp, encoding="utf-8").read()
-        new = re.sub(r"<!--SEO:START-->.*?<!--SEO:END-->", lambda m: block, s, count=1, flags=re.S)
-        if new != s:
-            open(fp, "w", encoding="utf-8").write(new)
-            n += 1
-    gen = feed.get("generated_at") or ""
-    lastmod = gen[:10] if gen else ""
-    sm = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-          f'  <url><loc>{base}</loc>'
-          + (f'<lastmod>{lastmod}</lastmod>' if lastmod else '')
-          + '<changefreq>hourly</changefreq><priority>1.0</priority></url>\n'
-          '</urlset>\n')
-    open("sitemap.xml", "w", encoding="utf-8").write(sm)
-    return n
+    return 2
+

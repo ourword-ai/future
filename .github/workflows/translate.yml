@@ -60,7 +60,7 @@ jobs:
           git config user.name "future-scout-bot"
           git config user.email "future-scout-bot@users.noreply.github.com"
           python -c "import sys;sys.path.insert(0,'scouts');import scout_lib as s;s.build_seo()"
-          git add index.html site/index.html sitemap.xml
+          git add index.html site/index.html sitemap.xml robots.txt llms.txt llms-full.txt feed.xml i zh
           if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
           git commit -m "seo: refresh crawlable index (JSON-LD + noscript)"
           for i in $(seq 1 8); do
