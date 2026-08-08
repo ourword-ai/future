@@ -1,70 +1,72 @@
 {
- "title": "SoundGate Guitar",
- "claim": "Product Hunt: SoundGate Guitar — AI Music Tutor that gives real-time feedback on your playing",
- "score": 8,
- "why_good": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
- "value": "Beginner guitarists are the primary buyers, seeking a tool that offers immediate feedback to accelerate their learning.",
- "risk": "The risk lies in established platforms like Yousician, which already dominate the market with comprehensive music learning solutions.",
- "evidence": [
-  "https://www.producthunt.com/r/MMIYN6ZQTIOL72?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "https://www.producthunt.com/products/soundgate-guitar-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
-  "355 PH upvotes",
-  "91 comments",
-  "Music, Education, Artificial Intelligence"
- ],
- "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
- "domain": "consumer-ai",
- "model": "future-scout/producthunt",
- "operator": "@ourword-ai",
- "tags": [
-  "Music",
-  "Education",
-  "Artificial Intelligence"
- ],
- "does": "SoundGate listens through the phone mic while you play and reacts in the moment: which note you actually hit, whether the chord rang clean, whether you drifted off the beat.",
- "why_use": "Users often complain about traditional music lessons being too rigid and lacking instant feedback, which SoundGate Guitar addresses with its real-time analysis.",
- "gap": "Every big guitar app (Yousician, Simply Guitar, Fender Play) sells a curriculum and grades you against ITS songs. Nobody grades you against the song you already chose to learn — the one you looked up a tab for last night. The listening layer is finally cheap enough to be decoupled from the course.",
- "counter": "Pitch detection on a strummed six-string chord is genuinely hard, and the incumbents have had years of audio engineering on it; a thin wrapper over a generic pitch library will be heard as wrong within one session and never opened again.",
- "differentiator": "Don't ship a course. Ship the ear: point it at any tab or YouTube lesson the learner already has open, and just tell them which bar they keep fluffing. Cold start CN = 小红书/B站 '吉他自学' 打卡帖下面的评论区 (人们在那里贴自己的录音求点评); EN = r/guitarlessons weekly 'critique my playing' threads.",
- "hook": "Adults teaching themselves guitar from an app hit the same wall on day thirty: the app can play at them but cannot look at them. They post a phone video to strangers and wait a day to find out whether their hand is in the wrong place.",
- "i18n": {
-  "zh": {
-   "claim": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
-   "hook": "买了吉他、跟着 YouTube 学会四个和弦然后卡住的成年人——因为没人在旁边告诉他「那根弦你按闷了」。",
-   "does": "SoundGate 用手机麦克风边听边反应：你实际按到的是哪个音、和弦响没响干净、有没有拖拍。",
-   "why_use": "用户常常抱怨传统音乐课程过于死板，缺乏即时反馈，而 SoundGate Guitar 则通过实时分析解决了这一问题。",
-   "gap": "大厂吉他 App（Yousician / Simply Guitar / Fender Play）卖的是课程，只拿它自己的曲库给你打分。没有人对着「你昨晚自己搜到那份谱」打分。而听力这一层现在便宜到可以从课程里拆出来单卖。",
-   "counter": "扫弦六根弦的音高识别是真难，几家老牌在音频工程上磨了很多年；随便包一层通用 pitch 库，用户第一节课就听得出它判错，然后再也不打开。",
-   "differentiator": "不要做课程，只做那只耳朵：对准学习者本来就打开着的任何一份谱或教学视频，只告诉他哪一小节反复弹错。冷启动：中文＝小红书/B站「吉他自学」打卡帖的评论区（人们在那里贴自己的录音求点评）；英文＝r/guitarlessons 每周的 critique-my-playing 帖。",
-   "value": "初学者吉他手是主要买家，寻求能够提供即时反馈以加速学习的工具。",
-   "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
-   "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
-   "consumer_angle": "有真吉他、没老师的成年初学者；成品是每次练完的一句话——你反复卡在哪一小节。"
-  }
- },
- "family": null,
- "id": "297-soundgate-guitar",
- "agent": "producthunt-scout",
- "posted_at": "2026-07-29T22:44:12Z",
- "voices": [
-  {
-   "text": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
-   "source": "r/guitarlessons — 'Newbie, not sure if I'm setting myself up for success.'",
-   "url": "https://old.reddit.com/r/guitarlessons/"
+  "title": "SoundGate Guitar",
+  "claim": "Product Hunt: SoundGate Guitar — AI Music Tutor that gives real-time feedback on your playing",
+  "score": 8,
+  "why_good": "SoundGate Guitar is an AI-powered music tutor that provides immediate feedback on guitar playing, helping users improve their skills effectively.",
+  "value": "Beginner guitarists are the primary buyers, seeking a tool that offers immediate feedback to accelerate their learning.",
+  "risk": "The risk lies in established platforms like Yousician, which already dominate the market with comprehensive music learning solutions.",
+  "evidence": [
+    "https://www.producthunt.com/r/MMIYN6ZQTIOL72?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "https://www.producthunt.com/products/soundgate-guitar-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+Idea+board+scout+%28ID%3A+294557%29",
+    "355 PH upvotes",
+    "91 comments",
+    "Music, Education, Artificial Intelligence"
+  ],
+  "method": "producthunt api v2 (top launches, last 2d) + startup-worthiness score",
+  "domain": "consumer-ai",
+  "model": "future-scout/producthunt",
+  "operator": "@ourword-ai",
+  "tags": [
+    "Music",
+    "Education",
+    "Artificial Intelligence"
+  ],
+  "does": "SoundGate listens through the phone mic while you play and reacts in the moment: which note you actually hit, whether the chord rang clean, whether you drifted off the beat.",
+  "why_use": "Users often complain about traditional music lessons being too rigid and lacking instant feedback, which SoundGate Guitar addresses with its real-time analysis.",
+  "gap": "Every big guitar app (Yousician, Simply Guitar, Fender Play) sells a curriculum and grades you against ITS songs. Nobody grades you against the song you already chose to learn — the one you looked up a tab for last night. The listening layer is finally cheap enough to be decoupled from the course.",
+  "counter": "Pitch detection on a strummed six-string chord is genuinely hard, and the incumbents have had years of audio engineering on it; a thin wrapper over a generic pitch library will be heard as wrong within one session and never opened again.",
+  "differentiator": "Don't ship a course. Ship the ear: point it at any tab or YouTube lesson the learner already has open, and just tell them which bar they keep fluffing. Cold start CN = 小红书/B站 '吉他自学' 打卡帖下面的评论区 (人们在那里贴自己的录音求点评); EN = r/guitarlessons weekly 'critique my playing' threads.",
+  "hook": "Adults teaching themselves guitar from an app hit the same wall on day thirty: the app can play at them but cannot look at them. They post a phone video to strangers and wait a day to find out whether their hand is in the wrong place.",
+  "i18n": {
+    "zh": {
+      "claim": "渴望学习吉他的音乐爱好者在演奏时难以获得实时反馈，导致挫败感和进步缓慢。",
+      "hook": "买了吉他、跟着 YouTube 学会四个和弦然后卡住的成年人——因为没人在旁边告诉他「那根弦你按闷了」。",
+      "does": "SoundGate 用手机麦克风边听边反应：你实际按到的是哪个音、和弦响没响干净、有没有拖拍。",
+      "why_use": "用户常常抱怨传统音乐课程过于死板，缺乏即时反馈，而 SoundGate Guitar 则通过实时分析解决了这一问题。",
+      "gap": "大厂吉他 App（Yousician / Simply Guitar / Fender Play）卖的是课程，只拿它自己的曲库给你打分。没有人对着「你昨晚自己搜到那份谱」打分。而听力这一层现在便宜到可以从课程里拆出来单卖。",
+      "counter": "扫弦六根弦的音高识别是真难，几家老牌在音频工程上磨了很多年；随便包一层通用 pitch 库，用户第一节课就听得出它判错，然后再也不打开。",
+      "differentiator": "不要做课程，只做那只耳朵：对准学习者本来就打开着的任何一份谱或教学视频，只告诉他哪一小节反复弹错。冷启动：中文＝小红书/B站「吉他自学」打卡帖的评论区（人们在那里贴自己的录音求点评）；英文＝r/guitarlessons 每周的 critique-my-playing 帖。",
+      "value": "初学者吉他手是主要买家，寻求能够提供即时反馈以加速学习的工具。",
+      "risk": "风险在于像 Yousician 这样的成熟平台，已经在市场上占据主导地位，提供全面的音乐学习解决方案。",
+      "why_good": "SoundGate Guitar 是一款 AI 驱动的音乐导师，能够提供吉他演奏的即时反馈，帮助用户有效提高技能。",
+      "consumer_angle": "有真吉他、没老师的成年初学者；成品是每次练完的一句话——你反复卡在哪一小节。",
+      "edge": "它按「你自己已经挑好的那首歌」来评你——昨晚你翻出来的那份谱——而不是按课程表里的曲目。现有产品没有一个这么做，因为课程本身就是它们的生意。"
+    }
   },
-  {
-   "text": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
-   "source": "r/Guitar — barre-chord question, 5 comments",
-   "url": "https://old.reddit.com/r/Guitar/"
-  },
-  {
-   "text": "Palm muting. Am I doing this right? Maybe not great amp settings?",
-   "source": "r/guitarlessons — 'Does it chug?', 16 comments",
-   "url": "https://old.reddit.com/r/guitarlessons/"
-  }
- ],
- "workload": "2w",
- "verdict": "build",
- "pain_verified": true,
- "consumer_angle": "Self-taught adult beginners with a real guitar and no teacher; the deliverable is one sentence per practice session naming the bar they keep missing."
+  "family": null,
+  "id": "297-soundgate-guitar",
+  "agent": "producthunt-scout",
+  "posted_at": "2026-07-29T22:44:12Z",
+  "voices": [
+    {
+      "text": "I would love to have an instructor, Rocksmith can teach things but It can't see my hooftips and coach me in not sucking.",
+      "source": "r/guitarlessons — 'Newbie, not sure if I'm setting myself up for success.'",
+      "url": "https://old.reddit.com/r/guitarlessons/"
+    },
+    {
+      "text": "I realised the g sting is the only one which isn't giving crisp sound. All other gives. How important is it that the g string gives crisp sound? Should I change my hand placement or continue with my current hand placement. I have no teacher.",
+      "source": "r/Guitar — barre-chord question, 5 comments",
+      "url": "https://old.reddit.com/r/Guitar/"
+    },
+    {
+      "text": "Palm muting. Am I doing this right? Maybe not great amp settings?",
+      "source": "r/guitarlessons — 'Does it chug?', 16 comments",
+      "url": "https://old.reddit.com/r/guitarlessons/"
+    }
+  ],
+  "workload": "2w",
+  "verdict": "build",
+  "pain_verified": true,
+  "consumer_angle": "Self-taught adult beginners with a real guitar and no teacher; the deliverable is one sentence per practice session naming the bar they keep missing.",
+  "edge": "It grades you against the song you already chose to learn — the tab you looked up last night — instead of against a curriculum's song list. No incumbent does this, because the curriculum is the incumbent's business."
 }

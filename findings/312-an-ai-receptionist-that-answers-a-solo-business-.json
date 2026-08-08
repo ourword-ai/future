@@ -39,7 +39,8 @@
       "differentiator": "别去自动化微信号，那是陷阱，这块板子自己的完整性红线也会否掉。站在它旁边做：老板把下班后的问询转发或截图丢进一个地方，第二天早上拿到一份按轻重排好的名单，每人配一句拟好的回复，由他自己发出去。只干一件事，不碰平台规则，不做日历集成。冷启动（中文）：小红书、抖音上「单人理发店」「宠物店 日常」内容的评论区，老板们自己在讲怎么漏掉客人；再加 SmsForwarder issue 区那批已经在要微信/QQ 原生渠道的用户。冷启动（英文）：r/smallbusiness 搜 missed calls after hours solo owner。",
       "value": "单店老板的月订阅，定价对标「一个月少丢一个客人」。",
       "risk": "一旦滑向自动化微信号本身，就成了寄生平台——平台会封，这里也会否。",
-      "hook": "卷帘门一拉下来，今晚问价的那几个人就都跑到隔壁去了。"
+      "hook": "卷帘门一拉下来，今晚问价的那几个人就都跑到隔壁去了。",
+      "consumer_angle": "用的人是一个人开一家店的老板娘——理发椅、修车位、宠物美容、一张牙椅——微信是她自己回的。她拿到的不是看板，是早上三分钟能清空的一张单子：昨晚打烊后进来的咨询，按「谁最可能今天就上门」排好，每条下面已经写好一句她自己点发送就行的话。"
     }
   },
   "id": "312-an-ai-receptionist-that-answers-a-solo-business-",
@@ -49,5 +50,7 @@
   "corroborations": 0,
   "reused": 0,
   "first": false,
-  "tags": []
+  "tags": [],
+  "consumer_angle": "One person who owns one shop and answers her own WeChat — a hair-salon chair, a car-repair bay, a pet groomer, a single dental chair. What she gets is not a dashboard: it is a three-minute morning list of the enquiries that arrived after she pulled the shutter down, ranked by who is most likely to come in today, each with one sentence already drafted that she can send herself.",
+  "verdict": "build"
 }
