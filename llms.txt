@@ -18,13 +18,13 @@ Idea is a hand-operated board of things worth building. Every entry starts from 
 
 ## Topics
 
-- [Has verbatim voices](https://ourword.ai/idea/t/has-verbatim-voices/) — 29
-- [Worth building](https://ourword.ai/idea/t/worth-building/) — 28
-- [Two months of work](https://ourword.ai/idea/t/two-months-of-work/) — 27
+- [Has verbatim voices](https://ourword.ai/idea/t/has-verbatim-voices/) — 30
+- [Worth building](https://ourword.ai/idea/t/worth-building/) — 29
+- [Two months of work](https://ourword.ai/idea/t/two-months-of-work/) — 28
 - [GitHub](https://ourword.ai/idea/t/github/) — 24
 - [Two weeks of work](https://ourword.ai/idea/t/two-weeks-of-work/) — 21
 - [Watching](https://ourword.ai/idea/t/watching/) — 18
-- [Reddit](https://ourword.ai/idea/t/reddit/) — 15
+- [Reddit](https://ourword.ai/idea/t/reddit/) — 16
 - [Product Hunt](https://ourword.ai/idea/t/product-hunt/) — 10
 - [小红书](https://ourword.ai/idea/t/小红书/) — 8
 - [Artificial Intelligence](https://ourword.ai/idea/t/artificial-intelligence/) — 5
@@ -54,10 +54,11 @@ Cite the individual idea page, which is stable and dated. Quotes inside an entry
 - [Zouni / 走你](https://ourword.ai/zouni/)
 - [Market Watch / 投资观察仪表盘](https://ourword.ai/portfolio-tracker/)
 
-## Index (50 ideas)
+## Index (51 ideas)
 
 - [On Xiaohongshu, slowed-down dance tutorials are a whole content…](https://ourword.ai/idea/i/328-on-xiaohongshu-slowed-down-dance-tutorials-are-a/): On Xiaohongshu, slowed-down dance tutorials are a whole content category — 6,909 likes, 4,667, 2,979, 2,727 — and every single one exists only because a teacher was willing to re-dance that song by…
 - [Five unrelated r/AskVet threads in twelve months do the same thing](https://ourword.ai/idea/i/329-five-unrelated-r-askvet-threads-in-twelve-months/): Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese…
+- [A quilter about to retire went looking for something to make from…](https://ourword.ai/idea/i/330-a-quilter-about-to-retire-went-looking-for-somet/): A quilter about to retire went looking for something to make from the fabric she already owns, found that every pattern is sold as 'buy these fabrics', and ended her post wishing for 'a Ravelry…
 - [A man spent six and a half months hand-reverse-engineering his…](https://ourword.ai/idea/i/326-a-man-spent-six-and-a-half-months-hand-reverse-e/): A man spent six and a half months hand-reverse-engineering his grandfather's Aran jumper into a pattern he could wear, and 2,499 people upvoted it. Cross-stitch has had photo-to-chart tools for…
 - [In r/sewing the same request arrives every day from a different life](https://ourword.ai/idea/i/327-in-r-sewing-the-same-request-arrives-every-day-f/): In r/sewing the same request arrives every day from a different life: a grandmother's 1950s dress, a late wife's jacket, a dress on Pinterest — and every time the poster has only one photograph.…
 - [Seven unrelated r/singing threads in twelve months ask the same…](https://ourword.ai/idea/i/322-seven-unrelated-r-singing-threads-in-twelve-mont/): Seven unrelated r/singing threads in twelve months ask the same question — how do you learn a harmony line when there is no teacher — and every answer is 'practise more'. The askers are a mother of…

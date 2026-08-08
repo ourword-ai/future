@@ -1,7 +1,7 @@
 # Idea — what is actually worth building, with the evidence attached
 # 灵感看板 — 值得做的东西，以及它凭什么值得做
 # https://ourword.ai/idea/
-# Full corpus, plain text. 50 ideas.
+# Full corpus, plain text. 51 ideas.
 
 ========================================================================
 ## On Xiaohongshu, slowed-down dance tutorials are a whole content…
@@ -174,6 +174,92 @@ r/AskVet 一年里有五个互不相干的帖子在做同一个动作：主人�
 
 ### Q：证据来自哪里？
 https://old.reddit.com/r/AskVet/search?q=%22can+someone+help+me+understand%22+OR+%22help+me+interpret%22&restrict_sr=on&sort=top&t=year https://old.reddit.com/r/AskVet/ https://www.xiaohongshu.com/search_result?keyword=%E5%AE%A0%E7%89%A9%20%E5%8C%96%E9%AA%8C%E5%8D%95%20%E7%9C%8B%E4%B8%8D%E6%87%82
+
+========================================================================
+## A quilter about to retire went looking for something to make from…
+## 一个即将退休的拼布爱好者，想从自己已经攒了多年的布里挑点东西做，结果…
+URL: https://ourword.ai/idea/i/330-a-quilter-about-to-retire-went-looking-for-somet/
+URL (中文): https://ourword.ai/idea/zh/i/330-a-quilter-about-to-retire-went-looking-for-somet/
+Source: https://old.reddit.com/r/quilting/comments/1ufd4b4/quilt_pattern_annoyance/
+Updated: 2026-08-08
+Tags: Reddit, Worth building, Two months of work, Has verbatim voices
+
+A quilter about to retire went looking for something to make from the fabric she already owns, found that every pattern is sold as 'buy these fabrics', and ended her post wishing for 'a Ravelry equivalent for quilting so I could match stash with patterns'. 156 points, 100 comments. The one site that ever did it is a dead link the community now reaches through the Wayback Machine.
+
+### What is the idea?
+Photograph the fabric you already own, once, shelf by shelf. It reads each piece for colour, print scale and rough yardage, and then answers the only question that matters at the start of a project: here are the patterns you can finish from this pile without buying anything, and here is which piece goes where.
+
+### Who would use it, and what do they get?
+A woman about to retire with a cupboard of fabric she has been accumulating for years and nothing she can see to make from it. What she gets is three patterns she can start this weekend without buying anything, and a note saying which shelf each piece comes from.
+
+### Why would anyone bother?
+Fabric is bought faster than it is sewn — the pile has a name in this hobby, a 'stash', and so does the feeling about it. The blocker at the start of a project is not inspiration, it is that matching a pattern's cutting list against what is physically in the cupboard is an hour of arithmetic nobody wants to do, so the pile stays untouched and more fabric gets bought.
+
+### What is missing today?
+Ravelry solved exactly this for yarn twenty years ago: you log what you own and it shows you what you can knit from it. Quilting has no equivalent — and it is not that nobody tried. The community's own answer in this thread is a link to the World Wide Quilting Page, which is now an air-conditioning company's domain and only readable through the Wayback Machine. The commercial side has no reason to build it: pattern publishers make money when you buy the recommended bundle.
+
+### What makes this one different?
+Do not try to be Ravelry. Index one narrow, legal corpus — public-domain traditional blocks, of which there are hundreds with known cutting tables — and be the matcher, not the library: point the user at patterns they can already buy elsewhere, and own the 'can I make this from what I have' answer. Cold start EN = this thread's 100 commenters plus r/quilting's weekly stash posts; cold start CN = 小红书「拼布 布头」「碎布利用」标签下贴自己布堆问能做什么的人。
+
+### What is the sharpest thing about it?
+It runs the pattern market backwards. Every pattern on sale starts from 'buy this fabric bundle'; this starts from the cupboard that is already full and paid for.
+
+### What could kill it?
+Ravelry's power is a hand-curated database built over two decades by a devoted community, not software — cold-starting a pattern corpus is the real work, and pattern copyright makes bulk indexing legally awkward. Estimating yardage from a photograph of folded fabric is also genuinely hard, and a wrong estimate means running out of fabric mid-quilt, which this audience forgives once.
+
+### Who pays, and for what?
+Quilters buy fabric constantly and know they over-buy; they pay for tools that make the pile usable. Pay per project plan, and a subscription for the stash record itself, which is also an insurance inventory of a collection worth real money.
+
+### What is the main risk?
+Yardage estimated from a photo. Telling someone they have enough fabric when they do not is the one failure this audience will not come back from.
+
+### What did real people actually say?
+Verbatim from the public sources linked above, not paraphrased: “With retirement imminent, I started looking around at patterns for using my stash… I'm pretty sure I've mined all the free resources, as well as books and magazines available from the library because my mind is numb from it. Again wishing there was a "Ravelry" equivalent for quilting so I could match stash with patterns.” — r/quilting — 'Quilt pattern annoyance' (156 points, 100 comments) “Is anyone else annoyed by quilt patterns that are just the same thing - only in a specified color or fabric type? Here's our fabulous star quilt in red! Here's our fabulous star quilt in batiks!” — r/quilting — same thread, the poster on why the pattern market does not help her “When I began quilting, my next door neighbor gave me a binder of 600 different quilt blocks, with cutting requirements for many sizes of blocks.” — r/quilting — same thread; the working answer in this hobby is still a physical binder passed between neighbours “Commenting again about the World Wide Quilting Page link. The current site seems to be a writing site? According to the internet wayback machine, the address for World Wide Quilting Page back in days of yore was Quilt.com, which is an air conditioning business…” — r/quilting — same thread; the only site that ever did this is gone and the community now reads it through an archive
+
+### How much work is it?
+about two months of work
+
+### Where does the evidence come from?
+https://old.reddit.com/r/quilting/comments/1ufd4b4/quilt_pattern_annoyance/ https://old.reddit.com/r/quilting/ https://www.ravelry.com/
+
+--- 中文 ---
+一个即将退休的拼布爱好者，想从自己已经攒了多年的布里挑点东西做，结果发现市面上每一份图样都是「先买这套布」，于是她在帖子最后写：真希望拼布也有个 Ravelry，让我能拿手上的布去反着找图样。156 分、100 条评论。而唯一做过这件事的那个网站，如今是一条死链，圈子里的人只能靠网页存档去看。
+
+### Q：这条到底是什么？
+把你已经有的布一格一格拍一遍，只拍一次。它读出每一块的颜色、花型大小和大概的用布量，然后回答开工前唯一重要的那个问题：这堆布，不用再买任何东西，能做完哪几份图样，以及哪一块用在哪儿。
+
+### Q：谁在用？他拿到什么成品？
+一个即将退休的女性，柜子里是攒了好多年的布，却看不出来自己能拿它做什么。她拿到的是这个周末就能开工、而且一分钱不用再花的三份图样，以及每一块布该从哪一格拿出来。
+
+### Q：他为什么非要用不可？
+布买进来的速度永远快过做出去的速度——这堆东西在这个圈子里有专门的名字，叫 stash，连对着它的那种心情都有名字。开工前卡住人的不是灵感，是「把图样的裁布清单跟柜子里实际有的东西对一遍」要算上一个小时，没人愿意算，于是布堆着不动，然后又去买新的。
+
+### Q：今天缺的到底是什么？
+毛线这一侧二十年前就被 Ravelry 解决了：你把手上有的线登记进去，它告诉你能织什么。拼布没有对应的东西——而且不是没人试过。这条帖子里圈内人自己给出的答案是一个叫 World Wide Quilting Page 的链接，那个域名现在属于一家空调公司，只能通过网页存档读。商业一侧也没有动机做：图样出版方是靠你买那套推荐布包赚钱的。
+
+### Q：这一刀切在哪里？
+不要去做 Ravelry。只收一个窄而合法的库——公有领域的传统拼布 block，有几百个，而且裁布表都是已知的——然后只做「匹配」这一层，不做「图书馆」：图样让用户去别处买，你只占住「我手上这堆布能不能做这个」这一句回答。英文冷启动＝这条帖子下面那 100 个评论者，以及 r/quilting 每周的 stash 帖；中文冷启动＝小红书「拼布 布头」「碎布利用」标签下那些贴出自己布堆问能做什么的人。
+
+### Q：它最锋利的地方在哪？
+它把图样市场整个反过来跑。所有在卖的图样都从「买这套布包」开始；这一个从那个已经塞满、而且钱早就花过的柜子开始。
+
+### Q：什么会杀死它？
+Ravelry 真正的护城河是一个社区花二十年一条条攒出来的人工数据库，不是软件——从零起一个图样库才是真正的工作量，而且图样版权让批量收录在法律上很难看。从一张叠着的布的照片估用布量本身也很难，估错就意味着做到一半布不够了，这个人群只会原谅你一次。
+
+### Q：谁付钱，付的是什么？
+拼布的人一直在买布，而且自己知道买多了；他们愿意为「让这堆布能用起来」的工具付钱。按一个项目方案收费，加上一份布料清单的订阅——那份清单同时也是一批真值钱的收藏的保险底账。
+
+### Q：最大的风险是什么？
+从照片估用布量。告诉一个人「你的布够了」而其实不够，这一次失败这个人群就不会再回来。
+
+### Q：真人原话是怎么说的？
+以下原声逐字摘自公开来源，未经改写： “With retirement imminent, I started looking around at patterns for using my stash… I'm pretty sure I've mined all the free resources, as well as books and magazines available from the library because my mind is numb from it. Again wishing there was a "Ravelry" equivalent for quilting so I could match stash with patterns.” — r/quilting — 'Quilt pattern annoyance' (156 points, 100 comments) “Is anyone else annoyed by quilt patterns that are just the same thing - only in a specified color or fabric type? Here's our fabulous star quilt in red! Here's our fabulous star quilt in batiks!” — r/quilting — same thread, the poster on why the pattern market does not help her “When I began quilting, my next door neighbor gave me a binder of 600 different quilt blocks, with cutting requirements for many sizes of blocks.” — r/quilting — same thread; the working answer in this hobby is still a physical binder passed between neighbours “Commenting again about the World Wide Quilting Page link. The current site seems to be a writing site? According to the internet wayback machine, the address for World Wide Quilting Page back in days of yore was Quilt.com, which is an air conditioning business…” — r/quilting — same thread; the only site that ever did this is gone and the community now reads it through an archive
+
+### Q：要做多久？
+两个月左右的工作量
+
+### Q：证据来自哪里？
+https://old.reddit.com/r/quilting/comments/1ufd4b4/quilt_pattern_annoyance/ https://old.reddit.com/r/quilting/ https://www.ravelry.com/
 
 ========================================================================
 ## A man spent six and a half months hand-reverse-engineering his…

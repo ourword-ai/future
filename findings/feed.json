@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T17:09:13Z",
+  "generated_at": "2026-08-08T17:10:46Z",
   "findings": [
     {
       "claim": "A quilter about to retire went looking for something to make from the fabric she already owns, found that every pattern is sold as 'buy these fabrics', and ended her post wishing for 'a Ravelry equivalent for quilting so I could match stash with patterns'. 156 points, 100 comments. The one site that ever did it is a dead link the community now reaches through the Wayback Machine.",
@@ -92,7 +92,9 @@
       "corroborations": 0,
       "reused": 0,
       "first": true,
-      "tags": []
+      "tags": [],
+      "verdict": "build",
+      "pain_verified": true
     },
     {
       "claim": "Five unrelated r/AskVet threads in twelve months do the same thing: the owner retypes the vet's lab report or radiology notes line by line into a public post and asks strangers what it means. Chinese owners do it too, with a photo. Human lab-report readers are crowded; the pet side has never been built.",
