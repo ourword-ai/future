@@ -298,6 +298,33 @@ def patch_index(path, site, items, zh=False, extra_ld=None, hubs=None):
     return _write(path, src)
 
 
+def patch_page(path, site, rel, title, desc, zh=None, ld=None, h1=""):
+    """Give a secondary hand-built page (a monitor view, a privacy page) the same
+    treatment as the homepage: its own canonical, OG, description and an h1 — otherwise
+    it sits in the sitemap as a page with no signals at all."""
+    if not os.path.exists(path):
+        return False
+    zh = site.zh() if zh is None else zh
+    src = canonicalise_host(open(path, encoding="utf-8").read())
+    src = re.sub(r"<!--SEO:START-->.*?<!--SEO:END-->", "", src, flags=re.S)
+    m = re.search(r"(<head[^>]*>)(.*?)(</head>)", src, flags=re.S | re.I)
+    if not m:
+        return False
+    url = site.url(rel)
+    head = _strip_legacy(m.group(2)) + head_block(
+        site, url, title, desc, zh=zh,
+        ld=(ld if ld is not None else [org_ld(), website_ld(site, zh)]))
+    src = src[:m.start(2)] + head + src[m.end(2):]
+    if "<h1" not in src:
+        src = _inject_body(src, _BODY_MARK[0] +
+                           '<noscript><section><h1>%s</h1><p>%s</p>'
+                           '<p><a href="%s">%s</a></p><p>%s</p></section></noscript>'
+                           % (esc(h1 or title), esc(clip(desc, 400)), esc(site.base),
+                              esc(site.name_zh if zh else site.name),
+                              sibling_links(site, zh)) + _BODY_MARK[1])
+    return _write(path, src)
+
+
 def _inject_body(src, block):
     if _BODY_MARK[0] in src:
         return re.sub(re.escape(_BODY_MARK[0]) + r".*?" + re.escape(_BODY_MARK[1]),
